@@ -1,7 +1,8 @@
 ---
-layout : page
-title : Projects
-subtitle : this is collection of some things I have worked on what I have been interesting with challenge. 
+layout: page
+title: Projects
+subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
+comments: true
 ---
 
   while I Carried out the projects, This shows you My role.
