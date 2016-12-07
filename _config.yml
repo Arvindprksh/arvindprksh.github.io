@@ -25,6 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: ""
   Study: 
+    - Total List: ""
     - SSD(Solid-State Device): ""
     - Linux: ""
     - DataBase: ""
@@ -33,9 +34,9 @@ navbar-links:
     - Web: ""
     - Machine Learning: ""   
     - Etc.: ""
-  Projects: ""
+  Projects: "projects"
   About Me: "aboutme"
-  Resume(Curriculum Vitae): ""
+  Resume(Curriculum Vitae): "resume"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
