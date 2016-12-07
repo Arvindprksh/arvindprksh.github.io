@@ -6,7 +6,7 @@ css: /css/resume.css
 ---
 <p style="text-align:center;">
 <b>Hyun Young Lee</b><br>
-Eunpyeong-gu, Seoul, South Korea.
+Santa clara, CA, America.
 </p>
 
 <p title = "EDUCATION___________________________________________">
