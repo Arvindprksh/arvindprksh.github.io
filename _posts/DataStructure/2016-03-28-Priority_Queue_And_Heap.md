@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary of Priority Queue
+title: Summary of Priority Queue and Heap
 subtitle:
 css:
 tags:
