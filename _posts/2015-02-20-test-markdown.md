@@ -44,7 +44,7 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
+{% highlight c linenos %}
 var foo = function(x) {
   return(x + 5);
 }
