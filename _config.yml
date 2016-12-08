@@ -24,16 +24,16 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Study: 
-    - the whole List including the following: "studies"
-    - SSD(Solid-State Device): ""
-    - Linux: ""
-    - DataBase: ""
-    - Algorithm: ""
-    - DataStructure: ""
-    - Web: ""
-    - Machine Learning: ""   
-    - Etc.: ""
+  Study: "studies"
+#    - the whole List including the following: "studies"
+#    - SSD(Solid-State Device): ""
+#    - Linux: ""
+#    - DataBase: ""
+#    - Algorithm: ""
+#    - DataStructure: ""
+#    - Web: ""
+#    - Machine Learning: ""   
+#    - Etc.: ""
   Projects: "projects"
   About Me: "aboutme"
   Resume(Curriculum Vitae): "resume"
@@ -85,7 +85,7 @@ share-links-active:
   twitter: false 
   facebook: false
   google: false
-  linkedin: true
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -93,7 +93,7 @@ url-pretty: "hyunyoung2.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "hyunyoung_lee"
+#disqus: "hyunyoung_lee"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
