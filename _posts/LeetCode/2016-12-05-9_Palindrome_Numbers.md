@@ -17,7 +17,7 @@ meta-description:
 
 # [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
-Determine whether an interger is a palindrome. Do this withou extra space. 
+Determine whether an interger is a palindrome. Do this without extra space. 
 
 ```c
 bool isPalindrome(int x) {
