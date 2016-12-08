@@ -2,8 +2,17 @@
 layout: post
 title: 7. Reverse Integer
 subtitle:
-comment:
-tag:
+css:
+tags:
+date:
+big-image:
+share-image:
+permalink:
+comments:
+show-share:
+big-image:
+meta-title:
+meta-description:
 ---
 
 # [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
