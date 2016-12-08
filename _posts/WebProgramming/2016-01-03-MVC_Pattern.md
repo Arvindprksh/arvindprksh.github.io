@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. Two Sum
+title: MVC Pattern
 subtitle:
 css:
 tags:
