@@ -2,8 +2,17 @@
 layout: post
 title: 8. String to Integer(atoi)
 subtitle:
-comment:
-tag:
+css:
+tags:
+date:
+big-image:
+share-image:
+permalink:
+comments:
+show-share:
+big-image:
+meta-title:
+meta-description:
 ---
 
 # [8. String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
