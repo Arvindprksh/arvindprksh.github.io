@@ -51,3 +51,4 @@ bool isPalindrome(int x) {
     return (reverseNumber == temp);
 }
 ```
+
