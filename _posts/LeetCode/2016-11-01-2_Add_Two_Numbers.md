@@ -2,8 +2,17 @@
 layout: post
 title: 2. Add Two Numbers
 subtitle:
-comment:
-tag:
+css:
+tags:
+date:
+big-image:
+share-image:
+permalink:
+comments:
+show-share:
+big-image:
+meta-title:
+meta-description: 
 ---
 
 
