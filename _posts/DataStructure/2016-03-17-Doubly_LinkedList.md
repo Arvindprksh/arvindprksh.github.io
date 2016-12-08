@@ -22,8 +22,6 @@ meta-description:
     - 더미노드양방향 연결리트스 
     - 원형 연결기반의 양향 연결리스
 
-![](/img/Image/DataStructure/2016-03-17-Doubly_LinkedList/double_linked_list.png)
-
 ![](/img/Image/DataStructure/2016-03-17-Doubly_LinkedList/doubly LinkedList.png)
 
 1-2. 양방향으로 연결을 하면 검색이 용이하다. 단방향 보다
