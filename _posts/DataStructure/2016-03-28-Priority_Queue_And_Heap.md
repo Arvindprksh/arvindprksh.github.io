@@ -22,8 +22,8 @@ meta-description:
   - 우선순위 큐는 배열, 리스트, 힙을 이용하여 구현을 할 수 있다. 
   - 이때 우선순위 기준은 이 자료구조를 쓰는 프로그래머가 정하면 된다. 
   
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue.png)  
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue1.png)  
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue.png)  
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue1.png)  
   
 1-2. heap
 
@@ -35,31 +35,31 @@ meta-description:
       - 모든 부모 노드의 저장값이 자식의 노드의 저장값보다 크다. 
       - 즉 루트노드의 값이 가장 크다. 
   
- ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue2.png) 
+ ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue2.png) 
   
   
   // 최소 힙(우선순위가 높다는 것은 노드의 저장 값이 가장 작다는 것)
       - 모든 부모 노드의 저장 값이 자식의 노드의 저장값보다 작다.
       - 즉, 루트 노드의 저장 값이 가장 작다. 
   
-  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue3.png) 
+  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue3.png) 
   
   
  1-3. 힙의 저장과정
   
-   ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue4.png)
+   ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue4.png)
   
  1-4. 힙의 삭제과정
  
-  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue5.png)
+  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue5.png)
   
  1-5. 삽입과 삭제 과정의 우선수위 큐의 빅오 
  
-  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue6.png)
+  ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue6.png)
   
  1-6. Create heap with array
  
- ![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue7.png)
+ ![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue7.png)
  
  1-7. simply heap source
  
@@ -203,16 +203,16 @@ int main ()
 A A B B C C
 // 데이터 우선순위를 함께 전달하기 보다는 데이터를 근거로 하여 데이터의 우선 순위를 정하는 방식이 더욱 좋을 수도 있다. 
 ```
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue8.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue8.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue9.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue9.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue10.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue10.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue11.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue11.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue12.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue12.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue13.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue13.png)
 
-![](/img/Image/DataStructure/2016-03-28-Priority_Queue/PriorityQueue14.png)
+![](/img/Image/DataStructure/2016-03-28-Priority_Queue_And_Heap/PriorityQueue14.png)
