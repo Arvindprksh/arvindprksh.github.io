@@ -162,7 +162,7 @@ void LInsert(List * plist, Data data)
 
 아래의 그림이 꼬리에 추가하는 것을 잘 설명해 줄것이다. 
 
-![](/img/Image/DataStructure/2016-03-16-Circular_Linked_List/CircularLinkedListNodeAdd.png)
+![](/img/Image/DataStructure/2016-03-16-Circular_Linked_List/CircularLInkedLIstTailAdd.png)
 
 이제부터는 참조하고 삭제부분에 대한 코드를 보겠다. 
 
