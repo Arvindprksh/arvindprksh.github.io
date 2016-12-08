@@ -159,3 +159,4 @@ I refer to the book, cording interview.
  내가 보기에는 재귀적 함수의 활용성이 높을 수도 있다. 
  
  think about the recursive function. if You iterate. i.e If you repeat with the same way.  
+ 
