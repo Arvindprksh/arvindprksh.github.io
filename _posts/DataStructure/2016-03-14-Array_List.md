@@ -177,11 +177,11 @@ LData LRemove(List * plist)
 
 // 리스트 삭제
 
-![](/img/DataStructure/2016-03-14-Array_List/Array_List_Remove_before.png)
+![](img/Image/DataStructure/2016-03-14-Array_List/Array_List_Remove_before.png)
 
 // 참조위치를 전의 위치로 하는 이유
 
-![](/img/DataStructure/2016-03-14-Array_List/Array_List_Remove_After.png)
+![](img/Image/DataStructure/2016-03-14-Array_List/Array_List_Remove_After.png)
 
 ```c
 // 리스트의 원소의 수를 반환한다. 
