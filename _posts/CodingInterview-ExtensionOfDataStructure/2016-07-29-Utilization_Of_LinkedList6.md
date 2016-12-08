@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1. Two Sum
-subtitle:
+title: Utilization Of LinkedList.
+subtitle: Where is the middle of LinkedList ? and How do I have to do for printing in reverse order of LikedList
 css:
 tags:
 date:
