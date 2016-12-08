@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Utilization Of LinkedList.
+title: Utilization Of LinkedList 6
 subtitle: Where is the middle of LinkedList ? and How do I have to do for printing in reverse order of LikedList
 css:
 tags:
