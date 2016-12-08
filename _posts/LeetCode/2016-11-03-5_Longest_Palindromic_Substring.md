@@ -2,8 +2,17 @@
 layout: post
 title: 5. Longest Palindromic Substring
 subtitle:
-comment:
-tag:
+css:
+tags:
+date:
+big-image:
+share-image:
+permalink:
+comments:
+show-share:
+big-image:
+meta-title:
+meta-description:
 ---
 
 # [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
