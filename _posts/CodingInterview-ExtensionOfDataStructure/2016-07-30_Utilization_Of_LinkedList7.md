@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Utilization Of LinkedList 7
-subtitle:How to verify whether the LinkedList's length is odd or even, and then the merge those LinkedLists 
+subtitle: How to verify whether the LinkedList's length is odd or even, and then the merge those LinkedLists 
 css:
 tags:
 date:
