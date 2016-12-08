@@ -2,8 +2,17 @@
 layout: post
 title: 9. Panlindrome Number
 subtitle:
-comment:
-tag:
+css:
+tags:
+date:
+big-image:
+share-image:
+permalink:
+comments:
+show-share:
+big-image:
+meta-title:
+meta-description:
 ---
 
 # [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
