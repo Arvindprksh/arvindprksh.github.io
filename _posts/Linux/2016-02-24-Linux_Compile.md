@@ -382,7 +382,7 @@ $ grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2
 $ grub2-editenv list
 $ grub2-set-default 0
 ```
-but I'm not sure the above commnd, Becuse I didn't do it. 
+but I'm not sure the above commnd(grep, grub2-*), Becuse I didn't do it. 
 
 I think I don't need it
 
