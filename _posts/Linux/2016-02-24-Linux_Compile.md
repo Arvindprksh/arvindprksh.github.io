@@ -370,9 +370,8 @@ sudo make modules_install install
 
 after reboot, If you want to check if installation is done well
 $ uname -a   OR uname -r
-```
 -------------------------------------End----------------------------------------------
-
+```
 when you boot kernel, If you want to change order of default booting 
 
 just do it as follows. 
