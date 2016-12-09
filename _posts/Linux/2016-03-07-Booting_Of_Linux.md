@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1. Two Sum
-subtitle:
+title: Booting_Of_Linux
+subtitle: How to boot linux - You need to upload the image. 
 css:
 tags:
 date:
