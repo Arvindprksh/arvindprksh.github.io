@@ -345,7 +345,6 @@ $ cd linux-4.8   OR   cd /usr/src/linux-4.8/
 // so unless it's first time. I don't recommand this command. 
 make mrproper
 
-```
 $ make mrproper
 CLEAN .config 
 
@@ -379,9 +378,9 @@ just do it as follows.
 ```  
 when you boot the linux, if you want to configure order of booting. 
 you have to pay attention the following command 
-grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2
-grub2-editenv list
-grub2-set-default 0
+$ grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2
+$ grub2-editenv list
+$ grub2-set-default 0
 ```
 but I'm not sure the above commnd, Becuse I didn't do it. 
 
