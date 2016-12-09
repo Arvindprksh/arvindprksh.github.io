@@ -18,18 +18,18 @@ QEMU 2.1.50 monitor - type 'help' for more information
 ======= Backtrace: =========
 /lib64/libc.so.6(+0x7d053)[0x7fac5460f053]
 /lib64/libglib-2.0.so.0(g_free+0xf)[0x7fac581cd37f]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x1d2632)[0x7fac58ec5632]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x1956f1)[0x7fac58e886f1]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x195855)[0x7fac58e88855]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x2a98fe)[0x7fac58f9c8fe]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x2a2f27)[0x7fac58f95f27]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x2b1470)[0x7fac58fa4470]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x2a2dae)[0x7fac58f95dae]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x1d2632)[0x7fac58ec5632]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x1956f1)[0x7fac58e886f1]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x195855)[0x7fac58e88855]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x2a98fe)[0x7fac58f9c8fe]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x2a2f27)[0x7fac58f95f27]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x2b1470)[0x7fac58fa4470]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x2a2dae)[0x7fac58f95dae]
 /lib64/libglib-2.0.so.0(g_main_context_dispatch+0x15a)[0x7fac581c77aa]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x2b0138)[0x7fac58fa3138]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x901ae)[0x7fac58d831ae]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x2b0138)[0x7fac58fa3138]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x901ae)[0x7fac58d831ae]
 /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fac545b3b15]
-/home/bmdev/qemunvme/bin/qemu-system-x86_64(+0x94dbd)[0x7fac58d87dbd]
+/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64(+0x94dbd)[0x7fac58d87dbd]
 ======= Memory map: ========
 7faa28000000-7faa28022000 rw-p 00000000 00:00 0 
 7faa28022000-7faa2c000000 ---p 00000000 00:00 0 
