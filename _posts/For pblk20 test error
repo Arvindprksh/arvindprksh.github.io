@@ -14,7 +14,7 @@ $ dd if=/dev/zero of=./blknvme bs=1G count=4
 # hyunyoung.lee @ localhost in ~/ramdisk [9:46:16] 
 $ sudo ~/qemunvme/bin/qemu-system-x86_64 -m 8G -smp 4 --enable-kvm -hda /var/lib/libvirt/images/vDisk.qcow2 -drive file=./blknvme,if=none,id=mynvme -device nvme,drive=mynvme,serial=deadbeef,lver=1,ll2pmode=0,lnum_lun=4,lnum_pln=2,lsecs_per_pg=4,lpgs_per_blk=512 -monitor stdio
 QEMU 2.1.50 monitor - type 'help' for more information
-(qemu) *** Error in `/home/bmdev/qemunvme/bin/qemu-system-x86_64': double free or corruption (!prev): 0x00007fac59ffe0b0 ***
+(qemu) *** Error in `/home/hyunyoung.lee/qemunvme/bin/qemu-system-x86_64': double free or corruption (!prev): 0x00007fac59ffe0b0 ***
 ======= Backtrace: =========
 /lib64/libc.so.6(+0x7d053)[0x7fac5460f053]
 /lib64/libglib-2.0.so.0(g_free+0xf)[0x7fac581cd37f]
