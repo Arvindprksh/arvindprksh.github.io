@@ -39,21 +39,19 @@ meta-description:
   
   3 ) continue comparing those things until starting point < last point.
    
-  <pre>
-  <code>
+```
 starting point last point.  
   | ->         <- |  
   a b a b X b a b a.  
-  </code>
-  </pre>
+```
   
   let's make simple code. 
   
   Especailly, just the above letter is standard of the following code.
   
   the following is middle of string is always X. 
-  <pre>
-  <code>
+
+```c
   int IsPalindrome(char * A) {
    int i = 0, j = strlen(A)-1;
    
@@ -71,8 +69,7 @@ starting point last point.
       return 1;
    }
   }
-  </code>
-  </pre>
+```
   
 ## If string is linked list or you use the stack. how do you solve this problem ??
 
@@ -95,9 +92,7 @@ starting point last point.
   
   let's see pseudo code. 
   
-  <pre>
-  <code>
-  
+```c
   void Ispalindrome(struct Stack * s, char * d) {
       int len = strlen(d);
       
@@ -117,8 +112,7 @@ starting point last point.
          }
       }
   }
-  </code>
-  </pre>
+```
 
 But let's think of another way to introduce in coding book. 
 
@@ -144,8 +138,7 @@ But let's think of another way to introduce in coding book.
   
   This following pseudo code is my thought. 
   
-  <pre>
-  <code>
+```c
   void IsPalindrome(char * d, struct Stack *s) {
     int len = strlen(d);
     int locationOfX = 0  
@@ -164,15 +157,13 @@ But let's think of another way to introduce in coding book.
           }
     }
   }
-  </code>
-  </pre>
+```
   
   Now, Just compare the above code with code of coding interviewing book. 
   
   let's follow the cod of the book. 
   
-  <pre>
-  <code>
+```c
   int IsPalindrome(char * A) {
       int i = 0; 
       struct Stack S=createStack();
@@ -196,8 +187,7 @@ But let's think of another way to introduce in coding book.
       
       return IsEmptyStack(S); // here show you if the stack is empty.
   }
-  </code>
-  </pre>
+```
   
 If you want to know and practice palindrome, visit [Leetcode's Longest-plaindrome-substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
