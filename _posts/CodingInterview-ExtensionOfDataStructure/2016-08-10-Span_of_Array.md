@@ -25,7 +25,7 @@ This article that I practice for thought of algorithm.
 
 ## The Stock Span Problem
 
-![](/img/Image/Extension_Of_Datastructure/Span_of_Stock.png)
+![](/img/Image/CodingInterview-ExtensionOfDataStructure/2016-08-10-Span_of_Array/Span_of_Stock.png)
 
 The following article quote this [GeeksforGeeks](http://www.geeksforgeeks.org/the-stock-span-problem/) 
 
