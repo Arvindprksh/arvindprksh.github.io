@@ -30,6 +30,7 @@ char* reverseString(char* s) {
 
 }
 ```
+
 # My Solution
 
 1. brute force
