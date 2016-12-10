@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 7. Reverse Integer
-subtitle:
-css:
+subtitle: Difficulty - Easy
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/15/7_Reverse_Integer/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
