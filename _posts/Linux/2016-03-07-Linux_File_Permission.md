@@ -57,7 +57,7 @@ they are :
 
 you want to know more. please refer to  <a href = "http://www.linuxnix.com/file-types-in-linux/"> linuxnix </a>
 
---------------------------------------------------------------------------------------------------------------------------
+---
 
 the following refer to <a href = "http://www.csit.parkland.edu/~smauney/csc128/permissions_and_links.html">csit.parkland</a>
 
@@ -68,7 +68,6 @@ so to check up Permissions, you use "ls -l",above linux command.
 the ls -l command displays a lot of information about the files in the directory
 
 ![](/img/Image/Linux/2016-03-07-Linux_File_Permission/file_permissions.jpg)
-
 
 so you need each permision to read, write and excute.
 
@@ -82,5 +81,5 @@ To run a program or to change to a diretory, you need to have excute(x) permissi
 
 ![](/img/Image/Linux/2016-03-07-Linux_File_Permission/PermissionsConcept.png)
 
-above picture refer to <a href = "http://www.guru99.com/file-permissions.html"> this site</a>
+above picture refer to <a href = "http://www.guru99.com/file-permissions.html">guru99</a>
 
