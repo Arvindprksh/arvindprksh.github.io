@@ -23,7 +23,7 @@ int myAtoi(char* str) {
 }
 ```
 
-# solution. 
+# My Solution. 
 
  The following is assumption of input cases. 
  
