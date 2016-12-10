@@ -17,7 +17,7 @@ char* longestPalindrome(char* s) {
 }
 ```
 
-# Solution 
+# My Solution 
 
 ## Brute force : deal with the whole cases
 
