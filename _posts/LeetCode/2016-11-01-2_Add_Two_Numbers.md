@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 2. Add Two Numbers
-subtitle:
-css:
+subtitle: Difficulty - Medium
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/01/2_Add_Two_Numbers/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description: 
 ---
 
 
