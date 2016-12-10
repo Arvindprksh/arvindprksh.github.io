@@ -9,6 +9,7 @@ css: "/css/search.css"
 ### Using the Amazing Google
 
 <div id="google-custom-search">
+
 <script>
   (function() {
     var cx = '006356838477834478456:wlqkkiamvtm';
@@ -21,6 +22,7 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:searchbox></gcse:searchbox>
+<gcse:searchresults></gcse:searchresults>
 </div>
 
 
