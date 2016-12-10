@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 344. Reverse String
-subtitle:
-css:
+subtitle: Difficulty - Easy
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/10/24/344_Reverse_String/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # Agenda
