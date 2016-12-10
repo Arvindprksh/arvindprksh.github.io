@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 6. ZigZag Conversion
-subtitle:
-css:
+subtitle: Difficulty - Easy
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/15/6_ZigZag_Conversion/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) 
