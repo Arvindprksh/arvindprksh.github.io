@@ -16,7 +16,8 @@ bool isPalindrome(int x) {
     
 }
 ```
-# Solution
+
+# My Solution
 
 in my case, I got hint form this problem site. 
 
