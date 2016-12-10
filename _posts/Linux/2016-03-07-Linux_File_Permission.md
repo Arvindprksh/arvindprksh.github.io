@@ -82,4 +82,3 @@ To run a program or to change to a diretory, you need to have excute(x) permissi
 ![](/img/Image/Linux/2016-03-07-Linux_File_Permission/PermissionsConcept.png)
 
 above picture refer to <a href = "http://www.guru99.com/file-permissions.html">guru99</a>
-
