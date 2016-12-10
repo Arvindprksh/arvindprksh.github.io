@@ -164,6 +164,26 @@ the following refers to <a href ="https://www.linux.com/learn/tutorials/821646-b
 
 In linux, to manage software, you have to tool like apt-get, aptitude, yum.
 
+
+## chmod
+
+to have privilege sudo, I configured /etc/sudoers file.
+
+instruction :
+
+```
+  $ su  
+  password :
+  $ chmod u+w /etc/sudoers
+  $ vim etc/sudoers
+  $ chmod u-w /etc/sudoers
+```
+
+these instructions are processed by linux system.
+
+now. I will notice that chmod, sudoes file and so on. 
+
+
 # .a file & .so file
 
   
