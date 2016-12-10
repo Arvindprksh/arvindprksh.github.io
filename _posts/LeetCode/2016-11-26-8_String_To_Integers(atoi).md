@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 8. String to Integer(atoi)
-subtitle:
-css:
+subtitle: Difficulty - Easy
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/26/8_String_To_Integers(atoi)/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [8. String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
