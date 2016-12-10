@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 5. Longest Palindromic Substring
-subtitle:
-css:
+subtitle: Diffculty - Medium
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/03/5_Longest_Palindromic_Substring/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
