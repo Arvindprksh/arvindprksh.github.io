@@ -35,7 +35,7 @@ char* convert(char* s, int numRows) {
 }
 ```
 
-# Solution. 
+# My Solution. 
 
 ```
 nROWs = 3; 
