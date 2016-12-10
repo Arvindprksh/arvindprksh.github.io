@@ -22,6 +22,7 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:searchbox></gcse:searchbox>
+
 </div>
 
 
