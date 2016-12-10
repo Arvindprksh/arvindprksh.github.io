@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 9. Panlindrome Number
-subtitle:
-css:
+subtitle: Difficulty - Easy
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/12/05/9_Palindrome_Numbers/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
