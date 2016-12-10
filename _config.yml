@@ -27,6 +27,7 @@ navbar-links:
   Study: ""
   Projects: ""
   About Me: "aboutme"
+nav-search: "search"
 
 
 #    - SSD(Solid-State Device): ""
