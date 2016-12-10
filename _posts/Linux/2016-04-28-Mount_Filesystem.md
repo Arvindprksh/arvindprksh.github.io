@@ -204,13 +204,13 @@ just, [the site(cray)](http://docs.cray.com/books/S-2377-22/html-S-2377-22/z1029
 
   when The mkfs instruction is impelemented, trim instruction is implemented to ssd. 
   
-  <!--
+<!--
   USB -> URAT(using console prog tera term Baoud Rate 38400
 
   trim
   
   trim
-  -->
+-->
 
   next time, I will mount f2fs to my computer directory
 
