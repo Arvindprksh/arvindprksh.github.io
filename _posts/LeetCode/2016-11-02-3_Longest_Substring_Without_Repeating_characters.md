@@ -1,18 +1,10 @@
 ---
 layout: post
 title: 3. Longest substring without Repeating characters
-subtitle:
-css:
+subtitle: Difficulty - Medium
 tags:
-date:
-big-image:
-share-image:
-permalink:
+permalink: /2016/11/02/3_Longest_Substring_Without_Repeating_characters/
 comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 # [3. Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
