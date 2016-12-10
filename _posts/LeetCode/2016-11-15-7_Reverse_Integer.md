@@ -21,7 +21,7 @@ int reverse(int x) {
 }
 ```
 
-# Solution 
+# My Solution 
 
  - just % and * with 10 
 
