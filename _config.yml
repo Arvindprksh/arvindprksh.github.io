@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Hyunyoung Lee
+title: hyunyoung2
 
 # Short description of your site
 description: A virtual proof that name is awesome!
@@ -50,7 +50,7 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Hyunyoung Lee
+  name: Hyunyoung_Lee
   email: "le32146@gmail.com"
   facebook: yourname  # eg. daattali
   github: hyunyoung2    # eg. daattali
