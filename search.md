@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Search of Google in hyunyoung.github.io"
+title: "Search hyunyoung.github.io"
 css: "/css/search.css"
 ---
 
