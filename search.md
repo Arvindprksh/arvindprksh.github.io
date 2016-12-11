@@ -1,5 +1,5 @@
 ---
-layout: default
+layout:base
 title: "Search hyunyoung2.github.io"
 css: "/css/search.css"
 ---
