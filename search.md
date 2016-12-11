@@ -1,6 +1,7 @@
 ---
 layout: defualt
 title: Search of Google in hyunyoung.github.io
+sitemap: false
 css: "/css/search.css"
 ---
 
