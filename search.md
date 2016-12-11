@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: defualt
 title: Search of Google in hyunyoung.github.io
-permalink: /search/
-sitemap:
 css: "/css/search.css"
 ---
 
