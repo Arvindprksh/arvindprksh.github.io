@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Search hyunyoung.github.io"
+subtitile: Enter the keyword that you search in hyunyoung2 
 css: "/css/search.css"
 ---
 
