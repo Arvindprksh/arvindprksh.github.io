@@ -25,3 +25,4 @@ css: "/css/search.css"
 <gcse:searchbox></gcse:searchbox>
 <gcse:searchresults></gcse:searchresults>
 </div>
+
