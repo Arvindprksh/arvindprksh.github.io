@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Search"
-subtitile: Enter the keyword that you search in hyunyoung2 
+subtitle: Enter the keyword that you search in hyunyoung2 
 css: "/css/search.css"
 ---
 
-# Search hyunyoung2.github.io
+# Search hyunyoung2.github.io for what you want here
 
 ### Using the Amazing Google
 
