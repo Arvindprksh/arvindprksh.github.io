@@ -1,7 +1,7 @@
 ---
 layout: post
-title: QEMU(Generic and Open Source Machine emulator and Virtualizer)
-subtitle: What is the QEMU ? and how can I install QEMU on CentOS 7?
+title: QEMU(Generic and Open Source Machine emulator and Virtualizer) and QEMU-KVM
+subtitle: What is the QEMU(QEMU-KVM) ? and how can I install QEMU(QEMU-KVM) on CentOS 7?
 css:
 tags:
 date:
