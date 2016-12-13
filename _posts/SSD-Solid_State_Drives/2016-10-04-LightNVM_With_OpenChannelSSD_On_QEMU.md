@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Block device and BIO(block I/O) Architecture
-subtitle: Information of data structure associated with block dievice and layer
+title: LightNVM with OpenchannelSSD on QEMU-NVMe
+subtitle: How can I install target and generic media manager of lightnvm on QEMU-NVMe?
 css:
 tags:
 date:
@@ -14,6 +14,10 @@ big-image:
 meta-title:
 meta-description:
 ---
+
+If you finish installing the QEMU-NVMe, Now You can use the newest version virtual OpenChannelSSD. 
+
+i.e You can try to use LightNVM with virtual OpenChannelSSD. 
 
 
 
