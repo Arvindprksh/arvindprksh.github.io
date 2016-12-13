@@ -472,6 +472,7 @@ $ sudo make install
 $ dd if=/dev/zero of=~/blknvme bs=2G count=1 // bs*count is the total size of NVMe device.
 
 - under creating vDisk.qcow2 containing virtual machine that is including linux booting image.
+- If you want to know how to install GuestOS with vDisk.qcow2, click [my blog's QEMU - URL]()
 
 - NVMe basic setting. - my final executing command of QEMU-NVMe
 $ ~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
