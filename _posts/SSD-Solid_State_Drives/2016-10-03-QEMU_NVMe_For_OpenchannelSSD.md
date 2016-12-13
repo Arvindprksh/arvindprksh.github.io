@@ -140,7 +140,7 @@ $ sudo yum install -y libaio-devel
 
  If you install QEMU-NVMe for OpenchannelSSD, You will have to download git repository,
  
- ![](/img/Image/SSD-Solid_State_Drives/2016-10-3-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVME for OpenChannelSSD.png)
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-03-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVME for OpenChannelSSD.png)
  
  > $ git clone https://github.com/OpenChannelSSD/qemu-nvme.git   -- this is my choice.
  > OR    
@@ -342,11 +342,11 @@ NUMA host support no
 
   **From now on this Chater, what I explain is based on HOST OS.**
 
-  ![](/img/Image/SSD-Solid_State_Drives/2016-10-3-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVME for openchannelSSD configure.png)
+  ![](/img/Image/SSD-Solid_State_Drives/2016-10-03-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVME for openchannelSSD configure.png)
   
   the above image is old version 
   
-  ![](/img/Image/SSD-Solid_State_Drives/2016-10-3-QEMU_NVMe_For_OpenchannelSSD/Newest version using QEMU for OpenChannelSSD.png)
+  ![](/img/Image/SSD-Solid_State_Drives/2016-10-03-QEMU_NVMe_For_OpenchannelSSD/Newest version using QEMU for OpenChannelSSD.png)
   
   The above image is newest version in 2016.12.13
   
@@ -449,7 +449,7 @@ vDisk0.qcow2
 
  the following is image when you execute QEMU-NVMe correctly.
 
- ![](/img/Image/SSD-Solid_State_Drives/2016-10-3-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVMe.png)
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-03-QEMU_NVMe_For_OpenchannelSSD/QEMU-NVMe.png)
 
 # Summary of the entire process installing. 
 
