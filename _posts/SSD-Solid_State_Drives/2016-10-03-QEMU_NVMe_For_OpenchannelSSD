@@ -453,6 +453,8 @@ vDisk0.qcow2
 
 # Summary of the entire process installing. 
 
+This process is implemented on HOST OS.
+
 ```
 - download QEMU_NVMe for OpenChannelSSD
 $ git clone https://github.com/OpenChannelSSD/qemu-nvme.git
