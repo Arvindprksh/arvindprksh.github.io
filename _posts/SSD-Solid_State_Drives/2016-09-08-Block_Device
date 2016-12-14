@@ -19,7 +19,7 @@ First of all, I refer to [this site(blkdevarch)](https://yannik520.github.io/blk
 
 and [basic concept block device(Lecture_4_-_Storage_Systems_in_the_Kernel)](https://pc2.uni-paderborn.de/fileadmin/pc2/media/staffweb/Andre_Brinkmann/Courses/Speichersysteme_SS_2011/Lecture_4_-_Storage_Systems_in_the_Kernel.pdf) 
 
-here is the above [file(Lecture_4_-_Storage_Systems_in_the_Kernel)](//img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Lecture_4_-_Storage_Systems_in_the_Kernel.pdf)
+here is the above [file(Lecture_4_-_Storage_Systems_in_the_Kernel)](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Lecture_4_-_Storage_Systems_in_the_Kernel.pdf)
 
 
 ## Introducntion of Block device.
@@ -306,3 +306,7 @@ here is the above [file(Lecture_4_-_Storage_Systems_in_the_Kernel)](//img/Image/
 ## multi-queue block device layer and block device 
 
  If you want to know more about multi-queue, I recommend you [this site(URL)](http://ari-ava.blogspot.com/2014/07/opw-linux-block-io-layer-part-3-make.html)
+
+# Reference 
+
+  - [driver book](http://www.oreilly.com/openbook/linuxdrive3/book/) 
