@@ -15,7 +15,7 @@ meta-title:
 meta-description:
 ---
 
-I qoute paper of [F2FS : A New File system For Flash Storage](https://www.usenix.org/system/files/conference/fast15/fast15-paper-lee.pdf) from USENIX,
+I qoute paper of [F2FS : A New File system For Flash Storage](https://www.usenix.org/system/files/conference/fast15/fast15-paper-lee.pdf) from [USENIX](https://www.usenix.org/),
 
 Because I want to know how they measured Filesystem with some factor.
 
