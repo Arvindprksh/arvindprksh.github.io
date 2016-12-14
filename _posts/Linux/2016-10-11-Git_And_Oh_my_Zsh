@@ -41,7 +41,7 @@ meta-description:
   
      [theory of git](https://nolboo.kim/blog/2013/10/06/github-for-beginner/)
 
-  - site you easily understan.
+  - site you can easily understand.
   
      [theory of git](https://www.atlassian.com/git/tutorials/refs-and-the-reflog/)
 
@@ -49,7 +49,11 @@ meta-description:
 
   1. [git - the simple guide](http://git.huit.harvard.edu/guide/)
 
-  2. [ collection site of git practice](https://github.com/grayghostvisuals/practice-git)
+  2. [collection site of git practice](https://github.com/grayghostvisuals/practice-git)
+  
+# how to see git_log 
+
+  1. [Stackoverflow](http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
 
 # Practice and each command's summary.
 
@@ -66,3 +70,24 @@ meta-description:
   $ zsh  
   $ exit or bash  
 ```
+# [The Silver Search "ag"](https://github.com/ggreer/the_silver_searcher)
+
+## How to install ag
+
+  On My CentOS 7 
+  
+  > $ sduo yum install -y epel-release.noarch
+  
+  > $ sudo yum install -y the_silver_searcher
+  
+  If you want to know more, just refer to [the_silver_searcher git repository's README](https://github.com/ggreer/the_silver_searcher/blob/master/README.md)
+
+## For example, In order to search  
+
+  > $ ag "string or regular expression to search" -A 5 -B 5
+  
+  this means the result of ag is in front 5 line and back 5 line from string that ag find. 
+  
+# Reference 
+
+ - [The Silver Search "ag"](https://github.com/ggreer/the_silver_searcher)
