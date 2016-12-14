@@ -475,4 +475,4 @@ I mean, to check pr_debug, pr_err function, when i compile, I think i neet to fi
  
  add "ccflags-y := -DDEBUG" in lingtNVM's Makefile.
 
-### ![target-specific Variable Values](http://stackoverflow.com/questions/1079832/how-can-i-configure-my-makefile-for-debug-and-release-builds)
+### [target-specific Variable Values](http://stackoverflow.com/questions/1079832/how-can-i-configure-my-makefile-for-debug-and-release-builds)
