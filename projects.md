@@ -14,7 +14,7 @@ comments: true
     
     - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
     - Langugeses : C#, Java, MySQL
-    - Platforms :  Android, Windows 7, Emgu CV, Open Source(Clipper)
+    - Platforms :  Android, Windows 7, Emgu CV, [Open Source(Clipper)](http://www.angusj.com/delphi/clipper.php)
     - Tools : Visual Studio 2010, Eclipse
     - My role : developed and designed DataBase, Windows(UI) and the dish-regonition algorithm for dividing the dishes piled up into the indivisual dish
     - Description : I implemented IOT project with SAMSUNG ELECTRONICS' Home Appliances Business Department. This project,"Smart Refrigerator told the location of a food to a person who is visually impaired", targets people who visually imparied using the TTS & STT, vision.
