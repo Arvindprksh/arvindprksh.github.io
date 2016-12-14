@@ -484,6 +484,17 @@ $ ~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
 -monitor stdio
 ```
 
+later on, it is okay that I ignore the following, a littl changing setting of ./configure for verification. 
+
+Normally, if you follow the above command that is my choice. You can use NVMe. 
+
+```shell
+- it's just adding --enable-gtk --enable-spice. 
+./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmmu --enable-linux-aio --prefix=$HOME/qemu-nvme --enable-gtk --enable-spice
+make -j8
+make install
+```
+
 # Reference
 
   - [Wikipedia's NVM_Express](https://en.wikipedia.org/wiki/NVM_Express)
