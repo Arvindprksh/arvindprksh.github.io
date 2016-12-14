@@ -6,9 +6,7 @@ tag: personal
 comments: true
 ---
 
-  While I Carried out the projects, This shows you My role.
-  
-  This page shows you my personal projects.
+  While I Carried out the projects, This shows you My role. This page shows you my personal projects.
 
 ## IOT Project
 
