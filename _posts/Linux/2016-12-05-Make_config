@@ -206,6 +206,29 @@ $ ./configure
 $ make
 $ sudo make install
 $ fio -version
+
+- shell script of fio 
+
+# !/bin/zsh
+
+BS=4k(lower case)
+RW=randwrite
+
+for RDN in $(seq 0 9) 
+do
+
+fio --name=$BS-$RW-$RDN \
+ --filename=/dev/hyun \
+ --rw=$RW \
+ --bs=$BS \
+ --ioengine=libaio \
+ --numjobs=1 \
+ --iodepth=256 \
+ --direct=1 \
+ --thread \
+ --write_iops_log=$BS-$RW-$RDN \
+ --log_avg_msec=1000 \
+done
 ```
 
 # Reference 
