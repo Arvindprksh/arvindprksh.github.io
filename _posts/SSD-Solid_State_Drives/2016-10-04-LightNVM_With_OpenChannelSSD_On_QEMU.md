@@ -225,8 +225,75 @@ fb0              mem           shm                 tty18     tty34  tty50  ttyS0
  > sudo make modules_install   
  > sudo make install   
  
- **be careful**
+ **be careful** when you choose options in menuconfig
  
+ the following is based on rrpc but currently I evaluate on pblk. 
+ 
+  CONFIG_NVM=y  
+  CONFIG_NVM_DEBUG=Y  
+  CONFIG_NVM_GENNVM=y  
+  CONFIG_NVM_RRPC=y  
+  
+  The above four things is the same. 
+  
+  BUT, I divided into two cases.
+  
+  One is :
+  
+  CONFIG_BLK_DEV_NULL_BLK=m  
+  CONFIG_BLK_DEV_NVME=m  
+  
+  The other is :
+  
+  CONFIG_BLK_DEV_NULL_BLK=m  
+  CONFIG_BLK_DEV_NVME=y
+  
+  That doesn't matter When it comes to creating lightNVM targets and device. 
+  
+  **If you detect a problem. I recommend you that You will install once again after erase the several file**
+  
+  Those files is :
+  
+  **bbtable.qemu & blkbme(virtual device) & meta.qemu**
+--- 
+  but if you consider symbol dependency, when you build kernel. 
+  
+  I will explain you based on pblk
+  
+```shell
+CONFIG_NVM=y
+# Expose the /sys/module/lnvm/parameters/configure_debug interface
+CONFIG_NVM_DEBUG=y
+# Target support (required to expose the open-channel SSD as a block device)
+CONFIG_NVM_PBLK=y
+# Do not perform recovery upon boot (Disables recovery of the mapping table upon boot. Disable when using across boots)
+CONFIG_NVM_PBLK_NO_RECOV=y
+# generic media manager support (required)
+CONFIG_NVM_GENNVM=y
+# For NVMe support
+CONFIG_BLK_DEV_NVME=y
+```
+
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/pblk20 configuration1.png)
+ 
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/pblk20 configuration 2.png)
+
+ as you can see the above.
+ 
+ # For NVMe support
+ CONFIG_BLK_DEV_NVME=y has dependency of symbol. 
+ 
+ So I recommend you
+ 
+ in make menuconfig, Device Drivers-> NVM EXPRESS block device should be [*]. 
+ 
+ maybe if you want to check up what is different when it is done or not. 
+ 
+ I recommend you that 
+ 
+ you can understand olddefconfig meaning and symbol dependency. 
+ 
+  
  
 ### Second usage of lnvm on GuestOS
 
@@ -269,6 +336,8 @@ fb0              mem           shm                 tty18     tty34  tty50  ttyS0
 ```shell
  Failed to open LightNVM mgmt /dev/lightnvm/control. Error: -1  
 ```
+  
+  ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/Common Problem With lnvm.png)
 
   At that time, just change command like this
   
@@ -294,8 +363,9 @@ fb0              mem           shm                 tty18     tty34  tty50  ttyS0
  
  ```
  $ sudo ./lnvm info   
- LightNVM (1,0,0). 1 target type(s) regitstered  
+ LightNVM (1,0,0). 2 target type(s) regitstered  
  Type     Version  
+ pblk     (1,0,0) 
  rrpc     (1,0,0)  
  ```
  
@@ -307,7 +377,11 @@ fb0              mem           shm                 tty18     tty34  tty50  ttyS0
  The followings is the final command to connect among NVMe driver, media manager and target
  
  $ sudo ./lnvm init -d nvme0n1  
- $ sudo ./lnvm create -d nvme0n1 -n hyun -t rrpc (-o 0:0) 
+ $ sudo ./lnvm create -d nvme0n1 -n hyun -t rrpc (-o 0:3)
+ 
+ -o means the number of lnus.
+ 
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/A Qemu-nvme for Openchannel of CONFIG_BLK_DEV_NVME=M CONFIG_BLK_DEV_NULL_BLK=M 3.png)
 
  if you type lsblk on command line, you can check hyun device generated on blknvme with dd command. 
  
@@ -321,11 +395,11 @@ fb0              mem           shm                 tty18     tty34  tty50  ttyS0
  
 ```
 $ ls
-blknvme  Documents  meta.qemu  Pictures  qemu-nvme  Videos
-Desktop  Downloads  Music      Public    Templates
+bbtable.qemu  blknvme  meta.qemu
 ```
- 
 
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/blknvme meta_qemu bbtable_qemu.png)
+ 
 # Summary of installing lightNVM and compiling kernel on GUESTOS of QEMU-NVMe
 
  On GEUST OS (Ctrl+Alt+G)
@@ -470,3 +544,228 @@ done
  
  - [OpenChannelSSD's lnvm git repository README.md](https://github.com/OpenChannelSSD/lnvm/blob/master/README.md)
  
+## Appendix A : build Kernel to latest version 
+
+<!-- this part is GuestOS -->
+  **AS of 20161123 below image is changed for pblk on officail site of lightNVM**
+  
+  In order to work on lightnvm, I need kernel above version 4.4+.**
+
+  I will install kernel version latest version 
+   
+ ![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/QEMU-NVME for openchannelSSD to compile new kernel version.png)
+ 
+   **you remeber the above image is change to fit pblk on the officail site of lightNVM**
+   
+   **In my build process**
+   
+```shell
+   su 
+   chmod u+w /etc/sudoers
+   vim /etc/sudoers
+   chmod u-w /etc/sudoers
+   sudo yum install -y gcc bc openssl-devel ncurses-devel pciutils libudev-devel
+   wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.8.tar.xz
+   xz -cd linux-4.X.tar.xz | tar xvf -
+   $ cp ./Downloads/config-4.8.0-1.el7.elrepo.x86_64 ./linux-4.8/.config
+   $ cd linux-4.8/
+   (make oldconfig)
+   $ make menuconfig
+   $ make
+   $ make modules_install install
+   
+   ($ grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2)
+   $ grub2-editenv list
+   $ grub2-set-default 0
+ 
+   $ sudo grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+[sudo] password for hyunyoung.lee: 
+-- configure procedure of booting kernel.
+$ sudo grub2-editenv list
+saved_entry=CentOS Linux (3.10.0-327.el7.x86_64) 7 (Core)
+   $ sudo grub2-set-default 0 
+```
+
+# kernel build to latest version with OpenchannelSSD
+
+<!-- kernel 4.8 -->
+
+![](/img/Image/SSD-Solid_State_Drives/2016-10-04-LightNVM_With_OpenChannelSSD_On_QEMU/GuestOS CentOS 7 to build kernel four eight 2.png)
+
+## Appendix B
+<!-- this part is HostOS-->
+The following is build mainline kerenl of ELRepo on HostOS
+  
+```shell
+$ sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+$ sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+Retrieving http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:elrepo-release-7.0-2.el7.elrepo  ################################# [100%]
+$ sudo yum --enablerepo=elrepo-kernel install kernel-ml
+Loaded plugins: fastestmirror, langpacks
+elrepo                                                   | 2.9 kB     00:00     
+elrepo-kernel                                            | 2.9 kB     00:00     
+(1/2): elrepo/primary_db                                   | 376 kB   00:00     
+(2/2): elrepo-kernel/primary_db                            | 1.6 MB   00:00     
+Loading mirror speeds from cached hostfile
+ * base: centos-distro.1gservers.com
+ * elrepo: elrepo.org
+ * elrepo-kernel: elrepo.org
+ * epel: linux.mirrors.es.net
+ * extras: mirrors.usc.edu
+ * updates: centos.sonn.com
+Resolving Dependencies
+--> Running transaction check
+---> Package kernel-ml.x86_64 0:4.8.1-1.el7.elrepo will be installed
+--> Finished Dependency Resolution
+......
+
+$ sudo yum --enablerepo=elrepo-kernel update
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos-distro.1gservers.com
+ * elrepo: repos.lax-noc.com
+ * elrepo-kernel: repos.lax-noc.com
+ * epel: mirror.prgmr.com
+ * extras: mirrors.usc.edu
+ * updates: centos.sonn.com
+Resolving Dependencies
+--> Running transaction check
+---> Package python-perf.x86_64 0:3.10.0-327.36.2.el7 will be updated
+---> Package python-perf.x86_64 0:4.8.1-1.el7.elrepo will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch        Version                  Repository          Size
+================================================================================
+Updating:
+ python-perf      x86_64      4.8.1-1.el7.elrepo       elrepo-kernel      443 k
+
+Transaction Summary
+================================================================================
+......
+```
+<!--
+# the following is my record when i tried to this at first.
+-->
+<!--
+---------------------------------------------------------------------------------------------------------------------------  
+  yum install -y gcc gcc-c++ libtool libaio-devel glib2-devel pixman-devel virt-manager virt-viewer gtk2-devel (for Qemu-kvm)
+  yum install -y gcc bc openssl-devel ncurses-devel pciutils libudev-devel ( build kernel)
+------------------------------------------------------------------------------------------------------------------------ 
+  right away after installing QEMU-NVMe for Openchannel, I Checked up state of kernel log, device and pci.
+  
+  pre-requisite
+  
+  > sudo yum install -y kernel-devel zlib-devel SDL libaio-devel gtk2-devel
+     
+  executing command 
+  
+  > git clone https://github.com/OpenChannelSSD/qemu-nvme.git  OR  wget https://github.com/OpenChannelSSD/qemu-nvme/archive/master.zip  
+  > ./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmmu --enable-linux-aio --prefix=$HOME/qemu-nvme  
+  > make -j8  
+  > make insatll  
+  > dd if=/dev/zero of=~/blknvme bs=1G count=1  
+  > LINUXVMFILE=/var/lib/libvirt/images/vDisk0.qcow2  
+  >  ~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
+-hda $LINUXVMFILE \
+-drive file=~/blknvme,if=none,id=mynvme \
+-device nvme,drive=mynvme,serial=deadbeef,lver=1,lmtype=0 \
+-monitor stdio 
+
+OR
+
+~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
+-hda /var/lib/libvirt/images/vDisk0.qcow2 \
+-drive file=~/blknvme,if=none,id=mynvme \
+-device nvme,drive=mynvme,serial=deadbeef,lver=1,lmtype=0 \
+-monitor stdio
+
+   **From now on, I will expain how to manage, create, delete and manage LightNVM targets and devices with the lightnvm cli tool(lnvm)**
+   
+   > git clone https://github.com/OpenChannelSSD/lnvm.git OR  wget https://github.com/OpenChannelSSD/lnvm/archive/master.zip  
+   > cd lnvm  
+   > make   
+   > sudo make install   
+   (with sudo privilge in lnvm diretory)  
+   > sudo ./lvnm devices 
+   > sudo ./lvnm info (You don't have to this command)  
+   > sudo init -d $Device(nvme0n1)  
+   > sudo create -d nvme0n1 -n hyun -t rrpc (-o 0:0)  
+   If you neet remove target instance 
+   > sudo ./lnvm remove targetname. 
+
+-->
+<!-- 
+for executing QEMU-NVMe
+
+yum install -y gcc gcc-c++ libtool libaio-devel glib2-devel pixman-devel virt-manager virt-viewer gtk2-devel gtk3-devel spice-server-devel spice-protocol-devel
+wget https://github.com/OpenChannelSSD/qemu-nvme/archive/master.zip
+./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmmu --enable-linux-aio --prefix=$HOME/qemu-nvme --enable-gtk --enable-spice
+make -j8
+make install
+
+dd if=/dev/zero of=~/blknvme bs=1G count=1
+LINUXVMFILE=/var/lib/libvirt/images/centos7.img
+LINUXVMFILE=/var/lib/libvirt/images/centos7.qcow2
+
+  ~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
+-hda /var/lib/libvirt/images/centos7.img \
+-drive file=~/blknvme,if=none,id=mynvme \
+-device nvme,drive=mynvme,serial=deadbeef,lver=1,lmtype=0,lba_index=3,nlbaf=5,lnum_ch=1,namespaces=1 \
+-monitor stdio -display gtk
+-->
+
+<!--
+for build mainline kernel
+
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+yum --enablerepo=elrepo-kernel install kernel-ml
+yum --enablerepo=elrepo-kernel update
+ 
+grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2
+grub2-editenv list
+grub2-set-default 0
+-->
+
+
+<!--
+Host OS:
+CentOS7 Server with GUI, ethernet & NTP enabled (host name by DNS), standard partition with /home and swap partitions removed
+virt-manager (mem=4G, disk=32G)
+
+for compiling kernel.
+
+yum install -y gcc bc openssl-devel ncurses-devel pciutils libudev-devel
+wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.8.tar.xz (*1)
+Host OS:
+scp config-4.8.0-xxx root@vIP:~/
+Guest OS:
+cp ~/config-4.8.0-xxx /usr/src/kernels/linux-4.8/.config
+make oldconfig
+make menuconfig
+make
+make modules_install install
+grep ^menuentry /boot/grub2/grub.cfg | cut –d\’ –f2 
+grub2-editenv list
+grub2-set-default 0
+
+
+Guest OS: (Ctrl+Alt+G)
+wget https://github.com/linux-nvme/nvme-cli/archive/master.zip
+wget https://github.com/OpenChannelSSD/lnvm/archive/master.zip
+yum install -y gcc bc openssl-devel ncurses-devel pciutils libudev-devel
+-->
+
+<!-- 
+  pre-requisites to install QEMU-KVM and QEMU-NVME 
+  yum install -y gcc gcc-c++ libtool libaio-devel glib2-devel pixman-devel virt-manager virt-viewer gtk2-devel gtk3-devel spice-server-devel spice-protocol-devel
+-->
+
