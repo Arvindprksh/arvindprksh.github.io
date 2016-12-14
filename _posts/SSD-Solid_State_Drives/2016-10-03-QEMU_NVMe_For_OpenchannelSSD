@@ -490,6 +490,8 @@ $ ~/qemu-nvme/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm \
 
   - [QEMU's changeLog 1.6](http://wiki.qemu.org/ChangeLog/1.6)
   
+  - [lightnvm.io](http://lightnvm.io/)
+  
   - [OpenChannelSSD's QEMU-NVMe git](https://github.com/OpenChannelSSD/qemu-nvme)
   
   - [OpenChannelSSD's QEMU-NVMe git README](https://github.com/OpenChannelSSD/qemu-nvme/blob/master/README.md)
