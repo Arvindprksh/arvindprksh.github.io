@@ -2,11 +2,13 @@
 layout: page
 title: Projects
 subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
+tag: personal 
 comments: true
 ---
 
-  while I Carried out the projects, This shows you My role.
-
+  While I Carried out the projects, This shows you My role.
+  
+  This page shows you my personal projects.
 
 ## IOT Project
 
@@ -98,7 +100,7 @@ comments: true
     - Description :
     현존하는 컴파일러와 같이 나만의 C언어를 설계하고, 이 언어로 생성된 코드를 syntax를 검사하여 파스 트리를 출력하는 프로젝입니다. 
 
-  - BigDat Visualization
+  - BigData Visualization
   
     - Langugeses : C/C++, Javascript.
     - Platforms : windows 7. 
