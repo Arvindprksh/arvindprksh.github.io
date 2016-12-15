@@ -72,8 +72,8 @@ css: "/css/aboutme.css"
 
 <form action="https://formspree.io/le32146@gmail.com" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
-  <p><strong>BUT, I really recommend you to use email-icon in the bottom of this page, I check up email of the bottom icon much better than this form(quick email service),Besides Sometimes this quick email service cannot work.</strong></p> 
-  <p>So, if you cannot send me a message using the form below, Please click the email icon in bottom of this page. But if this quick email service works, use this<a href="mailto:le32146@gmail.com">(my email).</a></p>
+  <p><strong>BUT, I really recommend you to use Email-icon in the bottom of this page, I check up Email of the bottom icon much better than this form(quick Email service). Besides, Sometimes this quick Email service cannot work.</strong></p> 
+  <p>So, if you cannot send me a message using the form below, Please click the Email icon in bottom of this page. But if this quick Email service works, use this<a href="mailto:le32146@gmail.com">(my email).</a></p>
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
