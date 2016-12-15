@@ -8,9 +8,9 @@ comments: true
 
 # How to make code block in Jekyll and Markdown
 
-   ```c(the used code's name)  
-1. .....code  
-   ```  
+   >```c(the used code's name)    
+   >.....code    
+   >```    
    
 ```c
 /**
@@ -21,7 +21,11 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 ```
 
-2. -for indicating Linenumber, {% highlight c(used code's name) linenos %} code {% endhighlight %}
+## For indicating linenumber
+
+   > {% highlight c(used code's name) linenos %}    
+   > code   
+   > {% endhighlight %}   
 
 {% highlight c linenos %}
 /**
@@ -32,7 +36,9 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
-3. -for indicating Linenumber, {% highlight c linenos=table %} code {% endhighlight %}
+   > {% highlight c(the used code's name) linenos=table %}   
+   > code   
+   > {% endhighlight %}  
 
 {% highlight c linenos=table %}
 /**
@@ -48,7 +54,11 @@ int* twoSum(int* nums, int numsSize, int target) {
  you can check [this stackoverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
 
 
-4. -for indicating Linenumber, {% highlight c linenos %} ```c code ``` {% endhighlight %}
+   > {% highlight c(the used code's name) linenos %}   
+   > ```c(the used code's name)     
+   > code     
+   > ```   
+   > {% endhighlight %}
 
 {% highlight c linenos %}
 ```c 
@@ -61,7 +71,11 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
-5. -for indicating Linenumber, {% highlight c linenos=table %} ```c code ``` {% endhighlight %}
+   > {% highlight c(the used code's name) linenos=table %}   
+   > ```c(the used code's name)  
+   > code   
+   > ```   
+   > {% endhighlight %}
 
 {% highlight c linenos=table %}
 ```c 
@@ -82,3 +96,7 @@ int* twoSum(int* nums, int numsSize, int target) {
   - [The Official Liquid Site](https://shopify.github.io/liquid/) Means an open-source template language. 
   
   - [The official Pygments site](http://pygments.org/) is short for Python syntax highlighter.
+  
+  - [Jekyll git repository](https://github.com/jekyll/jekyll)
+  
+  - [Github Guide of Markdown Syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
