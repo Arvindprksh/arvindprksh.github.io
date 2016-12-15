@@ -89,7 +89,7 @@ bigimg:
   
   I cannot render window of Search Engine as follows. 
   
-  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/Search engin withou result.png)
+  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/Search engine without result.png)
   
   **So, Now I will explain to you how to fix it**
   
@@ -123,8 +123,11 @@ bigimg:
 
   After the above code, I can get a complet Google Custom Search Engine in my Gitpage like this. 
   
-  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
+  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/a complete google custom search engine.png)
   
+  And then I can search for what I want in my Gitpage like this.
+  
+  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
 
 # Reference
 
