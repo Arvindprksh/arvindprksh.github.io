@@ -1,0 +1,87 @@
+---
+layout: post
+title: Test of Code block in Jekyll  
+subtitle: This is just test for me to be familiar with Jekyll and Markdwon. 
+tags: [code block, jekyll, markdown, example]
+permalink: /2016/12/14/Code_Block_Of_Jekyll/
+comments: true
+show-avatar: false
+nav-short: true
+---
+
+# How to make code block in Jekyll and Markdown
+
+   ```c(the used code's name)
+1. code
+   ```
+   
+```c
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    
+}
+```
+
+2. -for indicating Linenumber, {% highlight c(used code's name) linenos %} code {% endhighlight %}
+
+{% highlight c linenos %}
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    
+}
+{% endhighlight %}
+
+3. -for indicating Linenumber, {% highlight c linenos=table %} code {% endhighlight %}
+
+{% highlight c linenos=table %}
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    
+}
+{% endhighlight %}
+
+ - linenos=table option is comportable with copy contents, this means when you copy code block, You can select only the code. without linenumber
+
+ you can check [this stackoverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
+
+
+4. -for indicating Linenumber, {% highlight c linenos %} ```c code ``` {% endhighlight %}
+
+{% highlight c linenos %}
+```c 
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    
+}
+```
+{% endhighlight %}
+
+5. -for indicating Linenumber, {% highlight c linenos=table %} ```c code ``` {% endhighlight %}
+
+{% highlight c linenos=table %}
+```c 
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    
+}
+```
+{% endhighlight %}
+
+
+# Reference 
+
+  - [StackOverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
+  
+  - [The Official Liquid Site](https://shopify.github.io/liquid/) Means an open-source template language. 
+  
+  - [The official Pygments site](http://pygments.org/) is short for Python syntax highlighter.
