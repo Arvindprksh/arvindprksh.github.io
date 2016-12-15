@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Search"
-
 subtitle: Enter the keyword that you search in hyunyoung2 
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
