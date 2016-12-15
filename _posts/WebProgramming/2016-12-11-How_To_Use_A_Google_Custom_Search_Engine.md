@@ -128,6 +128,31 @@ bigimg:
   And then I can search for what I want in my Gitpage like this.
   
   ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
+  
+  
+# Summary of the entire process about how to use a Google Custom Search Engine
+
+  finally, I made a page for Search Engine, and then you put the code below into the page for Search Engine
+  
+  search.md
+  
+{% highlight javascript linenos=table %}
+<div id="google-custom-search">
+<script>
+  (function() {
+    var cx = 'USER cx Number. ';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox></gcse:searchbox>
+<gcse:searchresults></gcse:searchresults>
+</div>
+{% endhighlight %}
 
 # Reference
 
