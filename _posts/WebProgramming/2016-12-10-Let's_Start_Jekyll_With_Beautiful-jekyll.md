@@ -105,7 +105,9 @@ nav-short:
   
   - subtitle : Short description of page or bolg post that goes under the title. 
   
-  ![]()
+  ![](/img/Image/WebProgramming/2016-12-10-Let-s_Start_Jekyll_With_Beautiful-jekyll/bigimg_title_subtitle_in_jekyll.png)
+  
+   i.e You can check up title and subtile in the above image.
   
   - css : List of CSS files to include in the page 
   
