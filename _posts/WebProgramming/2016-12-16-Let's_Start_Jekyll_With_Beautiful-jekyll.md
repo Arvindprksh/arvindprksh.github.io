@@ -93,7 +93,7 @@ nav-short:
 ```
   As you can see the above example, YAML front matter has many types, So You have to look at [jekyll's official site](http://jekyllrb.com/docs/frontmatter/), if you want to sepcifically know about it. 
  
-  But from now on, I will explain to you guys about that type of YAML front matter that I will use in my static website based on jekyll with beautiful.
+  But from now on, I will explain to you guys about that type of YAML front matter that I will use in my static website based on jekyll with [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll).
   
   What I explain to you about some of YAML front matter is :
   
@@ -118,6 +118,6 @@ nav-short:
   
   - [Beautiful-jekyll's git repository explaing the YAML front matter on README](https://github.com/daattali/beautiful-jekyll/blob/master/README.md#yaml-front-matter-parameters)
   
-  
+  - [Beautiful-jekyll's git](https://github.com/daattali/beautiful-jekyll)
   
   
