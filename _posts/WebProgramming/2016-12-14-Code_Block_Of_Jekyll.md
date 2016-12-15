@@ -4,8 +4,6 @@ title: Test of Code block in Jekyll
 subtitle: This is just test for me to be familiar with Jekyll and Markdwon. 
 permalink: /2016/12/14/Code_Block_Of_Jekyll/
 comments: true
-show-avatar: false
-nav-short: true
 ---
 
 # How to make code block in Jekyll and Markdown
