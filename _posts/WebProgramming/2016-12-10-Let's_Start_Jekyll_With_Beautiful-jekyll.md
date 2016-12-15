@@ -4,7 +4,7 @@ title: Let's start jeklly with beautiful-jekyll
 subtitle: What is the YAML front matter ?
 category: WebProgramming
 tags: [jekyll, YAML_front_matter, beautiful-jekyll]
-permalink: /2016/12/16/Big_Image_In_beatiful_Jekyll/
+permalink: /2016/12/10/Let's_Start_Jekyll_With_Beautiful-jekyll/
 comments: true
 social-share: false
 bigimg: 
