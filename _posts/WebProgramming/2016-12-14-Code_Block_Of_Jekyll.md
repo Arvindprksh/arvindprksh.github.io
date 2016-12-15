@@ -2,15 +2,16 @@
 layout: post
 title: Test of Code block in Jekyll  
 subtitle: This is just test for me to be familiar with Jekyll and Markdwon. 
+tags: [jekyll, markdown, Pygments, highlighter, code block]
 permalink: /2016/12/14/Code_Block_Of_Jekyll/
 comments: true
 ---
 
 # How to make code block in Jekyll and Markdown
 
-   >```c(the used code's name)    
-   >.....code    
-   >```    
+   > "```c(the used code's name)"    
+   > ".....code"    
+   > "```"    
    
 ```c
 /**
@@ -23,9 +24,9 @@ int* twoSum(int* nums, int numsSize, int target) {
 
 ## For indicating linenumber
 
-   > {% highlight c(used code's name) linenos %}    
-   > code   
-   > {% endhighlight %}   
+   > "{% highlight c(used code's name) linenos %}"    
+   > "code"   
+   > "{% endhighlight %}"   
 
 {% highlight c linenos %}
 /**
@@ -54,11 +55,11 @@ int* twoSum(int* nums, int numsSize, int target) {
  you can check [this stackoverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
 
 
-   > {% highlight c(the used code's name) linenos %}   
-   > ```c(the used code's name)     
-   > code     
-   > ```   
-   > {% endhighlight %}
+   > "{% highlight c(the used code's name) linenos %}"   
+   > "```c(the used code's name)"     
+   > "code"     
+   > "```"   
+   > "{% endhighlight %}"
 
 {% highlight c linenos %}
 ```c 
@@ -71,11 +72,11 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
-   > {% highlight c(the used code's name) linenos=table %}   
-   > ```c(the used code's name)  
-   > code   
-   > ```   
-   > {% endhighlight %}
+   > "{% highlight c(the used code's name) linenos=table %}"   
+   > "```c(the used code's name)"
+   > "code"   
+   > "```"   
+   > "{% endhighlight %}"
 
 {% highlight c linenos=table %}
 ```c 
