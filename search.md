@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Search"
+css: /css/search.css
 subtitle: Enter the keyword that you search in hyunyoung2 
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
@@ -11,7 +12,6 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
-<!-- css: "/css/search.css" -->
 
 # Search hyunyoung2.github.io for what you want here
 
