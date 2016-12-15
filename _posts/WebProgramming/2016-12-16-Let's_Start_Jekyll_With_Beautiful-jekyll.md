@@ -95,7 +95,7 @@ nav-short:
  
   But from now on, I will explain to you guys about that type of YAML front matter that I will use in my static website based on jekyll with beautiful.
   
-  What I explain to you :
+  What I explain to you about some of YAML front matter is :
   
   **tags, catergory, permanlink, comments, bigimage**
   
