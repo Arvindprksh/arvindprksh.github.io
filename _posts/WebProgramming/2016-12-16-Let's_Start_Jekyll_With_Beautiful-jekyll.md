@@ -29,19 +29,20 @@ bigimg:
   
   Now I will organize my using Jekyll and everything I update in beatiful-Jekyll.
   
-    - [ ] first, How to use big Image, 
+  
+  -[ ] first, How to use big Image, 
     
-    - [ ] Second, How to use a Custom google Search engine. 
+  -[ ] Second, How to use a Custom google Search engine. 
     
-    - [ ] Third, How to use Tags and categories. 
+  -[ ] Third, How to use Tags and categories. 
     
-    - [ ] fourth, What is the DISQUS ?
+  -[ ] fourth, What is the DISQUS ?
     
-    - [ ] fifth, How can I do hightlither When I want to use codeblock in markdown. 
+  -[ ] fifth, How can I do hightlither When I want to use codeblock in markdown. 
     
-    - [ ] sixth, What is the permalink option ?
+  -[ ] sixth, What is the permalink option ?
     
-    - [ ] How to use markdown in githubpage.
+  -[ ] How to use markdown in githubpage.
     
 
 # big Image post 
