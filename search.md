@@ -13,7 +13,6 @@ bigimg:
 ---
 
 css: /css/search.css
-
 # Search hyunyoung2.github.io for what you want here
 
 ### Using the Amazing Google
@@ -32,7 +31,6 @@ css: /css/search.css
   })();
 </script>
 <gcse:searchbox></gcse:searchbox>
-
 </div>
 
 <!-- 
