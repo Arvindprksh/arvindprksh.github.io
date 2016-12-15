@@ -37,7 +37,7 @@ bigimg:
 - [ ] Sixth, What is the permalink option ?
 - [ ] Seventh, How to use markdown in githubpage.
     
-# big Image post 
+# Jekyll with Beatiful-jekyll
 
   If you use beatiful-jekyll, It's so easy. 
   
