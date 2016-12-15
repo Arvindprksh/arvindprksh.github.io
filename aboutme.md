@@ -76,13 +76,13 @@ css: "/css/aboutme.css"
   <p>So, if you cannot send me a message using the form below, Please click the Email icon in bottom of this page. But if this quick Email service works, use this<a href="mailto:le32146@gmail.com">(my email).</a></p>
   <div class="row">
     <div class="col-xs-6">
-      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Emailtest" title="Email">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Your Email">
     </div>
     <div class="col-xs-6">
-      <input type="text" name="name" class="form-control input-lg" placeholder="Nametest" title="Name">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Your Name">
     </div>
   </div>
-  <input type="hidden" name="_subject" value="New submission from deanattali.com">
+  <input type="hidden" name="_subject" value="New submission from hyunyoung2.github.io">
   <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
