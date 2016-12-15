@@ -19,7 +19,7 @@ bigimg:
 
 
 
-# What is the google custom Search Enginge. 
+## What is the google custom Search Enginge. 
 
   This is awesome, When I studied Natural Languge, I was thinking about search engine, How can I increase accuracy of searching engine. 
   
@@ -44,7 +44,7 @@ bigimg:
   
   Well, Let's start how to make a Google Custom Search Engine.
  
-# My Google Custom Search Engine
+## My Google Custom Search Engine
 
  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
   
@@ -54,13 +54,13 @@ bigimg:
  
  From now on, I would like to share my experience and errors that I experienced.
  
-## First, You have to make Search page. 
+### First, You have to make Search page. 
 
  I make a Search page using Markdown,
  
  ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/Seach page.png)
 
-## Second, You have to copy and paste A Google Custom Search Engine Code from your Google account. 
+### Second, You have to copy and paste A Google Custom Search Engine Code from your Google account. 
 
   The code below you can get from your Google Custome Search Engine.
   
@@ -74,7 +74,7 @@ bigimg:
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
@@ -111,7 +111,7 @@ bigimg:
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
@@ -128,33 +128,8 @@ bigimg:
   And then I can search for what I want in my Gitpage like this.
   
   ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
-  
-  
-# Summary of the entire process about how to use a Google Custom Search Engine
 
-  finally, I made a page for Search Engine, and then you put the code below into the page for Search Engine
-  
-  search.md
-  
-{% highlight javascript linenos=table %}
-<div id="google-custom-search">
-<script>
-  (function() {
-    var cx = 'USER cx Number. ';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:searchbox></gcse:searchbox>
-<gcse:searchresults></gcse:searchresults>
-</div>
-{% endhighlight %}
-
-# Reference
+## Reference
 
  - [Justin James's adding google custom search engine](http://digitaldrummerj.me/blogging-on-github-part-7-adding-a-custom-google-search/)
  
