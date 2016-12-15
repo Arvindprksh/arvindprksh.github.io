@@ -5,7 +5,7 @@ subtitle: Difficulty - Easy
 tags: [leet code, easy, Algorithm, c, strlen]
 permalink: /2016/10/24/344_Reverse_String/
 comments: true
-bigimg: /img/Image/BigImages/carmel.jpg
+bigimg: /img/Image/BigImages/sanfrancisco.jpg
 ---
 
 # Agenda
