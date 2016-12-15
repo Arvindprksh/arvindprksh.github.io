@@ -30,7 +30,7 @@ bigimg:
   Now I will organize my using Jekyll and everything I update in beatiful-Jekyll.
   
 - [ ] First, How to use big Image, 
-- [ ] Second, How to use a Custom google Search engine. 
+- [x] Second, How to use a Custom google Search engine. (2016.12.15) 
 - [ ] Third, How to use Tags and categories. 
 - [ ] Fourth, What is the DISQUS ?
 - [ ] Fifth, How can I do hightlither When I want to use codeblock in markdown. 
