@@ -8,9 +8,9 @@ comments: true
 
 # How to make code block in Jekyll and Markdown
 
-   ```c(the used code's name)
-1. code
-   ```
+   ```c(the used code's name)  
+1. code  
+   ```  
    
 ```c
 /**
