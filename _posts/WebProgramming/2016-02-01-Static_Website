@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Static Website
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Static Website with Jekyll
+subtitle: What is the Jekyll ?
+tags: [jekyll, static website]
+permalink: /2016/02/01/Static_Website/
+comments: true
 ---
 
 I recommend [this site](http://jekyllbootstrap.com/lessons/jekyll-introduction.html) for beginners to start jekyll. 
@@ -45,3 +37,10 @@ Jekyll은 static website generator이고 github pages을 생성하는 엔진으�
 ![](/img/Image/WebProgramming/2016-02-01-Static_Website/Jekyll2.png)
 ![](/img/Image/WebProgramming/2016-02-01-Static_Website/Jekyll3.png)
 ![](/img/Image/WebProgramming/2016-02-01-Static_Website/Jekyll_last.png)
+
+
+# Reference 
+
+ - [Jekyll's theme](http://jekyll.tips/templates/) shows you that kind of Jekyll's Theme
+ 
+ - [Static generator's types](https://www.staticgen.com/) shows you how many types there is as static site generator.
