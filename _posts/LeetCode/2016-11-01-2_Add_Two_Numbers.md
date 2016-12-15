@@ -2,9 +2,9 @@
 layout: post
 title: 2. Add Two Numbers
 subtitle: Difficulty - Medium
-tags:
+tags: [Leet-code, medium, algorithm, c, List]
 permalink: /2016/11/01/2_Add_Two_Numbers/
-comments:
+comments: true
 ---
 
 
