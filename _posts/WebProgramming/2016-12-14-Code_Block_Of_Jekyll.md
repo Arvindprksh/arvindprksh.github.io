@@ -2,7 +2,7 @@
 layout: post
 title: Test of Code block in Jekyll  
 subtitle: This is just test for me to be familiar with Jekyll and Markdwon. 
-tags: [code block, jekyll, markdown, example]
+tags: [code-block, jekyll, markdown, example]
 permalink: /2016/12/14/Code_Block_Of_Jekyll/
 comments: true
 show-avatar: false
