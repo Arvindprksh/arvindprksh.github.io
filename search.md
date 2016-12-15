@@ -22,8 +22,10 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:searchbox></gcse:searchbox>
-<gcse:searchresults></gcse:searchresults>
+
 </div>
 
-<!-- (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+<!-- 
+<gcse:searchresults></gcse:searchresults>
+(document.location.protocol == 'https:' ? 'https:' : 'http:') +
         -->
