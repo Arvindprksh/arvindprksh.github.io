@@ -2,9 +2,9 @@
 layout: post
 title: 344. Reverse String
 subtitle: Difficulty - Easy
-tags:
+tags: [leet code, easy, Algorithm, c, strlen]
 permalink: /2016/10/24/344_Reverse_String/
-comments:
+comments: true
 ---
 
 # Agenda
