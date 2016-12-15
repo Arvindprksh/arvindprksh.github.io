@@ -101,3 +101,5 @@ int* twoSum(int* nums, int numsSize, int target) {
   - [Jekyll git repository](https://github.com/jekyll/jekyll)
   
   - [Github Guide of Markdown Syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  
+  - [Types of Syntax Highlighter in Markdown](https://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown)
