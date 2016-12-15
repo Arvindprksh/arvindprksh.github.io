@@ -114,7 +114,7 @@ nav-short:
    i.e, You can make your own css in your git repository that has static website generator(jekyll).
  
   
-## Reference. 
+## Reference 
 
   - [Jekyll Front Matter](http://jekyllrb.com/docs/frontmatter/)
   
