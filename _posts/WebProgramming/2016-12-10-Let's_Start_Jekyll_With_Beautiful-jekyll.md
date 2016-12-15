@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's start jeklly with beautiful-jekyll.
+title: Let's start jeklly with beautiful-jekyll
 subtitle: What is the YAML front matter ?
 category: WebProgramming
 tags: [jekyll, YAML_front_matter, beautiful-jekyll]
