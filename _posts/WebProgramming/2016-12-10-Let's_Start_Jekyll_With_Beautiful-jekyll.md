@@ -17,7 +17,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-# Beautiful-jekyll
+## Beautiful-jekyll
 
   this is so greate template of jekyll, it is so comportable and easy.
   
@@ -37,7 +37,7 @@ bigimg:
 - [ ] Sixth, What is the permalink option ?
 - [ ] Seventh, How to use markdown in githubpage.
     
-# Jekyll with Beatiful-jekyll
+## Jekyll with Beatiful-jekyll
 
   If you use beatiful-jekyll, It's so easy. 
   
@@ -45,7 +45,7 @@ bigimg:
   
   first, let's know what is the front matter
   
-# [YAML front matter](http://jekyllrb.com/docs/frontmatter/)  ("parameters" for a page)
+## [YAML front matter](http://jekyllrb.com/docs/frontmatter/)  ("parameters" for a page)
  
   I quote [Front Matter](http://jekyllrb.com/docs/frontmatter/) of the officail site of Jekyll.
   
@@ -114,7 +114,7 @@ nav-short:
    i.e, You can make your own css in your git repository that has static website generator(jekyll).
  
   
-# Reference. 
+## Reference. 
 
   - [Jekyll Front Matter](http://jekyllrb.com/docs/frontmatter/)
   
