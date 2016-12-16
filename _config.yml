@@ -29,6 +29,9 @@ navbar-links:
   About Me: "aboutme"
   Resume: "resume"
   Search: "search"
+  tag: "tags"
+  categories: "categories"
+  
 
 
 #    - SSD(Solid-State Device): ""
