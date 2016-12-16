@@ -123,6 +123,8 @@ bigimg: /Your Image Path/filename of image
 .......
 bigimg: 
   - "/Your Image Path/filename of image" : "comment"
+  - "/Your Image Path/filename of image" : "comment"
+  - "/Your Image Path/filename of image" : "comment"
 ---  
 ``` 
   
