@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Category and Tags in jekyll
+title: making a list of category and tags in jekyll
 subtitle: How can I automatically make a table of content using Category and Tags ?
 category: WebProgramming
 tags: [jekyll, category, tags, beautiful-jekyll, static_website, gitpage]
@@ -11,7 +11,7 @@ bigimg:
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
 
-# What is the category and tags in jekyll ?
+## 
 
 
 
