@@ -1,17 +1,25 @@
 ---
 layout: post
-title: Test of Code block in Jekyll  
-subtitle: This is just test for me to be familiar with Jekyll and Markdwon. 
-tags: [jekyll, markdown, Pygments, highlighter, code block]
-permalink: /2016/12/14/Code_Block_Of_Jekyll/
+title: Test of Code block in Jekyll
+subtitle: This is test for code block in jekyll and Markdown
+category: WebProgramming
+tags: [jekyll, code_block, beautiful-jekyll, highlighter, static_website, gitpage]
+permalink: /2016/12/14/How_To_Use_Code_Block_Of_Jekyll/
 comments: true
+social-share: false
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
-# How to make code block in Jekyll and Markdown
+## How to make code block in Jekyll and Markdown
 
-   > "```c(the used code's name)"      
-   > ".....code"          
-   > "```"        
+ > 1. 
+ 
+   {% highlight markdown linenos %}
+   ```c(the used code's name)"      
+   .....code          
+   ```        
+   {% endhighlight %}
    
 ```c
 /**
@@ -21,7 +29,7 @@ int* twoSum(int* nums, int numsSize, int target) {
     
 }
 ```
-
+<!---
 ## For indicating linenumber
 
    > "{% highlight c(used code's name) linenos %}"    
@@ -89,8 +97,9 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
+-->
 
-# Reference 
+## Reference 
 
   - [StackOverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
   
