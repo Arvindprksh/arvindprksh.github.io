@@ -4,7 +4,7 @@ title: Big Image in Beautiful-jekyll for my gitpage
 subtitle: How Can I deploy my picture in jekyll template of beautiful-jekyll ?
 category: WebProgramming
 tags: [jekyll, bigimage, beautiful-jekyll, static_website, gitpage]
-permalink: /2016/12/11/How_To_Use_A_Google_Custom_Search_Engine/
+permalink: /2016/12/16/Big_Image_In_beatiful_Jekyll/
 comments: true
 social-share: false
 bigimg: 
