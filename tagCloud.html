@@ -3,7 +3,7 @@ layout: page
 title: "by Tag Cloud"
 ---
 
-
+<!--
 {% assign tags = site.categories | sort %}
 {% assign baseurl = include.baseurl %}
 {% assign increaseFont = include.tagCloud %}
@@ -30,3 +30,13 @@ title: "by Tag Cloud"
 
 {% endfor %}
 </div>
+-->
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
