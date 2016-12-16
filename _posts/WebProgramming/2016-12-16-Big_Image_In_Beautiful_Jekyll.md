@@ -4,7 +4,6 @@ title: Big Image in Beautiful-jekyll for my gitpage
 subtitle: How Can I deploy my picture in jekyll template of beautiful-jekyll ?
 category: WebProgramming
 tags: [jekyll, bigimage, beautiful-jekyll, static_website, gitpage]
-permalink: /2016/12/16/Big_Image_In_Beautiful_Jekyll/
 comments: true
 social-share: false
 bigimg: 
@@ -16,6 +15,8 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
+
+permalink: /2016/12/16/Big_Image_In_Beautiful_Jekyll/
 
 ## big image on my git page
 
