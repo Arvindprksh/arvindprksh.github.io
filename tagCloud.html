@@ -42,8 +42,8 @@ title: "by Tag Cloud"
 </span>
 {% endfor %}
 -->
-{% for category in site.categories %}
-    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size }}%">
+{% for category in site.tags %}
+    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.tags.size }}%">
         <a href="/{{ category | first | slugize }}/">
             {{ category | first }}
         </a>
