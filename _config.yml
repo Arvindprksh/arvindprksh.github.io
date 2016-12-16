@@ -31,7 +31,7 @@ navbar-links:
   Search: "search"
   tag: "tags"
   categories: "categories"
-  tag cloud: "tagCloud"
+  tagcloud: "tagCloud"
   
 
 
