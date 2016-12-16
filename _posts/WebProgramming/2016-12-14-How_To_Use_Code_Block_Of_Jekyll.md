@@ -103,6 +103,21 @@ int* twoSum(int* nums, int numsSize, int target) {
 {% endhighlight %}
 
 
+# Summary of highlight and code block
+
+ I think you don't care aobut if option of highliter is lineos=table or linenos, 
+ 
+ Because in my test both of them is the same. 
+ 
+ > what I recommend
+ 
+ ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/1highlight.png)
+ 
+ > OR
+ 
+ ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/2highlight.png)
+
+
 ## Reference 
 
   - [StackOverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
