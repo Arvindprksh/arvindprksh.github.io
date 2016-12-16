@@ -31,6 +31,7 @@ title: "by Tag Cloud"
 {% endfor %}
 </div>
 -->
+<!--
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
@@ -39,4 +40,12 @@ title: "by Tag Cloud"
             {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
 </span>
+{% endfor %}
+-->
+{% for category in site.categories %}
+    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size }}%">
+        <a href="/{{ category | first | slugize }}/">
+            {{ category | first }}
+        </a>
+    </li>
 {% endfor %}
