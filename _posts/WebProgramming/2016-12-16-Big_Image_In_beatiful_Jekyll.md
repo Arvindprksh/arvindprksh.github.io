@@ -99,7 +99,7 @@ bigimg: /Your Image Path/filename of image
   
   ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/Single bigimage.png)
   
-# Error case
+## Error case
 
   If you find bigimage works like this, that is becuase you type the wrong path of image.  
   
@@ -111,6 +111,30 @@ bigimg: /Your Image Path/filename of image
   
   The following is after fixing it :
   ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/after fixing the wrong path.png)
+  
+## Summary of big image 
+
+  If you want to use bigimage option in beautiful, I recommend you to use one of both below in YAML front matter.
+
+  > mutilple big image
+
+```
+---
+.......
+bigimg: 
+  - "/Your Image Path/filename of image" : "comment"
+---  
+``` 
+  
+  > OR single big image with comment
+
+```
+---
+.......
+bigimg: 
+  - "/Your Image Path/filename of image" : "comment"
+---  
+``` 
   
  
 ## Reference
