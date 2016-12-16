@@ -14,6 +14,7 @@ title: "by Tag Cloud2"
 {% endfor %}
 -->
 
+
 {% for tag in site.tags %}
     <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size }}%">
         <a href="/{{ tag | first | slugize }}/">
