@@ -14,10 +14,10 @@ title: "by Tag Cloud2"
 {% endfor %}
 -->
 
-{% for category in site.categories %}
-    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size }}%">
-        <a href="/{{ category | first | slugize }}/">
-            {{ category | first }}
+{% for tag in site.tags %}
+    <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size }}%">
+        <a href="/{{ tag | first | slugize }}/">
+            {{ tag | first }}
         </a>
     </li>
 {% endfor %}
