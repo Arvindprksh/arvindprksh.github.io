@@ -70,7 +70,7 @@ int* twoSum(int* nums, int numsSize, int target) {
   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/4-highlight.png)
 
 {% highlight c linenos %}
-```c 
+```c
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
