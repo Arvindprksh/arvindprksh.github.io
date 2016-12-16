@@ -58,7 +58,7 @@ bigimg:
 </span>
 {% endfor %}
 ```
-   if you make page with the above code, you can see the word cloud like this 
+   if you make page(.html, .md) with the above code, you can see the word cloud like this 
    
    ![](/img/Image/WebProgramming/2016-12-17-Tag_Cloud/Word cloud example.png)
    
