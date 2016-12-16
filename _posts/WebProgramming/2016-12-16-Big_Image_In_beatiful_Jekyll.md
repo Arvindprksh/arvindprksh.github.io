@@ -77,7 +77,7 @@ bigimg:
  
   then, you can see as follows :
   
-  ![]()
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/Single bigimage with comment.png)
   
   **Third,** Single bigimage. 
   
@@ -97,7 +97,7 @@ bigimg: /Your Image Path/filename of image
  
   then, you can see as follows :
   
-  ![]()
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/Single bigimage.png)
   
 # Error case
 
