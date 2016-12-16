@@ -11,7 +11,32 @@ bigimg:
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
 
-## 
+## a list using tags and categories
+  
+```markdown
+---
+layout: post
+category: ~~~
+tags: ~~~
+---
+```
+  
+   When you make a post in jekyll with fornt matter. You have to write that information if you want tag and category. 
+   
+   And then, you can make a list based on tags and category. 
+   
+   
+
+
+
+
+
+
+
+
+
+
+## information of terminology
 
 
 
@@ -24,8 +49,8 @@ bigimg:
   
   - [brandonparsons's using tags in a jekyll bolg on github pages](https://blog.brandonparsons.me/2015-using-tags-in-a-jekyll-blog-on-github-pages)
   
-  - [codinfox's aportion of using catergory and tags](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
-  
+  - [codinfox's aportion of using catergory and tags](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/) : what I mainly refer to.
+      
   - [mikeapted's Adding category and tag archive pages to Jekyll](https://www.mikeapted.com/jekyll/2015/12/30/category-and-tag-archives-in-jekyll-no-plugins/)
   
   - [melyanna's tags archive implemented](https://melyanna.github.io/2016-02-15-tags/)
