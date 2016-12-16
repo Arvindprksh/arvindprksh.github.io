@@ -43,7 +43,7 @@ title: "by Tag Cloud"
 {% endfor %}
 -->
 {% for category in site.tags %}
-    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.tags.size }}%">
+    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%">
         <a href="/{{ category | first | slugize }}/">
             {{ category | first }}
         </a>
