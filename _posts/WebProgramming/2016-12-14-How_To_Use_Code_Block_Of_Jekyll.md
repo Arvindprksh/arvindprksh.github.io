@@ -15,7 +15,7 @@ bigimg:
 
  > a noraml code block  
  
-  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/1_highlight.png)
+  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/1-highlight.png)
         
    
 ```c
@@ -31,7 +31,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 
   > highlight with linenos
 
-   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/2_highlight.png)
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/2-highlight.png)
 
   This way is not comportable when you copy and paste the code, because of linenumber
 
@@ -48,7 +48,7 @@ int* twoSum(int* nums, int numsSize, int target) {
    
    if you use **lineos=table**, at that time, copy and paste is easy, linenumber doesn't matter. 
    
-   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/3_highlight.png)
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/3-highlight.png)
 
 {% highlight c linenos=table %}
 /**
@@ -67,7 +67,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 
   >  highlight with a normal code block
 
-  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/4_highlight.png)
+  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/4-highlight.png)
 
 {% highlight c linenos %}
 ```c 
@@ -82,7 +82,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 
   >  highlight with a normal code block and lineos=table 
 
-   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/5_highlight.png)
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/5-highlight.png)
 
 {% highlight c linenos=table %}
 ```c 
