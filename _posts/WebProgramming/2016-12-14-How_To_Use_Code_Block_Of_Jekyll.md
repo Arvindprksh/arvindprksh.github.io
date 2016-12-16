@@ -103,7 +103,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 {% endhighlight %}
 
 
-# Summary of highlight and code block
+## Summary of highlight and code block
 
  I think you don't care aobut if option of highliter is lineos=table or linenos, 
  
