@@ -4,7 +4,7 @@ title: Big Image in Beautiful-jekyll for my gitpage
 subtitle: How Can I deploy my picture in jekyll template of beautiful-jekyll ?
 category: WebProgramming
 tags: [jekyll, bigimage, beautiful-jekyll, static_website, gitpage]
-permalink: /2016/12/16/Big_Image_In_beatiful_Jekyll/
+permalink: /2016/12/16/Big_Image_In_Beautiful_Jekyll/
 comments: true
 social-share: false
 bigimg: 
@@ -25,7 +25,7 @@ bigimg:
   
   And then, I use the bigimage functionality of my jekyll from [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)
   
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big Image blog.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/big Image blog.png)
   
 ### How to add big image frame on my git page
 
@@ -47,7 +47,7 @@ bigimg:
   
   After the above YAML front matter, you get the result below. 
   
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big Image blog.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/big Image blog.png)
 
   As you can see the above image, the bottom of left includes "your comment" of bigimg.
   
@@ -77,7 +77,7 @@ bigimg:
  
   then, you can see as follows :
   
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/Single bigimage with comment.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/Single bigimage with comment.png)
   
   **Third,** Single bigimage. 
   
@@ -97,7 +97,7 @@ bigimg: /Your Image Path/filename of image
  
   then, you can see as follows :
   
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/Single bigimage.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/Single bigimage.png)
   
 ## Error case
 
@@ -105,12 +105,12 @@ bigimg: /Your Image Path/filename of image
   
   The following is the wrong path :
   
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big image wrong path.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/big image wrong path.png)
   
   In my case of the wrong path, after I fix the path, big image works well. 
   
   The following is after fixing it :
-  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/after fixing the wrong path.png)
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_Beautiful_Jekyll/after fixing the wrong path.png)
   
 ## Summary of big image 
 
