@@ -74,7 +74,7 @@ bigimg:
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
@@ -111,7 +111,7 @@ bigimg:
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
@@ -128,6 +128,32 @@ bigimg:
   And then I can search for what I want in my Gitpage like this.
   
   ![](/img/Image/WebProgramming/2016-12-11-How_To_Use_A_Google_Custom_Search_Engine/A Google Custom Search Engine.png)
+  
+  
+## Summary of A Google Custom Search Engine
+
+  Just generate search page. 
+  
+  after that, put your google custom search engine code into your search page like the following code. 
+  
+{% highlight javascript linenos=table %}
+<div id="google-custom-search">
+<script>
+  (function() {
+    var cx = 'USER cx Number. ';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox></gcse:searchbox>
+<gcse:searchresults></gcse:searchresults>
+</div>
+{% endhighlight %} 
+
 
 ## Reference
 
