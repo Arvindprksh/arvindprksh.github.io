@@ -59,7 +59,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
- i.e 
+ In other words,  
  
  **linenos=table** option is comportable with copy contents, this means when you copy code block, You can select only the code. without linenumber
 
