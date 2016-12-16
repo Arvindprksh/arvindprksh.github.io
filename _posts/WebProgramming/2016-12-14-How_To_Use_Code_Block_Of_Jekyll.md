@@ -80,7 +80,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
-  > highlight with a normal code block and lineos=table 
+  >  highlight with a normal code block and lineos=table 
 
    ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/5_highlight.png)
 
