@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Big Image in Beautiful-jekyll for My gitpage
-subtitle: How Can I deploy my picture ?
+title: Big Image in Beautiful-jekyll for my gitpage
+subtitle: How Can I deploy my picture in jekyll template of beautiful-jekyll ?
 category: WebProgramming
-tags: [jekyll, bigimage, Beautiful-jekyll, gitpage, my setting]
-permalink: /2016/12/16/Big_Image_In_beatiful_Jekyll/
+tags: [jekyll, bigimage, beautiful-jekyll, static_website, gitpage]
+permalink: /2016/12/11/How_To_Use_A_Google_Custom_Search_Engine/
 comments: true
 social-share: false
 bigimg: 
@@ -16,3 +16,103 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
+
+## big image on my git page
+
+  I want to deploy image on my git, Becuase In case of only letters, It makes me bored.
+  
+  Accidentally, When I saw my gitpage about algorithm. But that page only has text. So it's boring. 
+  
+  And then, I use the bigimage functionality of my jekyll from [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)
+  
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big Image blog.png)
+  
+### How to add big image frame on my git page
+
+  the way to introduce imgaes is so easy on my jekyll. 
+  
+  Just, Use YAML front matter like this, 
+  
+  **Frist,** Multiple bigimage. 
+
+```
+---
+.......
+bigimg: 
+  - "/Your Image Path/filename of image" : "comment"
+  - "/Your Image Path/filename of image" : "comment"
+  - "/Your Image Path/filename of image" : "comment"
+---  
+```
+  
+  After the above YAML front matter, you get the result below. 
+  
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big Image blog.png)
+
+  As you can see the above image, the bottom of left includes "your comment" of bigimg.
+  
+  i.e if you wrote your big Image like this.
+  
+  > bigimg:  
+  >   - "/Your Image Path/filename of image" : "San Francisco, CA (2016)"
+
+  like the above image, the bottom of left indicates that text,"San Francisco, CA (2016)".
+  
+
+  **Second,** Single bigimage with comment
+  
+```
+---
+.......
+bigimg: 
+  - "/Your Image Path/filename of image" : "comment"
+---  
+``` 
+  if you want to post one image with comment. 
+  
+  Just type in YAML front matter like this :
+  
+  > bigimg:    
+  >   - "/Your Image Path/filename of image" : "comment"  
+ 
+  then, you can see as follows :
+  
+  ![]()
+  
+  **Third,** Single bigimage. 
+  
+```
+---
+.......
+bigimg: /Your Image Path/filename of image
+---  
+```
+  The last one that I introduce to you is the above. 
+  
+  if you only want to post one image.
+  
+  Just type in YAML front matter like this :
+  
+   > bigimg: /Your Image Path/filename of image  
+ 
+  then, you can see as follows :
+  
+  ![]()
+  
+# Error case
+
+  If you find bigimage works like this, that is becuase you type the wrong path of image.  
+  
+  The following is the wrong path :
+  
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/big image wrong path.png)
+  
+  In my case of the wrong path, after I fix the path, big image works well. 
+  
+  The following is after fixing it :
+  ![](/img/Image/WebProgramming/2016-12-16-Big_Image_In_beatiful_Jekyll/after fixing the wrong path.png)
+  
+ 
+## Reference
+
+ - [Beautiful-jekyll's git](https://github.com/daattali/beautiful-jekyll)
