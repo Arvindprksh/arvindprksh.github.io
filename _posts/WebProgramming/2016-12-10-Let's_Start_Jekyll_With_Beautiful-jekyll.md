@@ -8,13 +8,7 @@ permalink: /2016/12/10/Let's_Start_Jekyll_With_Beautiful-jekyll/
 comments: true
 social-share: false
 bigimg: 
-  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
-  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
-  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
-  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
-  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
-  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
 ## Beautiful-jekyll
@@ -29,11 +23,11 @@ bigimg:
   
   Now I will organize my using Jekyll and everything I update in beatiful-Jekyll.
   
-- [ ] First, How to use big Image, 
+- [x] First, How to use big Image, (2016.12.15) 
 - [x] Second, How to use a Custom google Search engine. (2016.12.15) 
 - [ ] Third, How to use Tags and categories. 
-- [ ] Fourth, What is the DISQUS ?
-- [ ] Fifth, How can I do hightlither When I want to use codeblock in markdown. 
+- [x] Fourth, What is the DISQUS ? (2016.12.15) 
+- [x] Fifth, How can I do hightlither When I want to use codeblock in markdown. (2016.12.15) 
 - [ ] Sixth, What is the permalink option ?
 - [ ] Seventh, How to use markdown in githubpage.
     
