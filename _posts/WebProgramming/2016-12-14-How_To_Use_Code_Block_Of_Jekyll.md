@@ -13,11 +13,11 @@ bigimg:
 
 ## How to make code block in Jekyll and Markdown
 
+
  > a noraml code block  
  
   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/1highlight.png)
         
-   
 ```c
 /**
  * Note: The returned array must be malloced, assume caller calls free().
@@ -28,6 +28,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 
 ## For linenumber, testing any case of using highlighter
+
 
   > highlight with linenos
 
@@ -44,9 +45,10 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
+
    > highlight with lineos=table
    
-   if you use **lineos=table**, at that time, copy and paste is easy, linenumber doesn't matter. 
+   
    
    ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/3highlight.png)
 
@@ -59,11 +61,15 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
+ if you use **lineos=table**, at that time, copy and paste is easy, linenumber doesn't matter. 
+
  In other words,  
  
  **linenos=table** option is comportable with copy contents, this means when you copy code block, You can select only the code. without linenumber
 
  you can check [this stackoverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
+
+ **BUT,** after I test that lineos=table and lineos, both options is the same on my gitpage.
 
   >  highlight with a normal code block
 
@@ -79,6 +85,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 ```
 {% endhighlight %}
+
 
   >  highlight with a normal code block and lineos=table 
 
