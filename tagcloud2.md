@@ -8,7 +8,7 @@ title: "by Tag Cloud2"
  <span class="site-tag">
     <a href="/tag/{{ tag | first | slugize }}/"
         style="font-size: {{ tag | last | size  |  times: 4 | divided_by: site.tags.size | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+            {{ tag[0] | replace:'-', ' ' }} {{ tag | last | size }}
     </a>
 </span>
 {% endfor %}
