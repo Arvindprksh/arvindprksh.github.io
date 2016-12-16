@@ -13,13 +13,10 @@ bigimg:
 
 ## How to make code block in Jekyll and Markdown
 
- > 1. 
+ > a noraml code block  
  
-   {% highlight markdown linenos %}
-   ```c(the used code's name)"      
-   .....code          
-   ```        
-   {% endhighlight %}
+  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/1_highlight.png)
+        
    
 ```c
 /**
@@ -29,12 +26,14 @@ int* twoSum(int* nums, int numsSize, int target) {
     
 }
 ```
-<!---
-## For indicating linenumber
 
-   > "{% highlight c(used code's name) linenos %}"    
-   > "code"   
-   > "{% endhighlight %}"   
+## For linenumber, testing any case of using highlighter
+
+  > highlight with linenos
+
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/2_highlight.png)
+
+  This way is not comportable when you copy and paste the code, because of linenumber
 
 {% highlight c linenos %}
 /**
@@ -45,9 +44,11 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
-   > {% highlight c(the used code's name) linenos=table %}   
-   > code   
-   > {% endhighlight %}  
+   > highlight with lineos=table
+   
+   if you use **lineos=table**, at that time, copy and paste is easy, linenumber doesn't matter. 
+   
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/3_highlight.png)
 
 {% highlight c linenos=table %}
 /**
@@ -58,16 +59,15 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight %}
 
- - linenos=table option is comportable with copy contents, this means when you copy code block, You can select only the code. without linenumber
+ i.e 
+ 
+ **linenos=table** option is comportable with copy contents, this means when you copy code block, You can select only the code. without linenumber
 
  you can check [this stackoverflow](http://stackoverflow.com/questions/11093241/how-to-support-line-number-when-using-pygments-with-jekyll)
 
+  >  highlight with a normal code block
 
-   > "{% highlight c(the used code's name) linenos %}"   
-   > "```c(the used code's name)"     
-   > "code"     
-   > "```"   
-   > "{% endhighlight %}"
+  ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/4_highlight.png)
 
 {% highlight c linenos %}
 ```c 
@@ -80,11 +80,9 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
-   > "{% highlight c(the used code's name) linenos=table %}"   
-   > "```c(the used code's name)"
-   > "code"   
-   > "```"   
-   > "{% endhighlight %}"
+  > highlight with a normal code block and lineos=table 
+
+   ![](/img/Image/WebProgramming/2016-12-14-How_To_Use_Code_Block_Of_Jekyll/5_highlight.png)
 
 {% highlight c linenos=table %}
 ```c 
@@ -97,7 +95,6 @@ int* twoSum(int* nums, int numsSize, int target) {
 ```
 {% endhighlight %}
 
--->
 
 ## Reference 
 
