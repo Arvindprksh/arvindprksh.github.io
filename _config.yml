@@ -29,6 +29,7 @@ navbar-links:
   About Me: "aboutme"
   Resume: "resume"
   Search: "search"
+  testoftagcloud: "cloudoftags"
   tag: "tags"
   categories: "categories"
   tagcloud: "tagCloud"
