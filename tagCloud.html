@@ -7,7 +7,7 @@ title: "by Tag Cloud"
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
+    <a href="/tag/{{ tag | first | slugize }}/"
         style="font-size: {{ tag | last | size  |  times: 4 | divided_by: site.tags.size | plus: 80  }}%">
             {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
