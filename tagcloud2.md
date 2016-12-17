@@ -17,7 +17,7 @@ title: "by Tag Cloud2"
 {% assign tags = site.tags | sort %}
 {% for tag in site.tags %}
     <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size }}%">
-        <a href="/{{ tag | first | slugize }}/">
+        <a href="/{{ tag | first | slugify }}/">
             {{ tag | first }}
         </a>
     </li>
