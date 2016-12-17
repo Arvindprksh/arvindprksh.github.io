@@ -3,6 +3,18 @@ layout: page
 title: "by Tag Cloud"
 ---
 
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | divided_by: site.tags.size | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
+
+
 <!--
 {% assign tags = site.categories | sort %}
 {% assign baseurl = include.baseurl %}
@@ -31,21 +43,3 @@ title: "by Tag Cloud"
 {% endfor %}
 </div>
 -->
-<!--
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | divided_by: site.tags.size | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>
-</span>
-{% endfor %}
--->
-{% for category in site.tags %}
-    <li style="font-size: {{ category | last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%">
-        <a href="/{{ category | first | slugize }}/">
-            {{ category | first }}
-        </a>
-    </li>
-{% endfor %}
