@@ -25,7 +25,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% for tag in tags %}
       <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
         <span class="fa fa-tag left">
-          {{ tag[0] }} {{ tag | last | size }}
+        {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
         </span>
       </a>
     {% endfor %}
@@ -33,7 +33,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/>
   <div class="post-preview">
     {% for tag in tags %}
-    <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  {{ tag | last | size }}</h2> <!-- I added new class -->
+    <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
     <ul class="post-subtitle">
       {% for post in tag[1] %}
         <!-- I think I have to find css of class ou, first of all, I use post-title-->
