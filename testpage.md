@@ -2,7 +2,6 @@
 layout: page
 title: "Blog Archive by Category"
 ---
-{: #top }
 
 [By Date]({{"/blog/archive/monthview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
