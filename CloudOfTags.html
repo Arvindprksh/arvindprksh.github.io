@@ -12,7 +12,7 @@ bigimg:
 <div class="later_on">
   <div class="later_on">
     {% for tag in site.tags %} <!-- If you want to jump to a list related to tags of what you choose, you need #(letter)-->
-    <a href="#{{ tag[0] | slugify }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"><i class="fa fa-tag">{{ tag[0] }} ({{ tag | last | size }})</i></a>
+    <a href="#{{ tag[0] | slugify }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] }} ({{ tag | last | size }})</a>
     <!--
     <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"><i class="fa fa-tag">{{ tag[0] }} ({{ tag | last | size }})</i></a>  
     -->  
