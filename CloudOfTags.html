@@ -14,12 +14,12 @@ bigimg:
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
       <a href="#{{ tag[0] | slugify }}" class="btn btn-default">
-         <i class="fa fa-fw fa-tag left"></i>
+         <i class="fa fa-tag left"></i>
         <span style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
           {{ tag[0] }}
         </span>
       </a>
-       <span class="counter"> {{ tag | last | size }}</span>
+     <span class="counter"> {{ tag | last | size }}</span>   
     {% endfor %}
   </div>
   <hr/>
