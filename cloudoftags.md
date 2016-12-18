@@ -44,11 +44,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       </li>
       </a>
       {% endfor %}
-    </ul>
-    <a href="" class="btn btn-default">
+      <a href="" class="btn btn-default">
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
-    <hr/>
+    </ul>
     {% endfor %}
   </div>
 </div>
