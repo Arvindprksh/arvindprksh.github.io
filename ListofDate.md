@@ -15,7 +15,7 @@ bigimg:
 
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
-<div id="posts-list">
+<div id="posts-previw">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
 {% for post in site.posts %}
@@ -27,7 +27,6 @@ bigimg:
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     </small><hr/>{%endif %}
-        <div class="post-preview"> 
         <h2 class="post-title">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
         {% endif %}
@@ -41,5 +40,4 @@ bigimg:
     {{ monthHead }}{{ link }}
 {% endfor %}
 {{closeList}}
-        </div>
 </div>
