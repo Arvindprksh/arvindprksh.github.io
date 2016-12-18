@@ -18,25 +18,13 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
-<!-- this code from blog-  https://superdevresources.com/tag-cloud-jekyll/ -->
-
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>
-</span>
-{% endfor %}
-
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
 <div class="post-list">
   <div class="blog-tags">
     {% assign tags = site.categories | sort %}
     {% for tag in site.categories %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-tag left">
+      <span class="fa fa-folder-open left">
         {{ tag[0] }} {{ tag | last | size }}
       </span>
     </a>
@@ -57,7 +45,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       {% endfor %}
     </ul>
     <a href="" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go Back to the front
+      <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     <hr/>
     {% endfor %}
