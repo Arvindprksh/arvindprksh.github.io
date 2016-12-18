@@ -17,7 +17,7 @@ title: "Blog Archive by Date"
         {% if  forloop.index != 1  %}{{ closeList }}<small markdown="1"><!--[back to top](#top)--><a href="" class="btn btn-default">
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
-    <hr/></small>{%endif %}
+    </small><hr/>{%endif %}
         <h2 class="archivetitle">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
         {% endif %}
