@@ -24,13 +24,16 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Study: ""
+  Study: 
+    - Old On: "studies"
+    - Categories: "cloudofcategories"
+    - Tags: "cloudoftags"
+    - Date: ""
   Projects: "projects"
   About Me: "aboutme"
   Resume: "resume"
   Search: "search"
-  testoftagcloud: "CloudOfTags"
-  tag: "tags"
+  test: ""h
 
 
 #    - SSD(Solid-State Device): ""
