@@ -1,8 +1,6 @@
 ---
 layout: page
 title: "Blog Archive by Category"
-teaser: "Check out all blog posts grouped by category."
-permalink: /blog/archive/categoryview/
 ---
 {: #top }
 
