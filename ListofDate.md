@@ -2,7 +2,7 @@
 layout: page
 title: "Blog Archive by Date"
 ---
-<!--
+
 <div id="index">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
@@ -26,4 +26,4 @@ title: "Blog Archive by Date"
 {% endfor %}
 {{closeList}}
 </div>
--->
+
