@@ -23,11 +23,11 @@ bigimg:
   <hr/>
   <div class="post-preview">
     {% for tag in tags %}
-    <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  {{ tag | last | size }}</h2>
-    <ul class="lateron">
+    <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  {{ tag | last | size }}</h2>
+    <ul class="post-subtitle">
       {% for post in tag[1] %}
         <!-- I think I have to find css of class ou, first of all, I use post-title-->
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+        <a class="late-on" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }} 
       <!-- <p class="post-meta"></p> in index.thml -->  
