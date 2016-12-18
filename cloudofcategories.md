@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Things that,so far, I have been studying by date(Month and Year) 
+title: Things that,so far, I have been studying by categories of each pages
 subtitle: Something that I have studied and experienced, making List with what I have been studying
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
