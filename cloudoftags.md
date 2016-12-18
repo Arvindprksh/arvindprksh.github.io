@@ -19,28 +19,26 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
-<div class="posts-list">  <!--posts-list-->
+<div class="post-list"> <!--posts-list-->
   <div class="blog-tags"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
-    {% for tag in tags %}<!--"#{{ tag[0] | slugify }}"--> 
-      <a href="/tags#{{ tag }}-ref" class="btn btn-defualt" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-        <span class="fa fa-tag left">
+    {% for tag in site.categories %} <!--"#{{ tag[0] | slugify }}"--> 
+    <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+      <span class="fa fa-folder-open left">
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
-        </span>
-      </a>
+      </span>
+    </a>
     {% endfor %}
   </div>
   <hr/>
-  <div class="post-preview">
-    {% for tag in tags %}
+  <div class="side-nav"> <!--post-preview -->
+    {% for tag in site.tags %}
     <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-    <ul class="post-subtitle">
+    <ul class="post-preview"> <!-- post-subtitle -->
       {% for post in tag[1] %}
-        <!-- I think I have to find css of class ou, first of all, I use post-title-->
-        <!-- I think I don't need class of a tag in here -->
-        <a class="lateron" href="{{ site.baseurl }}{{ post.url }}">
+        <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
       <li>
-        {{ post.title }} 
+        {{ post.title }}
       <!-- <p class="post-meta"></p> in index.thml -->  
       <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
       </li>
@@ -51,11 +49,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     <hr/>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
     {% endfor %}
   </div>
 </div>
