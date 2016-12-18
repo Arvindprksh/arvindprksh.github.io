@@ -2,45 +2,52 @@
 layout: page
 title: "Blog Archive by Category"
 ---
-{: #top }
+---
+layout: page
+title: Tags
+---
 
-[By Date]({{"/blog/archive/monthview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
+<div class='list-group'>
+  {% assign tags_list = site.tags %}
 
-{% assign tags = site.categories | sort %}
-{% assign sorted_posts = site.posts | sort: 'title' %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %}
+      <a href="/tags#{{ tag }}-ref" class='list-group-item'>
+        {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
+      </a>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %}
+      <a href="/tags#{{ tag[0] }}-ref" class='list-group-item'>
+        {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
+      </a>
+    {% endfor %}
+  {% endif %}
 
-{% assign tags_url = '' %}
-
-<div id="category-index" class="row">
-	<div class="small-12 columns t30">
-        <div class="tagcloud03">
-            <ul{% if increaseFont %} class="cloud"{% endif %}> {% for tag in tags %}<li><a href="{{baseurl}}#{{ tag | first | slugify }}" {% if increaseFont %}style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"{% endif %}>{{ tag | first | replace: '-', ' ' }}{% unless increaseFont %}<span>{{ tag | last | size }}</span>{% endunless %}</a></li>{% endfor %}
-            </ul>
-        </div><!-- /.tagcloud03 -->
-    </div><!-- /.small-12.columns -->
-</div><!-- /.row -->
-
-
-<div id="blog-index" class="row columns">
-{% for tag in tags %}
-
-<h3 class="archivetitle"><a name="{{ tag | first | slugify }}"></a>{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
-
-<ul class="side-nav">
-
-{% for post in sorted_posts %}
-    {%if post.categories contains tag[0]%}
-<li>
-    <a title="Read {{ post.title | escape_once }}"   href="{{ site.baseurl }}{{ post.url }}"> <strong>{{ post.title }}</strong>{% if post.date %}<small> - {{ post.date | date: "%B %e, %Y" }}</small>{% endif %}</a>
- </li>
-    {%endif%}
-
-{% endfor %}
-</ul>
-
-<small markdown="1">[back to top](#top)</small>
-
-{% endfor %}
+  {% assign tags_list = nil %}
 </div>
+
+
+{% for tag in site.tags %}
+  <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <ul>
+    {% assign pages_list = tag[1] %}
+
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if group == null or group == node.group %}
+          {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+          {% else %}
+          <li><a href="{{node.url}}">{{node.title}}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+{% endfor %}
 
 
