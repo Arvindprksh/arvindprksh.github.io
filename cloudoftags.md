@@ -31,7 +31,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% endfor %}
   </div>
   <hr/>
-  <div class="later0n">
+  <div class="post-preview">
     {% for tag in tags %}
     <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
     <ul class="post-subtitle">
@@ -51,6 +51,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     <hr/>
+    <p></p>
+    <div></div>
     {% endfor %}
   </div>
 </div>
