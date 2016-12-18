@@ -14,7 +14,10 @@ title: "Blog Archive by Date"
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% capture monthHead %}
         {% if month != nmonth %}
-        {% if  forloop.index != 1  %}{{ closeList }}<small markdown="1">[back to top](#top)</small>{%endif %}
+        {% if  forloop.index != 1  %}{{ closeList }}<small markdown="1"><!--[back to top](#top)--><a href="" class="btn btn-default">
+      <span class="fa fa-refresh"></span> Go back to the top
+    </a>  
+    <hr/></small>{%endif %}
         <h2 class="archivetitle">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
         {% endif %}
@@ -25,11 +28,7 @@ title: "Blog Archive by Date"
             <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong><small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small></a></li>
     {% endcapture %}
     
-    <!--{{ monthHead }}{{ link }}-->
-    <a href="" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go back to the top
-    </a>  
-    <hr/>
+    {{ monthHead }}{{ link }}
 {% endfor %}
 {{closeList}}
 </div>
