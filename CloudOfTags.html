@@ -13,7 +13,9 @@ bigimg:
   <div class="lateron">
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
-      <a href="#{{ tag[0] | slugify }}" class="lateron" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"><i>{{ tag[0] }}</i></a>
+      <a href="#{{ tag[0] | slugify }}" class="lateron">
+        <span class="fa fa-tag" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] }} {{ tag | last | size }}</span>
+      </a>
     {% endfor %}
   </div>
   <hr/>
