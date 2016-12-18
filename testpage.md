@@ -29,7 +29,7 @@ title: "Blog Archive by Category"
 {% endfor %}
 </ul>
 
-<small markdown="1">[back to top](#top)</small>
+<small markdown="1"></small>
 
 {% endfor %}
 </div>
