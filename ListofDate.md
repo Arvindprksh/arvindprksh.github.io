@@ -1,10 +1,7 @@
 ---
 layout: page
 title: "Blog Archive by Date"
-teaser: "Check out all blog posts grouped by month."
-permalink: /blog/archive/monthview/
 ---
-{: #top }
 
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
