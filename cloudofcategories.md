@@ -33,20 +33,23 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/>
   <div class="side-nav"> <!--post-preview -->
     {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-    <ul class="post-preview"> <!-- post-subtitle -->
-      {% for post in tag[1] %}
-        <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-      </li>
-      </a>
-      {% endfor %}
-      <a href="" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go back to the top
-    </a> 
-    </ul> 
+    <div class="post-preview">
+      <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="post-preview"> <!-- post-subtitle -->
+        {% for post in tag[1] %}
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+        <li>
+          {{ post.title }}
+        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
+        {% endfor %}
+        <br/>
+        <a href="" class="btn btn-default">
+        <span class="fa fa-refresh"></span> Go back to the top
+        </a> 
+      </ul> 
+      </div>
     {% endfor %}
   </div>
 </div>
