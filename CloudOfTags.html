@@ -13,8 +13,8 @@ bigimg:
   <div class="lateron">
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
-      <a href="#{{ tag[0] | slugify }}" class="lateron">
-        <span class="fa fa-tag" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%" aria-hidden="true"></span>{{ tag[0] }} {{ tag | last | size }}
+      <a href="#{{ tag[0] | slugify }}" class="btn btn-info" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+        <span class="glyphicon glyphicon-tag" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%" aria-hidden="true"></span>{{ tag[0] }} {{ tag | last | size }}
       </a>
     {% endfor %}
   </div>
