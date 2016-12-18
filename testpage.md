@@ -2,10 +2,7 @@
 layout: page
 title: "Blog Archive by Category"
 teaser: "Check out all blog posts grouped by category."
-#breadcrumb: true
 permalink: /blog/archive/categoryview/
-sitemap: false
-sidebar: right
 ---
 {: #top }
 
