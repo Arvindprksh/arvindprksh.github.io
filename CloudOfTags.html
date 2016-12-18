@@ -23,6 +23,8 @@ bigimg:
     {% endfor %}
   </div>
   <hr/>
+  <hr/>
+  <hr/>
   <div class="later_on">
     {% for tag in site.tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag | first }} ({{ tag | last | size }})</h2>
