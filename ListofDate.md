@@ -39,7 +39,7 @@ bigimg:
     {% endcapture %}
     
     {{ monthHead }}{{ link }}
-    </div>
 {% endfor %}
 {{closeList}}
+        </div>
 </div>
