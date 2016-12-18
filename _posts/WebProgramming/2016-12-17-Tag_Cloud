@@ -74,8 +74,16 @@ bigimg:
 ```
    tags will appear vertically unlike the above image. 
    
+   that is becuase of <il></il>.
+   
 ```markdown   
-   {{ tag[0] | replace:'-', ' ' }} is the same from {{ tag | first | replace:'-', ' '}} 
+{% for tag in site.tags %}
+    <li style="font-size: {{ tag | last | size | times: 4 | plus: 80 }}%">
+        <a href="/{{ tag | first | slugize }}/">
+            {{ tag | first }}
+        </a>
+    </li> 
+{% endfor %} 
 ```   
    
    And this part is to fit the size of tag with the number of posts.
