@@ -38,7 +38,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       {% for post in tag[1] %}
         <!-- I think I have to find css of class ou, first of all, I use post-title-->
         <!-- I think I don't need class of a tag in here -->
-        <a class="later-on" href="{{ site.baseurl }}{{ post.url }}">
+        <a class="col-sm-2 text-center" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }} 
       <!-- <p class="post-meta"></p> in index.thml -->  
