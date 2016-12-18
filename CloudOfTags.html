@@ -19,8 +19,6 @@ bigimg:
     {% endfor %}
   </div>
   <hr/>
-  <hr/>
-  <hr/>
   <div class="lateron">
     {% for tag in tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
@@ -36,6 +34,7 @@ bigimg:
       </a>
       {% endfor %}
     </ul>
+    <hr/>
     {% endfor %}
   </div>
 </div>
