@@ -22,7 +22,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="post-list"> <!--posts-list-->
   <div class="blog-tags"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
-    {% for tag in site.categories %} <!--"#{{ tag[0] | slugify }}"--> 
+    {% for tag in site.tags %} <!--"#{{ tag[0] | slugify }}"--> 
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
       <span class="fa fa-folder-open left">
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
