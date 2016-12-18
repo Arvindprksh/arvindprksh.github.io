@@ -2,16 +2,14 @@
 layout: page
 title: "Blog Archive by Category"
 ---
+{: #top }
 
+[By Date]({{"/blog/archive/monthview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
 
 {% assign tags_url = '' %}
-
-{% assign tags = site.categories | sort %}
-{% assign baseurl = include.baseurl %}
-{% assign increaseFont = include.tagCloud %}
 
 <div id="category-index" class="row">
 	<div class="small-12 columns t30">
@@ -21,6 +19,7 @@ title: "Blog Archive by Category"
         </div><!-- /.tagcloud03 -->
     </div><!-- /.small-12.columns -->
 </div><!-- /.row -->
+
 
 <div id="blog-index" class="row columns">
 {% for tag in tags %}
@@ -39,8 +38,9 @@ title: "Blog Archive by Category"
 {% endfor %}
 </ul>
 
-<small markdown="1"></small>
+<small markdown="1">[back to top](#top)</small>
 
 {% endfor %}
 </div>
+
 
