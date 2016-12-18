@@ -2,9 +2,7 @@
 layout: page
 title: "Blog Archive by Date"
 ---
-
-[By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
-
+<!--
 <div id="index">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
@@ -28,3 +26,4 @@ title: "Blog Archive by Date"
 {% endfor %}
 {{closeList}}
 </div>
+-->
