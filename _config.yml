@@ -35,7 +35,7 @@ navbar-links:
   Search: "search"
   test: "ListofDate"
   test2: "tespage"
-  test3: "testpage"
+  test3: "tags"
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
