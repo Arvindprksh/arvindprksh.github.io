@@ -15,7 +15,7 @@ bigimg:
 
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
-<div id="index">
+<div id="posts-list">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
 {% for post in site.posts %}
@@ -27,17 +27,19 @@ bigimg:
       <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     </small><hr/>{%endif %}
-        <h2 class="archivetitle">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
+        <div class="post-preview"> 
+        <h2 class="post-title">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
         {% endif %}
     {% endcapture %}
 
     {% capture link %}
         <li>
-            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong><small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small></a></li>
+            <a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong><small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small></a></li>
     {% endcapture %}
     
     {{ monthHead }}{{ link }}
+    </div>
 {% endfor %}
 {{closeList}}
 </div>
