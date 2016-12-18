@@ -22,8 +22,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="posts-list">  <!--posts-list-->
   <div class="blog-tags"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
-    {% for tag in tags %}
-      <a href="#{{ tag[0] | slugify }}" class="btn btn-defualt" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+    {% for tag in tags %}<!--"#{{ tag[0] | slugify }}"--> 
+      <a href="/tags#{{ tag }}-ref" class="btn btn-defualt" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
         <span class="fa fa-tag left">
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
         </span>
@@ -38,7 +38,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       {% for post in tag[1] %}
         <!-- I think I have to find css of class ou, first of all, I use post-title-->
         <!-- I think I don't need class of a tag in here -->
-        <a class="active" href="{{ site.baseurl }}{{ post.url }}">
+        <a class="lateron" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }} 
       <!-- <p class="post-meta"></p> in index.thml -->  
