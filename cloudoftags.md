@@ -31,9 +31,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% endfor %}
   </div>
   <hr/>
-  <div class="side-nav"> <!--post-preview -->
+  <div class="navbar navbar-default navbar-fixed-top navbar-custom"> <!--side-nav -->
     {% for tag in tags %}
-    <div class="post-preview"></div>
+    <div class="post-preview">
       <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="post-preview"> <!-- post-subtitle -->
         {% for post in tag[1] %}
@@ -50,6 +50,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           <span class="fa fa-refresh"></span> Go back to the top
         </a>  
       </ul>
+    </div>
     {% endfor %}
   </div>
 </div>
