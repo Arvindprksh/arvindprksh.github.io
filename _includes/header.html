@@ -36,7 +36,9 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
+		  Tagged: {% if page.tags == null %} Not tagged. {% else %} {% for tag in page.tags %}<a href="/tags#{{ tag | slugify }}-ref"> • {{ tag | capitalize}}</a>{% endfor %}{% endif %}
+		  </span>
 		  {% endif %}
         </div>
       </div>
@@ -61,7 +63,9 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
+		  Tagged: {% if page.tags == null %} Not tagged. {% else %} {% for tag in page.tags %}<a href="/tags#{{ tag | slugify }}-ref"> • {{ tag | capitalize}}</a>{% endfor %}{% endif %}
+		  </span>
 		  {% endif %}
         </div>
       </div>
