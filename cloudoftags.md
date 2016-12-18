@@ -35,9 +35,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% for tag in tags %}
     <div class="post-preview">
       <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="post-subtitle"> <!-- post-subtitle -->
+      <ul class="post-preview"> <!-- post-subtitle -->
         {% for post in tag[1] %}
-          <a class="lateron" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
         <li>
         {{ post.title }}
         <!-- <p class="post-meta"></p> in index.thml -->  
