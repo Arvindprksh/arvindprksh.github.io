@@ -36,7 +36,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     <div class="post-preview">
       <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="post-subtitle"> <!-- post-subtitle -->
-      {% for post in tag[1] %}
+        {% for post in tag[1] %}
           <a class="lateron" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
         <li>
         {{ post.title }}
@@ -44,7 +44,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
         </li>
         </a>
-      {% endfor %}
+        {% endfor %}
+        <br/>
         <a href="" class="btn btn-default">
           <span class="fa fa-refresh"></span> Go back to the top
         </a>  
