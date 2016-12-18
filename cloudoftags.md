@@ -19,7 +19,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
-<div class="posts-list"> <!--posts-list-->
+<div class="lateron"> <!--posts-list-->
   <div class="blog-tags"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
     {% for tag in tags %} <!--"#{{ tag[0] | slugify }}"--> 
@@ -31,7 +31,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% endfor %}
   </div>
   <hr/>
-  <div class="side-nav navbar-nav"> <!--post-preview -->
+  <div class="side-nav"> <!--post-preview -->
     {% for tag in tags %}
     <div class="post-preview">  
       <h2 id="{{ tag[0] | slugify }}" > {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class --> <!-- h2 class="post-title" -->
