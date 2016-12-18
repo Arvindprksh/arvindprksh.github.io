@@ -28,7 +28,7 @@ navbar-links:
     - Old On: "studies"
     - Categories: "cloudofcategories"
     - Tags: "cloudoftags"
-    - Date: ""
+    - Date: "testpage"
   Projects: "projects"
   About Me: "aboutme"
   Resume: "resume"
