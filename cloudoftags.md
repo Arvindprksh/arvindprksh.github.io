@@ -48,7 +48,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       {% endfor %}
     </ul>
     <a href="" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go Back to the front
+      <span class="fa fa-refresh"></span> Go back to the top
     </a>  
     <hr/>
     {% endfor %}
