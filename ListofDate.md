@@ -22,10 +22,14 @@ title: "Blog Archive by Date"
 
     {% capture link %}
         <li>
-            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a></li>
+            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong><small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small></a></li>
     {% endcapture %}
     
-    {{ monthHead }}{{ link }}
+    <!--{{ monthHead }}{{ link }}-->
+    <a href="" class="btn btn-default">
+      <span class="fa fa-refresh"></span> Go back to the top
+    </a>  
+    <hr/>
 {% endfor %}
 {{closeList}}
 </div>
