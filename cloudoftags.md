@@ -52,7 +52,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </a>  
     <hr/>
     <p></p>
-    <div></div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
     {% endfor %}
   </div>
 </div>
