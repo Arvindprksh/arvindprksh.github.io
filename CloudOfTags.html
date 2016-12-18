@@ -21,13 +21,13 @@ bigimg:
   <hr/>
   <div class="lateron">
     {% for tag in tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <h2 id="{{ tag[0] | slugify }}"><span class="fa fa-tag" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%" aria-hidden="true"></span>{{ tag[0] }}  {{ tag | last | size }}</h2>
     <ul class="lateron">
       {% for post in tag[1] %}
         <!-- I think I have to find css of class ou, first of all, I use post-title-->
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
-        {{ post.title }} {{ tag | last | size }}
+        {{ post.title }} 
       <!-- <p class="post-meta"></p> in index.thml -->  
       <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
       </li>
