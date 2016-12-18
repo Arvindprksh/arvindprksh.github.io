@@ -31,10 +31,6 @@ navbar-links:
   Search: "search"
   testoftagcloud: "CloudOfTags"
   tag: "tags"
-  categories: "categories"
-  tagcloud: "tagCloud"
-  tagcloudtest: "tagcloud2"
-  
 
 
 #    - SSD(Solid-State Device): ""
