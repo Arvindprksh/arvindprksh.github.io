@@ -1,9 +1,5 @@
 ---
 layout: page
-title: "Blog Archive by Category"
----
----
-layout: page
 title: Tags
 ---
 
