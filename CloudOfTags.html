@@ -13,7 +13,9 @@ bigimg:
 <div class="later_on">
   <div class="later_on">
     {% for tag in site.tags %} <!-- If you want to jump to a list related to tags of what you choose, you need #(letter)-->
-    <a href="#{{ tag[0] | slugify }}" class="tag tag-primary" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] }} ({{ tag | last | size }})</a>
+    <span class="tag tag-primary">
+    <a href="#{{ tag[0] | slugify }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] }} ({{ tag | last | size }})</a>
+    </span>
     {% endfor %}
   </div>
   <hr/>
