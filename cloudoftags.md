@@ -33,21 +33,23 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/>
   <div class="side-nav"> <!--post-preview -->
     {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-    <ul class="post-preview"> <!-- post-subtitle -->
+    <div class="post-preview">
+      <h2 id="{{ tag[0] | slugify }}" class="post-title"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="post-subtitle"> <!-- post-subtitle -->
       {% for post in tag[1] %}
-        <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
-      <li>
+          <a class="lateron" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
+        <li>
         {{ post.title }}
-      <!-- <p class="post-meta"></p> in index.thml -->  
-      <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-      </li>
-      </a>
+        <!-- <p class="post-meta"></p> in index.thml -->  
+        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
       {% endfor %}
-      <a href="" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go back to the top
-    </a>  
-    </ul>
+        <a href="" class="btn btn-default">
+          <span class="fa fa-refresh"></span> Go back to the top
+        </a>  
+      </ul>
+    </div>
     {% endfor %}
   </div>
 </div>
