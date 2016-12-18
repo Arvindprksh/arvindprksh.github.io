@@ -6,8 +6,6 @@ bigimg:
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
 
-
-
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
@@ -18,7 +16,7 @@ bigimg:
     <!--  
     <a href="#{{ tag[0] | slugify }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"><i class="fa fa-tag">{{ tag[0] }} ({{ tag | last | size }})</i></a>
     -->
-    <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] }} ({{ tag | last | size }})</a>  
+    <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="later_on" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"><i class="fa fa-tag">{{ tag[0] }} ({{ tag | last | size }})</i></a>  
     </span>
     {% endfor %}
   </div>
