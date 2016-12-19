@@ -1,10 +1,5 @@
 ---
 layout: page
-title: Tags
----
-
----
-layout: page
 title: Study List With Categories
 subtitle: Something that I have studied and experienced
 bigimg: 
