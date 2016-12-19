@@ -14,7 +14,7 @@ bigimg:
 {: #top }
 
 
-<!-- This code from another person of https://github.com/daattali/daattali.github.io/blob/master/index.html-->
+<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 <div class="list-filters">
   <a href="/" class="list-filter filter-selected">All posts</a>
   <a href="/popular" class="list-filter">Most Popular</a>
@@ -24,7 +24,7 @@ bigimg:
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 --->
-<div id="post-previw">
+<div id="post-previwe">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
 {% for post in site.posts %}
@@ -32,14 +32,22 @@ bigimg:
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% capture monthHead %}
         {% if month != nmonth %}
-        {% if  forloop.index != 1  %}{{ closeList }}<small><!--[back to top](#top)--><a href="{{ site.baseurl }}/#top" class="btn btn-default">
-      <span class="fa fa-refresh"></span> Go back to the top
-    </a></small>
-    <hr/>
-      {%endif %}
-        <h2 class="post-title">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
-        {{ openList }}
-        {% endif %}
+          {% if  forloop.index != 1  %}{{ closeList }}
+          <small markdown="1"><!--[back to top](#top)-->
+            <a href="{{ site.baseurl }}/#top" class="btn btn-default">
+              <span class="fa fa-refresh"></span> Go back to the top
+            </a>
+          </small>
+          <hr/>
+          {%endif %}
+        <h2 class="post-title">
+          {% if year != nyear %}
+           <a name="{{ post.date | date: '%Y' }}"></a>
+          {% endif %}
+           <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
+           {{ post.date | date: '%B %Y' }}
+        </h2>{{ openList }}
+      {% endif %}
     {% endcapture %}
 
     {% capture link %}
