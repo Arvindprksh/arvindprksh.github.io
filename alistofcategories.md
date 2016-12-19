@@ -38,7 +38,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
-          <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
         <li>
           {{ post.title }}
         <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
