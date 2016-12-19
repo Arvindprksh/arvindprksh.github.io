@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Things that,so far, I have been studying by tags of each pages 
-subtitle: Something that I have studied and experienced, making List with what I have been studying
+title: Study List With Tags
+subtitle: Something that I have studied and experienced
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
