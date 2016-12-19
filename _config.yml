@@ -26,8 +26,10 @@ navbar-links:
   Home: ""
   Study: 
     - Old On: "studies"
-    - Categories: "cloudofcategories"
-    - Tags: "cloudoftags"
+    - Categories_List: "alistofcategories"
+    - Categories_Cloud: ""
+    - Tags_List: ""
+    - Tags_Cloud:
     - Date: ""
   Projects: "projects"
   About Me: "aboutme"
