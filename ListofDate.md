@@ -29,8 +29,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 --->
-<div class="later on">
-  <div class="post-preview">
+
+<div class="post-preview">
   {% assign openList = '<ul class="side-nav">' %}
   {% assign closeList = '</ul>' %}
   {% for post in site.posts %}
@@ -82,6 +82,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
          </a>
       </small>
       <hr/>
-  </div>
 </div>
+
 
