@@ -31,57 +31,56 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 --->
 
 <div class="post-preview">
-  {% assign openList = '<ul class="side-nav">' %}
-  {% assign closeList = '</ul>' %}
-  {% for post in site.posts %}
-      {% capture month %}
-        {{ post.date | date: '%m%Y' }}
-      {% endcapture %}
+{% assign openList = '<ul class="side-nav">' %}
+{% assign closeList = '</ul>' %}
+{% for post in site.posts %}
+    {% capture month %}
+      {{ post.date | date: '%m%Y' }}
+    {% endcapture %}
 
-      {% capture nmonth %}
-        {{ post.next.date | date: '%m%Y' }}
-      {% endcapture %}
+    {% capture nmonth %}
+      {{ post.next.date | date: '%m%Y' }}
+    {% endcapture %}
 
       {% capture monthHead %}
-          {% if month != nmonth %}
-            {% if  forloop.index != 1  %}
-                {{ closeList }}
-                <small markdown="1"><!--[back to top](#top)-->
-                  <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-                    <span class="fa fa-refresh"></span> Go back to the top
-                  </a>
-                </small>
-                <hr/>
-            {%endif %}
-          <h2 class="post-title">
+        {% if month != nmonth %}
+          {% if  forloop.index != 1  %}
+              {{ closeList }}
+              <small markdown="1"><!--[back to top](#top)-->
+                <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+                  <span class="fa fa-refresh"></span> Go back to the top
+                </a>
+              </small>
+              <hr/>
+          {%endif %}
+        <h2 class="post-title">
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
-             <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
-             {{ post.date | date: '%B %Y' }}
-          </h2>{{ openList }}
-        {% endif %}
-      {% endcapture %}
+          <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
+          {{ post.date | date: '%B %Y' }}
+        </h2>{{ openList }}
+      {% endif %}
+    {% endcapture %}
 
-      {% capture link %}
-          <li>
-              <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-                <strong>{{ post.title }}</strong>
-                <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-              </a>
-          </li>
-      {% endcapture %}
+    {% capture link %}
+        <li>
+            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+              <strong>{{ post.title }}</strong>
+              <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+            </a>
+        </li>
+    {% endcapture %}
 
-      {{ monthHead }}{{ link }}
+    {{ monthHead }}{{ link }}
        
-  {% endfor %}
-  {{closeList}}
-      <small markdown="1"><!--[back to top](#top)-->
-         <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-           <span class="fa fa-refresh"></span> Go back to the top
-         </a>
-      </small>
-      <hr/>
+{% endfor %}
+{{closeList}}
+    <small markdown="1"><!--[back to top](#top)-->
+       <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+         <span class="fa fa-refresh"></span> Go back to the top
+       </a>
+    </small>
+    <hr/>
 </div>
-
 
