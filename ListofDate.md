@@ -53,9 +53,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             <hr/>
             {%endif %}
           <h2 class="post-title">
-            {% if year != nyear %}
+           <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
-            {% endif %}
+            {% endif %} -->
              <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
              {{ post.date | date: '%B %Y' }}
           </h2>{{ openList }}
