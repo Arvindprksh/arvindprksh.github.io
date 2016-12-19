@@ -24,7 +24,7 @@ bigimg:
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 --->
-<div id="post-previwe">
+<div id="post-preview">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
 {% for post in site.posts %}
