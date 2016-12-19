@@ -33,7 +33,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% endfor %}
   </div>
   <hr/>
-  <div class="post-preview" style="margin-bottom: 30px;"> <!--post-preview -->
+  <div class="post-preview" style="margin-top: 5px; margin-bottom: 30px;"> <!--post-preview -->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="later on"> <!-- post-subtitle -->
