@@ -32,7 +32,7 @@ bigimg:
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% capture monthHead %}
         {% if month != nmonth %}
-        {% if  forloop.index != 1  %}{{ closeList }}<small><!--[back to top](#top)--><a href="/#top" class="btn btn-default">
+        {% if  forloop.index != 1  %}{{ closeList }}<small><!--[back to top](#top)--><a href="{{ site.baseurl }}/#top" class="btn btn-default">
       <span class="fa fa-refresh"></span> Go back to the top
     </a></small>
     <hr/>
