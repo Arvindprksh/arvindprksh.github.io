@@ -31,7 +31,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% endfor %}
   </div>
   <hr/>
-  <div class="post-preview"> <!--post-preview or side-naa -->
+  <div class="post-preview" style="margin-bottom: 30px;"> <!--post-preview and maring-bottom is what I need-->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="later on"> <!-- post-subtitle -->
@@ -45,10 +45,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </a>
         {% endfor %}
         <br/>
-        <a href="" class="btn btn-default" style="font-size: 15px;">
+        <a href="" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
           <span class="fa fa-refresh"></span> Go back to the top
         </a>  
       </ul>
+      <hr/>
     {% endfor %}
   </div>
 </div>
