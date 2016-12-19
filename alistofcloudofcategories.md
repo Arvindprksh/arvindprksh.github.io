@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Study
+title: Study list with categories
 subtitle: Something that I have studied and experienced by categories
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
