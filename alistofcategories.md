@@ -22,7 +22,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
 <div class="posts-list">
-  <div class="blog-tags" style="font-size: 30px; margin-bottom: 30px;">
+  <div class="blog-tags" style="font-size: 20px;">
     {% assign tags = site.categories | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
@@ -47,7 +47,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         {% endfor %}
         <br/>
         <a href="#top" class="btn btn-default">
-          <span class="fa fa-refresh" style="font-size: 15px; margin-bottom: 30px;"></span> Go back to the top
+          <span class="fa fa-refresh" style="font-size: 15px; margin-bottom: 50px;"></span> Go back to the top
         </a> 
       </ul> 
     {% endfor %}
