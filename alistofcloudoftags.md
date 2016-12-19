@@ -20,11 +20,12 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
 <div class="posts-list"> <!--posts-list-->
-  <div class="blog-tags"> <!-- blog-tags-->
+              <!-- default value: font-size: 15px, margin-bottom: 30px;-->
+  <div class="blog-tags" style="font-size: 20px; margin-bottom: 30px;"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
     {% for tag in tags %} <!--"#{{ tag[0] | slugify }}"--> 
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-folder-open left">
+      <span class="fa fa-folder-open"> <!-- I got rid of left option-->
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
       </span>
     </a>
@@ -33,10 +34,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/>
   <div class="post-preview"> <!--post-preview or side-naa -->
     {% for tag in tags %}
-      <h2 id="{{ tag[0] | slugify }}" class="post-title" > {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="post-subtitle"> <!-- post-subtitle -->
+      <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
-          <a class="later on" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
         <li>
         {{ post.title }}
         <!-- <p class="post-meta"></p> in index.thml -->  
@@ -45,7 +46,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </a>
         {% endfor %}
         <br/>
-        <a href="" class="btn btn-default">
+        <a href="" class="btn btn-default" style="font-size: 15px;">
           <span class="fa fa-refresh"></span> Go back to the top
         </a>  
       </ul>
