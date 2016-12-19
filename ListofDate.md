@@ -21,6 +21,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 <div class="list-filters">
+  basic setting is done
   <a href="/" class="list-filter filter-selected">All posts</a>
   <a href="/popular" class="list-filter">Most Popular</a>
   <a href="/tutorials" class="list-filter">Tutorials</a>
