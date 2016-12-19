@@ -18,6 +18,12 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 {: #top }
 
+<div class="list-filters">
+  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/popular" class="list-filter">Most Popular</a>
+  <a href="/tutorials" class="list-filter">Tutorials</a>
+</div>
+
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
@@ -32,11 +38,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </a>
     {% endfor %}
   </div>
-  <hr/>
-  <div class="post-preview"> <!--post-preview -->
+  <hr/> <!-- margin-top and margin-bottom in main.css -->
+  <div class="post-preview" style="margin-top: 5px; margin-bottom: 30px;"> <!--post-preview -->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="side-nav"> <!-- post-subtitle -->
+      <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
         <li>
@@ -45,13 +51,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </li>
         </a>
         {% endfor %}
-        <br/>
-        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-          <span class="fa fa-refresh" style="margin-bottom: 30px;"></span> Go back to the top
-        </a> 
       </ul>
-      <hr/>
+        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+          <span class="fa fa-refresh"></span> Go back to the top
+        </a> 
+        <hr/>
     {% endfor %}
   </div>
 </div>
-
