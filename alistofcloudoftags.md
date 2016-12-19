@@ -20,8 +20,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
 <div class="posts-list"> <!--posts-list-->
-              <!-- default value: font-size: 15px, margin-bottom: 30px;-->
-  <div class="blog-tags" style="font-size: 20px; margin-bottom: 30px;"> <!-- blog-tags-->
+  <div class="blog-tags"> <!-- blog-tags-->
     {% assign tags = site.tags | sort %}
     {% for tag in tags %} <!--"#{{ tag[0] | slugify }}"--> 
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
