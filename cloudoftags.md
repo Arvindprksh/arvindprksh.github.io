@@ -33,11 +33,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/>
   <div class="lateron"> <!--post-preview or side-naa -->
     {% for tag in tags %}
-    <div class="post-preview">  
-      <h2 id="{{ tag[0] | slugify }}" > {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class --> <!-- h2 class="post-title" -->
-      <ul class="post-preview"> <!-- post-subtitle -->
+      <h2 id="{{ tag[0] | slugify }}" class="post-title" > {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="post-subtitle"> <!-- post-subtitle -->
         {% for post in tag[1] %}
-          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
+          <a class="later on" href="{{ site.baseurl }}{{ post.url }}"><!-- I think I have to find css of class ou, first of all, I use post-title--> <!-- I think I don't need class of a tag in here -->
         <li>
         {{ post.title }}
         <!-- <p class="post-meta"></p> in index.thml -->  
@@ -50,7 +49,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           <span class="fa fa-refresh"></span> Go back to the top
         </a>  
       </ul>
-    </div>
     {% endfor %}
   </div>
 </div>
