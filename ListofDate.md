@@ -72,9 +72,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
            <span class="fa fa-refresh"></span> Go back to the top
          </a>
        </small>
-       <hr/>
   {% endfor %}
   {{closeList}}
+    <hr/>
   </div>
 </div>
 
