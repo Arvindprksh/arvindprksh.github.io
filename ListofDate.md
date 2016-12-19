@@ -29,7 +29,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 --->
-<div class="posts-list">
+
   <div class="post-preview">
   {% assign openList = '<ul class="side-nav">' %}
   {% assign closeList = '</ul>' %}
@@ -75,4 +75,4 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   {% endfor %}
   {{closeList}}
   </div>
-</div>
+
