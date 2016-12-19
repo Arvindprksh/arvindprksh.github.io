@@ -13,8 +13,17 @@ bigimg:
 ---
 {: #top }
 
-[By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
+<!-- This code from another person of https://github.com/daattali/daattali.github.io/blob/master/index.html-->
+<div class="list-filters">
+  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/popular" class="list-filter">Most Popular</a>
+  <a href="/tutorials" class="list-filter">Tutorials</a>
+</div>
+
+<!---
+[By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
+--->
 <div id="posts-previw">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
@@ -23,10 +32,11 @@ bigimg:
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% capture monthHead %}
         {% if month != nmonth %}
-        {% if  forloop.index != 1  %}{{ closeList }}<small markdown="1"><!--[back to top](#top)--><a href="" class="btn btn-default">
+        {% if  forloop.index != 1  %}{{ closeList }}<small><!--[back to top](#top)--><a href="/#top" class="btn btn-default">
       <span class="fa fa-refresh"></span> Go back to the top
-    </a>  
-    </small><hr/>{%endif %}
+    </a></small>
+    <hr/>
+      {%endif %}
         <h2 class="post-title">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
         {% endif %}
