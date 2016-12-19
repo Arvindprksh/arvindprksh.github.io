@@ -28,8 +28,8 @@ navbar-links:
     - Old On: "studies"
     - Categories_List: "alistofcategories"
     - Categories_Cloud: ""
-    - Tags_List: ""
-    - Tags_Cloud:
+    - Tags_List: "alistofcloudoftags"
+    - Tags_Cloud: ""
     - Date: ""
   Projects: "projects"
   About Me: "aboutme"
