@@ -75,13 +75,13 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       {{ monthHead }}{{ link }}
        
   {% endfor %}
-       <small markdown="1"><!--[back to top](#top) this cod for last list.--> 
+  {{closeList}}
+      <small markdown="1"><!--[back to top](#top)-->
          <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
            <span class="fa fa-refresh"></span> Go back to the top
          </a>
       </small>
       <hr/>
-  {{closeList}}
   </div>
 </div>
 
