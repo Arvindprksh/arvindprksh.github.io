@@ -44,7 +44,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
       {% capture monthHead %}
           {% if month != nmonth %}
-            {% if  forloop.index != 1  %}{{ closeList }}            
+            {% if  forloop.index != 1  %}
+                {{ closeList }}            
             {%endif %}
           <h2 class="post-title">
            <!-- {% if year != nyear %}
