@@ -29,6 +29,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html "-->
 <div class="posts-list">
+ <div class="post-preiew">
   <div class="blog-tags"> 
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
@@ -39,6 +40,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </a>
     {% endfor %}
   </div>
+</div>
   <hr/> <!-- margin-top and margin-bottom in main.css -->
   <div class="post-preview"> <!--post-preview -->
     {% for tag in tags %}
