@@ -2,17 +2,9 @@
 layout: post
 title: Linux File and Filesystem
 subtitle: Basic information of Linux File and Filesystem, and f2fs is familiar to SSD 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, filesystem, ssd]
+permalink: /2016/04/18/Linux_File_And_Filesystem/
 ---
 
 these contents refers to this **_[web site(tldp's sect_03_01)](http://tldp.org/LDP/intro-linux/html/sect_03_01.html)_ and _[another site1(tldp's filesystems)](http://www.tldp.org/LDP/sag/html/filesystems.html)_, _[site 2(filesystem)](http://www.tldp.org/LDP/tlk/fs/filesystem.html)_**
