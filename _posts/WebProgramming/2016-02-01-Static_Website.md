@@ -5,9 +5,6 @@ subtitle: What is the Jekyll ? and this is my summary about jekyll.
 category: Web Programming
 tags: [jekyll]
 permalink: /2016/02/01/Static_Website/
-comments: true
-social-share: true
-comments: true
 bigimg: 
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
