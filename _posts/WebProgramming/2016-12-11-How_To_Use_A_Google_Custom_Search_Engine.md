@@ -2,8 +2,8 @@
 layout: post
 title: How to use a google custom Search Engine
 subtitle: How can I add a google custom search engine in my jekyll ?
-category: WebProgramming
-tags: [jekyll, google_custom_search_engine, beautiful-jekyll, static_website, gitpage]
+category: Web Programming
+tags: [jekyll, utility]
 permalink: /2016/12/11/How_To_Use_A_Google_Custom_Search_Engine/
 comments: true
 social-share: false
