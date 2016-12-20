@@ -38,7 +38,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="post-preview">  
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
-		<ul class="no-bullet">
 			{% for post in site.posts %}
 				{% assign currentdate = post.date | date: '%B %Y' %}
 				{% if currentdate != date %}
@@ -49,7 +48,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% assign currentyear = post.date | date: '%Y' %}
 					{% if currentyear != year %}
 						{% unless forloop.first %}
-						</ul></li>
+						<p>unless forloop first</p>
 						{% endunless %}
 						<p>
 						<span class="fa fa-calendar" aria-hidden="true"></span>
@@ -57,7 +56,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 						</p>
 						{% assign year = currentyear %}
 					{% endif %}
-					<li>
 					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="font-size: {{ count  |  times: 4 | plus: 80  }}%"><span class="">{{ post.date | date: '%B' }}
 					{% assign date = currentdate %}
 				{% else %}
@@ -67,7 +65,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					<i class="badge">{{ count }}</i></span></a>
 				{% endif %}
 			{% endfor %}
-		</ul>
 </div>
 
 {% for post in site.posts %}
