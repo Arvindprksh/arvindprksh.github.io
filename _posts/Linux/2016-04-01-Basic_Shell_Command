@@ -1,18 +1,10 @@
 ---
 layout: post
 title: Basic Shell Command & Software Package
-subtitle: 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+subtitle: summary of shell command
+category: Linux
+tags: [linux, command, concept]
+permalink: /2016/04/01/Basic_Shell_Command/
 ---
 
 this refers to <a href = "https://www.linux.com/learn/tutorials/819973-how-to-use-the-linux-command-line-basics-of-cli">linux's tutorial</a> 
