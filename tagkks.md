@@ -26,8 +26,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 -->
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
-<!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
-<div class="posts-list" style="margin-top: 200px; margin-bottom: 200px;">
+<!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html style="margin-top: 100px; margin-bottom: 100px;"-->
+<div class="posts-list">
   <div class="blog-tags"> 
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
