@@ -21,8 +21,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 
 <!-- This code from another person ofhttps://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate.md-->
-<div class="list-filters" style="color: grey;">
-  <a href="/" class="list-filter filter-selected">All posts</a>
+<div class="list-filters">
+  <a href="/" class="list-filter filter-selected" style="color: grey;">All posts</a>
   <a href="/alistofcloudoftags" class="list-filter">Catergories Cloud</a>
   <a href="/alistofdate" class="list-filter">Date Cloud</a>
 </div>
