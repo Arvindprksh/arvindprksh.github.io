@@ -63,7 +63,7 @@ title: Blogging Like a Hacker
   
   if you want to use another functionality. From now on, listen to what I will explain. 
   
-```markdown
+```
 ---
 layout: 
 title: 
