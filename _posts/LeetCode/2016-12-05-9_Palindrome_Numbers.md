@@ -13,6 +13,7 @@ bigimg:
 
 Determine whether an interger is a palindrome. Do this without extra space. 
 
+
 ```c
 bool isPalindrome(int x) {
     
@@ -28,6 +29,7 @@ in my case, I got hint form this problem site.
   2. negative nubmer is not palindrome  -> I could test that in Leetcode. so I could know this. 
   
   3. x is 0,rather, if digit is one, tha number is palindrome.
+
 
 ```c
 bool isPalindrome(int x) {
