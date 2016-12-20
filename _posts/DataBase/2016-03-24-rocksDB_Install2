@@ -1,18 +1,10 @@
 ---
 layout: post
-title: RockDB install2
+title: About RockDB install2
 subtitle: while I installed rocksDB, I found errors and fix it.  
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: DataBase
+tags: [facebook, rocksdb]
+permalink: /2016/03/24/rocksDB_Install2/
 ---
 
 ## 간단한 rocksDB 예제
