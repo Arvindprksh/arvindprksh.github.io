@@ -35,15 +35,16 @@ char* reverseString(char* s) {
 
 # My Solution
 
-1. brute force
 
-  I just simply access this problem. 
+## 1. brute force
 
-  1. I verify the length of The given string
+I just simply access this problem. 
   
-  2. based on the length, I reoder the string on another variable.
+-I verify the length of The given string
+  
+-based on the length, I reoder the string on another variable.
  
-  The follow function is bases in C Languge
+ The follow function is bases in C Languge
  
 ```C
 char* reverseString(char* s) {
