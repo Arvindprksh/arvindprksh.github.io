@@ -2,8 +2,8 @@
 layout: post
 title: Let's start jeklly with beautiful-jekyll
 subtitle: What is the YAML front matter ?
-category: WebProgramming
-tags: [jekyll, YAML_front_matter, beautiful-jekyll, static_website, gitpage]
+category: Web Programming
+tags: [jekyll]
 permalink: /2016/12/10/Let's_Start_Jekyll_With_Beautiful-jekyll/
 comments: true
 social-share: false
