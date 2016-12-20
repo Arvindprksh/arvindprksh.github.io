@@ -2,17 +2,9 @@
 layout: post
 title: Git and Oh My Zsh
 subtitle: What is Git ? And A useful git site that I can understand, 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, git, shell]
+permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 ---
 
 # practice tool of github
