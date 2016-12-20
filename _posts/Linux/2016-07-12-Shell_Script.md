@@ -2,17 +2,9 @@
 layout: post
 title: Shell Script
 subtitle: Let's Study Shell Script
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, shell, command]
+permalink: /2016/07/12/Shell_Script/
 ---
 
 
