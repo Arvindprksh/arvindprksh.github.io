@@ -52,7 +52,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </a>
         {% endfor %}
       </ul>
-        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px; float:right">
           <span class="fa fa-refresh"></span> Go back to the top
         </a> 
         <hr/>
