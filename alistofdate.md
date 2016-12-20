@@ -2,6 +2,7 @@
 layout: page
 title: Study List With Date
 subtitle: Something that I have studied and experienced
+css: "/css/cloudlistfilter.css"
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -54,7 +55,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
-          <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
+          <a name="{{ post.date | date:  '%Y-%m'  }}" style="padding-top: 70px"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>{{ openList }}
       {% endif %}
