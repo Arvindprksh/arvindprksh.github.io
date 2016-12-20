@@ -82,11 +82,11 @@ char* longestPalindrome(char* s) {
 
 ## Another way to improve over the above method 1. 
 
- - first I have to avoid unnecessary re-computation in the above algorithm. 
+ -first I have to avoid unnecessary re-computation in the above algorithm. 
 
- - BUT, it is useless to do like this. i.e adding if statement in the middle of the above second for statement is useless.
+ -BUT, it is useless to do like this. i.e adding if statement in the middle of the above second for statement is useless.
  
- - like the above, Time Limit Exceeded. 
+ -like the above, Time Limit Exceeded. 
  
  
 ```c
