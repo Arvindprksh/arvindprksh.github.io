@@ -4,7 +4,7 @@ title: How to generate a list of category and tags in jekyll
 subtitle: How can I automatically make a table of content using Category and Tags ?
 category: Web Programming
 tags: [jekyll]
-permalink: /2016/12/16/Big_Image_In_Beautiful_Jekyll/
+permalink: /2016/12/17/Category_And_Tags_In_Jekyll/
 bigimg: 
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
