@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Linux Compile
+title: how to compile Linux
 subtitle: Linux compile at CentOS 7.1 from kernel 3.7 to 4.5
+category: Linux
 css:
-tags:
+tags: [linux, compile]
 date:
 big-image:
 share-image:
