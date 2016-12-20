@@ -2,17 +2,9 @@
 layout: post
 title: /dev Directory
 subtitle: Whta is /dev Directory ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, concept]
+permalink: /2016/03/28/Dev_Directory/
 ---
 
 this refers to <a href = "http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/dev.html"> dev of Linux File system Hierarchy</a>
