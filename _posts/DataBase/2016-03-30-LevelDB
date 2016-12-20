@@ -1,18 +1,10 @@
 ---
 layout: post
-title: levelDB benchmark
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: About levelDB benchmark
+subtitle: investigation of levelDB
+category: Linux
+tags: [google, rocksdb]
+permalink: /2016/03/30/LevelDB/
 ---
 
 DB benchmark tool 은 안에 자동으로 키를 랜덤하게 생성을 하고 thread도 single thread, multi thread등을 생성하여 
