@@ -28,10 +28,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 </div>
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
-
-<div class="post-preview">
+<div class="posts-list post-preview">
 {% assign openList = '<ul class="lateron">' %}
 {% assign closeList = '</ul>' %}
+	
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
 			{% for post in site.posts %}
@@ -44,7 +44,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% assign currentyear = post.date | date: '%Y' %}
 					{% if currentyear != year %}
 						{% unless forloop.first %}
-						 
+						<hr/>
 						{% endunless %}
 						<h3>
 						<span class="fa fa-calendar" aria-hidden="true"></span>
@@ -58,7 +58,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% assign count = count | plus: 1 %}
 				{% endif %}
 				{% if forloop.last %}
-					<i class="badge">{{ count }}</i></span></a>
+					<i class="badge">{{ count }}</i></span></a><hr/>
 				{% endif %}
 			{% endfor %}
 
