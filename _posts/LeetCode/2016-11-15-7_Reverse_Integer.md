@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 7. Reverse Integer (Difficulty-Easy)
+title: 7. Reverse Integer
 subtitle: Difficulty - Easy
 category: LeetCode
 tags: [algorithm, c function, easy]
