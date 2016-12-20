@@ -38,10 +38,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </a>
     {% endfor %}
   </div>
-  <hr style="margin-bottom: 100px; margin-top: 0px;"/> <!-- margin-top and margin-bottom in main.css -->
+  <hr style="margin-bottom: 100px; margin-top: 100px;"/> <!-- margin-top and margin-bottom in main.css -->
   <div class="post-preview"> <!--post-preview -->
     {% for tag in tags %}
-      <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <h2 id="{{ tag[0] | slugify }}" style="margin-bottom: 100px; margin-top: 100px;"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
@@ -55,7 +55,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
           <span class="fa fa-refresh"></span> Go back to the top
         </a> 
-        <hr style="margin-bottom: 100px; margin-top: 0px;"/>
+        <hr style="margin-bottom: 100px; margin-top: 100px;"/>
     {% endfor %}
   </div>
 </div>
