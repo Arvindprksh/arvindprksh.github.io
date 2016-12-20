@@ -2,17 +2,9 @@
 layout: post
 title: Hard Link and Soft Link
 subtitle: What is the hard and soft link ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, concept]
+permalink: /2016/03/01/Hard_Link_And_Soft_Link/
 ---
 
 http://blog.naver.com/supsup5642/60157518620 에서 이미지를 가지고 왔습니다. 
