@@ -2,9 +2,11 @@
 layout: post
 title: 3. Longest substring without Repeating characters (Difficulty-Medium)
 subtitle: Difficulty - Medium
+category: LeetCode
 tags: [algorithm, c function, medium]
 permalink: /2016/11/02/3_Longest_Substring_Without_Repeating_characters/
-comments:
+bigimg: 
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
 ---
 
 # [3. Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
