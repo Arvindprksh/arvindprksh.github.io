@@ -48,7 +48,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% assign currentyear = post.date | date: '%Y' %}
 					{% if currentyear != year %}
 						{% unless forloop.first %}
-						<p>unless forloop first</p>
+						 
 						{% endunless %}
 						<p>
 						<span class="fa fa-calendar" aria-hidden="true"></span>
