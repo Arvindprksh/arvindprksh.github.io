@@ -42,7 +42,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <hr/> <!-- margin-top and margin-bottom in main.css -->
   <div class="post-preview"> <!--post-preview -->
     {% for tag in tags %}
-      <h2 id="{{ tag[0] | slugify }}" style="padding-top: 70px;"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <h2 id="{{ tag[0] | slugify }}" style="padding-top: 50px;"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
