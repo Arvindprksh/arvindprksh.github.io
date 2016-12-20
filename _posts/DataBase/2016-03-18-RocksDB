@@ -1,18 +1,10 @@
 ---
 layout: post
-title: RocksDB
-subtitle: I know RocksDB
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: About RocksDB
+subtitle: What is the RocksDB ?
+category: DataBase
+tags: [facebook, DB]
+permalink: /2016/03/18/RocksDB/
 ---
 
 this refers to <a href = "http://rocksdb.org/"> RocksDB</a>.
@@ -31,7 +23,7 @@ the content is as follows.
     - RocksDB builds on LevelDB to be scalable to run on servers with many CPU cores, to efficiently use fase storage, 
     to support IO-bound, in-memory and write-once workloads, and to be flexible to allow for innovation 
     
- For more background on RocksDB, see <a href="/Files/DB/intro.pdf" target="_blank">Dhruba Borthakur's introductory talk</a> from the Data @ Scale 2013 conference.
+ For more background on RocksDB, see <a href="/img/Image/DataBase/2016-03-18-RocksDB/intro.pdf" target="_blank">Dhruba Borthakur's introductory talk</a> from the Data @ Scale 2013 conference.
  
  
 * write amplication
