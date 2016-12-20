@@ -1,18 +1,10 @@
 ---
 layout: post
-title: IOCTL
+title: IOCTL(I/O control)
 subtitle: when I got IOCTL task, this is what I studied
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, nvme, kernel code]
+permalink: /2016/03/16/IOCTL/
 ---
 
  device를 read, write의 system call 이외 다른 명령어를 device에 전달을 하고 싶을 때 
@@ -73,6 +65,10 @@ in the above source,
 ```
 
 ---
+
+After you see [NVMe-cli tool](https://github.com/linux-nvme/nvme-cli), you can check up status of nvme driver.
+
+for example, identify command
 
 A new part is added into kernel source
 
