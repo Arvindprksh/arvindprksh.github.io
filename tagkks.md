@@ -84,7 +84,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
-          <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px"></a>
+          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>
 <div class="post-preview"> 	
