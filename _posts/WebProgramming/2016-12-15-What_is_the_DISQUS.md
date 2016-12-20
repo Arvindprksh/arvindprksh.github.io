@@ -1,9 +1,9 @@
 ---
 layout: post
-title: DISQUS
+title: How to use DISQUS with my static website
 subtitle: What is the DISQUS ?
-category: WebProgramming
-tags: [jekyll, DISQUS, beautiful-jekyll, static_website, gitpage]
+category: Web Programming
+tags: [jekyll, utility]
 permalink: /2016/12/15/How_To_Add_DISQUS/
 comments: true
 social-share: false
