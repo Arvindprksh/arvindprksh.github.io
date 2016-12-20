@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 8. String to Integer(atoi)
+title: 8. String to Integer(atoi) (Difficulty-Easy)
 subtitle: Difficulty - Easy
-tags:
+category: LeetCode
+tags: [algorithm, c function, easy]
 permalink: /2016/11/26/8_String_To_Integers(atoi)/
-comments:
+bigimg: 
+    - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
 # [8. String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
