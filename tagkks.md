@@ -51,7 +51,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 						</h3>
 						{% assign year = currentyear %}
 					{% endif %}
-					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="font-size: {{ count  |  times: 4 | plus: 80  }}%"><span class="fa fa-folder-open" aria-hidden="true">{{ post.date | date: '%B' }}
+					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="padding: 0px 5px;"><span class="fa fa-folder-open" aria-hidden="true" style="color: #1C1C1C;">{{ post.date | date: '%B' }} <!-- style="color: #1C1C1C;" is font color of span -->
 					{% assign date = currentdate %}
 				{% else %}
 					{% assign count = count | plus: 1 %}
