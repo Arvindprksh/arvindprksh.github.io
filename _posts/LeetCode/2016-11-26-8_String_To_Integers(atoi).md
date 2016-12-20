@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 8. String to Integer(atoi) (Difficulty-Easy)
+title: 8. String to Integer(atoi)
 subtitle: Difficulty - Easy
 category: LeetCode
-tags: [algorithm, c function, easy]
+tags: [algorithm, easy]
 permalink: /2016/11/26/8_String_To_Integers(atoi)/
 bigimg: 
     - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
