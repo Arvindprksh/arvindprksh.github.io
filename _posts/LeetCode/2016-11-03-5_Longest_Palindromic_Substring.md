@@ -77,7 +77,8 @@ char* longestPalindrome(char* s) {
    return returnStr;
 }
 ```
-    in the above case, for statement is three times.
+    
+ in the above case, for statement is three times.
 
 ## Another way to improve over the above method 1. 
 
