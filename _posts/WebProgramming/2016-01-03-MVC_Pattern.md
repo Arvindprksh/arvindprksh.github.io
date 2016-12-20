@@ -7,7 +7,7 @@ tags: [pattern]
 permalink: /2016/01/03/MVC_Pattern/
 comments: true
 social-share: true
-bigimage:
+bigimg:
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
