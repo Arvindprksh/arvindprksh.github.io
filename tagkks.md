@@ -21,7 +21,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 
 <!-- This code from another person ofhttps://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate.md-->
-
+<div class="list-filters posts-list">
+  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/alistofcloudoftags" class="list-filter">Catergories Cloud</a>
+  <a href="/alistofdate" class="list-filter">Date Cloud</a>
+</div>
 
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
@@ -54,8 +58,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
 			{% endfor %}
 		</ul>
-	
-<div class="post-preview">  
+
 {% for post in site.posts %}
     {% capture month %}
       {{ post.date | date: '%m%Y' }}
@@ -96,7 +99,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             </a>
         </li>
     {% endcapture %}
-
+	
+<div class="post-preview">  
     {{ monthHead }}{{ link }}
        
 {% endfor %}
