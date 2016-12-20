@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 5. Longest Palindromic Substring
+title: 5. Longest Palindromic Substring (Difficulty-Medium)
+category: LeetCode
 subtitle: Diffculty - Medium
-tags:
+tags: [algorithm, c function, medium]
 permalink: /2016/11/03/5_Longest_Palindromic_Substring/
-comments:
+bigimg:  
+    - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
 # [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
