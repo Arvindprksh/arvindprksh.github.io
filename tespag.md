@@ -32,8 +32,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <div class="blog-tags"> 
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
-    <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-folder-open"  style="color: #cccccc;"> <!-- I get rid of left option -->
+    <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}% color: #cccccc;">
+      <span class="fa fa-folder-open"> <!-- I get rid of left option -->
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
       </span>
     </a>
@@ -46,7 +46,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
         <ul class="later on"> <!-- post-subtitle -->
           {% for post in tag[1] %}
-            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}" style="padding-top: 70px">
               <li>
                 {{ post.title }}
                 <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
