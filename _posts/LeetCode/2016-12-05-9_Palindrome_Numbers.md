@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 9. Panlindrome Number (Difficulty-Easy)
+title: 9. Panlindrome Number
 subtitle: Difficulty - Easy
 category: LeetCode
-tags: [algorithm, c function, easy]
+tags: [algorithm, easy]
 permalink: /2016/12/05/9_Palindrome_Numbers/
 bigimg: 
     - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
