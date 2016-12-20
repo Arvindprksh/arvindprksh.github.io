@@ -3,7 +3,7 @@ layout: post
 title: 6. ZigZag Conversion (Difficulty-Easy)
 subtitle: Difficulty - Easy
 category: LeetCode
-tags: [algorithm, c function, easy]
+tags: [algorithm, easy]
 permalink: /2016/11/15/6_ZigZag_Conversion/
 bigimg: 
     - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
