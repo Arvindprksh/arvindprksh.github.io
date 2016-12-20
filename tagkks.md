@@ -35,14 +35,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="post-preview">
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
-{% for post in site.posts %}
-    {% capture month %}
-      {{ post.date | date: '%m%Y' }}
-    {% endcapture %}
-
-    {% capture nmonth %}
-      {{ post.next.date | date: '%m%Y' }}
-    {% endcapture %}
 
     
   <div class="panel radius">
@@ -69,6 +61,16 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 			{% endfor %}
 		</ul>
 	</div>
+	
+
+{% for post in site.posts %}
+    {% capture month %}
+      {{ post.date | date: '%m%Y' }}
+    {% endcapture %}
+
+    {% capture nmonth %}
+      {{ post.next.date | date: '%m%Y' }}
+    {% endcapture %}
 
       {% capture monthHead %}
         {% if month != nmonth %}
