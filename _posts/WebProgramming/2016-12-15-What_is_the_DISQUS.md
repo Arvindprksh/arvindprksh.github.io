@@ -5,8 +5,6 @@ subtitle: What is the DISQUS ?
 category: Web Programming
 tags: [jekyll, utility]
 permalink: /2016/12/15/How_To_Add_DISQUS/
-comments: true
-social-share: false
 bigimg: 
   - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
