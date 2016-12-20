@@ -46,7 +46,7 @@ I just simply access this problem.
  
  The follow function is bases in C Languge
  
-```C
+```c
 char* reverseString(char* s) {
  
   int len = strlen(s);
