@@ -3,7 +3,7 @@ layout: post
 title: 2. Add Two Numbers (Difficulty-Medium)
 subtitle: Difficulty - Medium
 category: LeetCode
-tags: [algorithm, c function, medium]
+tags: [algorithm, medium]
 permalink: /2016/11/01/2_Add_Two_Numbers/
 bigimg: 
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
