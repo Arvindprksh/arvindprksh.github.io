@@ -127,6 +127,6 @@ bigimg:
   
   - [Beautiful-jekyll's git repository explaing the YAML front matter on README](https://github.com/daattali/beautiful-jekyll/blob/master/README.md#yaml-front-matter-parameters)
   
-  - [Beautiful-jekyll's git](https://github.com/daattali/beautiful-jekyll)
+  - [Jekyll tips](http://jekyll.tips/)
   
   
