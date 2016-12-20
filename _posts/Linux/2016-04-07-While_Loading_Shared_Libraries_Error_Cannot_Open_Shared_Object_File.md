@@ -2,17 +2,9 @@
 layout: post
 title: Error, Cannot Open Shared object file
 subtitle: While Loading shared Libraries, Error happen, That error is "Cannot Open Shared object file"
-css:
-tags:
-date:
-big-image:
-share-image:
+category: Linux
+tags: [linux, error]
 permalink: /2016-04-07-While_Loading_Shared_Libraries,_error_Cannot_Open_Shared_Object_File
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
 ---
 
 In linux, there are both static(.a file) and dynamic(.so file).
