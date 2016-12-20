@@ -47,24 +47,27 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     
   <div class="panel radius">
 		{% assign archive_url = site.baseurl | append: '/alistofdate/' %}
+		<h3><a href="{{ archive_url }}">Archive</a></h3>
+		<ul class="no-bullet">
 			{% for post in site.posts %}
 				{% assign currentdate = post.date | date: '%Y-%m' %}
 				{% if currentdate != date %}
-					{% unless forloop.first %}({{ count }}){% endunless %}
+					{% unless forloop.first %}({{ count }})</li>{% endunless %}
 					{% assign count = 1 %}
 					{% assign currentyear = post.date | date: '%Y' %}
 					{% if currentyear != year %}
-						{% unless forloop.first %}{% endunless %}
-						<span class="icon-calendar"></span><a href="{{ archive_url }}">{{ currentyear }}</a>
+						{% unless forloop.first %}</ul></li>{% endunless %}
+						<li><span class="icon-calendar"></span><a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a><ul>
 						{% assign year = currentyear %}
 					{% endif %}
-					<a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B %Y' }}</a>
+					<li><a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B' }}</a>
 					{% assign date = currentdate %}
 				{% else %}
 					{% assign count = count | plus: 1 %}
 				{% endif %}
-				{% if forloop.last %}({{ count }}){% endif %}
+				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
 			{% endfor %}
+		</ul>
 	</div>
 
       {% capture monthHead %}
@@ -102,7 +105,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 {% endfor %}
 {{closeList}}
     <small markdown="1"><!--[back to top](#top)-->
-       <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+       <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px; margin-left: 35px">
          <span class="fa fa-refresh"></span> Go back to the top
        </a>
     </small>
