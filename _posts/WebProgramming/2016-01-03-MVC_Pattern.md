@@ -1,18 +1,14 @@
 ---
 layout: post
-title: MVC Pattern
-subtitle:
-css:
-tags:
-date:
+title: What is the MVC Pattern ?
+subtitle: Basic
+category: Web Programming
+tags: [Web patter]
+permalink: /2016/01/03/MVC_Pattern/
+comments: true
+social-share: false
 big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
 학습을 위해 <a href = "https://opentutorials.org/course/697/3828">생활코딩</a>을 참조하여 정리했습니다. 
