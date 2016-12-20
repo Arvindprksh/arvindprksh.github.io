@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5. Longest Palindromic Substring (Difficulty-Medium)
+title: 5. Longest Palindromic Substring
 category: LeetCode
 subtitle: Diffculty - Medium
 tags: [algorithm, c function, medium]
