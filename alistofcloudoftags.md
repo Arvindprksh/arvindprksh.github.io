@@ -35,7 +35,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% assign tags = site.tags | sort %}
     {% for tag in tags %} <!--"#{{ tag[0] | slugify }}"--> 
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-folder-open"> <!-- I got rid of left option-->
+      <span class="fa fa-folder-open" aria-hidden="true"> <!-- I got rid of left option-->
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
       </span>
     </a>
@@ -57,7 +57,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         {% endfor %}
       </ul>
         <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-          <span class="fa fa-refresh"></span> Go back to the top
+          <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
         </a>  
         <hr/>
     {% endfor %}
