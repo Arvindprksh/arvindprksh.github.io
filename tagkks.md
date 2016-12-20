@@ -30,7 +30,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 
-<div class="post-preview">    
+  
   <div class="">
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
