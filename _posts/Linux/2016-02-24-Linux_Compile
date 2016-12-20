@@ -3,17 +3,8 @@ layout: post
 title: how to compile Linux
 subtitle: Linux compile at CentOS 7.1 from kernel 3.7 to 4.5
 category: Linux
-css:
 tags: [linux, compile]
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+permalink: /2016/02/24/Linux_Compile/
 ---
 
 # Agenda
