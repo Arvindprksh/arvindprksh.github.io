@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is the MVC Pattern ?
-subtitle: Basic
+subtitle: Summary of What MVC Pattern with my curiosity
 category: Web Programming
 tags: [pattern]
 permalink: /2016/01/03/MVC_Pattern/
