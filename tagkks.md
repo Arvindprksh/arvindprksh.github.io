@@ -21,12 +21,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 
 <!-- This code from another person ofhttps://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate.md-->
-<div class="list-filters post-preview">
-  <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/popular" class="list-filter">Tags Cloud</a>
-  <a href="/tutorials" class="list-filter">Catergories Cloud</a>
-  <a href="/tutorials" class="list-filter">Date Cloud</a>
-</div>
+
 
 <!---
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
