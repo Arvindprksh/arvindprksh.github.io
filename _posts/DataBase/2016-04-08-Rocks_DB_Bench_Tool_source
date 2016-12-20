@@ -1,18 +1,10 @@
 ---
 layout: post
 title: rocsksDB code analyze
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+subtitle: about benchmark tool's source code
+category: DataBase
+tags: [rocksdb, facebook]
+permalink: /2016/04/08/Rocks_DB_Bench_Tool_source/
 ---
 
 rocksDB/tools/db_bench_too.cc is file to analyze "./db_bench" utility code.
