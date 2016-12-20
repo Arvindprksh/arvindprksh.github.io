@@ -2,17 +2,9 @@
 layout: post
 title: Mounting Filesystem
 subtitle: how to mount filesystem, For example F2FS
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, filesystem, command]
+permalink: /2016/04/28/Mount_Filesystem/
 ---
 
 # f2fs 
