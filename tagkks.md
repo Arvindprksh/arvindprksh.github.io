@@ -34,8 +34,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 
-  
-  <div class="">
+  	
+<div class="post-preview">  
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
 		<ul class="no-bullet">
@@ -58,6 +58,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
 			{% endfor %}
 		</ul>
+</div>
 
 {% for post in site.posts %}
     {% capture month %}
@@ -86,7 +87,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>
-	
+<div class="post-preview"> 	
 	{{ openList }}
       {% endif %}
     {% endcapture %}
@@ -100,7 +101,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </li>
     {% endcapture %}
 	
-<div class="post-preview">  
+ 
     {{ monthHead }}{{ link }}
        
 {% endfor %}
