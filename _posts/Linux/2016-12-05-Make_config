@@ -2,17 +2,9 @@
 layout: post
 title: Difference between Make oldconfig and olddefconfig
 subtitle: What is the Difference between Make oldconfig and olddefconfig ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, fio, command]
+permalink: /2016/12/05/Make_config/
 ---
 
 # [Linux Kernel document of kconfig](https://kernel.org/doc/Documentation/kbuild/kconfig.txt)
