@@ -37,7 +37,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
       <span class="fa fa-folder-open" aria-hidden="true"> <!-- I get rid of left option -->
-        {{ tag[0] }} <i class="badge" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag | last | size }}</i>
+        {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
       </span>
     </a>
     {% endfor %}
