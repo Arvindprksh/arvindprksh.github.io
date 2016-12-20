@@ -340,7 +340,7 @@ with the above long, to search for kerenl source, refer to <a href = "http://lxr
 [    1.453468] hyun2 : function call
 [    1.453468] hyun2 : pdev -> vendor : ### , pdev -> device : ### , iv->vs[0] : #
 [    1.453469] hyun2 : before if (pdev -> vendor == ### && pdev -> device == ### && id -> vs[0] == #
-[    1.453470] hyun2 : after if (pdev -> vendor == ### && pdev -> device == 8708 && id -> vs[0] == #
+[    1.453470] hyun2 : after if (pdev -> vendor == ### && pdev -> device == ### && id -> vs[0] == #
 [    1.453471] hyun2 : after if (nvme_nvm_ns_supported(ns, id) && ns -> type != NVME_NS_LIGHTNVM
 [    1.453614] hyun2 :function call end static int nvme_revalidate_disk(struct gendisk * disk)
 ```
