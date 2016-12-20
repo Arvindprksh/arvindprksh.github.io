@@ -2,17 +2,9 @@
 layout: post
 title: Linux File Permission
 subtitle: What is "ls" command's meaning and File Permission in Linux 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, concept]
+permalink: /2016/03/07/Linux_File_Permission/
 ---
 
 now I will look into kernel's lightnvm ioctl(Input Output control, in short), so while studying kernel, I make a note that I learn.
