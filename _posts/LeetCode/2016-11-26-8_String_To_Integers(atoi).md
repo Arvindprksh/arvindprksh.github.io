@@ -19,6 +19,7 @@ Hint  : Carefully consider all possible input cases. If you want a challenge, pl
 
 Notes : It is inteded for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
 
+
 ```c
 int myAtoi(char* str) {
     
