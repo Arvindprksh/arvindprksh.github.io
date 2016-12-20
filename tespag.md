@@ -38,24 +38,25 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       </span>
     </a>
     {% endfor %}
+   </div>
   <!--<hr/>--> <!-- margin-top and margin-bottom in main.css -->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
       <div class="post-preview">
-      <ul class="later on"> <!-- post-subtitle -->
-        {% for post in tag[1] %}
-          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-        <li>
-          {{ post.title }}
-        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-        </li>
-        </a>
-        {% endfor %}
-      </ul>
+        <ul class="later on"> <!-- post-subtitle -->
+          {% for post in tag[1] %}
+            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+              <li>
+                {{ post.title }}
+                <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+              </li>
+            </a>
+          {% endfor %}
+        </ul>
         <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
           <span class="fa fa-refresh"></span> Go back to the top
         </a> 
         <hr/>
     {% endfor %}
-  </div>
+    </div>
 
