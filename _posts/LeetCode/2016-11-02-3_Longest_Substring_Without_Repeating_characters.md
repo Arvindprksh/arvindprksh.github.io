@@ -22,7 +22,8 @@ Given a string, find the length of the longest substring without repeaing charac
      - Given **"pwwkew"**, the answer is **"wke"**, with the length of 3. Note that the answer must be a substring, 
      
      **"pwke"** is a subsequence and not a substring.  
-     
+    
+    
 ```c
 int lengthOfLongestSubstring(char* s) {
     
@@ -35,6 +36,7 @@ int lengthOfLongestSubstring(char* s) {
 
   - First of all, I use the  of for statement. First is just for length of substring. Second is just for index of the original string, Third is for checking if there is the same thing in substring. (pre-requisit is just english and lony lowercase).
    * but, this problem include the special charaters. So you consider range of ASCII code
+  
   
 ```c
 // a b c d e f g h i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
@@ -75,12 +77,14 @@ int lengthOfLongestSubstring(char* s) {
    return flag;
 }
 ```
+
 After testing with the above code. the result is Time Limit Exceeded.
 
 ## 2. brute force with reverse order + hash 
 
   - the point of the above problem is for the longest charaters. so I will try this function with reverse order
-  
+ 
+ 
 ```c
 // a b c d e f g h i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
 // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
@@ -121,6 +125,7 @@ int lengthOfLongestSubstring(char* s) {
    return flag;
 }
 ```
+
 In this case, Time Limit exceeded. 
 
 # Another way
@@ -134,6 +139,7 @@ In this case, Time Limit exceeded.
   -> a b c **a**
   
   -> then You have to check if location of **a** is in in a b c.   
+
 
 ```c
 // a b c d e f g h i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
@@ -162,6 +168,7 @@ The above method exceeded time limit.
 
 ## Another way
 
+
 ```c
 int lengthOfLongestSubstring(char* s) {
    int i =0, j = 0 ;
@@ -184,6 +191,7 @@ int lengthOfLongestSubstring(char* s) {
    return maxlen;
 }
 ```
+
 if you wato plus 0ne to [i,j), the result is [i+1, j+1). 
 
 basic concept is the same from right above, but it shrink count of for statement. 
