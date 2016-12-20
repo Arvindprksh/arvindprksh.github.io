@@ -30,12 +30,11 @@ navbar-links:
     - Categories_Cloud: ""
     - Tags_List: "alistofcloudoftags"
     - Tags_Cloud: ""
-    - Date: ""
+    - Date: "alistofdate"
   Projects: "projects"
   About Me: "aboutme"
   Resume: "resume"
   Search: "search"
-  test: "ListofDate"
   test2: "tespag"
   test3: "tagkks"
 
