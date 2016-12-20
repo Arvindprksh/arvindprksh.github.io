@@ -5,8 +5,6 @@ subtitle: How can I add a google custom search engine in my jekyll ?
 category: Web Programming
 tags: [jekyll, utility]
 permalink: /2016/12/11/How_To_Use_A_Google_Custom_Search_Engine/
-comments: true
-social-share: false
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
