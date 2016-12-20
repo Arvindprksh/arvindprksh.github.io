@@ -5,8 +5,6 @@ subtitle: what is the markdown for gitpage
 category: Web Programming
 tags: [markdown]
 permalink: /2016/04/12/Mark_down_tutorial/
-comments: true
-social-share: true
 bigimg: 
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
