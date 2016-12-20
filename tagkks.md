@@ -32,14 +32,13 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 --->
 
-<div class="posts-list post-preview">
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 
     
   <div class="">
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
-		<h3><a href="{{ archive_url }}">Archive</a></h3>
+		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
 		<ul class="no-bullet">
 			{% for post in site.posts %}
 				{% assign currentdate = post.date | date: '%B %Y' %}
@@ -89,7 +88,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             {% endif %} -->
           <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px;"></a>
           {{ post.date | date: '%B %Y' }}
-        </h2>{{ openList }}
+        </h2>
+<div class="posts-list post-preview">
+	{{ openList }}
       {% endif %}
     {% endcapture %}
 
