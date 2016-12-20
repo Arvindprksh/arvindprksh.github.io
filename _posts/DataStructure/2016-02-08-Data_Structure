@@ -1,18 +1,12 @@
 ---
 layout: post
-title: Data Structure이란?
-subtitle:
-css:
-tags:
-date:
+title: What is the Data Structure ?
+subtitle: Summary of what the Data Structure is
+category: Data Structure
+tags: [summary]
+permalink: /2016/02/08/Data_Structure/
 big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
 물론, int, double, bool이란 것도 데이터이기는 하다. 하지만 Data structure는 일반적으로 생활속의 정보를 추상화하여 표현을 한다면 이해하기 쉽다. 그냥 표현하는 방식이 다양한 것이다. 
