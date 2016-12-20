@@ -27,6 +27,7 @@ Write a function that takes a string as input and returns the string reveresd.
 
 If you choose C language, Leetcode give you function format as follows. 
 
+
 ```c
 char* reverseString(char* s) {
 
@@ -45,6 +46,7 @@ I just simply access this problem.
 -based on the length, I reoder the string on another variable.
  
  The follow function is bases in C Languge
+ 
  
 ```c
 char* reverseString(char* s) {
