@@ -2,17 +2,9 @@
 layout: post
 title: Cmake and Gflag
 subtitle: What is the Cmake and Gflag ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, utility]
+permalink: /2016/04/07/Cmake_Gflag/
 ---
 
 # Command-Line Flags 
