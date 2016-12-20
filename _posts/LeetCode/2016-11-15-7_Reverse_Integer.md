@@ -17,6 +17,7 @@ Example1 : x = 123 , return 321
 
 Example2 : x = -123 , return -321
 
+
 ```c
 int reverse(int x) {
     
@@ -26,6 +27,7 @@ int reverse(int x) {
 # My Solution 
 
  - just % and * with 10 
+
 
 ```c
 int reverse(int x) {
@@ -47,7 +49,8 @@ int reverse(int x) {
 ```
 
   I wanted to change a part of the above source. 
-  
+ 
+ 
 ```c
 int reverse(int x) {
     int digit=10;
