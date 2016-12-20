@@ -2,7 +2,7 @@
 layout: post
 title: Test of Code block with highlight in Jekyll
 subtitle: This is test for code block in jekyll and Markdown
-category: WebProgramming
+category: Web Programming
 tags: [jekyll, markdown]
 permalink: /2016/12/14/How_To_Use_Code_Block_Of_Jekyll/
 comments: true
