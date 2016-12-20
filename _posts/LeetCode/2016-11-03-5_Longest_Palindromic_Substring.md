@@ -183,17 +183,17 @@ char* longestPalindrome(char* s) {
                   P(i, i) = true and P(i, i+1) = (S[i]==s[i+1])
 ```
 
-    - If you find recurivse equation, you can use the dynamic programming.
+   - If you find recurivse equation, you can use the dynamic programming.
     
-    - next stage, you can choose the method like how to make function between only using for statement and recursive function. 
+   - next stage, you can choose the method like how to make function between only using for statement and recursive function. 
     
-    - the below is the case of only using for statement. 
+   - the below is the case of only using for statement. 
     
-    - when using dynamic programming, you typically need to use state array(dp array). 
+   - when using dynamic programming, you typically need to use state array(dp array). 
     
-    - it is similiar to BFS, DFS, Backtracking and so on.
+   - it is similiar to BFS, DFS, Backtracking and so on.
     
-    - in avobe case, similarity is with state array. 
+   - in avobe case, similarity is with state array. 
 
 ```c  
 // I use dp array 
