@@ -2,17 +2,9 @@
 layout: post
 title: Bashrch File
 subtitle: What is .bashrch File ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, command]
+permalink: /2016/04/05/Bashrch_File/
 ---
 
 the following refers to <a href ="http://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work">stackexchange</a>
