@@ -43,6 +43,16 @@ my test is implemented on qemu-nvme for OpenChannelSSD with CentOS 7
 
 The following is the same process before procedure below.
 
+as a result, "make oldconfig" is the same from "make olddefconfig".
+
+**but** when you type "make oldconfig", if you reply by default against oldconfig.
+
+replying by default is easy, for example
+
+in the case below of [Y/n/?], you just reply "y" to fit upper case. 
+
+Use a virtually-mapped stack (VMAP_STACK) [Y/n/?] (NEW) Y
+
 ```shell
 - preparing for kernel compile. 
 $ su
