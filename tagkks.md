@@ -22,10 +22,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- This code from another person ofhttps://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate.md-->
 <div class="list-filters post-preview">
-  basic setting is done
   <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
-  <a href="/tutorials" class="list-filter">Tutorials</a>
+  <a href="/popular" class="list-filter">Tags Cloud</a>
+  <a href="/tutorials" class="list-filter">Catergories Cloud</a>
+  <a href="/tutorials" class="list-filter">Date Cloud</a>
 </div>
 
 <!---
@@ -83,7 +83,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-        <h2 class="post-title">
+        <h2 class="post-title" style="padding-top: 70px;">
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
