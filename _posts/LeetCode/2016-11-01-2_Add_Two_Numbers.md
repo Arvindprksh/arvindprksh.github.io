@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2. Add Two Numbers (Difficulty-Medium)
+title: 2. Add Two Numbers
 subtitle: Difficulty - Medium
 category: LeetCode
 tags: [algorithm, medium]
