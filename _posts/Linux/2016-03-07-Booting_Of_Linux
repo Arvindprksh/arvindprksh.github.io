@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Booting_Of_Linux
+title: Booting Of Linux
 subtitle: How to boot linux - You need to upload the image. 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, concept]
+permalink: /2016/03/07/Booting_Of_Linux/
 ---
 
 기본적으로 컴퓨터가 부팅을 하면 
