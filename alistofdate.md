@@ -18,18 +18,14 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 {: #top }
 
-
-<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
-<div class="list-filters">
-  basic setting is done
+<!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
+<div class="list-filters post-preview">
   <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
-  <a href="/tutorials" class="list-filter">Tutorials</a>
+  <a href="/alistofcategories" class="list-filter">Tags Cloud</a>
+  <a href="/alistofcloudoftags" class="list-filter">Catergories Cloud</a>
 </div>
 
-<!---
-[By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
---->
+<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
 <div class="post-preview">
 {% assign openList = '<ul class="side-nav">' %}
