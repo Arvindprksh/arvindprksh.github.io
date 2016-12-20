@@ -56,7 +56,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 		</ul>
 	</div>
 	
-
+<div class="post-preview">  
 {% for post in site.posts %}
     {% capture month %}
       {{ post.date | date: '%m%Y' }}
