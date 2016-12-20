@@ -19,7 +19,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 {: #top }
 
 
-<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
+<!-- This code from another person ofhttps://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate.md-->
 <div class="list-filters">
   basic setting is done
   <a href="/" class="list-filter filter-selected">All posts</a>
@@ -32,7 +32,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 --->
 
 <div class="post-preview">
-{% assign openList = '<ul class="side-nav">' %}
+{% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 {% for post in site.posts %}
     {% capture month %}
@@ -42,6 +42,29 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% capture nmonth %}
       {{ post.next.date | date: '%m%Y' }}
     {% endcapture %}
+
+    
+  <div class="panel radius">
+		{% assign archive_url = site.baseurl | append: '/alistofdate/' %}
+			{% for post in site.posts %}
+				{% assign currentdate = post.date | date: '%Y-%m' %}
+				{% if currentdate != date %}
+					{% unless forloop.first %}({{ count }}){% endunless %}
+					{% assign count = 1 %}
+					{% assign currentyear = post.date | date: '%Y' %}
+					{% if currentyear != year %}
+						{% unless forloop.first %}{% endunless %}
+						<span class="icon-calendar"></span><a href="{{ archive_url }}">{{ currentyear }}</a>
+						{% assign year = currentyear %}
+					{% endif %}
+					<a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B %Y' }}</a>
+					{% assign date = currentdate %}
+				{% else %}
+					{% assign count = count | plus: 1 %}
+				{% endif %}
+				{% if forloop.last %}({{ count }}){% endif %}
+			{% endfor %}
+	</div>
 
       {% capture monthHead %}
         {% if month != nmonth %}
