@@ -15,6 +15,7 @@ The String "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 
 For Example
 
+
 ```
 P   A   H   N
 A P L S I I G
@@ -31,6 +32,7 @@ string convert(string text, int nRows);
 
 Convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
+
 ```c
 char* convert(char* s, int numRows) {
     
@@ -39,12 +41,14 @@ char* convert(char* s, int numRows) {
 
 # My Solution. 
 
+
 ```
 nROWs = 3; 
 P   A   H   N  | 1   5   9     13 | 4 4 4    
 A P L S I I G  | 2 4 6 8 10 12 14 | 2 2 2 2 2 2
 Y   I   R      | 3   7   11       | 4 4
 ```
+
 ```
 nROWs = 4;
 P     I     N  | 1     7       13 | 6 6
@@ -52,6 +56,7 @@ A   L S   I G  | 2   6 8    12 14 | 4 2 4 2
 Y A   H R      | 3 5   9  11      | 2 4 2
 P     I        | 4     10         | 6
 ```
+
 ```
 nROWs = 5;
 P      H       | 1       9        | 8
