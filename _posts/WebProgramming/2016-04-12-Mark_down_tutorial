@@ -2,17 +2,13 @@
 layout: post
 title: Markdown tutorial
 subtitle: what is the markdown for gitpage
-css:
-tags:
-date:
+category: Web Programming
+tags: [markdown]
+permalink: /2016/04/12/Mark_down_tutorial/
+comments: true
+social-share: true
 big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
 
 If You want to know fase about syntax of markdown, just here is [URL](https://daringfireball.net/projects/markdown/basics)
