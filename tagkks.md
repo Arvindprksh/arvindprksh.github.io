@@ -43,7 +43,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				{% assign currentdate = post.date | date: '%B %Y' %}
 				{% if currentdate != date %}
 					{% unless forloop.first %}
-						<i class="badge">{{ count }}</i></li>
+						<i class="badge">{{ count }}</i></span></a>
 					{% endunless %}
 					{% assign count = 1 %}
 					{% assign currentyear = post.date | date: '%Y' %}
@@ -51,20 +51,20 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 						{% unless forloop.first %}
 						</ul></li>
 						{% endunless %}
-						<li>
-						<span class="icon-calendar"></span>
+						<p>
+						<span class="fa fa-calendar" aria-hidden="true"></span>
 						<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a>
-						<ul>
+						</p>
 						{% assign year = currentyear %}
 					{% endif %}
 					<li>
-					<a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B' }}</a>
+					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="font-size: {{ count  |  times: 4 | plus: 80  }}%"><span class="">{{ post.date | date: '%B' }}
 					{% assign date = currentdate %}
 				{% else %}
 					{% assign count = count | plus: 1 %}
 				{% endif %}
 				{% if forloop.last %}
-					<i class="badge">{{ count }}</i></ul></li>
+					<i class="badge">{{ count }}</i></span></a>
 				{% endif %}
 			{% endfor %}
 		</ul>
