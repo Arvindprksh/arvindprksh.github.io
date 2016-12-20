@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 6. ZigZag Conversion (Difficulty-Easy)
+title: 6. ZigZag Conversion
 subtitle: Difficulty - Easy
 category: LeetCode
 tags: [algorithm, easy]
