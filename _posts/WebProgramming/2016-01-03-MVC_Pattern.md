@@ -3,7 +3,7 @@ layout: post
 title: What is the MVC Pattern ?
 subtitle: Basic
 category: Web Programming
-tags: [Web patter]
+tags: [pattern]
 permalink: /2016/01/03/MVC_Pattern/
 comments: true
 social-share: true
