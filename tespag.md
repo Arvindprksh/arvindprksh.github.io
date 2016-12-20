@@ -39,9 +39,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </a>
     {% endfor %}
  </div>
+ 
   <!--<hr/>--> <!-- margin-top and margin-bottom in main.css -->
-  <div class="post-preview">
+  
     {% for tag in tags %}
+    <div class="post-preview">
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
         <ul class="later on"> <!-- post-subtitle -->
           {% for post in tag[1] %}
@@ -57,6 +59,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           <span class="fa fa-refresh"></span> Go back to the top
         </a> 
         <hr/>
+    </div>   
     {% endfor %}
-    </div>
+    
 
