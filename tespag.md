@@ -56,8 +56,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </a>
         {% endfor %}
       </ul>
-        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 30px;">
-          <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
+        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 10px;">
+          <span class="fa fa-refresh" aria-hidden="true" style="padding-left: 30px"></span> Go back to the top
         </a> 
         <hr/>
     {% endfor %}
