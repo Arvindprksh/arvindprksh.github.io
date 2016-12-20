@@ -5,8 +5,6 @@ subtitle: What is the YAML front matter ?
 category: Web Programming
 tags: [jekyll]
 permalink: /2016/12/10/Let's_Start_Jekyll_With_Beautiful-jekyll/
-comments: true
-social-share: false
 bigimg: 
   - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
