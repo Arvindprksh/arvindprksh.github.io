@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 7. Reverse Integer
+title: 7. Reverse Integer (Difficulty-Easy)
 subtitle: Difficulty - Easy
-tags:
+category: LeetCode
+tags: [algorithm, c function, easy]
 permalink: /2016/11/15/7_Reverse_Integer/
-comments:
+bigimg: 
+    - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
 ---
 
 # [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
