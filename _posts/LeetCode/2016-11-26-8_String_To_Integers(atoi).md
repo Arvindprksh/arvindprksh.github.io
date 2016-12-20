@@ -15,7 +15,7 @@ Implement atoi to covert a string to integer.
 
 Hint  : Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input case.
 
-        i.e If you want to see hint, just click title. You can get hint from original site of leetcode.
+   i.e If you want to see hint, just click title. You can get hint from original site of leetcode.
 
 Notes : It is inteded for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
 
