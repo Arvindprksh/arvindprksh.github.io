@@ -27,8 +27,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
-<div class="posts-list">
-  <div class="blog-tags" tyle="margin-top: 200px; margin-bottom: 200px;"> 
+<div class="posts-list" style="margin-top: 200px; margin-bottom: 200px;">
+  <div class="blog-tags"> 
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
@@ -42,7 +42,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <div class="post-preview"> <!--post-preview -->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="later on" tyle="margin-top: 200px; margin-bottom: 200px;"> <!-- post-subtitle -->
+      <ul class="later on" > <!-- post-subtitle -->
         {% for post in tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
         <li>
