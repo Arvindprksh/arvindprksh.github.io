@@ -2,17 +2,9 @@
 layout: post
 title: analysis of NVMe Driver source 
 subtitle: In order to register lightnvm, I analyzed kernel source, source version is 4.4
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, kernel code]
+permalink: /2016/03/10/Analysis_Of_NVMe_Drive_Source/
 ---
 
 If you want to debug kernel source, use "printk" function, 
