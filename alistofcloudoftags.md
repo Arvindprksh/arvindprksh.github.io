@@ -18,6 +18,15 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 {: #top }
 
+<!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
+<div class="list-filters post-preview">
+  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/alistofcategories" class="list-filter">Tags Cloud</a>
+  <a href="/alistofcloudoftags" class="list-filter">Catergories Cloud</a>
+  <a href="/alistofdate" class="list-filter">Date Cloud</a>
+</div>
+
+
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
 <!-- class="later on" means I will design again -->
 <!-- class="later on" is changed while seeing my github page of index.html--> 
