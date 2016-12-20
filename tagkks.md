@@ -50,13 +50,13 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 						{% unless forloop.first %}
 						 
 						{% endunless %}
-						<p>
+						<h3>
 						<span class="fa fa-calendar" aria-hidden="true"></span>
 						<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a>
-						</p>
+						</h3>
 						{% assign year = currentyear %}
 					{% endif %}
-					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="font-size: {{ count  |  times: 4 | plus: 80  }}%"><span class="">{{ post.date | date: '%B' }}
+					<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="font-size: {{ count  |  times: 4 | plus: 80  }}%"><span class="fa fa-folder-open" aria-hidden="true">{{ post.date | date: '%B' }}
 					{% assign date = currentdate %}
 				{% else %}
 					{% assign count = count | plus: 1 %}
