@@ -5,8 +5,6 @@ subtitle: This is test for code block in jekyll and Markdown
 category: Web Programming
 tags: [jekyll, markdown]
 permalink: /2016/12/14/How_To_Use_Code_Block_Of_Jekyll/
-comments: true
-social-share: false
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
