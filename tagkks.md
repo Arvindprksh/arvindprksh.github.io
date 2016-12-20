@@ -43,7 +43,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				{% assign currentdate = post.date | date: '%B %Y' %}
 				{% if currentdate != date %}
 					{% unless forloop.first %}
-						({{ count }})
+						<i class="badge">{{ count }}</i></li>
 					{% endunless %}
 					{% assign count = 1 %}
 					{% assign currentyear = post.date | date: '%Y' %}
@@ -64,7 +64,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% assign count = count | plus: 1 %}
 				{% endif %}
 				{% if forloop.last %}
-					<i class="badge">({{ count }})</i></ul></li>
+					<i class="badge">{{ count }}</i></ul></li>
 				{% endif %}
 			{% endfor %}
 		</ul>
