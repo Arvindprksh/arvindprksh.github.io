@@ -35,7 +35,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 
-    
+<div class="post-preview">    
   <div class="">
 		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<!--<h3><a href="{{ archive_url }}">Archive</a></h3>-->
@@ -86,11 +86,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
-          <a name="{{ post.date | date:  '%Y-%m'  }}"></a>
+          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>
 	
-<div class="post-preview">
 	{{ openList }}
       {% endif %}
     {% endcapture %}
@@ -99,7 +98,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <li>
             <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
               <strong>{{ post.title }}</strong>
-              <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+              <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }} or {{ post.date | date:  '%Y-%m'  }} or {{ post.date | date: '%Y' }}</small>
             </a>
         </li>
     {% endcapture %}
