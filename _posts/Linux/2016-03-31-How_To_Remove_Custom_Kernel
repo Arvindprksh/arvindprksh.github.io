@@ -2,17 +2,9 @@
 layout: post
 title: Removing Custom kernel
 subtitle: How can I remove my custom kernel
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, command]
+permalink: /2016/03/31/How_To_Remove_Custom_Kernel/
 ---
 
 this refers to <a href ="https://community.linuxmint.com/tutorial/view/1718">linuxmint</a> & <a href ="http://askubuntu.com/questions/594443/how-can-i-remove-compiled-kernel">how-can-i-remove-compiled-kernel</a>
