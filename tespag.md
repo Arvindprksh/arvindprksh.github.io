@@ -44,9 +44,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <div class="post-preview">
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-        <ul class="later on"> <!-- post-subtitle -->
+        <ul class="later on" style="padding-top: 70px"> <!-- post-subtitle -->
           {% for post in tag[1] %}
-            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}" style="padding-top: 70px">
+            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
               <li>
                 {{ post.title }}
                 <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
