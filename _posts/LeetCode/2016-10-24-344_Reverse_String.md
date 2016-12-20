@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 344. Reverse String (Difficulty-Eesy)
+title: 344. Reverse String
 subtitle: Difficulty - Easy
 category: LeetCode
 tags: [algorithm, easy]
