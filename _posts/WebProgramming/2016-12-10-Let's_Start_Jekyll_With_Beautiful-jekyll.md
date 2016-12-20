@@ -25,7 +25,7 @@ bigimg:
   
 - [x] First, How to use big Image, (2016.12.15) 
 - [x] Second, How to use a Custom google Search engine. (2016.12.15) 
-- [ ] Third, How to use Tags and categories. 
+- [x] Third, How to use Tags and categories. 
 - [x] Fourth, What is the DISQUS ? (2016.12.15) 
 - [x] Fifth, How can I do hightlither When I want to use codeblock in markdown. (2016.12.15) 
 - [ ] Sixth, What is the permalink option ?
