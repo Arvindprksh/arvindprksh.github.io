@@ -23,9 +23,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="list-filters post-preview">
   <a href="/" class="list-filter">All posts</a>
   <a href="/alistofcloudoftags" class="list-filter">Catergories Cloud</a>
+  <a href="/alistofcategories" class="list-filter filter-selected">Tags Cloud</a>
   <a href="/alistofdate" class="list-filter">Date Cloud</a>
 </div>
-
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
 <!-- class="later on" means I will design again -->
