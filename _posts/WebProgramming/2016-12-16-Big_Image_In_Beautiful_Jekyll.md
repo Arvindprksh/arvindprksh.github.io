@@ -5,8 +5,6 @@ subtitle: How Can I deploy my picture in jekyll template of beautiful-jekyll ?
 category: Web Programming
 tags: [jekyll, utility]
 permalink: /2016/12/16/Big_Image_In_Beautiful_Jekyll/
-comments: true
-social-share: false
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
