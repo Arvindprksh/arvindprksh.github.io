@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3. Longest substring without Repeating characters (Difficulty-Medium)
+title: 3. Longest substring without Repeating characters
 subtitle: Difficulty - Medium
 category: LeetCode
 tags: [algorithm, c function, medium]
