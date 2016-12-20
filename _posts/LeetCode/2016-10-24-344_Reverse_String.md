@@ -3,7 +3,7 @@ layout: post
 title: 344. Reverse String (Difficulty-Eesy)
 subtitle: Difficulty - Easy
 category: LeetCode
-tags: [algorithm, c funtion, easy]
+tags: [algorithm, c function, easy]
 permalink: /2016/10/24/344_Reverse_String/
 bigimg: 
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
