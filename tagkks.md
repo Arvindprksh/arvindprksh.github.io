@@ -38,7 +38,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
     
   <div class="panel radius">
-		{% assign archive_url = site.baseurl | append: '/alistofdate/' %}
+		{% assign archive_url = site.baseurl | append: '/tagkks/' %}
 		<h3><a href="{{ archive_url }}">Archive</a></h3>
 		<ul class="no-bullet">
 			{% for post in site.posts %}
