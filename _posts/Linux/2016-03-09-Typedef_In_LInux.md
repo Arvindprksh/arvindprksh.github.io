@@ -2,17 +2,9 @@
 layout: post
 title: typedef In kernel
 subtitle: what is the typedef in kernel
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Linux
+tags: [linux, concept]
+permalink: /2016/03/09/Typedef_In_LInux/
 ---
 
 while seeing kernel source, I wonder Statement like "typedef int function (int * , int);" 
