@@ -1,48 +1,61 @@
 ---
 layout: page
-title: "Blog Archive by Tag Cloud"
-teaser: "Check out all blog posts by tag cloud."
-#breadcrumb: true
-permalink: /blog/archive/tagcloudview/
-sitemap: false
-sidebar: right
+title: Study List With Categories
+subtitle: Something that I have studied and experienced
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
+
+Before going to Silicon Valley, I love challenge to new technology, I made git static page to arrange concept of computer sceince for myself. I started studying the Data structure, algorithm and OS(operating system). that is a good time to remember knowledge I forgot. And, continuously while I'm doing OpenSource project In Silicon Valley,CA, I will make a note about what I learn. 
+
+요즘 미국 실리콘 밸리로 인턴을 떠나기 전에 심심해서 지금의 Git-Hub을 이용해 내 홈페이지를 만들고, 자바 "자바의 정석", 열혈강의 C/C++, 자료구조, os(운영체제) 등을 다시 학습을 하기 시작했다. 이를 통해 그동안 잊고 지냈던 개념들을 다시 알게 되어 좋은 시간인거 같다. 또한 미국에서 리눅스 관련 OpenSource 작업을 하면서 필요한 정보들을 그때 그때 정리해놓아서 나중에 많은 도움을 받을 수 있을 거 같다.
+
 {: #top }
+<!--
+<div class="list-filters">
+  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/popular" class="list-filter">Most Popular</a>
+  <a href="/tutorials" class="list-filter">Tutorials</a>
+</div>
+-->
+<!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
-[By Date]({{"/blog/archive/monthview" | prepend: site.baseurl }}) | [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
-
-{% assign tags = site.categories | sort %}
-{% assign sorted_posts = site.posts | sort: 'title' %}
-
-
-{% assign tags_url = '' %}
-<div id="category-index" class="row">
-	<div class="small-12 columns t30">
-        <div class="tagcloud03">
-            <ul{% if increaseFont %} class="cloud"{% endif %}> {% for tag in tags %}<li><a href="{{baseurl}}#{{ tag | first | slugify }}" {% if increaseFont %}style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"{% endif %}>{{ tag | first | replace: '-', ' ' }}{% unless increaseFont %}<span>{{ tag | last | size }}</span>{% endunless %}</a></li>{% endfor %}
-            </ul>
-        </div><!-- /.tagcloud03 -->
-    </div><!-- /.small-12.columns -->
-</div><!-- /.row -->
-
-<div id="blog-index" class="row columns">
-{% for tag in tags %}
-
-<h3 class="archivetitle"><a name="{{ tag | first | slugify }}"></a>{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
-
-<ul class="side-nav">
-
-{% for post in sorted_posts %}
-    {%if post.categories contains tag[0]%}
-<li>
-    <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl  }}{{ post.url }}"> <strong>{{ post.title }}</strong>{% if post.date %}<small> - {{ post.date | date: "%B %e, %Y" }}</small>{% endif %}</a>
-</li>
-    {%endif%}
-
-{% endfor %}
-</ul>
-
-<small markdown="1">[back to top](#top)</small>
-
-{% endfor %}
+<!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html "-->
+<div class="posts-list" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="blog-tags"> 
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+    <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+      <span class="fa fa-folder-open"> <!-- I get rid of left option -->
+        {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+  <hr/> <!-- margin-top and margin-bottom in main.css -->
+  <div class="post-preview" style="margin-top: 100px; margin-bottom: 100px;"> <!--post-preview -->
+    {% for tag in tags %}
+      <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="later on"> <!-- post-subtitle -->
+        {% for post in tag[1] %}
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+        <li>
+          {{ post.title }}
+        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
+          <span class="fa fa-refresh"></span> Go back to the top
+        </a> 
+        <hr/>
+    {% endfor %}
+  </div>
 </div>
