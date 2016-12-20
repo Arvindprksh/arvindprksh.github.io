@@ -13,6 +13,7 @@ bigimg:
 
 Given a string S, find the longest palindomic substring in S. You may assume that the maximum lenght of S is 1000, and there exisits one unique longest plindromic substring. 
 
+
 ```c
 char* longestPalindrome(char* s) {
     
@@ -28,6 +29,7 @@ char* longestPalindrome(char* s) {
  - First of all, I have to make all substrings. 
  
  - Second of all, and then I need to check if reversing the substring is the same as the original substring. 
+
 
 ```c
 char* longestPalindrome(char* s) {
@@ -121,7 +123,8 @@ char* longestPalindrome(char* s) {
  - at first, reverse the whole string. 
  
  - after that, checking if the substring fits to reverse substrings
- 
+
+
 ```c
 char* longestPalindrome(char* s) {
     int lenOfS = strlen(s);
@@ -171,6 +174,7 @@ char* longestPalindrome(char* s) {
  - If you use the following method, you can decrease useless operations. 
  
  - In this problem, feature of palindorme. 
+ 
  
 ```
     char * S = string.
