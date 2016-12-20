@@ -87,6 +87,8 @@ char* longestPalindrome(char* s) {
  - BUT, it is useless to do like this. i.e adding if statement in the middle of the above second for statement is useless.
  
  - like the above, Time Limit Exceeded. 
+ 
+ 
 ```c
 char* longestPalindrome(char* s) {
    int lenOfS = strlen(s);
@@ -113,6 +115,7 @@ char* longestPalindrome(char* s) {
    return returnStr;
 }
 ```
+
 ## Anothe way to improve the time complexity of the above 2, From now on I will explain the easy way.
 
  - at first, reverse the whole string. 
@@ -154,6 +157,7 @@ char* longestPalindrome(char* s) {
     return returnString;
 }
 ```
+
    this choice is time limit exceeded. 
 
 ## Another way to improve over the above method 2
@@ -195,6 +199,7 @@ char* longestPalindrome(char* s) {
    - it is similiar to BFS, DFS, Backtracking and so on.
     
    - in avobe case, similarity is with state array. 
+
 
 ```c  
 // I use dp array 
@@ -247,7 +252,9 @@ char* longestPalindrome(char* s) {
     return strncpy(returnString, &s[startIdx], maxLenOfSubstring);
 }  
 ```   
+
 ---
+
 ## Another way to improver over the above method 3
 
   - just Expand around Center 
