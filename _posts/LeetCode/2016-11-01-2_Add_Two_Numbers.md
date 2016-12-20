@@ -5,8 +5,6 @@ subtitle: Difficulty - Medium
 category: LeetCode
 tags: [algorithm, medium, c function]
 permalink: /2016/11/01/2_Add_Two_Numbers/
-comments: true
-social-share: true
 bigimg: 
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
