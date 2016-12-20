@@ -19,46 +19,47 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 {: #top }
 
-<!--
-<div class="list-filters">
-  <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
-  <a href="/tutorials" class="list-filter">Tutorials</a>
+<!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
+<div class="list-filters post-preview">
+  <a href="/" class="list-filter">All posts</a>
+  <a href="/alistofcategories" class="list-filter filter-selected">Catergories Cloud</a>
+  <a href="/alistofcloudoftags" class="list-filter">Tags Cloud</a>
+  <a href="/alistofdate" class="list-filter">Date Cloud</a>
 </div>
--->
+
+
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
-<!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html "-->
-
+<!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
+<div class="posts-list">
   <div class="blog-tags"> 
-    {% assign tags = site.tags | sort %}
+    {% assign tags = site.categories | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-folder-open" style="color: #404040; font-weight: 300;"> <!-- I get rid of left option -->
+      <span class="fa fa-folder-open" aria-hidden="true" style="color: #0085a1; font-weight: 300;"> <!-- I get rid of left option -->
         {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
       </span>
     </a>
     {% endfor %}
- </div>
- 
-  <!--<hr/>--> <!-- margin-top and margin-bottom in main.css -->
-  <div class="post-preview">
-    {% for tag in tags %}
-      <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-        <ul class="later on" style="padding-top: 70px"> <!-- post-subtitle -->
-          {% for post in tag[1] %}
-            <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-              <li>
-                {{ post.title }}
-                <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-              </li>
-            </a>
-          {% endfor %}
-        </ul>
+  </div>
+  <hr/> <!-- margin-top and margin-bottom in main.css -->
+  <div class="post-preview"> <!--post-preview -->
+    {% for tag in tags %} <!-- style="padding-top: 70px;" is used to deal with nav-custom bar -->
+      <h2 id="{{ tag[0] | slugify }}" style="padding-top: 70px;"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
+      <ul class="later on"> <!-- post-subtitle -->
+        {% for post in tag[1] %}
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+        <li>
+          {{ post.title }}
+        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
         <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-          <span class="fa fa-refresh"></span> Go back to the top
+          <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
         </a> 
-        <hr/> 
+        <hr/>
     {% endfor %}
-    </div>     
-
+  </div>
+</div>
