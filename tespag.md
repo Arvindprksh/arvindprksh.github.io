@@ -28,8 +28,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html "-->
-<div class="later on">
-  <div class="blog-tags"> 
+
+  <div class="blog-tags" style="color: #cccccc;"> 
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
@@ -38,12 +38,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
       </span>
     </a>
     {% endfor %}
-  </div>
   <!--<hr/>--> <!-- margin-top and margin-bottom in main.css -->
-  <div class="later on"> <!--post-preview -->
     {% for tag in tags %}
       <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="post-preview"> <!-- post-subtitle -->
+      <div class="post-preview">
+      <ul class="later on"> <!-- post-subtitle -->
         {% for post in tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
         <li>
@@ -59,4 +58,4 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <hr/>
     {% endfor %}
   </div>
-</div>
+
