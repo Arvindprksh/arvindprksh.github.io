@@ -53,8 +53,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
                 </a>
               </small>
               <hr/>
-          {%endif %}
-        <h2 class="post-title">
+          {%endif %} <!-- style="padding-top: 70px;" is used to deal with nav-custom bar -->
+        <h2 class="post-title" style="padding-top: 70px;">
            <!-- {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} -->
