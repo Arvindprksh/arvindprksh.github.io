@@ -54,7 +54,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
 			{% endfor %}
 		</ul>
-	</div>
 	
 <div class="post-preview">  
 {% for post in site.posts %}
