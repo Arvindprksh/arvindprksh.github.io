@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 3. Longest substring without Repeating characters
+title: 3. Longest substring without Repeating characters (Difficulty-Medium)
 subtitle: Difficulty - Medium
-tags:
+tags: [algorithm, c function, medium]
 permalink: /2016/11/02/3_Longest_Substring_Without_Repeating_characters/
 comments:
 ---
