@@ -5,8 +5,6 @@ subtitle: Difficulty - Easy
 category: LeetCode
 tags: [algorithm, c funtion, easy]
 permalink: /2016/10/24/344_Reverse_String/
-comments: true
-social-share: true
 bigimg: 
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
 ---
