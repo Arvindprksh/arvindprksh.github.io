@@ -25,12 +25,10 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: ""
   Study: 
-    - Old On: "studies"
-    - Categories_List: "alistofcategories"
-    - Categories_Cloud: ""
-    - Tags_List: "alistofcloudoftags"
-    - Tags_Cloud: ""
-    - Date: "alistofdate"
+    - Old One: "studies"
+    - A List by Categories Cloud: "alistofcategories"
+    - A List by Tags Cloud: "alistofcloudoftags"
+    - A List by Date: "alistofdate"
   Projects: "projects"
   About Me: "aboutme"
   Resume: "resume"
