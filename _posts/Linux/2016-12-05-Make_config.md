@@ -51,7 +51,9 @@ replying by default is easy, for example
 
 in the case below of [Y/n/?], you just reply "y" to fit upper case. 
 
+```shell
 Use a virtually-mapped stack (VMAP_STACK) [Y/n/?] (NEW) Y
+```
 
 ```shell
 - preparing for kernel compile. 
