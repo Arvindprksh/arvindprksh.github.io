@@ -196,7 +196,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  at this time, bi_next field of the bio structure is used to store the next bio in the list. 
  
  <pre><code>
- <a ref="http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107">struct request_list</a>{
+ <a ref="http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L55">struct request_list</a>{
     mempool_t *rq_pool;
  }</code></pre>
  
