@@ -9,13 +9,16 @@ permalink: /2016/07/08/Utilization_Of_LinkedList3/
 
 # Check If list is Loop, and then if Loop is right, what is the length of loop ???
 
-    how to solve this problem 
-     
- > 1. I think that I have to check Loop with floyd finding cycle algorithm.   
- > 2. I think that I have to find the beginning of loop   
- > If you want to skip 2, just slowNode is placed in beginning of list, again you have to move slowNode to fastNode   
- > In this time, distance of moving slowNode is the length of loop   
- >
+how to solve this problem 
+
+ 1. I think that I have to check Loop with floyd finding cycle algorithm.   
+ 
+ 2. I think that I have to find the beginning of loop   
+ 
+ If you want to skip 2, just slowNode is placed in beginning of list, again you have to move slowNode to fastNode   
+ 
+ In this time, distance of moving slowNode is the length of loop   
+ 
  
 ```c
  int FindBeginningOfLoop (struct ListNode * head) {
