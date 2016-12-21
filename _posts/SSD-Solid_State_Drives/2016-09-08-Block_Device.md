@@ -2,17 +2,9 @@
 layout: post
 title: Block device and BIO(block I/O) Architecture
 subtitle: Information of data structure associated with block dievice and layer
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [block layer, block device driver]
+permalink: /2016/09/08/Block_Device/
 ---
 
 First of all, I refer to [this site(blkdevarch)](https://yannik520.github.io/blkdevarch.html)
