@@ -1,19 +1,12 @@
 ---
 layout: post
-title: Summary of Expression Tree
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Expression Tree
+subtitle: What is the expression tree ?
+category: Data Structure
+tags: [tree]
+permalink: /2016/03/28/Expression_Tree/
 ---
+
 this refers to 윤성우의 열혈 자료구조.
 
 1-1. What is Exprssion Tree???
