@@ -2,17 +2,9 @@
 layout: post
 title: 1. Utilization of Linked List
 subtitle: How can I find the Nth from the end of LinkedList
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/08/Utilization_Of_LinkedList1/
 ---
 
 # how to look for Nth node from the end of Linked List 
