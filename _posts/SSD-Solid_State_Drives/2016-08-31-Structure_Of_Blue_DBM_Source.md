@@ -14,9 +14,11 @@ Nowadays, I analyze the open source of blue DBM device driver source code.
 <!--
   __just git commit number of blue_dbm is beebb6152b803f213df6ed80c1c3ff1f72f4125a for Simple file structure of blue DBM Driver open source__
 -->
-  
+
+<!--
   [Blue DBM device driver open source's simple file structure](https://www.mindmup.com/#m:h1hyunyoung2/hyunyoung2.github.io:master:img/Image/SSD-Solid_State_Drives/2016-08-31-Structure_Of_Blue_DBM_Source/Blue_DBM%28bdbm_drv%29_structure_of_the_file.mup)
-  
+-->
+ 
   Just this above URL is my information I arrange blue DBM driver open source. So I want to access the above URL, You can't with the URL
   
   just for your information, I attach here [PDF](./img/Image/SSD-Solid_State_Drives/2016-08-31-Structure_Of_Blue_DBM_Source/Blue_DBM_structure_of_file.pdf)
