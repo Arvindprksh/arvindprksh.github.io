@@ -1,0 +1,127 @@
+{
+  "title": "Register of Blue_DBM.ko",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "1. _bdi = bdbm_drv_create( ) ",
+      "formatVersion": 2,
+      "id": 2,
+      "attr": {
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "common/bdbm_main.c<br><br><ol><li>/* It creates bdi and setups bdi with default parameters.&nbsp; Users changes the</li><li>&nbsp;* parameters before calling bdbm_drv_initialize () */</li><li>bdbm_drv_info_t* bdbm_drv_create (void)</li><li>{</li><li>&nbsp;&nbsp;&nbsp; bdbm_drv_info_t* bdi = NULL;</li><li>&nbsp;&nbsp;&nbsp; /* allocate the memory for bdbm_drv_info_t */</li><li>&nbsp;&nbsp;&nbsp; if ((bdi = (bdbm_drv_info_t*)bdbm_malloc (sizeof (bdbm_drv_info_t))) == NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] bdbm_malloc () failed\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return NULL;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* get default driver paramters */</li><li>&nbsp;&nbsp;&nbsp; bdi-&gt;parm_ftl = get_default_ftl_params ();</li><li>&nbsp;&nbsp;&nbsp; bdi-&gt;parm_dev = get_default_device_params ();</li><li>&nbsp;&nbsp;&nbsp; return bdi;</li><li>}</li></ol>"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "1-1. bdi = (bdbm_drv_info_t*)bdbm_malloc (sizeof (bdbm_drv_info_t))",
+          "formatVersion": 2,
+          "attr": {
+            "style": {},
+            "position": [
+              179.5,
+              -74.10557280900008,
+              1
+            ]
+          },
+          "id": 8
+        },
+        "2": {
+          "title": "1-2. \tbdi->parm_ftl = get_default_ftl_params ();",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 9
+        },
+        "3": {
+          "title": "1-3. bdi->parm_dev = get_default_device_params ();",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 10
+        }
+      }
+    },
+    "2": {
+      "title": "2. bdbm_dm_init( _bdi ( return value of 1 )",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          177.5,
+          86.89442719099992,
+          1
+        ],
+        "attachment": {
+          "contentType": "text/html",
+          "content": "devices/common<span class=\"js-path-segment\"><a target=\"_blank\" href=\"https://github.com/chamdoo/bdbm_drv/tree/hynix_nvme/devices/common\"><span></span></a></span><span class=\"separator\">/</span><strong class=\"final-path\">dm_dumbssd.c</strong>\n  \n\n  \n<br><br><span class=\"pl-c1\">bdbm_drv_info_t</span>* _bdi_dm = <span class=\"pl-c1\">NULL</span>; <span class=\"pl-c\">/* for Connectal &amp; RAMSSD */</span><br><br><ol><li>int bdbm_dm_init (bdbm_drv_info_t* bdi)</li><li>{</li><li>&nbsp;&nbsp;&nbsp; /* see if bdi is valid or not */</li><li>&nbsp;&nbsp;&nbsp; if (bdi == NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_warning (\"bdi is NULL\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return 1;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; if (_bdi_dm != NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_warning (\"dm_stub is already used by other clients\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return 1;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* initialize global variables */</li><li>&nbsp;&nbsp;&nbsp; _bdi_dm = bdi;</li><li>&nbsp;&nbsp;&nbsp; return 0;</li><li>}</li></ol>"
+        }
+      },
+      "id": 6
+    },
+    "-1": {
+      "title": "3. bdbm_drv_setup ( _bdi, &_blkio_inf, bdbm_dm_get_inf (_bdi) )",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "frontend/kernel/blkio.c<br><br>bdbm_host_inf_t _blkio_inf = {<br>&nbsp;&nbsp;&nbsp; .ptr_private = NULL,<br>&nbsp;&nbsp;&nbsp; .open = blkio_open,<br>&nbsp;&nbsp;&nbsp; .close = blkio_close,<br>&nbsp;&nbsp;&nbsp; .make_req = blkio_make_req,<br>&nbsp;&nbsp;&nbsp; .end_req = blkio_end_req,<br>};<br><br>devices/dumbssd/dm_dumbssd.c<br><br>/* interface for dm */<br>bdbm_dm_inf_t _bdbm_dm_inf = {<br>&nbsp;&nbsp;&nbsp; .ptr_private = NULL,<br>&nbsp;&nbsp;&nbsp; .probe = dm_dumbssd_probe,<br>&nbsp;&nbsp;&nbsp; .open = dm_dumbssd_open,<br>&nbsp;&nbsp;&nbsp; .close = dm_dumbssd_close,<br>&nbsp;&nbsp;&nbsp; .make_req = dm_dumbssd_make_req,<br>&nbsp;&nbsp;&nbsp; .make_reqs = NULL,<br>&nbsp;&nbsp;&nbsp; .end_req = dm_dumbssd_end_req,<br>&nbsp;&nbsp;&nbsp; .load = NULL,<br>&nbsp;&nbsp;&nbsp; .store = NULL,<br>};<br><td id=\"LC57\" class=\"blob-code blob-code-inner js-file-line\"><span class=\"pl-c\"></span><br></td><td id=\"LC58\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC59\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC60\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC61\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC62\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC63\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC64\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC65\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC66\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC67\" class=\"blob-code blob-code-inner js-file-line\"><br></td><td id=\"LC68\" class=\"blob-code blob-code-inner js-file-line\"><br></td><br><br>common/bdbm_main.c<br><br><ol><li>int bdbm_drv_setup (</li><li>&nbsp;&nbsp; &nbsp;bdbm_drv_info_t* bdi, </li><li>&nbsp;&nbsp; &nbsp;bdbm_host_inf_t* host_inf, </li><li>&nbsp;&nbsp; &nbsp;bdbm_dm_inf_t* dm_inf)</li><li>{</li><li>&nbsp;&nbsp; &nbsp;if (bdi == NULL) {</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_warning (\"oops! bdi is NULL\");</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;return 1;</li><li>&nbsp;&nbsp; &nbsp;}</li><li>&nbsp;&nbsp; &nbsp;/* setup host */</li><li>&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_host_inf = host_inf;</li><li>&nbsp;&nbsp; &nbsp;/* setup device */</li><li>&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_dm_inf = dm_inf;</li><li>&nbsp;&nbsp; &nbsp;/* setup ftl */</li><li>&nbsp;&nbsp; &nbsp;switch (bdi-&gt;parm_ftl.hlm_type) {</li><li>&nbsp;&nbsp; &nbsp;case HLM_NOT_SPECIFIED:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_hlm_inf = NULL;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case HLM_NO_BUFFER:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_hlm_inf = &amp;_hlm_nobuf_inf;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case HLM_BUFFER:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_hlm_inf = &amp;_hlm_buf_inf;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case HLM_DFTL:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_hlm_inf = &amp;_hlm_dftl_inf;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;default:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_error (\"invalid hlm type\");</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_bug_on (1);</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;}</li><li>&nbsp;&nbsp; &nbsp;switch (bdi-&gt;parm_ftl.llm_type) {</li><li>&nbsp;&nbsp; &nbsp;case LLM_NOT_SPECIFIED:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_llm_inf = NULL;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case LLM_NO_QUEUE:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_llm_inf = &amp;_llm_noq_inf;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case LLM_MULTI_QUEUE:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_llm_inf = &amp;_llm_mq_inf;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;default:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_error (\"invalid llm type\");</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_bug_on (1);</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;}</li><li>&nbsp;&nbsp; &nbsp;switch (bdi-&gt;parm_ftl.mapping_type) {</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_NOT_SPECIFIED:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = NULL;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_NO_FTL:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = &amp;_ftl_no_ftl;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_BLOCK:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = &amp;_ftl_block_ftl;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_RSD:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = &amp;_ftl_block_ftl;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_PAGE:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = &amp;_ftl_page_ftl;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;case MAPPING_POLICY_DFTL:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdi-&gt;ptr_ftl_inf = &amp;_ftl_dftl;</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;default:</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_error (\"invalid ftl type\");</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bdbm_bug_on (1);</li><li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;</li><li>&nbsp;&nbsp; &nbsp;}</li><li>&nbsp;&nbsp; &nbsp;return 0;</li><li>}</li></ol>"
+        }
+      },
+      "id": 5
+    },
+    "-2": {
+      "title": "4. bdbm_drv_run(  _bdi )",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "in here, basic setting of bdbm finish.<br>common/bdbm_main.c<br><br><ol><li>int bdbm_drv_setup (</li><li>&nbsp;&nbsp;&nbsp; bdbm_drv_info_t* bdi, </li><li>&nbsp;&nbsp;&nbsp; bdbm_host_inf_t* host_inf, </li><li>&nbsp;&nbsp;&nbsp; bdbm_dm_inf_t* dm_inf)</li><li>{</li><li>&nbsp;&nbsp;&nbsp; if (bdi == NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_warning (\"oops! bdi is NULL\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return 1;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* setup host */</li><li>&nbsp;&nbsp;&nbsp; bdi-&gt;ptr_host_inf = host_inf;</li><li>&nbsp;&nbsp;&nbsp; /* setup device */</li><li>&nbsp;&nbsp;&nbsp; bdi-&gt;ptr_dm_inf = dm_inf;</li><li>&nbsp;&nbsp;&nbsp; /* setup ftl */</li><li>&nbsp;&nbsp;&nbsp; switch (bdi-&gt;parm_ftl.hlm_type) {</li><li>&nbsp;&nbsp;&nbsp; case HLM_NOT_SPECIFIED:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_hlm_inf = NULL;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case HLM_NO_BUFFER:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_hlm_inf = &amp;_hlm_nobuf_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case HLM_BUFFER:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_hlm_inf = &amp;_hlm_buf_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case HLM_DFTL:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_hlm_inf = &amp;_hlm_dftl_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; default:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"invalid hlm type\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_bug_on (1);</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; switch (bdi-&gt;parm_ftl.llm_type) {</li><li>&nbsp;&nbsp;&nbsp; case LLM_NOT_SPECIFIED:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_llm_inf = NULL;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case LLM_NO_QUEUE:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_llm_inf = &amp;_llm_noq_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case LLM_MULTI_QUEUE:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_llm_inf = &amp;_llm_mq_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; default:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"invalid llm type\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_bug_on (1);</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; switch (bdi-&gt;parm_ftl.mapping_type) {</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_NOT_SPECIFIED:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = NULL;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_NO_FTL:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = &amp;_ftl_no_ftl;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_BLOCK:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = &amp;_ftl_block_ftl;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_RSD:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = &amp;_ftl_block_ftl;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_PAGE:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = &amp;_ftl_page_ftl;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; case MAPPING_POLICY_DFTL:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdi-&gt;ptr_ftl_inf = &amp;_ftl_dftl;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; default:</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"invalid ftl type\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_bug_on (1);</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; return 0;</li><li>}</li><li>/* run all the layers related to bdbm_drv */</li><li>int bdbm_drv_run (bdbm_drv_info_t* bdi)</li><li>{</li><li>&nbsp;&nbsp;&nbsp; bdbm_host_inf_t* host = NULL; </li><li>&nbsp;&nbsp;&nbsp; bdbm_hlm_inf_t* hlm = NULL;</li><li>&nbsp;&nbsp;&nbsp; bdbm_llm_inf_t* llm = NULL;</li><li>&nbsp;&nbsp;&nbsp; bdbm_ftl_inf_t* ftl = NULL;</li><li>&nbsp;&nbsp;&nbsp; bdbm_dm_inf_t* dm = NULL;</li><li>&nbsp;&nbsp;&nbsp; uint32_t load = 0;</li><li>&nbsp;&nbsp;&nbsp; /* run setup functions */</li><li>&nbsp;&nbsp;&nbsp; if (bdi-&gt;ptr_dm_inf) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; dm = bdi-&gt;ptr_dm_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; /* get the device information */</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (dm-&gt;probe == NULL || dm-&gt;probe (bdi, &amp;bdi-&gt;parm_dev) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to probe a flash device\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; /* open a flash device */</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (dm-&gt;open == NULL || dm-&gt;open (bdi) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to open a flash device\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; /* do we need to read a snapshot? */</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (bdi-&gt;parm_ftl.snapshot == SNAPSHOT_ENABLE &amp;&amp;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; dm-&gt;load != NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (dm-&gt;load (bdi, \"/usr/share/bdbm_drv/dm.dat\") != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_msg (\"[bdbm_drv_main] loading 'dm.dat' failed\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; load = 0;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; } else </li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; load = 1;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* create a low-level memory manager */</li><li>&nbsp;&nbsp;&nbsp; if (bdi-&gt;ptr_llm_inf) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; llm = bdi-&gt;ptr_llm_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (llm-&gt;create == NULL || llm-&gt;create (bdi) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to create llm (%p)\", llm-&gt;create);</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* create a logical-to-physical mapping manager */</li><li>&nbsp;&nbsp;&nbsp; if (bdi-&gt;ptr_ftl_inf) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ftl = bdi-&gt;ptr_ftl_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (ftl-&gt;create == NULL || ftl-&gt;create (bdi) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to create ftl\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (bdi-&gt;parm_ftl.snapshot == SNAPSHOT_ENABLE &amp;&amp;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; load == 1 &amp;&amp; ftl-&gt;load != NULL) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (ftl-&gt;load (bdi, \"/usr/share/bdbm_drv/ftl.dat\") != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_msg (\"[bdbm_drv_main] loading 'ftl.dat' failed\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* create a high-level memory manager */</li><li>&nbsp;&nbsp;&nbsp; if (bdi-&gt;ptr_hlm_inf) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; hlm = bdi-&gt;ptr_hlm_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (hlm-&gt;create == NULL || hlm-&gt;create (bdi) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to create hlm\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* create a host interface */</li><li>&nbsp;&nbsp;&nbsp; if (bdi-&gt;ptr_host_inf) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; host = bdi-&gt;ptr_host_inf;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (host-&gt;open == NULL || host-&gt;open (bdi) != 0) {</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] failed to open a host interface\");</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; goto fail;</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; }</li><li>&nbsp;&nbsp;&nbsp; /* display default parameters */</li><li>&nbsp;&nbsp;&nbsp; display_device_params (&amp;bdi-&gt;parm_dev);</li><li>&nbsp;&nbsp;&nbsp; display_ftl_params (&amp;bdi-&gt;parm_ftl);</li><li>&nbsp;&nbsp;&nbsp; /* init performance monitor */</li><li>&nbsp;&nbsp;&nbsp; pmu_create (bdi);</li><li>&nbsp;&nbsp;&nbsp; bdbm_msg (\"[bdbm_drv_main] bdbm_drv is registered!\");</li><li>&nbsp;&nbsp;&nbsp; return 0;</li><li>fail:</li><li>&nbsp;&nbsp;&nbsp; if (host &amp;&amp; host-&gt;close)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; host-&gt;close (bdi);</li><li>&nbsp;&nbsp;&nbsp; if (hlm &amp;&amp; hlm-&gt;destroy)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; hlm-&gt;destroy (bdi);</li><li>&nbsp;&nbsp;&nbsp; if (ftl &amp;&amp; ftl-&gt;destroy)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ftl-&gt;destroy (bdi);</li><li>&nbsp;&nbsp;&nbsp; if (llm &amp;&amp; llm-&gt;destroy)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; llm-&gt;destroy (bdi);</li><li>&nbsp;&nbsp;&nbsp; if (dm &amp;&amp; dm-&gt;close)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; dm-&gt;close (bdi);</li><li>&nbsp;&nbsp;&nbsp; if (bdi)</li><li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bdbm_free (bdi);</li><li>&nbsp;&nbsp;&nbsp; </li><li>&nbsp;&nbsp;&nbsp; bdbm_error (\"[bdbm_drv_main] bdbm_drv failed!\");</li><li>&nbsp;&nbsp;&nbsp; return 1;</li><li>}</li></ol>"
+        },
+        "position": [
+          180.5,
+          73.89442719099992,
+          2
+        ]
+      },
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "4-1.   display_device_params (&bdi->parm_dev);",
+          "id": 13,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "4-2. display_ftl_params (&bdi->parm_ftl);",
+          "id": 14,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "4-3. pmu_create (bdi);",
+          "id": 15,
+          "attr": {
+            "style": {}
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "<br>include/bdbm_drv.h<br><br><br><ol><li>/* the main data-structure for bdbm_drv */</li><li>struct _bdbm_drv_info_t {</li><li>&nbsp;&nbsp;&nbsp; void* private_data;</li><li>&nbsp;&nbsp;&nbsp; bdbm_ftl_params parm_ftl;</li><li>&nbsp;&nbsp;&nbsp; bdbm_device_params_t parm_dev;</li><li>&nbsp;&nbsp;&nbsp; bdbm_host_inf_t* ptr_host_inf; </li><li>&nbsp;&nbsp;&nbsp; bdbm_dm_inf_t* ptr_dm_inf;</li><li>&nbsp;&nbsp;&nbsp; bdbm_hlm_inf_t* ptr_hlm_inf;</li><li>&nbsp;&nbsp;&nbsp; bdbm_llm_inf_t* ptr_llm_inf;</li><li>&nbsp;&nbsp;&nbsp; bdbm_ftl_inf_t* ptr_ftl_inf;</li><li>&nbsp;&nbsp;&nbsp; bdbm_perf_monitor_t pm;</li><li>};</li></ol><p>In the next child node, _bdi is the same from the above data structure.<br></p>"
+    },
+    "style": {}
+  }
+}
