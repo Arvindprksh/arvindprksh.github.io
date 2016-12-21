@@ -10,7 +10,9 @@ permalink: /2016/08/02/Utilization_Of_Circular_LinkedList/
 # problem 
 
  - you have to split the circular Linked List with the same size of Divisions. 
+ 
  - Maybe if circular Linked List is odd, you have to change the number of node, it is even .
+ 
  - if I explain to you with drawings. Just refer to the following pictures.(The following pictures is refered to [geeksforgeeks](http://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
  
  ![](/img/Image/CodingInterview-ExtensionOfDataStructure/2016-08-02-Utilization_Of_Circular_LinkedList/Split_a_Circular_Linked_List_into_two_halves.png) 
@@ -18,7 +20,9 @@ permalink: /2016/08/02/Utilization_Of_Circular_LinkedList/
 ### Algorithm
 
  1. First count the number of node in Circular Linked List // way to split the list is floyd algorithm, it is much better. 
+ 
  2. Second, I have to make the List even. 
+ 
  3. Third, I make the List half. the front is the same size like the rear. Finally, I have to make two circular Linked List.
 
 ```c
