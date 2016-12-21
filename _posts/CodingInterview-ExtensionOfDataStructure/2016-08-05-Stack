@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Stack
-subtitle: Practice of making stack differently using array or LinkedList
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How to generate stak with array or dynamic array
+subtitle: practice of making stack differently using array or LinkedList
+category: Extenstion Of DataStructure
+tags: [stack, array]
+permalink: /2016/08/05/Stack/
 ---
 
 this article is comprised of reference of book titled, "coding interview".
