@@ -9,7 +9,7 @@ permalink: /2016/09/08/Block_Device/
 
 First of all, I refer to [this site(blkdevarch)](https://yannik520.github.io/blkdevarch.html)
 
-and [basic concept block device(Lecture_4_-_Storage_Systems_in_the_Kernel)](https://pc2.uni-paderborn.de/fileadmin/pc2/media/staffweb/Andre_Brinkmann/Courses/Speichersysteme_SS_2011/Lecture_4_-_Storage_Systems_in_the_Kernel.pdf) 
+and basic concept block device(Lecture_4_-_Storage_Systems_in_the_Kernel)
 
 here is the above [file(Lecture_4_-_Storage_Systems_in_the_Kernel)](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Lecture_4_-_Storage_Systems_in_the_Kernel.pdf)
 
