@@ -12,16 +12,15 @@ the content below refers to <a href = "http://www.cplusplus.com/reference/casser
 
 * assert macro
 
-  - defined in header file <cassert>
-<pre>
-<code>
+  - defined in header file \<cassert>
+  
+```c++
 #ifdef NDEBUG
 #define assert(condition) ((void)0)
 #else
 #define assert(condition) /*implementation defined*/
 #endif
-</code>
-</pre>
+```
 
 * Parameters
 
