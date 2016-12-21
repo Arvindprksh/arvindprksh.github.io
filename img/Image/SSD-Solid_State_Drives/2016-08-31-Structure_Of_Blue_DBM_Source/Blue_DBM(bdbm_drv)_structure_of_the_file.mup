@@ -1,0 +1,649 @@
+{
+  "title": "Blue_DBM(bdbm_drv) - file structure",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "2": {
+      "title": "device (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {
+          "background": "#ccffff"
+        },
+        "position": [
+          188,
+          -393,
+          17
+        ]
+      },
+      "id": 8,
+      "ideas": {
+        "1": {
+          "title": "bluedbm (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 24,
+          "ideas": {}
+        },
+        "2": {
+          "title": "common (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 26
+        },
+        "3": {
+          "title": "dragonfire (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 27
+        },
+        "4": {
+          "title": "dumbssd (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            }
+          },
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "dev_hynix_nvme.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 50
+            },
+            "2": {
+              "title": "dev_hynix_nvme.h",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 51,
+              "ideas": {}
+            },
+            "3": {
+              "title": "dm_dumbssd.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 53
+            },
+            "4": {
+              "title": "dm_dumbssd.h",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 54
+            },
+            "5": {
+              "title": "Makefile",
+              "formatVersion": 2,
+              "attr": {
+                "style": {
+                  "background": "#ccffff"
+                }
+              },
+              "id": 55
+            }
+          }
+        },
+        "5": {
+          "title": "libdummy  (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 36
+        },
+        "6": {
+          "title": "libramdrive (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 37,
+          "ideas": {}
+        },
+        "7": {
+          "title": "ramdrive (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {},
+          "id": 46
+        },
+        "8": {
+          "title": "ramdrive_timing (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {},
+          "id": 47
+        },
+        "9": {
+          "title": "Makefile",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {},
+          "id": 49
+        }
+      }
+    },
+    "3": {
+      "title": "tools (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "position": [
+          304.5,
+          855,
+          6
+        ],
+        "style": {
+          "background": "#ccffff"
+        }
+      },
+      "id": 10,
+      "ideas": {
+        "1": {
+          "title": "dumbssd-format (Folder)",
+          "formatVersion": 2,
+          "id": 56,
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "2": {
+          "title": "dumbssd-test (Folder)",
+          "formatVersion": 2,
+          "id": 57,
+          "ideas": {},
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "3": {
+          "title": "format (Folder)",
+          "formatVersion": 2,
+          "id": 59,
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "4": {
+          "title": "lightnvm-v4.5.3 (Folder)",
+          "formatVersion": 2,
+          "id": 60,
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "5": {
+          "title": "nvmedrv-v4.5.3 (Folder)",
+          "formatVersion": 2,
+          "id": 61,
+          "ideas": {
+            "1": {
+              "title": "Kconfig",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 65
+            },
+            "2": {
+              "title": "Makefile",
+              "formatVersion": 2,
+              "attr": {
+                "style": {
+                  "background": "#ccffff"
+                }
+              },
+              "id": 66
+            },
+            "3": {
+              "title": "core.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 67
+            },
+            "4": {
+              "title": "lightnvme.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 68
+            },
+            "5": {
+              "title": "nvme.h",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 69
+            },
+            "6": {
+              "title": "pci.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 70
+            },
+            "7": {
+              "title": "scsi.c",
+              "formatVersion": 2,
+              "attr": {
+                "style": {}
+              },
+              "id": 71
+            }
+          },
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "6": {
+          "title": "lightnvm (Symbolic link of lightnvm-v4.5.3 above )",
+          "formatVersion": 2,
+          "id": 62,
+          "attr": {
+            "style": {
+              "background": false
+            }
+          }
+        },
+        "7": {
+          "title": "nvme (Symbolic link of nvmedrv-v4.5.3 above)",
+          "formatVersion": 2,
+          "attr": {
+            "position": [
+              107.5,
+              324,
+              1
+            ],
+            "style": {
+              "background": false
+            }
+          },
+          "id": 64
+        }
+      }
+    },
+    "-1": {
+      "title": "common (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          278,
+          -197,
+          7
+        ],
+        "collapsed": true
+      },
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "3rd (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 20
+        },
+        "2": {
+          "title": "utils (Folder)",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 21
+        },
+        "3": {
+          "title": "bdbm_main.c",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 22
+        },
+        "4": {
+          "title": "bdbm_main.h",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 23
+        }
+      }
+    },
+    "-2": {
+      "title": "examples (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          280,
+          -84,
+          8
+        ]
+      },
+      "id": 9
+    },
+    "-3": {
+      "title": "ftl (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          318,
+          -14,
+          13
+        ]
+      },
+      "id": 11
+    },
+    "-4": {
+      "title": "include (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          295,
+          55,
+          12
+        ]
+      },
+      "id": 14,
+      "ideas": {}
+    },
+    "-4.5": {
+      "title": "run (Folder)",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          318,
+          124,
+          14
+        ]
+      },
+      "id": 12,
+      "ideas": {}
+    },
+    "2.5": {
+      "title": "frontend (Folder)",
+      "formatVersion": 2,
+      "id": 2,
+      "attr": {
+        "style": {
+          "background": "#ccffff"
+        },
+        "position": [
+          332.5,
+          5,
+          3
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Makefile",
+          "formatVersion": 2,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            },
+            "position": [
+              130,
+              -380,
+              1
+            ]
+          },
+          "id": 72,
+          "ideas": {}
+        },
+        "2": {
+          "title": "blkdev.c",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 74
+        },
+        "3": {
+          "title": "blkdev.h",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 75
+        },
+        "4": {
+          "title": "blkdev_ioctl.h",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 76
+        },
+        "5": {
+          "title": "blkio.c",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 77
+        },
+        "6": {
+          "title": "blkio.h",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 78
+        },
+        "7": {
+          "title": "dumbssd.ko",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 79
+        },
+        "8": {
+          "title": "kmain.c",
+          "formatVersion": 2,
+          "attr": {
+            "style": {},
+            "attachment": {
+              "contentType": "text/html",
+              "content": "this file is starting point. when you mount ext4 file system with mount_ext4.sh file"
+            }
+          },
+          "id": 80,
+          "ideas": {}
+        },
+        "9": {
+          "title": "mount_block.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 82
+        },
+        "10": {
+          "title": "mount_ext4.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            },
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<font size=\"3\">The following is contents of this file. <br><br><br>sudo mkdir -p /usr/share/bdbm_drv<br>sudo touch /usr/share/bdbm_drv/ftl.dat<br>sudo touch /usr/share/bdbm_drv/dm.dat<br><br>sudo rmmod nvme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // this is removal of the original nvme module<br>sudo insmod dumbssd.ko&nbsp;&nbsp; // this is insertion of the new dumbssd.ko to connect robusta_drv.ko with the changed nvme driver.<br>sleep 1<br>sudo insmod nvme.ko&nbsp;&nbsp; // this is insertion of the changed nvme.ko&nbsp; -&gt; just register function and unregister function <br>sleep 1<br>sudo insmod robusta_drv.ko&nbsp; // name is change to robusta_drv.ko but, the original name is bdbm_drv.ko <br>sleep 1<br>sudo mkfs -t ext4 -b 4096 /dev/robusta&nbsp;&nbsp;&nbsp; // this is making file system on /dev/robusta<br>sudo mount -t ext4 -o discard /dev/robusta /media/robusta // after making file system(ext4)&nbsp; on /dev/robusta, mounting process.<br><br><br><br>// the above process shows you how to manage AMF to conmunicate with nvme driver. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FS<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</font><br><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</font><font size=\"3\"><br></font><font size=\"3\"><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Robusta.ko(blue DBM driver)</font><font size=\"3\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</font><br><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</font><font size=\"3\">&nbsp;&nbsp; <br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DumbSSD.ko&nbsp; // just this module is&nbsp; for coversation with the original nvme dirver<br><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</font><font size=\"3\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; register | unregister&nbsp; // here is just module register function</font><br><font size=\"3\"><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nvme driver</font><br><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br></font><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br></font><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Device (SSD)</font>"
+            }
+          },
+          "id": 83
+        },
+        "11": {
+          "title": "mount_ext4_ram.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 84
+        },
+        "12": {
+          "title": "mount_f2fs.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 85
+        },
+        "13": {
+          "title": "nvme.ko",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 86
+        },
+        "14": {
+          "title": "risa_dev_ramdrive.ko",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 87
+        },
+        "15": {
+          "title": "run_fio_rw.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            },
+            "attachment": {
+              "contentType": "text/html",
+              "content": "explanation of rm command<br><ol><li>rm<b> waterboy.txt</b></li><li>The rm command deletes files and directories. Here we remove the file <strong>waterboy.txt</strong> from the filesystem.</li><li>rm -r comemdy</li><li>The -r is an option that modifies the behavior of the rm command. <br></li><li>The -r stands for \"recursive,\" and it's used to delete a directory and all of its child directories.</li><li>\n<br></li><li>Be careful when you use rm! It deletes files and directories permanently. <br></li><li>There isn't an undelete command, so once you delete a file or directory with rm, it's gone forever.</li></ol><p><br></p><p>The following is contents of this file. <br></p><p><br></p><p>\n\n  \n\n  </p><div itemprop=\"text\" class=\"blob-wrapper data type-shell\">\n      \n      \n        </div>\n        <span class=\"pl-c\">#!/bin/bash<br><br></span>sudo rm /media/robusta/fio<br><br><br>sudo fio --randrepeat=1 \\<br><blockquote><blockquote><blockquote>--ioengine=libaio \\<br>--name=fio\\<br>--filename=/media/robusta/fio \\<br>--bs=4k \\<br>--iodepth=1 \\&nbsp;&nbsp;&nbsp;&nbsp; // here means Queue depth<br>--size=1000M \\<br>--readwrite=write \\<br>--rwmixread=0 \\<br>--overwrite=0 \\<br>--numjobs=1 \\&nbsp;&nbsp; // here means the number of thread.<br>--direct=0 \\<br>--buffered=0<br></blockquote></blockquote></blockquote>"
+            }
+          },
+          "id": 88
+        },
+        "16": {
+          "title": "unmount.sh",
+          "formatVersion": 2,
+          "attr": {
+            "style": {}
+          },
+          "id": 89
+        }
+      }
+    },
+    "-14.5": {
+      "title": "LICENSE.txt",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          235,
+          412,
+          16
+        ]
+      },
+      "id": 29
+    },
+    "-24.5": {
+      "title": "README.md",
+      "formatVersion": 2,
+      "attr": {
+        "style": {},
+        "position": [
+          200,
+          520,
+          15
+        ]
+      },
+      "id": 30
+    }
+  },
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "This mind map shows you flow of code on hynix_nvme branch.<br><br><span class=\"float-right\"><span class=\"sha-block\" data-pjax=\"\"><span class=\"commit-author-section\"><a target=\"_blank\" href=\"https://github.com/chamdoo\" class=\"user-mention\" rel=\"author\">chamdoo</a>\n      \n      committed\n      22 days ago </span>1 parent\n          \n          <a target=\"_blank\" href=\"https://github.com/chamdoo/bdbm_drv/commit/f16014c4ebe054af524e50864b2a4c0765555afd\" class=\"sha\" data-hotkey=\"p\">f16014c</a>\n      </span>\n      <span class=\"sha-block\">commit <span class=\"sha user-select-contain\">beebb6152b803f213df6ed80c1c3ff1f72f4125a</span></span>&nbsp;</span><span class=\"commit-author-section\">\n      \n\n    </span><br><br><span class=\"float-right\"><span class=\"sha-block\">commit <span class=\"sha user-select-contain\">beebb6152b803f213df6ed80c1c3ff1f72f4125a</span></span>&nbsp;</span><span class=\"commit-author-section\">\n      \n\n    is standard of this analysis</span>"
+    },
+    "progress-statuses": {
+      "": {
+        "description": "Not Started",
+        "priority": 1,
+        "style": {
+          "background": false
+        }
+      },
+      "passing": {
+        "description": "Done",
+        "style": {
+          "background": "#00CC00"
+        }
+      },
+      "under-review": {
+        "description": "Under review",
+        "style": {
+          "background": "#00CCFF"
+        }
+      },
+      "in-progress": {
+        "description": "In Progress",
+        "priority": 3,
+        "style": {
+          "background": "#FFCC00"
+        }
+      },
+      "blocked": {
+        "description": "Blocked",
+        "priority": 4,
+        "style": {
+          "background": "#990033"
+        }
+      },
+      "parked": {
+        "description": "Parked",
+        "priority": 2,
+        "style": {
+          "background": "#FF3300"
+        }
+      }
+    },
+    "style": {}
+  },
+  "links": []
+}
