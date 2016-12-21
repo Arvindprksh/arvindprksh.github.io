@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how long is the rotation of linkedList ? 
+title: How long is the rotation of linkedList ? 
 subtitle: If Your LinkedList has rotation, How Long is the rotation ??
 category: Extenstion Of DataStructure
 tags: [list]
