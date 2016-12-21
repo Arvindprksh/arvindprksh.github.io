@@ -31,7 +31,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- I follow the file from cloudoftags file of my github(https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/cloudoftags.html)-->
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
-<div class="posts-list">
+
   <div class="blog-tags"> 
     {% assign tags = site.categories | sort %}
     {% for tag in tags %}
@@ -62,4 +62,4 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <hr/>
     {% endfor %}
   </div>
-</div>
+
