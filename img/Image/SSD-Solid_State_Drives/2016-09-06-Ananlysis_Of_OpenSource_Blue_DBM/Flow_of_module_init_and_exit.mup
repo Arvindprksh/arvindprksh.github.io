@@ -1,0 +1,327 @@
+{
+  "title": "Function Call of mount_ext4.sh",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "1. insmod dumb.ko",
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "1 - 1. module_init(dm_dumbssd_init)",
+          "id": 11,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "static int  __init  dm_dumbssd_init  (void)",
+              "attr": {
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<br>/devices/dumbssd/dm_dumbssd.c"
+                }
+              },
+              "id": 17,
+              "ideas": {
+                "1": {
+                  "title": "1. bdbm_sema_init  (bdbm_sema_t die_locks[NR_DIES]) - kernel function call",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 18
+                },
+                "2": {
+                  "title": "2. int  misc_register   (struct miscdevice *misc) - kernel function call",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 19
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "1 - 2.  module_exit(dm_dumbssd_exit)",
+          "id": 12,
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "static int  __init  dm_dumbssd_init  (void)",
+              "attr": {
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<br>/devices/dumbssd/dm_dumbssd.c"
+                }
+              },
+              "ideas": {
+                "2": {
+                  "title": "1. void  misc_deregister   (struct miscdevice *misc) - kernel function call",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 22
+                }
+              },
+              "id": 20
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {
+          "background": "#ccffff"
+        },
+        "position": [
+          162.5,
+          -549,
+          2
+        ]
+      }
+    },
+    "2": {
+      "title": "2. insmod nvme.ko",
+      "id": 10,
+      "attr": {
+        "style": {
+          "background": "#ccffff"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "2 - 1.  module_init(nvme_init)",
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            },
+            "attachment": {
+              "contentType": "text/html",
+              "content": "/dbbm_drv/tools/nvme/pci.c"
+            }
+          },
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": "static int  __init  nvme_init  (void)",
+              "attr": {
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<br>/devices/dumbssd/dm_dumbssd.c"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "1. #define   init_waitqueue_head (q)  - Kernel #define",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 24
+                },
+                "2": {
+                  "title": "2. #define alloc_workqueue(fmt, flags, max_active, args...) - Kernel #define",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 28
+                },
+                "3": {
+                  "title": "3. int __init nvme_core_init(void)- Kernel Function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 29
+                },
+                "4": {
+                  "title": "4. #define pci_register_driver(driver)  - Kernel #define",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 30
+                }
+              },
+              "id": 23
+            }
+          }
+        },
+        "2": {
+          "title": "2 - 2.  module_exit(nvme_exit)",
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            },
+            "attachment": {
+              "contentType": "text/html",
+              "content": "/dbbm_drv/tools/nvme/pci.c"
+            }
+          },
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "static int  __init  dm_dumbssd_init  (void)",
+              "attr": {
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<br>/devices/dumbssd/dm_dumbssd.c"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "1. void pci_unregister_driver(struct pci_driver *drv) - Kernel Function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 26
+                },
+                "2": {
+                  "title": "2. void nvme_core_exit(void) - Kernel Function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 31
+                },
+                "3": {
+                  "title": "3. void destroy_workqueue(struct workqueue_struct *wq) - Kernel Function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 32
+                },
+                "4": {
+                  "title": "4. #define BUG_ON(a)  - For call of kernel function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 33
+                },
+                "5": {
+                  "title": "5. static inline void _nvme_check_size(void) - For call of kernel function",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 41
+                }
+              },
+              "id": 25
+            }
+          }
+        }
+      }
+    },
+    "12": {
+      "title": "3. insmod blue_DBM.ko",
+      "id": 9,
+      "attr": {
+        "style": {
+          "background": "#ccffff"
+        },
+        "position": [
+          170.5,
+          827,
+          3
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "3 - 1. module_init(bdbm_drv_init)",
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            }
+          },
+          "id": 15,
+          "ideas": {
+            "1": {
+              "title": "1. bdbm_drv_info_t* bdbm_drv_create (void);\n\n /* create bdi with default parameters */",
+              "attr": {
+                "style": {},
+                "position": [
+                  195.5,
+                  -146,
+                  1
+                ]
+              },
+              "id": 42
+            },
+            "2": {
+              "title": "2. int bdbm_dm_init (bdbm_drv_info_t* bdi);\n\n/* open the device */\n",
+              "attr": {
+                "style": {}
+              },
+              "id": 43
+            },
+            "3": {
+              "title": "3. int bdbm_drv_setup (bdbm_drv_info_t* bdi, bdbm_host_inf_t* host_inf, bdbm_dm_inf_t* dm_inf); void bdbm_drv_destroy (bdbm_drv_info_t* bdi);\n\n   /* attach the host &amp; the device interface to bdbm */",
+              "attr": {
+                "style": {}
+              },
+              "id": 44
+            },
+            "4": {
+              "title": "4. int bdbm_drv_run (bdbm_drv_info_t* bdi);\n\n /* run bdbm_drv */",
+              "attr": {
+                "style": {}
+              },
+              "id": 45
+            }
+          }
+        },
+        "2": {
+          "title": "3 - 2. module_exit(bdbm_drv_init)",
+          "attr": {
+            "style": {
+              "background": "#ccffff"
+            }
+          },
+          "id": 16,
+          "ideas": {
+            "1": {
+              "title": "1. void bdbm_drv_close (bdbm_drv_info_t* bdi);\n\n /* stop running layers */",
+              "attr": {
+                "style": {}
+              },
+              "id": 46
+            },
+            "2": {
+              "title": "2. void bdbm_dm_exit (bdbm_drv_info_t* bdi);\n\n /* close the device */",
+              "attr": {
+                "style": {}
+              },
+              "id": 47
+            },
+            "3": {
+              "title": "3.  void bdbm_drv_destroy (bdbm_drv_info_t* bdi);\n\n /* run bdbm_drv */",
+              "attr": {
+                "style": {},
+                "position": [
+                  208.5,
+                  101,
+                  1
+                ]
+              },
+              "id": 48
+            }
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "this File shows you how to mount ext4 file system. <br><br>&lt;!--- <span class=\"float-right\"><span class=\"sha-block\"><span class=\"sha user-select-contain\">beebb6152b803f213df6ed80c1c3ff1f72f4125a</span></span></span> is commit number, that is basic source to understading this source, Blue_DBM driver --&gt;<br><br>first of all, the following is just contents of this Makefile <br><br><ol><li>sudo mkdir -p /usr/share/bdbm_drv</li><li>sudo touch /usr/share/bdbm_drv/ftl.dat</li><li>sudo touch /usr/share/bdbm_drv/dm.dat</li><li>sudo rmmod nvme</li><li>sudo insmod dumbssd.ko</li><li>sleep 1</li><li>sudo insmod nvme.ko</li><li>sleep 1</li><li>sudo insmod robusta_drv.ko&nbsp;&nbsp;&nbsp;&nbsp; // here is robusta.ko and bdbm_drv is the same. <br></li><li>sleep 1</li><li>sudo mkfs -t ext4 -b 4096 /dev/robusta</li><li>sudo mount -t ext4 -o discard /dev/robusta /media/robusta</li></ol>"
+    },
+    "style": {}
+  },
+  "links": []
+}
