@@ -62,7 +62,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
-{% highlight c linenos=table %}
+```c
  [struct gendisk](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100) {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
@@ -71,7 +71,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  request_queue_t * queue // to store request queue.
  .....
  };
-{% endhighlight %}
+```
 
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Gendisk_structure.png)
  
@@ -114,7 +114,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
   
   the Actual allocating function is **[bdev_alloc_inode](http://lxr.linux.no/#linux+v4.5.3/fs/block_dev.c#L243)**
   
-{% highlight c linenos=table %}
+```c
   [struct block_device](http://lxr.linux.no/#linux+v4.5.3/include/linux/fs.h#L367) {
     dev_t bd_bdev;
     struct inode *bd_inode;
@@ -124,7 +124,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
     struct gendisk *bd_disk;
     struct list_head bd_list;
     }
-{% endhighlight %}
+```
  
  block device structure
  
@@ -151,8 +151,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  
  this struct buffer_head holds all the information that the kernel needs to manipulate buffers.
  
- <pre>
- <code>
+```c
  [struct buffer_head](http://lxr.linux.no/#linux+v4.5.3/include/linux/buffer_head.h#L44) {
         unsigned long        b_state;          /* buffer state flags */
         atomic_t             b_count;          /* buffer usage counter */
@@ -166,8 +165,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
         void                 *b_private;       /* data for completion method */
         struct list_head     b_assoc_buffers;  /* list of associated mappings */
  }
- </code>
- </pre>
+```
  
  The above struture's reference is [here(makelinux)](http://www.makelinux.net/books/lkd2/ch13lev1sec2)
  
