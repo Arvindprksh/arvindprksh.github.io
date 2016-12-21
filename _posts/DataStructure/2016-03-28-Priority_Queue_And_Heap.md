@@ -2,17 +2,9 @@
 layout: post
 title: Priority Queue and Heap
 subtitle: What is the Priority Queue and Heap
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Data Structure
+tags: [queue, heap]
+permalink: /2016/03/28/Priority_Queue_And_Heap/
 ---
 
 1-1. What is priority queue
