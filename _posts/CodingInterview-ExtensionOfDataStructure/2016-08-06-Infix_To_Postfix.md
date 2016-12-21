@@ -237,15 +237,15 @@ The corresponding expression of postfix form is abc*d++. The postfix expressions
    
    2 ) compare x with the top element of the second stack( the auxiliary stack). Let the top element be y. 
    
-        a ) If x is smaller than y then push x to the auxiliary stack. 
+     a ) If x is smaller than y then push x to the auxiliary stack. 
         
-        b ) If x is greater than y then push y to the auxiliary stack. 
+     b ) If x is greater than y then push y to the auxiliary stack. 
         
   int pop() // removes an element from Special Stack and return the removed element
   
-    1 ) pop the top element from the auxiliary stack. 
+     1 ) pop the top element from the auxiliary stack. 
     
-    2 ) pop the top element from the actual stack and return it. 
+     2 ) pop the top element from the actual stack and return it. 
     
   int getMin() returns the minimum element from special stack. 
   
