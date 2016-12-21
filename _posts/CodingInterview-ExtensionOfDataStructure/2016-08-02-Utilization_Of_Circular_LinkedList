@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of Circular LinkedList
-subtitle: How to Split a Circular Linked List into two halves. 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How to split a ciculrar LinkedList into two halves
+subtitle: what method can I use to split a circular LinkedList into two halves ?
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/08/02/Utilization_Of_Circular_LinkedList/
 ---
 
 # problem 
