@@ -1,6 +1,6 @@
 ---
 layout: post
-title: finding the middle of LinkeList and  printing out LinkedList in reverse order
+title: Finding the middle of LinkeList and  printing out LinkedList in reverse order
 subtitle: How can I find the middle of LinkeList and  print out LinkedList in reverse order ?
 category: Extenstion Of DataStructure
 tags: [list, stack]
