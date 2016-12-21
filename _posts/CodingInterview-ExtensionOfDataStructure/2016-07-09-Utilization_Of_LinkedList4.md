@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 4
-subtitle: Reverse LinkedList and Putting node in sorted LinkedList
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How can I reverse the LinkedList ?
+subtitle: How can I reverse LinkedList and Putt a node in sorted LinkedList
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/09/Utilization_Of_LinkedList4/
 ---
 
 # In the case of putting node in sorted Linked list
