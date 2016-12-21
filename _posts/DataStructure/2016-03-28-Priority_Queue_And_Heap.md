@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary of Priority Queue and Heap
-subtitle:
+title: Priority Queue and Heap
+subtitle: What is the Priority Queue and Heap
 css:
 tags:
 date:
