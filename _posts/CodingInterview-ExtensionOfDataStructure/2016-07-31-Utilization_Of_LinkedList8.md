@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 8
-subtitle: How to change the singly LinkedList pairwise
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How to change a singly LinkedList pairwise
+subtitle: How Can I easily chang a LinkedlList pairwise ?
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/31/Utilization_Of_LinkedList8/
 ---
 
 I refer to [geeksforgeeks](http://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/)
@@ -32,7 +24,9 @@ I refer to [geeksforgeeks](http://www.geeksforgeeks.org/pairwise-swap-elements-o
   my first algorithm, 
   
   1. First Of all, calculate the length of List 
+  
   2. current node exchange the next node
+  
   3. move second step
   
   but The above algorithm is too slow, 
@@ -40,7 +34,9 @@ I refer to [geeksforgeeks](http://www.geeksforgeeks.org/pairwise-swap-elements-o
   So I will change the algorithm a little bit. 
   
   1. when moving head pointer, you have to move two times at once.
+  
   2. any time you move the pointer of head, just chang two of nodes.
+  
   3. during this operation, you have to continue until head is NULL or head -> next is null 
 
   let's make psuedo code
@@ -76,7 +72,7 @@ struct ListNode * ReversePairsInterative (struct ListNode * head){
               
           temp   exch
             |     |  
-  List A :  2 ->  1 ->  3 ->  4 ->  X
+  List A :  2 ->  1 ->  3 ->  4 ->  X    : this is initial status
   
           exch   temp
             |     |  
