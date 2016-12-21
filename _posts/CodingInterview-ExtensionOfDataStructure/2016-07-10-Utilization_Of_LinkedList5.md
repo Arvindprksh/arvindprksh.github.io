@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList
-subtitle: where is the instersection of two list
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How can I find out intersection of two LinkedList ?
+subtitle: Where is the intersection of two LinkedList
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/10/Utilization_Of_LinkedList5/
 ---
 
 # intersection of two list 
@@ -146,7 +138,9 @@ just in this case, you cas get just lits is only linked list and don't have Loop
 ## Another way
 
   1. 두 리스트 중 작은 길이만큼만 비교 즉, 각 리스트 길이를 구하고 그 다음에 두리스트의 길이의 차를 구해서 
+  
   2. 긴 리스트를 차이만큼 움직이고 나서 
+  
   3. 각 리스트의 노드가 동인한지 비교를 해본다. 
 
 ```c
