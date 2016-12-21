@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  measuring the length of a LinkedList and merging both of sorted linkedLists
+title:  Measuring the length of a LinkedList and merging both of sorted linkedLists
 subtitle: How can I find out if the length of a linkedList is odd or even and merge two sorted linkedList ?
 category: Extenstion Of DataStructure
 tags: [list]
