@@ -2,17 +2,9 @@
 layout: post
 title: Infix To Pofix
 subtitle: How to switch Infix to postfix
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [stack]
+permalink: /2016/08/06/Infix_To_Postfix/
 ---
 
 I refer to coding interview book and [geeksforgeeks](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
