@@ -62,8 +62,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
- <pre>
- <code>
+{% highlight c linenos=table %}
  [struct gendisk](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100) {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
@@ -72,8 +71,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  request_queue_t * queue // to store request queue.
  .....
  };
- </code>
- </pre>
+{% endhighlight %}
 
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Gendisk_structure.png)
  
@@ -116,8 +114,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
   
   the Actual allocating function is **[bdev_alloc_inode](http://lxr.linux.no/#linux+v4.5.3/fs/block_dev.c#L243)**
   
-  <pre>
-  <code>
+{% highlight c linenos=table %}
   [struct block_device](http://lxr.linux.no/#linux+v4.5.3/include/linux/fs.h#L367) {
     dev_t bd_bdev;
     struct inode *bd_inode;
@@ -127,8 +124,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
     struct gendisk *bd_disk;
     struct list_head bd_list;
     }
-  </code>
-  </pre>
+{% endhighlight %}
  
  block device structure
  
