@@ -32,32 +32,32 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="post-preview">
 {% assign openList = '<ul class="side-nav">' %}
 {% assign closeList = '</ul>' %}
-<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/edit/master/blog/archivebydate.md-->
+<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
 
-<div id="index">
-{% assign openList = '<ul class="side-nav">' %}
-{% assign closeList = '</ul>' %}
-{% for post in site.posts %}
-    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-    {% capture monthHead %}
-        {% if month != nmonth %}
-        {% if  forloop.index != 1  %}{{ closeList }}<small markdown="1">[back to top](#top)</small>{%endif %}
-        <h2 class="archivetitle">{% if year != nyear %}<a name="{{ post.date | date: '%Y' }}"></a>{% endif %}<a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
-        {{ openList }}
-        {% endif %}
-    {% endcapture %}
-
-    {% capture link %}
-        <li>
-            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a></li>
-    {% endcapture %}
-    
-    {{ monthHead }}{{ link }}
-{% endfor %}
-{{closeList}}
+<div class="panel radius">
+		{% assign archive_url = site.baseurl | append: '/blog/archive/monthview/' %}
+		<h3><a href="{{ archive_url }}">Archive</a></h3>
+		<ul class="no-bullet">
+			{% for post in site.posts %}
+				{% assign currentdate = post.date | date: '%Y-%m' %}
+				{% if currentdate != date %}
+					{% unless forloop.first %}({{ count }})</li>{% endunless %}
+					{% assign count = 1 %}
+					{% assign currentyear = post.date | date: '%Y' %}
+					{% if currentyear != year %}
+						{% unless forloop.first %}</ul></li>{% endunless %}
+						<li><span class="icon-calendar"></span><a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a><ul>
+						{% assign year = currentyear %}
+					{% endif %}
+					<li><a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B' }}</a>
+					{% assign date = currentdate %}
+				{% else %}
+					{% assign count = count | plus: 1 %}
+				{% endif %}
+				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
+			{% endfor %}
+		</ul>
 </div>
-
 
 
 {% for post in site.posts %}
