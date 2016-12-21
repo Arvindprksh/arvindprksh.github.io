@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization of Stack
-subtitle: How Can I find out item I want, Only using operation of stack
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How to reverse a stack, only using stack operations
+subtitle: How can I reverse a stack, If you sould only use stack operations ?
+category: Extenstion Of DataStructure
+tags: [stack]
+permalink: /2016/08/09/Utilization_Of_Stack/
 ---
 
 you can see a solution of this problem in [geeksforgeeks](http://www.geeksforgeeks.org/reverse-a-stack-using-recursion/) and get hint.
@@ -39,12 +31,11 @@ you can see a solution of this problem in [geeksforgeeks](http://www.geeksforgee
 
    Finally, the stack is reverse direction.
               
-              
   let me see, next time we see the solution of the geeksForgeeks. 
   
   geeksforgeeks sol 
   
-  > The idea of the solution is to hold all values in Function Call stack. until the stack becomes empty. 
+  > The idea of the solution is to hold all values in Function Call stack(systemp stack). until the stack becomes empty. 
   
   When the stack becomes empty. insert all held items one by one at the bottom of the stack. 
                       
