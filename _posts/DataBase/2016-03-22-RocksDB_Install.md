@@ -15,7 +15,7 @@ permalink: /2016/03/22/RocksDB_Install/
  
  난 그 중에서 현재 내가 사용중인 centos 7.1에 rocksDB를 설치 하기 위해 아래와 같은 과정을 따라 했다. 
  
- ## one of Supported platforms
+## one of Supported platforms
  
  * **Linux - CentOS**
     * Upgrade your gcc to version at least 4.7 to get C++11 support:
