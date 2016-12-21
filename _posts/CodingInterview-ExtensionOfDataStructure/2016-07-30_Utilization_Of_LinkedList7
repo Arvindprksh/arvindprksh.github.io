@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 7
-subtitle: How to verify whether the LinkedList's length is odd or even, and then the merge those LinkedLists 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title:  measuring the length of a LinkedList and merging both of sorted linkedLists
+subtitle: How can I find out if the length of a linkedList is odd or even and merge two sorted linkedList ?
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/30_Utilization_Of_LinkedList7/
 ---
 
 I refer to the book, cording interview.
@@ -128,7 +120,6 @@ I refer to the book, cording interview.
   return mergeList;
  }
 ```
- 
  
  Let's see the sample code of the book,"coding interview"
  
