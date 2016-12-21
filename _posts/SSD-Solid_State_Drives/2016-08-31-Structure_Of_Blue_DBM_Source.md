@@ -2,17 +2,9 @@
 layout: post
 title: Struture of Blue DBM driver open source
 subtitle: analysis of blue_DBM_dirver with basic concept of linux driver
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lightnvm, block device driver]
+permalink: /2016/08/31/Structure_Of_Blue_DBM_Source/
 ---
 
 Nowadays, I analyze the open source of blue DBM device driver source code. 
@@ -23,7 +15,7 @@ Nowadays, I analyze the open source of blue DBM device driver source code.
   __just git commit number of blue_dbm is beebb6152b803f213df6ed80c1c3ff1f72f4125a for Simple file structure of blue DBM Driver open source__
 -->
   
-  [Blue DBM device driver open source's simple file structure](https://www.mindmup.com/#m:h1hyunyoung2/hyunyoung2.github.io:master:_posts/SSD/Blue_DBM%28bdbm_drv%29_structure_of_the_file.mup)
+  [Blue DBM device driver open source's simple file structure](https://www.mindmup.com/#m:h1hyunyoung2/hyunyoung2.github.io:master:img/Image/SSD-Solid_State_Drives/2016-08-31-Structure_Of_Blue_DBM_Source/Blue_DBM%28bdbm_drv%29_structure_of_the_file.mup)
   
   Just this above URL is my information I arrange blue DBM driver open source. So I want to access the above URL, You can't with the URL
   
@@ -67,7 +59,6 @@ Nowadays, I analyze the open source of blue DBM device driver source code.
   basically, You have to know about Makefile grammar of something. 
   
   So I recommand you [this site abut Makefile](https://www.gnu.org/software/make/manual/make.html) to look up.
-  
   
   If you want to see information of the above URL, just take a look at [this PDF file](./img/Image/SSD-Solid_State_Drives/2016-08-31-Structure_Of_Blue_DBM_Source/blue_DBM_Makefiles.pdf)
   
