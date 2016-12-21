@@ -23,9 +23,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <tr>
     <td>
       <ul>
-        <li> <a href ="./2016-02-01-Static-Website">Jekyll</a> </li>
-        <li> <a href="./2016-01-03-MVC-Pattern"> MVC</a> </li>
-        <li> <a href = "./2016-04-12-Markdowntutorial">Markdown</a></li>
       </ul>
     </td>
     <td>
@@ -56,11 +53,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </td>
     <td>
       <ul>
-        <li><a href = "./2016-04-08-rocksDB_db_bench_tool_source">rocksDB db_bench_tool_source</a></li>
-        <li><a href = "./2016-03-30-LevelDB">LevelDB</a></li>
-        <li><a href = "./2016-03-24-rocksDBInstall2"> rock DB intall method </a></li>
-        <li><a href = "./2016-03-22-RocksDBInstall"> rock DB intall process </a></li>
-        <li><a href = "./2016-03-18-RocksDB" > RocksDB </a></li>
       </ul>
     </td>
   </tr>
@@ -81,13 +73,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </td>
     <td>
       <ul>
-        <li> <a href = "2016-11-15-7_Reverse_Integer">7. Reverse Integer</a></li>
-        <li> <a href = "2016-11-15-6_ZigZag_Conversion">6. ZigZag conversion</a></li>
-        <li> <a href = "2016-11-03-5_Longest Palindromic Substring">5. Longest Palindromic Substring</a></li>
-        <li> <a href = "2016-11-02-3_Longest_Substring_withou_Repeating_Characters">3. Longest Substring without Repeating characters</a></li>
-        <li> <a href = "2016-11-01-2_Add_Two_Numbers">2. Add Two Numbers</a></li>
-        <li> <a href = "2016-10-24-1_Two Sum">1. Two Sum</a></li>
-        <li> <a href = "2016-10-24-344_Reverse String">344. Reverse String</a></li>
       </ul>
     </td>
   </tr>
