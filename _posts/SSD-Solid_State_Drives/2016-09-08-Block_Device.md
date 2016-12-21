@@ -62,7 +62,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
-{% highlight c linenos=table %}
+<pre><code>
  [struct gendisk](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100) {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
@@ -70,8 +70,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  struct block_device_operations *fops; //block device operations table.
  request_queue_t * queue // to store request queue.
  .....
- };
-{% endhighlight %}
+ };</code></pre>
 
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Gendisk_structure.png)
  
@@ -83,14 +82,13 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
 
    hd_struct is information about partition on a disk. 
    
-```
- [struct hd_struct] {
+<pre><code>
+ [struct hd_struct](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L77) {
  sector_t start_sector;
    sector_t nr_sects;
    int partno;
    ......
- };
-```
+ };</code></pre>
 
 ### Third, block_device 
 
@@ -114,7 +112,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
   
   the Actual allocating function is **[bdev_alloc_inode](http://lxr.linux.no/#linux+v4.5.3/fs/block_dev.c#L243)**
   
-```c
+<pre><code>
   [struct block_device](http://lxr.linux.no/#linux+v4.5.3/include/linux/fs.h#L367) {
     dev_t bd_bdev;
     struct inode *bd_inode;
@@ -123,8 +121,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
     struct hd_struct *bd_part;
     struct gendisk *bd_disk;
     struct list_head bd_list;
-    }
-```
+    }</code></pre>
  
  block device structure
  
@@ -151,7 +148,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  
  this struct buffer_head holds all the information that the kernel needs to manipulate buffers.
  
-```c
+<pre><code>
  [struct buffer_head](http://lxr.linux.no/#linux+v4.5.3/include/linux/buffer_head.h#L44) {
         unsigned long        b_state;          /* buffer state flags */
         atomic_t             b_count;          /* buffer usage counter */
@@ -164,8 +161,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
         bh_end_io_t          *b_end_io;        /* I/O completion method */
         void                 *b_private;       /* data for completion method */
         struct list_head     b_assoc_buffers;  /* list of associated mappings */
- }
-```
+ }</code></pre>
  
  The above struture's reference is [here(makelinux)](http://www.makelinux.net/books/lkd2/ch13lev1sec2)
  
@@ -186,6 +182,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/bi_io_vecs.png)
 
  If you want more, I recommend [this URL(lwn)](https://lwn.net/Articles/26404/)
+ 
 ### sixth request. 
 
  a request is comprise of more than one bio. 
@@ -198,15 +195,12 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  
  at this time, bi_next field of the bio structure is used to store the next bio in the list. 
  
- <pre>
- <code>
+ <pre><code>
  [struct request_list](http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107){
     mempool_t *rq_pool;
- }
- </code>
- </pre>
- <pre>
- <code>
+ }</code></pre>
+ 
+ <pre><code>
  [struct request](http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107) {
     struct list_head            queuelist;
     struct list_head            donelist;
@@ -217,9 +211,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
     request_queue_t            *q;
     request_list               *rl;
     .....
- }
- </code>
- </pre>
+ }</code></pre>
  
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/request_doubly_Linked_list.png)
  
@@ -239,8 +231,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  
  When a request object has to be processed.
  
- <pre>
- <code>
+ <pre><code>
  struct request_queue {
     struct list_head            queue_head;
     struct request             *lastmerge;
@@ -254,9 +245,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
     prep_rq_fn                 *prep_rq_fn;
     unplug_fn                  *unplug_fn;
     ...
- }
- </code>
- </pre>
+ }</code></pre>
 
  be careful, in the above structure, you have to be interested in both __*request_fn__ and __*make_request_fn__
  
@@ -296,3 +285,5 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
 # Reference 
 
   - [driver book](http://www.oreilly.com/openbook/linuxdrive3/book/) 
+
+  - [blkdevarch](https://yannik520.github.io/blkdevarch.html)
