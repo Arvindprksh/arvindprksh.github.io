@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Summary of Circular LinkedList
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Circular LinkedList
+subtitle: What is the circular LinkedList
+category: Data Structure
+tags: [list]
+permalink: /2016/03/16/Circular_Linked_List/
 ---
 
 윤성우의 열혈자료구조를 참조했습니다.
