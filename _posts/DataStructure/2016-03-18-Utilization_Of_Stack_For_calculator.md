@@ -1,18 +1,10 @@
 ---
 layout: post
 title: Calculator with Stack
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+subtitle: How can I make caculator with stack ?
+category: Data Structure
+tags: [stack]
+permalink: /2016/03/18/Utilization_Of_Stack_For_calculator/
 ---
 
 this refers to 윤성우의 열혈 잘료구조
