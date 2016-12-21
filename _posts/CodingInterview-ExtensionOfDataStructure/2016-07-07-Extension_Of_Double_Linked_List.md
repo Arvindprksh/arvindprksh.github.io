@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Extension of Duoubly Linked List 
-subtitle: another's Douubly Linked List For Memory efficiency.
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Extension of Douubly Linked List 
+subtitle: How can I make doubly LinkedList efficiently ?
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/07/Extension_Of_Double_Linked_List/
 ---
 
 - Before  you start the this course, I recommend [geeksforgeeks site](http://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/)
