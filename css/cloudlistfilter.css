@@ -28,22 +28,3 @@
     display: block;
   }
 }
-
-/*
- Badge
- from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_sass/_09_elements.scss
-*/
-.badge {
-    display: inline-block;
-    min-width: 10px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-color: #777;
-    border-radius: 10px
-}
