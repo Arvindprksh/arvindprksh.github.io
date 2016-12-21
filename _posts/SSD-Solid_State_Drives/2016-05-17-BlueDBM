@@ -1,18 +1,10 @@
 ---
 layout: post
-title: BlueDBM
+title: BlueDBM: An Application for Big Data Analytics
 subtitle: what is the BlueDBM ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lightnvm]
+permalink: /2016/05/17/BlueDBM/
 ---
 
 Now, i just start researching BlueBDM. so I refer to and quote [site1(applications)](http://people.csail.mit.edu/wjun/bluedbm.htm#applications), [site2(ISCA15_Sang-Woo_Jun)](http://livinglab.mit.edu/wp-content/uploads/2016/01/ISCA15_Sang-Woo_Jun.pdf), [site3(studylib)](http://studylib.net/doc/9940320/pptx---people.csail.mit.edu).
@@ -21,7 +13,7 @@ Now, i just start researching BlueBDM. so I refer to and quote [site1(applicatio
 
  - BlueDBM is a system architecture to accelerate Big Data analytics. 
 
-in site 1, just BlueDBM show remote environment and hardware structure. 
+in site1(applications), just BlueDBM show remote environment and hardware structure. 
 
 the image below is hardeware of blueDBM
 
@@ -35,7 +27,7 @@ you have a doubt of Connectal.
 
 ![](/img/Image/SSD-Solid_State_Drives/2016-05-17-BlueDBM/blueBDM Software Interface.png)
 
-from now, I am looking for Connectal framwork
+from now on, I am looking for Connectal framwork
 
 ```shell
 [hyunyoung.lee@localhost bdbm_drv]$ grep -rni connectal *
