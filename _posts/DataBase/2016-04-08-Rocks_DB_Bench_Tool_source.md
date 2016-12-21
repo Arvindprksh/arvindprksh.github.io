@@ -1,6 +1,6 @@
 ---
 layout: post
-title: rocsksDB code analyze
+title: Analysis of RocsksDB code
 subtitle: about benchmark tool's source code
 category: DataBase
 tags: [rocksdb, facebook]
