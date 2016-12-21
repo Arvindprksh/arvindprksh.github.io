@@ -16,13 +16,16 @@ then, calculate the following
 to calculate the above,
 
   - you first calculate the round brackets. ( 소괄호 부터 계산)
+  
   - you calculate operator along with operator's priority. (연산자 우선 순위에 맞추어 계산)
  
  
 three expression of number 
 
   - infix notation(중위 표기법)    -----> 5 + 2 / 7
+  
   - prefix notation(전위 표기법)   -----> + 5 / 2 7  : calculate from the back
+  
   - postfix notation(후위 표기법)  -----> 5 2 7 / +  : calculate using stack
   
   postfix is more easy than infix to calculate.(프로그래밍으로 계산을 하는 것은 후위 표기법이 중위 표기법보다 쉽다.)
