@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 6
-subtitle: Where is the middle of LinkedList ? and How do I have to do for printing in reverse order of LikedList
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: finding the middle of LinkeList and  printing out LinkedList in reverse order
+subtitle: How can I find the middle of LinkeList and  print out LinkedList in reverse order ?
+category: Extenstion Of DataStructure
+tags: [list, stack]
+permalink: /2016/07/29/Utilization_Of_LinkedList6/
 ---
 
 I refered to the book,"coding interview" and [geeksforgeeks](http://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/).
