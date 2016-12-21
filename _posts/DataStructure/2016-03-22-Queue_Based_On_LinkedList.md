@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Summary of Queue with Linked List
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Queue with LinkedList
+subtitle: How can I make queue with LinkedList
+category: Data Structure
+tags: [queue, list]
+permalink: /2016/03/22/Queue_Based_On_LinkedList/
 ---
 
 이것은 윤성우의 열혈 자료구조를 참고했습니다. 
