@@ -2,16 +2,9 @@
 layout: post
 title: Singly Linked List
 subtitle: What is the singly Linked List ? 
+category: Data Structure
 tags: [list]
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+permalink: /2016/03/15/Linked_List/
 ---
 
 윤성우의 열혈자료구조를 참조했습니다.
@@ -106,7 +99,8 @@ cur은 참조 및 조회를 위한것
   1-5-1. 더미노드를 추가하여 구현 -> 삽입시 불필요한 연산을 줄여준다. 
   
   ![](/img/Image/DataStructure/2016-03-15-Linked_List/dummynode.png)
-    1-5-2. source code
+  
+  1-5-2. source code
   
 ```c
 #define TRUE 1
@@ -279,6 +273,4 @@ int LNext(List * plist, LData * pdata)
   // 더미노드 기반 LinkedList 삭제 2
   
   ![](/img/Image/DataStructure/2016-03-15-Linked_List/DummyNodeLinkedListDelete2.png)
-    
-
     
