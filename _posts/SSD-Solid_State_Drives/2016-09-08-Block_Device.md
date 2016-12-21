@@ -62,7 +62,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
-```c
+{% highlight c linenos=table %}
  [struct gendisk](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100) {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
@@ -71,7 +71,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  request_queue_t * queue // to store request queue.
  .....
  };
-```
+{% endhighlight %}
 
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-08-Block_Device/Gendisk_structure.png)
  
