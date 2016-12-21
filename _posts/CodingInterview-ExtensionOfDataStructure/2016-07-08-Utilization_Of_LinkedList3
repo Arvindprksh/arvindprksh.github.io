@@ -1,18 +1,10 @@
 ---
 layout: post
-title: UtiLization Of LinkedList3
+title: how long is the rotation of linkedList ? 
 subtitle: If Your LinkedList has rotation, How Long is the rotation ??
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/08/Utilization_Of_LinkedList3/
 ---
 
 # Check If list is Loop, and then if Loop is right, what is the length of loop ???
