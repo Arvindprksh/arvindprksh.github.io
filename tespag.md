@@ -33,7 +33,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
 
   <div class="blog-tags"> 
-    {% assign tags = site.categories | sort %}
+    {% assign tags = site.tags | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
       <span class="fa fa-folder-open" aria-hidden="true" style="color: #1C1C1C;"> <!-- I get rid of left option -->
