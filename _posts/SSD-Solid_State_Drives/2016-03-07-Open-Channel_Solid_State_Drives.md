@@ -2,17 +2,9 @@
 layout: post
 title: Open-Channel Solid State Drive
 subtitle: concise Infomation of Open-Channel SSD
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lightNVM]
+permalink: /2016/03/07/Open-Channel_Solid_State_Drives/
 ---
 
 <a href = "http://lightnvm.io"> 이 사이트 참조 </a>
@@ -35,8 +27,11 @@ The architecture of LightNVM consists of three parts : core, media manager and t
  Oepn-Channel SSDs require support in th kernel.LightNVM, the kernel sugsystem enablish such support is part of the vanilla Linux Kernel from 4.4+. The latest source cod is available at the Open-Channel SSD project in Github (see below)
  
  after booting the kernel. to enable LightNVM, the following must be met:
+ 
  1. A compatible device driver that is registered with LightNVM. For example null_blk, QEMU NVMe or an Open-Chnnel SSD, such as the CNEX Labs Westlake SDk.
+ 
  2. An initialized media manager on top of the device driver. Note that LightNVM provides a gerneric media manager. The Media manager maintains a list of free/in-use/bad blocks on media and exposes a get/put block API that upper layers can use to allocate into the SSD address space.
+ 
  3. An initialized Target on top of the block manager that exposes the SSD address space. The target can expose a traditional block I/O interface, or more esoteric interfaces such as key-values, object-stores, etc.
 
 lnvm tool를 이용해서 한번 테스트를 해봐야 겠다.
