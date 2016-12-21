@@ -1,18 +1,10 @@
 ---
 layout: post
 title: void assert (int expression) function
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+subtitle: What is the assert function ?
+category: C++
+tags: [language]
+permalink: /2016/04/12/Void_Assert/
 ---
 
 
