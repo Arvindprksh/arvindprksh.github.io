@@ -63,7 +63,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
 <pre><code>
- [struct gendisk](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100) {
+<a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100">struct gendisk</a> {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
  <strong>hd_struct</strong> indicating a partition.
@@ -83,7 +83,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    hd_struct is information about partition on a disk. 
    
 <pre><code>
- [struct hd_struct](http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L77) {
+ <a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L77">struct hd_struct</a> {
  sector_t start_sector;
    sector_t nr_sects;
    int partno;
@@ -113,7 +113,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
   the Actual allocating function is **[bdev_alloc_inode](http://lxr.linux.no/#linux+v4.5.3/fs/block_dev.c#L243)**
   
 <pre><code>
-  [struct block_device](http://lxr.linux.no/#linux+v4.5.3/include/linux/fs.h#L367) {
+<a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/fs.h#L367">struct block_device</a> {
     dev_t bd_bdev;
     struct inode *bd_inode;
     struct list_head bd_inodes;
@@ -149,7 +149,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  this struct buffer_head holds all the information that the kernel needs to manipulate buffers.
  
 <pre><code>
- [struct buffer_head](http://lxr.linux.no/#linux+v4.5.3/include/linux/buffer_head.h#L44) {
+<a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/buffer_head.h#L44">struct buffer_head</a> {
         unsigned long        b_state;          /* buffer state flags */
         atomic_t             b_count;          /* buffer usage counter */
         struct buffer_head   *b_this_page;     /* buffers using this page */
@@ -196,12 +196,12 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  at this time, bi_next field of the bio structure is used to store the next bio in the list. 
  
  <pre><code>
- [struct request_list](http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107){
+ <a ref="http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107">struct request_list</a>{
     mempool_t *rq_pool;
  }</code></pre>
  
  <pre><code>
- [struct request](http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107) {
+ <a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L107">struct request</a> {
     struct list_head            queuelist;
     struct list_head            donelist;
     struct bio                  *bio;
@@ -232,7 +232,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
  When a request object has to be processed.
  
  <pre><code>
- struct request_queue {
+ <a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/blkdev.h#L283">struct request_queue</a> {
     struct list_head            queue_head;
     struct request             *lastmerge;
     elevator_t                 *elevator;
