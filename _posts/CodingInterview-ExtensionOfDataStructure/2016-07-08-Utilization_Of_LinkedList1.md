@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. Utilization of Linked List
+title: Where is the Nth from the end of LinkedList ?
 subtitle: How can I find the Nth from the end of LinkedList
 category: Extenstion Of DataStructure
 tags: [list]
