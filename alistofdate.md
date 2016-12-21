@@ -30,35 +30,39 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
 <div class="post-preview">
-{% assign openList = '<ul class="side-nav">' %}
+{% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
 
-<div class="panel radius">
-		{% assign archive_url = site.baseurl | append: '/blog/archive/monthview/' %}
-		<h3><a href="{{ archive_url }}">Archive</a></h3>
-		<ul class="no-bullet">
-			{% for post in site.posts %}
-				{% assign currentdate = post.date | date: '%Y-%m' %}
-				{% if currentdate != date %}
-					{% unless forloop.first %}({{ count }})</li>{% endunless %}
-					{% assign count = 1 %}
-					{% assign currentyear = post.date | date: '%Y' %}
-					{% if currentyear != year %}
-						{% unless forloop.first %}</ul></li>{% endunless %}
-						<li><span class="icon-calendar"></span><a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a><ul>
-						{% assign year = currentyear %}
-					{% endif %}
-					<li><a href="{{ archive_url }}#{{ currentdate }}">{{ post.date | date: '%B' }}</a>
-					{% assign date = currentdate %}
-				{% else %}
-					{% assign count = count | plus: 1 %}
+	{% assign archive_url = site.baseurl | append: '/alistofdate/' %}
+	{% for post in site.posts %}
+		{% assign currentdate = post.date | date: '%B %Y' %}
+			{% if currentdate != date %}
+				{% unless forloop.first %}
+					<i class="badge">{{ count }}</i></span></a>
+				{% endunless %}
+				{% assign count = 1 %}
+				{% assign currentyear = post.date | date: '%Y' %}
+				{% if currentyear != year %}
+					{% unless forloop.first %}
+					<hr/>
+					{% endunless %}
+					<h3>
+					<span class="fa fa-calendar" aria-hidden="true"></span>
+					<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a>
+					</h3>
+					{% assign year = currentyear %}
 				{% endif %}
-				{% if forloop.last %}({{ count }})</li></ul></li>{% endif %}
-			{% endfor %}
-		</ul>
-</div>
-
+				<a href="{{ archive_url }}#{{ currentdate }}"  class="btn btn-default" style="padding: 0px 5px;"><span class="fa fa-folder-open" aria-hidden="true" style="color: #1C1C1C;">{{ post.date | date: '%B' }} <!-- style="color: #1C1C1C;" is font color of span -->
+				{% assign date = currentdate %}
+			{% else %}
+				{% assign count = count | plus: 1 %}
+			{% endif %}
+			{% if forloop.last %}
+				<i class="badge">{{ count }}</i></span></a><hr/>
+			{% endif %}
+	{% endfor %}
+	
 
 {% for post in site.posts %}
     {% capture month %}
@@ -81,10 +85,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               <hr/>
           {%endif %}
         <h2 class="post-title">
-           <!-- {% if year != nyear %}
-             <a name="{{ post.date | date: '%Y' }}"></a>
-            {% endif %} -->
-          <a name="{{ post.date | date:  '%Y-%m'  }}" style="padding-top: 70px"></a>
+            {% if year != nyear %}
+             <a name="{{ post.date | date: '%Y' }}" style="padding-top: 70px"></a>
+            {% endif %} 
+          <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>{{ openList }}
       {% endif %}
