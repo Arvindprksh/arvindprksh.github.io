@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Span Of Array
+title: How to measure span of A[j] <= A[i] of a array 
 subtitle: In an given array,A[i], when A[j] <= A[i], what is the range of maximum of j-i 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [stack]
+permalink: /2016/08/10/Span_of_Array/
 ---
 
 Article of Extennsion of Data Structure base in geeksforgeeks and my Coding Interview Question.
