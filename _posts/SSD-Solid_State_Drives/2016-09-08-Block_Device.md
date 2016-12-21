@@ -63,7 +63,7 @@ here is the above [file(Lecture 4 - Storage Systems in the_Kernel)](/img/Image/S
    gendis has informations about a disk, The important fields are queue, part and fops in a gendisk. 
    
 <pre><code>
-<a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L100">struct gendisk</a> {
+<a href="http://lxr.linux.no/#linux+v4.5.3/include/linux/genhd.h#L179">struct gendisk</a> {
  .....
  struct hd_struct  ** part; // partition information - this point is an array of the pointer to
  <strong>hd_struct</strong> indicating a partition.
