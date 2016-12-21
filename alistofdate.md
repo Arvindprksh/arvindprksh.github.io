@@ -24,7 +24,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <a href="/" class="list-filter">All posts</a>
   <a href="/alistofcategories" class="list-filter">Catergories Cloud</a>
   <a href="/alistofcloudoftags" class="list-filter">Tags Cloud</a>
-  <a href="/alistofdate" class="list-filter filter-selected">Date Cloud</a>
+  <a href="/alistofdate" class="list-filter filter-selected">List by Date</a>
 </div>
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
