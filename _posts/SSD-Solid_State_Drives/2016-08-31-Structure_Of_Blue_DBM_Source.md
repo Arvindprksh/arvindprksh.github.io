@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Struture of Blue DBM driver open source
-subtitle: analysis of blue_DBM_dirver with basic concept of linux driver
+title: Struture of Blue DBM driver open source and Concept of block device driver
+subtitle: analysis of blue_DBM_dirver  and What is block device driver ?
 category: SSD (Solid State Drives)
 tags: [lightnvm, block device driver]
 permalink: /2016/08/31/Structure_Of_Blue_DBM_Source/
