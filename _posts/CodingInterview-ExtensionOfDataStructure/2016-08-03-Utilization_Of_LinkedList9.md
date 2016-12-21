@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 9
+title: How to check if letters of LinkedList is palindrome
 subtitle: How Can I check if the singly LinkedList is plindorme ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [list, algorithm]
+permalink: /2016/08/03/Utilization_Of_LinkedList9/
 ---
 
 I refer to coding interview book and [geeksforgeeks](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)
@@ -26,7 +18,9 @@ If you are given a singly Linked List of character. if the given list is palindr
 ## algorithm
 
   1) let's us use the stack 
+  
     - First put list in a stack. 
+    
     - Second, You have to compare top of the stack with node of List.
     
   let's us make pseudo code
@@ -73,8 +67,11 @@ If you are given a singly Linked List of character. if the given list is palindr
   the following is algorithm 
   
   1) Get the middle of linked list.   
+  
   2) Reserve the Second half of the linked list  
+  
   3) Check if the first half and second half is identical.   
+  
   4) Construct the original linked List by reversing the secondf half again and attaching it back to the first half.   
   
   let's make pseudo code
