@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList 10
-subtitle: how Can I reverse the part of LinkedList with the size periodically, when I get a specific size 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: How to reverse a list in groups of given size
+subtitle: how can I reverse the part of LinkedList per a size periodically, when I get a specific size 
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/08/04/Utilization_Of_LinkedList10/
 ---
 
  I just refer to [geeksforgeeks](http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
