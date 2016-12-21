@@ -1,19 +1,12 @@
 ---
 layout: post
-title: Summary of Array List
-subtitle:
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: Array List
+subtitle: What is the array list ?
+category: Data Structure
+tags: [array, list]
+permalink: /2016/03/14/Array_List/
 ---
+
 이 글의 내용은 윤성우의 열혈자료구조를 참조했습니다.
 
 data struct is to present data from real world.
