@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Palindrome
-subtitle: What is the Palindrome
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: What is the palindrome ?
+subtitle: How to resolve the palindrome below 
+category: Extenstion Of DataStructure
+tags: [stack, algorithm]
+permalink: /2016/08/07/Palindrome/
 ---
 
 # Palindrome 
