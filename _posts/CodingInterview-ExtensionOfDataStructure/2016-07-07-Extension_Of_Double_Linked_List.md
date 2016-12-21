@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extension of Douubly Linked List 
+title: Extension of Douubly Linked List with XOR operator
 subtitle: How can I make doubly LinkedList efficiently ?
 category: Extenstion Of DataStructure
 tags: [list]
