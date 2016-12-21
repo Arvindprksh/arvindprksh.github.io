@@ -1,18 +1,10 @@
 ---
 layout: post
-title: Utilization Of LinkedList2
+title: Whether the LinkedList has portion of rotation
 subtitle: how can I check that the LinkedList is rotation or not ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: Extenstion Of DataStructure
+tags: [list]
+permalink: /2016/07/09/Utilization_Of_LinkedList2/
 ---
 
 do you think single linked list is Loop or not ????
