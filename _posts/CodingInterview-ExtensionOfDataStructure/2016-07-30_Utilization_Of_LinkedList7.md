@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  LinkedList is odd or even and How to merge two LinkedList
-subtitle: How can I find out if the length is odd or even and merge two sorted linkedList ?
+subtitle: What is the length of linkedList ? & How can I do merge two sorted linkedList ?
 category: Extenstion Of DataStructure
 tags: [list]
 permalink: /2016/07/30_Utilization_Of_LinkedList7/
