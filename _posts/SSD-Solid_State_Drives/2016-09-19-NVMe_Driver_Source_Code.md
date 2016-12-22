@@ -2,17 +2,9 @@
 layout: post
 title: NVMe Driver Source code
 subtitle: Analysis of NVMe Driver Source Code in linux kernel 4.5
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [nvme]
+permalink: /2016/09/19/NVMe_Driver_Source_Code/
 ---
 
  I'm doing analysis about nvme driver source code of linux kernel version 4.5, refering to [this URL](http://lxr.free-electrons.com/source/drivers/nvme/host/pci.c?v=4.5)
@@ -89,9 +81,7 @@ in pci.c file, The following structure is intialized as follows.
  
  In linux kernel code 4.5 version, Page with [device_driver structure](http://lxr.free-electrons.com/source/include/linux/device.h?v=4.5#L260) explain to me about role of probe() function.   
    
- 
  That is @probe called to query the existence of a specific device, Whether this driver can work with it, and bind the driver to a specific device.
- 
  
 ```c
 227 /**
