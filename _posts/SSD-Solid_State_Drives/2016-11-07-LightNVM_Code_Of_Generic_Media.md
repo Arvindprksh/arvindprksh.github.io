@@ -2,17 +2,9 @@
 layout: post
 title: LightNVM code of Generic Media 
 subtitle: analysis of Generic Media code of LightNVM
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lightnvm, nvme]
+permalink: /2016/11/07/LightNVM_Code_Of_Generic_Media/
 ---
 
 <!-- lightNVM pblk 19 version when I clone git of linux of lightnvm november 7. 2016-->
