@@ -3,7 +3,7 @@ layout: post
 title: Open-Channel Solid State Drive
 subtitle: concise Infomation of Open-Channel SSD
 category: SSD (Solid State Drives)
-tags: [lightNVM]
+tags: [lightnvm]
 permalink: /2016/03/07/Open-Channel_Solid_State_Drives/
 ---
 
