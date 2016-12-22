@@ -1,21 +1,13 @@
 ---
 layout: post
-title: LightNVM's DataStructure code
-subtitle: What DataStructure does lightNVM have ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: LightNVM's DataStructure code for generic media manager
+subtitle: What DataStructure does lightNVM have for generic media manager ?
+category: SSD (Solid State Drives)
+tags: [lightnvm]
+permalink: /2016/11/11/LightNVM_Code_DataStructure/
 ---
 
-<!-- LightNVM pblk 19 --->
+LightNVM pblk 19 
 
 # Data structure 
 
