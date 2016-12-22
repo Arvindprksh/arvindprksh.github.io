@@ -1,9 +1,9 @@
 ---
 layout: post
-title: typedef In kernel
-subtitle: what is the typedef in kernel
+title: Typedef In Kernel
+subtitle: What is the typedef in kernel ?
 category: Linux
-tags: [linux, concept]
+tags: [summary]
 permalink: /2016/03/09/Typedef_In_LInux/
 ---
 
