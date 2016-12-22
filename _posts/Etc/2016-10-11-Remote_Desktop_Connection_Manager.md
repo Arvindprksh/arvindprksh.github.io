@@ -2,17 +2,9 @@
 layout: post
 title: the Remote Desktop Connection Manager in windows
 subtitle: What is the Remote Desktop Connection Manager ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [utility]
+permalink: /2016/10/11/Remote_Desktop_Connection_Manager/
 ---
 
  IF you want to manage multiple remote desktop connections on windows. 
@@ -22,7 +14,6 @@ meta-description:
  [here](http://www.incrediblelab.com/remote-desktop-connection-manager/) is introduction of Remote Desktop Connection Manager 
  
  this aticle refers to one [incredible Lab](http://www.incrediblelab.com/remote-desktop-connection-manager/) introduce. 
- 
  
  Here is [method](https://blogs.msdn.microsoft.com/stuartleeks/2014/01/15/using-remote-desktop-connection-manager-rdc-man-with-windows-azure-virtual-machines/) to use Reomte connection deskotp manager.
  
