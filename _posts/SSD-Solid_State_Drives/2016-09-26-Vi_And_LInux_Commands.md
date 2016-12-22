@@ -86,9 +86,9 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
 
   - **tabe .**
   
-  > this command(tab) makes the new tab window.
-  > Just think about meaning of tab 
-  > tabe . means in new tab, edit the current file or diretory(.)
+  > this command(tab) makes the new tab window.  
+  > Just think about meaning of tab    
+  > tabe . means in new tab, edit the current file or diretory(.)   
   
   if you want to move to other tab window. 
   
@@ -110,16 +110,16 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
   
   in normal mode. you can type
   
-  > gt             - go to next tab
-  > gT             - go to previous tab
-  > {i}gt          - go to tab to position + i 
+  > gt             - go to next tab   
+  > gT             - go to previous tab   
+  > {i}gt          - go to tab to position + i    
   
   Note that the gt command counts form one. That means 3gt will jump to the third tab. Also notice is 0st and 1gt mean the same thing : jumping to the first tab.  
   
   in normal mode in insert mode. you can type
  
-  > Ctrl-PgDn      go to next tab
-  > Ctrl-PgUp      go to previous tab
+  > Ctrl-PgDn      go to next tab   
+  > Ctrl-PgUp      go to previous tab    
   
   
 ## How to observe process state.
@@ -152,9 +152,9 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
 
 ## [od](http://www.thegeekstuff.com/2012/08/od-command/)
 
- od command make output of files different. 
+  - od command make output of files different. 
  
- If you want more details, click od title!
+  - If you want more details, click od title!
 
 ## history
 
@@ -239,7 +239,7 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
   
   The following shows you a successful example. 
  
-  ```console
+```bash
   scp ./linux.tar.gz  hyunyoung.lee@IPv4 a
   ress:/home
   hyunyoung.lee(user_id)@IPv4 address's password: 
@@ -250,7 +250,7 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
   scp ./linux.tar.gz  hyunyoung.lee@IPv4 address:~/
   hyunyoung.lee(user_id)@IPv4 address's password: 
   linux.tar.gz                                                                  100% 1228MB 153.5MB/s   00:08  
-  ```
+```
   
 ## lspci
 
@@ -275,7 +275,7 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
  you have to use -t option 
  
  
- ** Detailed Device information**
+ **Detailed Device information**
  
  you have to use -v option.
  
@@ -409,7 +409,7 @@ From now on, I will make a list of vi command for me, in addition, click [Comput
 
 I will explain about cut command with sample, So as to tell you about cut command I refered to [this site](http://www.livefirelabs.com/unix_tip_trick_shell_script/unix_operating_system_fundamentals/introduction-to-the-unix-cut-command.htm)
 
-`The cut command is used to extract a vertical selection of columns(charater position) or fields from ont or more files. The syntax for extracting a selection based on a column numver is : `
+`The cut command is used to extract a vertical selection of columns(charater position) or fields from ont or more files. The syntax for extracting a selection based on a column numver is :`
 
  > $cut -c n [filename(s)]  
  
@@ -441,7 +441,7 @@ I will explain about cut command with sample, So as to tell you about cut comman
    
    This cut example will extract the seconde field of the class file and redirect standard output to the file class.lastname :
    
-   ```console
+```bash
    $ cut -f 2 class > class.lastname  
    $ ls 
    $ cat class.lastname
@@ -449,18 +449,18 @@ I will explain about cut command with sample, So as to tell you about cut comman
    Smith   
    Jones  
    Anderson  
-   ```
+```
 
 in addition, The -d option("cut -d") can be used to change the field delimeter to something other than the default tab character as I said at the above. 
 
-   ```console
+```bash
    $ cat ./delimiterFile
    emeka:x:1438:100::/home/emeka:/bin/ksh   
    shelley:x:1439:100::/home/shelley:/bin/ksh  
    dmeyer:x:1440:100::/home/dmeyer:/bin/ksh  
    kurtarn:x:1441:100::/home/kurtarn:/bin/ksh  
    abdul:x:1442:100::/home/abdul:/bin/ksh  
-   ```
+```
  
   when you have the above examples. You want to extract field 1, 3, you have to issue command unlike below. 
   
@@ -529,7 +529,7 @@ in addition, The -d option("cut -d") can be used to change the field delimeter t
   
   1. [df](http://www.cyberciti.biz/faq/linux-how-to-determine-find-out-file-system-type/) - shows you file system diks space usage ([reference of tecmint](http://www.tecmint.com/how-to-check-disk-space-in-linux/)- this referenc is useful
 
-  ```console
+```bash
   $ df -T
 Filesystem                      Type     1K-blocks     Used Available Use% Mounted on
 devtmpfs                        devtmpfs   8149892        0   8149892   0% /dev
@@ -540,10 +540,11 @@ tmpfs                           tmpfs      8160000     2172   8157828   1% /tmp
 /dev/sda1                       xfs         508588   136852    371736  27% /boot
 tmpfs                           tmpfs      1632000       16   1631984   1% /run/user/1000
 ext4                            tmpfs      2097152        0   2097152   0% /home/hyunyoung.lee/ramdisk
-  ```
+```
+
   2. mount - shows you all mounted systems. 
   
-  ```console 
+```bash
   $ mount OR $ mount -l
   proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
@@ -554,7 +555,7 @@ devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=62
 tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
 tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
 .......
-  ```
+```
 
   3. /proc/mounts or /proc/self/mounts file  - shows all mounted file systems.
 
@@ -574,7 +575,7 @@ tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
   
   like this,
   
-  > grep -E 'word1|word2' FileName
+  > grep -E 'word1\|word2' FileName
   
   explanation of above command is in [this site](http://www.thegeekstuff.com/2011/10/grep-or-and-not-operators).
   
