@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to compile Linux
+title: How to compile Linux
 subtitle: Linux compile at CentOS 7.1 from kernel 3.7 to 4.5
 category: Linux
 tags: [linux, compile]
@@ -86,7 +86,7 @@ if you know more sudores file, pleas link to <a href = "https://www.garron.me/en
 
 <a href = "http://www.cyberciti.biz/faq/debian-ubuntu-building-installing-a-custom-linux-kernel/">우분투 컴파일</a>
 
-linux-4.4.tar.xz is uncompressed with " xz -cd linux-4.X.tar.xz | tar xvf -".
+linux-4.4.tar.xz is uncompressed with " xz -cd linux-4.X.tar.xz \| tar xvf -".
 
 [this site](http://www.cyberciti.biz/faq/debian-ubuntu-building-installing-a-custom-linux-kernel/) explains also you kernel compile 
 
@@ -174,7 +174,7 @@ $ git clone https://github.com/OpenChannelSSD/linux.git --> this is my case for 
 $ cd linux
 - If you use old config 
 $ cp /usr/src/kernels/3.10.0-327.36.1.el7.x86_64/.config /linux-4.8/.config
-- OR you don't need to 
+- OR you do not need to 
 $ make defconfig
 - But if you use the old .config, the following is what I recommend you for kernel compile. 
 $ make oldconfig OR $ make olddefconfig
@@ -234,7 +234,7 @@ And in order to get started with installation of ELREPO. You need pre-requisite.
 **In my case of CentOS 7**  
   
   
-----------[get started with Pre-Requisite in elrepo.org](http://elrepo.org/tiki/tiki-index.php) to Add ELREO repository-------------------   
+----------[Get started with Pre-Requisite in elrepo.org](http://elrepo.org/tiki/tiki-index.php) to Add ELREO repository-------------------   
    
 // **Import the Public Key**  
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org (external link)  
@@ -299,7 +299,7 @@ Before the following, the above is summary of next thing that I explain.
 ------------------------------------Installing the Dependencies-----------------------------------------
 $ sudo yum groupinstall 'Development Tools'
 
-**If you need more dependencies after the above command, Don't worry, Just install what you need.**
+**If you need more dependencies after the above command, Do not worry, Just install what you need.**
 yum install ~~~~
 
 **In my case. I installed more besides "Development Tools"  as follows **
@@ -334,7 +334,7 @@ $ tar -xf linux-4.8.tar.xz -C /usr/src/
 $ cd linux-4.8   OR   cd /usr/src/linux-4.8/
  
 // the below is option // this command erase the file of .config file on linux-4.8
-// so unless it's first time. I don't recommand this command. 
+// so unless it is first time. I do not recommand this command. 
 make mrproper
 
 $ make mrproper
@@ -347,7 +347,7 @@ So you have to try to copy or remake .config again.
 **In my case, I used the /usr/src/kernels/3.10.0-327.36.1.el7.x86_64/.config**
 $ cp /usr/src/kernels/3.10.0-327.36.1.el7.x86_64/.config /linux-4.8/.config
 
-$ make oldconfig OR make menuconfig
+$ make oldconfig OR $ make menuconfig
 $ make 
 OR if you want to use more cores.
 $ make -j<4 - this is the number of cores>
@@ -360,7 +360,7 @@ $ make modules
 sudo make modules_install install
 
 after reboot, If you want to check if installation is done well
-$ uname -a   OR uname -r
+$ uname -a OR uname -r
 -------------------------------------End----------------------------------------------
 ```
 when you boot kernel, If you want to change order of default booting 
