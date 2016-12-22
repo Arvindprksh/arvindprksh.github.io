@@ -3,7 +3,7 @@ layout: post
 title: Linux Command
 subtitle: So far, Linux command that I learned.
 category: Linux
-tags: [linux, command, concept]
+tags: [command, summary]
 permalink: /2016/03/02/Linux_Command/
 ---
 
@@ -72,8 +72,8 @@ permalink: /2016/03/02/Linux_Command/
 
 그리고 커널을 디버깅 할때 
 
-cat /proc/kmsg | grep [검색문자열]
-dmesg | grep[검색문자열]
+cat /proc/kmsg \| grep [검색문자열]
+dmesg \| grep[검색문자열]
 
 을 통해 커널 로그에서 내가 찾고자 하는 정보를 쉽게 찾을 수 있다. 
 
