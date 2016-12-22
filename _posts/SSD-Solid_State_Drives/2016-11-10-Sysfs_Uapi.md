@@ -45,6 +45,7 @@ permalink: /2016/11/10/Sysfs_Uapi/
  - [Directory -/sys in linux](http://superuser.com/questions/794198/directory-sys-in-linux)
  
 ---
+
  for Uapi
 
   - [Stack Exchange](http://stackoverflow.com/questions/18858190/whats-in-include-uapi-of-kernel-source-project)
