@@ -1,18 +1,10 @@
 ---
 layout: post
-title: pblk 19 Document of OpenchannelSSD Linux, Work queue, memory barrier, write back cache control and Circular queue
+title: pblk 19 Document of rightNVM & OpenchannelSSD Linux, Work queue, memory barrier, write back cache control and Circular queue
 subtitle: What is the concept of OpenChannelSSD's LightNVM ? and background knowledge
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [linux, lightnvm]
+permalink: /2016/11/21/Pblk19_Document_Of_OpenchannelSSD_Linux/
 ---
 
 I quoute the article below from [git commit of openchannelSSD](https://github.com/OpenChannelSSD/linux/commit/87b8c926e627c63bdadce6e64a8a497c8126c894)
