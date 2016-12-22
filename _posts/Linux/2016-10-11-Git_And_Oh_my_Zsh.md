@@ -3,7 +3,7 @@ layout: post
 title: Git and Oh My Zsh
 subtitle: What is Git ? And A useful git site that I can understand, 
 category: Linux
-tags: [linux, git, shell]
+tags: [git, shell]
 permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 ---
 
