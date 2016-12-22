@@ -2,17 +2,9 @@
 layout: post
 title: NVMe Controller Architecture
 subtitle: Controller Architecture of nvme mulitqueue in Spec 1.2 Document
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [nvme]
+permalink: /2016/09/15/NVMe_Controller_Architecture/
 ---
 
   this article refers to [this URL about 7. controller Architecture.](http://nvmexpress.org/wp-content/uploads/NVM_Express_1_2_Gold_20141209.pdf)
