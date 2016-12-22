@@ -3,7 +3,7 @@ layout: post
 title: Basic Shell Command & Software Package
 subtitle: summary of shell command
 category: Linux
-tags: [linux, command, concept]
+tags: [command]
 permalink: /2016/04/01/Basic_Shell_Command/
 ---
 
