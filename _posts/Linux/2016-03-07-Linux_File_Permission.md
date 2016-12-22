@@ -3,7 +3,7 @@ layout: post
 title: Linux File Permission
 subtitle: What is "ls" command's meaning and File Permission in Linux 
 category: Linux
-tags: [linux, concept]
+tags: [summary]
 permalink: /2016/03/07/Linux_File_Permission/
 ---
 
