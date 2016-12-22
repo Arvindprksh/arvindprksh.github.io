@@ -3,7 +3,7 @@ layout: post
 title: Bashrch File
 subtitle: What is .bashrch File ?
 category: Linux
-tags: [linux, command]
+tags: [shell, command]
 permalink: /2016/04/05/Bashrch_File/
 ---
 
