@@ -2,12 +2,9 @@
 layout: post
 title: QCT
 subtitle: What is the Qunta Cloud Technology ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
+category: SSD (Solid State Drives)
+tags: [server, utility]
+permalink: /2016/10/12/QCT/
 comments:
 show-share:
 big-image:
@@ -25,6 +22,8 @@ QCT offers a full spectrum of datacenter products and services from engineering,
 
 <!-- 
 [Quanta Blade information](http://www.qct.io/Company-AboutQCT?name=About%20QCT)
+
+[Quanta server](http://www.qct.io/Product/Rack-System/Rackgo-M/Compute-c77c86c90c171?displaymode=list)
 -->
 
 
@@ -105,3 +104,5 @@ P200000 - SSD SATA disk
   [Installation of “CentOS 7.0″ with Screenshots of Tecmint](http://www.tecmint.com/centos-7-installation/)
   
   **upon the site. You have to read the choose logical volume manager carefully**
+  
+
