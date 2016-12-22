@@ -221,6 +221,7 @@ $ ./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmm
   The following is a portion of ./configure ~~~
   
   after ./cofigure ~~ , You can check your system, which one is installed and short for virtual system.
+  
 ```shell 
 $ ./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmmu --enable-linux-aio --prefix=$HOME/qemu-nvme
 Install prefix    /home/hyunyoung.lee/qemu-nvme
@@ -236,6 +237,7 @@ Manual directory  /home/hyunyoung.lee/qemu-nvme/share/man
 ELF interp prefix /usr/gnemul/qemu-%M
 Source path       /home/hyunyoung.lee/qemu-nvme
 ```
+
 <!--
 C compiler        cc
 Host C compiler   cc
@@ -329,6 +331,7 @@ lzo support       no
 snappy support    no
 NUMA host support no
 -->
+
 
 # How to [execute QEMU-NVMe for OpenChannelSSD](http://openchannelssd.readthedocs.io/en/latest/gettingstarted/#using-qemu)
 
