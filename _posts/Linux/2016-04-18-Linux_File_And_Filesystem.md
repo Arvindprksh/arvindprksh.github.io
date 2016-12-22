@@ -3,7 +3,7 @@ layout: post
 title: Linux File and Filesystem
 subtitle: Basic information of Linux File and Filesystem, and f2fs is familiar to SSD 
 category: Linux
-tags: [linux, filesystem, ssd]
+tags: [filesystem, nvme]
 permalink: /2016/04/18/Linux_File_And_Filesystem/
 ---
 
