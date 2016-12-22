@@ -307,7 +307,7 @@ $ sudo yum insatll -y openssl-devel
 $ sudo yum install ncurses-devel
 $ sudo yum install qt-devel
      
-- Minimum condition of compiling linux without "$ sudo yum groupinstall "Development Tools"
+- Minimum condition of compiling linux without $ sudo yum groupinstall "Development Tools"
 
 $ yum install -y gcc bc openssl-devel ncurses-devel pciutils libudev-devel
 -----------------------------------------------End--------------------------------------------------------
@@ -377,6 +377,13 @@ $ grub2-set-default 0
 but I'm not sure the above commnd(grep, grub2-*), Becuse I didn't do it. 
 
 I think I don't need it
+
+But two of The above commands is useful. 
+
+```shell
+$ grub2-editenv list
+$ grub2-set-default 0
+```
 
 ** you cannot use yum due to lock **
 
