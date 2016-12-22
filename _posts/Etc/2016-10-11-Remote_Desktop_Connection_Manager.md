@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the Remote Desktop Connection Manager in windows
+title: The Remote Desktop Connection Manager in windows
 subtitle: What is the Remote Desktop Connection Manager ?
 category: SSD (Solid State Drives)
 tags: [utility]
