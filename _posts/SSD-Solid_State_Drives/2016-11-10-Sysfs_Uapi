@@ -2,17 +2,9 @@
 layout: post
 title: Sysfs and UAPI
 subtitle: What is different between Sysfs and proc ? and What is the UAPI ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lightnvm]
+permalink: /2016/11/10/Sysfs_Uapi/
 ---
 
 # [profs VS sysfs](http://unix.stackexchange.com/questions/4884/what-is-the-difference-between-procfs-and-sysfs)
