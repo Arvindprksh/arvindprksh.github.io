@@ -481,7 +481,7 @@ later on, it is okay that I ignore the following, a littl changing setting of ./
 Normally, if you follow the above command that is my choice. You can use NVMe. 
 
 ```shell
-- it's just adding --enable-gtk --enable-spice. 
+- it is just adding --enable-gtk --enable-spice. 
 $ ./configure --python=/usr/bin/python2 --enable-kvm --target-list=x86_64-softmmu --enable-linux-aio --prefix=$HOME/qemu-nvme --enable-gtk --enable-spice
 $ make -j8
 $ make install
