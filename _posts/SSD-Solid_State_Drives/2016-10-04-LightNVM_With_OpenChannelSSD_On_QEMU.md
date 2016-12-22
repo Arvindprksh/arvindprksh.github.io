@@ -2,17 +2,9 @@
 layout: post
 title: LightNVM with OpenchannelSSD on QEMU-NVMe
 subtitle: How can I install target and generic media manager of lightnvm on QEMU-NVMe?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [lihgtnvm, nvme, qemu]
+permalink: /2016/10/04/LightNVM_With_OpenChannelSSD_On_QEMU/
 ---
 
 If you finish installing the QEMU-NVMe, Now You can use the newest version virtual OpenChannelSSD. 
@@ -54,6 +46,7 @@ you can know the following :
  $ reboot OR shutdown -r now  
  $ virt-manager    
 ```
+
  The above command is basic setting to execute QEMU-KVM with GUI, virt-manager tool. 
  
  And if you want to how to install GUEST OS, please see [my blog's QEMU-URL]()
