@@ -111,8 +111,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
   <tr>
     <td>
       <ul>
-         <li> <a href = "./2016-11-30-CAFFE">CAFFE Library of Machine learning(Neural Network)</a></li>
-         <li> <a href = "./2016-10-11-Windows-remote-Desktop">Windows remote Desktop</a></li>
          <li> <a href = "./2015-03-01-Docker">Docker</a></li>
          <li> <a href = "./2016-01-26-Webprogragmming-study">web programming study</a></li>
          <li> <a href = "./2015-12-31-Start-Webpage">Start web page</a></li>
