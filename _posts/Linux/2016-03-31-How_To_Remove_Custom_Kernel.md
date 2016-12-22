@@ -3,7 +3,7 @@ layout: post
 title: Removing Custom kernel
 subtitle: How can I remove my custom kernel
 category: Linux
-tags: [linux, command]
+tags: [command]
 permalink: /2016/03/31/How_To_Remove_Custom_Kernel/
 ---
 
