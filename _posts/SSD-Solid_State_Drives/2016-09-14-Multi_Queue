@@ -1,18 +1,10 @@
 ---
 layout: post
 title: Multi-Queu on block layer in Linux Kernel
-subtitle: What is the concept of Multi-Queue, And code analysis of Multi-Queue on Block layer
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+subtitle: What is the Multi-Queue, and code analysis of Multi-Queue on Block layer
+category: SSD (Solid State Drives)
+tags: [block device, nvme]
+permalink: /2016/09/14/Multi_Queue/
 ---
 
 Now, I'm interested in multi-block layer and open source. 
@@ -528,11 +520,6 @@ The mapping of contexts between between the **blk_mq_hw_ctx** and the **blk_mq_c
  The function finally handles possible errors, by requeue or deletion of the associated requests.
  
  ![](/img/Image/SSD-Solid_State_Drives/2016-09-14-Multi_Queue/Mutil_queue3.png)
-
-
-
-
-
 
 
 # Reference 
