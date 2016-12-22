@@ -3,7 +3,7 @@ layout: post
 title: LightNVM with OpenchannelSSD on QEMU-NVMe
 subtitle: How can I install target and generic media manager of lightnvm on QEMU-NVMe?
 category: SSD (Solid State Drives)
-tags: [lihgtnvm, nvme, qemu]
+tags: [lightnvm, nvme, qemu]
 permalink: /2016/10/04/LightNVM_With_OpenChannelSSD_On_QEMU/
 ---
 
