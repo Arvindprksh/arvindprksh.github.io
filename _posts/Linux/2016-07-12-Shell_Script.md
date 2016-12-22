@@ -3,7 +3,7 @@ layout: post
 title: Shell Script
 subtitle: Let's Study Shell Script
 category: Linux
-tags: [linux, shell, command]
+tags: [shell]
 permalink: /2016/07/12/Shell_Script/
 ---
 
