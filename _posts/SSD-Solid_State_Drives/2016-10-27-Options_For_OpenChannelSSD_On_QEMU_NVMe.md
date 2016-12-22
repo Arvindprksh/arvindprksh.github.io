@@ -278,7 +278,7 @@ For procedure of registering pblk on QEMU-NVMe
   
   after above. you can find block device named hyun.    
   
-  > dmesg | grep 'nvm'    
+  > dmesg \| grep 'nvm'    
   
   after abvoe. you can find the initial configuration. 
     
@@ -286,7 +286,7 @@ For procedure of registering pblk on QEMU-NVMe
   
   > $ lsblk -t     
   
-  > $ dmesg | grep 'pblk'    
+  > $ dmesg \| grep 'pblk'    
 
   command for execution of QEMU-NVMe
    
