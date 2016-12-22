@@ -3,7 +3,7 @@ layout: post
 title: Cmake and Gflag
 subtitle: What is the Cmake and Gflag ?
 category: Linux
-tags: [linux, utility]
+tags: [compile, utility]
 permalink: /2016/04/07/Cmake_Gflag/
 ---
 
