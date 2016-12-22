@@ -1,21 +1,10 @@
 ---
 layout: post
-title: Performance of F2FS(F2 filesystem)
+title: Benchmark of F2FS(F2 filesystem)
 subtitle: How did they measure the performance of F2FS ?
-css:
-category:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
-show-avatar: false
-nav-short: true
+category: SSD (Solid State Drives)
+tags: [filesystem, benchmark]
+permalink: /2016/12/12/How_To_Check_Performance_Of_F2FS/
 ---
 
 I qoute paper of [F2FS : A New File system For Flash Storage](https://www.usenix.org/system/files/conference/fast15/fast15-paper-lee.pdf) from [USENIX](https://www.usenix.org/),
