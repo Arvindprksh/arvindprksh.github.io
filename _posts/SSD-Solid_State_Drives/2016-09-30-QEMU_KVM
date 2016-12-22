@@ -2,17 +2,9 @@
 layout: post
 title: QEMU(Generic and Open Source Machine emulator and Virtualizer) and QEMU-KVM
 subtitle: What is the QEMU(QEMU-KVM) ? and how can I install QEMU(QEMU-KVM) on CentOS 7?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [nvme, qemu, kvm]
+permalink: /2016/09/30/QEMU_KVM/
 ---
 
 Some feature is needed to use the evironment of Virtualiztion and emulator. 
@@ -836,8 +828,8 @@ Hyper Threading.
 
 Server CPU name Xeon E3 E#...
 
-cpu 0 cpu 1                |
-                           |
-            normemory Bio  |  BMC (board Management cotroller) - IPMI(protocol)
-                           |
-                           |
+cpu 0 cpu 1                \|
+                           \|
+            normemory Bio  \|  BMC (board Management cotroller) - IPMI(protocol)
+                           \|
+                           \|
