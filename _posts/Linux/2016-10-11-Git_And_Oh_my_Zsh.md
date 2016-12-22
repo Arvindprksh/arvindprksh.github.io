@@ -7,13 +7,12 @@ tags: [linux, git, shell]
 permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 ---
 
-# practice tool of github
+# practice site of github
 
   - [Codeacademy](https://www.codecademy.com/)
 
     you can practice basic function.  I alread did it.
-    
-    
+        
   - this site is made of opensourc to practice git's basic functions.
      
      [practic site of English version](http://learngitbranching.js.org/)
@@ -36,6 +35,8 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
   - site you can easily understand.
   
      [theory of git](https://www.atlassian.com/git/tutorials/refs-and-the-reflog/)
+     
+  - [Github practice](http://www.slideshare.net/flyskykr/github-46014813)
 
 # guid for git 
 
