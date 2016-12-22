@@ -45,11 +45,13 @@ The following is the same process before procedure below.
 
 as a result, "make oldconfig" is the same from "make olddefconfig".
 
-**but** when you type "make oldconfig", if you reply by default against oldconfig.
+**BUT** when you type "make oldconfig", if you reply by default against oldconfig.
 
 replying by default is easy, for example
 
 in the case below of [Y/n/?], you just reply "y" to fit upper case. 
+
+otherwise, when you don't reply by default, "make oldconfig" and make olddefconfig could be different. 
 
 ```shell
 Use a virtually-mapped stack (VMAP_STACK) [Y/n/?] (NEW) Y
