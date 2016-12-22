@@ -44,6 +44,8 @@ I quote this atricle from [SEGATE's blog](http://www.seagate.com/tech-insights/s
 
   - [SEAGATE's page](http://www.seagate.com/tech-insights/ssd-over-provisioning-benefits-master-ti/)
   
+  - [wikipedia's over write amplification](https://en.wikipedia.org/wiki/Write_amplification)
+  
   - [Swap directory](https://www.linux.com/news/all-about-linux-swap-space)  
     
      * Just reference of what the swap directory is. 
