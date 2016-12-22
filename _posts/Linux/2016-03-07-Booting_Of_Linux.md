@@ -3,7 +3,7 @@ layout: post
 title: Booting Of Linux
 subtitle: How to boot linux - You need to upload the image. 
 category: Linux
-tags: [linux, concept]
+tags: [summary]
 permalink: /2016/03/07/Booting_Of_Linux/
 ---
 
