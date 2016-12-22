@@ -2,17 +2,9 @@
 layout: post
 title: Over Provisioning in SSD
 subtitle: What is Over Provisioning in SSD ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [nvme]
+permalink: /2016/11/21/Over_Provisioning_In_SSD/
 ---
 
 I quote this atricle from [SEGATE's blog](http://www.seagate.com/tech-insights/ssd-over-provisioning-benefits-master-ti/)  
