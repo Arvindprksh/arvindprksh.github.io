@@ -2,17 +2,9 @@
 layout: post
 title: Vi Command And Linux Command 2
 subtitle: While I do opensource project, These command is What I learned.  
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [vi, command]
+permalink: /2016/09/26/Vi_And_LInux_Commands/
 ---
 
 From now on, I will make a list of vi command for me, in addition, click [Computerhope's vim](http://www.computerhope.com/unix/vim.htm)
