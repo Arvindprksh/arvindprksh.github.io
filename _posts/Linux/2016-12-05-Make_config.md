@@ -3,7 +3,7 @@ layout: post
 title: Difference between Make oldconfig and olddefconfig
 subtitle: What is the Difference between Make oldconfig and olddefconfig ?
 category: Linux
-tags: [linux, fio, command]
+tags: [fio, command]
 permalink: /2016/12/05/Make_config/
 ---
 
