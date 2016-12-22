@@ -385,6 +385,6 @@ $ grub2-editenv list
 $ grub2-set-default 0
 ```
 
-** you cannot use yum due to lock **
+**you cannot use yum due to lock **
 
 just click [this site](http://www.ehowstuff.com/how-to-resolve-another-app-is-currently-holding-the-yum-lock-waiting-for-it-to-exit/) 
