@@ -1,18 +1,10 @@
 ---
 layout: post
-title: OpenChannelSSD 2016
-subtitle: What is new in OpenChannelSSD 2016 ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: OpenChannelSSD and LightNVM 2016
+subtitle: What is new in OpenChannelSSD and LightNVM 2016 ? and what is different from 2015 version ?
+category: SSD (Solid State Drives)
+tags: [lightnvm, nvme]
+permalink: /2016/10/24/OpenChannelSSD_2016/
 ---
 
 This article refers to [OpenChannel SSDs : Linux Con Vault 2016](http://events.linuxfoundation.org/sites/events/files/slides/Vault2016-Website.pdf)
