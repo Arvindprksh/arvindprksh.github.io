@@ -27,28 +27,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     </td>
     <td>
       <ul>
-        <li> <a href = "./2016-12-05-make-menuconfig">What does "make oldconfig" exactly do</a></li>
-        <li> <a href = "./2016-10-11-git">Practice site of git And zsh</a></li>
-        <li> <a href = "./2016-07-12-Shell_Script">Shell Script</a></li>
-        <li> <a href = "./2016-05-25-SSH_Tutorial_for_linux">SSH Tutorial</a></li>
-        <li> <a href = "./2016-04-28-file_system_mount">F2FS mount & mkfs</a></li>
-        <li> <a href = "./2016-04-18-Linux_files_and_filesystem">Linux files and filesystem & F2FS</a></li>
-        <li> <a href = "./2016-04-07-While_Loading_Shared_Libraries,_error_Cannot_Open_Shared_Object_File">Error, cannot open shared object file</a></li>
-        <li> <a href = "./2016-04-07-Cmake_gflag">gflag & Cmake</a></li>
-        <li> <a href = "./2016-04-05-bashrch_file">bashrch_file</a></li> 
-        <li> <a href = "./2016-04-01-chmod">About chmod</a></li>
-        <li> <a href = "./2016-04-01-Basic_Command_in_linux">Basic Command in linux</a></li> 
-        <li> <a href = "./2016-03-31-HowToRemoveCustomKernl">How To Remove Custom Kernl</a></li> 
-        <li> <a href = "./2016-03-28-dev_directory.md">/dev directory</a></li>
-        <li> <a href = "./2016-03-17-ls_-l_linux_file">ls_-l_linux_file</a></li>
-        <li> <a href = "./2016-03-16-ioctl">ioctl</a></li>
-        <li> <a href = "./2016-03-10-linux_log_&_Kernel_Source_of_block_Device">block device kernel source & log</a></li>
-        <li> <a href = "./2016-03-09-typedef-function">typedef-function with kernel debugging</a></li>
-        <li> <a href = "./2016-03-07-Open_Channel_Solid_State_Drives">open channel SSD</a></li>
-        <li> <a href = "./2016-03-07-Linux_booting"> Linux booting & SSD sub sytem </a></li>
-        <li> <a href = "./2016-03-02-Commnad_Intruction">Linux words & Command Instruction</a></li>
-        <li> <a href = "./2016-03-01-Hard_Link&Soft_Link">Simbolic Link & Hard Link</a></li>
-        <li> <a href = "./2016-02-24-Linux_Compile">Linux Compile method</a> <!--at Centos 7.1 for changing from kernel 3.7 to kernel 4.4 --></li>
       </ul>
     </td>
     <td>
