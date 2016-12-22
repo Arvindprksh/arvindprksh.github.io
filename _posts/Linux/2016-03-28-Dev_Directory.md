@@ -3,7 +3,7 @@ layout: post
 title: /dev Directory
 subtitle: Whta is /dev Directory ?
 category: Linux
-tags: [linux, concept]
+tags: [summary]
 permalink: /2016/03/28/Dev_Directory/
 ---
 
