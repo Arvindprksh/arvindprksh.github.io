@@ -110,7 +110,7 @@ $ cat /etc/centos-release
 CentOS Linux release 7.2.1511 (Core) 
 ```
 
-**dmesg | grep 'nvm'**
+**dmesg \| grep 'nvm'**
 
 ```shell
 $ dmesg | grep 'nvm'
