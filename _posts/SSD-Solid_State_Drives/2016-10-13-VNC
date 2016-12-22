@@ -2,17 +2,9 @@
 layout: post
 title: NVC
 subtitle: What is the VNC and how can I install VNC ?
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [utility, server, remote]
+permalink: /2016/10/13/VNC/
 ---
 
 When you use remote server. you have a inconvenience. So I recommend you this VNC for more environment of development
