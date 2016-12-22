@@ -454,6 +454,8 @@ If you want to debug kernel, click [elinux.org](http://elinux.org/Debugging_by_p
 
 
 2. with loglevel
+
+
 ```shell
  $ cat /proc/sys/kernel/printk   
  4	4	1	7
