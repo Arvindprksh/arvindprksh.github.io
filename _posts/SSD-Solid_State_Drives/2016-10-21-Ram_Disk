@@ -2,17 +2,9 @@
 layout: post
 title: Ram Disk
 subtitle: What is the Ram Disk
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [linux]
+permalink: /2016/10/21/Ram_Disk/
 ---
 
 # RAM disk 
