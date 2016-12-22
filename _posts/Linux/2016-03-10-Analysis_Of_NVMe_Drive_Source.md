@@ -1,9 +1,9 @@
 ---
 layout: post
-title: analysis of NVMe Driver source 
+title: Analysis of NVMe Driver source 
 subtitle: In order to register lightnvm, I analyzed kernel source, source version is 4.4
 category: Linux
-tags: [linux, kernel code]
+tags: [nvme]
 permalink: /2016/03/10/Analysis_Of_NVMe_Drive_Source/
 ---
 
