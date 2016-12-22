@@ -3,7 +3,7 @@ layout: post
 title: About RockDB install2
 subtitle: while I installed rocksDB, I found errors and fix it.  
 category: DataBase
-tags: [facebook, rocksdb]
+tags: [facebook, rocksdb, benchmark]
 permalink: /2016/03/24/rocksDB_Install2/
 ---
 
