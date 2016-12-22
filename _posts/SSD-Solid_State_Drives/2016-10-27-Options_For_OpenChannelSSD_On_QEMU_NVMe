@@ -1,18 +1,10 @@
 ---
 layout: post
-title: options for OpenChannelSSD on QEMU-NVMe
-subtitle: What options is in QEMU-NVMe for OpenChnnelSSD ? 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+title: options for OpenChannelSSD and LightNVM on QEMU-NVMe
+subtitle: What options is in QEMU-NVMe for OpenChnnelSSD and LightNVM ? 
+category: SSD (Solid State Drives)
+tags: [lightnvm, qemu, nvme]
+permalink: /2016/10/27/Options_For_OpenChannelSSD_On_QEMU_NVMe/
 ---
 
 [the original qemu-nvme github](https://github.com/nvmeqemu/nvmeqemu) & [the qemu-nvme github for OpenchannelSSD](https://github.com/OpenChannelSSD/qemu-nvme)
@@ -61,6 +53,7 @@ sudo ~/qemu-nvm/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm -hda /var/lib/l
 -drive file=<file>, if=none,id=<drive_id>  
 -device nvme,drive=<drive_id>,serial=<serial>,id=<id[optional]>mat
 ```
+
 > drive file=/home//blk_nvme_device,if=none,id=lightnvme -device nvme,drive=lightnvme,serial=deadbeef,lver=1,lba_index=3,nlbaf=5,lchannels=1,namespaces=1
 
 ```c
@@ -99,6 +92,7 @@ sudo ~/qemu-nvm/bin/qemu-system-x86_64 -m 1G -smp 1 --enable-kvm -hda /var/lib/l
   
   - mdts=<int> : Maximum data transfer size, **Default:5**
 ```
+
 <!--
  Back end file 4GB
 ```c 
@@ -278,7 +272,8 @@ For procedure of registering pblk on QEMU-NVMe
 
   > $ lnvm create -d nvme0n1 -n hyun -t pblk (OR rrpc) (-o 0:3)    
     
-  IF rrpc 
+  **IF rrpc** 
+  
   > $ lsblk -t    
   
   after above. you can find block device named hyun.    
@@ -287,7 +282,8 @@ For procedure of registering pblk on QEMU-NVMe
   
   after abvoe. you can find the initial configuration. 
     
-  IF pblk   
+  **IF pblk**   
+  
   > $ lsblk -t     
   
   > $ dmesg | grep 'pblk'    
@@ -316,9 +312,11 @@ That is all,
  NEW Specification of CLEX lean to pblk. but as of now(october 31, 2016), the kernel mainline from 4.4 to 4.8 only include rrpc
  
  * rrpc meaning is round robin page-based hybrid FTL. 
+ 
  * pblk - to filesystem, pblk appears like block device in lightNVM module.
  
  lightNVM's Hybrid mode is if set to 1, L2P MAP is in device. 
+ 
                            if set to 0, L2P MAP is in host.
                            
  as of now(october 31, 2016), CLex support of PPA is hybrid Page Address on rrpc. But it is not neccesary for OpenChannelSSD.
