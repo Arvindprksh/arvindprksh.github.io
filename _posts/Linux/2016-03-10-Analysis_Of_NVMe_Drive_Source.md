@@ -324,7 +324,7 @@ with the above long, to search for kerenl source, refer to <a href = "http://lxr
 
 ---
 
-3/16/ log analization
+3/16/ log analyzation
 
 ```shell
 [    1.451514] hyun2 :function call static int nvme_revalidate_disk(struct gendisk * disk)
