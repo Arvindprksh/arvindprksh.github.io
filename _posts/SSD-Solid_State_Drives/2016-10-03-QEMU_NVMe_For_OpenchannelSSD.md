@@ -1,18 +1,10 @@
 ---
 layout: post
-title: QEMU-NVMe For OpenchannelSSD.
+title: QEMU-NVMe For OpenchannelSSD and LightNVM.
 subtitle: What is the QEMU-NVMe For OpenChannelSSD? 
-css:
-tags:
-date:
-big-image:
-share-image:
-permalink:
-comments:
-show-share:
-big-image:
-meta-title:
-meta-description:
+category: SSD (Solid State Drives)
+tags: [nvme, qemu, lightnvm]
+permalink: /2016/10/03/QEMU_NVMe_For_OpenchannelSSD/
 ---
 
 Now I will install lightnvm & virtual OpenchannelSSD using QEMU-KVM and QEMU-NVMe In order words, I will use Linux virtualization to do that. 
