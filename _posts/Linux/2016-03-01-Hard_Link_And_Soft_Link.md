@@ -3,7 +3,7 @@ layout: post
 title: Hard Link and Soft Link
 subtitle: What is the hard and soft link ?
 category: Linux
-tags: [linux, concept]
+tags: [summary]
 permalink: /2016/03/01/Hard_Link_And_Soft_Link/
 ---
 
