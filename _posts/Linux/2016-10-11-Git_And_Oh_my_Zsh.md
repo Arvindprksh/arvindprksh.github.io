@@ -7,7 +7,7 @@ tags: [linux, git, shell]
 permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 ---
 
-# practice site of github
+## practice site of github
 
   - [Codeacademy](https://www.codecademy.com/)
 
@@ -22,7 +22,7 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
   - [Try Git: Git Tutorial](https://try.github.io/levels/1/challenges/1)
     
 
-# Theory of git and github
+## Theory of git and github
   
   - The following shows you all github 
   
@@ -38,20 +38,20 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
      
   - [Github practice](http://www.slideshare.net/flyskykr/github-46014813)
 
-# guid for git 
+## guid for git 
 
   1. [git - the simple guide](http://git.huit.harvard.edu/guide/)
 
   2. [collection site of git practice](https://github.com/grayghostvisuals/practice-git)
   
-# how to see git_log 
+## how to see git_log 
 
   1. [Stackoverflow](http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
 
-# Practice and each command's summary.
+## Practice and each command's summary.
 
 
-# [z shell](http://ohmyz.sh/)
+## [z shell](http://ohmyz.sh/)
 
   ![](/img/Image/Linux/2016-10-11-Git_And_Oh_my_Zsh/Oh my zsh.png)
   
@@ -66,9 +66,9 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 
 ## [Oh my zsh's feature site](http://code.joejag.com/2014/why-zsh.html)
 
-# [The Silver Search "ag"](https://github.com/ggreer/the_silver_searcher)
+## [The Silver Search "ag"](https://github.com/ggreer/the_silver_searcher)
 
-## How to install ag
+### How to install ag
 
   On My CentOS 7 
   
