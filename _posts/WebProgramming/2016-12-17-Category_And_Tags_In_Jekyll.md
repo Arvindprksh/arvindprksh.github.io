@@ -63,7 +63,6 @@ tags: ~~~
   
   after change the above code to fit my website. appearance is as follows.
   
-  
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/In categories.png)
   
 ## information of terminology
