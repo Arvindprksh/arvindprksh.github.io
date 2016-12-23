@@ -26,8 +26,9 @@ bigimg:
 - [x] Third, How to use Tags and categories. (2016.12.19)
 - [x] Fourth, What is the DISQUS ? (2016.12.15) 
 - [x] Fifth, How can I do hightlither When I want to use codeblock in markdown. (2016.12.15) 
-- [ ] Sixth, What is the permalink option ?
-- [ ] Seventh, How to use markdown in githubpage.
+- [x] Sixth, I have to make date list of my whole blogs. (2016.12.16)
+- [x] Seventh, I have to make print, email to share my blog whenever visitor want. (2016.12.26)
+    
     
 ## Jekyll with Beatiful-jekyll
 
