@@ -1,0 +1,65 @@
+---
+layout: post
+title: the EFI, EFI Shell and BMC(boardbased management controller) 
+subtitle: What is the EFI, EFI Shell and BMC ? 
+category: SSD (Solid State Drives)
+tags: [server]
+permalink: /2016/12/23/EFI_shell/
+bigimg: 
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+---
+
+When I touched server like datacenter. I experienced a various thing that I didn't know whan I was in univercity. 
+
+So, before I forget the keyword and concept. I am going to summarize those things !
+
+## EFI
+  
+  The EFI Sytem partion(ESP) is a partition on a data storage device (usually a hard disk drive or solid-state drive) that is used by computer adhering to the unified Extensible Firmware Interface (UEFI).
+  
+  when a computer is booted. UEFI firmware loads files stored on the EXP to start installed operating systems and various utilities.
+  
+  An ESP needs to be formatted with a files system.
+
+## EFI shell
+
+  Extensible firmware interface (EFI) brings new flexibility and opportunities to users by allowing them to work in the layer between their OS and BIOS, without altering either one.
+  
+  
+  **I think some device has nor memory, So user can do programming on this nor memory to do something in firmware level.**
+  
+  at that time, user have to use the EFI shell. 
+  
+  This is what I understad when I dealt with server of SSD. 
+  
+  So, When I used server of SSD with the CentOS, sometimes I would boot into EFI shell mode or normal booting mode.
+  
+  **at that time. in order to fit this problem. I entered "booting menu", and then, I chaged booting device to where I want to boot.**
+  
+  In my case, when I configure priority of booting, firts is hard disk that I installed CentOS 7
+  
+## BMC (boardbased management controller)
+
+
+
+## impi (Intelligent Platform Management Interface)
+
+
+## command that I used to check up status of machine. 
+
+ HEALTH
+ 
+ 
+
+
+
+
+## Reference
+
+ - [EFI system partition](https://en.wikipedia.org/wiki/EFI_system_partition)
+ 
+ - [Master boot record](https://en.wikipedia.org/wiki/Master_boot_record)
+ 
+ - [GUID Partition Table](https://en.wikipedia.org/wiki/GUID_Partition_Table)
+ 
+ - [Stackexchange](http://superuser.com/questions/520068/efi-partition-vs-boot-partition)
