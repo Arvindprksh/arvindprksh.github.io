@@ -624,7 +624,26 @@ tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
   but oh my zsh is use this another way, 
   
   like this, cd -l and then press 'tab' key
+ 
+## ls /dev
+
+## nvme list
+
+  nvme list \| more
+
+  nvme list \| wc -l 
   
+## lspci -d 1c5c:
+
+  lspci -d 1c5c: \| wc -l
+
+## ping 
+
+  ping [ip address or domain name]
+  
+  ping ip-address
+  
+  ping domain name 
 
 
 # Reference
