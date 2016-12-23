@@ -50,9 +50,7 @@ tags: ~~~
   
   let's see code below. 
   
-
-  <script src="https://gist.github.com/hyunyoung2/0c1aaeaa57106e88150b767c294b3bfa.js"></script>
-
+  <script src="https://gist.github.com/hyunyoung2/cebef17d97fe84d3ac4c12c81a5ce11b.js"></script>
   
   The above code makes title and the title-based list, of course. Currently,  title is tag in here. 
   
