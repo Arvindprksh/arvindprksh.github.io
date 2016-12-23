@@ -13,13 +13,15 @@ bigimg:
  
    ![](/img/Image/WebProgramming/2016-12-17-Tag_Cloud/word cloud.png)
    
-   As you can see the above image, I will make it for my gitpage for me to search for my posts.
+   As you can see the above image, I will make it for my gitpage for me to help search for my posts.
    
-   But My tag cloude is not fancy like the above thing, I'm not expert of web developing. 
+   But My tag cloud is not fancy like the above thing, Because I'm not expert of web developing. 
    
-   I am newbie, but as software engineer, because I need to that functionality, I will try to make it. 
+   I am newbie, but because I need to that functionality, I will just try to make it. 
    
-   if you can make tag cloud, you also can make category cloud. the logic is the same. 
+   So, after seeing how to make tag cloud, you also can make category cloud. the logic is the same. 
+ 
+   let's start making cloud of tags
  
    GitHub builds Jekyll sites with safe option which allows only a few plugs (such as sitemap) to be include 
    
@@ -33,62 +35,40 @@ bigimg:
  title: ~~~~~~~~
  subtitle: ~~~~~~~~
  category: Web programming
- tags: jekyll
+ tags: [jekyll]
  ---
  ```
 
    As you can see the above, when we make tag cloud. we use the tags(jekyll) 
    
-   Keep in mind, when you have to specify tags on your posts, if you want to generate tag cloud. 
+   Keep in mind, you have to specify tags on your posts, after that, you can generate tag cloud. 
    
    let's see how to generate tags cloud! 
    
-   below is example code. 
+   below is example code from [superdevresources blog](https://superdevresources.com/tag-cloud-jekyll/) 
    
-```markdown
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>
-</span>
-{% endfor %}
-```
+   <script src="https://gist.github.com/hyunyoung2/68791d45c085ee36f86ca8ae50ab79ae.js"></script>
+
    if you make page(.html, .md) with the above code, you can see the word cloud like this 
    
    ![](/img/Image/WebProgramming/2016-12-17-Tag_Cloud/Word cloud example.png)
    
 ```markdown
-{% assign tags = site.tags | sort %}
+-{% assign tags = site.tags | sort %}
 ```
-   this code is tags variable get sorted tags in your posts. 
-  
-   On the above code, If you change a portion :
+
+   this code is tags variable get sorted tags in alphabetical order on your posts. 
    
-```markdown   
-   <a href="/tag/{{ tag | first | slugify }}/" -->  <a href="/tag/{{ tag | first | slugize }}/"
-```
-   tags will appear vertically unlike the above image. 
-   
-   that is becuase of <il></il>.
-   
-```markdown   
-{% for tag in site.tags %}
-    <li style="font-size: {{ tag | last | size | times: 4 | plus: 80 }}%">
-        <a href="/{{ tag | first | slugize }}/">
-            {{ tag | first }}
-        </a>
-    </li> 
-{% endfor %} 
-```   
-   
-   And this part is to fit the size of tag with the number of posts.
+  <script src="https://gist.github.com/hyunyoung2/a192fe4432ee54346a6611f33bfe4d07.js"></script> 
+
+   And this part is to resize and extract tags to fit the number of tags in posts.
    
 ```markdwon 
    style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
 ```
+  
+   i.e key point to resize tag to fit the number of each tags the abov code ! 
+   
    this portion adjusts the size of font automatically.
    
    And another way exist. let's see below
@@ -97,110 +77,85 @@ bigimg:
 {{ tag | last | size | times: 100 | divided_by: site.tag.size | plus: 70 }}
 ```
 
-  Excatly I don't know what is differenct between two cases. 
+  Exactly, I don't know what the above code means, 
   
-  If you know about that, let me know what is different between both cases.
- 
+  why does "divided_by: site.tag.size" need to control the size of tags ? 
+  
+  if you know about this, could you explain to me about this ?
+  
   I seriously will appreciate it !!
   
   Now you can make frame of tag cloud, In the above code, If you change the tags into categories. 
   
   that is category cloud as follows
   
-```
-{% assign categories = site.categories | sort %}
-{% for category in categories %}
- <span class="site-tag">
-    <a href="/category/{{ category | first | slugify }}/"
-        style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ category | last | size }})
-    </a>
-</span>
-{% endfor %}
-```
+  <script src="https://gist.github.com/hyunyoung2/f6655ca85e8af71bc2ec3ed14308522a.js"></script>
+  
+  specifically, If you change the code as follows. You can get cloud of categories. 
+  
+```  
+  for category in site.tags ---> for category in site.categories
+```  
+  
+  ![]() -- category image
+
+---
 
   From now on, I will explain to you how to integrate this tags cloud with making a list based on the number of tags
   
   First let's see [my example]("{{ site.baseurl }}/alistofcategories").
   
-  The example is based on Categories. I will explain to you how to generate my exaple page with categories. 
+  The example is based on Categories. I will explain to you categories-based cloud and list 
   
-  **BUT** if you want to have tags cloud, Just change categories into tags.
+  **So,** if you want to have tags cloud, Just change categories into tags. as I talked a while ago.
   
   let's see my code for categories cloud. 
   
   First of all, you have to make page to generate cloud of categories or tags. 
   
-  Second of all, You have to copy and paste the code below. 
+  Second of all, You have to copy and paste the code below if you want to make a list and cloud based on categoreis. 
   
   <script src="https://gist.github.com/hyunyoung2/5a205be4f7456ad75597e6bc8ffbd279.js"></script>
   
-  the above code is key to make cloud of categories. 
   
-  ** if you want to change the above code into use of tags**
-  
-  You have to amend the following :
+  So, as I talked about tags a while ago, so If you want to a list ans cloud of tags.  
+   
+  You have to amend like the following :
  
 ```ruby
-{% assign tags = site.categories | sort %} ---> {% assign tags = site.tags | sort %}
+ - assign tags = site.categories | sort  --->  assign tags = site.tags | sort 
 ```
-  for tags cloud, that's it! it's awewsome.
+
+  for tags cloud, that's it! it's so easy to make cloud and a list of tags with one source code.
   
-  From now on, I explain to you my code. 
+  let's see my code.
   
   First of all, Cloud of categories. 
   
-{% highlight ruby linenos %}  
-  <div class="blog-tags"> 
-    {% assign tags = site.categories | sort %}
-    {% for tag in tags %}
-    <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-      <span class="fa fa-folder-open"> <!-- I get rid of left option -->
-        {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
-      </span>
-    </a>
-    {% endfor %}
-  </div>  
-{% endhighlight %}
+  <script src="https://gist.github.com/hyunyoung2/4862d8e47f823c57efe960772ab5131a.js"></script>
 
-   As you can see the code, In order to resize categories with the number of categories. 
+   As you can see the code, in my code, firts, catergories is sorted. and then, the number of each categories is resized. 
    
-   I added style option, when the number of categories increase, the size of font-size of the categries is incremented.
+   the following is a protion for me to calculate the number of categories.
    
 ```html
 style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"
 ```
-  this portion is important to resize the category icon.
+  this portion is important to resize the category icon in my gitpage.
   
   And the rest of my code is used to make a list for each categries.
   
-{% highlight ruby linenos %}  
-  <div class="post-preview" style="margin-top: 5px; margin-bottom: 30px;"> 
-    {% for tag in tags %}
-      <h2 id="{{ tag[0] | slugify }}"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2> <!-- I added new class -->
-      <ul class="later on"> <!-- post-subtitle -->
-        {% for post in tag[1] %}
-          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-        <li>
-          {{ post.title }}
-        <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-        </li>
-        </a>
-        {% endfor %}
-      </ul>
-        <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
-          <span class="fa fa-refresh"></span> Go back to the top
-        </a> 
-        <hr/>
-    {% endfor %}
-  </div>
-{% endhighlight %}
+  <script src="https://gist.github.com/hyunyoung2/d1e80cdbef4efd7419a5a250dc854bce.js"></script>
 
-   As you can see the code, the above code shows you how to list items of categories with for statement. 
+   As you can see the code, the above code shows you how to list items of categories 
    
-   the following code is example of using the above.
+   the following is example of using the above.
    
    ![](/img/Image/WebProgramming/2016-12-17-Tag_Cloud/category example.png)
+   
+## In addition, Html tag for my gitpage   
+   
+   
    
 ## Information of terminolgy
 
