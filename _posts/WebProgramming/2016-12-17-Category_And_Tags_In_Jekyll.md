@@ -61,7 +61,7 @@ tags: ~~~
   
   But In my case, I change the above code a little to fit my wegsite. 
   
-  How to chang my code you can see another [another of my blog](/2016/12/18/Tag_Cloud/) explaing to you how to make cloud system of tags and categories.
+  How to chang my code you can see another [another of my blog](/2016/12/17/Tag_Cloud/) explaing to you how to make cloud system of tags and categories.
   
   After I mended the above example code to fit situation that I want. the final look is like this : 
   
