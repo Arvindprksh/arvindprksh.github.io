@@ -19,27 +19,27 @@ tags: ~~~
 ---
 ```
 
-   When you make a post in jekyll with fornt matter. You have to write that information if you want tag and category. 
+   When you make a post in jekyll with front matter. You have to write that information if you want tag and category. 
    
    And then, you can make a list based on tags and category. 
    
-   At first, based on tags, I will make what I want. 
+   At first, I will make tags-based list that I want. 
    
    let's see example of code from [codeinfox](http://codinfox.github.io/blog/tags/)
    
   <script src="https://gist.github.com/hyunyoung2/63cfabdd6fb174fe69b621be8d48686d.js"></script>
    
-  After making page(.html, .md) for this source, generate that page !
+  So If you want to make tags-based list that you want. make page(.html, .md) for this source !
   
-  And then, you can see as follows. 
+  And then, if You did,  you can see as follows. 
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tags example.png)
 
-  let's split the above code.
+  let's split the above code for understaing the code.
  
   <script src="https://gist.github.com/hyunyoung2/47bf4e75c1ba154514b5db945ff146c8.js"></script>
 
-  the above code is just a list of tags included in posts as follows. 
+  the above code is just extracting tags included in posts as follows. 
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tag.png)
   
@@ -58,7 +58,6 @@ tags: ~~~
   <script src="https://gist.github.com/hyunyoung2/015080b43418f91da09ff77bc1a16d87.js"></script>
   
   But In my case, I change the above code a little to fit my wegsite. 
-  
   
   How to chang my code you can see another [another of my blog](/2016/12/17/Tag_Cloud/) explaing to you how to make cloud system of tags and categories.
   
