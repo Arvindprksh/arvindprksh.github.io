@@ -27,7 +27,7 @@ tags: ~~~
    
    let's see example of code from [codeinfox](http://codinfox.github.io/blog/tags/)
    
-<pre><code>
+{% highlight c linenos=table %}
 <div class="tags-expo">
   <div class="tags-expo-list">
     {% for tag in site.tags %}
@@ -50,7 +50,8 @@ tags: ~~~
     </ul>
     {% endfor %}
   </div>
-</div></code></pre>
+</div>
+{% endhighlight %}
    
   After making page(.html, .md) for this source, generate that page !
   
