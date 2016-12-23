@@ -63,7 +63,7 @@ tags: ~~~
   
   How to chang my code you can see another [another of my blog](/2016/12/17/Tag_Cloud/) explaing to you how to make cloud system of tags and categories.
   
-  After I mend the above example code to fit situation that I want. the final look is like this : 
+  After I mended the above example code to fit situation that I want. the final look is like this : 
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/in categories.png)
   
