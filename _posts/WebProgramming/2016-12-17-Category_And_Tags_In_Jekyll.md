@@ -37,9 +37,9 @@ tags: ~~~
 
   let's split the above code.
  
-<script src="https://gist.github.com/hyunyoung2/47bf4e75c1ba154514b5db945ff146c8.js"></script>
+  <script src="https://gist.github.com/hyunyoung2/47bf4e75c1ba154514b5db945ff146c8.js"></script>
 
-  the above code is just a list of tags as follows. 
+  the above code is just a list of tags included in posts as follows. 
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tag.png)
   
@@ -51,7 +51,7 @@ tags: ~~~
   
   The above code makes a list of each tags, of course. 
   
-  In this code, if you change the tags into categories, that is a list based on category. 
+  In this code, if you change "site.tags" into "site.categories", that is a list based on category. 
   
   that code is as follows. 
   
@@ -61,17 +61,23 @@ tags: ~~~
   
   complete version code you can see another [my blog]("/2016-12-17-Tag_Cloud")
   
-
+  after change the above code to fit my website. appearance is as follows.
+  
+  ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/In categories.png)
+  
 ## information of terminology
 
 ### What is the category in jekyll ?
 
+ - instead of placing posts inside of folders, you can specify one or more categories that the post belong to. when the site is generated the post will act as though it had been set with these categories normally. Categories can be specified as a YAML List(front matter) or a space-separated string. 
 
+ I also use frot matter to express categories. 
 
 ### What is tags in jekyll ?
 
+ - this similar to categories, one or multiple tags cans be added to a post. Also like categories, tags can be specified as a YAML List(front matter) or a space-separated string. 
 
-
+ I also use frot matter to express tags. 
 
 ## Reference
 
