@@ -35,7 +35,7 @@ tags: ~~~
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tags example.png)
 
-  let's split the above code for understaing the code.
+  let's split the above code to understand the code.
  
   <script src="https://gist.github.com/hyunyoung2/47bf4e75c1ba154514b5db945ff146c8.js"></script>
 
