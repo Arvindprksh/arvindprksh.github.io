@@ -27,7 +27,7 @@ tags: ~~~
    
    let's see example of code from [codeinfox](http://codinfox.github.io/blog/tags/)
    
-  <script src="https://gist.github.com/hyunyoung2/226a95e1ea9c31fa86f561fba477a140.js"></script>
+  <script src="https://gist.github.com/hyunyoung2/63cfabdd6fb174fe69b621be8d48686d.js"></script>
    
   After making page(.html, .md) for this source, generate that page !
   
@@ -37,12 +37,9 @@ tags: ~~~
 
   let's split the above code.
  
-```markdown
-    {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-```
-   the above code is just a list of tags as follows. 
+<script src="https://gist.github.com/hyunyoung2/47bf4e75c1ba154514b5db945ff146c8.js"></script>
+
+  the above code is just a list of tags as follows. 
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tag.png)
   
@@ -50,23 +47,19 @@ tags: ~~~
   
   let's see code below. 
   
-  <script src="https://gist.github.com/hyunyoung2/cebef17d97fe84d3ac4c12c81a5ce11b.js"></script>
+  <script src="https://gist.github.com/hyunyoung2/0c1aaeaa57106e88150b767c294b3bfa.js"></script>
   
-  The above code makes title and the title-based list, of course. Currently,  title is tag in here. 
+  The above code makes a list of each tags, of course. 
   
   In this code, if you change the tags into categories, that is a list based on category. 
   
   that code is as follows. 
   
-  <script src="https://gist.github.com/hyunyoung2/cebef17d97fe84d3ac4c12c81a5ce11b.js"></script>
+  <script src="https://gist.github.com/hyunyoung2/015080b43418f91da09ff77bc1a16d87.js"></script>
   
-  I made my word cloud and a list based on catergories with the above code.
+  But In my case, I change the above code a little to fit my wegsite. 
   
-  of course, I made my word cloud and a list based on tags. **BUT** both of them is the same, 
-  
-  just those are different a little. And I added several into the code that make word cloud and a list. 
-  
-  let's see my word cloud and a list based on categries. 
+  complete version code you can see another [my blog]("/2016-12-17-Tag_Cloud")
   
 
 ## information of terminology
