@@ -27,7 +27,7 @@ bigimg:
 - [x] Fourth, What is the DISQUS ? (2016.12.15) 
 - [x] Fifth, How can I do hightlither When I want to use codeblock in markdown. (2016.12.15) 
 - [x] Sixth, I have to make date list of my whole blogs. (2016.12.16)
-- [x] Seventh, I have to make print, email to share my blog whenever visitor want. (2016.12.26)
+- [x] Seventh, I have to make print, email to share my blog whenever visitor want. (2016.12.16)
     
     
 ## Jekyll with Beatiful-jekyll
