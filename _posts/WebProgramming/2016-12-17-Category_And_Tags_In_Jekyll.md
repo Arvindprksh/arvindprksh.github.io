@@ -27,31 +27,7 @@ tags: ~~~
    
    let's see example of code from [codeinfox](http://codinfox.github.io/blog/tags/)
    
-{% highlight c linenos=table %}
-<div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
-</div>
-{% endhighlight %}
+  <script src="https://gist.github.com/hyunyoung2/226a95e1ea9c31fa86f561fba477a140.js"></script>
    
   After making page(.html, .md) for this source, generate that page !
   
@@ -74,21 +50,9 @@ tags: ~~~
   
   let's see code below. 
   
-```markdown
-  {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-  {% endfor %}
-```
+
+  <script src="https://gist.github.com/hyunyoung2/0c1aaeaa57106e88150b767c294b3bfa.js"></script>
+
   
   The above code makes title and the title-based list, of course. Currently,  title is tag in here. 
   
@@ -96,31 +60,15 @@ tags: ~~~
   
   that code is as follows. 
   
-```markdown
-<div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.categories %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
-</div>
-```
+  <script src="https://gist.github.com/hyunyoung2/cebef17d97fe84d3ac4c12c81a5ce11b.js"></script>
+  
+  I made my word cloud and a list based on catergories with the above code.
+  
+  of course, I made my word cloud and a list based on tags. **BUT** both of them is the same, 
+  
+  just those are different a little. And I added several into the code that make word cloud and a list. 
+  
+  let's see my word cloud and a list based on categries. 
   
 
 ## information of terminology
