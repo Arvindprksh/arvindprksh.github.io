@@ -43,9 +43,11 @@ tags: ~~~
   
   ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/a list of tag.png)
   
-  And the rest of above code makes a tags-based list. 
+  And the rest of above code makes a tags-based list like this :
   
-  let's see code below. 
+  ![](/img/Image/WebProgramming/2016-12-17-Category_And_Tags_In_Jekyll/tags could list.png)
+  
+  Then let's see code below. 
   
   <script src="https://gist.github.com/hyunyoung2/fca0b5126074a6dd342759c24b8c3a97.js"></script>
   
