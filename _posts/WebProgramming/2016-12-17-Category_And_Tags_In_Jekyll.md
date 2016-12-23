@@ -47,7 +47,7 @@ tags: ~~~
   
   let's see code below. 
   
-  <script src="https://gist.github.com/hyunyoung2/0c1aaeaa57106e88150b767c294b3bfa.js"></script>
+  <script src="https://gist.github.com/hyunyoung2/fca0b5126074a6dd342759c24b8c3a97.js"></script>
   
   The above code makes a list of each tags, of course. 
   
