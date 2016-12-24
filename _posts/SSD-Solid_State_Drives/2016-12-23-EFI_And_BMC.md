@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the EFI, EFI Shell and BMC(boardbased management controller) 
+title: The EFI, EFI Shell and BMC(boardbased management controller) 
 subtitle: What is the EFI, EFI Shell and BMC ? 
 category: SSD (Solid State Drives)
 tags: [server]
