@@ -1,0 +1,22 @@
+---
+layout: post
+title: Process priority, CPU isolation, CPU affinity 
+subtitle: consideration of all flash array with NVMe
+category: SSD (Solid State Drives)
+tags: [nvme, performance]
+permalink: /2017/01/03/Kernel_Trace_With_NVMe_Flash_Array/
+---
+
+SSD itself is fast IOPs. 
+
+But depending on application, server architecte, and administrator tools that data center use, manager and developer doesn't make a consideration of performance that consists of all flash array with NVMe.
+
+let's see what kind of feature can affect IOPs and speed of SSD in kernel.
+
+## Scheduler of Kernel
+
+ objective of kernel's Scheduler is fair. So each process has priority. 
+ 
+ Let's see How to configure what type of features in linux. 
+ 
+## 
