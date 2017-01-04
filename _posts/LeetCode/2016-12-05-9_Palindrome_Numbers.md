@@ -82,7 +82,7 @@ that is just my thought, If you have another one, Just say to me. I would like t
 
 let's see how to shrink my code lines. 
 
-```
+```c
 bool isPalindrome(int x) {
     int copyOfX=x;
     int reverseNumber = 0; 
