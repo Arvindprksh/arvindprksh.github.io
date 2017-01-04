@@ -17,7 +17,11 @@ let's see what kind of feature can affect IOPs and speed of SSD in kernel.
 
  objective of kernel's Scheduler is fair. So each process has priority. 
  
- Let's see How to configure what type of features in linux. 
+ Let's see How to configure what type of features in linux.
+ 
+ If you test with fio to adapt process's priority. 
+ 
+ **consider LINUX's chrt command**
  
 ## First, CPU affinity
 
@@ -32,6 +36,12 @@ let's see what kind of feature can affect IOPs and speed of SSD in kernel.
  Processor affinity takes advantage of the fact that remnants of a process that was run on a given processor may remain in that processor's state (for example, data in the cache memory) after another porcess was run on that processor. 
  
  Scheduling that process to execute on the same processor improves its performance by reducing performance-degrading events such as cache misses. 
+ 
+ **if you use this feature with fio tools**
+ 
+ In other words, when you use fio tool, if you want to allocate each of specific CPU core on FIO workoad threads, 
+ 
+ at this time, you have to be careful of **cpus_allowed** option of fio.
  
 ## Second, Cpu isolation. 
 
