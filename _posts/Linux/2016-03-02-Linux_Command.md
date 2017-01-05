@@ -100,6 +100,7 @@ dmesg \| grep[검색문자열]
 
 If you want to install rpm file with rpm command
 
+```
  rpm -ivh ~~~~~~~.rpm
-
+```
   
