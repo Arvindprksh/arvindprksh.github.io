@@ -180,7 +180,7 @@ $ make defconfig
 $ make oldconfig OR $ make olddefconfig
 $ make menuconfig
 $ make -j8 
-- if you encouter errore. install the next one
+- if you encouter error about openssl-devel. install the next one
 $ sudo yum install openssl-devel
 
 $ sudo make modules_install
@@ -303,7 +303,7 @@ $ sudo yum groupinstall 'Development Tools'
 yum install ~~~~
 
 **In my case. I installed more besides "Development Tools"  as follows **
-$ sudo yum insatll -y openssl-devel
+$ sudo yum install -y openssl-devel
 $ sudo yum install ncurses-devel
 $ sudo yum install qt-devel
      
