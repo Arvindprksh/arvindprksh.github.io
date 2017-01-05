@@ -71,7 +71,7 @@ let's see what kind of feature can affect IOPs and speed of SSD in kernel.
  
  - [intel's hyper-threading](http://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html)
  
- - [hyper-threading of Whatls.com] (http://whatis.techtarget.com/definition/Hyper-Threading)
+ - [hyper-threading of Whatls.com](http://whatis.techtarget.com/definition/Hyper-Threading)
  
  - [makeuseof's What is Hyper-Threading ?](http://www.makeuseof.com/tag/hyperthreading-technology-explained/)
    
