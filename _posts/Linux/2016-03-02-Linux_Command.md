@@ -95,3 +95,11 @@ dmesg \| grep[검색문자열]
    - Semaphore is sinaling mechanism
    
    - mutex is locking mechanism.
+
+## [RPM Package](http://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/)
+
+If you want to install rpm file with rpm command
+
+ rpm -ivh ~~~~~~~.rpm
+
+  
