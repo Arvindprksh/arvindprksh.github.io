@@ -135,7 +135,57 @@ int maxArea(int* height, int heightSize) {
 
 So I have to think about another way to resolve this problem. 
 
+First of all, If you want to reduce time complexity. you have to reduce use loop statement. 
 
+let me think.. the above brute force way is not good, because that includes the useless casese. 
 
+So I found out one ways. 
 
+that is you start with first and last line. After that. you move one which is smaller. 
 
+repeatedly, you have to do that with current lines. finally, you can find you maximum area. 
+
+let's make a code with the above algorithm 
+
+```c
+// if you have a library about minimum number between two numbers.
+// you don't need to make this function. 
+int minimumNumber(int front, int back) {
+    
+    if (front < back) 
+        return front;
+    else 
+        return back;
+}
+
+int maxArea(int* height, int heightSize) {
+   
+   int front = 0, back = heightSize-1;
+   int max = -1;
+   
+   // front pass the back, 
+   // you don't have to calculate the width of that area. 
+   while (front <  back) {         
+        int temp = minimumNumber(height[front], height[back]);
+        int tempArea =  temp*(back-front);
+        
+        max = max < tempArea ? tempArea : max;
+        
+        if (temp == height[front])
+            front++;
+        else 
+            back--;
+   }
+    return max;
+}
+```
+
+and the above function is time complexity is O(n). 
+
+I like it when I resolve the algorithm problem if I encounter O(n) as time complexity. 
+
+thank you for reading. 
+
+if you have any question about my way to resolve this problem. 
+
+feel free to ask me ~
