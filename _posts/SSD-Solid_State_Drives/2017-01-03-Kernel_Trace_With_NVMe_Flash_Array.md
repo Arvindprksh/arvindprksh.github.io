@@ -80,6 +80,8 @@ let's see what kind of feature can affect IOPs and speed of SSD in kernel.
     if you read the paragrah, You will get a hint about hyper-Threading.
     
  - [How to Geek' hyper threading](http://www.howtogeek.com/194756/cpu-basics-multiple-cpus-cores-and-hyper-threading-explained/)
+ 
+   this article is easy to understand what the hyper-Threading is .
     
  - [quora's cycle graph of cpu](https://www.quora.com/What-is-clock-cycle-machine-cycle-instruction-cycle-in-a-microprocessor)
   
