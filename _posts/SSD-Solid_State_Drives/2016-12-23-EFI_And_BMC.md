@@ -105,7 +105,7 @@ ipmiutil.exe
  one of the commands, we see health command to check up power status of server. 
  
 ```
-ipmiutil.exe health -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
+ipmiutil.exe health -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-BMC-on-server
 
 -- the above command result. 
 
@@ -128,11 +128,16 @@ And You can also power server down using health command
 
 ```
 power down command 
-ipmiutil.exe power -d -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
+ipmiutil.exe power -d -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-BMC-on-server
 
 power up command 
-ipmiutil.exe power -u -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
+ipmiutil.exe power -u -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-BMC-on-server
 ```
+ 
+ 
+IP-ADDRESS of SERVER and BMC is different, in other words, server has two IP ADDRESS.
+
+one is for server itself, the other is for BMC which checks power state up.
  
 If that is not working. I just recommend you one more check with ping
 
