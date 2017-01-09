@@ -134,10 +134,11 @@ power up command
 ipmiutil.exe power -u -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-BMC-on-server
 ```
  
- 
-IP-ADDRESS of SERVER and BMC is different, in other words, server has two IP ADDRESS.
+**IP-ADDRESS of SERVER and BMC is different, in other words, server has two IP ADDRESS.**
 
-one is for server itself, the other is for BMC which checks power state up.
+**one is for server itself, the other is for BMC which checks power state up.**
+
+So If you use data server, like server-name-console and server-name, two IP ADDRESS exist.
  
 If that is not working. I just recommend you one more check with ping
 
