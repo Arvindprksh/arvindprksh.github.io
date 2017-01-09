@@ -68,6 +68,10 @@ So, before I forget the keyword and concept. I am going to summarize those thing
   
   The administrator cas also remotely communicate with the BMC to take some corrective actions - such as resetting or power cycling the system to get a hunf OS running again. 
 
+If you want to check up power state of the remote machine, Use this tools, IPMIUTIL. 
+
+In windows, if you use that tool, that is easy, 
+
 ---
 
 **IPMI Consists of BMC and so on, So you can controll server remotely. And For IPMI  has the dedicated LAN connection.**
@@ -124,13 +128,25 @@ And You can also power server down using health command
 
 ```
 power down command 
-ipmiutil.exe reset -d -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
+ipmiutil.exe power -d -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
 
 power up command 
-ipmiutil.exe reset -u -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
+ipmiutil.exe power -u -U USER-ID -P PASSWORD-of-the-user -N IP-ADDRESS-of-server
 ```
  
+If that is not working. I just recommend you one more check with ping
 
+```
+ping IP-ADDRESS-of-SERVER
+```
+
+If you don't have domain name to fit to IP-ADDRESS.
+
+You had better configure file of windows. 
+
+the path of that file is c:\Windows\System32\drivers\etc\hosts.
+
+hosts file.
 
 ## Be careful 
 
