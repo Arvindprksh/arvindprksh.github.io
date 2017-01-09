@@ -68,6 +68,8 @@ let's see what kind of feature can affect IOPs and speed of SSD in kernel.
  - [cpu isolation](https://www.novell.com/support/kb/doc.php?id=7009596)
  
  - [cpu isolation's answer of stackoverfolw](http://unix.stackexchange.com/questions/208538/telling-linux-kernel-not-to-use-certain-cpus)
+
+ - [LWN.net's cpu isolation](https://lwn.net/Articles/270623/)
  
  - [intel's hyper-threading](http://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html)
  
