@@ -645,7 +645,29 @@ tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
   
   ping domain name 
 
+## id 
 
+  you can check current user name like this
+
+```
+$ id
+uid=1(hyunyoung.lee) gid=1(hyunyoung.lee) groups=1(hyunyoung.lee) context=unconfined_u:unconfined_r:unconfined_t:s!-s!:c!.c!
+```
+
+## chown
+
+  this command change the authority of file. 
+
+  if you use some file with hyunyoung account. 
+
+  sudo chown –R hyunyoung.hyunyoung /media/nvme0n1
+
+  **this means you tell to system that you change authority of the file  to user of hyunyoung and group of hyunyoung.**
+  
+  if you want to check whether authority changed to what I mean.
+  
+  just use this command **ls -alt**
+ 
 # Reference
 
  - [Computerhope's vim](http://www.computerhope.com/unix/vim.htm)
@@ -684,4 +706,4 @@ tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
  
  - [CentOS's Unzip](https://www.centos.org/docs/2/rhl-gsg-en-7.2/s1-zip-tar.html)
  
- 
+ - [cybercit's user id](https://www.cyberciti.biz/faq/appleosx-bsd-shell-script-get-current-user/) 
