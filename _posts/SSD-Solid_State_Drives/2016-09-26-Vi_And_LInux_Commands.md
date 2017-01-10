@@ -673,6 +673,16 @@ uid=1(hyunyoung.lee) gid=1(hyunyoung.lee) groups=1(hyunyoung.lee) context=unconf
   if you want to shutdown the system, call the following command. 
   
   $ shutdown -h now
+  
+  if you want to read detail about shutdown command. I think [this site](http://www.computerhope.com/unix/ushutdow.htm) is best
+  
+  Shutdown does its job by signaling the init process, asking it to change the runlevel. Runlevel 0 is used to halt the system. 
+  
+  Runlevel 6 is used to reboot the system, and runlevel 1 is used to put the system into a state where administrative tasks can be performed(single-user mode). Runlevel is the default, unless -h or -r options are specified. 
+  
+  But type "man shutdown", Because you have different options in your system
+  
+  
  
 ## Reference
 
