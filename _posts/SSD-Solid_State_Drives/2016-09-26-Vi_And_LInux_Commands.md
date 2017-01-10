@@ -667,8 +667,14 @@ uid=1(hyunyoung.lee) gid=1(hyunyoung.lee) groups=1(hyunyoung.lee) context=unconf
   if you want to check whether authority changed to what I mean.
   
   just use this command **ls -alt**
+  
+## [shutdown](http://www.binarytides.com/linux-command-shutdown-reboot-restart-system/)
+
+  if you want to shutdown the system, call the following command. 
+  
+  $ shutdown
  
-# Reference
+## Reference
 
  - [Computerhope's vim](http://www.computerhope.com/unix/vim.htm)
  
