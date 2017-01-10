@@ -672,7 +672,7 @@ uid=1(hyunyoung.lee) gid=1(hyunyoung.lee) groups=1(hyunyoung.lee) context=unconf
 
   if you want to shutdown the system, call the following command. 
   
-  $ shutdown
+  $ shutdown -h now
  
 ## Reference
 
