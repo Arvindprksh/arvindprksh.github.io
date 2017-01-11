@@ -1,0 +1,102 @@
+---
+layout: post
+title: New Command Of LINUX
+subtitle: Command about SSD 
+category: SSD (Solid State Drives)
+tags: [summary]
+permalink: /2017/01/11/New_Command_In_LINUX/
+bigimg: 
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+---
+
+## stty
+
+
+## lspci -v 
+
+
+## lspic -vt
+
+
+## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
+
+  I think this command is not default on LINUX, BUT If YOU install nvme-cli(open source tool), You can use it. 
+ 
+```shell
+  $ nvme list 
+```
+
+  and then you can check the list of nvme. 
+  
+  For example
+  
+``` 
+  Node      SN      Model       Version     Nmaesapce       Usage     Format      FW Rev. 
+  -----    -----    ------      -------     -----------     --------  ---------   ---------
+```
+
+  -- I think this is so simple, but If you change the open source, you can get much information. 
+  
+## [nvme smart-log /dev/nvme0n1](https://github.com/linux-nvme/nvme-cli#alpinelinux)
+
+  When I have to calculate WAF, of course, You can use [teraterm](https://ttssh2.osdn.jp/index.html.en), that is you need window and usb cable. 
+  
+  But just if you have linux machine, it easy to use nvme-cli tool with the following command. 
+  
+```shell
+  $ nvme smart-log /dev/nvme0n1  
+```
+
+  in my test on Centos 7
+ 
+```
+# in my nvme-cli folder
+
+$ sudo ./nvme smart-log /dev/nvme0n1
+Smart Log for NVME device:nvme0n1 namespace-id:00000000
+critical_warning                    : 0
+temperature                         : 0 C
+available_spare                     : 0%
+available_spare_threshold           : 0%
+percentage_used                     : 0%
+data_units_read                     : 0
+data_units_written                  : 0
+host_read_commands                  : 0
+host_write_commands                 : 0
+controller_busy_time                : 0
+power_cycles                        : 0
+power_on_hours                      : 00
+unsafe_shutdowns                    : 0
+media_errors                        : 0
+num_err_log_entries                 : 0
+Warning Temperature Time            : 0
+Critical Composite Temperature Time : 0
+Temperature Sensor 1                : 0 C
+Temperature Sensor 2                : 0 C
+Temperature Sensor 3                : 0 C
+Temperature Sensor 4                : 0 C
+Temperature Sensor 5                : 0 C
+Temperature Sensor 6                : 0 C
+```
+
+  as I can say, it is easy to get the result rather than tera term
+  
+  in tera term 
+  
+```
+  smartdbg 0(option number)
+```
+  
+  this is too much cost
+  
+ ### More extensible case with grep on smart-log
+ 
+  In other words, see [his site](http://unix.stackexchange.com/questions/37313/how-do-i-grep-for-multiple-patterns)
+ 
+ ```shell 
+ $ sudo ./nvme smart-log /dev/nvme0n1 | grep 'data_units_written\|host_write_commands'
+data_units_written                  : 0
+host_write_commands                 : 0 
+ ```
+ 
+  
