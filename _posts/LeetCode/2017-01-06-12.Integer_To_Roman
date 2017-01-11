@@ -10,3 +10,35 @@ bigimg:
 ---
 
 ## [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
+Given an integer, convert it to a roman numeral.
+
+Input is guaranteed to be within the range from 1 to 3999.
+
+```c
+char* intToRoman(int num) {
+    
+}
+```
+
+## My solution. 
+
+Typically, If I solve the problem of this way, I make data by default beforehand. 
+
+Because pattern is repeated. 
+
+this is my solution
+
+```c
+//                0,  1 ,  2  ,   3  ,  4  ,  5 ,   6 ,   7  ,    8  ,  9  , 10 ,  50, 100, 500, 1000  
+char * Roman[] ={"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "L", "C", "D", "M"  }
+//                    1,                       5,                             10,  50, 100, 500, 1000  
+
+char* intToRoman(int num) {
+    
+}
+```
+
+
+
+
