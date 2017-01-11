@@ -10,7 +10,110 @@ bigimg:
 ---
 
 ## stty
+   
+  this command is for data transfer like etera term, 
+  
+  In other words, IF you read information of device using usb cable. You need to set port. 
+  
+  At that time. You probable need this command. 
+  
+  you can see simple example on [stackoverflow](http://stackoverflow.com/questions/9092791/set-stty-parameters)
+  
+  **You want to have a conversatin with Device using USB cable serial communication, I recommand this command you.**
+  
+```shell
+stty -F $(/dev/tty or /dev/ttyUSB) 38400 line 0 min 1 time 5 ignbrk -brkint -icrnl -imaxbel \
+        -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl \
+        -echoke
+```
 
+  let's see the code under some situation. 
+  
+### Option  
+  
+(-F, --file=DEVICE) : Open and use the specified DEVICE instead of stdin. 
+
+### Special settings
+
+(38400(N) ) : Set the input and output speeds to N [bauds](http://www.computerhope.com/jargon/b/baud.htm) (baud in tera term)
+
+(line 0(N) ) : use line discipline N
+
+(min 1(N) ) : with **-icanon**, set N charaters minimum for a completed read
+
+(time 5(N) ) : with **-icanon**, set read timeout of N tenths a second
+
+### Input settings
+
+(ignbrk) : ignore break chararters. 
+
+(-brkint) : breaks cause an interrupts signal. 
+
+(-incrnl) : translate  carriage return to newline.
+
+(-imaxbel) : beep and do not flush a full input buffer on a character. 
+
+### Output Settings
+
+(-opost) :  postprocess output
+
+(-onlcr) : translate newline to carriage return-newline.
+
+### local Setting
+
+(-isig) : enable interrupt, quit, and suspend special charaters. 
+
+(-icanon) : enable erase, kill, werase, and rprnt specail charaters. 
+
+(-iexten) : enable non-Posix special characters
+
+(-echo) : echo input charaters. 
+
+(-echoe) : same as [-]crterase
+
+(-ehcok) : echo a newline after a kill charater
+
+(-echoctl) : same as [-]ctlecho
+
+(-echoke) : same as [-]crterase
+
+
+So simply, let's put you into situation when you try to get log with the above option. 
+
+cat $(/dev/tty or /dev/ttyUSB) | \
+while IFS= read -r line
+do
+    // put time or something before putting log
+done > log file variable
+
+```shel
+$ echo $line
+              --> blank line
+```
+
+if you want to print time 
+
+```shell
+time=$(date +"%Y-%m-%d %H:%M:%S.%N")
+"[${time:0:$((${#time}-6))}]"
+```
+
+# [tr](http://www.computerhope.com/unix/utr.htm) 
+
+  the **tr** command automatically translates(subtitutes, or maps) one set of characters to another. 
+
+  if you want a example, see [this site](https://en.wikipedia.org/wiki/Tr_%28Unix%29)
+  
+  let's see the simple example.
+  
+  and The d flag causes tr to delete all tokens of the specified set of characters from its input, in this case, only a singly caracter set argument is used. the following command removes carriage return charaters like this :
+  
+  
+```
+tr -d '\r'
+```
+  
+  
 
 ## lspci -v 
 
