@@ -107,20 +107,156 @@ time=$(date +"%Y-%m-%d %H:%M:%S.%N")
   let's see the simple example.
   
   and The d flag causes tr to delete all tokens of the specified set of characters from its input, in this case, only a singly caracter set argument is used. the following command removes carriage return charaters like this :
-  
-  
+    
 ```
 tr -d '\r'
 ```
   
   
 
-## lspci -v 
+## lspci
+
+  lspci command shows you what pci is conneted with server(computer)
+  
+### lspci -t
+ 
+  lspci -t make some result of lspci to tree structure
+  
+  if you add -v option, the verbose option display detailed information about all devices. 
+  
+  lspci -vt
+  
+  additionally, if you want to cut tree. 
+  
+  lspci -t | cut -c110- 
+
+  cut -c(column) option, from the entire tree.
+ 
+``` shell
+$ lspci -t | cut -c110- | more
 
 
-## lspic -vt
 
 
+
+
+
+
+
+
+
++-04.0-[8a]--
++-08.0-[8b]--
++-0c.0-[8c]--
++-0d.0-[8d-af]----00.0-[8e-af]--+-01.0-[8f-95]----00.0-[90-95]--+-01.0-[91]----00.0
+|                               |                               +-02.0-[92]----00.0
+|                               |                               +-08.0-[93]--
+|                               |                               +-09.0-[94]----00.0
+|                               |                               \-0a.0-[95]----00.0
+|                               +-04.0-[96]--
+|                               +-08.0-[97-9d]----00.0-[98-9d]--+-01.0-[99]----00.0
+|                               |                               +-02.0-[9a]----00.0
+|                               |                               +-08.0-[9b]--
+|                               |                               +-09.0-[9c]----00.0
+|                               |                               \-0a.0-[9d]----00.0
+|                               +-09.0-[9e-a4]----00.0-[9f-a4]--+-01.0-[a0]----00.0
+|                               |                               +-02.0-[a1]----00.0
+|                               |                               +-08.0-[a2]--
+|                               |                               +-09.0-[a3]----00.0
+|                               |                               \-0a.0-[a4]----00.0
+|                               +-0c.0-[a5]--
+|                               +-10.0-[a6-ac]----00.0-[a7-ac]--+-01.0-[a8]----00.0
+|                               |                               +-02.0-[a9]----00.0
+|                               |                               +-08.0-[aa]--
+|                               |                               +-09.0-[ab]----00.0
+|                               |                               \-0a.0-[ac]----00.0
+|                               +-11.0-[ad]--
+|                               +-14.0-[ae]--
+|                               \-15.0-[af]--
++-10.0-[b0-d2]----00.0-[b1-d2]--+-01.0-[b2]--
+|                               +-04.0-[b3]--
+|                               +-05.0-[b4]--
+
+```
+  
+  BUT just if you want to cut column, you don't need to use the **| more** command 
+  
+  As you can see the above figure, If you want to remove the blank on the result. 
+  
+  do it like this. 
+  
+  lspci -t | cut -c110- | grep -v ^$
+
+```shell
+lspci -t | cut -c110- | grep -v ^$
++-04.0-[8a]--
++-08.0-[8b]--
++-0c.0-[8c]--
++-0d.0-[8d-af]----00.0-[8e-af]--+-01.0-[8f-95]----00.0-[90-95]--+-01.0-[91]----00.0
+|                               |                               +-02.0-[92]----00.0
+|                               |                               +-08.0-[93]--
+|                               |                               +-09.0-[94]----00.0
+|                               |                               \-0a.0-[95]----00.0
+|                               +-04.0-[96]--
+|                               +-08.0-[97-9d]----00.0-[98-9d]--+-01.0-[99]----00.0
+|                               |                               +-02.0-[9a]----00.0
+|                               |                               +-08.0-[9b]--
+|                               |                               +-09.0-[9c]----00.0
+|                               |                               \-0a.0-[9d]----00.0
+|                               +-09.0-[9e-a4]----00.0-[9f-a4]--+-01.0-[a0]----00.0
+|                               |                               +-02.0-[a1]----00.0
+|                               |                               +-08.0-[a2]--
+|                               |                               +-09.0-[a3]----00.0
+|                               |                               \-0a.0-[a4]----00.0
+|                               +-0c.0-[a5]--
+|                               +-10.0-[a6-ac]----00.0-[a7-ac]--+-01.0-[a8]----00.0
+|                               |                               +-02.0-[a9]----00.0
+|                               |                               +-08.0-[aa]--
+|                               |                               +-09.0-[ab]----00.0
+|                               |                               \-0a.0-[ac]----00.0
+|                               +-11.0-[ad]--
+|                               +-14.0-[ae]--
+|                               \-15.0-[af]--
++-10.0-[b0-d2]----00.0-[b1-d2]--+-01.0-[b2]--
+|                               +-04.0-[b3]--
+|                               +-05.0-[b4]--
+|                               +-08.0-[b5-bb]----00.0-[b6-bb]--+-01.0-[b7]----00.0
+|                               |                               +-02.0-[b8]----00.0
+|                               |                               +-08.0-[b9]--
+|                               |                               +-09.0-[ba]----00.0
+|                               |                               \-0a.0-[bb]----00.0
+|                               +-0c.0-[bc]--
+|                               +-0d.0-[bd]--
+|                               +-10.0-[be-c4]----00.0-[bf-c4]--+-01.0-[c0]----00.0
+|                               |                               +-02.0-[c1]----00.0
+|                               |                               +-08.0-[c2]--
+|                               |                               +-09.0-[c3]----00.0
+|                               |                               \-0a.0-[c4]----00.0
+|                               +-14.0-[c5-cb]----00.0-[c6-cb]--+-01.0-[c7]----00.0
+|                               |                               +-02.0-[c8]----00.0
+|                               |                               +-08.0-[c9]--
+|                               |                               +-09.0-[ca]----00.0
+|                               |                               \-0a.0-[cb]----00.0
+|                               \-15.0-[cc-d2]----00.0-[cd-d2]--+-01.0-[ce]----00.0
+|                                                               +-02.0-[cf]----00.0
+|                                                               +-08.0-[d0]--
+|                                                               +-09.0-[d1]----00.0
+|                                                               \-0a.0-[d2]----00.0
++-11.0-[d3]--
++-14.0-[d4]--
+\-15.0-[d5]--
+```
+  
+  -v ^$ means erasing the blank.
+ 
+## window key + ↑
+
+  this makes terminal window big like the entire window
+
+##  window key + ↓
+
+  this makes terminal window small like the orginal size. 
+  
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
 
   I think this command is not default on LINUX, BUT If YOU install nvme-cli(open source tool), You can use it. 
