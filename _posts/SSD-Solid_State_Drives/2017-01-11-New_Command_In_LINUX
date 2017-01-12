@@ -257,6 +257,43 @@ lspci -t | cut -c110- | grep -v ^$
 
   this makes terminal window small like the orginal size. 
   
+## [wc](http://www.tecmint.com/wc-command-examples/)
+
+```
+ $ wc [options] filenames.
+```
+
+  The wc(word count) command in Unix/Linux operating systems is used to find out number of newline count, 
+  
+  word count, byt and charaters count in a files specified by the file  arguments, The syntax of wc command as shown below
+  
+  wc -l : Prints the number of line in a file. ---> this is mostly used in my case. 
+  
+  wc -w : Prints the number of words in a file. 
+  
+  wc -c : Display the count of bytes in a file.
+  
+  wc -m : Prints the count fo characters from a file. 
+  
+  wc -L : Prints only the length of the longest line in a file. 
+  
+  in my case 
+  
+```shell
+# lsusb | grep USB | wc -l
+8
+```
+
+## ls -v 
+
+  this command sorts the result of **ls** alphabetically. 
+  
+  **lssub** checks the number of the hub which is added to device(SSD-nvme)
+  
+```shell
+# lsusb | grep USB 
+```
+  
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
 
   I think this command is not default on LINUX, BUT If YOU install nvme-cli(open source tool), You can use it. 
