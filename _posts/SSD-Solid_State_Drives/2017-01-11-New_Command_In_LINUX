@@ -261,7 +261,9 @@ BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkern
 <!--
 BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkernel=auto rhgb quiet isolcpus=4-19,24-39 nohz_full=4-19,24-39 rcu_nocbs=4-19,24-39 processor.max_cstate=1 idle=poll LANG=en_US.UTF-8
 -->
-isolcpus is symmetric, In other words. if cpu number is 4-10. each cpu is rommate with 24-30 like the following. 
+
+
+(cpu-number, cpu-number) of isolcpus, nohz_full and rcu_nocbs,"isolcpus=cpu-number,cpu-number(for example, isolcpus=4-10,24-30)", is symmetric. In other words. if cpu number is 4-10. each cpu is rommate with 24-30 like the following. 
 
 (4,24), (5,25), (6,26), (7,27), (8,28), (9,29), (10,30) and so on. 
 
