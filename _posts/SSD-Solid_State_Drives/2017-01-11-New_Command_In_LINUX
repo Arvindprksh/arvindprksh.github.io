@@ -240,6 +240,13 @@ lspci -t | cut -c110- | grep -v ^$
 # lsusb | grep USB 
 ```
   
+## cut
+
+## ps -ef | grep cat
+
+## pkill cat
+  
+  
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
 
   I think this command is not default on LINUX, BUT If YOU install nvme-cli(open source tool), You can use it. 
