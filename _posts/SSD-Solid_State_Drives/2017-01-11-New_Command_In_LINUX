@@ -305,13 +305,19 @@ BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkern
 
 **this is my configuration, So if your device is different from mine. rommate of cpu could be different.**
 
-## tail
+## tail filename 
 
+ this command makes the files open from the bottom of the last line. basically, the number of the line is 10.
 
-### tail -f(option)
-
+### tail -f(option) filename
+  
+  if you add -f(option) on tail command, and then you can continuously get feedback from the file when the file continually generates text
 
 ## more
+
+  this command makes you easy about openning the big file. since this command makes the file open properly to the size of your cmd line window. 
+  
+  and then, you can read texts line by line.
 
 
 ## grep 
@@ -341,8 +347,14 @@ $ sudo blkid
 ```
 $ id
 uid=1000(hyunyoung.lee) gid=1000(hyunyoung.lee) groups=1000(hyunyoung.lee) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-
 ```
+
+## gnuplot 
+
+  this tool makes png file with plot on LINUX , my case is centOS7
+
+##
+
 
 ---  
   
