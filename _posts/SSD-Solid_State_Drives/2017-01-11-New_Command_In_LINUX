@@ -320,6 +320,29 @@ BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkern
 ## ag
 
 
+## blkid
+
+  this command I used is for checking which file system is on block device. 
+
+```
+$ sudo blkid
+[sudo] password for hyunyoung.lee: 
+/dev/sda1: UUID="some number" TYPE="xfs" 
+/dev/sda2: UUID="some number" TYPE="LVM2_member" 
+/dev/mapper/domain_name-root: UUID="some number" TYPE="xfs" 
+/dev/mapper/domain_name-swap: UUID="some number" TYPE="swap" 
+/dev/mapper/domain_name-home: UUID="some number" TYPE="xfs" 
+/dev/nvme0n1: LABEL="F2FS" UUID="some number" TYPE="f2fs" 
+
+```
+
+## id 
+
+```
+$ id
+uid=1000(hyunyoung.lee) gid=1000(hyunyoung.lee) groups=1000(hyunyoung.lee) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+```
 
 ---  
   
