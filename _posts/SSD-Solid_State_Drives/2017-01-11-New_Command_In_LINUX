@@ -244,11 +244,42 @@ lspci -t | cut -c110- | grep -v ^$
 
 ## ps -ef | grep cat
 
-## pkill cat
+  after issuing the command,"pkill cat". I have to check up which process is excuted. 
   
+  So with the above command, I could find out one process executed in duplication like this.
+
+```
+$ ps -ef | grep cat
+root      9491 26936  0 20:45 pts/2    00:00:00 grep --color=auto cat
+root     26996 26982  0 20:13 pts/2    00:00:00 cat /dev/ttyUSB0
+......
+root     26996 26982  0 21:13 pts/2    00:00:00 cat /dev/ttyUSB0
+```
+## pkill cat
+
+  I can learn this command when I was confused because on linux Centos7, I want to converse to nvme device with serial port(USB-UART PORT).
+  
+  But I could get right information. because I didn't know that two of the same processes worked. So I have to kill the former process that had converstaion with the nvme before. 
+  
+  So after that, 
+  
+  when I execute ths cat process to have a converstion with NVMe device in USB-UART. 
+  
+ 1. at first, I  Kill cat that processed before. 
+  
+ 2. after that, I execute the program again to have a conversation with NVMe devcie  
+ 
+ In other words, I want to resolve the situation of checking process state executed in duplication with **ps -ef | grep cat**. 
+ 
+```
+$ pkill cat
+```
+ 
 ## cat /proc/cmdline  
 
-  proc include log and configuration file. 
+  proc include log and configuration file of kernel 
+  
+  /proc/cmdline is related to booting, cpu isolation, cpu affinity.
   
   if you want to make cpu isolation and use cpu affinity. you have to change this file because in here you can add some option into BOOT_IMAGE.
   
@@ -282,6 +313,12 @@ BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkern
 ```shell
 $ nvme format /dev/nvme0n1
 Success formatting namespace:1
+
+if you want to format mutiple nvme device
+
+for i in `seq 0 31`; do (nvme format /dev/nvme${i}n1 &); done
+
+in here, (~~~&), in other words, & means this command is  executed on backgroud simultaneously
 ```
   
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
