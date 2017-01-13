@@ -246,6 +246,41 @@ lspci -t | cut -c110- | grep -v ^$
 
 ## pkill cat
   
+## cat /proc/cmdline  
+
+  proc include log and configuration file. 
+  
+  if you want to make cpu isolation and use cpu affinity. you have to change this file because in here you can add some option into BOOT_IMAGE.
+  
+  the following is my Centos server's /proc/cmdline
+
+```shell
+# cat /proc/cmdline 
+BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkernel=auto rhgb quiet isolcpus=cpu-number,cpu-number nohz_full=cpu-number,cpu-number rcu_nocbs=cpu-number,cpu-number processor.max_cstate=1 idle=poll LANG=en_US.UTF-8
+```
+<!--
+BOOT_IMAGE=/vmlinuz-4.7.4-1.el7.elrepo.x86_64 root=UUID=some-number ro crashkernel=auto rhgb quiet isolcpus=4-19,24-39 nohz_full=4-19,24-39 rcu_nocbs=4-19,24-39 processor.max_cstate=1 idle=poll LANG=en_US.UTF-8
+-->
+isolcpus is symmetric, In other words. if cpu number is 4-10. each cpu is rommate with 24-30 like the following. 
+
+(4,24), (5,25), (6,26), (7,27), (8,28), (9,29), (10,30) and so on. 
+
+**this is my configuration, So if your device is different from mine. rommate of cpu could be different.**
+
+---  
+  
+# nvme-cli command 
+
+## nvme format /dev/nvme0n1
+
+ this command makes nvme intial state 
+ 
+ if you use the above command, after that, I can see "Success formatting namespace"
+ 
+```shell
+$ nvme format /dev/nvme0n1
+Success formatting namespace:1
+```
   
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
 
