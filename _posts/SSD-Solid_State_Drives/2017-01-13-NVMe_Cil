@@ -204,3 +204,184 @@ finally, IF you change this file. you can make nvme-cli tool to support VU comma
 **BUT**, If you want to support man operation of linux. you need a little more
 
 let's make a code for VU command 
+
+Ahead of making VU command, let's check what version of nvme-cli is right after "git clone https://github.com/linux-nvme/nvme-cli.git"
+
+in nvme directory, type ./nvme after that, you would get the following result. 
+
+```shell
+$ ./nvme
+nvme-1.1.2.g0142
+usage: nvme <command> [<device>] [<args>]
+
+The '<device>' may be either an NVMe character device (ex: /dev/nvme0) or an
+nvme block device (ex: /dev/nvme0n1).
+
+The following are all implemented sub-commands:
+  list            List all NVMe devices and namespaces on machine
+  id-ctrl         Send NVMe Identify Controller
+  id-ns           Send NVMe Identify Namespace, display structure
+  list-ns         Send NVMe Identify List, display structure
+  create-ns       Creates a namespace with the provided parameters
+  delete-ns       Deletes a namespace from the controller
+  attach-ns       Attaches a namespace to requested controller(s)
+  detach-ns       Detaches a namespace from requested controller(s)
+  list-ctrl       Send NVMe Identify Controller List, display structure
+  get-ns-id       Retrieve the namespace ID of opened block device
+  get-log         Generic NVMe get log, returns log in raw format
+  fw-log          Retrieve FW Log, show it
+  smart-log       Retrieve SMART Log, show it
+  error-log       Retrieve Error Log, show it
+  get-feature     Get feature and show the resulting value
+  set-feature     Set a feature and show the resulting value
+  format          Format namespace with new block format
+  fw-activate     Activate new firmware slot
+  fw-download     Download new firmware
+  admin-passthru  Submit arbitrary admin command, return results
+  io-passthru     Submit an arbitrary IO command, return results
+  security-send   Submit a Security Send command, return results
+  security-recv   Submit a Security Receive command, return results
+  resv-acquire    Submit a Reservation Acquire, return results
+  resv-register   Submit a Reservation Register, return results
+  resv-release    Submit a Reservation Release, return results
+  resv-report     Submit a Reservation Report, return results
+  dsm             Submit a Data Set Management command, return results
+  flush           Submit a Flush command, return results
+  compare         Submit a Compare command, return results
+  read            Submit a read command, return results
+  write           Submit a write command, return results
+  write-zeroes    Submit a write zeroes command, return results
+  write-uncor     Submit a write uncorrectable command, return results
+  reset           Resets the controller
+  subsystem-reset Resets the controller
+  show-regs       Shows the controller registers. Requires admin character device
+  discover        Discover NVMeoF subsystems
+  connect-all     Discover and Connect to NVMeoF subsystems
+  connect         Connect to NVMeoF subsystem
+  disconnect      Disconnect from NVMeoF subsystem
+  version         Shows the program version
+  help            Display this help
+
+See 'nvme help <command>' for more information on a specific command
+
+The following are all installed plugin extensions:
+  intel           Intel vendor specific extensions
+  lnvm            LightNVM specific extensions
+  memblaze        Memblaze vendor specific extensions
+
+See 'nvme <plugin> help' for more information on a plugin
+```
+
+As you can see below, the version of NVMe-cli is nvme-1.1.2.g0142. 
+
+So I could determine What version I would make VU command on. 
+
+I decided That version is 1.1, you can get download in [release of the officail site of nvme-cli](https://github.com/linux-nvme/nvme-cli/releases). 
+
+here is [v1.1 of nvme-cli release.](https://github.com/linux-nvme/nvme-cli/releases/tag/v1.1)
+
+
+let's start making VU command on NVMe-cli 1.1 release**
+
+**First, You have to download nvme-cli release version 1.1.**
+
+In my case, I downloaded nvme-cli-1.1.zip
+
+let's uncompress that file. 
+
+```shell 
+$ unzip nvme-cli-1.1.zip
+
+After that, as you can see the list with ls command, you would find out nvme-cli-1.1
+
+$ ls
+nvme-cli-0.7  nvme-cli-0.7.tar  nvme-cli-1.1
+```
+
+And then you need to chang some files to insert VU command into opensource(nvme-cli)
+
+as you read the above files,first, I will change the file, nvme-builtin.h.
+
+**nvme-builtin.h file**
+
+above all, I would exlain to you about code of nvme-builtin.h
+
+```c
+#undef CMD_INC_FILE
+#define CMD_INC_FILE nvme-builtin
+
+#if !defined(NVME_BUILTIN) || defined(CMD_HEADER_MULTI_READ)
+#define NVME_BUILTIN
+
+#include "cmd.h"
+
+COMMAND_LIST(
+        ENTRY("list", "List all NVMe devices and namespaces on machine", list)
+        ......
+);
+
+#endif
+
+#include "define_cmd.h"
+```
+
+As you see the above code. ENTRY indicates the list of ./nvme command. 
+
+"list" - command name
+
+"List all NVMe device and namespaces on machine" - summary about what role of this command is.
+
+list - function name in nvme.c file 
+
+you can check up what I am saying to you indirectly. type ./nvme in nvme-cli directory. 
+
+```shell
+$ ./nvme
+nvme-1.1.2.g0142
+usage: nvme <command> [<device>] [<args>]
+
+The '<device>' may be either an NVMe character device (ex: /dev/nvme0) or an
+nvme block device (ex: /dev/nvme0n1).
+
+The following are all implemented sub-commands:
+  list            List all NVMe devices and namespaces on machine
+  ....
+  
+See 'nvme help <command>' for more information on a specific command
+
+The following are all installed plugin extensions:
+  intel           Intel vendor specific extensions
+  lnvm            LightNVM specific extensions
+  memblaze        Memblaze vendor specific extensions
+
+```
+
+So you change this file like this
+
+```c
+
+```c
+#undef CMD_INC_FILE
+#define CMD_INC_FILE nvme-builtin
+
+#if !defined(NVME_BUILTIN) || defined(CMD_HEADER_MULTI_READ)
+#define NVME_BUILTIN
+
+#include "cmd.h"
+
+COMMAND_LIST(
+        ENTRY("list", "List all NVMe devices and namespaces on machine", list)
+        ......
+        // add ENTRY of VU command In here
+);
+
+#endif
+
+#include "define_cmd.h"
+```
+```
+
+
+
+
+
