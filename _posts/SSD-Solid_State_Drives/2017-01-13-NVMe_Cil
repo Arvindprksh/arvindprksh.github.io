@@ -281,9 +281,9 @@ I decided That version is 1.1, you can get download in [release of the officail 
 here is [v1.1 of nvme-cli release.](https://github.com/linux-nvme/nvme-cli/releases/tag/v1.1)
 
 
-let's start making VU command on NVMe-cli 1.1 release**
+# let's start making VU command on NVMe-cli 1.1 release
 
-**First, You have to download nvme-cli release version 1.1.**
+## First, You have to download nvme-cli release version 1.1.
 
 In my case, I downloaded nvme-cli-1.1.zip
 
@@ -302,7 +302,7 @@ And then you need to chang some files to insert VU command into opensource(nvme-
 
 as you read the above files,first, I will change the file, nvme-builtin.h.
 
-**nvme-builtin.h file**
+## nvme-builtin.h file
 
 above all, I would exlain to you about code of nvme-builtin.h
 
@@ -373,6 +373,9 @@ COMMAND_LIST(
         ENTRY("list", "List all NVMe devices and namespaces on machine", list)
         ......
         // add ENTRY of VU command In here
+        ENTRY("command of nvme-clie for VU command", "Description of NVMe-cli command", "Function name of nvme.c file for this Command")
+        // For example
+        ENTRY("nvme-waf", "get WAF from NVMe subsystem", get_waf)
 );
 
 #endif
@@ -381,6 +384,7 @@ COMMAND_LIST(
 ```
 ```
 
+## nvme.c and nvme.h
 
 
 
