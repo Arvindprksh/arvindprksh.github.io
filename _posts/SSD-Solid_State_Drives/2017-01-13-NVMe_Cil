@@ -296,7 +296,35 @@ and so on.
 
 **you have to change files below**
 
----
+At first, I look at files on NVMe-cli ver 0.7
+
+As you could see before, file of NVMe-clie ver 0.7 is the following :
+
+```shell
+$ cd nvme-cli--0.7
+$ ls -v
+CONTRIBUTING.md  NVME-VERSION-GEN  linux            nvme-ioctl.c  regress
+Documentation    README.md         nvme.c           nvme-ioctl.h  scripts
+LICENSE          completions       nvme.control.in  nvme-print.c  src
+Makefile         debian            nvme.spec.in     nvme-print.h
+$ cd linux 
+$ ls -v
+nvme.h
+```
+
+I changed files for VU command  like this :
+
+In linux directory. 
+
+- nvme.h
+
+In nvme-cli--0.7 directory
+
+- nvme.c and nvme.h
+
+- nvme-print.c and nvme-print.h
+
+- nvme-ioctl.c and nvme-ioctl.h
 
 
 
