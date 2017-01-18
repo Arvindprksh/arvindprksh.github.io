@@ -290,6 +290,8 @@ the total pairs for plugin exist like this :
 
 and so on. 
 
+---
+
 ## how to make VU command In NVMe-cli tool 
 
 ### First, NVMe-cli ver 0.7
@@ -632,6 +634,189 @@ So far, How to fix nvme-cli-0.7 for VU command.
 **Next, I will try to change nvme-cli-1.1 for VU command.**
 
 ### Second, NVMe-cli ver 1.1
+
+let's see nvme-cli-1.1 release's file structure. 
+
+```shell
+$ cd nvme-cli-1.1
+$ ls -v
+CONTRIBUTING.md  NVME-VERSION-GEN  cmd.h          debian        intel-nvme.c  linux            memblaze-nvme.h  nvme.spec.in    nvme-lightnvm.c  nvme-print.c  plugin.c  suffix.c
+Documentation    README.md         cmd_handler.h  define_cmd.h  intel-nvme.h  lnvm-nvme.c      nvme.c           nvme-builtin.h  nvme-lightnvm.h  nvme-print.h  plugin.h  suffix.h
+LICENSE          argconfig.c       common.h       fabrics.c     json.c        lnvm-nvme.h      nvme.control.in  nvme-ioctl.c    nvme-models.c    parser.c      regress   tests
+Makefile         argconfig.h       completions    fabrics.h     json.h        memblaze-nvme.c  nvme.h           nvme-ioctl.h    nvme-models.h    parser.h      scripts
+$ cd linux
+$ ls -v
+lightnvm.h  nvme.h  nvme_ioctl.h
+```
+
+As you can see the above result, many things is different from nvme-cli-0.7 release. 
+
+BUT, If you want to make VU command in nvme-cli-1.1, it is easy under a similar way. 
+
+In other words, Basically, when you change the nvme-cli-1.1 with a similar way to nvme-cli-0.7 without plugin mode, files that you have to change is similar to nvme-cli-0.7
+
+Without plugin mode, that is temporary way. 
+
+first, I will explain to you how to change nvme-cli-1.1 for VU command without plugin mode.
+
+
+Without writting opcode in /nvme-cli-1.1/linux/nvme.h, everything is almost the same. 
+
+The files that I have to change :
+
+- nvme.c : this is the same from nvme-cli-0.7, this file includes function for the VU command
+
+- nvme-print.c and nvme-print.h : this includes function of print for VU command as well.
+
+- nvme-ioctl.c and nvme-ioctl.h : this includes funtion of ioctl for VU command as well. 
+
+- nvme-builtin.h : this file is new, just on ./nvme <command> <device> <options>, this is file for <command>
+
+
+### Each files of NVMe-cli ver 1.1
+
+##### /nvme-cli-1.1/nvme-builtin.h
+
+In my case, so as to register VU command, I had to change this file first. 
+
+let's see the code. 
+
+**$ vim nvme-builtin.h**
+
+```c
+// In /nvme-cli-1.1/nvme-builtin.h
+// in order to register the name of command and function. 
+
+12 #undef CMD_INC_FILE
+13 #define CMD_INC_FILE nvme-builtin
+14 
+15 #if !defined(NVME_BUILTIN) || defined(CMD_HEADER_MULTI_READ)
+16 #define NVME_BUILTIN
+17 
+18 #include "cmd.h"
+19 
+20 COMMAND_LIST(
+21         ENTRY("list", "List all NVMe devices and namespaces on machine", list)
+22         ENTRY("id-ctrl", "Send NVMe Identify Controller", id_ctrl)
+23         ENTRY("id-ns", "Send NVMe Identify Namespace, display structure", id_ns)
+24         ENTRY("list-ns", "Send NVMe Identify List, display structure", list_ns)
+25         ENTRY("create-ns", "Creates a namespace with the provided parameters", create_ns)
+26         ENTRY("delete-ns", "Deletes a namespace from the controller", delete_ns)
+27         ENTRY("attach-ns", "Attaches a namespace to requested controller(s)", attach_ns)
+28         ENTRY("detach-ns", "Detaches a namespace from requested controller(s)", detach_ns)
+29         ENTRY("list-ctrl", "Send NVMe Identify Controller List, display structure", list_ctrl)
+30         ENTRY("get-ns-id", "Retrieve the namespace ID of opened block device", get_ns_id)
+31         ENTRY("get-log", "Generic NVMe get log, returns log in raw format", get_log)
+32         ENTRY("fw-log", "Retrieve FW Log, show it", get_fw_log)
+33         ENTRY("smart-log", "Retrieve SMART Log, show it", get_smart_log)
+34         ENTRY("error-log", "Retrieve Error Log, show it", get_error_log)
+35         ENTRY("get-feature", "Get feature and show the resulting value", get_feature)
+36         ENTRY("set-feature", "Set a feature and show the resulting value", set_feature)
+37         ENTRY("format", "Format namespace with new block format", format)
+38         ENTRY("fw-activate", "Activate new firmware slot", fw_activate)
+39         ENTRY("fw-download", "Download new firmware", fw_download)
+40         ENTRY("admin-passthru", "Submit arbitrary admin command, return results", admin_passthru)
+41         ENTRY("io-passthru", "Submit an arbitrary IO command, return results", io_passthru)
+42         ENTRY("security-send", "Submit a Security Send command, return results", sec_send)
+43         ENTRY("security-recv", "Submit a Security Receive command, return results", sec_recv)
+44         ENTRY("resv-acquire", "Submit a Reservation Acquire, return results", resv_acquire)
+45         ENTRY("resv-register", "Submit a Reservation Register, return results", resv_register)
+46         ENTRY("resv-release", "Submit a Reservation Release, return results", resv_release)
+47         ENTRY("resv-report", "Submit a Reservation Report, return results", resv_report)
+48         ENTRY("dsm", "Submit a Data Set Management command, return results", dsm)
+49         ENTRY("flush", "Submit a Flush command, return results", flush)
+50         ENTRY("compare", "Submit a Compare command, return results", compare)
+51         ENTRY("read", "Submit a read command, return results", read_cmd)
+52         ENTRY("write", "Submit a write command, return results", write_cmd)
+53         ENTRY("write-zeroes", "Submit a write zeroes command, return results", write_zeroes)
+54         ENTRY("write-uncor", "Submit a write uncorrectable command, return results", write_uncor)
+55         ENTRY("reset", "Resets the controller", reset)
+56         ENTRY("subsystem-reset", "Resets the controller", subsystem_reset)
+57         ENTRY("show-regs", "Shows the controller registers. Requires admin character device", show_registers)
+58         ENTRY("discover", "Discover NVMeoF subsystems", discover_cmd)
+59         ENTRY("connect-all", "Discover and Connect to NVMeoF subsystems", connect_all_cmd)
+60         ENTRY("connect", "Connect to NVMeoF subsystem", connect_cmd)
+61         ENTRY("disconnect", "Disconnect from NVMeoF subsystem", disconnect_cmd)
+62         // For VU command 
+63         ENTRY("get-information", "Get information from NVMe subsystem",get_information)
+64 );
+65 
+66 #endif
+67 
+68 #include "define_cmd.h"
+```
+
+As you can see the above code, You can check the above contents with "./nvme --help"
+
+```shell 
+$ ./nvme --help
+nvme-1.1
+usage: nvme <command> [<device>] [<args>]
+
+The '<device>' may be either an NVMe character device (ex: /dev/nvme0) or an
+nvme block device (ex: /dev/nvme0n1).
+
+The following are all implemented sub-commands:
+  list            List all NVMe devices and namespaces on machine
+  id-ctrl         Send NVMe Identify Controller
+  id-ns           Send NVMe Identify Namespace, display structure
+  list-ns         Send NVMe Identify List, display structure
+  create-ns       Creates a namespace with the provided parameters
+  delete-ns       Deletes a namespace from the controller
+  attach-ns       Attaches a namespace to requested controller(s)
+  detach-ns       Detaches a namespace from requested controller(s)
+  list-ctrl       Send NVMe Identify Controller List, display structure
+  get-ns-id       Retrieve the namespace ID of opened block device
+  get-log         Generic NVMe get log, returns log in raw format
+  fw-log          Retrieve FW Log, show it
+  smart-log       Retrieve SMART Log, show it
+  error-log       Retrieve Error Log, show it
+  get-feature     Get feature and show the resulting value
+  set-feature     Set a feature and show the resulting value
+  format          Format namespace with new block format
+  fw-activate     Activate new firmware slot
+  fw-download     Download new firmware
+  admin-passthru  Submit arbitrary admin command, return results
+  io-passthru     Submit an arbitrary IO command, return results
+  security-send   Submit a Security Send command, return results
+  security-recv   Submit a Security Receive command, return results
+  resv-acquire    Submit a Reservation Acquire, return results
+  resv-register   Submit a Reservation Register, return results
+  resv-release    Submit a Reservation Release, return results
+  resv-report     Submit a Reservation Report, return results
+  dsm             Submit a Data Set Management command, return results
+  flush           Submit a Flush command, return results
+  compare         Submit a Compare command, return results
+  read            Submit a read command, return results
+  write           Submit a write command, return results
+  write-zeroes    Submit a write zeroes command, return results
+  write-uncor     Submit a write uncorrectable command, return results
+  reset           Resets the controller
+  subsystem-reset Resets the controller
+  show-regs       Shows the controller registers. Requires admin character device
+  discover        Discover NVMeoF subsystems
+  connect-all     Discover and Connect to NVMeoF subsystems
+  connect         Connect to NVMeoF subsystem
+  disconnect      Disconnect from NVMeoF subsystem
+  get-information Get information from NVMe subsystem
+  version         Shows the program version
+  help            Display this help
+.......
+```
+
+you could see new command, get-information, additionally.
+
+##### /nvme-cli-1.1/nvme-print.c and /nvme-cli-1.1/nvme-print.h 
+
+In my case, I added function of print for get-information of VU command. 
+
+
+
+
+
+
+
+
 
 
 
@@ -1002,7 +1187,7 @@ COMMAND_LIST(
 #endif
 
 #include "define_cmd.h"
-```
+.......
 ```
 
 ## nvme.c and nvme.h
