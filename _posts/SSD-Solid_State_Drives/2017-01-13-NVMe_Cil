@@ -316,15 +316,203 @@ I changed files for VU command  like this :
 
 In linux directory. 
 
-- nvme.h
+- nvme.h : what I change is because I have to add opcode(appointment between host and firmware), 
+
+           In other words, firmware perceives what kind of command host sent to firmware through opcode.
 
 In nvme-cli--0.7 directory
 
-- nvme.c and nvme.h
+- nvme.c :  this file includes the main functions. So I have to chage this file to add VU command with 
 
-- nvme-print.c and nvme-print.h
+- nvme-print.c and nvme-print.h : this file includes how to print with return value from firmware,  
 
-- nvme-ioctl.c and nvme-ioctl.h
+- nvme-ioctl.c and nvme-ioctl.h : basic way to use IOCTL in kernel is included in this file. So You have to change this file to use the suitable IOCTL to fit firmware
+
+let's make a example with virtual VU command. 
+
+### Each files of NVMe-cli ver 0.7 that I mentioned. 
+
+if There is a functions for VU command, that function is used to have converstion with firmware to get information to make from Nand.
+
+And with the function, Vendors determine each commands have different opcodes for conversation with firmware 
+
+**let's suppose the function name for VU command is __descriptor__ and the name of a VU command is __get-capability__**
+
+##### /nvme-cli-0.7/linux/nvme.h
+
+In my case, I decided I should add opcodes for function and command into this file.
+
+First opcode of Admin commands
+
+```c
+// In /nvme-cli-0.7.linux/nvme.h
+
+367 enum nvme_admin_opcode {
+.......
+384         nvme_admin_security_recv        = 0x82,
+385         //function opcode of VU command  
+386         nvme_admin_descriptor      = 0x00,
+391 };
+
+// AND
+// The following structure I made for opcode of VU command
+
+556 enum vu_opcode {
+557         // OPCODE of VU command 
+564         VU_OPCODE_GET_CAPABILITY                 = 0x01, // get capability
+.......
+569 };
+```
+
+As you can see the above code of an example. I made opcode in /nvme-cli-0.7/linux/nvme.h to manage it easily.
+
+
+##### /nvme-cli-0.7/nvme-print.h and /nvme-cli-0.7/nvme-print.c
+
+I just wanted to maintain the original state of nvme-cli-0.7.  In order to keep structure of opensource(nvme-cli-0.7), I analyzed the nvme-cli-0.7.
+
+And then, I realized all print function was in this files.
+
+So, I used this files for print functions of VU commands. 
+
+let's see an example code 
+
+you can see how to handle the return value from Nand, after issuing VU command. 
+
+```c
+// In /nvme-cli-0.7/nvme-print.h
+// this is just changed for header file of nvme.c
+// So, I just declare the function. 
+11 
+12 #ifndef COMMON_H
+13 #define COMMON_H
+14 
+15 #include "linux/nvme.h"
+16 
+17 enum {
+18         TERSE = 0x1u,   // only show a few useful fields
+19         HUMAN = 0x2u,   // interpret some values for humans
+20         VS    = 0x4u,   // print vendor specific data area
+21         RAW   = 0x8u,   // just dump raw bytes
+22 };
+23
+.......
+33 void show_smart_log(struct nvme_smart_log *smart, unsigned int nsid, const char *devname);
+34 void show_fw_log(struct nvme_firmware_log_page *fw_log, const char *devname);
+.......
+41 /* print function for VU commad */
+42 
+43 void nvme_show_capability(__u32 *vu_desc,__u32 shell_test);
+.......
+45 #endif
+```
+
+```c
+// In /nvme-cli-0.7/nvme-print.c
+// you can see the whole function of print.
+
+1121 // output of get_capability opcode
+1122 void nvme_show_capability(__u32 *vu_desc, __u32 shell_test)
+1123 {
+1124         if (shell_test == 0) {
+1125                 printf("result                                  : %u\n", vu_desc[0]);
+1126                 printf("num channels                            : %u\n", vu_desc[1]);  
+.......
+1140         }
+1141         else {
+1142                 int i = 0;
+1143                 for (i = 0 ; i < vu_desc_length ; i++) {
+1144                         printf("%u ",vu_desc[i]);
+1145                 }
+1146         }
+1147 }
+1148 
+```
+
+##### /nvme-cli-0.7/nvme-ioctl.h and /nvme-cli-0.7/nvme-ioctl.c
+
+these files include the main functions of ioctl
+
+let' see how to add ioctl for VU command 
+
+```c
+// In /nvme-cli-0.7/nvme-ioctl.c
+// you can see what is header file of nvme-ioctl.c
+12 #ifndef _NVME_LIB_H
+13 #define _NVME_LIB_H
+14 
+15 #include <stdbool.h>
+16 #include "linux/nvme.h"
+17 
+18 int nvme_get_nsid(int fd);
+19 
+20 /* Generic passthrough */
+21 int nvme_submit_passthru(int fd, int ioctl_cmd, struct nvme_passthru_cmd *cmd);
+22 
+.......
+29 
+30 /* NVME_SUBMIT_IO */
+31 int nvme_io(int fd, __u8 opcode, __u64 slba, __u16 nblocks, __u16 control,
+32               __u32 dsmgmt, __u32 reftag, __u16 apptag,
+33               __u16 appmask, void *data, void *metadata);
+34 
+.......
+128 /* ioctl function for VU commad */
+129 
+130 int descriptor(int fd, __u32 cdw10, __u32 data_len, void *data);
+131 int call_descriptor(int fd, __u32 len, void *data);
+132 
+133 #endif                          /* _NVME_LIB_H */
+```
+
+As you can see the above code, I made two functions, that is why it is easy to manange functions. 
+
+In other words, after extracting the common operation. I split multiple operation in one function into a operation in one function.
+
+Here, I used opcode of ioctl function of VU command.
+
+```c
+// In /nvme-cli-0.7/nvme-ioctl.c
+// ioctl function of VU command
+// depending on namespace, you can issue the VU command 
+595 int descriptor(int fd,__u32 nsid __u32 cdw10, __u32 data_len, void *data)
+596 {
+597         struct nvme_admin_cmd cmd = {
+598                 .opcode         = nvme_admin_descriptor(0x00),
+599                 .nsid           = nsid,
+600                 .cdw10          = cdw10,
+.......
+616                 .addr           = (__u64)(uintptr_t) data,
+617                 .data_len       = data_len,
+618         };
+619 
+620         return nvme_submit_admin_passthru(fd, &cmd);
+621 }
+622 
+623 int call_descriptor(int fd,__u32 nsid, __u32 cdw10, __u32 len, void *data)
+624 {
+625         return send_descriptor(fd, nsid, cdw10, len, data);
+626 }
+627 
+```
+
+As you can see the above cmd of nvme_admin_cmd. cmd is different depending on vendors. 
+
+because vendors can decide cmd property to fit vendor's spec. 
+
+The above spec bases in SMART-LOG command.
+
+
+So detail for the admin_cmd of VU command depends on Vendor. 
+
+##### /nvme-cli-0.7/nvme.c
+
+this file is very important. because when typing "./nvme --help".
+
+the upcoming result is from this file. 
+
+```shell 
+```
 
 
 
@@ -334,7 +522,11 @@ In nvme-cli--0.7 directory
 
 
 
---- nvme-cli ver 0.7
+
+
+
+
+--- nvme-cli ver 1.1
 ## At first, nvme-builtin.h 
 
 ```c
