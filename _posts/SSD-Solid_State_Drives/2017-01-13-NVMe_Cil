@@ -52,7 +52,7 @@ Temperature Sensor 8                : 0 C
 
 As you can see the above command of nvme-cli, you can get information of nvme device with NVMe-cli tool. 
 
-So far, The above nvme-cli with the commit version is similar to NVMe-cli ver1.1 release.
+So far, The above nvme-cli from the commit version is similar to NVMe-cli ver1.1 release.
 
 Later on, I would make VU command with NVMe-cli ver 1.1 opensource based on experience with NVMe-cli ver 0.7
 
@@ -266,8 +266,44 @@ See 'nvme lnvm help <command>' for more information on a specific command
 
 As you can see the above output, note that lnvm-nvme.c and lnvm-nvme.h files. 
 
+as you note those files, lnvm-nvme.c and lnvm-nvme.h. 
+
+the total pairs for plugin exist like this :
+
+- intel-nvme.c and intel-nvme.h
+
+- lnvm-nvme.c and lnvm-nvme.h
+
+- memblaze-nvme.c and memblaze-nvme.h
+
+**BUT** I think the pair of files that I have to research a little more exist like this : 
+
+- nvme-lightnvm.c and nvme-lightnvm.h
+
+- fabrics.c and fabrics.h
+
+- json.c and json.h
+
+- nvme-models.c and nvme-models.h
+
+- plugin.c and plugin.h
+
+and so on. 
+
+## how to make VU command In NVMe-cli tool 
+
+### First, NVMe-cli ver 0.7
+
+**you have to change files below**
+
 ---
-as similar to note that fabrics 
+
+
+
+
+
+
+
 
 
 --- nvme-cli ver 0.7
