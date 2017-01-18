@@ -402,7 +402,7 @@ you can see how to handle the return value from Nand, after issuing VU command.
 .......
 41 /* print function for VU commad */
 42 
-43 void nvme_show_capability(__u32 *vu_desc,__u32 shell_test);
+43 void nvme_show_capability(__u32 *vu_desc);
 .......
 45 #endif
 ```
@@ -412,19 +412,12 @@ you can see how to handle the return value from Nand, after issuing VU command.
 // you can see the whole function of print.
 
 1121 // output of get_capability opcode
-1122 void nvme_show_capability(__u32 *vu_desc, __u32 shell_test)
+1122 void nvme_show_capability(__u32 *vu_desc)
 1123 {
-1124         if (shell_test == 0) {
+1124         
 1125                 printf("result                                  : %u\n", vu_desc[0]);
 1126                 printf("num channels                            : %u\n", vu_desc[1]);  
 .......
-1140         }
-1141         else {
-1142                 int i = 0;
-1143                 for (i = 0 ; i < vu_desc_length ; i++) {
-1144                         printf("%u ",vu_desc[i]);
-1145                 }
-1146         }
 1147 }
 1148 
 ```
@@ -512,13 +505,131 @@ this file is very important. because when typing "./nvme --help".
 the upcoming result is from this file. 
 
 ```shell 
+In /nvme-cli-0.7 
+$ ./nvme --help
+nvme-0.7
+usage: nvme <command> [<device>] [<args>]
+
+The '<device>' may be either an NVMe character device (ex: /dev/nvme0) or an
+nvme block device (ex: /dev/nvme0n1).
+
+The following are all implemented sub-commands:
+  list           	 List all NVMe devices and namespaces on machine
+  id-ctrl        	 Send NVMe Identify Controller
+.......
+  get-capability 	 Show you capability
+  move-vblk      	 Move pages from a source vblk to a destination vblk
+
+See 'nvme help <command>' for more information on a specific command.
 ```
 
+As you can see the above result of "./nvme --help", you can find out get-capability sub-command. 
 
+This command, get-capability is function for VU command. 
 
+```c
+In /nvme-cli-0.7/nvme.c
 
+78 #define COMMAND_LIST \
+79         ENTRY(LIST, "list", "List all NVMe devices and namespaces on machine", list) \
+80         ENTRY(ID_CTRL, "id-ctrl", "Send NVMe Identify Controller", id_ctrl) \
+.......
+120        ENTRY(GET_CAPABILITY, "get-capability", "Show you capability", get_capability) \
+.......
+127 #define ENTRY(i, n, h, f) \
+```
 
+In here, you can add functions and VU commands for "./nvme <command> <device> <option>".
 
+In my case, I added get-capability of VU command.  
+
+```c
+120        ENTRY(GET_CAPABILITY, "get-capability", "Show you capability", get_capability) \
+```
+
+let's see the actual function of get_capability in /nvme-cli-0.7/nvme.c
+
+```c
+2793 // VU_OPCODE_GET_FLASH_CAP - Get Flash Capbility
+2794 static int get_flash_capability(int argc, char **argv)
+2795 {
+2796         // this is for description per command. 
+2797         const char *desc = "Get Initial capability to manage";
+2798         const char *shell_test = "this is for shell script test";
+2799         
+2800         int err;
+2801         __u32 *vu_desc = NULL; // VU command 
+2802         void * buf = NULL; // buffer of VU command
+2803          
+.......
+2805         struct config {
+2806                 __u32 vu_desc_len;
+2807                 __u32 shell_test;
+2808         };
+2809 
+2810         struct config cfg = {
+2811                 .vu_desc_len = 0,
+2812                 .shell_test = 0,
+2813         };
+2814 
+2815         const struct argconfig_commandline_options command_line_options[] = {
+........          // for command line, "./nvme get-capability --help"
+2817                 {"shell_test", 'e', "NUM", CFG_POSITIVE, &cfg.shell_test, no_argument, shell_test},
+2818                 {0}
+2819         };
+2820         // this function parse arg of command, "./nvme get-capability"
+2821         parse_and_open(argc, argv, desc, command_line_options, &cfg, sizeof(cfg));
+2822 
+2823         // getpagesize() = 4096 
+2824         if (cfg.vu_desc_len == 0) {
+2825                 cfg.vu_desc_len = 512 or 4096; // depending on vendor
+2826                 if (posix_memalign(&buf, getpagesize(), cfg.vu_desc_len))
+2827                         exit(ENOMEM);
+2828                 memset(buf, 0, cfg.vu_desc_len);
+2829         }
+2830 
+2831         vu_desc =(__u32 *)buf;
+2832 
+2833         vu_desc[0] = VU_OPCODE_GET_CAPABILITY(0x01);
+2834 
+2835         // this part pointer is tranlated to    
+2836         err = call_descriptor(fd, cfg.vu_desc_len, buf);
+2837         // if the VU command is excuted correctly.
+2838         if(!err)
+2839                 nvme_show_capability(buf);
+2840         else {
+.......
+2844                 fprintf(stderr, "err number(hexa, deci(__u32))  : 0x%X, %u\n", err, err);
+2845                 fprintf(stderr, "result(hexa, deci(__u32))      : 0x%X, %u\n", vu_desc[0], vu_desc[0]);
+2846                 printf("get-capatilibty:Error\n");
+2847         }
+2848 
+2849         if(buf)
+2850                 free(buf);
+2851 
+2852         return err;
+2853 }
+```
+
+As you can see the above example code, the above is basic format for VU command. 
+
+let's see VU command with --help options
+
+```shell
+$ ./nvme get-capability --help
+Usage: nvme get-capability <device> [OPTIONS]
+
+Get Initial flash capability to manage
+
+Options:
+  [  --shell_test, -e ]                 --- this is for shell script test
+```
+
+So far, How to fix nvme-cli-0.7 for VU command. 
+
+--- 
+
+Next, I will try to change nvme-cli-1.1 for VU command. 
 
 
 
