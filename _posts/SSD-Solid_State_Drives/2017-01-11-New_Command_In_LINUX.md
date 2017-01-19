@@ -195,7 +195,11 @@ lspci -t | cut -c110- | grep -v ^$
   
   -v ^$ means erasing the blank.
  
- **If the number of pci slot is wrong, OS couldn't be booted. I knew this fact through experience of skhynix memory solution intern**
+ **If the number of pci slot is wrong, OS couldn't be booted. I knew this fact through experience of skhynix memory solution intern life**
+ 
+ in this situation, after booting, computer couldn't enter BIOS. 
+ 
+ So I have to configure the number of PCI slot to boot computer. 
  
  
 ## ls -l /sys/block/nvme*
