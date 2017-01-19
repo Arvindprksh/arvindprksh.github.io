@@ -123,7 +123,7 @@ tr -d '\r'
 
 ```shell
 $(echo "$line" | tr -d '\r') # delete ^M, escape *
-``
+```
 
 ## lspci
 
@@ -194,6 +194,8 @@ lspci -t | cut -c110- | grep -v ^$
 ```
   
   -v ^$ means erasing the blank.
+ 
+ **If the number of pci slot is wrong, OS couldn't be booted. I knew this fact through experience of skhynix memory solution intern**
  
  
 ## ls -l /sys/block/nvme*
