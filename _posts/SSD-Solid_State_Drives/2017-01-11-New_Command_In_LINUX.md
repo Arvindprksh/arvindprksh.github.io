@@ -399,7 +399,7 @@ if you want to format mutiple nvme device
 
 for i in `seq 0 31`; do (nvme format /dev/nvme${i}n1 &); done
 
-in here, (~~~&), in other words, & means this command is  executed on backgroud simultaneously
+in here, (~~~ &), in other words, & means this command is  executed on backgroud simultaneously
 ```
   
 ## [nvme list](https://github.com/linux-nvme/nvme-cli/blob/master/Documentation/nvme-list.txt)
