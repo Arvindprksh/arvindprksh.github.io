@@ -195,12 +195,37 @@ lspci -t | cut -c110- | grep -v ^$
   
   -v ^$ means erasing the blank.
  
+ 
+## ls -l /sys/block/nvme*
+
+```shell
+$ ls -l /sys/block/nvme*
+lrwxrwxrwx. 1 root root 0 Jan 18 21:04 /sys/block/nvme0n1 -> ../devices/pci0000:00/0000:00:1c.4/0000:04:00.0/nvme/nvme0/nvme0n1
+
+$ lspci -tv
+-[0000:00]-+-00.0  .........
+           ..........
+           +-1c.0-[01]--
+           +-1c.3-[02-03]----00.0-[03]--
+           +-1c.4-[04]----00.0  Device 1c5c:2204
+           .........
+```
+ 
+As you can see the above code. let's compare both of them.
+ 
+../devices/pci0000:00/0000:00:1c.4/0000:**04**:00.0/nvme/nvme0/nvme0n1
+
+-[0000:00]-+-00.0  .........
+           ..........
+           +-1c.0-[01]--
+           +-1c.3-[02-03]----00.0-[03]--
+           +-1c.4-[**04**]----00.0  Device 1c5c:2204
+           ......... 
+ 
 ## lsusb 
 
 ## ls -v /dev/ttyUSB*
 
-
- 
  
 ## window key + ↑
 
