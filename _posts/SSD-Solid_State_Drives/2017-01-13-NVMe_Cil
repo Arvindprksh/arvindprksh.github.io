@@ -810,20 +810,213 @@ you could see new command, get-information, additionally.
 
 In my case, I added function of print for get-information of VU command. 
 
+First of all, let's see the /nvme-cli-1.1/nvme-print.h
 
 
+```c
+// In /nvme-cli-1.1/nvme-print.h
+13 #ifndef NVME_PRINT_H
+14 #define NVME_PRINT_H
+15 
+16 #include "nvme.h"
+17 #include <inttypes.h>
+18 
+19 enum {
+20         TERSE = 0x1u,   // only show a few useful fields
+21         HUMAN = 0x2u,   // interpret some values for humans
+22         VS    = 0x4u,   // print vendor specific data area
+23         RAW   = 0x8u,   // just dump raw bytes
+24 };
+25 
+26 void d(unsigned char *buf, int len, int width, int group);
+27 void d_raw(unsigned char *buf, unsigned len);
+28 
+29 uint64_t int48_to_long(__u8 *data);
+30 
+31 void __show_nvme_id_ctrl(struct nvme_id_ctrl *ctrl, unsigned int mode, void (*vendor_show)(__u8 *vs));
+32 void show_nvme_id_ctrl(struct nvme_id_ctrl *ctrl, unsigned int mode);
+.......
+57 //For VU command 
+58 void show_information(__u32 *result, unsigned int nsid, const char *devname);
+59 
+60 
+61 #endif
+```
 
+this file has role as header file. 
 
+```c
+In /nvme-cli-1.1/nvme-print.c
+1791 // For VU command of SK hynix SSD
+1792 void show_information(__u32 *result, unsigned int nsid, const char *devname)
+1793 {
+1794         printf("information NVME device:%s namespace-id:%x\n", devname, nsid);
+1795         printf("dw[0] : %u, 0x%x\n", result[0], result[0]);
+.........
+1802         printf("dw[3] : %u, 0x%x\n", result[7], result[7]);
+1803 }
+1804 
+```
 
+on the above function, with buffer between host and firmware. 
 
+you can print the return value. 
 
+##### /nvme-cli-1.1/nvme-ioctl.c and /nvme-cli-1.1/nvme-ioctl.h
 
+this is also the same from nvme-cli-0.7's nvme-ioctol file.
 
+```c
+In /nvme-cli-1.1/nvme-ioctl.h
+11 #ifndef _NVME_LIB_H
+12 #define _NVME_LIB_H
+13 
+14 #include <linux/types.h>
+15 #include <stdbool.h>
+16 #include "linux/nvme_ioctl.h"
+17 #include "nvme.h"
+18 
+19 int nvme_get_nsid(int fd);
+20 
+21 /* Generic passthrough */
+22 int nvme_submit_passthru(int fd, int ioctl_cmd, struct nvme_passthru_cmd *cmd);
+23 
+24 int nvme_passthru(int fd, int ioctl_cmd, __u8 opcode, __u8 flags,
+25                   __u16 rsvd, __u32 nsid, __u32 cdw2, __u32 cdw3,
+26                   __u32 cdw10, __u32 cdw11, __u32 cdw12,
+27                   __u32 cdw13, __u32 cdw14, __u32 cdw15,
+28                   __u32 data_len, void *data, __u32 metadata_len,
+29                   void *metadata, __u32 timeout_ms, __u32 *result);
+30 
+31 /* NVME_SUBMIT_IO */
+32 int nvme_io(int fd, __u8 opcode, __u64 slba, __u16 nblocks, __u16 control,
+33               __u32 dsmgmt, __u32 reftag, __u16 apptag,
+34               __u16 appmask, void *data, void *metadata);
+.........
+127 int nvme_subsystem_reset(int fd);
+128 int nvme_reset_controller(int fd);
+129 /*For VU command*/
+130 
+131 int descriptor(int fd, __u32 nsid, __u32 cdw10, __u32 data_len, void *data);
+132 int nvme_information(int fd, __u32 nsid, __u32 len, void *data);
+133 
+134 
+135 #endif                          /* _NVME_LIB_H */
+```
+This file is also similar to /nvme-cli-0.7/nvme-ioctl.h
 
+it's just different from function name. 
 
+```c
+In /nvme-cli-1.1/nvme-ioctl.c
 
+605 // For VU command
+606 
+607 int descriptor(int fd, __u32 nsid, __u32 cdw10, __u32 data_len, void *data)
+608 {
+609   struct nvme_admin_cmd cmd = {
+610         .opcode         = 0x00,//nvme_admin_descriptor;
+611         .nsid           = nsid, 
+612         .cdw10          = cdw10,
+613         .addr           = (__u64)(uintptr_t) data,
+614         .data_len       = data_len,
+615   };
+616 
+617         return nvme_submit_admin_passthru(fd, &cmd);
+618 }
+619 
+620 
+621 int nvme_information(int fd, __u32 nsid, __u32 len, void *data)
+622 {
+623   return descriptor(fd, nsid, len, len, data);
+624 }
+```
 
+The above example code is also based on smart-log of nvme-cli-1.1.
 
+let's last see VU command function. 
+
+##### /nvme-cli-1.1/nvme.c
+
+In this file, I used get_smart_log function of get_inforamtion that is virtual VU command. 
+
+```c
+184 // FOR VU command(WAI) of SK hinyx SSD
+185 // get_wai_information
+186 static int get_wai_information(int argc, char **argv, struct command *cmd, struct plugin *plugin)
+187 {
+188         const char *desc = "Retrieve information for the given device "\
+189                         "(or optionally a namespace) in either decoded format "\
+190                         "(default) or binary.";
+191         const char *namespace = "(optional) desired namespace";
+192         const char *raw = "output in binary format";
+193         int err, fmt, fd;
+194         __u32 *vu_desc = NULL; // VU command 
+195         void *buf = NULL; // Buffer for VU command
+196 
+197         struct config {
+198                 __u32 vu_desc_len;
+199                 __u32 namespace_id;
+200                 int   raw_binary;
+201                 char *output_format;
+202         };
+203 
+204         struct config cfg = {
+205                 .vu_desc_len = 0,
+206                 .namespace_id = 0xffffffff,
+207                 .output_format = "normal",
+208         };
+209 
+210         const struct argconfig_commandline_options command_line_options[] = {
+211                 {"namespace-id",  'n', "NUM", CFG_POSITIVE, &cfg.namespace_id,  required_argument, namespace},
+212                 {"output-format", 'o', "FMT", CFG_STRING,   &cfg.output_format, required_argument, output_format },
+213                 {"raw-binary",    'b', "",    CFG_NONE,     &cfg.raw_binary,    no_argument,       raw},
+214                 {NULL}
+215         };
+216 
+217         fd = parse_and_open(argc, argv, desc, command_line_options, &cfg, sizeof(cfg));
+218         if (fd < 0)
+219                 return fd;
+220          
+221         fmt = validate_output_format(cfg.output_format);
+222         if (fmt < 0)
+223                 return fmt;
+224         if (cfg.raw_binary)
+225                 fmt = BINARY;
+226 
+227         // getpagesize() = 4096
+228         if (cfg.vu_desc_len == 0){
+229             cfg.vu_desc_len = 4096 or 512; depending on vendors
+230             if (posix_memalign(&buf, getpagesize(), cfg.vu_desc_len))
+231                 exit(ENOMEM);
+232             memset(buf, 0, cfg.vu_desc_len);
+233         }
+234 
+235         vu_desc = (__u32 *)buf;
+236         vu_desc[0] = 0x01; //VU_OPCODE_GET_INFORMATION;
+237 
+238 
+239         err = nvme_information(fd, cfg.namespace_id, cfg.vu_desc_len, buf);
+240         if (!err) {
+241                 if (fmt == BINARY)
+242                         fprintf(stderr, "this does not support Binary mode\n");
+243                 else if (fmt == JSON)
+244                         fprintf(stderr, "this does not support json mode\n");
+245                 else
+246                         show_information(buf, cfg.namespace_id, devicename);
+247         }
+248         else if (err > 0)
+249                 fprintf(stderr, "NVMe Status:%s(%x)\n",
+250                                         nvme_status_to_string(err), err);
+251         else
+252                 perror("get information error");
+253
+254         if (buf != 0)
+255           free(buf);
+256
+257         return err;
+258 }
+```
 
 
 --- nvme-cli ver 1.1
