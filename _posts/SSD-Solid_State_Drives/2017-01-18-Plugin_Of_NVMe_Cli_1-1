@@ -56,6 +56,9 @@ File:foo-plugin.c
 #include "foo-plugin.h"
 ```
 
+**After that, You just need to implement the functions you defined in each ENTRY, then append the object file name to the Makefiles's "OBJS"**
+
+
 # An example of plugin extensions
 
 ## ./nvme --help
@@ -166,4 +169,4 @@ See 'nvme lnvm help <command>' for more information on a specific command
 
 ## Let's the actual file of lnvm-nvme.c and lnvm-nvme.h
 
-### /nvme
+### /nvme-cli-1.1/lnvm-nvme.c
