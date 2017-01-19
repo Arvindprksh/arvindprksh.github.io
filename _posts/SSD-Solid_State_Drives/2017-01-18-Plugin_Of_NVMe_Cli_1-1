@@ -273,3 +273,32 @@ even this file is the same part is important.
 55 static int lnvm_list(int argc, char **argv, struct command *cmd, struct plugin *plugin)
 ........
 ```
+
+
+## exception situation
+
+ if you get int128 from firmware and int128 is split into four pieces in uint32. you have to chage int128 to long double type. 
+
+ that is because it is easy to calculat WAF automatically. 
+ 
+ let's see an example function to change from int128 to long double. 
+ 
+```c
+
+//data variable consists of __u8 * arr[16];
+
+static long double int128_to_double(__u8 *data)
+{
+        int i;
+        long double result = 0;
+
+        for (i = 0; i < 16; i++) {
+                result *= 256;
+                result += data[15 - i];
+        }
+        return result;
+}
+```
+ 
+ 
+ 
