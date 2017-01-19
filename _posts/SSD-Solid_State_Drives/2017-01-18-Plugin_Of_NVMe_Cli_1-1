@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: What is plugin mode in NVMe-cli-1.1 opensource
+subtitle: How to make plugin mode in NVMe-cli-1.1 opensource
+category: SSD (Solid State Drives)
+tags: [nvme]
+permalink: /2017/01/18/Plugin_Of_NVMe_Cli_1-1/
+---
 
 
 ## [NVMe-cli-1.1's plugin mode](https://github.com/linux-nvme/nvme-cli#add-a-new-plugin)
@@ -275,7 +282,7 @@ even this file is the same part is important.
 ```
 
 
-## exception situation
+## Exception situation because of the number of bits in Data type
 
  if you get int128 from firmware and int128 is split into four pieces in uint32. you have to chage int128 to long double type. 
 
