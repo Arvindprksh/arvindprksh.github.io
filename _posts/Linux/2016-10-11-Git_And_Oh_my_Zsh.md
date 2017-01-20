@@ -87,3 +87,9 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 # Reference 
 
  - [The Silver Search "ag"](https://github.com/ggreer/the_silver_searcher)
+
+
+ - for studying of github.
+   
+   [NHN ent. 신승엽님 Github 실습 교육](http://www.slideshare.net/flyskykr/github-46014813)
+  
