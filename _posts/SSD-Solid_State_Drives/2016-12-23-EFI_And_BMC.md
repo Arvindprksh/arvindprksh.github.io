@@ -154,7 +154,90 @@ the path of that file is c:\Windows\System32\drivers\etc\hosts.
 
 hosts file.
 
-## Be careful 
+
+## Be careful 1
+
+If you cannot access BMC, You have to check if IP address is changed with "ipmitool"
+
+```shell
+# ipmitool
+No command provided!
+Commands:
+	raw           Send a RAW IPMI request and print response
+	i2c           Send an I2C Master Write-Read command and print response
+	spd           Print SPD info from remote I2C device
+	lan           Configure LAN Channels
+	chassis       Get chassis status and set power state
+	power         Shortcut to chassis power commands
+	event         Send pre-defined events to MC
+	mc            Management Controller status and global enables
+	sdr           Print Sensor Data Repository entries and readings
+	sensor        Print detailed sensor information
+	fru           Print built-in FRU and scan SDR for FRU locators
+	gendev        Read/Write Device associated with Generic Device locators sdr
+	sel           Print System Event Log (SEL)
+	pef           Configure Platform Event Filtering (PEF)
+	sol           Configure and connect IPMIv2.0 Serial-over-LAN
+	tsol          Configure and connect with Tyan IPMIv1.5 Serial-over-LAN
+	isol          Configure IPMIv1.5 Serial-over-LAN
+	user          Configure Management Controller users
+	channel       Configure Management Controller channels
+	session       Print session information
+	dcmi          Data Center Management Interface
+	sunoem        OEM Commands for Sun servers
+	kontronoem    OEM Commands for Kontron devices
+	picmg         Run a PICMG/ATCA extended cmd
+	fwum          Update IPMC using Kontron OEM Firmware Update Manager
+	firewall      Configure Firmware Firewall
+	delloem       OEM Commands for Dell systems
+	shell         Launch interactive IPMI shell
+	exec          Run list of commands from file
+	set           Set runtime variable for shell and exec
+	hpm           Update HPM components using PICMG HPM.1 file
+	ekanalyzer    run FRU-Ekeying analyzer using FRU files
+	ime           Update Intel Manageability Engine Firmware
+```
+
+If that tool is not installed, 
+
+pleas install 
+
+```shell
+# yum install ipmitool
+
+# yum install ipmitool
+Loaded plugins: fastestmirror
+Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast
+base                                                                                                                                                                                        | 3.6 kB  00:00:00     
+elrepo                                                                                                                                                                                      | 2.9 kB  00:00:00     
+extras                                                                                                                                                                                      | 3.4 kB  00:00:00     
+updates                                                                                                                                                                                     | 3.4 kB  00:00:00     
+.........
+```
+
+In order to check ip Address of BMC
+
+```shell
+# ipmitool lan print
+Set in Progress         : Set Complete
+Auth Type Support       : 0000 000 000 00000000 
+Auth Type Enable        : Callback : 0000 000 000 00000000 
+                        : User     : 0000 000 000 00000000
+                        : Operator : 0000 000 000 00000000
+                        : Admin    : 0000 000 000 00000000 
+                        : OEM      : 0000 000 000 00000000 
+IP Address Source       : DHCP Address
+IP Address              : this console IP Address
+Subnet Mask             : 000.000.000.0
+MAC Address             : 00:00:00:00:00:00
+......
+```
+as you can see the above, IP Address is important. 
+
+if this address is changed, you have to change the host file's console address
+
+
+## Be careful 2
 
   using domain name, you cannot access server. in emergency method, You chang the host file 
   
@@ -170,7 +253,12 @@ hosts file.
   cd $Windows
   
   dir 
-```  
+```
+
+on hosts file 
+
+"IP-Address servername-console"
+
 
 ## Reference
 
