@@ -1,7 +1,11 @@
-
-
-
-
+---
+layout: post
+title: How to program to EEPROM and What is writing to EEPROM ? 
+subtitle: Summary about Writing to EEPROM consists of nor-gate and Background shell programming
+category: SSD (Solid State Drives)
+tags: [nvme, EEPROM]
+permalink: /2017/01/19/PCI_And_Backgroung_shell/
+---
 
 # Change of the number of PCI
 
