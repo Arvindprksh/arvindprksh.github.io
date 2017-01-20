@@ -91,8 +91,7 @@ $ lspci -tv
  
  since the number of PCI slots is reduced, I could reboot OS
  
-
- I used two tool to change the number of PCI slot.
+ I used  GUI tooo on windows(PLX)to change the number of PCI slot.
  
 <!--
  
@@ -102,3 +101,31 @@ $ lspci -tv
  
 --> 
  
+## BackGround shell 
+
+if you want to execute shell's mutiple commands together, use **&**
+
+
+```shell
+[root@hyunyoung.lee ~]# for i in `seq 0 15`; do (nvme format /dev/nvme${i}n1 &); done
+[root@hyunyoung.lee ~]# Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+Success formatting namespace:0
+```
+
+As you can see the above result, you can check those 15 process of command executed together.
+
+don't forget **&**
