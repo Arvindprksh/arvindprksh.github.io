@@ -234,7 +234,7 @@ MAC Address             : 00:00:00:00:00:00
 ```
 as you can see the above, IP Address is important. 
 
-if this address is changed, you have to change the host file's console address with IP Address of ipmitool lan print
+if this address is changed, you have to change the host file's console address with **IP Address of ipmitool lan print**
 
 
 ## Be careful 2
