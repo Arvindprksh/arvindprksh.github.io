@@ -84,7 +84,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-        <h2 class="post-title" style="padding-top: 90px;">
+	<div class="post-preview">
+        <h2 class="post-title">
             {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}" style="padding-top: 70px;"></a>
             {% endif %} 
@@ -101,6 +102,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
             </a>
         </li>
+	</div>
     {% endcapture %}
 
     {{ monthHead }}{{ link }}
