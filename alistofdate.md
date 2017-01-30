@@ -91,7 +91,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px;"></a>
           {{ post.date | date: '%B %Y' }}
-        </h2>{{ openList }}
+        </h2></div>{{ openList }}
       {% endif %}
     {% endcapture %}
 
@@ -102,7 +102,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
             </a>
         </li>
-	</div>
     {% endcapture %}
 
     {{ monthHead }}{{ link }}
