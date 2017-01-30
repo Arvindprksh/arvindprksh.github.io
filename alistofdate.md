@@ -29,7 +29,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
-<div class="">
+<div class="post-preview">
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
@@ -82,9 +82,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
                   <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
                 </a>
               </small>
-              
+              </hr>
           {%endif %}
-        <h2 class="" style="padding-top: 70px">
+        <h2 class="" style="padding-top: 90px">
             {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
@@ -103,7 +103,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         </li>
     {% endcapture %}
 
-    <div class="post-preview">{{ monthHead }}</div>{{ link }}
+    {{ monthHead }}{{ link }}
        
 {% endfor %}
 {{closeList}}
