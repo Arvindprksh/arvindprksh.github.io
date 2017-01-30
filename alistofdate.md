@@ -77,21 +77,22 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         {% if month != nmonth %}
           {% if  forloop.index != 1  %}
               {{ closeList }}
+	      <div class="post-preview">
               <small markdown="1"><!--[back to top](#top)-->
                 <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px;">
                   <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
                 </a>
               </small>
+	      </div>
               <hr/>
           {%endif %}
-	<div class="post-preview">
         <h2 class="post-title">
             {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}" style="padding-top: 70px;"></a>
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px;"></a>
           {{ post.date | date: '%B %Y' }}
-        </h2></div>{{ openList }}
+        </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
 
