@@ -84,13 +84,13 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-        <h2 class="post-title">
+        <h2 class="post-title" style="padding: 70px 0px; margine-top: 70px">
             {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
-        jhkhk</h2>{{ openList }}
+       </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
 
