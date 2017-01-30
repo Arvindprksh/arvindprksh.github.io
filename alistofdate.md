@@ -82,9 +82,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
                   <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
                 </a>
               </small>
-              </hr>
+              <hr/>
           {%endif %}
-        <h2 class="" style="padding-top: 90px">
+        <h2 class="" style="padding-top: 120px">
             {% if year != nyear %}
              <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
