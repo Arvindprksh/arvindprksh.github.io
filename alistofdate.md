@@ -86,11 +86,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 	      </div>
               <hr/>
           {%endif %}
-        <h2 class="post-title">
+        <h2 class="post-title" style="padding-top: 70px;">
             {% if year != nyear %}
-             <a name="{{ post.date | date: '%Y' }}" style="padding-top: 70px;"></a>
+             <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
-          <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 70px;"></a>
+          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
         </h2>{{ openList }}
       {% endif %}
