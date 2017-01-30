@@ -90,7 +90,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           {{ post.date | date: '%B %Y' }}
-        </h2>{{ openList }}
+        jhkhk</h2>{{ openList }}
       {% endif %}
     {% endcapture %}
 
