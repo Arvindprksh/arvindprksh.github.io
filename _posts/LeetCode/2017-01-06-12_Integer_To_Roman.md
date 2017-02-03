@@ -120,6 +120,44 @@ this mitake is trivial, Sometimes you could forget this.
 
 - you can understand the feature of the way leetcode use your answer code.
 
+## to sum up the above code.
+
+As you can see the above code, there are mutiple iteration statement. 
+
+So I am going to remake it with two loops(while) 
+
+
+```c
+static int  number[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+
+static char * roman[] = {"M", "CM", "D","CD","C","XC","L","XL", "X", "IX", "V", "IV", "I"};
+
+char returnString[12]={0}; // you have to declar this as global varialbe.
+
+char* intToRoman(int num) {
+    int index = num;
+    int i =0;
+   
+    memset(returnString, 0, sizeof(returnString)); // you have to intialize this value
+    
+    while(index != 0) {
+        while(index >= number[i]) {
+            index -= number[i];
+            strcat(returnString, roman[i]);
+        }
+       i++;  
+    }
+    
+   // printf("%s\n",returnString);
+   // printf("%c%c%c\n",*returnString, *(returnString+1), *(returnString+2));
+   // printf("%c\n", NULL);
+    
+    return returnString;
+}
+
+```
+
+
 ## Another way to resolve this problem
 
 As you can see the above code, it is too long.
@@ -135,38 +173,6 @@ Becuase, the range of roman numerals is from 1 to 3999.
 
 - So I think I just need to calculate each digit, after making global variables specifically.
 
-
-
-
-
-## Reference
-
-- [What rule do the roman numerals have?](https://en.wikipedia.org/wiki/Roman_numerals)
-
-So, key point numerals is 5 10 50 100 500 1000 in that range of the above problem,
-
-in that case, subtractive notation is used.
-
-- [strcat function](http://www.cplusplus.com/reference/cstring/strcat/)
-
-char * strcat(char * destination, const char * source)
-
-concatenate strings. 
-
-Appends a copy of the source to the destination string. the terminating null character in destination is overwritten by the first character of source, and a null-character is included at the end of the new string formed by the concatenation of both in destination.
-
-destination and source shall not overlap. 
-
-- char * destination : Pointer to the destination array which should contain a C string, and be large enough to contain the concatenated resulting string.
-
-- const char * source: C String to be appened. This should not overlap destination
-
-
-- [void * memset (void * ptr, int value, size_t num)](http://www.cplusplus.com/reference/cstring/memset/)
-
- Fill block of memory
- 
-Set the first num bytes of the block of memory pointed by ptr to the specified value
 
 
 ```c
@@ -210,3 +216,34 @@ char * intToRoman(int num) {
     return returnString;
 }
 ```
+
+
+
+## Reference
+
+- [What rule do the roman numerals have?](https://en.wikipedia.org/wiki/Roman_numerals)
+
+So, key point numerals is 5 10 50 100 500 1000 in that range of the above problem,
+
+in that case, subtractive notation is used.
+
+- [strcat function](http://www.cplusplus.com/reference/cstring/strcat/)
+
+char * strcat(char * destination, const char * source)
+
+concatenate strings. 
+
+Appends a copy of the source to the destination string. the terminating null character in destination is overwritten by the first character of source, and a null-character is included at the end of the new string formed by the concatenation of both in destination.
+
+destination and source shall not overlap. 
+
+- char * destination : Pointer to the destination array which should contain a C string, and be large enough to contain the concatenated resulting string.
+
+- const char * source: C String to be appened. This should not overlap destination
+
+
+- [void * memset (void * ptr, int value, size_t num)](http://www.cplusplus.com/reference/cstring/memset/)
+
+ Fill block of memory
+ 
+Set the first num bytes of the block of memory pointed by ptr to the specified value
