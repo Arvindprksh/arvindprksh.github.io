@@ -174,26 +174,38 @@ Set the first num bytes of the block of memory pointed by ptr to the specified v
 static char * romanM[] = {"", "M", "MM", "MMM"};
 
 //                            100, 200 , 300  , 400 , 500, 600, 700   , 800  , 900  
-static char * romanL[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCC", "CM"};
+static char * romanL[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
 
 //                            10 ,  20 ,  30  , 40  , 50 ,  60 ,  70  ,  80  ,  90                      
-static char * romanX[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXX", "XC"};
+static char * romanX[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
 
 //                           1 ,  2 ,  3  ,  4 , 5 , 6  ,  7  ,   8  , 9  
 static char * roman[] = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
 
 
-char * returnString[5]={NULL};
+char returnString[12]={0};
 
-char* intToRoman(int num) {
-    int index = num;
-    int firstM = num;
-    int secondL= num-()
+char * intToRoman(int num) {
+    int i = 0;
+    char * temp = NULL;
     
+    memset (returnString, 0, sizeof(returnString));
     
+    temp = romanM[num/1000];
+    if (temp != "")
+        strcat(returnString, temp);
+        
+    temp = romanL[(num%1000)/100];
+    if (temp != "")
+        strcat(returnString, temp);
+        
+    temp = romanX[((num%1000)%100)/10];
+    if (temp != "")
+        strcat(returnString, temp);
     
-    
-    
+    temp = roman[((num%1000)%100)%10];
+    if (temp != "")
+        strcat(returnString, temp);
     
     return returnString;
 }
