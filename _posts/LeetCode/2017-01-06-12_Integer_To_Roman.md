@@ -4,7 +4,7 @@ title: 12. Integer to Roman
 subtitle: Difficulty - Medium
 category: LeetCode
 tags: [algorithm, medium]
-permalink: /2017/01/06/12.Integer_To_Roman/
+permalink: /2017/01/06/12_Integer_To_Roman/
 bigimg: 
     - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
 ---
