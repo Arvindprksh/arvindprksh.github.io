@@ -29,7 +29,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
-<div class="post-preview">
+<div class="post-preview" style="padding-top: 35px">
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
@@ -62,7 +62,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 				<i class="badge">{{ count }}</i></span></a><hr/>
 			{% endif %}
 	{% endfor %}
-	
+
+<div style="padding-top: 35px"></div>
 
 {% for post in site.posts %}
     {% capture month %}
@@ -86,9 +87,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           {%endif %}
         <h2 class="">
             {% if year != nyear %}
-             ss <a name="{{ post.date | date: '%Y' }}" style="padding-top: 35px"></a>
+             ss <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
-          <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 35px"></a>
+          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           tes {{ post.date | date: '%B %Y' }}
        </h2>fsdf {{ openList }}
       {% endif %}
