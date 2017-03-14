@@ -86,6 +86,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
+	<h2 style="padding-bottom: 35px"></h2>  
         <h2 class="">
             {% if year != nyear %}
              ss: <a name="{{ post.date | date: '%Y' }}"></a>
