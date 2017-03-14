@@ -87,10 +87,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 	 
         <h2 class="" style="padding-top : 70px">
             {% if year != nyear %}
-           year:  <h2 id="{{ post.date | date: '%Y' }}"></h2>
+           year:  <div id="{{ post.date | date: '%Y' }}" style="padding-top : 35px"></div>
             {% endif %} 
-          <h2 id="{{ post.date | date:  '%B %Y'  }}"></h2>
-          month {{ post.date | date: '%B %Y' }}
+          <div id="{{ post.date | date:  '%B %Y'  }}" style="padding-top : 35px"></div>
+          month- {{ post.date | date: '%B %Y' }}
        </h2>
  {{ openList }}
       {% endif %}
