@@ -63,7 +63,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 			{% endif %}
 	{% endfor %}
 
-<div style="padding-top: 35px"></div>
+<div style="padding-bottom: 35px"></div>
 
 {% for post in site.posts %}
     {% capture month %}
