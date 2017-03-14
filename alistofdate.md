@@ -50,7 +50,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% endunless %}
 					<h3>
 					<span class="fa fa-calendar" aria-hidden="true"></span>
-					<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a><!-- At first year is indicated -->
+					<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a>
 					</h3>
 					{% assign year = currentyear %}
 				{% endif %}
