@@ -78,7 +78,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         {% if month != nmonth %}
           {% if  forloop.index != 1  %}
               {{ closeList }}
-              <small markdown="1"><!--[back to top](#top)-->
+              <small markdown="1" style="padding-bottom: 35px"><!--[back to top](#top)-->
                 <a href="#top" class="btn btn-default" style="font-size: 15px; padding: 0px 5px; margin-left: 30px">
                   <span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
                 </a>
