@@ -31,7 +31,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
 <div class="post-preview">
-{% assign openList = '<ul class="later on">' %}
+{% assign openList = '<ul class="later on">'  %}
 {% assign closeList = '</ul>' %}
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
 
@@ -87,9 +87,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 	 
         <h2 class="">
             {% if year != nyear %}
-          <a name="{{ post.date | date: '%Y' }}"></a>
+          <div id="{{ post.date | date: '%Y' }}" style="padding-top:50px"></div>
           34  {% endif %} 
-          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
+          <div id="{{ post.date | date:  '%B %Y'  }}" style="padding-top:50px"></div>
           month- {{ post.date | date: '%B %Y' }}
        </h2>{{ openList }}
       {% endif %}
