@@ -91,8 +91,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           34  {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
           month- {{ post.date | date: '%B %Y' }}
-       </h2>
- {{ openList }}
+       </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
 
