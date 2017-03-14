@@ -1,7 +1,5 @@
 /********css timeline********/
-HTML  CSS  Result
-EDIT ON
- body {  
+body {	
   margin: 0;
   padding: 0;
   background: rgb(230,230,230);
@@ -186,95 +184,95 @@ EDIT ON
 @media screen and (max-width: 660px) {
 
 .timeline {
-    width: 100%;
-    padding: 4em 0 1em 0;
+ 	width: 100%;
+	padding: 4em 0 1em 0;
 }
 
 .timeline li {
-    padding: 2em 0;
+	padding: 2em 0;
 }
 
 .direction-l,
 .direction-r {
-    float: none;
-    width: 100%;
+	float: none;
+	width: 100%;
 
-    text-align: center;
+	text-align: center;
 }
 
 .flag-wrapper {
-    text-align: center;
+	text-align: center;
 }
 
 .flag {
-    background: rgb(255,255,255);
-    z-index: 15;
+	background: rgb(255,255,255);
+	z-index: 15;
 }
 
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
   top: -30px;
-    left: 50%;
-    content: ' ';
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin-left: -9px;
-    background: #fff;
-    border-radius: 10px;
-    border: 4px solid rgb(255,80,80);
-    z-index: 10;
+	left: 50%;
+	content: ' ';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: -9px;
+	background: #fff;
+	border-radius: 10px;
+	border: 4px solid rgb(255,80,80);
+	z-index: 10;
 }
 
 .direction-l .flag:after,
 .direction-r .flag:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -8px;
-    height: 0;
-    width: 0;
-    margin-left: -8px;
-    border: solid transparent;
-    border-bottom-color: rgb(255,255,255);
-    border-width: 8px;
-    pointer-events: none;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -8px;
+	height: 0;
+	width: 0;
+	margin-left: -8px;
+	border: solid transparent;
+	border-bottom-color: rgb(255,255,255);
+	border-width: 8px;
+	pointer-events: none;
 }
 
 .time-wrapper {
-    display: block;
-    position: relative;
-    margin: 4px 0 0 0;
-    z-index: 14;
+	display: block;
+	position: relative;
+	margin: 4px 0 0 0;
+	z-index: 14;
 }
 
 .direction-l .time-wrapper {
-    float: none;
+	float: none;
 }
 
 .direction-r .time-wrapper {
-    float: none;
+	float: none;
 }
 
 .desc {
-    position: relative;
-    margin: 1em 0 0 0;
-    padding: 1em;
-    background: rgb(245,245,245);
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	background: rgb(245,245,245);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	
   z-index: 15;
 }
 
 .direction-l .desc,
 .direction-r .desc {
-    position: relative;
-    margin: 1em 1em 0 1em;
-    padding: 1em;
-    
+	position: relative;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+	
   z-index: 15;
 }
 
@@ -284,11 +282,10 @@ EDIT ON
 
 .direction-l .desc,
 .direction-r .desc {
-    margin: 1em 4em 0 4em;
+	margin: 1em 4em 0 4em;
 }
 
 }
-
 /*=======================================css timeline==================================*/
 
 /* css3 timeline 
