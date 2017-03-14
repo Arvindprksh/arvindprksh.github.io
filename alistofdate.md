@@ -12,7 +12,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-<!-- style="padding-bottom: 35px"-->
 
 Before going to Silicon Valley, I love challenge to new technology, I made git static page to arrange concept of computer sceince for myself. I started studying the Data structure, algorithm and OS(operating system). that is a good time to remember knowledge I forgot. And, continuously while I'm doing OpenSource project In Silicon Valley, CA, I will make a note about what I learn. 
 
@@ -30,7 +29,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
-<div class="post-preview" style="padding-top: 35px">
+<div class="post-preview">
 {% assign openList = '<ul class="later on">' %}
 {% assign closeList = '</ul>' %}
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
@@ -64,8 +63,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 			{% endif %}
 	{% endfor %}
 
-<div style="padding-bottom: 35px"></div>
-
 {% for post in site.posts %}
     {% capture month %}
       {{ post.date | date: '%m%Y' }}
@@ -86,14 +83,14 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-	<h2 style="padding-bottom: 35px"></h2>  
+	 
         <h2 class="">
             {% if year != nyear %}
-             ss: <a name="{{ post.date | date: '%Y' }}"></a>
+             <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
-          tes {{ post.date | date: '%B %Y' }}
-       </h2>fsdf {{ openList }}
+           {{ post.date | date: '%B %Y' }}
+       </h2> {{ openList }}
       {% endif %}
     {% endcapture %}
 
