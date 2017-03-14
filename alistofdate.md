@@ -49,7 +49,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 					{% endunless %}
 					<h3>
 					<span class="fa fa-calendar" aria-hidden="true"></span>
-					<a href="{{ archive_url }}#{{ currentyear }}">test :{{ currentyear }}</a>
+					<a href="{{ archive_url }}#{{ currentyear }}">{{ currentyear }}</a><!-- At first year is indicated -->
 					</h3>
 					{% assign year = currentyear %}
 				{% endif %}
@@ -84,11 +84,11 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-        <h2 class="" style="padding-top: 70px">
+        <h2 class="">
             {% if year != nyear %}
-             ss <a name="{{ post.date | date: '%Y' }}"></a>
+             ss <a name="{{ post.date | date: '%Y' }}" style="padding-top: 35px"></a>
             {% endif %} 
-          <a name="{{ post.date | date:  '%B %Y'  }}"></a>
+          <a name="{{ post.date | date:  '%B %Y'  }}" style="padding-top: 35px"></a>
           tes {{ post.date | date: '%B %Y' }}
        </h2>fsdf {{ openList }}
       {% endif %}
