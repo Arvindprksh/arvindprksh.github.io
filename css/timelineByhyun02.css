@@ -1,114 +1,316 @@
-/************Reset**************/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+@import "bourbon";
 
-html, body, div, object, iframe, fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0; }
+/*--------------------------------------------
 
-ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+Name:     Timeline
+Created:  13/02/15
+Author:   Raúl Hernández <raulghm@gmail.com>
+Github:   raulghm
 
-header, footer, nav, section, article, hgroup, figure {
-  display: block; }
+----------------------------------------------*/
 
-/************End Reset**************/
-/************Global**************/
+/*
+Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+*/
+
+$brand-primary: #999;
+$gray-darker: lighten(#000, 46.5%); // #777
+$gray-dark: lighten(#000, 60.5%);   // #999
+$gray: lighten(#000, 79%); // #c9c9c9
+$gray-light: lighten(#000, 87%); // #dedede
+$gray-lighter: lighten(#000, 92%); // #ebebeb
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+
+// font-size helper
+@mixin font-size($size) {
+	// html font-size is 62.5% (base 10)
+  font-size: ($size * 10) + px; // fallback in px
+  font-size: $size + rem;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 body {
-  background: #fff;
-  color: #222222;
-  font: 120%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  padding: 1em;
-  -webkit-text-size-adjust: 100%; }
-  @media all and (min-width: 40em) {
-    body {
-      padding-left: 2em; } }
+  padding: 40px;
+}
 
-a {
-  color: gray;
-  text-decoration: none; }
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #777;
+  
+  h2, h4 {
+    font-family: $font-family-serif;
+  }
+}
 
-a:hover, a:focus {
-  color: #222222;
-  text-decoration: underline; }
+$component: 'Timeline';
 
-p {
-  margin: 0 0 1em; }
+.#{$component} {
+	width: 830px;
+	margin: 0 auto;
+	position: relative;	
 
-img, object, video {
-  max-width: 100%;
-  border: 0; }
+	&-line {
+		width: 40px;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		margin-left: -20px;
+		padding-left: 20px;
+		cursor: pointer;
 
-a img {
-  border: 0;
-  outline: 0; }
+		&:after {
+			content: "";
+			position: absolute;			
+			border-left: 1px solid $gray-light;
+			height: 100%;
+		}
 
-h1 {
-  font-size: 2em;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.8em; }
+		&.is-active {
+			.#{$component} {
+				&-line {
+					&-menu {
+						opacity: 1;
+					}
+				}
+			}
+		}		
+	}
 
-h2 {
-  text-transform: lowercase;
-  font-size: 3em;
-  line-height: 1.1;
-  margin: 0 0 0.4em; }
+	&.is-dragging {
+		.#{$component} {
+			&-item {
+				&-inner {
+					margin: 0;
+					opacity: .7;
+				}
+			}
+		}
+	}
 
-h3 {
-  font-size: 1.8em;
-  line-height: 1.1;
-  margin: 0 0 0.2em;
-  text-transform: lowercase; }
+  &-item {
+  	width: 100%;
+  	position: relative;
+  	@extend .cf;
+  	z-index: 90;
 
-/************End Global**************/
-/************Timeline**************/
-/* Timeline Container */
-.timeline {
-  border-left: 5px solid #dddddd;
-  padding-bottom: 3em;
-  position: relative; }
-  .timeline:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -1.47em;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background: #dddddd;
-    border: 5px solid #dddddd; }
+  	&-inner {
+  		position: relative;
+	  	margin-bottom: 40px;
+	  	width: 345px;
+	  	border: 1px solid $gray-light;
+	  	transition: all .3s ease;
+	  	margin: -10px 0 -20px;
 
-/* Individual Timeline Item */
-.tl-node {
-  padding-left: 1em;
-  margin-bottom: 3em;
-  position: relative; }
-  .tl-node a {
-    display: block; }
-  .tl-node:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -0.95em;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background: #fff;
-    border: 5px solid #dddddd; }
-  .tl-content a {
-    color: #222222; }
+	  	&:before {
+	  		content: "";
+	  		position: absolute;
+	  		top: 50%;
+	  		right: -78px;
+	  		border-radius: 50%;
+	  		transform: translateY(-50%);
+	  		background-color: $brand-primary;
+	  		width: 12px;
+	  		height: 12px;
+	  	}
 
-/* Timestamp */
-.tl-stamp {
-  font-size: 0.7em;
-  color: gray; }
+	  	// triangle right
+	  	&:after {
+	  		content: "";
+	  		width: 20px;
+	  		height: 20px;
+	  		position: absolute;
+	  		right: -9px;
+	  		top: 50%;
+	  		@include triangle(16px, $gray-light, right);
+	  		transform: translateY(-50%);
+	  		transition: all .2s ease;
+	  	}
+  	}
 
-/************End Timeline**************/
+  	&:hover {
+  		user-select: none;
+  		-webkit-user-select: none;
 
-/** this code is from https://github.com/himedlooff/project-timeline/edit/gh-pages/css/style.css */
+  		&:after {
+  			border-left-color: $brand-primary;
+  		}
+
+  		.#{$component} {
+  			&-item {
+  				&-inner {
+  					border-color: $brand-primary;
+
+  					&:after {
+  						@include triangle(16px, $brand-primary, right);
+  					}
+  				}
+
+  				&-top {
+  					&-tools {
+  						opacity: 1;
+  					}
+  				}
+  			}
+  		}
+  	}
+		
+  	&:nth-child(odd) {
+  		margin-left: 50%;
+  		padding-left: 70px;
+      width: 50%;
+
+  		&:hover {
+  			.#{$component} {
+	  			&-item {
+	  				&-inner {
+	  					&:after {
+	  						@include triangle(16px, $brand-primary, left);
+	  					}
+	  				}
+	  			}
+	  		}
+  		}
+
+  		.#{$component} {
+  			&-item {
+  				&-inner {
+  					&:before {
+  						right: auto;
+  						left: -77px;
+  					}
+
+  					&:after {
+			  			@include triangle(16px, $gray, left);
+			  			border-left: 0;
+			  			right: auto;
+			  			left: -9px;
+			  		}
+  				}
+
+  				&-index {
+  					opacity: .6;
+  					left: -45px;
+  					right: auto;
+  				}
+  			}
+  		}
+
+  	}
+
+  	&.is-dropping {
+			cursor: -webkit-grabbing;
+  	}
+
+  	&-index {
+  		position: absolute;
+  		right: -45px;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		color: $gray;
+  		@include font-size(2.4);
+  		font-weight: 200;
+  		font-family: $font-family-serif;
+  	}
+
+		&--quote {
+			.#{$component} {
+				&-item {
+					&-content {
+						font-family: $font-family-serif;
+					}					
+				}
+			}
+		}
+
+		&--image {
+			.#{$component} {
+				&-item {
+					&-content {
+						&-body {
+							img {
+								max-width: 100%;
+								margin-top: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+  	&-top {
+  		background-color: #f8f8f8;
+  		padding: 10px 15px;
+  		@extend .cf;
+
+  		&:hover {
+  			cursor: move;
+  			cursor: -webkit-grab;
+  		}
+
+  		&-type {
+  			float: left;
+  			text-transform: uppercase;
+  			letter-spacing: 1px;
+  			@include font-size(1.1);
+
+  			i {
+  				@include font-size(1.6);
+  			}
+
+  			span {
+  				margin-left: 10px;
+  			}
+  		}
+
+  	}
+
+  	&-content {
+	 		background-color: #fff;
+	 		padding: 10px 20px 20px;
+	 		text-align: left;
+
+	 		&-title {
+	 			@include font-size(1.8);
+	 		}
+
+	 		&-image {
+	 			background-size: cover;
+	 			background-position: 50%;
+	 			background-repeat: no-repeat;
+	 			height: 135px;
+	 			width: 341px;
+	 			margin-top: 10px;
+	 			margin-left: -20px;
+	 		}
+
+	 		&-body {
+	 			position: relative;	 	
+
+	 			&:empty {
+	 				display: none;
+	 			}				
+ 			}
+	 	}
+  }
+
+}
+
