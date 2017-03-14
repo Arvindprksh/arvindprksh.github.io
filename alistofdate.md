@@ -86,10 +86,10 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
           {%endif %}
         <h2 class="" style="padding-top: 70px">
             {% if year != nyear %}
-             <a name="{{ post.date | date: '%Y' }}"></a>
+             ss <a name="{{ post.date | date: '%Y' }}"></a>
             {% endif %} 
           <a name="{{ post.date | date:  '%B %Y'  }}"></a>
-          {{ post.date | date: '%B %Y' }}
+          tes {{ post.date | date: '%B %Y' }}
        </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
