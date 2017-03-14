@@ -1,16 +1,250 @@
-<h1>{{ site.title }}</h1>
-<ol class="timeline">
-	{% for post in site.posts %}
-		<li class="tl-node">
-			<div class="tl-stamp">{{ post.date | date_to_string }}</div>
-			{% if site.linked_posts %}
-				<div class="tl-content"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
-			{% else %}
-				<div class="tl-content">{{ post.title }}</div>
-			{% endif %}
-			{{ post.content }}
-		</li>
-	{% endfor %}
-</ol>
+<div class="title">
+  <h2>Sortable Vertical Timeline</h2>
+  <h4><b>How use</b>: Drag and drop any object in timeline and feel the experience :)</h4>
+</div>
 
-<!-- this code is from https://github.com/himedlooff/project-timeline/edit/gh-pages/index.html -->
+<div class="Timeline" id="Timeline">
+	<div class="Timeline-line">
+		<div class="Timeline-line-menu"></div>
+	</div>
+	
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--quote">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Quote</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					<blockquote>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					</blockquote>
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://fakeimg.pl/350x200/ddd/FFF/?text=Hola">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Video</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-body">
+					<iframe src="//player.vimeo.com/video/112719694?title=0&byline=0&portrait=0" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--quote">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Quote</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					<blockquote>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum inventore quas deserunt, reprehenderit est doloribus praesentium minima sequi repudiandae libero!</p>
+					</blockquote>
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://fakeimg.pl/350x100/ddd/FFF/?text=Chao">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://placekitten.com/350/208">
+				</div>
+			</div>
+
+		</div>
+	</div>
+  
+  <div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://placekitten.com/350/208">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<!-- if you want to make timeline with css and html only, just search for it -->
+<!-- for example, in my case my keywords for time line is "time line html css in static website"-->
+<!-- So, I could find out my exampe of time line. 
+
+Below is my result of my looking for time line of my github page
+
+1. http://bashooka.com/coding/css-timeline-tutorials-examples/
+
+2. https://www.noupe.com/inspiration/showcases/15-code-snippets-for-timelines-91734.html
+
+So finally what I chose is one of the above sites. I think tha tis so simple and easy
+
+If you want to fix it a little about time line, first you have to use this site :
+
+
+http://codepen.io/raulghm/pen/pvaeOa
+
+-->
