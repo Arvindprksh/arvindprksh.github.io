@@ -89,7 +89,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             {% if year != nyear %}
           <div id="{{ post.date | date: '%Y' }}" style="padding-top:50px"></div>
           {% endif %} 
-          <div id="{{ post.date | date:  '%B %Y'  }}" style="padding-top:70px"></div>
+          <div id="{{ post.date | date:  '%B %Y'  }}" style="padding-top:57px"></div>
          {{ post.date | date: '%B %Y' }}
        </h2>{{ openList }}
       {% endif %}
