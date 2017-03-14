@@ -29,7 +29,7 @@ navbar-links:
   About Me: "aboutme"
   Resume: "resume"
   Search: "search"
-  tag: "testifle"
+  tag: "testifle" # just this is tag test
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
