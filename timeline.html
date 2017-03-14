@@ -1,58 +1,242 @@
 ---
-layout : page
-css: "/css/timelineByhyun02.css"
+common-ext-css : ""
+common-css : ""
+ext-css: ""
+css : "/css/timelineByhyun02.css"
 ---
 
 
-<b id="click" style='display:block;background:rgb(80,80,80);text-align:center;color:white;padding: 1em 0 1em;cursor:pointer;'>DISCLAIMER (click to view)</b><b id='caring' style='display:none;padding: 10px;border-top: 15px solid #f1bc1a'><u>This piece of CSS magic is free for everyone.</u><br />Use it, steal it, claim it your own. I don't care. <span style="font-size:24px">Actually,</span> I care if it was helpful and you managed to create something new and amazing. If you like this experiment, I would love to hear from you via <a href="https://twitter.com/intent/user?screen_name=christian_fei">Twitter</a> to see how you implemented this in your project :) <br /><br /> <br /> <br /> Credit where credit is due: <br /> I wanted to create my own timeline after seeing Paul Stamatious' one over at <a href="http://paulstamatiou.com/posts"> his website</a></b>
+<div class="title">
+  <h2>Sortable Vertical Timeline</h2>
+  <h4><b>How use</b>: Drag and drop any object in timeline and feel the experience :)</h4>
+</div>
 
-<!-- THE CODE | THE CODE | THE CODE | THE CODE | THE CODE -->
+<div class="Timeline" id="Timeline">
+	<div class="Timeline-line">
+		<div class="Timeline-line-menu"></div>
+	</div>
+	
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
 
-<!-- Each event is wrapper inside an anchor with the class 'event' -->
-  <!-- The i-tag inside the anchor creates the little arrow beside an event (see v1.0) -->
-  <!-- FORK AWAY AND PLEASE LET ME KNOW IF YOU HAVE SUGGESTIONS AND FEEDBACK :) -->
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
 
-<a class='ad' href="http://christian-fei.com/tutorials/simple-vertical-timeline-with-css/">Check out this article for more information (open it in a new tab)</a>
-<br />
-<br />
-<span class="padd center">Do I need to tell you to resize your browser window?<br/>*cough* responsive *cough*</span>
-<h1 class='padd'>v2.0</h1>
-<ul class='timeline'>
-  <li class="year first">2013</li>
-  <li class='event offset-first'>
-    Something amazing happened today, but it's a secret
-  </li>
-  <li class='event' href="#">
-    Timeline.css is <b>dynamic</b>, <b>responsive</b> and optimized to <b>demonstrate events</b> in your life in a <b>simple and clear</b> way
-  </li>
-  <li class="event">
-    <a href="http://christian-fei.com" title="christian fei">
-    made with &lt;3 by <img src="https://s3-eu-west-1.amazonaws.com/cf.img/var/face.svg" alt="christian fei"/>
-    </a>
-  </li>
-  <li class="event">
-  <a href="http://codepen.io/christian-fei/pen/BJily">
-    Open source project on codepen.io
-    <img src="http://davidwalsh.name/demo/codepenLogo.png" alt=""/>
-  </a>
-  </li>
-  <li class='event'>
-    Look, a sleepy kitten: <br/>
-    <img src="http://ih2.redbubble.net/image.10311838.0354/flat,550x550,075,f.jpg"/>
-    <a href='http://ih2.redbubble.net/image.10311838.0354/flat,550x550,075,f.jpg'>&copy;</a>
-  </li>
-  <li class="year">2012</li>
-	<li class="event offset-first">
-		<p>To infinity  ... </p>
-    <img class='centered' src="http://upload.wikimedia.org/wikipedia/en/7/75/Buzz-lightyear-toy-story-3-wallpaper.jpg" alt=""/>
-		<a href='http://upload.wikimedia.org/wikipedia/en/7/75/Buzz-lightyear-toy-story-3-wallpaper.jpg'>&copy;</a>
-	</li>
-	<li class="event">
-		<p>... and beyond!</p>
-    <img class='centered' src="http://brandstyle.com.br/wp-content/uploads/2012/05/Woody-7.jpg" alt=""/>
-		<a href='http://brandstyle.com.br/wp-content/uploads/2012/05/Woody-7.jpg'>&copy;</a>
-	</li>
-</ul>
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--quote">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Quote</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					<blockquote>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					</blockquote>
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://fakeimg.pl/350x200/ddd/FFF/?text=Hola">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Video</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-body">
+					<iframe src="//player.vimeo.com/video/112719694?title=0&byline=0&portrait=0" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--quote">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Quote</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					<blockquote>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum inventore quas deserunt, reprehenderit est doloribus praesentium minima sequi repudiandae libero!</p>
+					</blockquote>
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Item</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://fakeimg.pl/350x100/ddd/FFF/?text=Chao">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://placekitten.com/350/208">
+				</div>
+			</div>
+
+		</div>
+	</div>
+  
+  <div class="Timeline-item Timeline-item--image">
+		<div class="Timeline-item-inner">
+			<div class="Timeline-item-index"></div>
+			<div class="Timeline-item-top">
+				<div class="Timeline-item-top-type">
+					<i></i> <span>Image</span>				
+				</div>
+
+			</div>
+			<div class="Timeline-item-content">
+				<div class="Timeline-item-content-title">
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</div>
+				<div class="Timeline-item-content-body">
+					<img src="http://placekitten.com/350/208">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
 
 <!-- if you want to make timeline with css and html only, just search for it -->
 <!-- for example, in my case my keywords for time line is "time line html css in static website"-->
