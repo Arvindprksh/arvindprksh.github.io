@@ -88,9 +88,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
         <h2 class="">
             {% if year != nyear %}
           <div id="{{ post.date | date: '%Y' }}" style="padding-top:50px"></div>
-          34  {% endif %} 
+          {% endif %} 
           <div id="{{ post.date | date:  '%B %Y'  }}" style="padding-top:50px"></div>
-          month- {{ post.date | date: '%B %Y' }}
+         {{ post.date | date: '%B %Y' }}
        </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
