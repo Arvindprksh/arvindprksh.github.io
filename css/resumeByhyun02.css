@@ -1,0 +1,113 @@
+body {
+  background-color: white;
+  font-family: 'Gudea', sans-serif;
+  margin: 5% 15% 5% 15%;
+}
+
+.name {
+  color: #DF723E;
+  display: inline-block;
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact-information, .links-container {
+  color: #808284;
+  display: inline-block;
+  font-size: .8em;
+  letter-spacing: 1px;
+  line-height: .9em;
+  text-transform: uppercase;
+}
+
+.contact-deets {
+  color: #58585B;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 1.1em;
+  text-decoration: none;
+}
+
+.links {
+  color: #58585B;
+  display: inline-block;
+  text-decoration: none;
+}
+  .links:hover {
+    color: #DF723E;
+  }
+
+.links img {
+  margin-bottom: -.2em;
+  padding-right: .3em;
+  padding-left: .3em;
+}
+
+.primary-titles {
+  color: #DF723E;
+  display: inline-block;
+  font-size: .9em;
+  letter-spacing: 1px;
+  margin-bottom: -1%;
+  text-decoration: none;
+}
+
+.location {
+  color: #58585B;
+  display: inline-block;
+  font-size: .8em;
+  letter-spacing: 2px;
+  margin-bottom: -1%;
+  margin-top: 1.1em;
+  padding-left: .4em;
+  text-transform: uppercase;
+}
+
+.category-headers {
+  color: #DF723E;
+  font-size: .9em;
+  letter-spacing: 2px;
+  margin-top: 3em;
+  margin-bottom: .1em;
+  text-transform: uppercase;
+}
+
+.category-details {
+  color: #808284;
+  font-size: .9em;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-top: .5em;
+  /*margin-top: -1%;*/
+}
+
+.category-description-main {
+  color: #808284;
+  font-size: .9em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: 1em;
+}
+
+.category-description {
+  color: #808284;
+  font-size: .9em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: .01em;
+}
+
+hr {
+  border: 1px dotted #A7A9AB;
+  border-style: none none dotted; 
+  margin: 0 10% 0 0;
+}
+
+/* this template is from https://github.com/hyunyoung2/resume/edit/gh-pages/main.css */
