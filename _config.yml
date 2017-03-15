@@ -26,11 +26,11 @@ navbar-links:
   Home: ""
   Study: "alistofcategories"
   Projects: "projects"
-  About Me: "aboutme"
-  Resume: "resume"
   Search: "search"
-  timeline: "timeline"
-  tag: "testifle" # just this is tag test
+  About Me: 
+    - Time Line: "timeline"
+    - About me: "aboutme"
+    - Resume: "resume"
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
