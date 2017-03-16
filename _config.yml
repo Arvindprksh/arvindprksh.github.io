@@ -28,6 +28,7 @@ navbar-links:
   Projects: "projects"
   Search: "search"
   About Me: 
+    - Test Time Line : "TimeLine"
     - Time Line: "timeline"
     - About me: "aboutme"
     - Resume: "resume"
