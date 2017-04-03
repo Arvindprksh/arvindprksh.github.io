@@ -4,3 +4,23 @@ I made this tutorial of python based on ["Jump to Python", open-book](https://wi
 
 Just this is for programmers who have a variety of experience of differenct language but not python. 
 
+But If you have a knowledge about different programming languages. You could understand this post of Python tutorial. 
+
+Note that I wrote this article based on what I understand about python, comparing it with what I have on C++/C language. 
+
+---
+
+You have to think on Python, everything is object. I think that is basic concept on python. 
+
+But Frankly speaking, you don't need to consider this concept if you want to be beginner, but, If you want to be intermediate and more. 
+
+I recommend you python consists of object. whatever type!
+
+**Python consists of Object, So If you have time, use "getrefcount()", function of python.** 
+
+---
+
+Let's start basic type of python. 
+
+
+
