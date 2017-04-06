@@ -2,25 +2,64 @@
 
 I made this tutorial of python based on ["Jump to Python", open-book](https://wikidocs.net/book/1).
 
-Just this is for programmers who have a variety of experience of differenct language but not python. 
+Just this is for programmers who have a variety of experience of differenct language. 
 
-But If you have a knowledge about different programming languages. You could understand this post of Python tutorial. 
+But If you have a knowledge a little about different programming languages. You could understand this post of Python tutorial. 
 
-Note that I wrote this article based on what I understand about python, comparing it with what I have on C++/C language. 
-
----
-
-You have to think on Python, everything is object. I think that is basic concept on python. 
-
-But Frankly speaking, you don't need to consider this concept if you want to be beginner, but, If you want to be intermediate and more. 
-
-I recommend you python consists of object. whatever type!
-
-**Python consists of Object, So If you have time, use "getrefcount()", function of python.** 
+Note that I wrote this article based on what I understand about python, comparing it with what I understand on C++/C language. 
 
 ---
 
-Let's start basic type of python. 
+**Before you read this article, You have to keep in mind about several things.**
+
+**In Python, everything is object, instance of class. especially above Python 3.x.**
+
+In other words, even integer is object above Python 3.x.
+
+---
+
+**BUT,** If you are beginner of Python, You don't need to consider this concept. however, If you want to be intermediat.
+
+Keep in mind, "Everything of Python is Object, instance of Class"
+
+Indirectly, You can check it up about what I wrote above. 
+
+**use getrefcount() function in sys module**
+
+**If you can know whether I write what I understand on Python or not, Please let me know what's wrong as tutorial of Python.**
+
+And then, I will fix it as you know me after I check it up. 
+
+If you know me, I really appreciate it!!
+
+---
+
+# Tutorial Of python With [Jump to python,Open-book](https://wikidocs.net/book/1)
+
+Basically, Python is similiar to another language. So let's do that, 
+
+what kind of data type do python have?
+
+## Basic data type
 
 
 
+
+
+
+
+# Reference 
+
+  1. [Jump to the Python - Open book](https://wikidocs.net/book/1)
+  
+  2. [learning Python from example](http://pythonstudy.xyz/)
+   
+       - This site is actually I'm not refer to it When I wrote this article, tutorial of Jump to python. just later on, I think this will be useful site. So in order to remember this site. 
+       
+       - I wrote here as Reference. 
+       
+  - Also, the two sites above is in Korean, So If you want to know python, I won't recommend this site.
+  
+  - Strongly to you, I recommend this site, [tutorial of Python in Officail python site](https://docs.python.org/3/tutorial/),
+  
+  - In spite of Korean languages. If you want to read the site, Jump to Python. Just recommend you use the google translator.
