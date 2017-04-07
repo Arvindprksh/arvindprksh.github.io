@@ -36,15 +36,61 @@ If you know me, I really appreciate it!!
 
 # Tutorial Of python With [Jump to python,Open-book](https://wikidocs.net/book/1)
 
-Basically, Python is similiar to another language. So let's do that, 
+Python has effective approach to object-oriented Programming. 
+
+And the features of the Python are dynamically typed language and multi-paradigm programming language. 
+
+So you can code source like many ways for Object-oriented Programming, strucural programming, and functional Programming.  
+
+**remember ! Basicaly in jump to python, the version of Python is above 3.0. basically they use 3.0 version python.**
 
 what kind of data type do python have?
 
+**But this tutorial will be made on Python 2.7.5 that I have On my CentOS.**
+
 ## Basic data type
 
+##### Number : 
+
+##### String :
+
+##### Boolean :
 
 
+## High-level data type
 
+##### List
+
+##### Tuple
+
+##### Dictionary
+
+##### Set
+
+## Statement
+
+##### If
+
+##### While
+
+##### for
+
+## Function
+
+
+## class
+
+
+## Module
+
+
+## Package
+
+
+## Exception
+
+
+## Inner Function & Outer Function
 
 
 
