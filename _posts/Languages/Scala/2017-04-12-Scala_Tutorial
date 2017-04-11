@@ -25,3 +25,18 @@ I recommend you two ways to use scala interpreter.
   after that in bin directory, "./scala"
   
   at that time, you can use scala interperter. 
+
+
+
+
+
+
+
+
+
+# Reference 
+
+ 1. [Scala official site's tutorial](http://docs.scala-lang.org/tutorials/tour/tour-of-scala.html)
+ 
+ 
+ 2. [Scala School](https://twitter.github.io/scala_school/index.html)
