@@ -1,0 +1,27 @@
+
+
+First of all, If you use scala interpreter without the complicated installation process. 
+
+I recommend you two ways to use scala interpreter. 
+
+
+# Get Scala
+
+1. On-line
+
+  Go to the [https://scalafiddle.io/](https://scalafiddle.io/)
+  
+  test with println("Hellow world !") in the left side. 
+  
+  press "Run" button
+
+
+2. Off-line on you local machine
+
+  go to the [http://www.scala-lang.org/download/](http://www.scala-lang.org/download/)
+  
+  and then you need to download binary file for scala
+  
+  after that in bin directory, "./scala"
+  
+  at that time, you can use scala interperter. 
