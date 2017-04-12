@@ -1,4 +1,13 @@
-
+---
+layout: post
+title: Tutorial of python with jump to python,open-book.
+subtitle: I will let you know basics of python syntax.
+category: Python
+tags: [language, python]
+permalink: /2017/03/30/Jump_to_python_tutorial/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+---
 
 I made this tutorial of python based on ["Jump to Python", open-book](https://wikidocs.net/book/1).
 
@@ -52,19 +61,234 @@ what kind of data type do python have?
 
 ##### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
 
-Let's see the sampe code 
+Let's see the sampe code, be careful, my python is 2.7
+
+```python
+>>> a = 123     # integer
+>>> b = -178    # negative integer 
+>>> c = 0 
+>>> print a, b, c
+123 -178 0
+>>> print type(a), type(b), (c)   # in python 3.0 type -> class
+<type 'int'> <type 'int'> 0
+>>> a = 1.2     # float-point
+>>> b = -3.45
+>>> c = 4.24E10
+>>> d = 4.24e-10
+>>> print a, b, c, d
+1.2 -3.45 42400000000.0 4.24e-10
+>>> print type(a), type(b), type(c), tyep(d)
+<type 'float'> <type 'float'> <type 'float'>
+>>> print type(a), type(b), type(c), type(d)
+<type 'float'> <type 'float'> <type 'float'> <type 'float'>
+>>> a = 0o177    # octal numeric
+>>> a
+127
+>>> b = 0x8ff    # hexa numeric
+>>> b
+2303
+>>> a = 3       # calculation with '+, -, *, /, // %'
+>>> b = 4
+>>> a + b
+7
+>>> a - c
+-42399999997.0
+>>> a - b
+-1
+>>> a * b
+12
+>>> a / b     # in python 3.0, 0 -> 0.75 
+0
+>>> a // b    # '//' operator is similar to floor function of math
+0
+>>> a ** b
+81
+>>> a % b
+3
+```
+
+##### String : this is just string when you use string in Java and C++ language. here, when you create string type in python. whatever mark between 'string' and "string"you use doesn't matter. 
+
+```python
+>>> str = "Life is too short, you need to learn python"
+>>> print str
+Life is too short, you need to learn python
+>>> print type(str)                                   # in python 3.0, type -> class
+<type 'str'>
+>>> str = 'Life is too short, you need to learn python'
+>>> print str
+Life is too short, you need to learn python
+>>> print type(str)
+<type 'str'>
+>>> str = """                             # for multilines with '''string''', 'string \n string', another way is with """string""" and "string \n string"
+... Life is too short, 
+... you need to learn Python
+... """
+>>> print str
+
+Life is too short, 
+you need to learn Python
+
+>>> print type(str)
+<type 'str'>
+>>> say = '"Python is very easy to learn" I said'           # how to use ' and " together
+>>> print say
+"Python is very easy to learn" I said
+>>> print type(say)
+<type 'str'>
+>>> say = "'Python is very easy to learn' I said"
+>>> print say
+'Python is very easy to learn' I said
+>>> print type(say)
+<type 'str'>
+>>> say = "\"Python is very easy to learn\" I said"
+>>> print say
+"Python is very easy to learn" I said
+>>> print type(say)
+<type 'str'>
 
 
+>>> head = "python "                      # extension of string
+>>> tail = "looks like fun"
+>>> head + tail
+'python looks like fun'
+>>> head * 3
+'python python python '
+>>> str = "Life is too short, you need to learn python"           # indexing and slicing of string
+>>> str[3]
+'e'
+>>> str[:3]
+'Lif'
+>>> str[3:]
+'e is too short, you need to learn python'
+>>> str[-1]
+'n'
+>>> str[8:-1]
+'too short, you need to learn pytho'
+>>> str1 = "20170405sunny"
+>>> year = str1[0:4]
+>>> date = str1[4:8]
+>>> weather = str1[8:]
+>>> year
+'2017'
+>>> date
+'0405'
+>>> weather
+'sunny'
+>>> test =  "pithon"                    # string is immutable, So you have to create new string when you fix string, wrong letter.
+>>> test[1] = y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> test = test[0] + "y" + test[2:]
+>>> test
+'python'
 
+>>> number = 10                         # string formatting 
+>>> day = "three"
+>>> "After I ate %d apples, I was sick for %s days" % (number, day)
+'After I ate 10 apples, I was sick for three days'
 
-##### String :
+>>> "Error is %d%%" % 10                # %%
+'Error is 10%'
+>>> "%10s" % "hi"
+'        hi'
+>>> "%-10s" % "hi"
+'hi        '
+>>> "%-10s Let's study python" % "hi"
+"hi         Let's study python"
+>>> "%0.4f" % 3.124567
+'3.1246'
+>>> "%10.4f" % 3.124567
+'    3.1246'
+>>> "%-10.4f" % 3.124567
+'3.1246    '
 
-##### Boolean :
+>>> str = "python is the best language in the world to learn fast"   # string object method
+>>> str.count('i')
+2
+>>> str.find('i')
+7
+>>> str.find('0')
+-1
+>>> str.index('0')                                  # error happens when you search for something out of the original string. taht is how different between find() and index()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> str.index('i')
+7
+>>> str1 = "."
+>>> str1.join("ASAP")
+'A.S.A.P'
+>>> str.upper()                                               # upper case and lower case
+'PYTHON IS THE BEST LANGUAGE IN THE WORLD TO LEARN FAST'
+>>> str.lower()
+'python is the best language in the world to learn fast'
+>>> str2 = " test "
+>>> str2.lstrip                                             # strip function, how to eliminate the blank of the string
+<built-in method lstrip of str object at 0x141bf00>
+>>> str2.lstrip()
+'test '
+>>> str2.rstrip()
+' test'
+>>> str2.strip()
+'test'
+>>> str2.replace("test", "python")                      # How to replace the old one with the new one
+' python '
+>>> str.split()                                         # how to split string into list
+['python', 'is', 'the', 'best', 'language', 'in', 'the', 'world', 'to', 'learn', 'fast']
+>>> str3 = "A.S.A.P"
+>>> str3.split(".")
+['A', 'S', 'A', 'P']
 
+>>> "After I ate {0} apples. I was sick for {days} days".format(10,days=7)        # in here, further advance of formatting with format function 
+'After I ate 10 apples. I was sick for 7 days'
+>>> "{0:>10}".format("hi")
+'        hi'
+>>> "{0:<10}".format("hi")
+'hi        '
+>>> "{0:^10}".format("hi")
+'    hi    '
+>>> "{0:=^10}".format("hi")
+'====hi===='
+>>> "{0:=>10}".format("hi")
+'========hi'
+>>> "{0:=<10}".format("hi")
+'hi========'
+>>> y=3.1245497
+>>> "{0:0.4f}".format(y)
+'3.1245'
+>>> "{0:10.4f}".format(y)
+'    3.1245'
+>>> "{{ and }}".format()
+'{ and }'
+```
+
+##### Boolean : python has also boolean type .
+
+| value  | true and false |
+|========|================|
+|"string"| True           |
+|""      | False          |
+|[1,2,3] | True           |
+|[]      | False          |
+|(1,2)   | True           |
+|()      | False          |
+|{"2":2} | True           |
+|{}      | False          |
+|1       | True           |
+|0       | False          |
+|None    | False          |
 
 ## High-level data type
 
-##### List
+**te type below is resizable.**
+
+##### List 
+
+```python
+```
+
 
 ##### Tuple
 
