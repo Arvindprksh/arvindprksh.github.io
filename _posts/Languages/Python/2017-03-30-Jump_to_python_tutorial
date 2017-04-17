@@ -282,17 +282,348 @@ ValueError: substring not found
 
 ## High-level data type
 
-**te type below is resizable.**
+**The type below is resizable. this feature is very adorable, If you use C language once, you will know what I mean.**
 
-##### List 
+**the below is handled in python 3.6**
+
+Especially, The difference between python 2.7 and 3.* is print whithin me making this tutorial. 
 
 ```python
+python 2.7 - print "stirng"
+python 3.6 - print ("String")
 ```
 
+one more thing, it's type function 
+
+if you enter print (type(a-data type)), 
+
+the result is **class 'data type'** like this
+
+```python 
+>>> print (type(a))
+<class 'list'>
+>>> print (type(3))
+<class 'int'>
+```
+
+##### List  
+
+**The features of List** : I think you shoud think of the list as the list you learned in Data structure class. this data type is that you can change factor in the list, it is ordered. The very important thing is dynamically resized and type.
+
+```python
+>>> "let's do python tutorial"
+"let's do python tutorial"
+>>> a = []
+>>> b = [1,2,3]
+>>> c = ['Life', 'is', 'too', 'fun']
+>>> d = [1, 2, 'Life', 'fun', 'is']
+>>> e = [1, 2, ['Life', 'is']]
+>>> e = [[1, 2], ['Life', 'is']]
+>>> e = [1, 2, ['Life', 'is']]
+>>> f = [[1, 2], ['Life', 'is']]               # idexing of list
+>>> e[0]
+1
+>>> e[1]
+2
+>>> e[2]
+['Life', 'is']
+>>> e[2][1]
+'is'
+>>> f[0][1]
+2
+>>> f[1]
+['Life', 'is']
+>>> f[-1][1]
+'is'
+>>> b + c
+[1, 2, 3, 'Life', 'is', 'too', 'fun']
+>>> a + b + c + d + e + f
+[1, 2, 3, 'Life', 'is', 'too', 'fun', 1, 2, 'Life', 'fun', 'is', 1, 2, ['Life', 'is'], [1, 2], ['Life', 'is']]
+>>> a = [1, 2, ['a', 'b', ['Life', 'is']]]
+>>> a[2][2][0]
+'Life'
+>>> a = [1,2,3,4,5]      # the span to slice list - is the same from string. 
+>>> b = "12345"
+>>> a[:3]
+[1, 2, 3]
+>>> b[:3]
+'123'
+>>> a = [1, 2, ['a', 'b', ['Life', 'is']]]
+>>> a[2][:2]
+['a', 'b']
+```
+
+**Operator and  Function of List**
+
+```python
+>>> a = [1, 2, 3]
+>>> b = [4, 5, 6]
+>>> a + b
+[1, 2, 3, 4, 5, 6]
+>>> a * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> a ** 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'int'
+>>> a + "hi"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "str") to list
+>>> a  =  [1, 2, 3]
+>>> a[2] = 4
+>>> a
+[1, 2, 4]
+>>> a[1:2]
+[2]
+>>> a[1:2] = ['a', 'b', 'c']
+>>> a
+[1, 'a', 'b', 'c', 4]
+>>> b = [1, 2, 3]
+>>> b[2] = ['a', 'b', 'c']
+>>> b
+[1, 2, ['a', 'b', 'c']]
+>>> a[1:3] = []        ## how to erase list with none object !
+>>> a
+[1, 'c', 4]
+>>> del a[1]           ## python del function, this fucntio usage is 'del object'!!
+>>> a
+[1, 4]
+>>> del a[0:]
+>>> a
+[]
+>>> a = [1, 4, 2]
+>>> a.sort()
+>>> a
+[1, 2, 4]
+>>> a.append(2)         ## just literally, append a factor in last location. BUT, insert is you can make where you want to place factor in the list
+>>> a
+[1, 2, 4, 2]
+>>> a = ['c', 'a', 'e']
+>>> a.sort()            ## sorting fucntion alphabetically, numerically like increment way BUT, 
+>>> a = [1, 4, 2, 'a', 'o', 'e']
+>>> a.sort()            ## keep in mind, you need to compare the same type.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> a
+['a', 'c', 'e']
+>>> a.reverse()         ## In case you want to reverse the list 
+>>> a
+['e', 'c', 'a']
+>>> a.index('c')         ## When you want to look up the index number of factor that you'r looking for  
+1
+>>> a.index(0)           ## when you search for no factor in list  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 0 is not in list
+>>> a.insert(1, 3)        ## When you want to insert the particular factor into list, BUT, you will have to declare loction to inser. 
+>>> a
+['e', 3, 'c', 'a']
+>>> a.remove(3)           ## if you want to remove the particular factor in list
+>>> a
+['e', 'c', 'a']
+>>> a.remove(3)           ## if you remove fator is no there
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> a = [1, 2, 3]
+>>> a.pop()               ## To pop the last factor of list like Stack function of pop ()
+3
+>>> a
+[1, 2]
+>>> a.extend([4,5,6,7])   ## To extend a list with [4, 5, 6, 7] it's like **a += [4, 5, 6, 7]** and **a = a + [4, 5, 6, 7] **
+>>> a
+[1, 2, 4, 5, 6, 7]
+>>> a.pop(2)              ## To pop the particular location's factor of list like Stack function of pop ()
+4
+>>> a
+[1, 2, 5, 6, 7]
+>>> a.append(2)
+>>> a
+[1, 2, 5, 6, 7, 2]        ## how many factors of the particular factor like '2' is in list ? 
+>>> a.count(2)
+2
+```
 
 ##### Tuple
 
+**The feature of Tuple** : this is not greatly different from list's features. however, you can plus the new factor, you cannot change and remove the factor's value in Tuple  
+
+```python
+>>> t1 = ()
+>>> t2 = (1,)                ## you need char '(' and ')' when you make Tuple. 
+>>> t2
+(1,)
+>>> print (type(t2))
+<class 'tuple'>
+>>> t2 = (1)
+>>> t2
+1
+>>> print (type(t2))         ## i.e, If you tuple with one factor, you have to use '(' and ')'
+<class 'int'>
+>>> t2 = (1,)               
+>>> t2 = (1, 2, 3)
+>>> t3 = 1, 2, 3
+>>> t4 = ('a', 'b', ('ab', 'cd'))
+>>> t5 = (1, (2,3), ('a', 'b'), 'c')
+>>> t5
+(1, (2, 3), ('a', 'b'), 'c')
+>>> t5 = (1, (2,3), ('a', 'b'), 'c',1)
+>>> t5
+(1, (2, 3), ('a', 'b'), 'c', 1)
+>>> t2
+(1, 2, 3)
+>>> t2[1]
+2
+>>> del t2[1]                ## when you remove factor from  tuple, error happens
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+>>> t2[1]  = 'a'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> t2[1:2]  = 'a'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>>
+```
+
+**Opaerator and Function of Tuple** 
+
+you know I can't reomve and change any value in tuple. So Opearation and function that we'll see below is simple.
+
+So, Apart from these, **I think you need to use tuple when you need static constant data.**
+
+to sum up, this type is immutable. 
+
+```python
+>>> t1 = (1, 2, 'a', 'b')
+>>> t1[0]
+1
+>>> t1[0:]
+(1, 2, 'a', 'b')
+>>> t1[0:3]
+(1, 2, 'a')
+>>> t2 = (3, 4)
+>>> t1 + t2
+(1, 2, 'a', 'b', 3, 4)
+>>> t2 * 3
+(3, 4, 3, 4, 3, 4)
+>>> t1 * 2
+(1, 2, 'a', 'b', 1, 2, 'a', 'b')
+```
+
 ##### Dictionary
+
+** The feature of Dictionary **: this type is similar to map data type on other programming lauguages, more Basically, this is associative array with hash.
+
+Basic form : {key1:value1, key2:value2 ...}
+
+normally, you need to use a immutable varialbe as key, and value doesn't matter whatever you use.
+
+key is not necessarily immutable. you can use key with integer. 
+
+```python
+>>> dic = {'name': 'hyunyoung2', 'phone':'00011112222', 'birth':'1111' }   ## how to make dictionary
+>>> dic
+{'name': 'hyunyoung2', 'phone': '00011112222', 'birth': '1111'}
+>>> print (type(dic))
+<class 'dict'>
+>>> a = {1: 'hello world'}
+>>> a[1]
+'hello world'
+>>> a = {'a': [1,2,3]}
+>>> a['a']
+[1, 2, 3]
+```
+
+**Operator and Function of dicationary**
+
+```python
+>>> a = {1: 'a'}            ## from now on, How to insert factor into Dictionary
+>>> a[2] = 'b'
+>>> a
+{1: 'a', 2: 'b'}
+>>> a = {1: 'a'}
+>>> a
+{1: 'a'}
+>>> a[2] = 'b'
+>>> a
+{1: 'a', 2: 'b'}
+>>> a['name'] = 3
+>>> a[(1,2)] = [1,2,3]
+>>> a[[1,2]] = [1,2,3]      ## you can use tuple, integer, string as look-up, but cannot use set, list Because unhashed type. 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> a[[1,2]] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> a[{1,2}] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'set'
+>>> del a[1]
+>>> a
+{2: 'b', 'name': 3, (1, 2): [1, 2, 3]}
+>>> del a['name']
+>>> a
+{2: 'b', (1, 2): [1, 2, 3]}
+```
+
+**Operator and Fucntion of Dictionary**
+
+
+```python 
+>>> a = {"name": "hyunyoung2", "Object":"To Study python", "Chapter":"Dictionary"}
+>>> a
+{'name': 'hyunyoung2', 'Object': 'To Study python', 'Chapter': 'Dictionary'}
+>>> a.keys()                                    ## only to extract key value
+dict_keys(['name', 'Object', 'Chapter'])
+>>> for i in a.keys() :
+...     print  (i)
+...
+name
+Object
+Chapter
+>>> for i in a.values() :                       ## onle to extract value
+...     print (i)
+...
+hyunyoung2
+To Study python
+Dictionary
+>>> list(a.keys())
+['name', 'Object', 'Chapter']
+>>> list(a.values())
+['hyunyoung2', 'To Study python', 'Dictionary']
+>>> a.items()                                  ## a pair of key and value, it's similar to enumerate fucntion of list 
+dict_items([('name', 'hyunyoung2'), ('Object', 'To Study python'), ('Chapter', 'Dictionary')])
+>>> list(a.items())             
+[('name', 'hyunyoung2'), ('Object', 'To Study python'), ('Chapter', 'Dictionary')]
+>>> a.clear()
+>>> a
+{}
+>>> a = {"name": "hyunyoung2", "Object":"To Study python", "Chapter":"Dictionary"}
+>>> a.get('name')                               ## not indexing, just get function is used. 
+'hyunyoung2'
+>>> a.get('Object')
+'To Study python'
+>>> a.get('test')
+>>> a.get('test', 'by default')
+'by default'
+>>> 'name' in a                                 ## "in" operator, a has 'name' in a Dictionary, this returns True(boolean value)
+True
+>>> 'test' in a                                 ## the opposite of the above situation
+False
+```
+
+
+
+
 
 ##### Set
 
