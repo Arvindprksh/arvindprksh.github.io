@@ -762,14 +762,117 @@ In here, You see the statements of Python. But I'm going to deal with the total 
 
 Just I'm going to deal with representative statement that you normally use when you make programming.  
 
+**be carefule, when you use python, indentation is very important, the role of this indent is bracket({}) of another language, in particular c Languagae.**
+
+i.e python recognize the local area of the python's area. 
+
 ##### If
-
-
-
-
+ 
+ this is the exact same from another language's statement in terms of functionality.
+ 
+ Let's see you simple code. 
+  
+```python 
+>>> pocket = ['paper', 'cell phone', 'money']
+>>> card  = 1
+>>> if '100 dollar' in pocket :                       ## If statement of python cosists of if ~ elif ~ else. 
+...     print ("I'm rich")                            ## you need to be careful, don't forget ":(colone)", 
+... elif card :
+...     print ("I have a money a little bit")
+... else :
+...     print ("I have others, paper and cell phone")
+...
+I have a money a little bit                           ## what is the pass ? this just literally means the meaning of pass 
+>>> if '100 dollar' in pocket :                       ## this is useful in If or class 
+...     print ("I'm rich")
+... elif card:
+...     pass
+... else :
+...     print ("I have others, paper and cell phone")
+...
+>>> if '100 dollar' in pocket : pass                  ## in here, this show you how to represent statement in a line 
+... else : print ("I have a others, paper and cell phone")    ## when if has one statement 
+...
+I have a others, paper and cell phone
+ ```
+ 
 ##### While
 
+This while statement is also the exact same from another language's while in terms of functionality. 
+
+Let's see simple code of  while statement. 
+
+```python 
+>>> coffee = 0                                        ##  you can see the basic operation of while statement of python
+>>> while coffee < 10 :
+...     coffee += 1
+...     print ("today you have drunk %d cups of coffee" % coffee)
+...     if coffee == 10 :
+...             print ("we don't have coffee at all")
+...
+today you have drunk 1 cups of coffee
+today you have drunk 2 cups of coffee
+today you have drunk 3 cups of coffee
+today you have drunk 4 cups of coffee
+today you have drunk 5 cups of coffee
+today you have drunk 6 cups of coffee
+today you have drunk 7 cups of coffee
+today you have drunk 8 cups of coffee
+today you have drunk 9 cups of coffee
+today you have drunk 10 cups of coffee
+we don't have coffee at all
+
+>>> coffee = 0                                        ## one is differenct from the above, just In here, I used "break" keyword
+>>> while coffee < 10 :
+...     coffee = coffee + 1
+...     print ("Today, you have drunk % cups of coffee" % coffee)
+...     if coffee == 2 :
+...             print ("Sorry, we made a mistake of counting coffee!")
+...             print ("So you cannot sell it")
+...             break
+...     if coffee == 10 :
+...             print ("our coffee sold out")
+...
+Today, you have drunk 1 cups of coffee
+Today, you have drunk 2 cups of coffee
+Sorry, we made a mistake of counting coffee!
+So you cannot sell it
+
+>>> coffee = 0                                        ## this's also different, just one, in here I used "continue" keyword
+>>> while coffee < 10 :
+...     coffee = coffee + 1
+...     print ("Today, you have drunk %d cups of coffee" % coffee)
+...     if coffee == 2 :
+...             continue
+...             print ("Sorry, you made a mistake of counting coffee")
+...             print ("So, you cannot sell it")
+...     if coffee == 10 :
+...             print ("our coffee sold out")
+...
+Today, you have drunk 1 cups of coffee
+Today, you have drunk 2 cups of coffee
+Today, you have drunk 3 cups of coffee
+Today, you have drunk 4 cups of coffee
+Today, you have drunk 5 cups of coffee
+Today, you have drunk 6 cups of coffee
+Today, you have drunk 7 cups of coffee
+Today, you have drunk 8 cups of coffee
+Today, you have drunk 9 cups of coffee
+Today, you have drunk 10 cups of coffee
+our coffee sold out
+```
+
+If you do programming once, you can understand the above situation.  
+
 ##### for
+
+this's also the exact same from another language's for statement in terms of functionality. 
+
+needless to say, Let's see example code. 
+
+```python 
+
+```
 
 ## Function
 
