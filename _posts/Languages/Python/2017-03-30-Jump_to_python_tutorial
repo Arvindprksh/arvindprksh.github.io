@@ -766,6 +766,8 @@ Just I'm going to deal with representative statement that you normally use when 
 
 i.e python recognize the local area of the python's area. 
 
+(be careful, now I'm typing with python 3.6 in here)
+
 ##### If
  
  this is the exact same from another language's statement in terms of functionality.
@@ -871,27 +873,168 @@ this's also the exact same from another language's for statement in terms of fun
 needless to say, Let's see example code. 
 
 ```python 
+>>> score = [90, 25, 67, 45, 80]
+>>> number = 0
+>>> for test in score :
+...     number += 1
+...     if test > 60 :
+...             print ("%d-th student pass, becuase the score is %d" % (number, test))
+...     else :
+...             print ("%d-th student fail, becuase the score is %d" % (number, test))
+...
+2-th student pass, becuase the score is 90
+3-th student fail, becuase the score is 25
+4-th student pass, becuase the score is 67
+5-th student fail, becuase the score is 45
+6-th student pass, becuase the score is 80
+
+>>> score = [90, 25, 67, 45, 80]
+>>> number = 0
+>>> for test in score :
+...     number += 1
+...     if test < 60 : continue
+...     print ("%d-th student pass, because the score is %d" % (number , test))
+...
+1-th student pass, because the score is 90
+3-th student pass, because the score is 67
+5-th student pass, because the score is 80
+
+>>> score = [90, 25, 67, 45, 80]
+>>> number = 0
+>>> for test in score :
+...     number += 1
+...     if test < 60 : pass
+...     print ("%d-th student pass, because the score is %d" % (number, test))
+...
+1-th student pass, because the score is 90
+2-th student pass, because the score is 25
+3-th student pass, because the score is 67
+4-th student pass, because the score is 45
+5-th student pass, because the score is 80
+
+>>> score = [90, 25, 67, 45, 80]
+>>> number  = 0
+>>> for test in score :
+...     number += 1
+...     if test < 60 : pass
+...     else : print("%d-th student pass, because the score is %d" % (number, test))
+...
+1-th student pass, because the score is 90
+3-th student pass, because the score is 67
+5-th student pass, because the score is 80
+
+>>> score = [90, 25, 67, 45, 80]
+>>> number = 0
+>>> for test in score :
+...     number += 1
+...     if test < 60 : break
+...     print ("%d-th student pass, because the score is %d" % (number, test))
+...
+1-th student pass, because the score is 90
+
+
+>>> sum = 0
+>>> for i in range(0, 10) :
+...     sum += i
+...     print ("sum : %d" % sum)
+...
+sum : 0
+sum : 1
+sum : 3
+sum : 6
+sum : 10
+sum : 15
+sum : 21
+sum : 28
+sum : 36
+sum : 45
+
+>>> sum = 0
+>>> range(10)
+range(0, 10)
+>>> for i in range(10) :
+...     sum += i
+...     print ("sum: %d" % sum)
+...
+sum: 0
+sum: 1
+sum: 3
+sum: 6
+sum: 10
+sum: 15
+sum: 21
+sum: 28
+sum: 36
+sum: 45
+
+>>> for i in range(2, 10) :
+...     for j in range (1, 10) :
+...             print ("%d*%d : %d " % ( i, j , i*j), end = " " )
+...     print ("")
+...
+2*1 : 2  2*2 : 4  2*3 : 6  2*4 : 8  2*5 : 10  2*6 : 12  2*7 : 14  2*8 : 16  2*9 : 18
+3*1 : 3  3*2 : 6  3*3 : 9  3*4 : 12  3*5 : 15  3*6 : 18  3*7 : 21  3*8 : 24  3*9 : 27
+4*1 : 4  4*2 : 8  4*3 : 12  4*4 : 16  4*5 : 20  4*6 : 24  4*7 : 28  4*8 : 32  4*9 : 36
+5*1 : 5  5*2 : 10  5*3 : 15  5*4 : 20  5*5 : 25  5*6 : 30  5*7 : 35  5*8 : 40  5*9 : 45
+6*1 : 6  6*2 : 12  6*3 : 18  6*4 : 24  6*5 : 30  6*6 : 36  6*7 : 42  6*8 : 48  6*9 : 54
+7*1 : 7  7*2 : 14  7*3 : 21  7*4 : 28  7*5 : 35  7*6 : 42  7*7 : 49  7*8 : 56  7*9 : 63
+8*1 : 8  8*2 : 16  8*3 : 24  8*4 : 32  8*5 : 40  8*6 : 48  8*7 : 56  8*8 : 64  8*9 : 72
+9*1 : 9  9*2 : 18  9*3 : 27  9*4 : 36  9*5 : 45  9*6 : 54  9*7 : 63  9*8 : 72  9*9 : 81
+```
+
+the following is useful when you type code with python 
+
+that is called **List comprehension of python.**
+
+```text
+without if statement 
+
+[statement **for** item **in** iterable object]
+
+
+[statemetn which include above two variable. **for** item1 **in** iterable object1 
+                                             **for** item2 **in** iterable object2
+                                             .....                                                  
+                                             **for** itemN **in** interable ojectN]
+
+If you want to contain if statement
+
+[statement **for** item **in** iterable object **if** condition]
+
+[statemetn which include above two variable. **for** item1 **in** iterable object1 **if** condition1
+                                             **for** item2 **in** iterable object2 **if** condition2
+                                             .....                                                  
+                                             **for** itemN **in** interable ojectN **if** conditionN]
+```
+
+```python 
 
 ```
 
 ## Function
 
+(be careful, now I'm typing with python 3.6 in here)
 
 ## class
 
+(be careful, now I'm typing with python 3.6 in here)
 
 ## Module
 
+(be careful, now I'm typing with python 3.6 in here)
 
 ## Package
 
+(be careful, now I'm typing with python 3.6 in here)
 
 ## Exception
+
+(be careful, now I'm typing with python 3.6 in here)
 
 
 ## Inner Function & Outer Function
 
-
+(be careful, now I'm typing with python 3.6 in here)
 
 # Reference 
 
