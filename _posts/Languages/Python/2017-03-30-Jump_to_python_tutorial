@@ -741,14 +741,14 @@ Another Operation and Funtion of Set
 {1, 2, 3}
 >>> print (type(s1))
 <class 'set'>
->>> s1.add(4)
+>>> s1.add(4)                               ## just to add one factor
 >>> s1
 {1, 2, 3, 4}
 >>> s1.add([5,6,7])
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unhashable type: 'list'
->>> s1.update([4,5,6])
+>>> s1.update([4,5,6])                      ## just to add a bunch of factors
 >>> s1
 {1, 2, 3, 4, 5, 6}
 >>> s1.remove(2)
@@ -873,7 +873,7 @@ this's also the exact same from another language's for statement in terms of fun
 needless to say, Let's see example code. 
 
 ```python 
->>> score = [90, 25, 67, 45, 80]
+>>> score = [90, 25, 67, 45, 80]                         ## The basic for statement
 >>> number = 0
 >>> for test in score :
 ...     number += 1
@@ -888,7 +888,7 @@ needless to say, Let's see example code.
 5-th student fail, becuase the score is 45
 6-th student pass, becuase the score is 80
 
->>> score = [90, 25, 67, 45, 80]
+>>> score = [90, 25, 67, 45, 80]                         ## for statement with continue keyword
 >>> number = 0
 >>> for test in score :
 ...     number += 1
@@ -899,11 +899,11 @@ needless to say, Let's see example code.
 3-th student pass, because the score is 67
 5-th student pass, because the score is 80
 
->>> score = [90, 25, 67, 45, 80]
+>>> score = [90, 25, 67, 45, 80]                         ## for statement with pass keyword
 >>> number = 0
 >>> for test in score :
 ...     number += 1
-...     if test < 60 : pass
+...     if test < 60 : pass                              ## without else keyword
 ...     print ("%d-th student pass, because the score is %d" % (number, test))
 ...
 1-th student pass, because the score is 90
@@ -916,14 +916,14 @@ needless to say, Let's see example code.
 >>> number  = 0
 >>> for test in score :
 ...     number += 1
-...     if test < 60 : pass
+...     if test < 60 : pass                              ## including else keyword
 ...     else : print("%d-th student pass, because the score is %d" % (number, test))
 ...
 1-th student pass, because the score is 90
 3-th student pass, because the score is 67
 5-th student pass, because the score is 80
 
->>> score = [90, 25, 67, 45, 80]
+>>> score = [90, 25, 67, 45, 80]                         ## for statement with break keyword
 >>> number = 0
 >>> for test in score :
 ...     number += 1
@@ -934,7 +934,7 @@ needless to say, Let's see example code.
 
 
 >>> sum = 0
->>> for i in range(0, 10) :
+>>> for i in range(0, 10) :                             ## what kind of role is range function
 ...     sum += i
 ...     print ("sum : %d" % sum)
 ...
@@ -967,7 +967,7 @@ sum: 28
 sum: 36
 sum: 45
 
->>> for i in range(2, 10) :
+>>> for i in range(2, 10) :                             ## with two for statements
 ...     for j in range (1, 10) :
 ...             print ("%d*%d : %d " % ( i, j , i*j), end = " " )
 ...     print ("")
@@ -986,34 +986,96 @@ the following is useful when you type code with python
 
 that is called **List comprehension of python.**
 
-```text
-without if statement 
 
-[statement **for** item **in** iterable object]
+**without if statement in List Comprehension**
+
+**[**statement **for** item **in** iterable object**]**
 
 
-[statemetn which include above two variable. **for** item1 **in** iterable object1 
+**[**statemetn which include above two variable. **for** item1 **in** iterable object1 
                                              **for** item2 **in** iterable object2
                                              .....                                                  
                                              **for** itemN **in** interable ojectN]
 
-If you want to contain if statement
+If you want to contain if statement in List Comprehension
 
-[statement **for** item **in** iterable object **if** condition]
+**[**statement **for** item **in** iterable object **if** condition**]**
 
-[statemetn which include above two variable. **for** item1 **in** iterable object1 **if** condition1
+**[**statemetn which include above two variable. **for** item1 **in** iterable object1 **if** condition1
                                              **for** item2 **in** iterable object2 **if** condition2
                                              .....                                                  
-                                             **for** itemN **in** interable ojectN **if** conditionN]
-```
+                                             **for** itemN **in** interable ojectN **if** conditionN**]**
+
+Let's see example of List Comprhension
 
 ```python 
+>>> a = [1,2,3,4]                           ## everyone of a List time 3 using for statement 
+>>> result = []                             ## to insert the itme into result variable of list
+>>> for num in a :
+...     result.append(num*3)
+...
+>>> result
+[3, 6, 9, 12]
+>>> result = [num * 3 for num in a]         ## BUT, if you use List comprehension, 
+>>> result                                  ## your task is so easy to make new list with some other List
+[3, 6, 9, 12]
+>>> result = [num * 3 for num in a if num % 2 == 0]     ## with List Comprehension and if statement in List comprehension
+>>> result
+[6, 12]
 
+>>> result = [x*y for x in range(2,10)
+...               for y in range(1,10)]
+>>> result                                        ## in order to show you easily how to use two variable in List comprehension
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 
+3, 6, 9, 12, 15, 18, 21, 24, 27, 
+4, 8, 12, 16, 20, 24, 28, 32, 36, 
+5, 10, 15, 20, 25, 30, 35, 40, 45, 
+6, 12, 18, 24, 30, 36, 42, 48, 54, 
+7, 14, 21, 28, 35, 42, 49, 56, 63, 
+8, 16, 24, 32, 40, 48, 56, 64, 72, 
+9, 18, 27, 36, 45, 54, 63, 72, 81]
 ```
 
 ## Function
 
 (be careful, now I'm typing with python 3.6 in here)
+
+**Function : this is exactly the same from meaning of function in otherprogramming language. However, the keyword of function in python is def keyword.**
+
+Let me know how to use function in python with some example. 
+
+before making code of function, function has argument and return value.
+
+depending on the two value, the total type of function is some 4. 
+
+
+```python 
+>>> def sum(a,b) :
+...     return a+b
+...
+>>> sum(1,3)
+4
+
+>>> def say():
+...     return  "Hi"
+...
+>>> say()
+'Hi'
+
+>>> def sum(a, b):
+...     print ("%d + %d = %d" % (a, b, a+b))
+...
+>>> sum( 3, 7)
+3 + 7 = 10
+
+>>> def say() :
+...     print ("hello!")
+...
+>>> say()
+hello!
+
+```
+
 
 ## class
 
