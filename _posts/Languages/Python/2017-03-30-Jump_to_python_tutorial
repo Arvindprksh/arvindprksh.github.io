@@ -9,11 +9,12 @@ bigimg:
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
+
+ahead of reading this article. If you have a little of experience about programming. you don't need to read this aticle.
+
+**Just go to [standford's tutorial]()**
+
 I made this tutorial of python based on ["Jump to Python", open-book](https://wikidocs.net/book/1).
-
-Just this is for programmers who have a variety of experience of differenct language. 
-
-But If you have a knowledge a little about different programming languages. You could understand this post of Python tutorial. 
 
 Note that I wrote this article based on what I understand about python, comparing it with what I understand on C++/C language. 
 
@@ -27,7 +28,7 @@ In other words, even integer is object above Python 3.x.
 
 ---
 
-**BUT,** If you are beginner of Python, You don't need to consider this concept. however, If you want to be intermediat.
+**BUT,** If you are beginner of Python, You don't need to consider this concept. however, If you want to be intermediate.
 
 Keep in mind, "Everything of Python is Object, instance of Class"
 
