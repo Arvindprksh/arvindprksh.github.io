@@ -1074,6 +1074,65 @@ depending on the two value, the total type of function is some 4.
 >>> say()
 hello!
 
+>>> def sum(*args) :
+...     sum = 0
+...     for i in args :
+...             sum = sum + i
+...     return sum
+...
+>>> sum(1,2,3,4,5)
+15
+>>> sum(1,2,3,4,5,6,7)
+28
+>>> sum(1,2,3,4,5,6,7,8,9)
+45
+>>> a, b = sum_and_mul(3, 7)
+>>> a
+10
+>>> b
+21
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'int'>
+
+>>> def say_nickname(nick) :
+...     if nick == "stupid" :
+...             return
+...     print ("my nickname is %s " % nick)
+...
+>>> say_nickname("stupid")
+>>> say_nickname("stupid!")
+my nickname is stupid!
+
+
+>>> def let_me_introduce_myself(name, gender = True, old) :
+...     print ("my name is %s" % name)
+...     print ("my age is %s" % old)
+...     if gender == True :
+...             print ("my gender is male")
+...     else :
+...             print ("my gender is female")
+...
+  File "<stdin>", line 1
+SyntaxError: non-default argument follows default argument
+
+>>> def let_me_introduce_myself(name, old, gender = True) :
+...     print ("my name is %s" % name)
+...     print ("my age is %s" % old)
+...     if gender == True :
+...             print ("my gender is male")
+...     else :
+...             print ("my gender is female")
+...
+>>> let_me_introduce_myself("hyunyoung2", "20")
+my name is hyunyoung2
+my age is 20
+my gender is male
+>>> let_me_introduce_myself("hyunyoung2", "20", False)
+my name is hyunyoung2
+my age is 20
+my gender is female
 ```
 
 
