@@ -1053,32 +1053,32 @@ depending on the two value, the total type of function is some 4.
 
 
 ```python 
->>> def sum(a,b) :
+>>> def sum(a,b) :                 ## with arguments and return value
 ...     return a+b
 ...
 >>> sum(1,3)
 4
 
->>> def say():
+>>> def say():                     ## with no arguments and return value
 ...     return  "Hi"
 ...
 >>> say()
 'Hi'
 
->>> def sum(a, b):
+>>> def sum(a, b):                 ## with arguments and no return value
 ...     print ("%d + %d = %d" % (a, b, a+b))
 ...
 >>> sum( 3, 7)
 3 + 7 = 10
 
->>> def say() :
+>>> def say() :                    ## with no arguments and no return value
 ...     print ("hello!")
 ...
 >>> say()
 hello!
 
->>> def sum(*args) :
-...     sum = 0
+>>> def sum(*args) :              ## In order to get arguments randomly. 
+...     sum = 0                   ## * is used to do that   
 ...     for i in args :
 ...             sum = sum + i
 ...     return sum
@@ -1099,7 +1099,7 @@ hello!
 >>> type(b)
 <class 'int'>
 
->>> def say_nickname(nick) :
+>>> def say_nickname(nick) :       ## you don't have to use return keyword with value that you'r goind to return. 
 ...     if nick == "stupid" :
 ...             return
 ...     print ("my nickname is %s " % nick)
@@ -1108,19 +1108,7 @@ hello!
 >>> say_nickname("stupid!")
 my nickname is stupid!
 
-
->>> def let_me_introduce_myself(name, gender = True, old) :
-...     print ("my name is %s" % name)
-...     print ("my age is %s" % old)
-...     if gender == True :
-...             print ("my gender is male")
-...     else :
-...             print ("my gender is female")
-...
-  File "<stdin>", line 1
-SyntaxError: non-default argument follows default argument
-
->>> def let_me_introduce_myself(name, old, gender = True) :
+>>> def let_me_introduce_myself(name, old, gender = True) :           ## with arguments initialized. 
 ...     print ("my name is %s" % name)
 ...     print ("my age is %s" % old)
 ...     if gender == True :
@@ -1136,12 +1124,38 @@ my gender is male
 my name is hyunyoung2
 my age is 20
 my gender is female
-```
 
+>>> def let_me_introduce_myself(name, gender = True, old) :
+...     print ("my name is %s" % name)
+...     print ("my age is %s" % old)
+...     if gender == True :
+...             print ("my gender is male")
+...     else :
+...             print ("my gender is female")
+...
+  File "<stdin>", line 1
+SyntaxError: non-default argument follows default argument
+```
 
 ## class
 
 (be careful, now I'm typing with python 3.6 in here)
+
+**class : this is frame to make object that is the same from class. and Class has member function and member variable of class**
+
+So, you need to understand inheritance, overloading and overriding and so on. for example, polymorphism. 
+
+If you feel difficult from the above things. for now, You don't have to try to understand the above concepts. 
+
+Later on, you would understand those concepts. if you have experience about programming, in particular 
+
+if you have experience of C or C++ Languages, You must know about the concept.
+
+```python
+
+
+```
+
 
 ## Module
 
