@@ -1151,7 +1151,17 @@ Later on, you would understand those concepts. if you have experience about prog
 
 if you have experience of C or C++ Languages, You must know about the concept.
 
+
+**according to Jump to python, they represent overloading and constructor, So in here, I will explain to you about both of them a little**
+
+Let's see example of code. 
+
+class name[(the name of inheritance of class)] : 
+
+
 ```python
+
+
 
 
 ```
