@@ -1135,6 +1135,16 @@ my gender is female
 ...
   File "<stdin>", line 1
 SyntaxError: non-default argument follows default argument
+
+
+>>> def sum(a, b):            ## only in the case of python as you can see, 
+...     return a+b, a-b       ## python returns a couple of variables, the type of retun values is tuple. 
+...
+>>> return_value = sum(5, 5)
+>>> return_value
+(10, 0)
+>>> type(return_value)
+<class 'tuple'>
 ```
 
 ## class
@@ -1157,13 +1167,60 @@ if you have experience of C or C++ Languages, You must know about the concept.
 Let's see example of code. 
 
 class name[(the name of inheritance of class)] : 
-
+    <class variable1>
+    <class variable1>
+    ...
+    def class_function1(self,[, argument1, argument2,,,]):
+        <statement1 that this function have to deal with>
+        <statement2 that this function have to deal with>
+        ...
+    def class_function2(self,[, argument1, argument2,,,]):
+        <statement1 that this function have to deal with>
+        <statement2 that this function have to deal with>
+        ...
+        
+***Let's see example of the class code!*        
 
 ```python
+>>> class HouseLee :                      ## parent class
+...     lastname = "Lee"
+...     def __init__(self, name):         ## constructor
+...             self.fullname = self.lastname + name
+...     def travel(self, where) :
+...             print ("%s goes to %s" % (self.fullname, where))
+...     def love(self, other) :
+...             print ("%s falls in love with %s" % (self.fullname, other.fullname))
+...     def fight(self, other) :
+...             print ("%s fought %s" % (self.fullname, other.fullname))
+...     def __add__(self, other) :        ## class overloading
+...             print ("%s was married with %s" % (self.fullname, other.fullname))
+...     def __sub__(self, other) :        ## class overloading
+...             print ("%s was divorced from %s" % (self.fullname, other.fullname))
+...
+>>> class HouseNa (HouseLee) :            ## Inheritance of class
+...     lastname = "Na"
+...     def travel(self, where, day) :    ## overriding function of class 
+...             print ("%s, to %s for %d days" % (self.fullname, where, day))
+...
 
-
-
-
+>>> romio = HouseLee(" HY")               ## create class 1
+>>> juliet = HouseNa(" YJ")               ## create class 2
+>>> romio.travel("Busan")                 ## function call of class 1
+Lee HY goes to Busan
+>>> juliet.travel("Busan", 3)             ## function call of class 2 overriding
+Na YJ, to Busan for 3 days
+>>> juliet.travel("Busan")
+Traceback (most recent call last):        ## error in the number of arguments of function of class 2
+  File "<stdin>", line 1, in <module>
+TypeError: travel() missing 1 required positional argument: 'day'
+>>> romio.love(juliet)
+Lee HY falls in love with Na YJ
+>>> romio + juliet                        ## overloading of + operator
+Lee HY was married with Na YJ
+>>> romio.fight(juliet)
+Lee HY fought Na YJ     
+>>> romio - juliet                        ## overloading of - operator
+Lee HY was divorced from Na YJ
 ```
 
 
@@ -1171,18 +1228,165 @@ class name[(the name of inheritance of class)] :
 
 (be careful, now I'm typing with python 3.6 in here)
 
+In python, module is just file cotaining code, function, variable, class and so on. 
+
+```python
+# mod1.py
+def sum(a, b) :
+    return a+b
+```
+
+The above code is just another file that is made of python code. 
+
+when you want to import this module. 
+
+you have to enter module name this way 
+
+**form MODULE import FUNCTION (as nickname)**
+
+OR
+
+**import MODULE (as nickname)**
+
+```python 
+>>> import mod1
+>>> mod1.sum(1,2)
+3
+>>> from mod1 import sum
+>>> sum(1,2)
+3
+>>> import mod1 as test
+>>> test.sum(1,2)
+3
+>>> from mod1 import sum as t
+>>> t(1,2)
+3
+```
+
 ## Package
 
-(be careful, now I'm typing with python 3.6 in here)
+**When you make complecated modules, I need you to make hierarchy of a couple of module files.** 
+
+below is an example of package 
+
+```python
+game/
+    __init__.py
+    sound/
+        __init__.py
+        echo.py
+        wav.py
+    graphic/
+        __init__.py
+        screen.py
+        render.py
+    play/
+        __init__.py
+        run.py
+        test.py
+```
+
+If you have the virtaul package. how do I call the function of module in the above package. 
+
+You have to be careful of (.)dot letter. 
+
+only if you use package, you can use this mark(.).  
+
+```python
+import game.sound.echo
+game.sound.echo.echo_test()  ## function call 
+
+
+from game.sound import echo
+echo.echo_test()             ## function call from moudle 
+
+from game.sound.echo import echo_test
+echo_test()                  ## function call directly as function name
+```
 
 ## Exception
 
 (be careful, now I'm typing with python 3.6 in here)
 
+Exception is similar with another programming lanuage exception 
+
+let's look at an example of exception handling 
+
+```python 
+try : 
+  f = open ("file.txt", "r")
+except FileNotFoundError as e :
+  print (str(e))
+else :
+  data = f.read()
+  f.close()
+finally :
+  print ("this is executed if error happens or not")
+```
 
 ## Inner Function & Outer Function
 
 (be careful, now I'm typing with python 3.6 in here)
+
+there are built-in and built-out functions. 
+
+BUT I will introduce a couple of functions a bit. 
+
+**lambda : keyword the I used when you create function**
+
+lambda variable1, variable2, ... :  expression with those variables(variable1, variable2, ...)
+
+```python 
+>>> sum = lambda a, b : a+b
+>>> sum(3,4)
+7
+
+>>> myList = [lambda a, b : a+b, lambda a,b :a*b]
+>>> myList
+[<function <lambda> at 0x032F6660>, <function <lambda> at 0x032F6618>]
+>>> myList[0]
+<function <lambda> at 0x032F6660>
+>>> myList[0](3,4)
+7
+>>> myList[1](3,4)
+12
+```
+
+**map : map returns value that adapted each of iterable data into that f(function)**
+
+**map(f, iterable) : this means, f is function, iterable is data type that can be iterable.**
+
+let's see a code of map
+
+```python
+>>> def two_times(numberList):                   ## before using map function 
+...     result = []
+...     for number in numberList :
+...             result.append(number*2)
+...     return result
+...
+>>> return_value = two_times([1,2,3,4,5])
+>>> type(return_value)
+<class 'list'>
+>>> return_value
+[2, 4, 6, 8, 10]
+
+>>> def twoTimes(x): return x*2                  ## function definition to start off with map function 
+...
+>>> map(twoTimes, [1,2,3,4,5])                   ##  What is the map ? just object 
+<map object at 0x032F4BD0>
+>>> list(map(twoTimes, [1,2,3,4,5]))             ## to make  return value of map list
+[2, 4, 6, 8, 10]
+>>> list(map(lambda a: a*2, [1,2,3,4]))          ## if you use lambda instead of map function. 
+[2, 4, 6, 8]
+```
+
+**If you are avaiable for study of python, I recommend you to look for reduce function of python**
+
+I think map function is associated with map-reduce file system a little
+
+in distribution system, How to use multi-core. then I think map function and reduce function is useful
+
 
 # Reference 
 
