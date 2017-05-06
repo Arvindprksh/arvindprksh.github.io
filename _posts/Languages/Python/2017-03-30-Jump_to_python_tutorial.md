@@ -337,10 +337,10 @@ one more thing, it's type function
 
 if you enter print (type(a-data type)), 
 
-the result is **class 'data type'** like this
+the result is **<class 'data type'>** like this
  
 ```python 
->>> a = [1,2,3]
+>>> a = [1, 2, 3]
 >>> print (type(a))
 <class 'list'>
 >>> print (type(3))
