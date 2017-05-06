@@ -60,16 +60,18 @@ what kind of data type do python have?
 
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS, Or on python 3.6 at Windows 10**
 
-  - [Basic data types](#Basic data types)
+  - Basic data types
       - numberic
       - string
       - Boolean
+      
       
   - Containers 
       - List
       - Tuple
       - Dictionary
       - Set
+      
       
   - Statement
       - If
@@ -841,7 +843,7 @@ Let's see simple code of  while statement.
 ...     coffee += 1
 ...     print ("today you have drunk %d cups of coffee" % coffee)
 ...     if coffee == 10 :
-...             print ("we don't have coffee at all")
+...             print ("we do not have coffee at all")
 ...
 today you have drunk 1 cups of coffee
 today you have drunk 2 cups of coffee
@@ -853,7 +855,7 @@ today you have drunk 7 cups of coffee
 today you have drunk 8 cups of coffee
 today you have drunk 9 cups of coffee
 today you have drunk 10 cups of coffee
-we don't have coffee at all
+we do not have coffee at all
 
 >>> coffee = 0                                        ## one is differenct from the above, just In here, I used "break" keyword
 >>> while coffee < 10 :
@@ -1020,22 +1022,22 @@ that is called **List comprehension of python.**
 ```
 without if statement in List Comprehension
 
-**[**statement **for** item **in** iterable object**]**
+[statement for item in iterable object]
 
 
-**[**statemetn which include item1, item2, ... , tiemN **for** item1 **in** iterable object1 
-                                             **for** item2 **in** iterable object2
-                                             .....                                                  
-                                             **for** itemN **in** interable ojectN]
+[statemetn which include item1, item2, ... , tiemN for item1 in iterable object1 
+                                                   for item2 in iterable object2
+                                                   .....                                                  
+                                                   for itemN in interable ojectN]
 
 If you want to contain if statement in List Comprehension
 
-**[**statement **for** item **in** iterable object **if** condition**]**
+[statement for item in iterable object if condition]
 
-**[**statemetn which include item1, item2, ... , tiemN <br> **for** item1 **in** iterable object1 **if** condition1
-                                             <br>**for** item2 **in** iterable object2 **if** condition2
-                                             <br>.....                                                  
-                                             <br>**for** itemN **in** interable ojectN **if** conditionN**]**
+[statemetn which include item1, item2, ... , tiemN for item1 in iterable object1 if condition1
+                                                   for item2 in iterable object2 if condition2
+                                                   .....                                                  
+                                                   for itemN in interable ojectN if conditionN]
 ```
 
 Let's see example of List Comprhension
@@ -1195,6 +1197,7 @@ if you have experience of C or C++ Languages, You must know about the concept.
 
 Let's see example of code. 
 
+```
 class name[(the name of inheritance of class)] : 
     <class variable1>
     <class variable1>
@@ -1207,7 +1210,9 @@ class name[(the name of inheritance of class)] :
         <statement1 that this function have to deal with>
         <statement2 that this function have to deal with>
         ...
-        
+```
+
+
 ***Let's see example of the class code!*        
 
 ```python
@@ -1298,7 +1303,7 @@ OR
 
 below is an example of package 
 
-```python
+```
 game/
     __init__.py
     sound/
