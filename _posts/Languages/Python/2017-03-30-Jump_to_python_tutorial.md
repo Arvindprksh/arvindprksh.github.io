@@ -61,6 +61,10 @@ what kind of data type do python have?
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS, Or on python 3.6 at Windows 10**
 
   - [Basic data types](#Basic data types)
+      
+      - string 
+      
+      
   
   - Containers 
     
@@ -78,7 +82,7 @@ what kind of data type do python have?
 
 
 
-## Basic data types
+## Basic data types<a name="Basic data types"></a>
 
 ##### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
 
