@@ -498,7 +498,7 @@ ValueError: list.remove(x): x not in list
 >>> t2 = (1)
 >>> t2
 1
->>> print (type(t2))        ## in here, t2 is "<class 'int'>"
+>>> print (type(t2))        ## Prints "<class 'int'>"
 >>> t2 = (1,)               ## i.e, If you tuple with one factor, you have to use '(' and ')'
 >>> t2 = (1, 2, 3)
 >>> t3 = 1, 2, 3
@@ -1122,8 +1122,8 @@ hello!
 10
 >>> b
 21
->>> type(a)                 ## Prints "<class 'int'>"
->>> type(b)                 ## Prints "<class 'int'>"
+>>> type(a)                 ## Return "<class 'int'>"
+>>> type(b)                 ## Return "<class 'int'>"
 
 >>> def say_nickname(nick) :       ## you don't have to use return keyword with value that you'r goind to return. 
 ...     if nick == "stupid" :
@@ -1269,7 +1269,7 @@ The above code is just another file that is made of python code.
 
 when you want to import this module. 
 
-you have to enter module name this way 
+you have to enter module name this way.
 
 **form MODULE import FUNCTION (as nickname)**
 
@@ -1395,7 +1395,7 @@ let's see a code of map
 ...     return result
 ...
 >>> return_value = two_times([1,2,3,4,5])
->>> type(return_value)            ## Prints "<class 'list'>"
+>>> type(return_value)            ## Return "<class 'list'>"
 >>> return_value
 [2, 4, 6, 8, 10]
 
