@@ -81,7 +81,7 @@ what kind of data type do python have?
   - Classes
 
 
-
+&nbsp;&nbsp;
 ## Basic data types
 
 ##### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
