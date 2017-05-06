@@ -157,7 +157,7 @@ Life is too short, you need to learn python
 >>> print str
 Life is too short, you need to learn python
 >>> print type(str)
-<type 'str'>
+<type 'str'> 
 >>> str = """                             # for multilines with '''string''', 'string \n string', another way is with """string""" and "string \n string"
 ... Life is too short, 
 ... you need to learn Python
