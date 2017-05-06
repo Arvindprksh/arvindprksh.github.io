@@ -43,7 +43,7 @@ I mean this is just the basic Python
   
 Python is a high-level, dynamically typed multiprogramming lauguage. Python code is readable and it's easy to express your ideas with few lines of code
 
-As an example, here is an implementation of the classic quicksort algorithm in python :
+As an example, here is an implementation of the classic quicksort algorithm in python:
 
 this is implemented on python 3.6 of Windows 10 
 
