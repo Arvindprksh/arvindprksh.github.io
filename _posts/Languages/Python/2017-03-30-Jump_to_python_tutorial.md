@@ -60,20 +60,15 @@ what kind of data type do python have?
 
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS, Or on python 3.6 at Windows 10**
 
-  - [Basic data types](#Basic data types)
+  - [Basic data types](#Basic-data-types)
+      - numberic
+      - string
+      - Boolean
       
-      - string 
-      
-      
-  
   - Containers 
-    
       - Lists
-      
       - Dictioinaries
-      
       - Sets
-      
       - Tuple
       
   - Functions
@@ -84,7 +79,7 @@ what kind of data type do python have?
 &nbsp;&nbsp;
 ## Basic data types
 
-##### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
+### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
 
 Let's see the sampe code, be careful, my python is 2.7
 
@@ -132,7 +127,7 @@ Let's see the sampe code, be careful, my python is 2.7
 3
 ```
 
-##### String : this is just string when you use string in Java and C++ language. here, when you create string type in python. whatever mark between 'string' and "string"you use doesn't matter. 
+### String : this is just string when you use string in Java and C++ language. here, when you create string type in python. whatever mark between 'string' and "string"you use doesn't matter. 
 
 ```python
 >>> str = "Life is too short, you need to learn python"
@@ -289,7 +284,7 @@ ValueError: substring not found
 '{ and }'
 ```
 
-##### Boolean : python has also boolean type .
+### Boolean : python has also boolean type .
 
 | value  | true and false |
 |========|================|
@@ -331,7 +326,7 @@ the result is **class 'data type'** like this
 <class 'int'>
 ```
 
-##### List  
+### List  
 
 **The features of List** : I think you shoud think of the list as the list you learned in Data structure class. this data type is that you can change factor in the list, it is ordered. The very important thing is dynamically resized and type.
 
@@ -471,7 +466,7 @@ ValueError: list.remove(x): x not in list
 2
 ```
 
-##### Tuple
+### Tuple
 
 **The feature of Tuple** : this is not greatly different from list's features. however, you can plus the new factor, you cannot change and remove the factor's value in Tuple  
 
@@ -485,9 +480,9 @@ ValueError: list.remove(x): x not in list
 >>> t2 = (1)
 >>> t2
 1
->>> print (type(t2))         ## i.e, If you tuple with one factor, you have to use '(' and ')'
+>>> print (type(t2))         
 <class 'int'>
->>> t2 = (1,)               
+>>> t2 = (1,)               ## i.e, If you tuple with one factor, you have to use '(' and ')'
 >>> t2 = (1, 2, 3)
 >>> t3 = 1, 2, 3
 >>> t4 = ('a', 'b', ('ab', 'cd'))
@@ -541,7 +536,7 @@ to sum up, this type is immutable.
 (1, 2, 'a', 'b', 1, 2, 'a', 'b')
 ```
 
-##### Dictionary
+### Dictionary
 
 ** The feature of Dictionary **: this type is similar to map data type on other programming lauguages, more Basically, this is associative array with hash.
 
@@ -646,7 +641,7 @@ True
 False
 ```
 
-##### Set
+### Set
 
 **Set is literally used to represent set.**
 
@@ -793,7 +788,7 @@ i.e python recognize the local area of the python's area.
 
 (be careful, now I'm typing with python 3.6 in here)
 
-##### If
+### If
  
  this is the exact same from another language's statement in terms of functionality.
  
@@ -823,7 +818,7 @@ I have a money a little bit                           ## what is the pass ? this
 I have a others, paper and cell phone
  ```
  
-##### While
+### While
 
 This while statement is also the exact same from another language's while in terms of functionality. 
 
@@ -891,7 +886,7 @@ our coffee sold out
 
 If you do programming once, you can understand the above situation.  
 
-##### for
+### for
 
 this's also the exact same from another language's for statement in terms of functionality. 
 
