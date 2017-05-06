@@ -340,10 +340,6 @@ if you enter print (type(a-data type)),
 the result is **<class 'data type'>** like this
  
 ```python 
->>> a = [1, 2, 3]
->>> print (type(a))
-<class 'list'>
-
 >>> print (type(3))
 <class 'int'>
 ```
@@ -351,7 +347,7 @@ the result is **<class 'data type'>** like this
 ### List  
 
 **The features of List** : I think you shoud think of the list as the list you learned in Data structure class. this data type is that you can change factor in the list, it is ordered. The very important thing is dynamically resized and type.
-
+ 
 ```python
 >>> "let's do python tutorial"
 "let's do python tutorial"
@@ -495,14 +491,12 @@ ValueError: list.remove(x): x not in list
 ```python
 >>> t1 = ()
 >>> t2 = (1,)                ## you need char '(' and ')' when you make Tuple. 
->>> t2
+>>> t2                       ## print (type(t2)) --> "<class 'tuple'>"
 (1,)
->>> print (type(t2))
-<class 'tuple'>
 >>> t2 = (1)
 >>> t2
 1
->>> print (type(t2))         
+>>> print (type(t2))        ## in here, t2 is "<class 'int'>"
 <class 'int'>
 >>> t2 = (1,)               ## i.e, If you tuple with one factor, you have to use '(' and ')'
 >>> t2 = (1, 2, 3)
@@ -572,8 +566,7 @@ key is not necessarily immutable. you can use key with integer.
 >>> dic = {'name': 'hyunyoung2', 'phone':'00011112222', 'birth':'1111' }   ## how to make dictionary
 >>> dic
 {'name': 'hyunyoung2', 'phone': '00011112222', 'birth': '1111'}
->>> print (type(dic))
-<class 'dict'>
+>>> print (type(dic))          ## prints "<class 'dict'>"
 >>> a = {1: 'hello world'}
 >>> a[1]
 'hello world'
@@ -679,13 +672,11 @@ First of all, all you need to know is set has some features unlike the other dat
 >>> a = set([1,2,3])          ## you can see how to intialize set, from now on. 
 >>> a
 {1, 2, 3}
->>> print (type(a))
-<class 'set'>
+>>> print (type(a))           ## Prints "<class 'set'>"
 >>> b = set("hellow")         ## over here, You can verify the features of the set of python's data type.  
 >>> b                         ## First, There is no duplication,  one of two "l" letters disappear. 
 {'w', 'l', 'o', 'e', 'h'}     ## Second, it's unodered.
->>> print (type(b))
-<class 'set'>
+>>> print (type(b))           ## Prints "<class 'set'>"
 >>> c = {1,2,3,4, "hello"}    ## if you initialize a set this way, then "hello" is dealt with like one data. 
 >>> c
 {1, 2, 3, 4, 'hello'}
@@ -712,8 +703,7 @@ Let's check it
 >>> a = set([1,2,3])
 >>> a
 {1, 2, 3}
->>> print (type(a))
-<class 'set'>
+>>> print (type(a))               ## Prints "<class 'set'>"
 >>> a[1]                               ## As you can see in here, you cannot index anyone in the set. 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -781,7 +771,7 @@ Another Operation and Funtion of Set
 >>> s1 = set([1,2,3])
 >>> s1
 {1, 2, 3}
->>> print (type(s1))
+>>> print (type(s1))              ## Prints "<class 'set'>"
 <class 'set'>
 >>> s1.add(4)                               ## just to add one factor
 >>> s1
@@ -1134,8 +1124,7 @@ hello!
 10
 >>> b
 21
->>> type(a)
-<class 'int'>
+>>> type(a)                 ## Prints "<class 'int'>"
 >>> type(b)
 <class 'int'>
 
