@@ -54,13 +54,31 @@ And the features of the Python are dynamically typed language and multi-paradigm
 
 So you can code source like many ways for Object-oriented Programming, strucural programming, and functional Programming.  
 
-**remember ! Basicaly in jump to python, the version of Python is above 3.0. basically they use 3.0 version python.**
+**remember ! Basically in jump to python, the version of Python is above 3.0. basically they use 3.0 version python.**
 
 what kind of data type do python have?
 
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS.**
 
-## Basic data type
+  - [Basic data types](#Basic data types)
+  
+  - Containers 
+    
+      - Lists
+      
+      - Dictioinaries
+      
+      - Sets
+      
+      - Tuple
+      
+  - Functions
+  
+  - Classes
+
+
+
+## Basic data types
 
 ##### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
 
