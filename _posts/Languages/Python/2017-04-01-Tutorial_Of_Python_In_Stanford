@@ -3,13 +3,40 @@
 
 # Tutorial of Python in Stanford university 
 
-This is just arragement and rewritten for my python study, So If I have a problem in document, I will erase this later on. 
+This is just arragement and rewritten for my python study, So If I have a problem in document, let me know about it
+
+and then I will erase this later on. 
 
 in order for me to be used to python, Just type the tutorial of stanford. 
 
 So if you want to know more detail of python. just let you know you need to read [this paper(my tutorial with jump to python)](https://hyunyoung2.github.io/2017/03/30/Jump_to_python_tutorial/) that I wrote. 
 
+In here, Just I will only arrange the tutorial of python, not numpy. 
 
+I mean this is just the basic Python 
+
+# Python
+  
+  - Basic data types
+  
+  - Containers 
+    
+      - Lists
+      
+      - Dictioinaries
+      
+      - Sets
+      
+      - Tuple
+      
+  - Functions
+  
+  - Classes
+
+  
+
+
+  
 
 
 
@@ -17,8 +44,15 @@ So if you want to know more detail of python. just let you know you need to read
 
 # Reference 
 
-  - [Standford university's tutorial of python]() 
+  - [Standford university's tutorial of python](http://cs231n.github.io/python-numpy-tutorial/) 
   
+  - [github of CS288 python Tutorial of stanford](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb)
+  
+  - [Numpy for Matlab Users](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users)
+  
+  - [matplotlib for graph with python](https://matplotlib.org/index.html)
+  
+  if you continue to python more, I recommend you some library of python, numpy, scipy, matplolib
 
 
 
