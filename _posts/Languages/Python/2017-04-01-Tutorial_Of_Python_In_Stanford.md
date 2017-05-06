@@ -70,7 +70,7 @@ Python is similar to most languages. I mean Pythons has a number of basic types 
 
 Integers and floats work as you would expect form other languages :
 
-```ptyhon
+```python
 >>> x = 3
 >>> print (type(x))
 <class 'int'>
