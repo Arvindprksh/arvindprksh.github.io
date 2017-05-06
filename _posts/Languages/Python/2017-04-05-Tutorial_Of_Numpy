@@ -1,0 +1,42 @@
+---
+layout: post
+title: Tutorial of python with jump to python,open-book.
+subtitle: I will let you know the basics of python syntax.
+category: Python
+tags: [language, python]
+permalink: /2017/03/30/Jump_to_python_tutorial/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+---
+
+# Tutorial of Numpy
+
+This is based on stanford tutorial of python 
+
+in here, we will look over Numpy Linbrary of python. 
+
+If you know this Library, You will have a powerful skill about scientific computing!
+
+So if you find something wrong in here. let me know to fix it. 
+
+- Numpy
+    - Arrays
+    - Array indexing
+    - Datatypes
+    - Array math
+    - Broadcasting
+
+## [Numpy](http://www.numpy.org/)
+
+
+# Reference 
+
+  - [Standford university's tutorial of python](http://cs231n.github.io/python-numpy-tutorial/) 
+  
+  - [github of CS288 python Tutorial of stanford](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb)
+  
+  - [Numpy for Matlab Users](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users)
+  
+  - [matplotlib for graph with python](https://matplotlib.org/index.html)
+  
+  if you continue to python more, I recommend you some library of python, numpy, scipy, matplolib
