@@ -66,17 +66,21 @@ what kind of data type do python have?
       - Boolean
       
   - Containers 
-      - Lists
-      - Dictioinaries
-      - Sets
+      - List
       - Tuple
+      - Dictionary
+      - Set
       
-  - Functions
+  - Statement
+      - If
+      - While
+      - for
   
   - Classes
 
 
-&nbsp;&nbsp;
+
+
 ## Basic data types
 
 ### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
@@ -1006,13 +1010,13 @@ the following is useful when you type code with python
 
 that is called **List comprehension of python.**
 
-
-**without if statement in List Comprehension**
+```
+without if statement in List Comprehension
 
 **[**statement **for** item **in** iterable object**]**
 
 
-**[**statemetn which include above two variable. **for** item1 **in** iterable object1 
+**[**statemetn which include item1, item2, ... , tiemN **for** item1 **in** iterable object1 
                                              **for** item2 **in** iterable object2
                                              .....                                                  
                                              **for** itemN **in** interable ojectN]
@@ -1021,10 +1025,11 @@ If you want to contain if statement in List Comprehension
 
 **[**statement **for** item **in** iterable object **if** condition**]**
 
-**[**statemetn which include above two variable. **for** item1 **in** iterable object1 **if** condition1
-                                             **for** item2 **in** iterable object2 **if** condition2
-                                             .....                                                  
-                                             **for** itemN **in** interable ojectN **if** conditionN**]**
+**[**statemetn which include item1, item2, ... , tiemN <br> **for** item1 **in** iterable object1 **if** condition1
+                                             <br>**for** item2 **in** iterable object2 **if** condition2
+                                             <br>.....                                                  
+                                             <br>**for** itemN **in** interable ojectN **if** conditionN**]**
+```
 
 Let's see example of List Comprhension
 
