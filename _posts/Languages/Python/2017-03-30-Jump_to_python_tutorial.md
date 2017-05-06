@@ -60,7 +60,7 @@ what kind of data type do python have?
 
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS, Or on python 3.6 at Windows 10**
 
-  - [Basic data types](#Basic-data-types)
+  - [Basic data types](#Basic data types)
       - numberic
       - string
       - Boolean
@@ -76,10 +76,17 @@ what kind of data type do python have?
       - While
       - for
   
-  - Classes
-
-
-
+  - Function
+  
+  - Class
+  
+  - Module
+  
+  - Package
+  
+  - Exception
+  
+  - Inner Function & Outer Function
 
 ## Basic data types
 
@@ -325,7 +332,7 @@ the result is **class 'data type'** like this
 
 ```python 
 >>> print (type(a))
-<class 'list'>
+<class 'list'> 
 >>> print (type(3))
 <class 'int'>
 ```
@@ -890,7 +897,7 @@ our coffee sold out
 
 If you do programming once, you can understand the above situation.  
 
-### for
+### For
 
 this's also the exact same from another language's for statement in terms of functionality. 
 
@@ -1169,7 +1176,7 @@ SyntaxError: non-default argument follows default argument
 <class 'tuple'>
 ```
 
-## class
+## Class
 
 (be careful, now I'm typing with python 3.6 in here)
 
