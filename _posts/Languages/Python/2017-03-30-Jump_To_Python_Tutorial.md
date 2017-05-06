@@ -4,7 +4,7 @@ title: Tutorial of python with jump to python,open-book.
 subtitle: I will let you know the basics of python syntax.
 category: Python
 tags: [language, python]
-permalink: /2017/03/30/Jump_to_python_tutorial/
+permalink: /2017/03/30/Jump_To_Python_Tutorial/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
