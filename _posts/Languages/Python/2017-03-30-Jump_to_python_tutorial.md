@@ -339,9 +339,10 @@ if you enter print (type(a-data type)),
 
 the result is **<class 'data type'>** like this
  
-```python 
->>> print (type(3))
-<class 'int'>
+```python
+>>> a = [1, 2, 3]
+>>> print (type(a))     ## Prints "<class 'list'>"
+>>> print (type(3))     ## Prints "<class 'int'>"
 ```
 
 ### List  
@@ -491,13 +492,13 @@ ValueError: list.remove(x): x not in list
 ```python
 >>> t1 = ()
 >>> t2 = (1,)                ## you need char '(' and ')' when you make Tuple. 
->>> t2                       ## print (type(t2)) --> "<class 'tuple'>"
+>>> t2                      
 (1,)
+>>> print (type(t2))         ## Prints "<class 'tuple'>"
 >>> t2 = (1)
 >>> t2
 1
 >>> print (type(t2))        ## in here, t2 is "<class 'int'>"
-<class 'int'>
 >>> t2 = (1,)               ## i.e, If you tuple with one factor, you have to use '(' and ')'
 >>> t2 = (1, 2, 3)
 >>> t3 = 1, 2, 3
@@ -566,7 +567,7 @@ key is not necessarily immutable. you can use key with integer.
 >>> dic = {'name': 'hyunyoung2', 'phone':'00011112222', 'birth':'1111' }   ## how to make dictionary
 >>> dic
 {'name': 'hyunyoung2', 'phone': '00011112222', 'birth': '1111'}
->>> print (type(dic))          ## prints "<class 'dict'>"
+>>> print (type(dic))          ## Prints "<class 'dict'>"
 >>> a = {1: 'hello world'}
 >>> a[1]
 'hello world'
@@ -680,8 +681,7 @@ First of all, all you need to know is set has some features unlike the other dat
 >>> c = {1,2,3,4, "hello"}    ## if you initialize a set this way, then "hello" is dealt with like one data. 
 >>> c
 {1, 2, 3, 4, 'hello'}
->>> print (type(c))
-<class 'set'>
+>>> print (type(c))           ## Prints "<class 'set'>"
 >>> a[1]                      ## As you can see, you cannot index in the set. 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -703,7 +703,7 @@ Let's check it
 >>> a = set([1,2,3])
 >>> a
 {1, 2, 3}
->>> print (type(a))               ## Prints "<class 'set'>"
+>>> print (type(a))                    ## Prints "<class 'set'>"
 >>> a[1]                               ## As you can see in here, you cannot index anyone in the set. 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -715,8 +715,7 @@ TypeError: 'set' object does not support indexing
 >>> l1 = list(a)                       ## another way to use list
 >>> l1
 [1, 2, 3]
->>> print (type(l1))
-<class 'list'>
+>>> print (type(l1))                   ## Prints "<class 'list'>"
 >>> l1[0]
 1
 >>> l1[2]
@@ -772,7 +771,6 @@ Another Operation and Funtion of Set
 >>> s1
 {1, 2, 3}
 >>> print (type(s1))              ## Prints "<class 'set'>"
-<class 'set'>
 >>> s1.add(4)                               ## just to add one factor
 >>> s1
 {1, 2, 3, 4}
@@ -1125,8 +1123,7 @@ hello!
 >>> b
 21
 >>> type(a)                 ## Prints "<class 'int'>"
->>> type(b)
-<class 'int'>
+>>> type(b)                 ## Prints "<class 'int'>"
 
 >>> def say_nickname(nick) :       ## you don't have to use return keyword with value that you'r goind to return. 
 ...     if nick == "stupid" :
