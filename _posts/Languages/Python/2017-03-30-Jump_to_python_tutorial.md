@@ -1398,8 +1398,7 @@ let's see a code of map
 ...     return result
 ...
 >>> return_value = two_times([1,2,3,4,5])
->>> type(return_value)
-<class 'list'>
+>>> type(return_value)            ## Prints "<class 'list'>"
 >>> return_value
 [2, 4, 6, 8, 10]
 
