@@ -338,7 +338,7 @@ one more thing, it's type function
 if you enter print (type(a-data type)), 
 
 the result is **class 'data type'** like this
-
+ 
 ```python 
 >>> print (type(a))
 <class 'list'> 
