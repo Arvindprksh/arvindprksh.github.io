@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial of python with jump to python,open-book.
+title: Tutorial of python with Jump To Python,open-book.
 subtitle: I will let you know the basics of python syntax.
 category: Python
 tags: [language, python]
