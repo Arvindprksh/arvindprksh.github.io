@@ -1,4 +1,13 @@
-
+---
+layout: post
+title: Tutorial of python with Standford tutorial of python
+subtitle: I will let you know the basics of python syntax.
+category: Python
+tags: [language, python]
+permalink: /2017/04/01/Tutorial_Of_Python_In_Stanford/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+---
 
 
 # Tutorial of Python in Stanford university 
@@ -399,9 +408,120 @@ As usual, Everything  you want to know about sets can be found in [the doucmenta
 
 **Loops**
 
-```python 
+Iterating over a set has the same syntax as iterating over a list, however since sets are unordered, you cannnot make assumptions about the order in which you visit the elements of the set
 
+```python 
+>>> animals = {"cat", "dog", "fish"}
+>>> for idx, animals in enumerate(animals) :
+...     print ("#%d: %s" % (idx +1, animals))
+...
+#1: dog
+#2: cat
+#3: fish
 ```
+
+**Set Comprehension**
+
+You can construct a set like list and dictionary, using the set comprehensions
+
+sqrt() means square root of any number. 
+
+```python 
+>>> from math import sqrt
+>>> sums = {int(sqrt(x)) for x in range(30)}
+>>> print (sums)
+{0, 1, 2, 3, 4, 5}
+```
+
+### Tuple
+
+A Tuple is an (immutable) ordereed list of values. A tuple is in many ways similar to a list; one of the most important differences is that tuples can be used as keys in dictionaries and as elements of sets, whiles lists cannot.
+
+```python 
+>>> d = {(x, x+1): x for x in range(10)}
+>>> t = (5, 6)
+>>> print (type(t))
+<class 'tuple'>
+>>> print (type(d))
+<class 'dict'>
+>>> d[t]
+5
+>>> d
+{(0, 1): 0, (1, 2): 1, (2, 3): 2, (3, 4): 3, (4, 5): 4, (5, 6): 5, (6, 7): 6, (7, 8): 7, (8, 9): 8, (9, 10): 9}
+>>> d[(1,2)]
+1
+```
+
+[The documentation](https://docs.python.org/3.6/tutorial/datastructures.html#tuples-and-sequences) has more information about tuple
+
+
+## Functions
+
+python function is defined using **def** keyword
+
+```python
+>>> def sign(x):
+...     if x > 0 :
+...             return 'positive'
+...     elif x < 0 :
+...             return 'negative'
+...     else :
+...             return 'zero'
+...
+>>> for x in [-1, 0, 1] :
+...     print (sign(x))
+...
+negative
+zero
+positive
+```
+
+you can also define functions to take optional keyword arguments this way. 
+
+```python
+>>> def hello(name, loud=False) :
+...     if loud :
+...             print ("HELLO: %s!" % name.upper())
+...     else:
+...             print ("Hello, %s" % name)
+...
+>>> hello('Bob')
+Hello, Bob
+>>> hello('Fred', loud=True)
+HELLO: FRED!
+>>> hello('Fred', True)
+HELLO: FRED!
+```
+
+There is a lot more information about python functions in [the documentation of python](https://docs.python.org/2/tutorial/controlflow.html#defining-functions)
+
+## Classes
+
+
+the syntax for defining classes in python is straitforward
+
+```python
+>>> class Greeter(object) :
+...     #Constructor
+...     def __init__(self, name) :
+...             self.name = name
+...     #Instance method
+...     def greet(self, loud=False) :
+...             if loud :
+...                     print ("HELLO, %s!" % self.name.upper())
+...             else :
+...                     print ("Hello, %s" % self.name)
+...
+>>> g = Greeter('Fred')
+>>> g.greet()
+Hello, Fred
+>>> g.greet(loud=True)
+HELLO, FRED!
+>>> g.greet(True)
+HELLO, FRED!
+```
+
+you can also read more information of Class in [the documentation of python](https://docs.python.org/3.6/tutorial/classes.html)
 
 # Reference 
 
