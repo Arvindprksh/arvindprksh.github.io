@@ -60,7 +60,7 @@ what kind of data type do python have?
 
 **But this tutorial will be made on Python 2.7.5 that I have On my CentOS, Or on python 3.6 at Windows 10**
 
-  - [Basic data types](Basic data types)
+  - [Basic data types](#Basic data types)
   
   - Containers 
     
