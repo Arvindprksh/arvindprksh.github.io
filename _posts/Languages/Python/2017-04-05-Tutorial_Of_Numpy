@@ -17,14 +17,23 @@ in here, we will look over Numpy Linbrary of python.
 
 If you know this Library, You will have a powerful skill about scientific computing!
 
-So if you find something wrong in here. let me know to fix it. 
+So if you find something wrong in here. let me know to fix it.
 
-- Numpy
-    - Arrays
-    - Array indexing
-    - Datatypes
-    - Array math
-    - Broadcasting
+Ahead of progressing Numpy, If you're not used to python, 
+
+I recommend you to read the followings :
+
+[Tutorial of python with Stanford tutorial of python](https://hyunyoung2.github.io/2017/04/01/Tutorial_Of_Python_In_Stanford/)
+
+[Tutorial of python with Jump to python, open-book](https://hyunyoung2.github.io/2017/03/30/Jump_To_Python_Tutorial/)
+
+# Numpy
+
+ - Arrays
+ - Array indexing
+ - Datatypes
+ - Array math
+ - Broadcasting
 
 ## [Numpy](http://www.numpy.org/)
 
