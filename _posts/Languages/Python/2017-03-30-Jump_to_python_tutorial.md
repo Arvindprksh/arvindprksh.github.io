@@ -343,6 +343,7 @@ the result is **<class 'data type'>** like this
 >>> a = [1, 2, 3]
 >>> print (type(a))
 <class 'list'>
+
 >>> print (type(3))
 <class 'int'>
 ```
