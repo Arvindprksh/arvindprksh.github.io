@@ -45,7 +45,7 @@ Python is a high-level, dynamically typed multiprogramming lauguage. Python code
 
 As an example, here is an implementation of the classic quicksort algorithm in python:
 
-this is implemented on python 3.6 of Windows 10 
+This tutorial is implemented on python 3.6 of Windows 10 
 
 ```python
 >>> def quicksort(arr) :
@@ -72,8 +72,7 @@ Integers and floats work as you would expect form other languages :
 
 ```python
 >>> x = 3
->>> print (type(x))
-<class 'int'>
+>>> print (type(x))     ## Prints "<class 'int'>"
 >>> print (x)
 3
 >>> print (x + 1)
@@ -91,8 +90,7 @@ Integers and floats work as you would expect form other languages :
 >>> print (x)
 8
 >>> y = 2.5
->>> print (type(y))
-<class 'float'>
+>>> print (type(y))      ## Prints "<class 'float'>"
 >>> print (y, y + 1, y * 2, y ** 2)
 2.5 3.5 5.0 6.25
 >>> complex(2,4)        ## complex number
@@ -111,10 +109,8 @@ it is similar for python to implement for Boolean logic like other languages, BU
 ```python
 >>> t = True
 >>> f = False
->>> print (type(t))
-<class 'bool'>
->>> print (type(f))
-<class 'bool'>
+>>> print (type(t))     ## Prints "<class 'bool'>"
+>>> print (type(f))     ## Prints "<class 'bool'>"
 >>> print (t and f)     ## logical AND, &&
 False
 >>> print (t or f)      ## logical OR, ||
@@ -439,11 +435,9 @@ A Tuple is an (immutable) ordereed list of values. A tuple is in many ways simil
 
 ```python 
 >>> d = {(x, x+1): x for x in range(10)}
->>> t = (5, 6)
->>> print (type(t))
-<class 'tuple'>
->>> print (type(d))
-<class 'dict'>
+>>> t = (5, 6)           
+>>> print (type(t))       ## Prints "<class 'tuple'>"
+>>> print (type(d))       ## Prints "<class 'dict'>"
 >>> d[t]
 5
 >>> d
