@@ -89,10 +89,13 @@ what kind of data type do python have?
   - Exception
   
   - Inner Function & Outer Function
+      - Map & lambda 
 
 ## Basic data types
 
-### Numberic : This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
+### Numberic  
+
+This data type is similar to primitive type of C, C++ language or JAVA. i.e,BUT one is different from those languages, that is when you want to change primitive type to object type. Normally, you use the **wrapper class** in java. just think of this type in python like it. i.e numeric is also object in python.
 
 Let's see the sampe code, be careful, my python is 2.7
 
@@ -140,7 +143,9 @@ Let's see the sampe code, be careful, my python is 2.7
 3
 ```
 
-### String : this is just string when you use string in Java and C++ language. here, when you create string type in python. whatever mark between 'string' and "string"you use doesn't matter. 
+### String
+
+this is just string when you use string in Java and C++ language. here, when you create string type in python. whatever mark between 'string' and "string"you use doesn't matter. 
 
 ```python
 >>> str = "Life is too short, you need to learn python"
@@ -297,7 +302,9 @@ ValueError: substring not found
 '{ and }'
 ```
 
-### Boolean : python has also boolean type .
+### Boolean 
+
+python has also boolean type .
 
 | value  | true and false |
 |========|================|
