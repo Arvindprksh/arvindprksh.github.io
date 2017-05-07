@@ -104,7 +104,7 @@ Python also has built-in types for long integers and complexx numbers; you can f
 
 ### Booleans
 
-it is similar for python to implement for Boolean logic like other languages, BUT English words rather than sympbol(**&&, ||, etx**) :
+it is similar for python to implement for Boolean logic like other languages, BUT English words rather than sympbol(**&&, \|\|, etx**) :
 
 ```python
 >>> t = True
