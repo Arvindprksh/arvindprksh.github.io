@@ -674,9 +674,9 @@ First of all, all you need to know is set has some features unlike the other dat
 >>> a
 {1, 2, 3}
 >>> print (type(a))           ## Prints "<class 'set'>"
->>> b = set("hellow")         ## over here, You can verify the features of the set of python's data type.  
+>>> b = set("hello")         ## over here, You can verify the features of the set of python's data type.  
 >>> b                         ## First, There is no duplication,  one of two "l" letters disappear. 
-{'w', 'l', 'o', 'e', 'h'}     ## Second, it's unodered.
+{'l', 'o', 'e', 'h'}     ## Second, it's unodered.
 >>> print (type(b))           ## Prints "<class 'set'>"
 >>> c = {1,2,3,4, "hello"}    ## if you initialize a set this way, then "hello" is dealt with like one data. 
 >>> c
@@ -690,7 +690,7 @@ TypeError: 'set' object does not support indexing
 
 As you can see above. when I make a set initialized with "hello" of string. one out of two "l" letters disappear in the set. 
 
-and then the order of "hellow" is unordered. 
+and then the order of "hello" is unordered. 
 
 **So with the feature above, Sometimes you can use the set as filter. But you have something careful.**
 
