@@ -97,7 +97,7 @@ Integers and floats work as you would expect form other languages :
 (2+4j)
 ```
 
-notice that unlike other languages, Python does not have unary increment(**x++**) or decrement(**x\-\-**) operators.
+notice that unlike other languages, Python does not have unary increment(**x++**) or decrement(**x\- \-**) operators.
 
 Python also has built-in types for long integers and complexx numbers; you can find all of the detail in [the documentation of python](https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-long-complex)
 
