@@ -559,9 +559,13 @@ to sum up, this type is immutable.
 
 Basic form : {key1:value1, key2:value2 ...}
 
-normally, you need to use a immutable varialbe as key, and value doesn't matter whatever you use.
+Normally, you need to use a immutable variable as key, and value doesn't matter whatever you use.
 
-key is not necessarily immutable. you can use key with integer. 
+the key is not necessarily immutable. you can use key with integer. 
+
+i.e I mean you choose key value with any of basic types, But in the case of container, You cannot choose mutable value as key.
+
+For example, that is List and so on. 
 
 ```python
 >>> dic = {'name': 'hyunyoung2', 'phone':'00011112222', 'birth':'1111' }   ## how to make dictionary
