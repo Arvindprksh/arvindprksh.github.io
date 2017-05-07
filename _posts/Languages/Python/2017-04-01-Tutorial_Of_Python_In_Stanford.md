@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tutorial of python with Standford tutorial of python
-subtitle: I will let you know the basics of python syntax.
+title: Tutorial of python with Standford 
+subtitle: I will let you know the basics of python syntax with python tutorial of some stanford lecture.
 category: Python
 tags: [language, python]
 permalink: /2017/04/01/Tutorial_Of_Python_In_Stanford/
@@ -97,14 +97,14 @@ Integers and floats work as you would expect form other languages :
 (2+4j)
 ```
 
-notice that unlike other languages, Python does not have unary increment(x++) or decrement(x--) operators.
+notice that unlike other languages, Python does not have unary increment(**x++**) or decrement(**x--**) operators.
 
 Python also has built-in types for long integers and complexx numbers; you can find all of the detail in [the documentation of python](https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-long-complex)
 
 
 ### Booleans
 
-it is similar for python to implement for Boolean logic like other languages, BUT English words rather than sympbol(&&, ||, ext) :
+it is similar for python to implement for Boolean logic like other languages, BUT English words rather than sympbol(**&&, ||, etx**) :
 
 ```python
 >>> t = True
