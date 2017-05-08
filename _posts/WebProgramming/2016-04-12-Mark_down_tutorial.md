@@ -46,6 +46,10 @@ markdown was converted to Corresponding HTML, the simple exmaple refers to <a hr
 If you do tutorials, please linke to <a href = "http://www.markdowntutorial.com/"> this markdown tutorial site.</a>
 
 
+**I recommend you the best way to use markdown in Github**
+
+That is [StackEdit site](https://stackedit.io/), this site explain to you almost things related to use mark down
+
 # Reference 
 
  [github page explaining basic](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
