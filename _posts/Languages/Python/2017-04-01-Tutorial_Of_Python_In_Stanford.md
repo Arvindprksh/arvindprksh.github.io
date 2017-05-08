@@ -22,24 +22,23 @@ So if you want to know more detail of python. just let you know you need to read
 
 In here, Just I will only arrange the tutorial of python, not numpy. 
 
-I mean this is just the basic Python 
+I mean this is just the basic syntax of Python 
 
 # Python
   
-  - Basic data types
-  
-  - Containers 
-      - Lists
-      - Dictioinaries
-      - Sets     
-      - Tuple
+Basic data types
+Containers 
+: Lists
+: Dictioinaries
+: Sets     
+: Tuple
       
-  - Functions
+Functions
   
-  - Classes
+Classes
   
   
-
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
   
 Python is a high-level, dynamically typed multiprogramming lauguage. Python code is readable and it's easy to express your ideas with few lines of code
 
