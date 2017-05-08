@@ -9,6 +9,7 @@ bigimg:
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
+{% include MathJax.html %}
 
 # Tutorial of Python in Stanford university 
 
@@ -38,9 +39,7 @@ I mean this is just the basic syntax of Python
   
 - Classes
   
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-</script>
+
 <script>
 $$
 \begin{bmatrix}
