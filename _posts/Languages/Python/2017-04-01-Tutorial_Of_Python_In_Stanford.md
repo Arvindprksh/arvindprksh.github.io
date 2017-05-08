@@ -9,7 +9,7 @@ bigimg:
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
-{% include MathJax.html %}
+
 
 # Tutorial of Python in Stanford university 
 
@@ -39,18 +39,7 @@ I mean this is just the basic syntax of Python
   
 - Classes
 
-<script>
-$$
-\begin{bmatrix}
-aaa & b\cr
-c   & ddd
-\end{bmatrix}
-$$
-</script>
-
-<a href="http://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" title="a = \begin{bmatrix} 1 & & \\ & & \\ & & \end{bmatrix}" /></a>
-  
-  
+ 
 Python is a high-level, dynamically typed multiprogramming lauguage. Python code is readable and it's easy to express your ideas with few lines of code
 
 As an example, here is an implementation of the classic quicksort algorithm in python:
