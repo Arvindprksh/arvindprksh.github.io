@@ -8,6 +8,17 @@ permalink: /2017/03/30/Jump_to_python_tutorial/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
+{% include MathJax.html %}
+<!--
+$$
+\begin{bmatrix}
+aaa & b\cr
+c   & ddd
+\end{bmatrix}
+$$
+-->
+<!-- <a href="http://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" title="a = \begin{bmatrix} 1 & & \\ & & \\ & & \end{bmatrix}"
+/></a> -->
 
 # Tutorial of Numpy
 
@@ -37,6 +48,855 @@ I recommend you to read the followings :
 
 ## [Numpy](http://www.numpy.org/)
 
+[Numpy](http://www.numpy.org/) is the funndamental package for Scientific computing with Python. i.e [NumPy](http://www.numpy.org/) is the core Library for Scientific computing. 
+
+in particular, it provides a powerful multi-dimensional object like multi-dimensional array objects.
+
+### Arrays
+
+A Numpy array is a grid of value, all of the same type like the following 
+
+<!-- example of Array -->
+$$
+a = \begin{bmatrix}
+1 & 2 & 3
+\end{bmatrix}
+$$
+
+If I express the above matrix with numpy like this, 1 X 3 matrix
+
+```python 
+>>> import numpy as np
+>>>                       ## Also, You can create array with a tuple of python, a = np.array((1,2,3))
+>>> a = np.array([1,2,3]) ## Conversion from the different type of python struture(e.g. list, tuple). 
+                          ## Normally, I will use list structure of python.
+>>> print (type(a))
+<class 'numpy.ndarray'>
+>>> print (a.shape)       ## shape means how to make the matrix, what the matrix looks like. 
+(3,)
+>>> print (np.rank(a))    ## a matrix's rank, the rank means the number of dimension of the matrix.
+1
+>>> print (np.ndim(a))    ## As you can see, ndime is equal to rank value, 
+1
+>>> print (len(a.shape))  ## Also, In numpy, the rank means the length of a.shape. 
+1
+>>> print (a[0], a[1], a[2])
+1 2 3
+
+>>> a                     ## this show you what the matrix look like
+array([1, 2, 3])
+>>> print (a)
+[1 2 3]
+```
+
+As you can see **a.shape**, **np.rank(a)**, **np.ndim(a)**, and **len(a.shape)**, In Numpy, the rank is different from the rank of Linear algebra in column space of a matrix.
+
+In linear algebra, the rank means the number of elements in a basis for column space of a matrix. You can find the meaning of what I'm saying here In [khan academy's Linear algebra](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/dimension-of-the-column-space-or-rank)
+
+In Numpy, the rank means the shape of a matrix. you can also fine out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
+
+you will also make 2 X 3 matrix ilke the follwoing. 
+
+<!-- example of Array -->
+$$
+b = \begin{bmatrix}
+1 & 2 & 3\cr
+4 & 5 & 6
+\end{bmatrix}
+$$
+
+```python
+>>> import numpy as np
+>>> b = np.array([[1,2,3],[4,5,6]])    ## Create 2 X 2 matrix 
+>>> print (b.shape)
+(2, 3)
+>>> print (type(b))
+<class 'numpy.ndarray'>
+>>> print (np.rank(b))
+2
+>>> print (b.ndim)
+2
+>>> print (len(b.shape))
+2
+>>> b
+array([[1, 2, 3],
+       [4, 5, 6]])
+>>> print (b)
+[[1 2 3]
+ [4 5 6]]
+ 
+>>> print (b[0,0], b[0,1], b[1,0])    ## how to index arrary
+1 2 4
+```
+
+**Before entering another example like creating array with built-in function of Numpy**
+
+I think I have to organize this concept of Numpy. 
+
+As You can see the above two examples. there is a little strange thing.
+
+When you make 2 X 2 matrix like the following 
+
+I could verify the shape of 2 X 2 matrix with **b.shape**
+
+let's check it with code
+
+```python
+>>> import numpy as np
+>>> a = np.array([[1,2,3],[4,5,6]])
+>>> a
+array([[1, 2, 3],
+       [4, 5, 6]])
+>>> print (a)
+[[1 2 3]
+ [4 5 6]]
+>>> a.shape
+(2, 3)
+```
+
+The above **a.shape** show me exactly what I expected about the shape of **a** matrix, 2 X 3 matrix like this
+
+$$
+a = \begin{bmatrix}
+1 & 2 & 3\cr
+4 & 5 & 6
+\end{bmatrix}
+$$
+
+But in the case of 1 X any number. i.e 1 row matrix is different from what I expected about the shape of matrix like the following. 
+
+$$
+a = \begin{bmatrix}
+1 & 2 & 3
+\end{bmatrix}\ \ \ Looks like \ \ \ 
+\vec a = \begin{bmatrix}
+1 \cr 2 \cr 3
+\end{bmatrix}
+$$     
+
+Like the above two matrices, when I create 1 row matrix with Numpy, Numpy thinks of 1 row matrix as column vector, the number of column X 1 matrix. 
+
+Let's check it with code 
+
+```python 
+>>> import numpy as np
+>>> a = np.array([1,2,3])
+>>> a
+array([1, 2, 3])
+>>> print (a)
+[1 2 3]
+>>> a.shape
+(3,)
+```
+
+Through the above code,**a.shape**. Numpy think of 1 X 3 matrix as 3 X 1 matrix. 
+
+**BUT** When you print **a** matrix, evne though it looks like 1 X 3 matrix. 
+
+So Normally, When I implement **dot product**, I will have to think of it as 3 X 1 matrix or column vector in 3 dimensions.
+
+**Also,** Numpy provides many function to create arrays :
+
+```python
+>>> import numpy as np
+>>> a = np.zeros((2,2))
+>>> a
+array([[ 0.,  0.],
+       [ 0.,  0.]])
+>>> print (a)
+[[ 0.  0.]
+ [ 0.  0.]]
+>>> a.shape
+(2, 2)
+```
+
+In the case of **np.zeros** function, All of terms in a matrix is zeros.
+
+$$
+a = \begin{bmatrix}
+0 & 0 \cr
+0 & 0
+\end{bmatrix}
+$$   
+
+```python
+>>> import numpy as np
+>>> b = np.ones((1,2))
+>>> b
+array([[ 1.,  1.]])
+>>> print (b)
+[[ 1.  1.]]
+>>> b.shape
+(1, 2)
+```
+In the case of **np.ones** function, All of terms in a matrix is ones.
+
+$$
+b = \begin{bmatrix}
+1 & 1 
+\end{bmatrix}
+$$   
+
+```python
+>>> import numpy as np
+>>> c = np.full((2,2), 7)
+>>> c
+array([[7, 7],
+       [7, 7]])
+>>> print (c)
+[[7 7]
+ [7 7]]
+>>> c.shape
+(2, 2)
+```
+
+In the case of **np.full** function, all of terms in a matrix is constants of what I want. 
+
+$$
+c = \begin{bmatrix}
+7 & 7 \cr
+7 & 7
+\end{bmatrix}
+$$   
+
+```python 
+>>> import numpy as np
+>>> d = np.eye(2)
+>>> d
+array([[ 1.,  0.],
+       [ 0.,  1.]])
+>>> d.shape
+(2, 2)
+>>> print (d)
+[[ 1.  0.]
+ [ 0.  1.]]
+```
+
+In the case of **np.eye(2)** function, this creates 2 X 2 identity matrix
+
+$$
+d = \begin{bmatrix}
+1 & 0 \cr
+0 & 1
+\end{bmatrix}
+$$ 
+
+```python 
+>>> e = np.random.random((2,2))
+>>> e
+array([[ 0.50650121,  0.14590102],
+       [ 0.06640179,  0.21940847]])
+>>> print (e)
+[[ 0.50650121  0.14590102]
+ [ 0.06640179  0.21940847]]
+>>> e.shape
+(2, 2)
+```
+
+In the case of **np.random.random** function, this fills an array with randeom values.
+
+$$
+e = \begin{bmatrix}
+0.50650121 & 0.14590102 \cr
+0.06640179 & 0.21940847
+\end{bmatrix}
+$$ 
+
+you can read about other methods of array creation in [the documentation](https://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)
+
+### Array Indexing 
+
+Numpy offers several ways to index into arrays. 
+
+**Slicing**
+
+Let me create the following rank 2 array with shape (3,4)
+
+$$
+a = \begin{bmatrix}
+1 & 2 & 3 & 4\cr
+5 & 6 & 7 & 8\cr
+9 & 10 & 11 & 12\cr
+\end{bmatrix}
+$$ 
+
+```python 
+>>> import numpy as np
+>>> a = np.array([[1,,2,3,4],[5,6,7,8],[9,10,11,12]])
+>>> a
+array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+>>> print (a)
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+>>> a.shape
+(3, 4)
+>>> a.ndim
+2
+```
+
+I will use slicing to pull out the subarray consisting of the first 2 rows.
+
+$$
+b = \begin{bmatrix}
+2 & 3\cr
+6 & 7\cr
+\end{bmatrix}
+$$
+
+```python
+>>> b = a[:2, 1:3]
+>>> b
+array([[2, 3],
+       [6, 7]])
+>>> print (b)
+[[2 3]
+ [6 7]]
+>>> b.shape
+(2, 2)
+>>> b.ndim
+2
+>>> np.rank(b)
+2
+```
+
+A slice of an entry is a view into the same data, So modifying it will modify the original array
+
+```python
+>>> print (a[0,1])
+2
+>>> b[0, 0] = 77
+>>> b
+array([[77,  3],
+       [ 6,  7]])
+>>> print (b)
+[[77  3]
+ [ 6  7]]
+>>> a
+array([[ 1, 77,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+>>> print (a)
+[[ 1 77  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+```
+
+$$
+b = \begin{bmatrix}
+77 & 3\cr
+6 & 7\cr
+\end{bmatrix}\ \ \ means \ \ \ 
+b = \begin{bmatrix}
+1 & 77 & 3 & 4\cr
+5 & 6 & 7 & 8\cr
+9 & 10 & 11 & 12\cr
+\end{bmatrix}
+$$
+
+I can also mix integer indexing with slicing indexing. However, doing that will yield an array of lowr rank than the original array.
+
+I wil careate the following rank 2 with shape (3,4)
+
+$$
+a = \begin{bmatrix}
+1 & 2 & 3 & 4\cr
+5 & 6 & 7 & 8\cr
+9 & 10 & 11 & 12\cr
+\end{bmatrix}
+$$ 
+
+```python 
+>>> import numpy as np
+>>> a = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+>>> a
+array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+>>> print (a)
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+```
+
+let's see two ways to access the data in middle row of the array.
+
+Mixing integer indexing with slices yields lower rank than the the original array
+
+While using only slices yields an array of the same rank as the original array.
+
+```python 
+>>> row_r1 = a[1, :]
+>>> row_r2 = a[1:2, :]
+>>> print (row_r1, row_r1.shape)
+[5 6 7 8] (4,)
+>>> print (row_r2, row_r2.shape)
+[[5 6 7 8]] (1, 4)
+```
+
+Also, I can get the result when I access columns of an array :
+
+```python
+>>> col_r1 = a[:, 1]
+>>> col_r2 = a[: , 1:2]
+>>> print (col_r1, col_r1.shape)
+[ 2  6 10] (3,)
+>>> print (col_r2, col_r2.shape)
+[[ 2]
+ [ 6]
+ [10]] (3, 1)
+```
+
+**Integer array indexing**
+
+When you index into numpy arrays using slicing, the resulting array view iwll always be a subarray of the original array. In contrast, Integer array  indexing allows you to construct arbitrary arrays using the data from another arrary.
+
+as an example, let's make a matrix like this :
+
+$$
+a = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+5 & 6 \cr
+\end{bmatrix}\ \ \ is\ said\ to\ \ \ 
+a = \begin{bmatrix}
+a_{00} & a_{01} \cr
+a_{10} & a_{11} \cr
+a_{20} & a_{21} \cr
+\end{bmatrix}
+$$ 
+
+```python 
+>>> import numpy as np
+>>> a = np.array([[1,2],[3,4],[5,6]])
+>>> a
+array([[1, 2],
+       [3, 4],
+       [5, 6]])
+>>> print (a)
+[[1 2]
+ [3 4]
+ [5 6]]
+>>> a.shape
+(3, 2)
+```
+
+$$
+In\ a = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+5 & 6 \cr
+\end{bmatrix},\ \ \ a[[0,1,2],[0,1,0]]\ is\  
+a = \begin{bmatrix}
+1 & 4 & 5
+\end{bmatrix}\ \ \ from\ \ \ 
+a = \begin{bmatrix}
+a_{00} & 2 \cr
+3 & a_{11} \cr
+a_{20} & 6 \cr
+\end{bmatrix}
+$$ 
+
+```python 
+>>> print (a[[0,1,2],[0,1,0]])   ## [0,1,2] means the number of matrix row, 
+[1 4 5]                          ## [0,1,0] means the correspoding number of the row number.
+>>> print (a[[0,1,2],[0,1,0]].shape)
+(3,)
+
+>>> print (np.array([a[0,0], a[1,1], a[2,0]])) ## the above is equivalent to this array.
+[1 4 5]
+>>> print (np.array([a[0,0], a[1,1], a[2,0]]).shape)
+(3,)
+
+>>> print (a[[0,0], [1,1]])
+[2 2]
+>>> print (a[[0,0], [1,1]].shape)
+(2,)
+>>> print (np.array([a[0,1],a[0,1]]))
+[2 2]
+>>> print (np.array([a[0,1],a[0,1]]).shape)
+(2,)
+````
+
+another way to use integer arrayy indexing :
+
+let me create a new array from which we will select elements. 
+
+```python 
+>>> a = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
+>>> a
+array([[ 1,  2,  3],
+       [ 4,  5,  6],
+       [ 7,  8,  9],
+       [10, 11, 12]])
+>>> print (a)
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+
+>>> b = np.array([0,2,0,1])
+>>> b
+array([0, 2, 0, 1])
+>>> print (b)
+[0 2 0 1]
+print (a[np.arange(4), b])
+[ 1  6  7 11]
+```
+
+$$
+In\ a = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+7 & 8 & 9 \cr
+10 & 11 & 12 \cr
+\end{bmatrix}\ \ \ and\ \ \
+b = \begin{bmatrix}
+0 & 2 & 0 & 1 \cr
+\end{bmatrix},\ \ \ a[np.arange(4),b]\ \ \is \ \ \
+\begin{bmatrix}
+1 & 6 & 7 & 11\cr
+\end{bmatrix}\ \ \ From\ \ \
+a = \begin{bmatrix}
+a_{00} & 2 & 3 \cr
+4 & 5 & a_{12} \cr
+a_{30} & 8 & 9 \cr
+10 & a_{31} & 12 \cr
+\end{bmatrix} 
+$$
+
+**Boolean array indexing**
+
+Boolean array indexing lets you pick out arbitrary elements of an array, Frequently this type of indexing is used to select the elements of an array that satisfy some condition.
+
+```python
+>>> import numpy as np
+>>> a = np.array([[1,2],[3,4],[5,6]])       ## 2 X 3 matrix
+>>> bool_idx = (a> 2)                       ## Find elements bigger than 2 in 2 X 3 matrinx
+>>> print (bool_idx)                        ## bool_idx got the same shape as a, where each slot of bool_idx tells
+[[False False]                              ## whether that element of a is a > 2
+ [ True  True]
+ [ True  True]]
+>>> bool_idx.shape                          ## the shape of a is the same from the shape of bool_idx 
+(3, 2)
+>>> a.shape
+(3, 2)
+>>> print (a[bool_idx])                     ## with Bool array indexing, you construct array in rank 1, 
+[3 4 5 6]                                   ## the elements of the array is a > 2 like true values in bool_idx
+>>> print (a[a > 2])                        ## a [a > 2] is the same from a[bool_idx]
+[3 4 5 6]
+```
+
+$$
+as\ example\ a = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+5 & 6 \cr
+\end{bmatrix},\ \ \ \ after\ (a>2)\ \ \  is\ \ \ 
+\begin{bmatrix}
+False & False \cr
+True & True \cr
+True & True \cr
+\end{bmatrix}
+$$
+
+if you want to know more about indexing, you should read [the documentation](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html) 
+
+
+### Datatypes
+
+Every numpy array is a grid of element of the same type. when you create an array, Numpy tries to guess what type the elements of array are.
+
+and Functions that construct arrays usually also include an optional argument to explicilty specify the datatype.
+
+here is example. 
+
+```python
+>>> import numpy as np
+>>> x = np.array([1,2])
+>>> print (x.dtype)
+int32
+>>>
+>>> x = np.array([1.0, 2.0])
+>>> print (x.dtype)
+float64
+>>>
+>>> x = np.array([1,2], dtype=np.int64)
+>>> print (x.dtype)
+int64
+```
+you can read all about Numpy datatype in [the documentation](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)
+
+### Array math
+
+Basic mathematical fucntios operate elementwise on array, and are available both as operator overloads and as functions in the numpy module.
+
+$$
+Between\ \begin{bmatrix}
+a_{00} & a_{01} \cr
+a_{10} & a_{11} \cr
+a_{20} & a_{21} \cr
+\end{bmatrix}\ \ \  and\ \ \
+\begin{bmatrix}
+b_{00} & b_{01} \cr
+b_{10} & b_{11} \cr
+b_{20} & b_{21} \cr
+\end{bmatrix}\ \ \ if\ it\ is\ operated(+,-,*,/,sqrt(matrix)),\ \ \the\ result\ is\ \ \     
+\begin{bmatrix}
+a_{00}(+,-,*,/)b_{00} & a_{01}(+,-,*,/)b_{01} \cr
+a_{10}(+,-,*,/)b_{10} & a_{11}(+,-,*,/)b_{11} \cr
+a_{20}(+,-,*,/)b_{20} & a_{21}(+,-,*,/)b_{21} \cr
+\end{bmatrix}
+$$
+
+Let's see example. 
+
+
+```python
+>>> import numpy as n
+>>> x = np.array([[1,2],[3,4]], dtype=np.float64)
+>>> y = np.array([[5,6],[7,8]], dtype=np.float64)
+```
+
+$$
+x = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix}\ \ \ 
+y = \begin{bmatrix}
+5 & 6 \cr
+7 & 8 \cr
+\end{bmatrix}
+$$
+
+**Elemetwise sum**
+
+```python
+>>> print (x + y)         ## operator overloading
+[[  6.   8.]
+ [ 10.  12.]]
+>>> print (np.add(x, y))  ## function in Numpy module
+[[  6.   8.]
+ [ 10.  12.]]
+```
+$$
+\begin{bmatrix}
+1. & 2. \cr
+3. & 4. \cr
+\end{bmatrix}\ \ \ +\ \ \  
+\begin{bmatrix}
+5. & 6. \cr
+7. & 8. \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+6.(1.+5.) & 8.(2.+6.) \cr
+10.(3.+7.) & 12(4.+8.) \cr
+\end{bmatrix}
+$$
+
+**Elementwise difference**
+
+```python
+>>> print (x-y)
+[[-4. -4.]
+ [-4. -4.]]
+>>> print (np.subtract(x,y))
+[[-4. -4.]
+ [-4. -4.]]
+```
+
+$$
+\begin{bmatrix}
+1. & 2. \cr
+3. & 4. \cr
+\end{bmatrix}\ \ \ -\ \ \  
+\begin{bmatrix}
+5. & 6. \cr
+7. & 8. \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+-4.(1.-5.) & -4.(2.-6.) \cr
+-4.(3.-7.) & -4.(4.-8.) \cr
+\end{bmatrix}
+$$
+
+**Elementwise product**
+
+```python
+>>> print (x * y)
+[[  5.  12.]
+ [ 21.  32.]]
+>>> print (np.multiply(x,y))
+[[  5.  12.]
+ [ 21.  32.]]
+```
+
+$$
+\begin{bmatrix}
+1. & 2. \cr
+3. & 4. \cr
+\end{bmatrix}\ \ \ *\ \ \  
+\begin{bmatrix}
+5. & 6. \cr
+7. & 8. \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+5.(1.*5.) & 12.(2.*6.) \cr
+21.(3.*7.) & 32.(4.*8.) \cr
+\end{bmatrix}
+$$
+
+**Elementwise division**
+
+```python 
+>>> print (x / y)
+[[ 0.2         0.33333333]
+ [ 0.42857143  0.5       ]]
+>>> print (np.divide(x,y))
+[[ 0.2         0.33333333]
+ [ 0.42857143  0.5       ]]
+```
+
+$$
+\begin{bmatrix}
+1. & 2. \cr
+3. & 4. \cr
+\end{bmatrix}\ \ \ /\ \ \  
+\begin{bmatrix}
+5. & 6. \cr
+7. & 8. \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+0.2(1./5.) & 0.33333333(2./6.) \cr
+0.42857143(3./7.) & 0.5(4./8.) \cr
+\end{bmatrix}
+$$
+
+
+**Elementwise square root**
+
+```python
+>>> print (np.sqrt(x))
+[[ 1.          1.41421356]
+ [ 1.73205081  2.        ]]
+```
+
+$$
+a = \begin{bmatrix}
+1. & 2. \cr
+3. & 4. \cr
+\end{bmatrix},\ \ \ \sqrt a\ \ \ is\ \ \ 
+\begin{bmatrix}
+ 1.(\sqrt 1.) & 1.41421356(\sqrt 2.) \cr
+1.73205081(\sqrt 3.) & 2(\sqrt 4.) \cr
+\end{bmatrix}
+$$
+
+In the case of the above, Note that unlike MATLAB, **\*** is elementwise multiplication, not matrix multiplication. 
+
+So I instead use the **dot** function to compute inner products of vectors, to multiply a vector by a matrix, and to multiply matrices.
+
+**dot** is avaiable both as a function in the Numpy module and as an instance method of array objects :
+
+```python
+>>> x = np.array([[1,2],[3,4]])
+>>> y = np.array([[5,6],[7,8]])
+>>> v = np.array([9,10])
+>>> w = np.array([11,12])
+>>> print (x)
+[[1 2]
+ [3 4]]
+>>> print (y)
+[[5 6]
+ [7 8]]
+>>> print (v)
+[ 9 10]
+>>> print (w)
+[11 12]
+>>> x.shape
+(2, 2)
+>>> y.shape
+(2, 2)
+>>> v.shape
+(2,)
+>>> w.shape
+(2,)
+```
+
+$$
+x = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix}\ \ \ 
+y = \begin{bmatrix}
+5 & 6 \cr
+7 & 8 \cr
+\end{bmatrix}\ \ \ 
+v = \begin{bmatrix}
+9 & 10 \cr
+\end{bmatrix}\ \ \ 
+w = \begin{bmatrix}
+11 & 12 \cr
+\end{bmatrix}
+$$
+
+unlike matrix of the above v, w arrays, let's think of those(v, w arrays) as column vectors.
+
+**inner product of vectors** OR **dot product of vectors**
+
+In here, if both of column vectors implement **dot** product.
+
+by definition like this.
+
+$$
+\vec a,\ \vec b\ \in\  R^2,\ \ \ \vec a^T\cdot\vec b\ \ \ = \begin{bmatrix}
+x_1 & \dots & x_n  
+\end{bmatrix}\ \begin{bmatrix}
+y_1 \cr \dots \cr y_n  
+\end{bmatrix}\ \ \ = \sum_{k=1}^n x_k y_k\  = x_1y_1+\ x_2y_2+\ \dots + x_ny_n  
+$$
+
+So by the above definition, If I express dot product of between v and w array,column vectors.
+
+In here, keep in mind, as I said on [Arrays part](#Arrays) of this article,
+
+from now on it'd better think of 1 X n matrix as n X 1 column vector like the following. 
+
+$$
+\vec v = \begin{bmatrix}
+9 \cr 10 \cr
+\end{bmatrix}\ \ \ 
+\vec w = \begin{bmatrix}
+11 \cr 12 \cr
+\end{bmatrix}
+$$
+
+
+```python
+>>> v.dot(w)
+219
+>>> np.dot(v,w)
+219
+```
+
+if I draw the above dot products, that is as follows
+
+$$
+\vec v^T = \begin{bmatrix}
+9 & 10 \cr
+\end{bmatrix}\ \ \ 
+\vec w = \begin{bmatrix}
+11 \cr 12 \cr
+\end{bmatrix}\ \ \ So\ \vec v^T\cdot\vec w\ \ \ =\ 219(9*11+10*12)
+$$
+
+**Matrix-vector product**
+
+$$
+$$
+
 
 # Reference 
 
@@ -49,3 +909,11 @@ I recommend you to read the followings :
   - [matplotlib for graph with python](https://matplotlib.org/index.html)
   
   if you continue to python more, I recommend you some library of python, numpy, scipy, matplolib
+  
+  For designs of this page 
+  
+  - [Stackedit](https://stackedit.io/editor)
+  
+  - [addition of MathJax](http://gastonsanchez.com/visually-enforced/opinion/2014/02/16/Mathjax-with-jekyll/)
+  
+  - [The basic Syntax of MathJax](http://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html#matrix)
