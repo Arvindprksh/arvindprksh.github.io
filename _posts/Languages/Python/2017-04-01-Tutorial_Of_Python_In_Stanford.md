@@ -39,14 +39,14 @@ I mean this is just the basic syntax of Python
 - Classes
   
   
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+
 $$
 \begin{bmatrix}
 aaa & b\cr
 c   & ddd
 \end{bmatrix}
 $$
-</script>
+
   
 Python is a high-level, dynamically typed multiprogramming lauguage. Python code is readable and it's easy to express your ideas with few lines of code
 
