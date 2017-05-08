@@ -47,6 +47,8 @@ c   & ddd
 \end{bmatrix}
 $$
 
+<a href="http://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" title="a = \begin{bmatrix} 1 & & \\ & & \\ & & \end{bmatrix}" /></a>
+  
   
 Python is a high-level, dynamically typed multiprogramming lauguage. Python code is readable and it's easy to express your ideas with few lines of code
 
