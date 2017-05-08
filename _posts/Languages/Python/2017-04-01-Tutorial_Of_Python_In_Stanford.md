@@ -38,13 +38,15 @@ I mean this is just the basic syntax of Python
 - Functions
   
 - Classes
-  
+
+<script>
 $$
 \begin{bmatrix}
 aaa & b\cr
 c   & ddd
 \end{bmatrix}
 $$
+</script>
 
 <a href="http://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?a&space;=&space;\begin{bmatrix}&space;1&space;&&space;&&space;\\&space;&&space;&&space;\\&space;&&space;&&space;\end{bmatrix}" title="a = \begin{bmatrix} 1 & & \\ & & \\ & & \end{bmatrix}" /></a>
   
