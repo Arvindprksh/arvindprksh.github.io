@@ -851,7 +851,7 @@ In here, if both of column vectors implement **dot** product.
 by definition like this.
 
 $$
-\vec a,\ \vec b\ \in\  R^2,\ \ \ \vec a^T\cdot\vec b\ \ \ = \begin{bmatrix}
+\vec a,\ \vec b\ \in\  \rm I\! R^2,\ \ \ \vec a^T\cdot\vec b\ \ \ = \begin{bmatrix}
 x_1 & \dots & x_n  
 \end{bmatrix}\ \begin{bmatrix}
 y_1 \cr \dots \cr y_n  
@@ -892,11 +892,401 @@ $$
 \end{bmatrix}\ \ \ So\ \vec v^T\cdot\vec w\ \ \ =\ 219(9*11+10*12)
 $$
 
+As you can see the above result, dot produnct of vector-vector is scalar.  
+
 **Matrix-vector product**
 
+```python 
+>>> x
+array([[1, 2],
+       [3, 4]])
+>>> v
+array([ 9, 10])
+>>> x.dot(v)
+array([29, 67])
+>>> np.dot(x,v)
+array([29, 67])
+```
+
+Let's see how the product between matrix and vector(column vector) is calculated.
+
 $$
+X\cdot\vec v = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix}\cdot\begin{bmatrix}
+9 \cr 10 \cr
+\end{bmatrix}\ \ \  =\   \begin{bmatrix}
+39(1*9+2*10) & 67(3*9+4*10) \cr
+\end{bmatrix}
 $$
 
+**Matrix-Matrix product**
+
+This product is the same from normally what you think of about the product between matrices as that product in linear algebra.
+
+Let's see example of the product
+
+```python 
+>>> x
+array([[1, 2],
+       [3, 4]])
+>>> y
+array([[5, 6],
+       [7, 8]])
+>>> x.dot(y)
+array([[19, 22],
+       [43, 50]])
+>>> np.dot(x, y)
+array([[19, 22],
+       [43, 50]])
+```
+
+$$
+X\cdot Y = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix}\cdot\begin{bmatrix}
+5 & 6 \cr
+7 & 8 \cr
+\end{bmatrix}\ \ \  =\   \begin{bmatrix}
+19(1*5+2*7) & 22(1*6+2*8) \cr
+43(3*5+4*7) & 50(3*6+4*8) \cr
+\end{bmatrix}
+$$
+
+As you see the total dot product in Numpy, You will have to be careful about how numpy calculate depending on argument pair of dot product.
+
+Keep in mind once again, if You use dot product, 1 X N matrix is thought of as column vector(N X 1 matrix), 
+
+So in the case of dot producnt with column vector. when column vector is placed on firt element, i.e the location is the left of dot product.
+
+you have to think of the vector as transpose of the vector(the left of dot product) in Numpy dot product 
+
+$$
+\vec a^T\cdot\ (matrix\ or\ colum vector) 
+$$
+
+In addition to this, Numpy provides many useful functions for performing computations on arrays, one of the most useful is **sum**
+
+```python 
+>>> import numpy as np
+>>> x = np.array([[1,2],[3,4]])
+>>>
+>>> print (np.sum(x))                   ## Compute sum of all elements
+10
+>>> print (np.sum(x, axis=0))           ## axis = 0 is column, i.e. Compute sum of each column
+[4 6]
+>>> print (np.sum(x, axis=0).shape)
+(2,)
+>>> print (np.sum(x, axis=1))           ## axis = 1 is row, i.e. Compute sum of each row
+[3 7]
+>>> print (np.sum(x, axis=1).shape)
+(2,)
+```
+
+Let's see the case of axis 0
+
+$$
+X = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix},\ \ \ 
+np.sum(x) = 10(1+2+3+4)\ \ \
+np.sum(x,\ axis=0) = \begin{bmatrix}
+4(1+3) \cr 6(2+4) \cr
+\end{bmatrix}\ \ \
+np.sum(x,\ axis=1) = \begin{bmatrix}
+3(1+2) \cr 7(3+4) \cr
+\end{bmatrix}
+$$
+
+You can also find out the mathematical function in [the documentation](https://docs.scipy.org/doc/numpy/reference/routines.math.html)
+
+Apart from computing mathematical functions using arrays, we frequently need to reshape or otherwise manipulate data in arrarys. 
+
+The simplest example of this type of operation is transposing a matrix; to transpose a matrix, simply use the **T** attribute of an array object.
+
+Let's go example of code
+
+```python 
+>>> x = np.array([[1,2],[3,4]])  
+>>> print (x)
+[[1 2]
+ [3 4]]
+>>> print (x.T)
+[[1 3]
+ [2 4]]
+>>> v = np.array([1,2,3])        ## Note that taking the transpose of a rank 1 array does nothing in Numpy
+>>> print (v)
+[1 2 3]
+>>> print (v.T)
+[1 2 3]
+```
+
+Transpose means exchange of  the location, by changing the location of row ans column. 
+
+
+$$
+X = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix},\ \ \ 
+X^T =  \begin{bmatrix}
+1 & 3 \cr
+2 & 4 \cr
+\end{bmatrix}
+$$
+
+more exactly, 
+
+$$
+(X^T)_{ij} = X_{ji}
+$$
+
+I will explain to you with an example of the transpose of column vector is row vector. 
+
+$$
+\vec x = \begin{bmatrix}
+x_{1} \cr
+x_{2} \cr
+\vdots \cr
+x_{n} \cr
+\end{bmatrix},\ \ \
+\vec x^T = \begin{bmatrix}
+x_{1} & x_{2} & \ldots & x_{n} \cr
+\end{bmatrix}
+$$
+
+__However, Note that In Numpy, take the transpose of a rank 1 array doesn nothing__
+
+let's look over an example of the transpose of a rank 1 array in Numpy
+
+```python
+>>> v = np.array([1,2,3])        ## Note that taking the transpose of a rank 1 array does nothing in Numpy
+>>> print (v)
+[1 2 3]
+>>> print (v.T)
+[1 2 3]
+```
+
+You can also read about other methods of array creation in [the documentation](https://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)
+
+### Broadcasting
+
+Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations, Frequently we have a smaller array and  a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
+
+For example suppose that we want to add a constant vector to each row of a matrix. We would do it like this :
+
+```python 
+>>> import numpy  as np
+>>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])    ## Create 4 X 3 matrix
+>>> print (x)
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+>>> v = np.array([1,0,1])
+>>> print (v)
+[1 0 1]
+>>> x[0]
+array([1, 2, 3])
+>>> x[0].shape
+(3,)
+>>> x[:, 1].shape
+(4,)
+>>> x[:, 1]
+array([ 2,  5,  8, 11])
+>>> y = np.empty_like(x)  ## Create an empty matrix with the same shape as matrix x
+>>> print (y)
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+>>> for i in range(4) :   ## Add the vector v to each row of the matrix x with an explicit loop      
+...     y[i, :] = x[i, :] + v
+...
+>>> print (y)
+[[ 2  2  4]
+ [ 5  5  7]
+ [ 8  8 10]
+ [11 11 13]]
+>>> y[0][1]               ##  another way to access the element of array using y[row][colnum]
+2                         ## But normally, when you access the element of an array, use y[row, colum]
+>>> y[0][2]
+4
+>>> y[0][:]
+array([2, 2, 4])
+```
+
+computing the above for statement in python could be slow. 
+
+let's see another way to implement the above code. 
+
+I mean after making vv by stacking multiple copies of v vertically like the same shape of matrix x, then I will perform elementwise sum of x and vv
+
+First let's see Arrays, X, V, and Y.
+
+$$
+X = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+7 & 8 & 9 \cr
+10 & 11 & 12 \cr
+\end{bmatrix},\ \ \
+Y = \begin{bmatrix}
+0 & 0 & 0 \cr
+0 & 0 & 0 \cr
+0 & 0 & 0 \cr
+0 & 0 & 0 \cr
+\end{bmatrix}\ \ \
+V = \begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ \ \
+$$
+
+ahead of explaining more. 
+
+Second, let's add vector v to matrix x and then put the result in matrix y. 
+
+i.e. this operation means after changing vector v into vv by stacking multiple copies of v vertically with the same shape of x, and then add it to matrix x
+
+let's draw what I'm explaining 
+
+$$
+V = \begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ \ \ Let's\ make\ it\ the\ same\ shape\ like\ matrix\ x\ \ \
+VV = \begin{bmatrix}
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+\end{bmatrix}
+$$
+
+> for i in range(4) :  y[i, :] = x[i, :] + v is the same from X + VV
+
+$$
+X\ +\ VV = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+7 & 8 & 9 \cr
+10 & 11 & 12 \cr
+\end{bmatrix}\ \ \ +\ \ \
+\begin{bmatrix}
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+2 & 2 & 4 \cr
+5 & 5 & 7 \cr
+8 & 8 & 10 \cr
+11 & 11 & 13 \cr
+\end{bmatrix}
+$$
+
+let's turn The above figure into python code. 
+
+```python
+>>> import numpy as np
+>>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
+>>> v = np.array([1,0,1])
+>>> vv = np.tile(v, (4,1))
+>>> print (vv)
+[[1 0 1]
+ [1 0 1]
+ [1 0 1]
+ [1 0 1]]
+>>> print (v)
+[1 0 1]
+>>> y = np.empty_like(x)
+>>> print (y)
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+>>> y = x + vv
+>>> print (y)
+[[ 2  2  4]
+ [ 5  5  7]
+ [ 8  8 10]
+ [11 11 13]]
+```
+
+Numpy broadcasting allows us to perform this computation withou actually creating multiple copies of v. 
+
+Consider this version operation, using broadcasting.
+
+```python 
+>>> import numpy as np
+>>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
+>>> v = np.array([1,0,1])
+>>> y = np.empty_like(x)
+>>> x
+array([[ 1,  2,  3],
+       [ 4,  5,  6],
+       [ 7,  8,  9],
+       [10, 11, 12]])
+>>> v
+array([1, 0, 1])
+
+>>> y
+array([[0, 0, 0],
+       [0, 0, 0],
+       [0, 0, 0],
+       [0, 0, 0]])
+>>> y = x + v
+>>> print (y)
+[[ 2  2  4]
+ [ 5  5  7]
+ [ 8  8 10]
+ [11 11 13]]
+```
+
+as you can see the above code, if you use numpy broadcasting, it is powerful to compute arrays of different shapes array,
+
+numpy broadcasting automatically fit smaller shape to larger shape,and then compute. 
+
+i.e. The line **y=x+v** works even though x has shape (4,3) and v has shape (3,) due to broadcasting; this line works as if v actually had shape (4,3), where each row was a copy of v, and the sum was performed elementwise. 
+
+> y = x + v means like this
+
+$$
+Y = X\ +\ V = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+7 & 8 & 9 \cr
+10 & 11 & 12 \cr
+\end{bmatrix}\ \ \ +\ \ \
+\begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+2 & 2 & 4 \cr
+5 & 5 & 7 \cr
+8 & 8 & 10 \cr
+11 & 11 & 13 \cr
+\end{bmatrix}
+$$
+
+Owing to numpy broadcasting, you don't need to chang vector v inot matrix vv.
+
+If you want to know more about numpy broadcasting. try to read the explanation from [the documentation](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html) and [this explanation](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc)
+
+functions that support broadcasting are know as universal functions, you can find the list of all universal functions in [the documentaion](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
+
+
+~~~~~~  here i have to arrange the broadcasting of numpy. 
+
+
+## Numpy Documentation 
+
+this brief overview has touched on many of the important things that you need to know about numpy, But now is far from understaning completely.
+
+So If you want to know more details. check out [the numpy reference](https://docs.scipy.org/doc/numpy/reference/) to find out much more about numpy
 
 # Reference 
 
