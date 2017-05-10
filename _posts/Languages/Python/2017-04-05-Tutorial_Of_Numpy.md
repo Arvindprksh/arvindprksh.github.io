@@ -1676,9 +1676,9 @@ So If you want to know more details. check out [the numpy reference](https://doc
   
   - [matplotlib for graph with python](https://matplotlib.org/index.html)
   
-  if you continue to python more, I recommend you some library of python, numpy, scipy, matplolib
+  if you continue to python more, I recommend you some library of python, numpy, scipy, matplolib.
   
-  For designs of this page 
+  For designs of this page, 
   
   - [Stackedit](https://stackedit.io/editor)
   
