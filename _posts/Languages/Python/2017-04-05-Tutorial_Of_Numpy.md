@@ -22,7 +22,7 @@ $$
 
 # Tutorial of Numpy
 
-This is based on stanford tutorial of python 
+This is based on stanford tutorial of python. 
 
 in here, we will look over Numpy Linbrary of python. 
 
@@ -92,9 +92,9 @@ array([1, 2, 3])
 
 As you can see **a.shape**, **np.rank(a)**, **np.ndim(a)**, and **len(a.shape)**, In Numpy, the rank is different from the rank of Linear algebra in column space of a matrix.
 
-In linear algebra, the rank means the number of elements in a basis for column space of a matrix. You can find the meaning of what I'm saying here In [khan academy's Linear algebra](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/dimension-of-the-column-space-or-rank)
+In linear algebra, the rank means the number of elements in a basis for column space of a matrix. You can find the meaning of what I'm saying here In [khan academy's Linear algebra.](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/dimension-of-the-column-space-or-rank)
 
-In Numpy, the rank means the number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of th array along each dimension. you can also find out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
+In Numpy, the rank means the number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of th array along each dimension. you can also find out what I mean in [this stack overflow.](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
 
 I will also make 2 X 3 matrix ilke the follwoing. 
 
@@ -133,13 +133,13 @@ array([[1, 2, 3],
 
 **Before entering into numpy more deeply**
 
-I think I have to organize this concept of Numpy. i.e about one-dimension array
+I think I have to organize this concept of Numpy. i.e about one-dimension array.
 
 As You can see the above two examples. there is a little strange thing.
 
 When you make 2 X 2 matrix, I could verify the shape of 2 X 2 matrix with **b.shape**
 
-let's check it with code
+let's check it with code.
 
 ```python
 >>> import numpy as np
@@ -154,7 +154,7 @@ array([[1, 2, 3],
 (2, 3)
 ```
 
-The above **a.shape** shows me exactly what I expected about the shape of matrix **a**,that is 2 X 3 matrix like this
+The above **a.shape** shows me exactly what I expected about the shape of matrix **a**,that is 2 X 3 matrix like this :
 
 $$
 a = \begin{bmatrix}
@@ -176,9 +176,9 @@ $$
 
 Like the above two matrices, when I create 1 row matrix with Numpy, Numpy thinks of 1 row matrix as column vector, the number of column X 1 matrix. 
 
-i.e. one dimension array looks like column vector
+i.e. one dimension array looks like column vector.
 
-Let's check it with code 
+Let's check it with code.
 
 ```python 
 >>> import numpy as np
@@ -274,7 +274,7 @@ array([[ 1.,  0.],
  [ 0.  1.]]
 ```
 
-In the case of **np.eye(2)** function, this creates 2 X 2 identity matrix
+In the case of **np.eye(2)** function, this creates 2 X 2 identity matrix.
 
 $$
 d = \begin{bmatrix}
@@ -304,7 +304,7 @@ e = \begin{bmatrix}
 \end{bmatrix}
 $$ 
 
-you can read about other methods of array creation in [the documentation](https://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)
+you can read about other methods of array creation in [the documentation.](https://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)
 
 ### Array Indexing 
 
@@ -339,7 +339,7 @@ array([[ 1,  2,  3,  4],
 2
 ```
 
-I will use slicing to pull out the subarray consisting of the first 2 rows. that matrix is as follows
+I will use slicing to pull out the subarray consisting of the first 2 rows. that matrix is as follows :
 
 $$
 b = \begin{bmatrix}
@@ -364,7 +364,7 @@ array([[2, 3],
 2
 ```
 
-A slice of an entry is a view into the same data, So modifying it will modify the original array
+A slice of an entry is a view into the same data, So modifying it will modify the original array.
 
 $$
 b = \begin{bmatrix}
@@ -400,7 +400,7 @@ array([[ 1, 77,  3,  4],
 
 I can also mix integer indexing with slicing indexing. However, doing that will yield an array of lower rank than the original array.
 
-let's do it, first, I wil careate the following rank 2 with shape (3,4) as follows
+let's do it, first, I wil careate the following rank 2 with shape (3,4) as follows :
 
 $$
 a = \begin{bmatrix}
@@ -425,7 +425,7 @@ array([[ 1,  2,  3,  4],
 
 there are two ways to access the data in middle row of the array.
 
-Mixing integer indexing with slices yields lower rank than the the original array
+Mixing integer indexing with slices yields lower rank than the the original array.
 
 While using only slices yields an array of the same rank as the original array.
 
@@ -868,7 +868,7 @@ $$
 sum_{k=1}^n x_k y_k\ = x_1y_1+\ x_2y_2+ \dots + x_ny_n  
 $$
 
-by the above definition, If I multiply a vector by another vector
+by the above definition, If I multiply a vector by another vector,
 
 ahead of entering the process of vector-vector multiplication, you will have to think of **v, w** as column vector as follows :
 
@@ -892,7 +892,7 @@ $$
 \end{bmatrix}\ ,So\ that\ \vec v^T\cdot\vec w\ =\ 219(9*11+10*12)
 $$
 
-If you make the above dot product of two vector with numpy
+If you make the above dot product of two vector with numpy.
 
 
 ```python
@@ -931,7 +931,7 @@ $$
 
 **Matrix-Matrix product**
 
-Let's see example of the product
+Let's see example of the product.
 
 ```python 
 >>> x
@@ -965,7 +965,7 @@ As you see the total dot product in Numpy, You will have to be careful about how
 
 **Keep in mind once again, if You use dot product, one-dimesion matrix need to be thought of as column vector.**
 
-in the case of dot producnt with column vector which is placed on firt element,
+in the case of dot producnt with column vector which is placed on firt element.
 
 $$
 \vec a^T\cdot\ (matrix\ or\ colum vector) 
@@ -975,7 +975,7 @@ like the above, you need to think vector **a** as the transpose of vector **a**
 
 **Sum function**
 
-In addition to this, Numpy provides many useful functions for performing computations on arrays, one of the most useful is **sum**
+In addition to this, Numpy provides many useful functions for performing computations on arrays, one of the most useful is **sum**.
 
 ```python 
 >>> import numpy as np
@@ -1027,13 +1027,13 @@ np.sum(x,\ axis=1) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-You can also find out the mathematical function in [the documentation](https://docs.scipy.org/doc/numpy/reference/routines.math.html)
+You can also find out the mathematical function in [the documentation.](https://docs.scipy.org/doc/numpy/reference/routines.math.html)
 
 Apart from computing mathematical functions using arrays, we frequently need to reshape or otherwise manipulate data in arrarys. 
 
 The simplest example of this type of operation is transposing a matrix; to transpose a matrix, simply use the **T** attribute of an array object.
 
-Let's see an example of code
+Let's see an example of code.
 
 ```python 
 >>> x = np.array([[1,2],[3,4]])  
@@ -1083,7 +1083,7 @@ x_{1} & x_{2} & \ldots & x_{n} \cr
 \end{bmatrix}
 $$
 
-let's look over an example of the transpose of a rank 1 array in Numpy
+let's look over an example of the transpose of a rank 1 array in Numpy.
 
 ```python
 >>> v = np.array([1,2,3])        ## Note that taking the transpose of a rank 1 array does nothing in Numpy
@@ -1241,11 +1241,11 @@ result = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-From now on, let's see another way to implement the above process without for statement 
+From now on, let's see another way to implement the above process without for statement. 
 
 that is making **vv** by stacking multiple copies of **v** vertically like the same shape of matrix **x**.
 
-And then perform the sum of **x** and **vv** element by element
+And then perform the sum of **x** and **vv** element by element.
 
 > First generate VV by stacking multiple copies of v 
 
@@ -1284,7 +1284,7 @@ X\ +\ VV = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-now is turn of making the code with Numpy
+now is turn of making the code with Numpy.
 
 > What can the sum of x and vv do programming in Numpy ? 
 
@@ -1395,9 +1395,9 @@ $$
 
 Owing to numpy broadcasting, you don't need to chang vector v into matrix vv.
 
-If you want to know more about numpy broadcasting. try to read the explanation from [the documentation](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html) and [this explanation](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc)
+If you want to know more about numpy broadcasting. try to read the explanation from [the documentation](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html) and [this explanation.](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc)
 
-functions that support broadcasting are know as universal functions, you can find the list of all universal functions in [the documentaion](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
+functions that support broadcasting are know as universal functions, you can find the list of all universal functions in [the documentaion.](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
 The broadcasting rule : 
 
@@ -1613,9 +1613,9 @@ $$
 \end{bmatrix}
 $$
 
-**keep in mind, the broadcasting of vector w is only conceptual, the actual way is using looping in C**
+**keep in mind, the broadcasting of vector w is only conceptual, the actual way is using looping in C.**
 
-Let's see the final example of broadcasting 
+Let's see the final example of broadcasting.
 
 > multiplication between a matrix and a constant
 
@@ -1664,7 +1664,7 @@ As you have seen for a while about broadcasting, Broadcasting typically makes yo
 
 this brief overview has touched on many of the important things that you need to know about numpy, But now is far from understaning completely.
 
-So If you want to know more details. check out [the numpy reference](https://docs.scipy.org/doc/numpy/reference/) to find out much more about numpy
+So If you want to know more details. check out [the numpy reference](https://docs.scipy.org/doc/numpy/reference/) to find out much more about numpy.
 
 # Reference 
 
