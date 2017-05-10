@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tutorial of Numpy with Stanford python tutorial
-subtitle: I will let you know the basics of python syntax.
+subtitle: I will let you know the basics of Numpy.
 category: Python
 tags: [language, python]
 permalink: /2017/04/05/Tutorial_Of_Numpy/
