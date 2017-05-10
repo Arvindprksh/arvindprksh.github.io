@@ -54,16 +54,18 @@ in particular, it provides a powerful multi-dimensional object like multi-dimens
 
 ### Arrays
 
-A Numpy array is a grid of value, all of the same type like the following 
+A Numpy array is a grid of value, all of the same type like the following :
 
 <!-- example of Array -->
+<div align="center">
 $$
 a = \begin{bmatrix}
 1 & 2 & 3
 \end{bmatrix}
 $$
+</div>
 
-If I express the above matrix with numpy like this, 1 X 3 matrix
+when I express the above matrix with numpy, Let's see an example code.
 
 ```python 
 >>> import numpy as np
@@ -98,7 +100,7 @@ you will also make 2 X 3 matrix ilke the follwoing.
 
 <!-- example of Array -->
 $$
-b = \begin{bmatrix}{c|c}
+b = \begin{bmatrix}
 1 & 2 & 3\cr
 4 & 5 & 6
 \end{bmatrix}
