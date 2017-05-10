@@ -70,21 +70,21 @@ when I express the above matrix with numpy, Let's see an example code.
 ```python 
 >>> import numpy as np
 >>>                       ## Also, You can create array with a tuple of python, a = np.array((1,2,3))
->>> a = np.array([1,2,3]) ## Conversion from the different type of python struture(e.g. list, tuple). 
+>>> a = np.array([1,2,3]) ## Conversion from the different type of python strutures(e.g. list, tuple). 
                           ## Normally, I will use list structure of python.
 >>> print (type(a))       ## prints "<class 'numpy.ndarray'>"
->>> print (a.shape)       ## shape means how to make the matrix, what the matrix looks like. 
+>>> print (a.shape)       ## the shape means how to make the matrix, what the matrix looks like. 
 (3,)
 >>> print (np.rank(a))    ## a matrix's rank, the rank means the number of dimension of the matrix.
 1
->>> print (np.ndim(a))    ## As you can see, ndime is equal to rank value, 
+>>> print (np.ndim(a))    ## As you can see, ndim is equal to rank value, 
 1
 >>> print (len(a.shape))  ## Also, In numpy, the rank means the length of a.shape. 
 1
 >>> print (a[0], a[1], a[2])
 1 2 3
 
->>> a                     ## this show you what the matrix look like
+>>> a                     ## this shows you what the matrix look like
 array([1, 2, 3])
 >>> print (a)
 [1 2 3]
@@ -94,17 +94,19 @@ As you can see **a.shape**, **np.rank(a)**, **np.ndim(a)**, and **len(a.shape)**
 
 In linear algebra, the rank means the number of elements in a basis for column space of a matrix. You can find the meaning of what I'm saying here In [khan academy's Linear algebra](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/dimension-of-the-column-space-or-rank)
 
-In Numpy, the rank means the number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of th array along each dimension. you can also fine out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
+In Numpy, the rank means the number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of th array along each dimension. you can also find out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
 
-you will also make 2 X 3 matrix ilke the follwoing. 
+I will also make 2 X 3 matrix ilke the follwoing. 
 
 <!-- example of Array -->
+<div align="center">
 $$
 b = \begin{bmatrix}
 1 & 2 & 3\cr
 4 & 5 & 6
 \end{bmatrix}
 $$
+</div>
 
 ```python
 >>> import numpy as np
@@ -129,15 +131,13 @@ array([[1, 2, 3],
 1 2 4
 ```
 
-**Before entering another example like creating array with built-in function of Numpy**
+**Before entering into numpy more deeply**
 
-I think I have to organize this concept of Numpy. 
+I think I have to organize this concept of Numpy. i.e about one-dimension array
 
 As You can see the above two examples. there is a little strange thing.
 
-When you make 2 X 2 matrix like the following 
-
-I could verify the shape of 2 X 2 matrix with **b.shape**
+When you make 2 X 2 matrix, I could verify the shape of 2 X 2 matrix with **b.shape**
 
 let's check it with code
 
@@ -154,7 +154,7 @@ array([[1, 2, 3],
 (2, 3)
 ```
 
-The above **a.shape** show me exactly what I expected about the shape of **a** matrix, 2 X 3 matrix like this
+The above **a.shape** shows me exactly what I expected about the shape of matrix **a**,that is 2 X 3 matrix like this
 
 $$
 a = \begin{bmatrix}
@@ -163,7 +163,7 @@ a = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-But in the case of 1 X any number. i.e 1 row matrix is different from what I expected about the shape of matrix like the following. 
+But in the case of 1 X N matrix. i.e. 1 row matrix is different from what I expected about the shape of matrix like the following. 
 
 $$
 a = \begin{bmatrix}
@@ -175,6 +175,8 @@ a = \begin{bmatrix}
 $$     
 
 Like the above two matrices, when I create 1 row matrix with Numpy, Numpy thinks of 1 row matrix as column vector, the number of column X 1 matrix. 
+
+i.e. one dimension array looks like column vector
 
 Let's check it with code 
 
@@ -189,13 +191,13 @@ array([1, 2, 3])
 (3,)
 ```
 
-Through the above code,**a.shape**. Numpy think of 1 X 3 matrix as 3 X 1 matrix. 
+Through the above code,**a.shape**. Numpy thinks of 1 X 3 matrix as 3 X 1 column vector. 
 
-**BUT** When you print **a** matrix, evne though it looks like 1 X 3 matrix. 
+When you print **a** matrix, evne though output looks like 1 X 3 matrix. 
 
-So Normally, When I implement **dot product**, I will have to think of it as 3 X 1 matrix or column vector in 3 dimensions.
+When you implement **dot product**, I will need to think of it as 3 X 1 matrix or column vector in 3 dimensions.
 
-**Also,** Numpy provides many function to create arrays :
+**Also,** Numpy provides many functions to create arrays :
 
 ```python
 >>> import numpy as np
@@ -250,7 +252,7 @@ array([[7, 7],
 (2, 2)
 ```
 
-In the case of **np.full** function, all of terms in a matrix is constants of what I want. 
+In the case of **np.full** function, all of terms in a matrix is a constant of what I want. 
 
 $$
 c = \begin{bmatrix}
@@ -293,7 +295,7 @@ array([[ 0.50650121,  0.14590102],
 (2, 2)
 ```
 
-In the case of **np.random.random** function, this fills an array with randeom values.
+In the case of **np.random.random** function, this fills an array with random values.
 
 $$
 e = \begin{bmatrix}
@@ -310,7 +312,7 @@ Numpy offers several ways to index into arrays.
 
 **Slicing**
 
-Let me create the following rank 2 array with shape (3,4)
+Let me create the rank 2 array with shape (3,4)
 
 $$
 a = \begin{bmatrix}
@@ -322,7 +324,7 @@ $$
 
 ```python 
 >>> import numpy as np
->>> a = np.array([[1,,2,3,4],[5,6,7,8],[9,10,11,12]])
+>>> a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 >>> a
 array([[ 1,  2,  3,  4],
        [ 5,  6,  7,  8],
@@ -337,7 +339,7 @@ array([[ 1,  2,  3,  4],
 2
 ```
 
-I will use slicing to pull out the subarray consisting of the first 2 rows.
+I will use slicing to pull out the subarray consisting of the first 2 rows. that matrix is as follows
 
 $$
 b = \begin{bmatrix}
@@ -364,6 +366,18 @@ array([[2, 3],
 
 A slice of an entry is a view into the same data, So modifying it will modify the original array
 
+$$
+b = \begin{bmatrix}
+77 & 3\cr
+6 & 7\cr
+\end{bmatrix}\ \ \ means \ \ \ 
+b = \begin{bmatrix}
+1 & 77 & 3 & 4\cr
+5 & 6 & 7 & 8\cr
+9 & 10 & 11 & 12\cr
+\end{bmatrix}
+$$
+
 ```python
 >>> print (a[0,1])
 2
@@ -384,21 +398,9 @@ array([[ 1, 77,  3,  4],
  [ 9 10 11 12]]
 ```
 
-$$
-b = \begin{bmatrix}
-77 & 3\cr
-6 & 7\cr
-\end{bmatrix}\ \ \ means \ \ \ 
-b = \begin{bmatrix}
-1 & 77 & 3 & 4\cr
-5 & 6 & 7 & 8\cr
-9 & 10 & 11 & 12\cr
-\end{bmatrix}
-$$
+I can also mix integer indexing with slicing indexing. However, doing that will yield an array of lower rank than the original array.
 
-I can also mix integer indexing with slicing indexing. However, doing that will yield an array of lowr rank than the original array.
-
-I wil careate the following rank 2 with shape (3,4)
+let's do it, first, I wil careate the following rank 2 with shape (3,4) as follows
 
 $$
 a = \begin{bmatrix}
@@ -421,7 +423,7 @@ array([[ 1,  2,  3,  4],
  [ 9 10 11 12]]
 ```
 
-let's see two ways to access the data in middle row of the array.
+there are two ways to access the data in middle row of the array.
 
 Mixing integer indexing with slices yields lower rank than the the original array
 
@@ -436,7 +438,7 @@ While using only slices yields an array of the same rank as the original array.
 [[5 6 7 8]] (1, 4)
 ```
 
-Also, I can get the result when I access columns of an array :
+Also, when you get column of an array is the same from the above row's process. 
 
 ```python
 >>> col_r1 = a[:, 1]
@@ -451,9 +453,9 @@ Also, I can get the result when I access columns of an array :
 
 **Integer array indexing**
 
-When you index into numpy arrays using slicing, the resulting array view iwll always be a subarray of the original array. In contrast, Integer array  indexing allows you to construct arbitrary arrays using the data from another arrary.
+When you index into numpy arrays using slicing, the resulting array view will always be a subarray of the original array. In contrast, Integer array  indexing allows you to construct arbitrary arrays using the data from another arrary.
 
-as an example, let's make a matrix like this :
+as an example, let's make a matrix  :
 
 $$
 a = \begin{bmatrix}
@@ -520,9 +522,7 @@ $$
 (2,)
 ````
 
-another way to use integer arrayy indexing :
-
-let me create a new array from which we will select elements. 
+Another way to use integer array indexing : 
 
 ```python 
 >>> a = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
@@ -555,7 +555,13 @@ In\ a = \begin{bmatrix}
 \end{bmatrix}\ \ \ and\ \ \
 b = \begin{bmatrix}
 0 & 2 & 0 & 1 \cr
-\end{bmatrix},\ \ \ a[np.arange(4),b]\ \ \is \ \ \
+\end{bmatrix} 
+$$
+
+> a[np.arange(4), b]
+
+$$
+a[np.arange(4),b] = 
 \begin{bmatrix}
 1 & 6 & 7 & 11\cr
 \end{bmatrix}\ \ \ From\ \ \
@@ -594,7 +600,7 @@ as\ example\ a = \begin{bmatrix}
 1 & 2 \cr
 3 & 4 \cr
 5 & 6 \cr
-\end{bmatrix},\ \ \ \ after\ (a>2)\ \ \  is\ \ \ 
+\end{bmatrix},\ \ \ \ After\ (a>2)\ \ \  is\ \ \ 
 \begin{bmatrix}
 False & False \cr
 True & True \cr
@@ -609,9 +615,7 @@ if you want to know more about indexing, you should read [the documentation](htt
 
 Every numpy array is a grid of element of the same type. when you create an array, Numpy tries to guess what type the elements of array are.
 
-and Functions that construct arrays usually also include an optional argument to explicilty specify the datatype.
-
-here is example. 
+Functions that construct arrays usually also include an optional argument to explicilty specify the datatype.
 
 ```python
 >>> import numpy as np
@@ -631,19 +635,19 @@ you can read all about Numpy datatype in [the documentation](https://docs.scipy.
 
 ### Array math
 
-Basic mathematical fucntios operate elementwise on array, and are available both as operator overloads and as functions in the numpy module.
+Basic mathematical fucntions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module.
 
 $$
 Between\ \begin{bmatrix}
 a_{00} & a_{01} \cr
 a_{10} & a_{11} \cr
 a_{20} & a_{21} \cr
-\end{bmatrix}\ \ \  and\ \ \
+\end{bmatrix}\ \ \  and(+,-,*,/,sqrt(matrix))\ \ \
 \begin{bmatrix}
 b_{00} & b_{01} \cr
 b_{10} & b_{11} \cr
 b_{20} & b_{21} \cr
-\end{bmatrix}\ \ \ if\ it\ is\ operated(+,-,*,/,sqrt(matrix)),\ \ \the\ result\ is\ \ \     
+\end{bmatrix}\ \ \ =
 \begin{bmatrix}
 a_{00}(+,-,*,/)b_{00} & a_{01}(+,-,*,/)b_{01} \cr
 a_{10}(+,-,*,/)b_{10} & a_{11}(+,-,*,/)b_{11} \cr
@@ -651,8 +655,7 @@ a_{20}(+,-,*,/)b_{20} & a_{21}(+,-,*,/)b_{21} \cr
 \end{bmatrix}
 $$
 
-Let's see example. 
-
+Let's see sample of math code in numpy. 
 
 ```python
 >>> import numpy as n
@@ -677,19 +680,20 @@ $$
 >>> print (x + y)         ## operator overloading
 [[  6.   8.]
  [ 10.  12.]]
->>> print (np.add(x, y))  ## function in Numpy module
+>>> print (np.add(x, y))  ## function call in Numpy module
 [[  6.   8.]
  [ 10.  12.]]
 ```
+
 $$
 \begin{bmatrix}
 1. & 2. \cr
 3. & 4. \cr
-\end{bmatrix}\ \ \ +\ \ \  
+\end{bmatrix}\ +\ 
 \begin{bmatrix}
 5. & 6. \cr
 7. & 8. \cr
-\end{bmatrix}\ \ \ =\ \ \
+\end{bmatrix}\  =\ 
 \begin{bmatrix}
 6.(1.+5.) & 8.(2.+6.) \cr
 10.(3.+7.) & 12(4.+8.) \cr
@@ -699,10 +703,10 @@ $$
 **Elementwise difference**
 
 ```python
->>> print (x-y)
+>>> print (x-y)               ## operator overloading
 [[-4. -4.]
  [-4. -4.]]
->>> print (np.subtract(x,y))
+>>> print (np.subtract(x,y))  ## function call in Numpy module
 [[-4. -4.]
  [-4. -4.]]
 ```
@@ -725,10 +729,10 @@ $$
 **Elementwise product**
 
 ```python
->>> print (x * y)
+>>> print (x * y)                ## operation overloading
 [[  5.  12.]
  [ 21.  32.]]
->>> print (np.multiply(x,y))
+>>> print (np.multiply(x,y))     ## function call in Numpy module.
 [[  5.  12.]
  [ 21.  32.]]
 ```
@@ -751,10 +755,10 @@ $$
 **Elementwise division**
 
 ```python 
->>> print (x / y)
+>>> print (x / y)                 ## operation overloading
 [[ 0.2         0.33333333]
  [ 0.42857143  0.5       ]]
->>> print (np.divide(x,y))
+>>> print (np.divide(x,y))        ## function call in Numpy module
 [[ 0.2         0.33333333]
  [ 0.42857143  0.5       ]]
 ```
@@ -794,11 +798,11 @@ a = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-In the case of the above, Note that unlike MATLAB, **\*** is elementwise multiplication, not matrix multiplication. 
+In the case of the above math codes, Note that unlike MATLAB, **\*** is elementwise multiplication, not matrix multiplication. 
 
-So I instead use the **dot** function to compute inner products of vectors, to multiply a vector by a matrix, and to multiply matrices.
+If you want to matrix multiplication, you stead use the **dot** function to compute inner products of vectors, to multiply a vector by a matrix, and to multiply matrices.
 
-**dot** is avaiable both as a function in the Numpy module and as an instance method of array objects :
+**dot** is available both as a function in the Numpy module and as an instance method of array objects :
 
 ```python
 >>> x = np.array([[1,2],[3,4]])
@@ -842,27 +846,31 @@ w = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-unlike matrix of the above v, w arrays, let's think of those(v, w arrays) as column vectors.
+About the above v, w arrays, let's think of those(v, w arrays) as column vectors.
 
-**inner product of vectors** OR **dot product of vectors**
+**inner product of vectors OR dot product of vectors**
 
-In here, if both of column vectors implement **dot** product.
+**vector-vector multiplication**
+
+if both of column vectors implement **dot** product.
 
 by definition like this.
 
 $$
-\vec a,\ \vec b\ \in\  \rm I\! R^2,\ \ \ \vec a^T\cdot\vec b\ \ \ = \begin{bmatrix}
+\vec a,\ \vec b\ \in\ \rm I\! R^2,\ \vec a^T\cdot\vec b\ = \begin{bmatrix}
 x_1 & \dots & x_n  
 \end{bmatrix}\ \begin{bmatrix}
 y_1 \cr \dots \cr y_n  
-\end{bmatrix}\ \ \ = \sum_{k=1}^n x_k y_k\  = x_1y_1+\ x_2y_2+\ \dots + x_ny_n  
+\end{bmatrix}\ = \sum_{k=1}^n x_k y_k
 $$
 
-So by the above definition, If I express dot product of between v and w array,column vectors.
+$$
+sum_{k=1}^n x_k y_k\ = x_1y_1+\ x_2y_2+ \dots + x_ny_n  
+$$
 
-In here, keep in mind, as I said on [Arrays part](#Arrays) of this article,
+by the above definition, If I multiply a vector by another vector
 
-from now on it'd better think of 1 X n matrix as n X 1 column vector like the following. 
+ahead of entering the process of vector-vector multiplication, you will have to think of **v, w** as column vector as follows :
 
 $$
 \vec v = \begin{bmatrix}
@@ -873,6 +881,19 @@ $$
 \end{bmatrix}
 $$
 
+With above vectors. Let's do dot product as follows. 
+
+$$
+\vec v^T = \begin{bmatrix}
+9 & 10 \cr
+\end{bmatrix},\ 
+\vec w = \begin{bmatrix}
+11 \cr 12 \cr
+\end{bmatrix}\ ,So that\ \vec v^T\cdot\vec w\ =\ 219(9*11+10*12)
+$$
+
+If you make the above dot product of two vector with numpy
+
 
 ```python
 >>> v.dot(w)
@@ -880,19 +901,6 @@ $$
 >>> np.dot(v,w)
 219
 ```
-
-if I draw the above dot products, that is as follows
-
-$$
-\vec v^T = \begin{bmatrix}
-9 & 10 \cr
-\end{bmatrix}\ \ \ 
-\vec w = \begin{bmatrix}
-11 \cr 12 \cr
-\end{bmatrix}\ \ \ So\ \vec v^T\cdot\vec w\ \ \ =\ 219(9*11+10*12)
-$$
-
-As you can see the above result, dot produnct of vector-vector is scalar.  
 
 **Matrix-vector product**
 
@@ -922,8 +930,6 @@ X\cdot\vec v = \begin{bmatrix}
 $$
 
 **Matrix-Matrix product**
-
-This product is the same from normally what you think of about the product between matrices as that product in linear algebra.
 
 Let's see example of the product
 
@@ -957,15 +963,17 @@ $$
 
 As you see the total dot product in Numpy, You will have to be careful about how numpy calculate depending on argument pair of dot product.
 
-Keep in mind once again, if You use dot product, 1 X N matrix is thought of as column vector(N X 1 matrix), 
+**Keep in mind once again, if You use dot product, one-dimesion matrix need to be thought of as column vector.**
 
-So in the case of dot producnt with column vector. when column vector is placed on firt element, i.e the location is the left of dot product.
-
-you have to think of the vector as transpose of the vector(the left of dot product) in Numpy dot product 
+in the case of dot producnt with column vector which is placed on firt element,
 
 $$
 \vec a^T\cdot\ (matrix\ or\ colum vector) 
 $$
+
+like the above, you need to think vector **a** as the transpose of vector **a**
+
+**Sum function**
 
 In addition to this, Numpy provides many useful functions for performing computations on arrays, one of the most useful is **sum**
 
@@ -985,17 +993,35 @@ In addition to this, Numpy provides many useful functions for performing computa
 (2,)
 ```
 
-Let's see the case of axis 0
+> np.sum(x)
 
 $$
 X = \begin{bmatrix}
 1 & 2 \cr
 3 & 4 \cr
-\end{bmatrix},\ \ \ 
-np.sum(x) = 10(1+2+3+4)\ \ \
+\end{bmatrix},\ \  
+np.sum(x) = 10(1+2+3+4)
+$$
+
+> np.sum(x, axix = 0) ## column
+
+$$
+X = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix},\ \  
 np.sum(x,\ axis=0) = \begin{bmatrix}
 4(1+3) \cr 6(2+4) \cr
-\end{bmatrix}\ \ \
+\end{bmatrix}
+$$
+
+> np.sum(x, axix = 1) ## row
+
+$$
+X = \begin{bmatrix}
+1 & 2 \cr
+3 & 4 \cr
+\end{bmatrix},\ \  
 np.sum(x,\ axis=1) = \begin{bmatrix}
 3(1+2) \cr 7(3+4) \cr
 \end{bmatrix}
@@ -1007,7 +1033,7 @@ Apart from computing mathematical functions using arrays, we frequently need to 
 
 The simplest example of this type of operation is transposing a matrix; to transpose a matrix, simply use the **T** attribute of an array object.
 
-Let's go example of code
+Let's see an example of code
 
 ```python 
 >>> x = np.array([[1,2],[3,4]])  
@@ -1024,8 +1050,7 @@ Let's go example of code
 [1 2 3]
 ```
 
-Transpose means exchange of  the location, by changing the location of row ans column. 
-
+**Transpose(T)** means exchange of the location, by changing the location of row and column. 
 
 $$
 X = \begin{bmatrix}
@@ -1044,7 +1069,7 @@ $$
 (X^T)_{ij} = X_{ji}
 $$
 
-I will explain to you with an example of the transpose of column vector is row vector. 
+I will explain to you with an example, the transpose of column vector is row vector. 
 
 $$
 \vec x = \begin{bmatrix}
@@ -1058,8 +1083,6 @@ x_{1} & x_{2} & \ldots & x_{n} \cr
 \end{bmatrix}
 $$
 
-__However, Note that In Numpy, take the transpose of a rank 1 array doesn nothing__
-
 let's look over an example of the transpose of a rank 1 array in Numpy
 
 ```python
@@ -1068,7 +1091,13 @@ let's look over an example of the transpose of a rank 1 array in Numpy
 [1 2 3]
 >>> print (v.T)
 [1 2 3]
+>>> v.shape
+(3,)
+>>> (v.T).shape
+(3,)
 ```
+
+**As you can see, there is no change in the shape of v and v.T**
 
 You can also read about other methods of array creation in [the documentation](https://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)
 
@@ -1076,12 +1105,12 @@ You can also read about other methods of array creation in [the documentation](h
 
 Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations, Frequently we have a smaller array and  a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 
-For example suppose that we want to add a constant vector to each row of a matrix. We would do it like this :
+For example, suppose that we want to add a constant vector to each row of a matrix. We would do it like this :
 
 ```python 
 >>> import numpy  as np
->>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])    ## Create 4 X 3 matrix
->>> print (x)
+>>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])   
+>>> print (x)                      ## Create 4 X 3 matrix
 [[ 1  2  3]
  [ 4  5  6]
  [ 7  8  9]
@@ -1111,21 +1140,23 @@ array([ 2,  5,  8, 11])
  [ 5  5  7]
  [ 8  8 10]
  [11 11 13]]
->>> y[0][1]               ##  another way to access the element of array using y[row][colnum]
-2                         ## But normally, when you access the element of an array, use y[row, colum]
+>>> y[0][1]               ## another way to access the element of array using y[row][colnum]
+2                         ## But normally, use y[row, colum] when you access the element of an array
 >>> y[0][2]
 4
 >>> y[0][:]
 array([2, 2, 4])
 ```
 
-computing the above for statement in python could be slow. 
+computing with looping in python could be slow. 
 
-let's see another way to implement the above code. 
+Therefore, let's see another way to implement the above code. 
 
-I mean after making vv by stacking multiple copies of v vertically like the same shape of matrix x, then I will perform elementwise sum of x and vv
+Before explaining another way to calculate the above code. 
 
-First let's see Arrays, X, V, and Y.
+let's notice about the above code
+
+> First let's see Arrays, X, V, and Y.
 
 $$
 X = \begin{bmatrix}
@@ -1139,24 +1170,89 @@ Y = \begin{bmatrix}
 0 & 0 & 0 \cr
 0 & 0 & 0 \cr
 0 & 0 & 0 \cr
-\end{bmatrix}\ \ \
+\end{bmatrix},\ \ \
 V = \begin{bmatrix}
 1 & 0 & 1 \cr
 \end{bmatrix}\ \ \
 $$
 
-ahead of explaining more. 
+> for i in range(4) :  y[i, :] = x[i, :] + v is the same from X + VV
 
-Second, let's add vector v to matrix x and then put the result in matrix y. 
+> y[0, :] + v
 
-i.e. this operation means after changing vector v into vv by stacking multiple copies of v vertically with the same shape of x, and then add it to matrix x
+$$
+X[0,:]\ +\ v = \begin{bmatrix}
+1 & 2 & 3 \cr
+\end{bmatrix}\ +
+\begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ = \begin{bmatrix}
+2(1+1) & 2(2+0) & 4(3+1) \cr
+\end{bmatrix}
+$$
 
-let's draw what I'm explaining 
+> y[1, :] + v
+
+$$
+X[0,:]\ +\ v = \begin{bmatrix}
+4 & 5 & 6 \cr
+\end{bmatrix}\ +
+\begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ = \begin{bmatrix}
+5(4+1) & 5(5+0) & 7(6+1) \cr
+\end{bmatrix}
+$$
+
+> y[2, :] + v
+
+$$
+X[0,:]\ +\ v = \begin{bmatrix}
+7 & 8 & 9 \cr
+\end{bmatrix}\ +
+\begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ = \begin{bmatrix}
+8(7+1) & 8(8+0) & 10(9+1) \cr
+\end{bmatrix}
+$$
+
+> y[3, :] + v
+
+$$
+X[0,:]\ +\ v = \begin{bmatrix}
+10 & 11 & 12 \cr
+\end{bmatrix}\ +
+\begin{bmatrix}
+1 & 0 & 1 \cr
+\end{bmatrix}\ = \begin{bmatrix}
+11(10+1) & 11(11+0) & 13(12+1) \cr
+\end{bmatrix}
+$$
+
+> Finally,  the result of "for i in range(4) :  y[i, :] = x[i, :] + v is the same from X + VV"
+
+$$
+result = \begin{bmatrix}
+2 & 2 & 4 \cr
+5 & 5 & 7 \cr
+8 & 8 & 10 \cr
+11 & 11 & 13 \cr
+\end{bmatrix}
+$$
+
+From now on, let's see another way to implement the above process without for statement 
+
+that is making **vv** by stacking multiple copies of **v** vertically like the same shape of matrix **x**.
+
+And then perform the sum of **x** and **vv** element by element
+
+> First generate VV by stacking multiple copies of v 
 
 $$
 V = \begin{bmatrix}
 1 & 0 & 1 \cr
-\end{bmatrix}\ \ \ Let's\ make\ it\ the\ same\ shape\ like\ matrix\ x\ \ \
+\end{bmatrix},\ \ 
 VV = \begin{bmatrix}
 1 & 0 & 1 \cr
 1 & 0 & 1 \cr
@@ -1165,7 +1261,7 @@ VV = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-> for i in range(4) :  y[i, :] = x[i, :] + v is the same from X + VV
+>> Second, x + vv
 
 $$
 X\ +\ VV = \begin{bmatrix}
@@ -1188,13 +1284,15 @@ X\ +\ VV = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-let's turn The above figure into python code. 
+now is turn of making the code with Numpy
+
+> What can the sum of x and vv do programming in Numpy ? 
 
 ```python
 >>> import numpy as np
 >>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
 >>> v = np.array([1,0,1])
->>> vv = np.tile(v, (4,1))
+>>> vv = np.tile(v, (4,1))      ## generate vv
 >>> print (vv)
 [[1 0 1]
  [1 0 1]
@@ -1223,7 +1321,7 @@ Consider this version operation, using broadcasting.
 ```python 
 >>> import numpy as np
 >>> x = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
->>> v = np.array([1,0,1])
+>>> v = np.array([1,0,1])     ## you don't need to make VV matrix. 
 >>> y = np.empty_like(x)
 >>> x
 array([[ 1,  2,  3],
@@ -1246,13 +1344,13 @@ array([[0, 0, 0],
  [11 11 13]]
 ```
 
-as you can see the above code, if you use numpy broadcasting, it is powerful to compute arrays of different shapes array,
+As you can see the above code, if you use numpy broadcasting, it is powerful to compute arrays of different shapes array,
 
-numpy broadcasting automatically fit smaller shape to larger shape,and then compute. 
+Numpy broadcasting automatically fit smaller shape to larger shape,and then compute. If some condition is met. 
 
 i.e. The line **y=x+v** works even though x has shape (4,3) and v has shape (3,) due to broadcasting; this line works as if v actually had shape (4,3), where each row was a copy of v, and the sum was performed elementwise. 
 
-> y = x + v means like this
+> y = x + v literally means as follows.
 
 $$
 Y = X\ +\ V = \begin{bmatrix}
@@ -1272,30 +1370,57 @@ Y = X\ +\ V = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-Owing to numpy broadcasting, you don't need to chang vector v inot matrix vv.
+> BUT, due to broadcasting, v works as if v actually had shape (4,3) as follows.
+
+$$
+Y = X\ +\ V = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+7 & 8 & 9 \cr
+10 & 11 & 12 \cr
+\end{bmatrix}\ \ \ +\ \ \
+\begin{bmatrix}
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+1 & 0 & 1 \cr
+\end{bmatrix}\ \ \ =\ \ \
+\begin{bmatrix}
+2 & 2 & 4 \cr
+5 & 5 & 7 \cr
+8 & 8 & 10 \cr
+11 & 11 & 13 \cr
+\end{bmatrix}
+$$
+
+Owing to numpy broadcasting, you don't need to chang vector v into matrix vv.
 
 If you want to know more about numpy broadcasting. try to read the explanation from [the documentation](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html) and [this explanation](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc)
 
 functions that support broadcasting are know as universal functions, you can find the list of all universal functions in [the documentaion](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
-broadcasting rule : 
+The broadcasting rule : 
 
 > the size of each dimensions must be the same or one of them must be one!
 
 Let's See some applicaiton of broadcasting. 
 
-First, Outer product
+> First, Outer product
 
 $$
-Given\ two\ vectors,\ \vec x\ \in \rm I\! R^n,\ \vec y\ \rm I\! R^m,\ \ 
-\vec x \vec y^T\ \in \rm I\! R^n*m\ is\ called\ outer\ product\ of\ two\ vectors(\vec x,\ \vec y)
+\vec x\ \in \rm I\! R^n,\ \vec y\ \rm I\! R^m,\ 
+\vec x \vec y^T\ \in \rm I\! R^{n*m}
 $$
 
-So we implement the above outer product with actual example in Numpy 
+$$
+\vec x \vec y^T\ \in \rm I\! R^{n*m}\ \is called\ outer\ product\ of\ two\ vectors(\vec x,\ \vec y)
+$$
 
-Be careful, when you consider broadcasting of python, the shape have to be thought of as the shape of the real matirx, not the shape in numpy, 
+I will implement the outer product with an actual example code.
 
-especially, the shape of  1 X N matrix is noramlly (N,), but, in the broadcasting, you will have to think of it as (1, 3). 
+the number of shape of array in numpy is iterally numeral on each dimension of the array. 
+
+Especially, the shape of  1 X N matrix is noramlly (N,), but, in the broadcasting, you will have to think of it as (1, 3). 
 
 let's example. 
 
@@ -1320,7 +1445,7 @@ let's example.
 (3, 2)
 ```
 
-if I draw the above outer product : 
+> np.reshape(v,(3,1)) * w
 
 $$
 \vec v\ \vec w^T = \begin{bmatrix}
@@ -1338,7 +1463,7 @@ $$
 \end{bmatrix}\ \ \
 $$
 
-Let anoter example of broadcasting. 
+> Another Broadcasting, v + x that v has shape (3,) and x has shape (2,3)
 
 ```python
 ## Add a vector to each row of a matrix
@@ -1379,7 +1504,6 @@ $$
 
 > let's see the broadcasting of x + v, which is how numpy calculate matrix element by element
 
-
 $$
 In\ broadcasting,\ 
 x\ +\ v = \begin{bmatrix}
@@ -1396,13 +1520,13 @@ x\ +\ v = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-As you can see, vector v stretched into the same shape of matrix x, and then vector v and matrix x were added. The result of the sum of them is 2 X 3 matrix.
+As you can see, vector **v** stretched into the same shape of matrix **x**, and then vector **v** and matrix **x** were added. The result of the sum of them is 2 X 3 matrix.
 
 i.e. that is how to add vector v to each row of a matrix x.
 
 in here, something you need to recognize is stretching vector v is only conceptual !
 
-let's see the last one as an example of broadcasting
+Let's see another an example of broadcasting.
 
 The following is adding a vector to each colum of a matrix. 
 
@@ -1446,7 +1570,7 @@ The following is adding a vector to each colum of a matrix.
 
 > Let's see determinant about the above code
 
-At First way,  
+At First,  
 
 $$
 x.T\ +\ w = \begin{bmatrix}
@@ -1488,9 +1612,11 @@ $$
 \end{bmatrix}
 $$
 
-**keep in mide, the broadcasting of vector w is only conceptual, the actual way is using looping in C**
+**keep in mind, the broadcasting of vector w is only conceptual, the actual way is using looping in C**
 
-> let's think of the final broadcasting 
+Let's see the final example of broadcasting 
+
+> multiplication between a matrix and a constant
 
 ```python 
 >>> import numpy as np
@@ -1515,7 +1641,7 @@ x.T\ *\ 2 =\begin{bmatrix}
 \end{bmatrix}*2
 $$
 
-in application of the broadcasting, the result is as follows
+in application of the broadcasting, the result is as follows.
 
 $$
 x.T\ *\ 2 = \begin{bmatrix}
@@ -1531,7 +1657,7 @@ x.T\ *\ 2 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-As you have seen for a while about broadcasting, Broadcasting typically makes your more concise and faster, So You should strive to use it where it's possible.
+As you have seen for a while about broadcasting, Broadcasting typically makes your code more concise and faster, So You should strive to use it where it's possible.
 
 ## Numpy Documentation 
 
