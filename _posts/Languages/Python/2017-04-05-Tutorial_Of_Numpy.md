@@ -596,7 +596,7 @@ Boolean array indexing lets you pick out arbitrary elements of an array, Frequen
 ```
 
 $$
-as\ example\ a = \begin{bmatrix}
+as\ example,\ a = \begin{bmatrix}
 1 & 2 \cr
 3 & 4 \cr
 5 & 6 \cr
@@ -638,16 +638,16 @@ you can read all about Numpy datatype in [the documentation](https://docs.scipy.
 Basic mathematical fucntions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module.
 
 $$
-Between\ \begin{bmatrix}
+\begin{bmatrix}
 a_{00} & a_{01} \cr
 a_{10} & a_{11} \cr
 a_{20} & a_{21} \cr
-\end{bmatrix}\ \ \  and(+,-,*,/,sqrt(matrix))\ \ \
+\end{bmatrix}\ (+,-,*,/,sqrt(matrix))\ 
 \begin{bmatrix}
 b_{00} & b_{01} \cr
 b_{10} & b_{11} \cr
 b_{20} & b_{21} \cr
-\end{bmatrix}\ \ \ =
+\end{bmatrix}\ =
 \begin{bmatrix}
 a_{00}(+,-,*,/)b_{00} & a_{01}(+,-,*,/)b_{01} \cr
 a_{10}(+,-,*,/)b_{10} & a_{11}(+,-,*,/)b_{11} \cr
