@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Tutorial of python with jump to python,open-book.
+title: Tutorial of Numpy with Stanford python tutorial
 subtitle: I will let you know the basics of python syntax.
 category: Python
 tags: [language, python]
-permalink: /2017/03/30/Jump_to_python_tutorial/
+permalink: /2017/04/05/Tutorial_Of_Numpy/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
