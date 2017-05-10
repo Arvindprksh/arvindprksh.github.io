@@ -70,8 +70,7 @@ If I express the above matrix with numpy like this, 1 X 3 matrix
 >>>                       ## Also, You can create array with a tuple of python, a = np.array((1,2,3))
 >>> a = np.array([1,2,3]) ## Conversion from the different type of python struture(e.g. list, tuple). 
                           ## Normally, I will use list structure of python.
->>> print (type(a))
-<class 'numpy.ndarray'>
+>>> print (type(a))       ## prints "<class 'numpy.ndarray'>"
 >>> print (a.shape)       ## shape means how to make the matrix, what the matrix looks like. 
 (3,)
 >>> print (np.rank(a))    ## a matrix's rank, the rank means the number of dimension of the matrix.
@@ -99,7 +98,7 @@ you will also make 2 X 3 matrix ilke the follwoing.
 
 <!-- example of Array -->
 $$
-b = \begin{bmatrix}
+b = \begin{bmatrix}{c|c}
 1 & 2 & 3\cr
 4 & 5 & 6
 \end{bmatrix}
@@ -110,8 +109,7 @@ $$
 >>> b = np.array([[1,2,3],[4,5,6]])    ## Create 2 X 2 matrix 
 >>> print (b.shape)
 (2, 3)
->>> print (type(b))
-<class 'numpy.ndarray'>
+>>> print (type(b))     ## prints "<class 'numpy.ndarray'>"
 >>> print (np.rank(b))
 2
 >>> print (b.ndim)
