@@ -93,7 +93,7 @@ As you can see **a.shape**, **np.rank(a)**, **np.ndim(a)**, and **len(a.shape)**
 
 In linear algebra, the rank means the number of elements in a basis for column space of a matrix. You can find the meaning of what I'm saying here In [khan academy's Linear algebra](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/dimension-of-the-column-space-or-rank)
 
-In Numpy, the rank means the shape of a matrix. you can also fine out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
+In Numpy, the rank means the number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of th array along each dimension. you can also fine out what I mean in [this stack overflow](http://stackoverflow.com/questions/16997880/puzzled-on-the-ndim-from-numpy)
 
 you will also make 2 X 3 matrix ilke the follwoing. 
 
@@ -1278,9 +1278,260 @@ If you want to know more about numpy broadcasting. try to read the explanation f
 
 functions that support broadcasting are know as universal functions, you can find the list of all universal functions in [the documentaion](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
+broadcasting rule : 
 
-~~~~~~  here i have to arrange the broadcasting of numpy. 
+> the size of each dimensions must be the same or one of them must be one!
 
+Let's See some applicaiton of broadcasting. 
+
+First, Outer product
+
+$$
+Given\ two\ vectors,\ \vec x\ \in \rm I\! R^n,\ \vec y\ \rm I\! R^m,\ \ 
+\vec x \vec y^T\ \in \rm I\! R^n*m\ is\ called\ outer\ product\ of\ two\ vectors(\vec x,\ \vec y)
+$$
+
+So we implement the above outer product with actual example in Numpy 
+
+Be careful, when you consider broadcasting of python, the shape have to be thought of as the shape of the real matirx, not the shape in numpy, 
+
+especially, the shape of  1 X N matrix is noramlly (N,), but, in the broadcasting, you will have to think of it as (1, 3). 
+
+let's example. 
+
+```python
+## Compute outer product of vectors
+>>> import numpy as np    
+>>> v = np.array([1,2,3])     ## v has shpae (3,)
+>>> w = np.array([4,5])       ## w has shape (2,)
+## In order to compute an outer product, first I will reshape vector v into (3,1)
+## We can then broadcastin it against w to yeild an output of shape (3,2), which is the outer product of v and w :
+##[[4 5]
+## [8 10]
+## [12 15]]
+>>>
+>>> print (np.reshape(v,(3,1)) * w)
+[[ 4  5]
+ [ 8 10]
+ [12 15]]
+>>> print ((np.reshape(v,(3,1)) * w).ndim)
+2
+>>> print ((np.reshape(v,(3,1)) * w).shape)
+(3, 2)
+```
+
+if I draw the above outer product : 
+
+$$
+\vec v\ \vec w^T = \begin{bmatrix}
+1 \cr
+2 \cr
+3 \cr
+\end{bmatrix}
+\begin{bmatrix}
+4 & 5 \cr
+\end{bmatrix}\ \ \ = \ \ \
+\begin{bmatrix}
+4(1*4) & 5(1*5) \cr
+8(2*4) & 10(2*5) \cr
+12(3*4) & 15(3*5) \cr
+\end{bmatrix}\ \ \
+$$
+
+Let anoter example of broadcasting. 
+
+```python
+## Add a vector to each row of a matrix
+>>> import numpy as np
+>>> v = np.array([1,2,3])
+>>> x = np.array([[1,2,3],[4,5,6]])      ## X has shape (2,3) and v has shape (3,)so they broacasting to (2,3)
+>>> print (x + v)
+[[2 4 6]
+ [5 7 9]]
+>>> print ((x + v).shape)
+(2, 3)
+>>> print ((x + v).ndim)
+2
+>>> v.shape
+(3,)
+>>> x.shape
+(2, 3)
+>>> v.ndim
+1
+>>> x.ndim
+2
+```
+
+> if we literally see what x + v means, that is as follows 
+
+$$
+x\ +\ v = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+\end{bmatrix}\ +\ 
+\begin{bmatrix}
+1 & 2 & 3 \cr
+\end{bmatrix}
+$$
+
+
+**However, according to the Broadcasting of Numpy. vector v become broadcasting.**
+
+> let's see the broadcasting of x + v, which is how numpy calculate matrix element by element
+
+
+$$
+In\ broadcasting,\ 
+x\ +\ v = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6 \cr
+\end{bmatrix}\ +\ 
+\begin{bmatrix}
+1 & 2 & 3 \cr
+1 & 2 & 3 \cr
+\end{bmatrix}\ = \
+\begin{bmatrix}
+2(1+1) & 4(2+2) & 6(3+3) \cr
+5(4+1) & 7(5+2) & 8(6+3) \cr
+\end{bmatrix}
+$$
+
+As you can see, vector v stretched into the same shape of matrix x, and then vector v and matrix x were added. The result of the sum of them is 2 X 3 matrix.
+
+i.e. that is how to add vector v to each row of a matrix x.
+
+in here, something you need to recognize is stretching vector v is only conceptual !
+
+let's see the last one as an example of broadcasting
+
+The following is adding a vector to each colum of a matrix. 
+
+```python 
+>>> import numpy as np
+>>> x = np.array([[1,2,3],[4,5,6]])   ## x has shpae (2,3)
+>>> w = np.array([4,5])               ## w has shape (2,)
+>>> print ((x.T + w).T)          ## first, the transpose of matrix x, and then plus vector w, 
+[[ 5  6  7]                      ## finally, you need to transpose of the transpos of matrix x plus vector w.
+ [ 9 10 11]]                     ## So the last result is adding vector w to eaxh colum of matrix x. 
+>>> print (((x.T + w).T).shape)  ## As you can see here, The transpose of matrix x has shape (3,2)
+(2, 3)                           ## The transpose of matrix x plus vector w has (3,2). 
+>>> print (((x.T + w).T).ndim)   ## (x.T + w).T make the final matrix as what I meant. 
+2                                ## That is matrix with the vector w added to each column of matrix x
+>>> print (x.T)
+[[1 4]
+ [2 5]
+ [3 6]]
+>>> print ((x.T).shape)
+(3, 2)
+>>> print ((x.T).ndim)
+2
+>>> print (x.T + w)
+[[ 5  9]
+ [ 6 10]
+ [ 7 11]]
+>>> print ((x.T + w).shape)
+(3, 2)
+>>> print ((x.T + w).ndim)
+2
+## But in adding a vector to each column of a matrix, another way exist. 
+>>> print (x + np.reshape(w, (2,1)))         ## i.e. after vector w become row vector, and then plus matrix x. 
+[[ 5  6  7]
+ [ 9 10 11]]
+>>> print ((x + np.reshape(w, (2,1))).ndim)
+2
+>>> print ((x + np.reshape(w, (2,1))).shape)
+(2, 3)
+
+```
+
+> Let's see determinant about the above code
+
+At First way,  
+
+$$
+x.T\ +\ w = \begin{bmatrix}
+1 & 4 \cr
+2 & 5 \cr
+3 & 6 \cr
+\end{bmatrix}\ +\ 
+\begin{bmatrix}
+4 & 5  \cr
+\end{bmatrix}\ 
+$$
+
+After the broadcasting in the above code. 
+
+$$
+x.T\ +\ w = \begin{bmatrix}
+1 & 4 \cr
+2 & 5 \cr
+3 & 6 \cr
+\end{bmatrix}\ +\ 
+\begin{bmatrix}
+4 & 5  \cr
+4 & 5  \cr
+4 & 5  \cr
+\end{bmatrix}\ =\ 
+\begin{bmatrix}
+5(1+4) & 9(4+5) \cr
+6(2+4) & 10(5+5) \cr
+7(3+4) & 11(6+5) \cr
+\end{bmatrix}
+$$
+
+> (x.T + w).T 
+
+$$
+(x.T\ +\ w).T =\begin{bmatrix}
+5(1+4) & 6(2+4) & 7(3+4) \cr
+9(4+5) & 10(5+5) & 11(6+5) \cr
+\end{bmatrix}
+$$
+
+**keep in mide, the broadcasting of vector w is only conceptual, the actual way is using looping in C**
+
+> let's think of the final broadcasting 
+
+```python 
+>>> import numpy as np
+>>> x = np.array([[1,2,3],[4,5,6]])    ## x has shape (2,3). Numpy treats scalars as array of shape();
+>>> print (x*2)                        ## these can be broadcast together to shape (2,3)
+[[ 2  4  6]
+ [ 8 10 12]]
+>>> print ((x*2).shape)
+(2, 3)
+>>> print ((x*2).ndim)
+2
+```
+
+>  Let's see the broadcasting of constant 2.
+
+The following is literally matrix x times 2. 
+
+$$
+x.T\ *\ 2 =\begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 4 & 5 \cr
+\end{bmatrix}*2
+$$
+
+in application of the broadcasting, the result is as follows
+
+$$
+x.T\ *\ 2 = \begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 4 & 5 \cr
+\end{bmatrix}*\begin{bmatrix}
+2 & 2 & 2 \cr
+2 & 2 & 2 \cr
+\end{bmatrix} = 
+\begin{bmatrix}
+2(1*2) & 4(2*2) & 6(3*2) \cr
+8(4*2) & 10(5*2) & 12(6*2) \cr
+\end{bmatrix}
+$$
+
+As you have seen for a while about broadcasting, Broadcasting typically makes your more concise and faster, So You should strive to use it where it's possible.
 
 ## Numpy Documentation 
 
