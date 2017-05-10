@@ -642,7 +642,7 @@ $$
 a_{00} & a_{01} \cr
 a_{10} & a_{11} \cr
 a_{20} & a_{21} \cr
-\end{bmatrix}\ (+,-,*,/,sqrt(matrix))\ 
+\end{bmatrix}\ (+,-,*,/)\ 
 \begin{bmatrix}
 b_{00} & b_{01} \cr
 b_{10} & b_{11} \cr
@@ -889,7 +889,7 @@ $$
 \end{bmatrix},\ 
 \vec w = \begin{bmatrix}
 11 \cr 12 \cr
-\end{bmatrix}\ ,So that\ \vec v^T\cdot\vec w\ =\ 219(9*11+10*12)
+\end{bmatrix}\ ,So\ that\ \vec v^T\cdot\vec w\ =\ 219(9*11+10*12)
 $$
 
 If you make the above dot product of two vector with numpy
@@ -924,7 +924,7 @@ X\cdot\vec v = \begin{bmatrix}
 3 & 4 \cr
 \end{bmatrix}\cdot\begin{bmatrix}
 9 \cr 10 \cr
-\end{bmatrix}\ \ \  =\   \begin{bmatrix}
+\end{bmatrix}\ =\   \begin{bmatrix}
 39(1*9+2*10) & 67(3*9+4*10) \cr
 \end{bmatrix}
 $$
@@ -955,7 +955,7 @@ X\cdot Y = \begin{bmatrix}
 \end{bmatrix}\cdot\begin{bmatrix}
 5 & 6 \cr
 7 & 8 \cr
-\end{bmatrix}\ \ \  =\   \begin{bmatrix}
+\end{bmatrix}\ =\ \begin{bmatrix}
 19(1*5+2*7) & 22(1*6+2*8) \cr
 43(3*5+4*7) & 50(3*6+4*8) \cr
 \end{bmatrix}
@@ -1413,7 +1413,7 @@ $$
 $$
 
 $$
-\vec x \vec y^T\ \in \rm I\! R^{n*m}\ \is called\ outer\ product\ of\ two\ vectors(\vec x,\ \vec y)
+\vec x \vec y^T\ \in \rm I\! R^{n*m}\ is\ called\ outer\ product\ of\ two\ vectors(\vec x,\ \vec y)
 $$
 
 I will implement the outer product with an actual example code.
@@ -1455,7 +1455,7 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 4 & 5 \cr
-\end{bmatrix}\ \ \ = \ \ \
+\end{bmatrix}\ = \ 
 \begin{bmatrix}
 4(1*4) & 5(1*5) \cr
 8(2*4) & 10(2*5) \cr
@@ -1504,8 +1504,9 @@ $$
 
 > let's see the broadcasting of x + v, which is how numpy calculate matrix element by element
 
+The following is after application of broadcasting.
+
 $$
-In\ broadcasting,\ 
 x\ +\ v = \begin{bmatrix}
 1 & 2 & 3 \cr
 4 & 5 & 6 \cr
