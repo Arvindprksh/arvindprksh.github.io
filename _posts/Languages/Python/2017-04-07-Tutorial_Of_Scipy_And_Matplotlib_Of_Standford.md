@@ -102,8 +102,8 @@ array([[[132, 128, 117],
 >>> imsave('your path to store image\cat_tinted_resized.jpg', img_tinted)
 ```
 
-> img = imread('your path of image\cat.jpg')
-> print (img.dtype, img.shape)
+> img = imread('your path of image\cat.jpg')   
+> print (img.dtype, img.shape)   
 
 Like the above code, the image read.
 
@@ -111,13 +111,13 @@ Like the above code, the image read.
 
 > img_tinted = img * [1, 0.95, 0.9]
 
-this change RGB of Image.
+this only change RGB of Image.
 
 ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted.jpg)
 
 > img_tinted = imresize(img_tinted, (300,300))
 
-this resize the size of image, in my case, 300 X 300.
+this resized the size of image, in my case, 300 X 300.
 
 ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg)
 
@@ -125,9 +125,10 @@ If I compare the original image with this resized.
 
 ---
 
-![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg) [](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg)
+the original Image    | The tinted and resized Image 
+:-------------------: | :---------------------------:
+|![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg) | [](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg) |
 
-Left: The original Image. Right: The tinted and resized Image.
 --
 
 ### MATLAB files
@@ -142,8 +143,8 @@ Scipy defines some useful functions for computing distances between sets of poin
 
 The function **scipy.spatial.distance.pdit** computes the distance between all pairs of points in a given set :
 
-> First of all, Create the following array where each row is a point in 2-dimension space :
-> x = np.array([[0,1],[1,0],[2,0]])
+> First of all, Create the following array where each row is a point in 2-dimension space :   
+> x = np.array([[0,1],[1,0],[2,0]])   
 
 $$
 x = \begin{bmatrix}
@@ -153,9 +154,9 @@ x = \begin{bmatrix}
 \end{bmatrix}
 $$ 
 
-> To compute the Euclidean distance between all rows of x.
-> d[i,j] is the Euclidean distance between x[i,:], and [j, :].
-> d = squareform(pdist(x, 'euclidean'))
+> To compute the Euclidean distance between all rows of x.   
+> d[i,j] is the Euclidean distance between x[i,:], and [j, :].    
+> d = squareform(pdist(x, 'euclidean'))   
 
 $$
 In\ x = \begin{bmatrix}
@@ -175,14 +176,16 @@ In\ x = \begin{bmatrix}
 $$
 
 $$
-\vec a,\ \vec b\ and\ \vec c\ are\ in\ Cartesian\ Coordinate\ of\ \\rm I\! R^2
+if\ \vec a,\ \vec b\ and\ \ \vec c\ are\ in\ Cartesian\ Coordinate\ of\ \rm I\! R^2
 $$
 
 you can get each distance of them with **pdist** function.
 
-> dis = pdist(x, 'euclidean')
-> dis
-> array([ 1.41421356,  2.23606798,  1.        ])
+```python
+>>> dis = pdist(x, 'euclidean')   
+>>> dis    
+array([ 1.41421356,  2.23606798,  1.        ])    
+```
 
 $$
 pdist(x, 'euclidean') = \begin{bmatrix}
@@ -191,6 +194,8 @@ pdist(x, 'euclidean') = \begin{bmatrix}
 $$
 
 In the above case, you cannot get accurate distance, I mean you don't know what pair of points it is in **x** array.
+
+later on, I will explain to you what each of the result means
 
 > So, you need to use a function, squareform(pdist(x, 'euclidean'))
 
@@ -209,13 +214,13 @@ In the above matrix, each terms indicate distance between two points, you can kn
 the location of two points is the index of the above matrix term.
 
 > if d = squareform(pdist(x, 'euclidean'))
-> d[i, j] is the the Euclidean distance between x[i, :] and x[j, :]
-> d[0, 0] is distance between x[0, :] and x[0, :]
-> d[0, 1] is distance between x[0, :] and x[1, :]
-> d[0, 2] is distance between x[0, :] and x[2, :]
-> ...
-> d[2, 1] is distance between x[2, :] and x[2, :]
-> d[2, 2] is distance between x[2, :] and x[2, :]
+> d[i, j] is the the Euclidean distance between x[i, :] and x[j, :]    
+> d[0, 0] is distance between x[0, :] and x[0, :]    
+> d[0, 1] is distance between x[0, :] and x[1, :]     
+> d[0, 2] is distance between x[0, :] and x[2, :]    
+> ...     
+> d[2, 1] is distance between x[2, :] and x[2, :]    
+> d[2, 2] is distance between x[2, :] and x[2, :]    
 
 > the location of Each point(thought of as a row of matrix x ) 
 
@@ -224,7 +229,7 @@ In\ x = \begin{bmatrix}
 0 & 1 \cr
 1 & 0 \cr
 2 & 0 \cr
-\end{bmatrix},\ if\ \begin{bmatrix}
+\end{bmatrix},\ \begin{bmatrix}
 0 \cr 
 1 \cr
 \end{bmatrix} = \vec a,\ \begin{bmatrix}
@@ -239,11 +244,11 @@ $$
 > d = squareform(pdist(x, 'euclidean'))
 
 $$
-d = squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
+d = \begin{bmatrix}
 0. & 1.41421356 & 2.23606798 \cr
 1.41421356 & 0. & 1. \cr
 2.23606798 & 1. & 0. \cr
-\end{bmatrix}\  means\ 
+\end{bmatrix}
 $$
 
 > d[i, j] is the the Euclidean distance between x[i, :] and x[j, :]
@@ -252,7 +257,7 @@ $$
 0.(d[0, 0])\ is\ distance\ between\ \vec a = \begin{bmatrix}
 0 \cr 
 1 \cr
-\end{bmatrix}\ and\ \vec a = \begin{bmatrix}
+\end{bmatrix}\ and\ \ \vec a = \begin{bmatrix}
 0 \cr 
 1 \cr
 \end{bmatrix}
@@ -263,7 +268,7 @@ $$
 1.41421356(d[1, 0])\ is\ distance\ between\ \vec b = \begin{bmatrix}
 1 \cr
 0 \cr
-\end{bmatrix}\ and\ \vec a = \begin{bmatrix}
+\end{bmatrix}\ and\ \ \vec a = \begin{bmatrix}
 0 \cr 
 1 \cr
 \end{bmatrix}
@@ -274,7 +279,7 @@ $$
 2.23606798(d[2, 0])\ is\ distance\ between\ \vec c = \begin{bmatrix}
 2 \cr 
 0 \cr
-\end{bmatrix}\ and\ \vec a = \begin{bmatrix}
+\end{bmatrix}\ and\ \ \vec a = \begin{bmatrix}
 0 \cr 
 1 \cr
 \end{bmatrix}
@@ -285,7 +290,10 @@ $$
 $$
 pdist(x, 'euclidean') = \begin{bmatrix}
 1.41421356 & 2.23606798 & 1.  \cr
-\end{bmatrix}\  and
+\end{bmatrix}\ \ and
+$$
+
+$$
 squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
 0. & 1.41421356 & 2.23606798 \cr
 1.41421356 & 0. & 1. \cr
@@ -307,7 +315,10 @@ For example, what I meant is as follows :
 $$
 pdist(x, 'euclidean') = \begin{bmatrix}
 1.41421356 & 2.23606798 & 1.  \cr
-\end{bmatrix}\ means,\ 
+\end{bmatrix}\ means
+$$
+
+$$
 1.41421356 = dist(x[0],\ x[1]),\ 2.23606798 = dist(x[0], x[2]),\ 1. = dist(x[1], x[2])
 $$
 
@@ -319,6 +330,9 @@ $$
 pdist(x, 'euclidean') = \begin{bmatrix}
 1.41421356 & 2.23606798 & 1.  \cr
 \end{bmatrix}\  and
+$$
+
+$$
 squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
 0. & 1.41421356 & 2.23606798 \cr
 1.41421356 & 0. & 1. \cr
