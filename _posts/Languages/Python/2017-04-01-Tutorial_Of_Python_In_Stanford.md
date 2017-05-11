@@ -11,7 +11,7 @@ bigimg:
 
 
 
-# Tutorial of Python in Stanford university 
+# Tutorial of Python in  Stanford's CS224n 
 
 This is just arragement and rewritten for my python study, So If I have a problem in document, let me know about it
 
