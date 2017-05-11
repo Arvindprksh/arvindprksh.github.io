@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial of Numpy with Stanford python tutorial
+title: Tutorial of Numpy with Stanford's CS224n
 subtitle: I will let you know the basics of Numpy.
 category: Python
 tags: [language, python]
