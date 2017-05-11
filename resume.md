@@ -1,6 +1,6 @@
 ---
 layout: page
-css: /css/search.css
+css: /css/resumeByhyun02.css
 ---
 
 {% include MyResume.html %}
