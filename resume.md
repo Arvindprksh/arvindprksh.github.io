@@ -1,5 +1,5 @@
 ---
-layout : base
+layout : page
 css : /css/resumeByhyun02.css 
 ---
 
