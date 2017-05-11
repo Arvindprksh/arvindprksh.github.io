@@ -8,9 +8,10 @@ permalink: /2017/04/07/Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
+
 {% include MathJax.html %}
 
-the table of contens in this article. 
+The table of contens in this article. 
 
 - Scipy
   - Image operations
@@ -26,13 +27,13 @@ Let's explore more in detail.
 
 ## Scipy
 
-Numpy provides a high-performance mulitidimensional array and basic tools to compute with and manipulate these arrrays. [Scipy](https://docs.scipy.org/doc/scipy/reference/) builds on this, and provides a large number of functions that operate on numpy arrays and are useful for different types of scientific and engineering applications.
+Numpy provides a high-performance multidimensional array and basic tools to compute with and manipulate these arrrays. [Scipy](https://docs.scipy.org/doc/scipy/reference/) builds on this, and provides a large number of functions that operate on numpy arrays and are useful for different types of scientific and engineering applications.
 
 The best way to get familiar with Scipy is to [browse the documentation](https://docs.scipy.org/doc/scipy/reference/index.html). We will highlight some parts of Scipy that you might find useful for this class.
 
 ### Image operations
 
-Scipy provides some basix functions to work with images. For example, it has functions to read images from disk into numpy arrays, to write numpy arrays to disk as images, and to resize images. Here is a simple example that showcases these functions :
+Scipy provides some basis functions to work with images. For example, it has functions to read images from disk into numpy arrays, to write numpy arrays to disk as images, and to resize images. Here is a simple example that show cases these functions :
 
 ```ptyhon
 >>> import numpy as np
@@ -105,37 +106,37 @@ array([[[132, 128, 117],
 > img = imread('your path of image\cat.jpg')   
 > print (img.dtype, img.shape)   
 
-Like the above code, the image read.
+You can read the image in the above code.
 
 ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg)
 
 > img_tinted = img * [1, 0.95, 0.9]
 
-this only change RGB of Image.
+This only changes RGB of Image.
 
 ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted.jpg)
 
 > img_tinted = imresize(img_tinted, (300,300))
 
-this resized the size of image, in my case, 300 X 300.
+This resized image to 300 X 300.
 
 ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg)
 
-If I compare the original image with this resized.
+Let's compare the original image with this resized.
 
 ---
 
-the original Image    | The tinted and resized Image 
-:-------------------: | :---------------------------:
-|![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg) | [](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg) |
+The original Image        | The tinted and resized Image 
+:-----------------------: | :---------------------------:
+| ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg) | ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg) 
 
 --
 
 ### MATLAB files
 
-The function **scipy.io.ioloadmat** and **Scipy.io.savement** allow you to read and write MATLAB files. If you want to know more in detail.
+The function **scipy.io.ioloadmat** and **Scipy.io.savemat** allow you to read and write MATLAB files. If you want to know more in detail.
 
-you can read about the information in [the documentation.](https://docs.scipy.org/doc/scipy/reference/io.html)
+you can read more about the information in [the documentation.](https://docs.scipy.org/doc/scipy/reference/io.html)
 
 ### Distance between points
 
@@ -154,16 +155,18 @@ x = \begin{bmatrix}
 \end{bmatrix}
 $$ 
 
-> To compute the Euclidean distance between all rows of x.   
-> d[i,j] is the Euclidean distance between x[i,:], and [j, :].    
-> d = squareform(pdist(x, 'euclidean'))   
+> To compute the Euclidean distance between all rows of x.  
+> Use d = squareform(pdist(x, 'euclidean'))      
+> On the result of squareform function, d[i,j] is the Euclidean distance between x[i,:], and [j, :].    
+
+Let's explain about squareform function slowly. 
 
 $$
 In\ x = \begin{bmatrix}
 0 & 1 \cr
 1 & 0 \cr
 2 & 0 \cr
-\end{bmatrix},\ if\ \begin{bmatrix}
+\end{bmatrix},\ suppose\ that\ \begin{bmatrix}
 0 \cr 
 1 \cr
 \end{bmatrix} = \vec a,\ \begin{bmatrix}
@@ -176,10 +179,10 @@ In\ x = \begin{bmatrix}
 $$
 
 $$
-if\ \vec a,\ \vec b\ and\ \ \vec c\ are\ in\ Cartesian\ Coordinate\ of\ \rm I\! R^2
+\vec a,\ \vec b\ and\ \ \vec c\ are\ in\ Cartesian\ Coordinate\ of\ \rm I\! R^2
 $$
 
-you can get each distance of them with **pdist** function.
+In the above vectors, you can get each distance of them with **pdist** function.
 
 ```python
 >>> dis = pdist(x, 'euclidean')   
@@ -193,13 +196,11 @@ pdist(x, 'euclidean') = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-In the above case, you cannot get accurate distance, I mean you don't know what pair of points it is in **x** array.
+You got one array that is distance of some pairs of points, The pair is element in upper triangular portion of squareform function.
 
-later on, I will explain to you what each of the result means
+> Now, let's use a function, squareform(pdist(x, 'euclidean'))
 
-> So, you need to use a function, squareform(pdist(x, 'euclidean'))
-
-**Squareform** function make matrix square.
+**Squareform** function makes matrix square as follows.
 
 $$
 squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
@@ -209,9 +210,7 @@ squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-In the above matrix, each terms indicate distance between two points, you can know the location of two points.
-
-the location of two points is the index of the above matrix term.
+In the above matrix, each terms indicate the distance between two points, you can know the location of two points from term index.
 
 > if d = squareform(pdist(x, 'euclidean'))
 > d[i, j] is the the Euclidean distance between x[i, :] and x[j, :]    
@@ -222,7 +221,7 @@ the location of two points is the index of the above matrix term.
 > d[2, 1] is distance between x[2, :] and x[2, :]    
 > d[2, 2] is distance between x[2, :] and x[2, :]    
 
-> the location of Each point(thought of as a row of matrix x ) 
+> You can come up with which points used from indices
 
 $$
 In\ x = \begin{bmatrix}
@@ -251,7 +250,7 @@ d = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-> d[i, j] is the the Euclidean distance between x[i, :] and x[j, :]
+> d[i, j] is the Euclidean distance between x[i, :] and x[j, :]
 
 $$
 0.(d[0, 0])\ is\ distance\ between\ \vec a = \begin{bmatrix}
@@ -285,7 +284,7 @@ $$
 \end{bmatrix}
 $$
 
-> Finally, compare pdis(pdist(x, 'euclidean')) with squareform(pdist(x, 'euclidean'))
+> Finally, Let's compare pdist(pdist(x, 'euclidean')) with squareform(pdist(x, 'euclidean')) once again
 
 $$
 pdist(x, 'euclidean') = \begin{bmatrix}
@@ -302,13 +301,11 @@ squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
 $$
 
 
-If you compare both of them, 
+If you compare both of them, squareform function makes the result 3 X 3 square, and This matrix will show you distance between a point and self-point.
 
-squareform function makes the result the shape of square, and this matrix will show you distance of self-point,
+For example, If you have points, a, b and c. suquareform function also calculates distance between a and a.
 
-if you have opints, a, b and c. in here, suquareform also calculate distance between a and a.
-
-but only if you use pdist function. that indicate distance in order. 
+But only if you use pdist function. it indicates the distance in order of upper triagular portion of squareform function.
 
 For example, what I meant is as follows :
 
@@ -322,7 +319,7 @@ $$
 1.41421356 = dist(x[0],\ x[1]),\ 2.23606798 = dist(x[0], x[2]),\ 1. = dist(x[1], x[2])
 $$
 
-Or You can view it as the elements in the upper triangular portion of the square distance matrix.
+i.e. You can view it as the elements in the upper triangular portion of the square distance matrix.
 
 Let's think of what I mean :
 
@@ -340,7 +337,7 @@ squareform(pdist(x, 'euclidean')) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-also you can view what I mean with code :
+Let's think of it with python code :
 
 ```python 
 >>> dis = pdist(x, 'euclidean')
@@ -363,7 +360,7 @@ array([ 10.        ,  22.36067977,  14.14213562,  14.14213562,
         10.        ,  22.36067977])
 ```
 
-if you know more in detail, you can read [this Stackoverflow.](http://stackoverflow.com/questions/13079563/how-does-condensed-distance-matrix-work-pdist).
+If you want to know more in detail, read [this Stackoverflow.](http://stackoverflow.com/questions/13079563/how-does-condensed-distance-matrix-work-pdist).
 
 Let's calculate the distance between two points in python code.
 
@@ -404,7 +401,7 @@ array([ 1.41421356,  2.23606798,  1.        ])
 1
 ```
 
-You can read all the detais about this function in [the documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html)
+You can read all the details about this function in [the documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html)
 
 A similar function (**scipy.spatial.distance.cdist**) computes the distance between all paris across sets of points; you can read about it in [the documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cdist.html)
 
@@ -419,6 +416,7 @@ The most important function in matplotlib is **plot**, which allows you to plot 
 ```python
 >>> import numpy as np
 >>> import matplotlib.pyplot as plt
+## Compute the x and y coordinates for points on a sine curve
 >>> x = np.arange(0, 3 * np.pi, 0.1)
 >>> x
 array([ 0. ,  0.1,  0.2,  0.3,  0.4,  0.5,  0.6,  0.7,  0.8,  0.9,  1. ,
@@ -459,9 +457,10 @@ array([ 0.        ,  0.09983342,  0.19866933,  0.29552021,  0.38941834,
 (95,)
 >>> y.ndim
 1
+### Plot the points using matplotlib
 >>> plt.plot(x, y)
 [<matplotlib.lines.Line2D object at 0x0523A0D0>]
->>> plt.show()
+>>> plt.show()  ## you must call plt.show() to make graphics appear.
 ```
 
 After Running this code, the following plot is produced :
@@ -496,8 +495,6 @@ array([ 0. ,  0.1,  0.2,  0.3,  0.4,  0.5,  0.6,  0.7,  0.8,  0.9,  1. ,
 >>> x.ndim
 1
 >>> y_sin = np.sin(y)
->>> y_cos = np.sin(x)
->>> y_sin = np.sin(x)
 >>> y_sin
 array([ 0.        ,  0.09983342,  0.19866933,  0.29552021,  0.38941834,
         0.47942554,  0.56464247,  0.64421769,  0.71735609,  0.78332691,
@@ -523,10 +520,32 @@ array([ 0.        ,  0.09983342,  0.19866933,  0.29552021,  0.38941834,
 >>> y_sin.ndim
 1
 >>> y_cos = np.cos(x)
+>>> y_cos
+array([ 1.        ,  0.99500417,  0.98006658,  0.95533649,  0.92106099,
+        0.87758256,  0.82533561,  0.76484219,  0.69670671,  0.62160997,
+        0.54030231,  0.45359612,  0.36235775,  0.26749883,  0.16996714,
+        0.0707372 , -0.02919952, -0.12884449, -0.22720209, -0.32328957,
+       -0.41614684, -0.5048461 , -0.58850112, -0.66627602, -0.73739372,
+       -0.80114362, -0.85688875, -0.90407214, -0.94222234, -0.97095817,
+       -0.9899925 , -0.99913515, -0.99829478, -0.98747977, -0.96679819,
+       -0.93645669, -0.89675842, -0.84810003, -0.79096771, -0.7259323 ,
+       -0.65364362, -0.57482395, -0.49026082, -0.40079917, -0.30733287,
+       -0.2107958 , -0.11215253, -0.01238866,  0.08749898,  0.18651237,
+        0.28366219,  0.37797774,  0.46851667,  0.55437434,  0.63469288,
+        0.70866977,  0.77556588,  0.83471278,  0.88551952,  0.92747843,
+        0.96017029,  0.98326844,  0.9965421 ,  0.99985864,  0.99318492,
+        0.97658763,  0.95023259,  0.91438315,  0.86939749,  0.8157251 ,
+        0.75390225,  0.68454667,  0.60835131,  0.52607752,  0.43854733,
+        0.34663532,  0.25125984,  0.15337386,  0.05395542, -0.04600213,
+       -0.14550003, -0.24354415, -0.33915486, -0.43137684, -0.51928865,
+       -0.6020119 , -0.67872005, -0.74864665, -0.81109301, -0.86543521,
+       -0.91113026, -0.9477216 , -0.97484362, -0.99222533, -0.99969304])
+>>> y_cos.shape
+(95,)
 >>> y_cos.ndim
 1
 >>>
->>>
+## Plot the points using matplotlib
 >>> plt.plot(x, y_sin)
 [<matplotlib.lines.Line2D object at 0x0538F070>]
 >>> plt.plot(x, y_cos)
@@ -552,7 +571,7 @@ the graph of y_sin and y_cos
 
 ---
 
-you can read much more  about the plot function in [the documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
+you can read much more about the plot function in [the documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
 
 
 ### subplot 
@@ -568,15 +587,17 @@ you can plot different things in the same figure using the subplot function, Her
 >>> y_sin = np.sin(x)
 >>> y_cos = np.cos(x)
 >>>
->>>
+## Set up a subplot grid that has height 2 and width 1
+## Set first such subplot as active
 >>> plt.subplot(2, 1, 1)
 <matplotlib.axes._subplots.AxesSubplot object at 0x0539F2F0>
+## Make the first plot
 >>> plt.plot(x, y_sin)
 [<matplotlib.lines.Line2D object at 0x05006C30>]
 >>> plt.title('Sine')
 <matplotlib.text.Text object at 0x04FEA830>
 >>>
->>>
+## Set the second subplot as active, and Make the second plot  
 >>> plt.subplot(2,1,2)
 <matplotlib.axes._subplots.AxesSubplot object at 0x05006D30>
 >>> plt.plot(x, y_cos)
@@ -589,6 +610,7 @@ you can plot different things in the same figure using the subplot function, Her
 <matplotlib.text.Text object at 0x0501CA30>
 >>> plt.legend(['Cosine'])
 <matplotlib.legend.Legend object at 0x0503E890>
+## Show the figure
 >>> plt.show()
 >>>
 ```
@@ -616,12 +638,17 @@ You can use the imshow function to show image here is an example :
 >>> import matplotlib.pyplot as plt
 >>> img = imread('your path including image\cat.jpg')
 >>> img_tinted = img * [1, 0.95, 0.9]
+## Show the original image
 >>> plt.subplot(1,2,1)
 <matplotlib.axes._subplots.AxesSubplot object at 0x071A5310>
 >>> plt.imshow(img)
 <matplotlib.image.AxesImage object at 0x071F1050>
+## Show the tinted Image
 >>> plt.subplot(1,2,2)
 <matplotlib.axes._subplots.AxesSubplot object at 0x071E9FD0>
+
+## If you use plt.imshow(img_tinted), it might give you strange results. 
+## Then, you explicilty cast the image to unint8 before displaying it. 
 >>> plt.imshow(np.uint8(img_tinted))                  ## plt.imshow(img_tinted)
 <matplotlib.image.AxesImage object at 0x05031770>
 >>> plt.show()
