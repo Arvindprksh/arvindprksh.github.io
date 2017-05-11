@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial of python with Standford 
+title: Tutorial of python with Stanford's CS224n 
 subtitle: I will let you know the basics of python syntax with python tutorial of some stanford lecture.
 category: Python
 tags: [language, python]
