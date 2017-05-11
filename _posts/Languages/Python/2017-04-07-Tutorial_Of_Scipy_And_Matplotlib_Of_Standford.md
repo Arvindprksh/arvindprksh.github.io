@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial of Scipy and Matplotlib with Stanford python tutorial
+title: Tutorial of Scipy and Matplotlib with Stanford's CS224n
 subtitle: I will let you know the basics of Scipy and MatplotLib
 category: Python
 tags: [language, python]
