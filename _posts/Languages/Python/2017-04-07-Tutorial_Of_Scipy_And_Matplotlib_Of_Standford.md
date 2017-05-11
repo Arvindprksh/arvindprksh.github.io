@@ -130,7 +130,7 @@ The original Image        | The tinted and resized Image
 :-----------------------: | :---------------------------:
 | ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat.jpg) | ![](/img/Image/Languages/Python/2017-04-07-Tutorial_Of_Scipy_And_Matplotlib_Of_Standford/cat_tinted_resized.jpg) 
 
---
+---
 
 ### MATLAB files
 
