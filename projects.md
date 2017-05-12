@@ -64,7 +64,7 @@ comments: true
     - Description :
     나만의 이력 및 프로젝트 관리의 위해 그리고 웹 프로래밍을 경험을 위해 진행한 프로젝트입니다.
 
-  - User Cutomizing the wrong English note - User Cumstomizing 영어 오답노트
+  - User Customizing the wrong English note - User Cumstomizing 영어 오답노트
 
     - Langugeses : PHP, MySQL, Java, JavaScript, html(css)
     - Platforms : Android, Aphache, Web
