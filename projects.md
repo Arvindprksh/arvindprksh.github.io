@@ -10,7 +10,7 @@ comments: true
 
 ## IOT Project
 
-  - **[Smart Refrigerator told the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
+  - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
     
     - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
     - Langugeses : C#, Java, MySQL
