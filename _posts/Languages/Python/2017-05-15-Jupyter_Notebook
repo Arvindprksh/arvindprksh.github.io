@@ -1,0 +1,50 @@
+
+
+
+
+I saw [a cetain site](http://pinkwink.kr/815) about explaining how to draw the vectors with matplotlib of python. 
+
+and while I was reading the [above site](http://pinkwink.kr/815), Fortunately, I found [Jupyter notebook](http://jupyter.org/) that is web application for python interpreter. 
+
+So In here, I will explain a little about jupyter. You can also find out an example of jupyter notebook in [this site](https://github.com/wesm/pydata-book)
+
+
+## How to install jupyter 
+
+On window 10 :
+
+"pip install ipython[all]" OR "pip install ipython"
+
+> pip install ipython[all] : everything related to ipython is installed. 
+
+![]()
+
+OR 
+
+"pip install jupyter"
+
+![]()
+
+
+I recommed you for installing juypter that the above is how you can install jupyter. 
+
+
+**if you want to execute jupyter**
+
+
+"jupyter notebook"
+
+
+
+
+
+
+After finding this jupyter, I will use this tool for python coding. 
+
+
+
+
+
+# Reference 
+
+  - [Officail sit of jupyter]()
