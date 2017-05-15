@@ -1,8 +1,15 @@
+---
+layout: post
+title: What is the jupyter notebook of python
+subtitle: I will let you know how to install jupyter and use it.
+category: Python
+tags: [language, python]
+permalink: /2017/05/15/Jupyter_Notebook/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+---
 
-
-
-
-I saw [a cetain site](http://pinkwink.kr/815) about explaining how to draw the vectors with matplotlib of python. 
+I saw [a certain site](http://pinkwink.kr/815) about explaining how to draw the vectors with matplotlib of python. 
 
 and while I was reading the [above site](http://pinkwink.kr/815), Fortunately, I found [Jupyter notebook](http://jupyter.org/) that is web application for python interpreter. 
 
@@ -52,12 +59,15 @@ lastly, You can do programming in jupyter and also see graph and result at once.
 
 ![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/jupter_test.JPG)
 
-Also you can share the jupyter file, extension of ipyn.
+Also you can share the jupyter file, extension of ipynb.
 
-BUT if you want to use nbviewer, you have to install jupyter_contrib_extension as indicating on [git-hub](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
+That way is so easy. 
 
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebooknbviewer_of_jupyter.JPG)
 
-![]()
+In the above searching window, If you enter the address where your ipynb is placed. you would get the result of executing jupyter.
+
+![](![](/img/Image/Languages/Python/result_of_nbviewer_of_jupyter.JPG)
 
 After finding this jupyter, I will use this tool for python coding. 
 
@@ -70,6 +80,8 @@ After finding this jupyter, I will use this tool for python coding.
   - [Korean site of explaining ipython](http://pinkwink.kr/711)
   
   - [Korean site of explaing Nbextensions](http://pinkwink.kr/928)
+  
+  for more useful way to use jupyter. 
   
   - [jupyter_contrib_nbextension's github](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
   
