@@ -63,11 +63,11 @@ Also you can share the jupyter file, extension of ipynb.
 
 That way is so easy. 
 
-![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebooknbviewer_of_jupyter.JPG)
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/nbviewer_of_jupyter.JPG)
 
-In the above searching window, If you enter the address where your ipynb is placed. you would get the result of executing jupyter.
+In the above searching window, If you enter the address where your ipynb is placed. you would get the result of executing jupyter as follows.
 
-![](![](/img/Image/Languages/Python/result_of_nbviewer_of_jupyter.JPG)
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/result_of_nbviewer_of_jupyter.JPG)
 
 After finding this jupyter, I will use this tool for python coding. 
 
