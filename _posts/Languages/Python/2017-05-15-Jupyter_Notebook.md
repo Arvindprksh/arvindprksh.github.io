@@ -69,6 +69,9 @@ In the above searching window, If you enter the address where your ipynb is plac
 
 ![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/result_of_nbviewer_of_jupyter.JPG)
 
+
+If you want to see the above jupyter nbviewer, click [here](https://nbviewer.jupyter.org/github/hyunyoung2/hyunyoung2.github.io/blob/master/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/Jupyter%20test%20with%20matplotlib.ipynb).
+
 After finding this jupyter, I will use this tool for python coding. 
 
 # Reference 
