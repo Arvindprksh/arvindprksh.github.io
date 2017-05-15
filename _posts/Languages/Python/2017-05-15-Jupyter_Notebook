@@ -17,13 +17,15 @@ On window 10 :
 
 > pip install ipython[all] : everything related to ipython is installed. 
 
-![]()
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/ipython_on_windows.JPG)
 
 OR 
 
+The following is what I recommend to you about installation of jupyter notebook : 
+
 "pip install jupyter"
 
-![]()
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/jupyter_on_windows.JPG)
 
 
 I recommed you for installing juypter that the above is how you can install jupyter. 
@@ -35,16 +37,40 @@ I recommed you for installing juypter that the above is how you can install jupy
 "jupyter notebook"
 
 
+if you enter the above command in cmd window. 
+
+in cmd window :
+
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/execution_of_jupyter_notebook.JPG)
+
+you will get this wab page. 
+
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/jupter_test.JPG)
 
 
+lastly, You can do programming in jupyter and also see graph and result at once. 
 
+![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/jupter_test.JPG)
+
+Also you can share the jupyter file, extension of ipyn.
+
+BUT if you want to use nbviewer, you have to install jupyter_contrib_extension as indicating on [git-hub](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
+
+
+![]()
 
 After finding this jupyter, I will use this tool for python coding. 
 
-
-
-
-
 # Reference 
 
-  - [Officail sit of jupyter]()
+  - [Official sit of jupyter](http://jupyter.org/)
+  
+  - [Official site of installation](http://jupyter.org/install.html)
+
+  - [Korean site of explaining ipython](http://pinkwink.kr/711)
+  
+  - [Korean site of explaing Nbextensions](http://pinkwink.kr/928)
+  
+  - []
+  
+  
