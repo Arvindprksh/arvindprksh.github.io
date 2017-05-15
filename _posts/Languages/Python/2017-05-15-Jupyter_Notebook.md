@@ -11,7 +11,7 @@ bigimg:
 
 I saw [a certain site](http://pinkwink.kr/815) about explaining how to draw the vectors with matplotlib of python. 
 
-and while I was reading the [above site](http://pinkwink.kr/815), Fortunately, I found [Jupyter notebook](http://jupyter.org/) that is web application for python interpreter. 
+while I was reading the [above site](http://pinkwink.kr/815), I felt interested in the jupyter. Fortunately, I found [Jupyter notebook](http://jupyter.org/) that is web application for python interpreter. 
 
 So In here, I will explain a little about jupyter. You can also find out an example of jupyter notebook in [this site](https://github.com/wesm/pydata-book)
 
