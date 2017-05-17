@@ -74,6 +74,9 @@ If you want to see the above jupyter nbviewer, click [here](https://nbviewer.jup
 
 After finding this jupyter, I will use this tool for python coding. 
 
+
+{% include an example of plotting vector.ipynb %}
+
 # Reference 
 
   - [Official sit of jupyter](http://jupyter.org/)
