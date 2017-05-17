@@ -2,6 +2,20 @@
 
 
 
+Let's see this site,[scipy lecture](http://www.scipy-lectures.org/intro/index.html)
+
+Nowadays, I am studying linear aligebra, So all of a sudden, I want to plot vecor with python
+
+So I'm looking for information which I wanted to plot vector, In here, I arrange that site on Reference below. 
+
+First of all, let's see simple example about how to draw vector. 
+
+After that, I will remake it for me.
+
+Let's 
+
+
+
 
 
 
@@ -14,6 +28,10 @@
 
 
 # Reference
+
+  for the overall lecture of scipy
+  
+  - [scipy lecture](http://www.scipy-lectures.org/intro/index.html)
 
   for 2D vector
 
