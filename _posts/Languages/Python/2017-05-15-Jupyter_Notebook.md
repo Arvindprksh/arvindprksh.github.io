@@ -82,9 +82,9 @@ After finding this jupyter, I will use this tool for python coding.
 
 <div id="tutorial-section">
 
-  <div id="tutorial-title">Tutorial</div>
+  <div id="tutorial-title" style="text-align: center">Tutorial</div>
 
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills" style="text-align: center">
     <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
     <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
   </ul>
