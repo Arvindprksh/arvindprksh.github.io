@@ -1,6 +1,6 @@
-<!-- https://github.com/daattali/shinyjs/blob/gh-pages/css/index.css -->
+/* https://github.com/daattali/shinyjs/blob/gh-pages/css/index.css */
 
-<!-- tutorial portion of the above URL -->
+/* tutorial portion of the above URL */
 
 #tutorial-section {
   text-align: center;
@@ -13,7 +13,7 @@
 }
 
 #tutorial-section  iframe {
-  width: 700px;
+  width:  100% /* 640px; the initial value */
   height: 360px;
 }
 
