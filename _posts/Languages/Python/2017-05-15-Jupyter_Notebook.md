@@ -5,6 +5,7 @@ subtitle: I will let you know how to install jupyter and use it.
 category: Python
 tags: [language, python]
 permalink: /2017/05/15/Jupyter_Notebook/
+css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
@@ -77,6 +78,25 @@ After finding this jupyter, I will use this tool for python coding.
 <iframe src="https://www.youtube.com/embed/FYPd5W75HPE" frameborder="0" allowfullscreen></iframe>
 
 ![](/img/Image/Languages/2017-05-16-How_To_Plot_Vector_And_Plane_With_Python/an_example_of_plotting_vector.ipynb)
+
+
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Tutorial</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
+    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="short-tutorial" class="tab-pane fade in active">
+      <iframe src="https://www.youtube.com/embed/FYPd5W75HPE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="long-tutorial" class="tab-pane fade">
+      <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
+  </div>
+</div>
 
 # Reference 
 
