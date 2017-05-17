@@ -74,6 +74,7 @@ If you want to see the above jupyter nbviewer, click [here](https://nbviewer.jup
 
 After finding this jupyter, I will use this tool for python coding. 
 
+<iframe src="https://www.youtube.com/embed/FYPd5W75HPE" frameborder="0" allowfullscreen></iframe>
 
 ![](/img/Image/Languages/2017-05-16-How_To_Plot_Vector_And_Plane_With_Python/an_example_of_plotting_vector.ipynb)
 
