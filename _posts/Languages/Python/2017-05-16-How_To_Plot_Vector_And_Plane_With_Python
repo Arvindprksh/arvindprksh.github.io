@@ -38,3 +38,11 @@
   - [stakoverflow](http://stackoverflow.com/questions/29188612/arrows-in-matplotlib-using-mplot3d)
   
   - [another stackoverflow](http://stackoverflow.com/questions/22867620/putting-arrowheads-on-vectors-in-matplotlibs-3d-plot)
+  
+  for 3D plane
+  
+   - [stackoverflow](http://stackoverflow.com/questions/3461869/plot-a-plane-based-on-a-normal-vector-and-a-point-in-matlab-or-matplotlib)
+
+  for annotating vector
+  
+   - [matplot example of annotation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.annotate)
