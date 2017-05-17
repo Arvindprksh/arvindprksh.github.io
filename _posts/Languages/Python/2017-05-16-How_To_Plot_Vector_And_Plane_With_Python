@@ -15,6 +15,8 @@
 
 # Reference
 
+  for 2D vector
+
   - [Python note](http://kestrel.nmt.edu/~raymond/software/python_notes/paper004.html)
   
   - [Stack overflow](http://stackoverflow.com/questions/12265234/how-to-plot-2d-math-vectors-with-matplotlib)
@@ -28,5 +30,11 @@
   - [Line points formatting](https://bespokeblog.wordpress.com/2011/07/07/basic-data-plotting-with-matplotlib-part-2-lines-points-formatting/)
   
   - [the totally basic explanation of matplotlib](https://www.labri.fr/perso/nrougier/teaching/matplotlib/)
+  
+  for 3D vector
 
   - [vector coordinate](http://pinkwink.kr/815)
+
+  - [stakoverflow](http://stackoverflow.com/questions/29188612/arrows-in-matplotlib-using-mplot3d)
+  
+  - [another stackoverflow](http://stackoverflow.com/questions/22867620/putting-arrowheads-on-vectors-in-matplotlibs-3d-plot)
