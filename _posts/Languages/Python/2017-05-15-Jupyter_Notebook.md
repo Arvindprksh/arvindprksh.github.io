@@ -80,7 +80,7 @@ Just click [this site, ipython tutorial of Stanford 231 n.](http://cs231n.github
 
 **But, The easiest way to install juypter is use of Anaconda.** 
 
-Let's go to [jupyter.org](http://jupyter.org) to look for way to install Anaconda
+Let's go to [jupyter.org](http://jupyter.org) to look for way to install Anaconda.
 
 
 # Reference 
