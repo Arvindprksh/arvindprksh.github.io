@@ -10,7 +10,7 @@ bigimg:
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
 
-I saw [a certain site](http://pinkwink.kr/815) about explaining how to draw the vectors with matplotlib of python. 
+I saw [a certain site](http://pinkwink.kr/815) explaining how to draw the vectors with matplotlib of python. 
 
 while I was reading the [above site](http://pinkwink.kr/815), I felt interested in the jupyter. Fortunately, I found [Jupyter notebook](http://jupyter.org/) that is web application for python interpreter. 
 
