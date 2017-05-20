@@ -135,6 +135,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      addthis-plugin: true # add share button of https://www.addthis.com/
   -
     scope:
       path: "" # all files
