@@ -57,7 +57,7 @@ comments: true
  
   - **[Making Github Page - hyunyoung2.github.io : 현재 이 web page](https://hyunyoung2.github.io)**
   
-    - Langugeses : Javascript, html(css)<!--, Markdown, liquid -->
+    - Langugeses : Javascript, html(css), ruby<!--, Markdown, liquid -->
     - Platforms :Jekyll, github
     - Tools : git, Xcode, Mac OS
     - My role : developed github page alone using Open-Source Static Site Generator(Jekyll).
