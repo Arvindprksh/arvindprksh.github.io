@@ -15,9 +15,9 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-<div id="tutorial-section">
+<div id="tutorial-section" style="text-align: center;">
 
-  <div id="tutorial-title" style="center">Tutorial</div>
+  <div id="tutorial-title">Tutorial</div>
 
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
