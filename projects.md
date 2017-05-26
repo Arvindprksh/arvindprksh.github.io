@@ -36,14 +36,14 @@ css : /css/ForYouTubeByHyun.css
   <div id="tutorial-title">Project</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial">Concept Video</a></li>
+    <li class="active"><a data-toggle="tab" href="#Refreigerator">Project Video</a></li>
+    <li><a data-toggle="tab" href="#concept">Concept Video</a></li>
   </ul>
   <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
+    <div id="Refreigerator" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div id="long-tutorial" class="tab-pane fade">
+    <div id="concept" class="tab-pane fade">
       <iframe src="https://www.youtube.com/watch?v=Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe>  </div>
   </div>
 </div>
@@ -69,11 +69,11 @@ css : /css/ForYouTubeByHyun.css
   <div id="tutorial-title">Project</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
+    <li class="active"><a data-toggle="tab" href="#Calibration">Project Video</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
+    <div id="Calibration" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
       </div>
   </div>
@@ -101,11 +101,11 @@ css : /css/ForYouTubeByHyun.css
   <div id="tutorial-title">Project</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
+    <li class="active"><a data-toggle="tab" href="#bigLITTLE">Project Video</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
+    <div id="bigLITTLE" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
       </div>
   </div>
