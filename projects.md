@@ -9,25 +9,11 @@ css : /css/ForYouTubeByHyun.css
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
   
-<div id="tutorial-section">
 
-  <div id="tutorial-title">Tutorial</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://youtu.be/Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div id="long-tutorial" class="tab-pane fade">
-      <iframe src="https://www.youtube.com/watch?v=TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>  </div>
-  </div>
-</div>
   
-  
+      <iframe src="https://www.youtube.com/watch?v=TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>  
+
 
 ## IOT Project
 
