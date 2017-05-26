@@ -4,57 +4,11 @@ title: Projects
 subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
 tag: personal 
 comments: true
-css : /css/ForYouTubeByHyun.css
 ---
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
-  
-
-<iframe src="https://youtu.be/Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
-  
-<iframe src="https://www.youtube.com/watch?v=TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>  
-
 
 ## IOT Project
-
-<div id="tutorial-section">
-
-  <div id="tutorial-title">Tutorial</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
-      <iframe src="https://www.youtube.com/embed/FYPd5W75HPE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div id="long-tutorial" class="tab-pane fade">
-      <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
-  </div>
-</div>
-
-
-
-<div id="tutorial-section">
-
-  <div id="tutorial-title">Project</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#Refreigerator">Project Video</a></li>
-    <li><a data-toggle="tab" href="#concept">Concept Video</a></li>
-  </ul>
-  
-  <div class="tab-content">
-    <div id="Refreigerator" class="tab-pane fade in active">
-      <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div id="concept" class="tab-pane fade">
-      <iframe src="https://www.youtube.com/watch?v=Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe>  </div>
-  </div>
-</div>
-
 
   - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
   
@@ -71,22 +25,6 @@ css : /css/ForYouTubeByHyun.css
    
 ## Windows Project
 
-<div id="tutorial-section">
-
-  <div id="tutorial-title">Project</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#Calibration">Project Video</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="Calibration" class="tab-pane fade in active">
-      <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
- </div>
-
-
   - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
 
     - Langugeses : C#, Java
@@ -102,22 +40,7 @@ css : /css/ForYouTubeByHyun.css
     
 
 ## Kernel Project
-  
-   <div id="tutorial-section">
-
-  <div id="tutorial-title">Project</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#bigLITTLE">Project Video</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="bigLITTLE" class="tab-pane fade in active">
-      <iframe src="https://www.youtube.com/watch?v=K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-  </div>
-  
+    
   - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
   
     - Langugeses : C/C++, Java
