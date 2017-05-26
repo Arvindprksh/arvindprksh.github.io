@@ -4,6 +4,7 @@ title: Projects
 subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
 tag: personal 
 comments: true
+css : /css/ForYouTubeByHyun.css
 ---
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
@@ -11,6 +12,24 @@ comments: true
 ## IOT Project
 
   - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
+  
+  <div id="tutorial-section">
+
+  <div id="tutorial-title">Project</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
+    <li><a data-toggle="tab" href="#long-tutorial">Concept Video</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="short-tutorial" class="tab-pane fade in active">
+      <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="long-tutorial" class="tab-pane fade">
+      <iframe src="https://www.youtube.com/watch?v=Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe>  </div>
+  </div>
+  </div>
     
     - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
     - Langugeses : C#, Java, MySQL
@@ -27,6 +46,21 @@ comments: true
 
   - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
   
+   <div id="tutorial-section">
+
+  <div id="tutorial-title">Project</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="short-tutorial" class="tab-pane fade in active">
+      <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </div>
+  </div>
+  
     - Langugeses : C#, Java
     - Platforms :  Android, Windows 7
     - Target Device : galaxy 5
@@ -42,6 +76,21 @@ comments: true
 ## Kernel Project
   
   - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
+  
+  <div id="tutorial-section">
+
+  <div id="tutorial-title">Project</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="short-tutorial" class="tab-pane fade in active">
+      <iframe src="https://www.youtube.com/watch?v=K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </div>
+  </div>
   
     - Langugeses : C/C++, Java
     - Platforms : Android, Linux, ORDROID-XU+E 
