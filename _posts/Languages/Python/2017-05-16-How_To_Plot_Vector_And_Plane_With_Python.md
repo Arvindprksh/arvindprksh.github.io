@@ -26,7 +26,7 @@ bigimg:
 
   <div class="tab-content">
     <div id="short-tutorial" class="tab-pane fade in active">
-      <iframe src="https://youtu.be/TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="long-tutorial" class="tab-pane fade">
       <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
