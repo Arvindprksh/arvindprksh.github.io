@@ -23,7 +23,7 @@ css : /css/ForYouTubeByHyun.css
       <iframe src="https://youtu.be/Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="long-tutorial" class="tab-pane fade">
-      <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
+      <iframe src="https://www.youtube.com/watch?v=TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>  </div>
   </div>
 </div>
   
