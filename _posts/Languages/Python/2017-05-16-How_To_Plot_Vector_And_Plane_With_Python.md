@@ -26,12 +26,13 @@ bigimg:
 
   <div class="tab-content">
     <div id="short-tutorial" class="tab-pane fade in active">
-      <iframe src="https://www.youtube.com/watch?v=TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://youtu.be/TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="long-tutorial" class="tab-pane fade">
       <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
   </div>
 </div>
+
 
 Let's see this site,[scipy lecture](http://www.scipy-lectures.org/intro/index.html)
 
