@@ -11,9 +11,7 @@ css : /css/ForYouTubeByHyun.css
 
 ## IOT Project
 
-  - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
-  
-  <div id="tutorial-section">
+<div id="tutorial-section">
 
   <div id="tutorial-title">Project</div>
 
@@ -21,16 +19,18 @@ css : /css/ForYouTubeByHyun.css
     <li class="active"><a data-toggle="tab" href="#short-tutorial">Project Video</a></li>
     <li><a data-toggle="tab" href="#long-tutorial">Concept Video</a></li>
   </ul>
-
   <div class="tab-content">
     <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="long-tutorial" class="tab-pane fade">
       <iframe src="https://www.youtube.com/watch?v=Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe>  </div>
-  </div></div>
-    
-    
+  </div>
+</div>
+
+
+  - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
+  
     - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
     - Langugeses : C#, Java, MySQL
     - Platforms :  Android, Windows 7, Emgu CV, [Open Source(Clipper)](http://www.angusj.com/delphi/clipper.php)
@@ -44,8 +44,6 @@ css : /css/ForYouTubeByHyun.css
    
 ## Windows Project
 
-  - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
-  
    <div id="tutorial-section">
 
   <div id="tutorial-title">Project</div>
@@ -58,9 +56,12 @@ css : /css/ForYouTubeByHyun.css
     <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div></div>
-  
-  
+  </div>
+  </div>
+
+
+  - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
+
     - Langugeses : C#, Java
     - Platforms :  Android, Windows 7
     - Target Device : galaxy 5
@@ -75,9 +76,7 @@ css : /css/ForYouTubeByHyun.css
 
 ## Kernel Project
   
-  - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
-  
-  <div id="tutorial-section">
+   <div id="tutorial-section">
 
   <div id="tutorial-title">Project</div>
 
@@ -89,8 +88,10 @@ css : /css/ForYouTubeByHyun.css
     <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div></div>
+  </div>
+  </div>
   
+  - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
   
     - Langugeses : C/C++, Java
     - Platforms : Android, Linux, ORDROID-XU+E 
