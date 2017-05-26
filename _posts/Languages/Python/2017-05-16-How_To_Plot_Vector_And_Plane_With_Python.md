@@ -19,9 +19,9 @@ bigimg:
 
   <div id="tutorial-title">Tutorial</div>
 
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial" style="text-align:center">Short - 5 min</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial" style="text-align:center">Long - 30 min</a></li>
+  <ul class="nav nav-pills"  style="text-align:center">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
+    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
   </ul>
 
   <div class="tab-content">
