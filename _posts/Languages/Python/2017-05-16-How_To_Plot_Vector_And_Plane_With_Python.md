@@ -17,7 +17,7 @@ bigimg:
 
 <div id="tutorial-section">
 
-  <div id="tutorial-title">Tutorial</div>
+  <div id="tutorial-title" style="center">Tutorial</div>
 
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
