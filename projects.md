@@ -9,7 +9,29 @@ css : /css/ForYouTubeByHyun.css
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
   
-  <div id="tutorial-section">
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Tutorial</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
+    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="short-tutorial" class="tab-pane fade in active">
+      <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="long-tutorial" class="tab-pane fade">
+      <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
+  </div>
+</div>
+  
+  
+
+## IOT Project
+
+<div id="tutorial-section">
 
   <div id="tutorial-title">Tutorial</div>
 
@@ -26,10 +48,8 @@ css : /css/ForYouTubeByHyun.css
       <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
   </div>
 </div>
-  
-  
 
-## IOT Project
+
 
 <div id="tutorial-section">
 
@@ -39,6 +59,7 @@ css : /css/ForYouTubeByHyun.css
     <li class="active"><a data-toggle="tab" href="#Refreigerator">Project Video</a></li>
     <li><a data-toggle="tab" href="#concept">Concept Video</a></li>
   </ul>
+  
   <div class="tab-content">
     <div id="Refreigerator" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
@@ -64,7 +85,7 @@ css : /css/ForYouTubeByHyun.css
    
 ## Windows Project
 
-   <div id="tutorial-section">
+<div id="tutorial-section">
 
   <div id="tutorial-title">Project</div>
 
@@ -77,7 +98,7 @@ css : /css/ForYouTubeByHyun.css
       <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
       </div>
   </div>
-  </div>
+ </div>
 
 
   - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
