@@ -28,8 +28,8 @@ css : /css/ForYouTubeByHyun.css
     </div>
     <div id="long-tutorial" class="tab-pane fade">
       <iframe src="https://www.youtube.com/watch?v=Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe>  </div>
-  </div>
-  </div>
+  </div></div>
+    
     
     - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
     - Langugeses : C#, Java, MySQL
@@ -58,8 +58,8 @@ css : /css/ForYouTubeByHyun.css
     <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div>
-  </div>
+  </div></div>
+  
   
     - Langugeses : C#, Java
     - Platforms :  Android, Windows 7
@@ -89,8 +89,8 @@ css : /css/ForYouTubeByHyun.css
     <div id="short-tutorial" class="tab-pane fade in active">
       <iframe src="https://www.youtube.com/watch?v=K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div>
-  </div>
+  </div></div>
+  
   
     - Langugeses : C/C++, Java
     - Platforms : Android, Linux, ORDROID-XU+E 
