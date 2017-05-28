@@ -9,6 +9,7 @@ css : /css/ForYouTubeByHyun.css
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
 
+
 ## IOT Project
 
 <div id="tutorial-section">
@@ -41,6 +42,7 @@ css : /css/ForYouTubeByHyun.css
     
       Korean Ver. 이 프로젝트는 삼성전자 생활가전사업부 함께 IOT를 주제로 진행한 프로젝트입니다. 이 프로젝트의 target은 시각장애인을 대상으로  TTS&STT와 영상처리를 이용하여 시각장애인에게 반찬 위치를 알려주는 스마트 냉장고 프로젝트 입니다. 
     * 삼성전자 생활가전사업부가 주관한 IOT 공모전 1등상 수상
+   
    
 ## Windows Project
 
@@ -123,6 +125,7 @@ css : /css/ForYouTubeByHyun.css
     - Description :
     현재 오답노트 어플리케이션은 사용자들이 사용하기가 많이 불편한 상태로 되어있습니다. 예를 들어 사진촬영을 해서 저장을 하거나 모의고사의 문제를 완변하게 제공하지 않는 형태로 제공되고 있습니다. 이 프로젝트는 스마트 폰과 웹으로 어디서나 사용자가 영어 문제 오답노트를 작성할 수 있도록 제공하는 프로젝트입니다. 스마트 폰은 오답노트 작성만 제공하고, 웹에서는 오답노트를 작성하고 이를 출력하는 형태 제공합니다.
 
+
 ## Natural Language Processing Project
 
   - **[COPYDET : Plagiarism Detected Source Retrieval and Text Alignment - 원본 문서 추출 및 표절 위치 탐색 기법 ](https://www.youtube.com/watch?v=prBhnX2CQbM&feature=youtu.be)**
@@ -136,6 +139,7 @@ css : /css/ForYouTubeByHyun.css
     - Results :
     이 프로젝트를 기반으로 작성한 논문은 제 26회 한글 및 한국어 학술대회(2014.10)에서 우수논문으로 선정되어 발표를 했습니다. 이후 국회도서관(2015.06)이라는 학술지에 논문을 게재했습니다.
    <!-- PAN 2014 conpetition 출전 -->
+
 
 ## Term Project
 
