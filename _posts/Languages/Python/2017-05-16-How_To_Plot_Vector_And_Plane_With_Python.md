@@ -5,6 +5,7 @@ subtitle: how to make vector with python
 category: Python
 tags: [python, language, linear_algebra]
 permalink: /2017/05/16/How_To_Plot_Vector_And_Plane_With_Python/
+css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -15,13 +16,13 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-<div id="tutorial-section" align="center">
+<div id="tutorial-section">
 
   <div id="tutorial-title">Tutorial</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial" style="text-align:center;">Short - 5 min</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial" style="text-align:center;">Long - 30 min</a></li>
+    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
+    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
   </ul>
 
   <div class="tab-content">
