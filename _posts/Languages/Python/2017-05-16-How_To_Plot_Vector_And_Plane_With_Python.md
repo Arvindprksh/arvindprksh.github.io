@@ -5,7 +5,6 @@ subtitle: how to make vector with python
 category: Python
 tags: [python, language, linear_algebra]
 permalink: /2017/05/16/How_To_Plot_Vector_And_Plane_With_Python/
-css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -16,26 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-<div id="tutorial-section">
-
-  <div id="tutorial-title">Tutorial</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#short-tutorial">Short - 5 min</a></li>
-    <li><a data-toggle="tab" href="#long-tutorial">Long - 30 min</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="short-tutorial" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/TrcCbdWwCBc" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div id="long-tutorial" class="tab-pane fade">
-      <iframe src="https://www.youtube.com/embed/fPY13maWKKE" frameborder="0" allowfullscreen></iframe>  </div>
-  </div>
-</div>
-
-
-Let's see this site,[scipy lecture](http://www.scipy-lectures.org/intro/index.html)
+Let's see this site, [scipy lecture](http://www.scipy-lectures.org/intro/index.html)
 
 Nowadays, I am studying linear aligebra,So all of a sudden, I want to plot vecor with python
 
