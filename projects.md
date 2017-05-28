@@ -4,15 +4,34 @@ title: Projects
 subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
 tag: personal 
 comments: true
+css : /css/ForYouTubeByHyun.css
 ---
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
 
 ## IOT Project
 
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Smart refrigerator for people who are visually impaired</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#refrigerator">Project video</a></li>
+    <li><a data-toggle="tab" href="#refrigerator_concept">Concept video of this project</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="refrigerator" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="refrigerator_concept" class="tab-pane fade">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Szy-ek9KsbE" frameborder="0" allowfullscreen></iframe> </div>
+  </div>
+</div>
+
   - **[Smart Refrigerator to tell the location of a food to a person who is visually impaired - 시각장애인에게 반찬 위치를 안내하는 스마트 냉장고](https://www.youtube.com/watch?v=Cgth5cEyfYA)**
   
-    - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you our project's objective  
+    - **[concept video](https://www.youtube.com/watch?v=Szy-ek9KsbE)** : this video show you why I tried to make this project.  
     - Langugeses : C#, Java, MySQL
     - Platforms :  Android, Windows 7, Emgu CV, [Open Source(Clipper)](http://www.angusj.com/delphi/clipper.php)
     - Tools : Visual Studio 2010, Eclipse
@@ -24,6 +43,22 @@ comments: true
     * 삼성전자 생활가전사업부가 주관한 IOT 공모전 1등상 수상
    
 ## Windows Project
+
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Monitor Calibration</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#calibration">Project video</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="calibration" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VV-9Z3wccQs" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 
   - **[Monitor Calibration using smart phone device - 모니터 캘리브레이션](https://www.youtube.com/watch?v=VV-9Z3wccQs)**
 
@@ -40,7 +75,22 @@ comments: true
     
 
 ## Kernel Project
-    
+  
+<div id="tutorial-section">
+
+  <div id="tutorial-title">big.LITTLE Architecture</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#bigLITTLE">Project video</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="bigLITTLE" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/K1lXRJxumwQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>  
+  
   - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
   
     - Langugeses : C/C++, Java
