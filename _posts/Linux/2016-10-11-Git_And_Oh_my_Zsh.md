@@ -53,7 +53,7 @@ permalink: /2016/10/11/Git_And_Oh_my_Zsh/
 
 ## [z shell](http://ohmyz.sh/)
 
-  ![](/img/Image/Linux/2016-10-11-Git_And_Oh_my_Zsh/Oh my zsh.png)
+  ![](/img/Image/Linux/2016-10-11-Git_And_Oh_my_Zsh/Oh_my_zsh.png)
   
 ```bash
   $ sudo yum install zsh  
