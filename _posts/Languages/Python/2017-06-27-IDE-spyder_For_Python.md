@@ -56,7 +56,7 @@ Get:1 http://us.archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
 Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
 Get:3 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]       
 ......
-
+```
 
 ```bash 
 hyunyoung2@hyunyoung2-desktop:~$ sudo apt-get -y  upgrade
@@ -74,6 +74,7 @@ The following packages have been kept back:
 .....
 ```
 
+
 From now on, let's install spyder or spyder3.
 
 type in after upgrade and update is complete.  
@@ -81,7 +82,19 @@ type in after upgrade and update is complete.
 > sudo apt-get install spyder3   
 > sudo apt-get install spyder    
 
+finally, you can run it  like this 
 
+![](/img/Image/Languages/Python/2017-06-27-IDE-spyder_For_Python/spyder3.png)
+
+from now on, You can code it with spyder like this. 
+
+in temp.py, type in "print("hellow World)"
+
+![](/img/Image/Languages/Python/2017-06-27-IDE-spyder_For_Python/hellowworld.png)
+
+after that, you can check excutable like this :
+
+![](/img/Image/Languages/Python/2017-06-27-IDE-spyder_For_Python/console.png)
 
 
 # Reference 
