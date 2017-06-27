@@ -340,7 +340,7 @@ Use 'sudo apt autoremove' to remove it.
 
 I've installed CUDA Toolkit with runfile before, if you want to know about this in detail, click [NVIDIA's doucmentation](docs.nvidia.com/cuda/cuda-installation-guide-linux/#runfile-overview)
  
-you can download CUDA Toolkit on [here, cuda-dwonload.](https://developer.nvidia.com/cuda-downloads)
+you can download CUDA Toolkit on [here, cuda-download.](https://developer.nvidia.com/cuda-downloads)
  
 Just choose platform you are using and download the NVIDIA CUDA Tookit that contains the CUDA driver and tools. 
 
@@ -354,7 +354,7 @@ you need  Download Verification with MD5 Checksum
 > md5sum <file>
 
 ```bash
-# hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [8:31:51] 
+hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [8:31:51] 
 $ md5sum cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb 
 d735c7fed8be0e72fa853f65042d5438  cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
 ```
