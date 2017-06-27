@@ -370,15 +370,15 @@ procedure of installation :
 
 2. install repositary meta-data
 
- - sudo dpkg -i cuda-repo-\<distro\>_\<version\>_\<architecture\>.deb
+> sudo dpkg -i cuda-repo-\<distro\>_\<version\>_\<architecture\>.deb
 
 3. Update the Apt repository cache
 
- -  sudo apt-get update
+>  sudo apt-get update
 
 4. install CUDA
 
- -  sudo apt-get install cuda
+>  sudo apt-get install cuda
 
 ![](/img/Image/MachineLearning/Tensorflow/2017-06-27-How_To_Install_Tensorflow/way_to_install.png)
 
@@ -609,8 +609,8 @@ Now check if tensorflow-gpu works well, BUt it doesn't work
 
 Also you need to chang **LD_LIBRARY_PATH** like this :
 
-> export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+> export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\    
+>                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 ![](/img/Image/MachineLearning/Tensorflow/2017-06-27-How_To_Install_Tensorflow/zsh_export1.png)
 
@@ -691,13 +691,13 @@ cudafe       cuda-install-samples-8.0.sh  gpu-library-advisor  nvdisasm      nvv
 
 run cuda-install-sample-8.0.sh like this :
 
- - cuda-install-samples-8.0.sh \<dir\>
+> cuda-install-samples-8.0.sh \<dir\>
 
 <dir> means where you want install example sources of NVIDIA 
 
 in my case, I installed the source files into **~/sample** directory
 
- -  sudo ./cuda-install-samples-8.0.sh ~/sample/ 
+>  sudo ./cuda-install-samples-8.0.sh ~/sample/ 
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [11:17:48] 
