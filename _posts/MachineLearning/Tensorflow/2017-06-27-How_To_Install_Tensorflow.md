@@ -261,7 +261,7 @@ run the following command in bash :
 > sudo apt-get install libcupti-dev
 
 
-## checking prerequsite for install CUDA® Toolkit 8.0 
+## Checking prerequsite for install CUDA® Toolkit 8.0 
 
 Before install CUDA® Toolkit 8.0, let's do pre-installation Actions. 
 
@@ -366,7 +366,7 @@ this way is much easier than [runfile](docs.nvidia.com/cuda/cuda-installation-gu
 
 procedure of installation : 
 
-1. Perform [the pre-installation actions](# checking prerequsite for install CUDA® Toolkit 8.0), if you read NVIDIA's documentation, click [HERE](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions)
+1. Perform [the pre-installation actions](#Checking prerequsite for install CUDA® Toolkit 8.0), if you read NVIDIA's documentation, click [HERE](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions)
 
 2. install repositary meta-data
 
