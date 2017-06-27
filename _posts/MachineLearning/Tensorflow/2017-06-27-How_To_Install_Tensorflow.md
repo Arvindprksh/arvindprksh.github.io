@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to install tensorflow
+title: how to install TensorFlow
 subtitle: installing tensorflow on ubuntu 16.04 LTS
 category: machine_learning
 tags: [machine_learning, tensorflow]
@@ -17,11 +17,11 @@ bigimg:
 
 **referenced from Installing Tensorflow in officail site of tensorflow**
 
-In my computer, I follow Installing Tensorflow on Ubuntu
+In my computer, I will follow Installing Tensorflow on Ubuntu
 
 Because my environment is Ubuntu, I also decided to install tensorflow as native pip. 
 
-after following this whole processing, probalbly you can install tensorflow anywhere. 
+after following this whole processing, probably you can install tensorflow anywhere. 
 
 Les't play!
 
@@ -168,14 +168,14 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 
 Now, if you are done until the above processing, let's check if tensorflow works well. 
 
-> python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7   
-> python3 -c "import tensorflow as tf; print (tf.__version__)" # for Python 3.0    
+> python -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 2.7   
+> python3 -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 3.0    
 
 as of now, tensorflow doesn't work. I think I didn't install some files related to GPU
 
 So after prompt the above command, you got the following : 
 
-- python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7   
+- python -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 2.7   
 
 ```bash
 hyunyoung2@hyunyoung2-desktop:~$ python -c "import tensorflow as tf; print (tf.__version__)"
@@ -193,7 +193,7 @@ for some common reasons and solutions.  Include the entire stack trace
 above this error message when asking for help.
 ```
 
-- python3 -c "import tensorflow as tf; print (tf.__version__)" # for Python 3.0
+- python3 -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 3.0
 
 ```bash
 hyunyoung2@hyunyoung2-desktop:~$ python3 -c "import tensorflow as tf; print (tf.__version__)"
@@ -293,7 +293,7 @@ DISTRIB_RELEASE=16.04
 
 - verify the system has gcc installed 
 
-> gcc --version
+> gcc \-\-version
 
 ```bash 
 hyunyoung2@hyunyoung2-desktop:~$ gcc --version
@@ -366,17 +366,17 @@ this way is much easier than [runfile](docs.nvidia.com/cuda/cuda-installation-gu
 
 procedure of installation : 
 
-1. Perform [the pre-installation actions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions) of NVIDIA's documentation
+First, Perform [the pre-installation actions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions) of NVIDIA's documentation
 
-2. install repositary meta-data
+Sencond, install repositary meta-data
 
 > sudo dpkg -i cuda-repo-\<distro\>_\<version\>_\<architecture\>.deb
 
-3. Update the Apt repository cache
+Third, Update the Apt repository cache
 
 >  sudo apt-get update
 
-4. install CUDA
+Forth, install CUDA
 
 >  sudo apt-get install cuda
 
@@ -495,7 +495,7 @@ sudo apt install nvidia-cuda-toolkit
 
 After configure PATH variable on .zshrc file, Now you can verify installation of CUDA 
 
-> nvcc --version 
+> nvcc \-\-version 
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [9:44:51] C:127
@@ -508,10 +508,10 @@ Cuda compilation tools, release 8.0, V8.0.61
 
 So whether or not tensorflow-gpu works well, 
 
-> python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7   
-> python3 -c "import tensorflow as tf; print(tf.__version__)"  # Python 3.n    
+> python -c "import tensorflow as tf; print(tf.\_\_version\_\_)"   # Ptyhon 2.7   
+> python3 -c "import tensorflow as tf; print(tf.\_\_version\_\_)"  # Python 3.n    
 
-- python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7  
+- python -c "import tensorflow as tf; print(tf.\_\_version\_\_)"   # Ptyhon 2.7  
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [9:53:42] C:1
@@ -521,7 +521,7 @@ ImportError: libcudnn.so.5: cannot open shared object file: No such file or dire
 ........
 ```
 
- - python3 -c "import tensorflow as tf; print(tf.__version__)" # Python 3.n  
+ - python3 -c "import tensorflow as tf; print(tf.\_\_version\_\_)" # Python 3.n  
  
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [9:53:58] C:1
@@ -780,7 +780,7 @@ Result = PASS
 
 when you complete until completion of the whole processing above correctly. 
 
-your CUDA drvier works well. from now on, have a fun with tensorflow or CUDA. 
+your CUDA driver works well. from now on, have a fun with tensorflow or CUDA. 
 
 
 
