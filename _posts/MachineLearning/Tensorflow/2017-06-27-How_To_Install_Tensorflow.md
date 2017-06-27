@@ -33,8 +33,8 @@ if you didn't install them.
 
 type in like this :
 
-> sudo apt-get install python-pip python-dev  # for Python 2.7  
-> sudo apt-get install python3-pip python3-dev # for Python 3.n    
+> sudo apt-get install python-pip python-dev  # for Python 2.7    
+> sudo apt-get install python3-pip python3-dev # for Python 3.n      
 
 if you run into the following result, 
 
@@ -83,8 +83,8 @@ The following packages have been kept back:
 
 From now on, I am explaining to you under installing the above update or upgrade.
 
-> sudo apt-get install python-pip python-dev     # for python 2.7   
-> sudo apt-get install python3-pip python3-dev   # for python 3.n  
+> sudo apt-get install python-pip python-dev     # for python 2.7     
+> sudo apt-get install python3-pip python3-dev   # for python 3.n    
 
 **Keep in mind that as of now(2017.06.27) the officail site of tensorflow strongly recommend version 8.1 or higher of pip or pip3.**
 
@@ -127,10 +127,10 @@ Finally, the time to install tensorflow under installing prerequisite software l
 
 In order to install tensorflow, choose one of the following commands. 
 
-> pip install tensorflow      # Python 2.7; CPU support (no GPU support)
-> pip3 install tensorflow     # Python 3.n; CPU support (no GPU support) 
-> pip install tensorflow-gpu  # Python 2.7; GPU support
-> pip3 install tensorflow-gpu # Python 3.n; GPU support 
+> pip install tensorflow      # Python 2.7; CPU support (no GPU support)    
+> pip3 install tensorflow     # Python 3.n; CPU support (no GPU support)     
+> pip install tensorflow-gpu  # Python 2.7; GPU support    
+> pip3 install tensorflow-gpu # Python 3.n; GPU support    
 
 In my case, I decided to install tensorflow-gpu, because I bought the graphic care in order to run tensorflow on graphic card
 
@@ -168,14 +168,14 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 
 Now, if you are done until the above processing, let's check if tensorflow works well. 
 
-> python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7 
-> python3 -c "import tensorflow as tf; print (tf.__version__)" # for Python 3.0
+> python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7   
+> python3 -c "import tensorflow as tf; print (tf.__version__)" # for Python 3.0    
 
 as of now, tensorflow doesn't work. I think I didn't install some files related to GPU
 
 So after prompt the above command, you got the following : 
 
-- python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7 
+- python -c "import tensorflow as tf; print (tf.__version__)" # for Python 2.7   
 
 ```bash
 hyunyoung2@hyunyoung2-desktop:~$ python -c "import tensorflow as tf; print (tf.__version__)"
@@ -267,7 +267,7 @@ Before install CUDA® Toolkit 8.0, let's do pre-installation Actions.
 
 - Verify the system has a CUDA-capable GPU
 
-> lspci | grep -i nvidia
+ lspci | grep -i nvidia
 
 ```bash 
 hyunyoung2@hyunyoung2-desktop:~$ lspci | grep -i nvidia
@@ -366,19 +366,19 @@ this way is much easier than [runfile](docs.nvidia.com/cuda/cuda-installation-gu
 
 procedure of installation : 
 
-1. Perform [the pre-installation actions](#Checking prerequsite for install CUDA® Toolkit 8.0), if you read NVIDIA's documentation, click [HERE](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions)
+1. Perform [the pre-installation actions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions) of NVIDIA's documentation
 
 2. install repositary meta-data
 
->  sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+ - sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
 
 3. Update the Apt repository cache
 
->  sudo apt-get update
+ -  sudo apt-get update
 
 4. install CUDA
 
-> sudo apt-get install cuda
+ -  sudo apt-get install cuda
 
 ![](/img/Image/MachineLearning/Tensorflow/2017-06-27-How_To_Install_Tensorflow/way_to_install.png)
 
@@ -691,13 +691,13 @@ cudafe       cuda-install-samples-8.0.sh  gpu-library-advisor  nvdisasm      nvv
 
 run cuda-install-sample-8.0.sh like this :
 
-> cuda-install-samples-8.0.sh <dir>
+ - cuda-install-samples-8.0.sh <dir>
 
 <dir> means where you want install example sources of NVIDIA 
 
 in my case, I installed the source files into **~/sample** directory
 
-> sudo ./cuda-install-samples-8.0.sh ~/sample/ 
+ -  sudo ./cuda-install-samples-8.0.sh ~/sample/ 
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [11:17:48] 
@@ -715,7 +715,6 @@ move into NVIDIA_CUDA-8.0_Samples, complie any source file
 in my case, I chose deviceQuery directory like this :
 
 ```bash
-
 # hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:45] 
 $ ls
 deviceQuery.cpp  Makefile  NsightEclipse.xml  readme.txt
