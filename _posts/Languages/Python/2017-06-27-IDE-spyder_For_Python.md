@@ -94,7 +94,7 @@ in temp.py, type in "print("hellow World)"
 
 ![](/img/Image/Languages/Python/2017-06-27-IDE-spyder_For_Python/hellowworld.png)
 
-after that, you can check excutable like this :
+after press "F5" button which means "run file", you can check excutable like this :
 
 ![](/img/Image/Languages/Python/2017-06-27-IDE-spyder_For_Python/console.png)
 
