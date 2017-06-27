@@ -21,8 +21,10 @@ So I want to show you installation and running it.
 
 before doing that, my evironment setting is : 
 
-> hyunyoung2@hyunyoung2-desktop:~$ uname -a      
-> Linux hyunyoung2-desktop 4.8.0-36-generic #36~16.04.1-Ubuntu SMP Sun Feb 5 09:39:57 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+```bash
+hyunyoung2@hyunyoung2-desktop:~$ uname -a      
+Linux hyunyoung2-desktop 4.8.0-36-generic #36~16.04.1-Ubuntu SMP Sun Feb 5 09:39:57 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+```
 
 First If you want to install spyder or spyder3.
 
