@@ -2,8 +2,8 @@
 layout: post
 title: Tutorial of Tensorflow : Email classification.
 subtitle: how to use tensorflow in order to classify Email into ham or spam. 
-category: natural_laguage_lab
-tags: [machine_learning, tensorflow]
+category: Natural Language Labs
+tags: [tensorflow, machine_learning]
 permalink: /2017/06/27/How_To_Install_Tensorflow/ 
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
