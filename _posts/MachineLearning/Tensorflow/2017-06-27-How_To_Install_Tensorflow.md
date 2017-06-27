@@ -693,7 +693,7 @@ run cuda-install-sample-8.0.sh like this :
 
 > cuda-install-samples-8.0.sh \<dir\>
 
-<dir> means where you want install example sources of NVIDIA 
+\<dir\> means where you want install example sources of NVIDIA 
 
 in my case, I installed the source files into **~/sample** directory
 
@@ -715,14 +715,19 @@ move into NVIDIA_CUDA-8.0_Samples, complie any source file
 in my case, I chose deviceQuery directory like this :
 
 ```bash
+
 # hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:45] 
 $ ls
 deviceQuery.cpp  Makefile  NsightEclipse.xml  readme.txt
+
+
 # hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:48] C:2
 $ sudo make
 /usr/local/cuda-8.0/bin/nvcc -ccbin g++ -I../../common/inc  -m64    -gencode arch=compute_20,code=sm_20 -gencode 
 .........
 cp deviceQuery ../../bin/x86_64/linux/release
+
+
 # hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:51] 
 $ ls
 deviceQuery  deviceQuery.cpp  deviceQuery.o  Makefile  NsightEclipse.xml  readme.txt
@@ -772,9 +777,12 @@ deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Versi
 Result = PASS
 ```
 
+
 when you complete until completion of the whole processing above correctly. 
 
 your CUDA drvier works well. from now on, have a fun with tensorflow or CUDA. 
+
+
 
 # Reference 
  
