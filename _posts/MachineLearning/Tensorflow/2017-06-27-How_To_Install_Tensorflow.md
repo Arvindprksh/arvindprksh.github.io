@@ -351,7 +351,7 @@ The following is my choice of CUDA Toolkit
 
 you need  Download Verification with MD5 Checksum 
 
-> md5sum <file>
+> md5sum \<file\>
 
 ```bash
 hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [8:31:51] 
