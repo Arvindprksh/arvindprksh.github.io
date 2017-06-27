@@ -256,12 +256,12 @@ for GPU support,  you need :
 
 5. The libcupti-dev library, in order to install this Library, 
 
-
-## checking prerequsite for install CUDA® Toolkit 8.0 
-
 run the following command in bash :
 
 > sudo apt-get install libcupti-dev
+
+
+## checking prerequsite for install CUDA® Toolkit 8.0 
 
 Before install CUDA® Toolkit 8.0, let's do pre-installation Actions. 
 
