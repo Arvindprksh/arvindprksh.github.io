@@ -636,6 +636,146 @@ $ python3 -c "import tensorflow as tf; print(tf.__version__)"
 1.2.0
 ```
 
+Finally, let's check nvidia driver 
+
+## Verify the installation
+
+> nvidia-smi
+
+```bash 
+# hyunyoung2 @ hyunyoung2-desktop in /proc/driver/nvidia [11:10:40] 
+$ nvidia-smi      
+Tue Jun 27 11:12:25 2017       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 375.66                 Driver Version: 375.66                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1080    Off  | 0000:01:00.0      On |                  N/A |
+|  0%   40C    P8    11W / 230W |    447MiB /  8105MiB |      1%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1070    G   /usr/lib/xorg/Xorg                             290MiB |
+|    0      1759    G   compiz                                         155MiB |
++-----------------------------------------------------------------------------+
+```
+
+In order to verify the version, type
+
+> cat /proc/driver/nvidia/version
+
+```bash
+# hyunyoung2 @ hyunyoung2-desktop in /proc/driver/nvidia [11:13:55] C:1
+$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017
+GCC version:  gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+```
+
+more specifically, in order to verify, run sampli source of NVIDIA. 
+
+> cd /usr/local/cuda/bin
+
+```bash
+# hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [11:17:47] 
+$ ls
+bin2c        cudafe++                     cuda-memcheck        nsight        nvlink   ptxas
+computeprof  cuda-gdb                     cuobjdump            nvcc          nvprof
+crt          cuda-gdbserver               fatbinary            nvcc.profile  nvprune
+cudafe       cuda-install-samples-8.0.sh  gpu-library-advisor  nvdisasm      nvvp
+```
+
+run cuda-install-sample-8.0.sh like this :
+
+> cuda-install-samples-8.0.sh <dir>
+
+<dir> means where you want install example sources of NVIDIA 
+
+in my case, I installed the source files into **~/sample** directory
+
+> sudo ./cuda-install-samples-8.0.sh ~/sample/ 
+
+```bash
+# hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [11:17:48] 
+$ sudo ./cuda-install-samples-8.0.sh ~/sample/ 
+Copying samples to /home/hyunyoung2/sample/NVIDIA_CUDA-8.0_Samples now...
+Finished copying samples.
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/sample [11:21:57] 
+$ ls
+NVIDIA_CUDA-8.0_Samples
+```
+
+move into NVIDIA_CUDA-8.0_Samples, complie any source file
+
+in my case, I chose deviceQuery directory like this :
+
+```bash
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:45] 
+$ ls
+deviceQuery.cpp  Makefile  NsightEclipse.xml  readme.txt
+# hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:48] C:2
+$ sudo make
+/usr/local/cuda-8.0/bin/nvcc -ccbin g++ -I../../common/inc  -m64    -gencode arch=compute_20,code=sm_20 -gencode 
+.........
+cp deviceQuery ../../bin/x86_64/linux/release
+# hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:24:51] 
+$ ls
+deviceQuery  deviceQuery.cpp  deviceQuery.o  Makefile  NsightEclipse.xml  readme.txt
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/sample/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery [11:25:34] 
+$ ./deviceQuery
+./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "GeForce GTX 1080"
+  CUDA Driver Version / Runtime Version          8.0 / 8.0
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 8106 MBytes (8499691520 bytes)
+  (20) Multiprocessors, (128) CUDA Cores/MP:     2560 CUDA Cores
+  GPU Max Clock rate:                            1823 MHz (1.82 GHz)
+  Memory Clock rate:                             5005 Mhz
+  Memory Bus Width:                              256-bit
+  L2 Cache Size:                                 2097152 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Domain ID / Bus ID / location ID:   0 / 1 / 0
+  Compute Mode:
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Version = 8.0, NumDevs = 1, Device0 = GeForce GTX 1080
+Result = PASS
+```
+
+when you complete until completion of the whole processing above correctly. 
+
+your CUDA drvier works well. from now on, have a fun with tensorflow or CUDA. 
 
 # Reference 
  
@@ -656,20 +796,4 @@ $ python3 -c "import tensorflow as tf; print(tf.__version__)"
   - [how to change path of file for cudnn](https://askubuntu.com/questions/767269/how-can-i-install-cudnn-on-ubuntu-16-04)
   
   
-  after completion by the above thing, you run the command like the following 
 
->  python3 -c "import tensorflow as tf; print(tf.__version__)" # for Python 3.n
-
-you also get the same result of the previous errore before installing CUDA Toolkit
-
-```bash 
-# hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [9:03:51] 
-$ python3 -c "import tensorflow as tf; print(tf.__version__)"
-.........
-ImportError: libcudnn.so.5: cannot open shared object file: No such file or directory
-..........
-```
-
-
-# hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/lib64 [9:16:54] $ nvidia-smi
-NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
