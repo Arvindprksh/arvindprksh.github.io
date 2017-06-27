@@ -19,8 +19,7 @@ bigimg:
 
 Basically, I will organize what I am doing with tensorflow tutorial of Josh Meyer.
 
-
-First of all, Install git repository into your local computer to run it. 
+First of all, Install git repository into your local machine to run it. 
 
 > git clone https://github.com/JRMeyer/tensorflow-tutorial.git
 
