@@ -370,7 +370,7 @@ procedure of installation :
 
 2. install repositary meta-data
 
- - sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+ - sudo dpkg -i cuda-repo-\<distro\>_\<version\>_\<architecture\>.deb
 
 3. Update the Apt repository cache
 
@@ -508,10 +508,10 @@ Cuda compilation tools, release 8.0, V8.0.61
 
 So whether or not tensorflow-gpu works well, 
 
-> python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7
-> python3 -c "import tensorflow as tf; print(tf.__version__)"  # Python 3.n
+> python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7   
+> python3 -c "import tensorflow as tf; print(tf.__version__)"  # Python 3.n    
 
-- python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7
+- python -c "import tensorflow as tf; print(tf.__version__)"   # Ptyhon 2.7  
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [9:53:42] C:1
@@ -521,7 +521,7 @@ ImportError: libcudnn.so.5: cannot open shared object file: No such file or dire
 ........
 ```
 
- - python3 -c "import tensorflow as tf; print(tf.__version__)" # Python 3.n
+ - python3 -c "import tensorflow as tf; print(tf.__version__)" # Python 3.n  
  
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in /usr/local/cuda/bin [9:53:58] C:1
@@ -691,7 +691,7 @@ cudafe       cuda-install-samples-8.0.sh  gpu-library-advisor  nvdisasm      nvv
 
 run cuda-install-sample-8.0.sh like this :
 
- - cuda-install-samples-8.0.sh <dir>
+ - cuda-install-samples-8.0.sh \<dir\>
 
 <dir> means where you want install example sources of NVIDIA 
 
