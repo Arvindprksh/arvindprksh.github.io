@@ -29,7 +29,7 @@ First of all, you need to install pip or pip3.
 
 basically, the pip or pip3 package manager is usually installed on Ubuntu.
 
-if you didn't install them. 
+BUT, if you didn't install them. 
 
 type in like this :
 
@@ -78,7 +78,7 @@ The following packages have been kept back:
 .....
 ```
 
-# pip 
+# [pip](https://en.wikipedia.org/wiki/Pip_(package_manager))
 
 From now on, I am explaining to you under installing the above update or upgrade.
 
@@ -171,7 +171,7 @@ Now, if you are done until the above processing, let's check if tensorflow works
 > python -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 2.7      
 > python3 -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 3.0       
 
-as of now, tensorflow doesn't work. I think I didn't install some files related to GPU
+As of now, tensorflow doesn't work. I think I didn't install some files related to GPU
 
 So after prompt the above command, you got the following : 
 
@@ -228,7 +228,7 @@ above this error message when asking for help.
 
 if you look into error message, you can verify what error is, where you could resolution about the avoe error(ImportError: libcusolver.so.8.0: cannot open shared object file: No such file or directory
 
-as you saw a line which is "See https://www.tensorflow.org/install/install_sources#common_installation_problems"
+As you saw a line which is "See https://www.tensorflow.org/install/install_sources#common_installation_problems"
 
 If you access [the above link](https://www.tensorflow.org/install/install_sources#common_installation_problems), you got the following :
 
@@ -361,7 +361,7 @@ d735c7fed8be0e72fa853f65042d5438  cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_am
 
 From now on, I will explaining Package Manager installation. if you want to know about another package manager installation, click [HERE](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
 
-this way is much easier than [runfile](docs.nvidia.com/cuda/cuda-installation-guide-linux/#runfile-overview) 
+This way is much easier than [runfile](docs.nvidia.com/cuda/cuda-installation-guide-linux/#runfile-overview) 
 
 procedure of installation : 
 
@@ -777,7 +777,7 @@ Result = PASS
 ```
 
 
-when you complete until completion of the whole processing above correctly. 
+When you complete until completion of the whole processing above correctly. 
 
 your CUDA driver works well. from now on, have a fun with TensorFlow or CUDA. 
 
