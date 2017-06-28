@@ -19,7 +19,7 @@ bigimg:
 
 In my computer, I will follow Installing Tensorflow on Ubuntu
 
-Because my environment is Ubuntu, I also decided to install tensorflow as native pip. 
+Because my environment is Ubuntu16.04 LTS, I also decided to install tensorflow as native pip. 
 
 after following this whole processing, probably you can install tensorflow anywhere. 
 
@@ -78,7 +78,6 @@ The following packages have been kept back:
 .....
 ```
 
-
 # pip 
 
 From now on, I am explaining to you under installing the above update or upgrade.
@@ -87,6 +86,7 @@ From now on, I am explaining to you under installing the above update or upgrade
 > sudo apt-get install python3-pip python3-dev   # for python 3.n    
 
 **Keep in mind that as of now(2017.06.27) the officail site of tensorflow strongly recommend version 8.1 or higher of pip or pip3.**
+
 
 if you installed one of the above them. you got the following screen
 
@@ -123,7 +123,7 @@ Use 'sudo apt autoremove' to remove it.
 0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
 ```
 
-Finally, the time to install tensorflow under installing prerequisite software like pip or pip3 and so on 
+Finally,it's time to install tensorflow under installing prerequisite software like pip or pip3 and so on 
 
 In order to install tensorflow, choose one of the following commands. 
 
@@ -164,12 +164,12 @@ You are using pip version 8.1.1, however version 9.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 ```
 
-#  tensorflow
+#  Implementation of TensorFlow
 
 Now, if you are done until the above processing, let's check if tensorflow works well. 
 
-> python -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 2.7   
-> python3 -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 3.0    
+> python -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 2.7      
+> python3 -c "import tensorflow as tf; print (tf.\_\_version\_\_)" # for Python 3.0       
 
 as of now, tensorflow doesn't work. I think I didn't install some files related to GPU
 
@@ -228,14 +228,13 @@ above this error message when asking for help.
 
 if you look into error message, you can verify what error is, where you could resolution about the avoe error(ImportError: libcusolver.so.8.0: cannot open shared object file: No such file or directory
 
-
 as you saw a line which is "See https://www.tensorflow.org/install/install_sources#common_installation_problems"
 
 If you access [the above link](https://www.tensorflow.org/install/install_sources#common_installation_problems), you got the following :
 
 ![](/img/Image/MachineLearning/Tensorflow/2017-06-27-How_To_Install_Tensorflow/ImportError.png)
 
-as you saw, in [the above URL](https://www.tensorflow.org/install/install_sources#common_installation_problems) of officail site of tensorflow, you got Stack Overflow link which provide the resoultion that you'r running into
+As you saw, in [the above URL](https://www.tensorflow.org/install/install_sources#common_installation_problems) of officail site of tensorflow, you got Stack Overflow link which provide the resoultion that you'r running into
 
 
 # GPU support of NVIDIA 
@@ -267,7 +266,7 @@ Before install CUDA® Toolkit 8.0, let's do pre-installation Actions.
 
 - Verify the system has a CUDA-capable GPU
 
- lspci | grep -i nvidia
+ lspci \| grep -i nvidia
 
 ```bash 
 hyunyoung2@hyunyoung2-desktop:~$ lspci | grep -i nvidia
@@ -370,7 +369,7 @@ First, Perform [the pre-installation actions](http://docs.nvidia.com/cuda/cuda-i
 
 Sencond, install repositary meta-data
 
-> sudo dpkg -i cuda-repo-\<distro\>_\<version\>_\<architecture\>.deb
+> sudo dpkg -i cuda-repo-\<distro\>\_\<version\>\_\<architecture\>.deb
 
 Third, Update the Apt repository cache
 
@@ -636,7 +635,7 @@ $ python3 -c "import tensorflow as tf; print(tf.__version__)"
 1.2.0
 ```
 
-Finally, let's check nvidia driver 
+Finally, let's check if nvidia driver works well
 
 ## Verify the installation
 
@@ -780,7 +779,7 @@ Result = PASS
 
 when you complete until completion of the whole processing above correctly. 
 
-your CUDA driver works well. from now on, have a fun with tensorflow or CUDA. 
+your CUDA driver works well. from now on, have a fun with TensorFlow or CUDA. 
 
 
 
