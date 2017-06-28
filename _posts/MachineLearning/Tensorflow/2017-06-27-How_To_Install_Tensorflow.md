@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-**referenced from Installing Tensorflow in officail site of tensorflow**
+**referenced from Installing Tensorflow in official site of tensorflow**
 
 In my computer, I will follow Installing Tensorflow on Ubuntu
 
