@@ -85,7 +85,7 @@ From now on, I am explaining to you under installing the above update or upgrade
 > sudo apt-get install python-pip python-dev     # for python 2.7     
 > sudo apt-get install python3-pip python3-dev   # for python 3.n    
 
-**Keep in mind that as of now(2017.06.27) the officail site of tensorflow strongly recommend version 8.1 or higher of pip or pip3.**
+**Keep in mind that as of now(2017.06.27) the official site of tensorflow strongly recommend version 8.1 or higher of pip or pip3.**
 
 
 if you already installed one of the above them. you got the following screen
