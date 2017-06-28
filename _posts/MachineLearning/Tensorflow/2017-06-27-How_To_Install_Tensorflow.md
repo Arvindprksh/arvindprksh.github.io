@@ -88,7 +88,7 @@ From now on, I am explaining to you under installing the above update or upgrade
 **Keep in mind that as of now(2017.06.27) the officail site of tensorflow strongly recommend version 8.1 or higher of pip or pip3.**
 
 
-if you installed one of the above them. you got the following screen
+if you already installed one of the above them. you got the following screen
 
 - python-pip python-dev
 
