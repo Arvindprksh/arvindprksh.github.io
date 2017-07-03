@@ -99,7 +99,7 @@ As you can read the above summary, It's simple to convert encoding.
 
 If you don't know Terminology about [MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type), See [this StackoverFlow](https://stackoverflow.com/questions/3828352/what-is-a-mime-type) wich is explaining it.
 
-Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Extensions. MIME types form a standard way of classifying file types on the internet just like a label to identify a type of data. 
+Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Extensions. MIME types form a standard way of classifying file types on the Internet just like a label to identify a type of data. 
 
 
 
