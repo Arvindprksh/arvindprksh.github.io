@@ -1,6 +1,6 @@
 ---
 layout: post
-title: organization of linux command
+title: Organization Of Linux Commands
 subtitle: during researching natural lanuage with Ubuntu, organizing Linux command.
 category: Natural Language Labs
 tags: [linux]
@@ -96,6 +96,10 @@ It's [iconv](http://www.gnu.org/savannah-checkouts/gnu/libiconv/documentation/li
  - \-t means the encoding of the output file 
 
 As you can read the above summary, It's simple to convert encoding. 
+
+If you don't know Terminology about [MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type), See [this StackoverFlow](https://stackoverflow.com/questions/3828352/what-is-a-mime-type) wich is explaining it.
+
+Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Extensions. MIME types form a standard way of classifying file types on the internet just like a label to identify a type of data. 
 
 
 
