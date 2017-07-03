@@ -84,6 +84,10 @@ text/x-c; charset=utf-8
 ```
 As you can see the above output of file command, you can check encoding of the file with file command. 
 
+If you don't know Terminology about [MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type), See [this StackoverFlow](https://stackoverflow.com/questions/3828352/what-is-a-mime-type) wich is explaining it.
+
+Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Extensions. MIME types form a standard way of classifying file types on the Internet just like a label to identify a type of data. 
+
 ## [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
 For now, If you read the above How To Check A File Encoding On Linux, After that, You need to chang with some tool to help you.
@@ -97,9 +101,7 @@ It's [iconv](http://www.gnu.org/savannah-checkouts/gnu/libiconv/documentation/li
 
 As you can read the above summary, It's simple to convert encoding. 
 
-If you don't know Terminology about [MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type), See [this StackoverFlow](https://stackoverflow.com/questions/3828352/what-is-a-mime-type) wich is explaining it.
 
-Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Extensions. MIME types form a standard way of classifying file types on the Internet just like a label to identify a type of data. 
 
 
 
@@ -108,5 +110,7 @@ Namely, simply speaking of it, MIME stands for Multi-purpose Internet Mail Exten
  - [How To Use Bash History Commands](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps)
  
  - [How To Check A File Encoding On Linux](http://mindspill.net/computing/linux-notes/determine-and-change-file-character-encoding/)
+ 
+   - [Appendix - MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type)
  
  - [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
