@@ -60,6 +60,7 @@ $ history
     4  vim .zshrc
     5  exit
 ```
+
 ## [How To Check A File Encoding On Linux](http://mindspill.net/computing/linux-notes/determine-and-change-file-character-encoding/)
 
 Lest's say if you worked about Korean languages on Windows system, Basically The encoding of Korean language is "euc-kr". So if you deal with a file edcoded with euc-kr on Linux, then you need to change encoding of the file, dealt with on Windosw system, into utf-8. Namely, just recommend you to use Unicode system on encoding.
