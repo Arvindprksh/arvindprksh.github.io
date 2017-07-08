@@ -28,9 +28,16 @@ In here I will arrange command of Linux, because In order to practice TensorFlow
 
 If you don't know the command of linux, type in "man command" !
 
+## [How To Uncompress A File With tar Command](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal)
 
-## 
+Basically, If you want to extract a .tgz file with tar command 
 
+  > tar -xvzf /path/yourfile.tgz
+  
+  - x for extract
+  - v for verbose
+  - z for gnuzip
+  - f for file, should come at last just before file name 
 
 ## [How To Count Words or Lines On linux Command](https://stackoverflow.com/questions/3137094/how-to-count-lines-in-a-document)
 
