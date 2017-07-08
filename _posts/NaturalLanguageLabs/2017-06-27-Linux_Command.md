@@ -145,6 +145,10 @@ As you can read the above summary, It's simple to convert encoding.
 
 # Reference 
 
+ - [How To Uncompress A File With tar Command](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal)
+ 
+ - [How To Count Words or Lines On linux Command](https://stackoverflow.com/questions/3137094/how-to-count-lines-in-a-document)
+
  - [How To Split A Document With The Number Of Line](https://stackoverflow.com/questions/19031144/how-to-split-one-text-file-into-multiple-txt-files)
  
    - [Korea ver. of split command](http://ggachi.ncity.net/TIP/7480)
