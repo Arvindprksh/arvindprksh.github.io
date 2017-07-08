@@ -26,6 +26,41 @@ I organized several Linux command before, you can see them in here :
 
 In here I will arrange command of Linux, because In order to practice TensorFlow, I have to use Linux again.
 
+If you don't know the command of linux, type in "man command" !
+
+
+## 
+
+
+## [How To Count Words or Lines On linux Command](https://stackoverflow.com/questions/3137094/how-to-count-lines-in-a-document)
+
+  For the number of line 
+  
+  >  wc -l file-name
+  
+  For counting words in a file 
+  
+  >  wc -w file-name 
+  
+  But if I want to count words in a line of a file. I use some shell script with wc like this. 
+  
+  > for i in 1; do read line ; echo $line; done < ./file-name | wc -w
+  
+## [How To Split A Document With The Number Of Lines You Want To Cut](https://stackoverflow.com/questions/19031144/how-to-split-one-text-file-into-multiple-txt-files)
+
+ > split -l (the number of lines) input.txt output.txt
+
+ - l : the number of lines you want to seperate 
+ - input.txt : the name of a file to cut 
+ - output.txt : file name you make after cuting input file. 
+   - Normally if you don't specify the name of output file, the output is xaa, xab, xac, xad
+   - But if you use prefix of the file name of output, like this 
+   - e.g. if you type in split -l 1000 test.log test.log_
+   - the result is test.log_aa, test.log_ab, test.log_ac, test.log_ad
+   
+ if you use -b option. -b means it seperate a file according to size with -b option. 
+
+
 
 ## [How To USe Bash History Commands](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps) 
 
@@ -101,11 +136,11 @@ It's [iconv](http://www.gnu.org/savannah-checkouts/gnu/libiconv/documentation/li
 
 As you can read the above summary, It's simple to convert encoding. 
 
-
-
-
-
 # Reference 
+
+ - [How To Split A Document With The Number Of Line](https://stackoverflow.com/questions/19031144/how-to-split-one-text-file-into-multiple-txt-files)
+ 
+   - [Korea ver. of split command](http://ggachi.ncity.net/TIP/7480)
 
  - [How To Use Bash History Commands](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps)
  
@@ -114,3 +149,4 @@ As you can read the above summary, It's simple to convert encoding.
    - [Appendix - MIME type](https://stackoverflow.com/questions/3828352/what-is-a-mime-type)
  
  - [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
+
