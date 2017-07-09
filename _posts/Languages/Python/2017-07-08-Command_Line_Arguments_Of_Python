@@ -16,7 +16,7 @@ bigimg:
 ---
 
 
-# [Commad Line Arguments In Python](https://docs.python.org/2/howto/argparse.html)
+# [Command Line Arguments In Python](https://docs.python.org/2/howto/argparse.html)
 
 I wanted to use my python program on command-line of Linux. So I could find out the way it is similar and easy to make another usage of shell script on Linux.
 
