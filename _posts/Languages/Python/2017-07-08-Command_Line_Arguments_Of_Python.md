@@ -68,7 +68,7 @@ argv is enough to hadle command line, But if you want to make it useful. **use a
 
 ### The Basic Of Argparse Module
 
-let's see simple example of the above module
+let's see an simple example of the above module
 
 ```python 
 import argparse
@@ -110,7 +110,7 @@ This is so good and convenient.
 
 I exactly don't know whether you know positional and optional arguments or not. So from now on, in turn, I will explain what is the positianl arguments and optional arguments. 
 
-First, let's go through example of how to make positional arguments with argparse module. 
+First, let's go through an example of how to make positional arguments with argparse module. 
 
 ```python 
 import argparse
@@ -271,7 +271,7 @@ $ python3 arguments_of_command_line.py -v 7
 7^2 == 49
 ```
 
-plus, In this example, notice that keywords of default and action="count" is dealt with 
+Plus, In this example, notice that keywords of default and action="count" is dealt with 
 
 So far, you've gone through the basic usage of argparse module.
 
