@@ -20,7 +20,7 @@ bigimg:
 
 I wanted to use my python program on command-line of Linux. So I could find out the way it is similar and easy to make another usage of shell script on Linux.
 
-For example, When you use linux basic program on shell like wc, split ans so on. If you don't know how to use it. 
+For example, When you use linux basic program on shell like wc, split and so on. If you don't know how to use it. 
 
 Basically, users type in as follows :
 
@@ -29,23 +29,23 @@ Basically, users type in as follows :
 
 wc - word count script
 
-As you can see the above cases, Normally, there are two ways. But In my case, I will deal with second case, "wc --help" like this. 
+As you can see the above cases, Normally there are two ways. But In my case, I will deal with second case, "wc --help" like this. 
 
 ![](/img/Image/Languages/Python/2017-07-08-Command_Line_Arguments_Of_Python/Command_Line_Arguments_of_wc.png)
 
 The reason why I want to deal with second case, Nowadays, I'm making some program to probably reuse, So I decided to make the program is easy to use on command line of Linux
 
-So I figured out from C program. the hint is the variables of argc and argv.
+So I figured out the hint from C program. the hint is the variables of argc and argv.
 
-From now on, let's see how to make it on python. 
+From now on, let's see how to make it with python on my purpose
 
 ## Argparse module of python 
 
 **this article got refered from [Argparse Tutorial](https://docs.python.org/2/howto/argparse.html) of the official python site.**
 
-This module is so easy to use it on your purpose. But Basically, Users would figure out sys module. i.e. sys.argv of sys module
+This module is so easy to use it on your purpose. But Basically Users would figure out sys module. i.e. sys.argv of sys module
 
-let's see simple program to check sys module out
+let's see simple program to sys module 
 
 ```python 
 import sys
@@ -53,7 +53,8 @@ print ("the len of sys.argv :", len(sys.argv))
 print ("sys.argv[0] :", sys.argv[0])
 print ("sys.argv: ", sys.argv)
 ```
-After the above code, if you execute the abov python program on command line, you're getting the result as follows :
+
+After the above code, if you execute the above python program on command line, you're getting the result as follows :
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in ~ [15:33:37] 
@@ -62,9 +63,10 @@ the len of sys.argv : 4
 sys.argv[0] : arguments_of_command_line.py
 sys.argv:  ['arguments_of_command_line.py', '1', '2', '3']
 ```
+
 As you can see, sys.argv variable recognizes the command line in order. So if you want to make it easy to handle command line on your program,
 
-argv is enough to hadle command line, But if you want to make it useful. **use argparse module right away**
+argv is enough to hadle command line, But if you want to make it useful and beatiful. **use argparse module right away**
 
 ### The Basic Of Argparse Module
 
@@ -102,9 +104,9 @@ optional arguments:
 
 You just entered two lines, parser = argparse.ArgumentParser() and parser.parse_args(), But this module make help message automatically. 
 
-And, if you don't specify position argument and optional argument, when you use the arguments on command line, error message appears in shell.
+And, if you don't specify positional and optional argument, when you use the arguments on command line, error message appears in the shell.
 
-This is so good and convenient.
+This is so good and convenient to make it using this module of argparse.
 
 ### [Introducing Positional Arguments](https://docs.python.org/2/howto/argparse.html#introducing-positional-arguments)
 
@@ -120,7 +122,7 @@ args = parser.parse_args()
 print (args.echo)
 ```
 
-With the above lines, if you type in on shell. you will get the result as follows:
+With the above lines, if you type in some arguments on the shell. you will get the result as follows:
 
 ```bash
 # hyunyoung2 @ hyunyoung2-desktop in ~ [16:45:56] C:1
@@ -143,11 +145,11 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-As you can see output above. Positinal arguments make us specify the positional option typing in command on shell. 
+As you can see output above. Positinal arguments make us specify the positional option typing in command to execute our program on the shell. 
 
-i.e.calling our program now require us to specify an option, in here echo option.
+i.e. calling our program now require us to specify an option, in here echo option.
 
-you can specify help message of your  arguments easily with help as follows :
+you can specify help message of your arguments easily with help keywrod as follows :
 
 > parser.add_argument("echo", help="echo the string you use here")
 
@@ -155,7 +157,7 @@ If you want to make it more useful, read [the part of introducing positional arg
 
 ###  [Introducing Optional Arguments](https://docs.python.org/2/howto/argparse.html#introducing-optional-arguments)
 
-The optional arguments is depending on user who use program on commandline. 
+The optional arguments is depending on user who uses program on commandline. 
 
 i.e that is not necessarily specified on command line. 
 
@@ -191,13 +193,13 @@ optional arguments:
   -v, --verbose  increase output verbosity
 ```
 
-As you can see, the optional arguments, if you don't specify action, need some value like this :
+As you can see, the optional arguments, if you don't use action keyword, need some value like this :
 
 > python3 (the above python name) --verbose 1(and so on)
 
-But you don't need to specify some value for the optional argumet. that is why you use action. 
+But you don't need to specify some value for the optional argument. that's why you use action keyword. 
 
-And  if you type in as follows :
+And if you type in as follows :
 
 > parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
 
@@ -209,7 +211,7 @@ those are two the same in their functionality.
 
 ### [Combining Positional And Optional Argumetns](https://docs.python.org/2/howto/argparse.html#combining-positional-and-optional-arguments)
 
-Finally, let's make simple an example with positional and optional arguments
+Finally, let's make an simple example with positional and optional arguments
 
 ```python 
 import argparse
@@ -271,7 +273,7 @@ $ python3 arguments_of_command_line.py -v 7
 7^2 == 49
 ```
 
-Plus, In this example, notice that keywords of default and action="count" is dealt with 
+Plus, In this example, notice that keywords of default and action="count" are dealt with 
 
 So far, you've gone through the basic usage of argparse module.
 
