@@ -18,17 +18,18 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 요즘 미국 실리콘 밸리로 인턴을 떠나기 전에 심심해서 지금의 Git-Hub을 이용해 내 홈페이지를 만들고, 자바 "자바의 정석", 열혈강의 C/C++, 자료구조, os(운영체제) 등을 다시 학습을 하기 시작했다. 이를 통해 그동안 잊고 지냈던 개념들을 다시 알게 되어 좋은 시간인거 같다. 또한 미국에서 리눅스 관련 OpenSource 작업을 하면서 필요한 정보들을 그때 그때 정리해놓아서 나중에 많은 도움을 받을 수 있을 거 같다.
 
+<!-- this code is from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
+<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
+-<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
+
 {: #top }
 
-<!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <div class="list-filters post-preview">
   <a href="/" class="list-filter">All posts</a>
   <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
   <a href="/CloudTags" class="list-filter">Tags Cloud</a>
   <a href="/CloudDate" class="list-filter filter-selected">List by Date</a>
 </div>
-
-<!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 
 <div class="post-preview">
 {% assign openList = '<ul class="later on">'  %}
