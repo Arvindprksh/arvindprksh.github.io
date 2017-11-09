@@ -15,7 +15,7 @@ permalink: /2016/07/07/Extension_Of_Double_Linked_List/
 
 ### base structure (기본 구조)
 
-![](/img/Image/CodingInterview-ExtensionOfDataStructure/2016-07-07-Extension_Of_Double_Linked_List/double_linked_list.png)
+![](/img/Image/CodingInterview/ExtensionOfDataStructure/2016-07-07-Extension_Of_Double_Linked_List/double_linked_list.png)
 
 ```c
   typedef struct node {
