@@ -25,13 +25,13 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: ""
   Study: "alistofcategories"
-  Projects: "projects"
-  Search: "search"
+  Projects: "Projects"
+  Search: "Search"
   About Me: 
-    - Test Time Line : "TestTimeLine"
-    - Time Line: "timeline"
-    - About me: "aboutme"
-    - Resume: "resume"
+    - Time Line : "TimeLine"
+    - Simple Time Line: "SimpleTimeLine"
+    - About me: "AboutMe"
+    - Resume: "Resume"
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
