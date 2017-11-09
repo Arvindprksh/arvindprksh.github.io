@@ -97,8 +97,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             </a>
         </li>
     {% endcapture %}
-    {{ monthHead }}{{ link }}
-       
+    {{ monthHead }}{{ link }}       
 {% endfor %}
 {{closeList}}
     <small markdown="1"><!--[back to top](#top)-->
