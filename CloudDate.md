@@ -20,7 +20,8 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 
 <!-- this code is from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
--<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
+<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
+
 
 {: #top }
 
