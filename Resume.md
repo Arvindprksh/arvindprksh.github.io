@@ -1,6 +1,6 @@
 ---
 layout : page
-css : /css/resumeByhyun02.css 
+css : /css/ResumeByhyun02.css 
 ---
 
 
