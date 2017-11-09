@@ -15,7 +15,7 @@ permalink: /2016/08/02/Utilization_Of_Circular_LinkedList/
  
  - if I explain to you with drawings. Just refer to the following pictures.(The following pictures is refered to [geeksforgeeks](http://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
  
- ![](/img/Image/CodingInterview-ExtensionOfDataStructure/2016-08-02-Utilization_Of_Circular_LinkedList/Split_a_Circular_Linked_List_into_two_halves.png) 
+ ![](/img/Image/CodingInterview/ExtensionOfDataStructure/2016-08-02-Utilization_Of_Circular_LinkedList/Split_a_Circular_Linked_List_into_two_halves.png) 
 
 ### Algorithm
 
