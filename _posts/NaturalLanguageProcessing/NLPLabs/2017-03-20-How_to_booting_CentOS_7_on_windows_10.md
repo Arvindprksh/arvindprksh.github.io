@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to do multi-booting CentOS 7 on Windows 10 
-category: Natural Language Labs
+category: Natural Language Processing Labs
 tags: [multibooting]
 permalink: /2017/03/20/How_to_booting_CentOS_7_on_windows_10
 big-image:
@@ -34,7 +34,7 @@ So, basically, You have to install windows, after that, you need to install Linu
       
       If you do as I said above. you can get window as below.
       
- ![](/img/Image/NaturalLanguageLabs/2017-03-20-How_to_booting_CentOS_7_on_windows_10/Shrink_volume.PNG)
+ ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-03-20-How_to_booting_CentOS_7_on_windows_10/Shrink_volume.PNG)
  
    on the above image. You have to make available space to install linux. 
    
@@ -50,7 +50,7 @@ So, basically, You have to install windows, after that, you need to install Linu
   
   If you execute the tool to make booting USB. you will get the image below
   
-  ![](/img/Image/NaturalLanguageLabs/2017-03-20-How_to_booting_CentOS_7_on_windows_10/booting_USB.PNG)
+  ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-03-20-How_to_booting_CentOS_7_on_windows_10/booting_USB.PNG)
   
   **Keep in mind in here, maybe you have to configure disk form and booting system to GPT partition's UEFI**
   
