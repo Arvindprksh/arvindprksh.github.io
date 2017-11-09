@@ -14,9 +14,9 @@ bigimg:
 ---
 
 
-# Search hyunyoung2.github.io for what you want here
+# Search for what you want here,hyunyoung2.github.io.
 
-### Using the Amazing Google
+### Use the Amazing Google's Custom Search to explore my blog
 
 <div id="google-custom-search">
 <script>
