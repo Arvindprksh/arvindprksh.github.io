@@ -12,15 +12,13 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
+{: #top }
 
 {% include CloudHeaderPart.html %}
 
 <!-- this code is from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
-
-
-{: #top }
 
 <div class="list-filters post-preview">
   <a href="/" class="list-filter">All posts</a>
