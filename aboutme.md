@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: I like Software development, Software Engineer
-css: "/css/aboutme.css"
+css: "/css/ABOUTME.css" 
 ---
 
 <div id="aboutme-section">
