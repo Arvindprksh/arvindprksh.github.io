@@ -33,9 +33,7 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <div class="post-preview">
 {% assign openList = '<ul class="later on">'  %}
 {% assign closeList = '</ul>' %}
-<!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
-
-	{% assign archive_url = site.baseurl | append: '/alistofdate/' %}
+	{% assign archive_url = site.baseurl | append: '/CloudDate/' %}
 	{% for post in site.posts %}
 		{% assign currentdate = post.date | date: '%B %Y' %}
 			{% if currentdate != date %}
@@ -68,11 +66,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
     {% capture month %}
       {{ post.date | date: '%m%Y' }}
     {% endcapture %}
-
     {% capture nmonth %}
       {{ post.next.date | date: '%m%Y' }}
     {% endcapture %}
-
       {% capture monthHead %}
         {% if month != nmonth %}
           {% if  forloop.index != 1  %}
@@ -84,7 +80,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
               </small>
               <hr/>
           {%endif %}
-	 
         <h2 class="">
             {% if year != nyear %}
           <div id="{{ post.date | date: '%Y' }}" style="padding-top:50px"></div>
@@ -94,7 +89,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
        </h2>{{ openList }}
       {% endif %}
     {% endcapture %}
-
     {% capture link %}
         <li>
             <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
@@ -103,7 +97,6 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
             </a>
         </li>
     {% endcapture %}
-
     {{ monthHead }}{{ link }}
        
 {% endfor %}
