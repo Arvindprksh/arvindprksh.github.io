@@ -9,7 +9,6 @@ css : /css/ForYouTubeByHyun.css
 
   While I Carried out the projects, This shows you My role. This page shows you my personal projects.
 
-
 ## IOT Project
 
 <div id="tutorial-section">
@@ -127,6 +126,9 @@ css : /css/ForYouTubeByHyun.css
 
 
 ## Natural Language Processing Project
+
+  - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network -**
+
 
   - **[COPYDET : Plagiarism Detected Source Retrieval and Text Alignment - 원본 문서 추출 및 표절 위치 탐색 기법 ](https://www.youtube.com/watch?v=prBhnX2CQbM&feature=youtu.be)**
     
