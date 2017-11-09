@@ -2,7 +2,7 @@
 layout: page
 title: "Search"
 subtitle: Enter the keyword that you search in hyunyoung2 
-css: /css/search.css
+css: /css/Search.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -54,9 +54,7 @@ bigimg:
 -->
 <!-- 
 <gcse:searchresults></gcse:searchresults>
-
 (document.location.protocol == 'https:' ? 'https:' : 'http:') +
         '//www.google.com/cse/cse.js?cx=' + cx;
-
 'https://cse.google.com/cse.js?cx=' + cx;
 -->
