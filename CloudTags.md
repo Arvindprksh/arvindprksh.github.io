@@ -2,7 +2,7 @@
 layout: page
 title: Study List With Tags
 subtitle: Something that I have studied and experienced
-css: "/css/cloudlistfilter.css"
+css: "/css/CloudListFilter.css"
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -22,9 +22,9 @@ Before going to Silicon Valley, I love challenge to new technology, I made git s
 <!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <div class="list-filters post-preview">
   <a href="/" class="list-filter">All posts</a>
-  <a href="/alistofcategories" class="list-filter">Catergories Cloud</a>
-  <a href="/alistofcloudoftags" class="list-filter filter-selected">Tags Cloud</a>
-  <a href="/alistofdate" class="list-filter">List by Date</a>
+  <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
+  <a href="/CloudTags" class="list-filter filter-selected">Tags Cloud</a>
+  <a href="/CloudDate" class="list-filter">List by Date</a>
 </div>
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
