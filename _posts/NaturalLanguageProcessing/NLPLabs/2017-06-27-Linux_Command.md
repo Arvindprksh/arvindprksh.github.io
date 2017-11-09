@@ -2,7 +2,7 @@
 layout: post
 title: Organization Of Linux Commands
 subtitle: during researching natural lanuage with Ubuntu, organizing Linux command.
-category: Natural Language Labs
+category: Natural Language Processing Labs
 tags: [linux]
 permalink: /2017/6/27/Linux_Command/
 bigimg: 
