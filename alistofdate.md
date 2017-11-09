@@ -2,7 +2,7 @@
 layout: page
 title: Study List With Date
 subtitle: Something that I have studied and experienced
-css: "/css/cloudlistfilter.css"
+css: "/css/CloudListFilter.css"
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
