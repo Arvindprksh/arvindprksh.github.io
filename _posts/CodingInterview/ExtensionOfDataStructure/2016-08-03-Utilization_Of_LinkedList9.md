@@ -13,7 +13,7 @@ I refer to coding interview book and [geeksforgeeks](http://www.geeksforgeeks.or
 
 If you are given a singly Linked List of character. if the given list is palindrome, You have to return TRUE.
 
-![palindrome](/img/Image/CodingInterview-ExtensionOfDataStructure/2016-08-03-Utilization_Of_LinkedList9/palindrome.png)
+![palindrome](/img/Image/CodingInterview/ExtensionOfDataStructure/2016-08-03-Utilization_Of_LinkedList9/palindrome.png)
 
 ## algorithm
 
