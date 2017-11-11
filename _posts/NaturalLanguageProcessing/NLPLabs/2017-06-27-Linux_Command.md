@@ -138,10 +138,59 @@ It's [iconv](http://www.gnu.org/savannah-checkouts/gnu/libiconv/documentation/li
 
  > iconv -f UTF-8 -t ISO-8859-15 in.txt > out.txt
  
- - \-f means the encoding of the input file. 
- - \-t means the encoding of the output file 
+ - \-f means the input file. 
+ - \-t means the output file 
 
 As you can read the above summary, It's simple to convert encoding. 
+
+## [How to Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
+
+Let's see the AWK command, this command is a powerful method for porcessing or analyzing text files-in particular, data files that are orgarnized by lines(rowss) and columns.
+
+> awk 'pattern {action}' input-file > output-file
+
+This means that each line of the output file; if the line contains the pattern apply the action to the line and write the resulting line to the output-file.
+
+Let's think some sample.
+
+> awk '{ print $5 }' table1.txt > output1.txt
+
+The above command is under the situation where it doesn't contain the pattern. 
+
+This means it takes fifth column of each line in input file of table1.txt and then it ouputs the resulting value to output file.
+
+The whole process way is as followings :
+
+BUT, keep in mind of one based, I mean first column is $1, the second one is $2 and so on. 
+ 
+```
+# This is table1.txt
+
+1, Justin Timberlake, Title 545, Price $7.30
+2, Taylor Swift, Title 723, Price $7.90
+3, Mick Jagger, Title 610, Price $7.90
+4, Lady Gaga, Title 118, Price $7.30
+5, Johnny Cash, Title 482, Price $6.50
+6, Elvis Presley, Title 335, Price $7.30
+7, John Lennon, Title 271, Price $7.90
+8, Michael Jackson, Title 373, Price $5.50
+```
+
+```
+# This is ouput1.txt 
+
+545,
+723,
+610,
+118,
+482,
+335,
+271,
+373,
+```
+
+
+
 
 # Reference 
 
@@ -161,3 +210,4 @@ As you can read the above summary, It's simple to convert encoding.
  
  - [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
+ - [How to Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
