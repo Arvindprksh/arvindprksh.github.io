@@ -82,6 +82,140 @@ Just click [this site, ipython tutorial of Stanford 231 n.](http://cs231n.github
 
 Let's go to [jupyter.org](http://jupyter.org) to look for the way to install Anaconda.
 
+## On  linux with Anancoda
+
+ Just Download Anaconda in [Ananconda download page](https://www.anaconda.com/download/#linux)
+ 
+ ![]()
+ 
+ if you download it, go to Downloads directory 
+ 
+ > $ cd Download 
+ 
+ > $ chmod 755 Anaconda3-5.0.1-Linux-x86_64.sh
+ 
+```bash
+# hyunyoung2 @ hyunyoung2-desktop in ~ [22:34:00] 
+$ cd Downloads 
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [22:34:03] 
+$ ls
+Anaconda3-5.0.1-Linux-x86_64.sh
+```
+
+  after the above 
+ 
+ > $ ./.Anaconda3-5.0.1-Linux-x86_64.sh
+
+```bash
+after the above 
+ 
+# hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [22:27:43] C:1
+$ ./Anaconda3-5.0.1-Linux-x86_64.sh 
+
+Welcome to Anaconda3 5.0.1
+
+In order to continue the installation process, please review the license
+agreement.
+.......
+cryptography
+    A Python library which exposes cryptographic recipes and primitives.
+
+
+Do you accept the license terms? [yes|no]
+[no] >>> yes
+
+Anaconda3 will now be installed into this location:
+/home/hyunyoung2/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/hyunyoung2/anaconda3] >>> 
+PREFIX=/home/hyunyoung2/anaconda3
+installing: python-3.6.3-hc9025b9_1 ...
+.......
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/hyunyoung2/.bashrc ? [yes|no]
+[no] >>> yes
+
+Appending source /home/hyunyoung2/anaconda3/bin/activate to /home/hyunyoung2/.bashrc
+A backup will be made to: /home/hyunyoung2/.bashrc-anaconda3.bak
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Anaconda3!
+```
+
+ After finishing installation. 
+ 
+ > $ vim .bashrc
+
+ you see the change of anaconda installation on the last line in .bashrc file. 
+
+ the chage is as follows :
+ 
+```shell
+# added by Anaconda3 installer
+export PATH="/home/hyunyoung2/anaconda3/bin:$PATH"
+```
+
+  From now on, you can run jupyter notebook, run the following command at the terminal
+  
+  > $ jupyter notebook
+
+  
+  **BUT**, in your zsh, you can't run jupyter notebook. 
+  
+  So like the chage of .bashrc file, you have to change .zshrc file.
+  
+  Just Add it at the last line of .zshrc like the following :
+  
+```
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# added by hyunyoung2 for Anaconda3
+export PATH="/home/hyunyoung2/anaconda3/bin:$PATH"
+```
+  
+  From now on, You can also run jupyter notebook 
+  
+  after change of .zshrc, type like this to run jupyter notebook on zsh
+  
+  > $ jupyter notebook
+  
+## On linux without Anancoda
+
+  [The official site](http://jupyter.org/install.html) of jupyter notebook tells you how to install without Ananconda. 
+  
+  the way to install jupyter notebook : 
+  
+  use python package manager,**pip**
+  
+  if you have Python3 installed(which jupyter notebook's official site recommend) :
+  
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install jupyter
+```
+  
+  if you have Python2 installed :
+  
+```
+python -m pip install --upgrade pip
+python -m pip install jupyter
+```
+
+  Congratulations! you have installed Juypter notebook!. To run notebook 
+  
+  type like the following : 
+  
+  > jupyter notebook
 
 # Reference 
 
