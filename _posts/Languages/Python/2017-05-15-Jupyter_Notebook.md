@@ -231,4 +231,3 @@ python -m pip install jupyter
   
   - [jupyter_contrib_nbextension's github](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
   
-  
