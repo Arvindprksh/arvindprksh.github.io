@@ -144,7 +144,7 @@ Linux hyunyoung2-desktop 4.8.0-36-generic #36~16.04.1-Ubuntu SMP Sun Feb 5 09:39
   
   And then, if  you also want to know how to know how to Install Development Tools on Ubuntu, read [this blog, How To Install Development Tools on Ubuntu, Debian & LinuxMint.](https://tecadmin.net/install-development-tools-on-ubuntu/#)
  
-````bash
+```bash
 # For development tools
 $ sudo apt update 
 $ sudo apt insatll build-essential 
