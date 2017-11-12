@@ -163,6 +163,8 @@ Thank you for installing Anaconda3!
 export PATH="/home/hyunyoung2/anaconda3/bin:$PATH"
 ```
 
+ ![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/Add_Path_to_bashrc.png)
+
   From now on, you can run jupyter notebook, run the following command at the terminal
   
   > $ jupyter notebook
@@ -182,6 +184,8 @@ export PATH="/home/hyunyoung2/anaconda3/bin:$PATH"
 # added by hyunyoung2 for Anaconda3
 export PATH="/home/hyunyoung2/anaconda3/bin:$PATH"
 ```
+
+ ![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/Add_Path_to_zshrc.png)
   
   From now on, You can also run jupyter notebook 
   
