@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What is the jupyter notebook of python
-subtitle: I will let you know how to install jupyter and use it.
+title: Tips in Jupyter notebook with python
+subtitle: what is the help keyword and automatic completion in jupyter notbook?
 category: Python
 tags: [language, python]
 permalink: /2017/11/12/Tips_in_Jupyter_Notebook_with_Python/
