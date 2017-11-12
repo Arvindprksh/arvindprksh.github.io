@@ -42,7 +42,7 @@ css: "/css/AboutMe.css"
 
 <p class="about-text">
 <span class="fa fa-file-text-o about-icon"></span>
-  The <strong><a href="./project">projects</a></strong> page is a nice place to see some of my work. 
+  The <strong><a href="./Project">projects</a></strong> page is a nice place to see some of my work. 
 </p>
 
 <!------ after enroll resume 
