@@ -213,9 +213,9 @@ python -m pip install jupyter
 
   Congratulations! you have installed Juypter notebook!. To run notebook 
   
-  type like the following : 
+  type on shell like the following : 
   
-  > jupyter notebook
+  > $ jupyter notebook
 
 # Reference 
 
