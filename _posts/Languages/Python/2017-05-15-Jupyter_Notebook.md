@@ -86,7 +86,7 @@ Let's go to [jupyter.org](http://jupyter.org) to look for the way to install Ana
 
  Just Download Anaconda in [Ananconda download page](https://www.anaconda.com/download/#linux)
  
- ![]()
+ ![](/img/Image/Languages/Python/2017-05-15-Jupyter_Notebook/Anaconda_Download.png)
  
  if you download it, go to Downloads directory 
  
