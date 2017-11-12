@@ -124,6 +124,68 @@ p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.
 ➜  ~ 
 ```
  
+ To sum up how to install zsh and extra tool as soon as you install Ubuntu, 
+ 
+ in here my system Ubuntu is 16.04.1
+ 
+ > uname -a
+ 
+```bash
+# hyunyoung2 @ hyunyoung2-desktop in ~ [22:03:08] 
+$ uname -a
+Linux hyunyoung2-desktop 4.8.0-36-generic #36~16.04.1-Ubuntu SMP Sun Feb 5 09:39:57 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux\
+```
+  
+  Les't see the procedure of how to install zsh and additional tool
+ 
+  when you use software package management in Ubutu, I recommend you to use apt instead of apt-get:
+  
+  if you want to know the reason why I recommend you to use apt, read pthis blog,Difference Between apt and apt-get explained.](https://itsfoss.com/apt-vs-apt-get-difference/)
+  
+  And then, if  you also want to know how to know how to Install Development Tools on Ubuntu, read [this blog, How To Install Development Tools on Ubuntu, Debian & LinuxMint.](https://tecadmin.net/install-development-tools-on-ubuntu/#)
+ 
+````bash
+# For development tools
+$ sudo apt update 
+$ sudo apt insatll build-essential 
+# To check development tools is installed well
+$ gcc --version
+$ sudo apt insatll zsh
+$ sudo apt install curl
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# To chang Theme on zsh
+# In my case I changed robbyrussell to ys 
+$ vim .zshrc
+# To install vim editor(there are many vim packages, Some other people recommend vim-nox)
+$ sudo apt install vim
+```
+
+ Just as additional explanation of vim package 
+
+```bash 
+# Just as appendix if you don't install vim type vim --version  like the following
+$ vim --version
+The program 'vim' can be found in the following packages:
+ * vim
+ * vim-gnome
+ * vim-tiny
+ * vim-athena
+ * vim-athena-py2
+ * vim-gnome-py2
+ * vim-gtk
+ * vim-gtk-py2
+ * vim-gtk3
+ * vim-gtk3-py2
+ * vim-nox
+ * vim-nox-py2
+Try: sudo apt install <selected package>
+# But if you have already installed vim. when you type $ vim --version like this :
+$ vim --version
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+.......
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -Wdate-time  -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl     -L/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu -lpython3.5m -lpthread -ldl -lutil -lm  
+```
 
 ## [Oh my zsh's feature site](http://code.joejag.com/2014/why-zsh.html)
 
@@ -154,3 +216,4 @@ p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.
    
    [NHN ent. 신승엽님 Github 실습 교육](http://www.slideshare.net/flyskykr/github-46014813)
   
+ 
