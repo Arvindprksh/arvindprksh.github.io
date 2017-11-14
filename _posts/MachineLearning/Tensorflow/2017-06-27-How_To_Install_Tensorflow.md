@@ -2,8 +2,8 @@
 layout: post
 title: how to install TensorFlow
 subtitle: installing tensorflow on ubuntu 16.04 LTS
-category: machine_learning
-tags: [machine_learning, tensorflow]
+category: Tensorflow
+tags: [machine learning, tensorflow]
 permalink: /2017/06/27/How_To_Install_Tensorflow/ 
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
