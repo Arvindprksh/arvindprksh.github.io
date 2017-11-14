@@ -5,7 +5,9 @@ subtitle: [USERNAME]@[HOSTNAME]:[PATH][SYMBOL]
 category: Linux
 tags: [summary]
 permalink: /2017/11/14/What_are_the_Username_and_Hostname/
+
 ---
+
 
 # What does username@hostname in terminal?
 
