@@ -1,13 +1,11 @@
 ---
 layout: post
 title: What are the Username and Hostname ?
-subtitle: [USERNAME]@[HOSTNAME]:[PATH][SYMBOL]
+subtitle: "USERNAME@HOSTNAME : PATH SYMBOL"
 category: Linux
 tags: [summary]
 permalink: /2017/11/14/What_are_the_Username_and_Hostname/
-
 ---
-
 
 # What does username@hostname in terminal?
 
@@ -38,4 +36,4 @@ once again look my case :
 
 # Reference 
 
- [ask ubuntu](https://askubuntu.com/questions/6114/what-does-the-name-after-at-terminal-prompt-mean)
+  - [ask ubuntu](https://askubuntu.com/questions/6114/what-does-the-name-after-at-terminal-prompt-mean)
