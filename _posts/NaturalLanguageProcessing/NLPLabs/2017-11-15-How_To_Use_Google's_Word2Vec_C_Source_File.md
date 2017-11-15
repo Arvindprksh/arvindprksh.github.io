@@ -149,6 +149,11 @@ Let's execute the demo-word.sh
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-15-How_To_Use_Google-s_Word2Vec_C_Source_File/Demo-analogy.png)
 
+
+You can also the stat of threads, In this case I used 20 threads. let's see the state of threads 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-15-How_To_Use_Google-s_Word2Vec_C_Source_File/Execute_Demo.png)
+
 > $ ls
 
 ```bash
