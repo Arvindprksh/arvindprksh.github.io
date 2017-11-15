@@ -217,5 +217,14 @@ As you can see above, you can check the total number of word vector' and dimensi
 > ### The following is vector value of </s>
 > </s> 0.002001 0.002210 -0.001915 -0.001639 0.000683 0.001511 0.000470 .......
 
+ > 71291 : means the total number of word vector.
 
+ > 200 : means the number of dimension of a word
+
+ > 0.002001 0.002210 ....... : means vector of word
+
+
+# Reference 
+
+  - [Hyunyoung2 Natural Language Processing labs](https://nbviewer.jupyter.org/github/hyunyoung2/Hyunyougn2_Natural_Language_Processing_Lab/blob/master/Python3/Word2Vec/Google_C_Source_file/How%20to%20use%20Google%27s%20Word2Vec%20C%20source%20file.ipynb)
 
