@@ -88,7 +88,7 @@ After typing password. You could work with jupyter notebook about whatever you w
 ![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Finally_Complete.png)
 
 
-* --no-browser option mean I don't want to invoke jupyter notebook on local web browser. BUT If you want to run on local web browser. omit the option,"--no-browser"
+* **--no-browser** option mean I don't want to invoke jupyter notebook on local web browser. BUT If you want to run on local web browser. omit the option,"--no-browser"
 
 ## Second way to statically configure jupyter notebook to run it remotely. 
 
@@ -98,30 +98,70 @@ As you have seen how to run jupyter notebook remotely above. the first way is un
 
 This is so uncomfortable,So from now on, I will explain how to easily run jupyter notebook server statically.
 
+Let's type in terminal like this : 
 
+ > $ jupyter notebook --generate-config 
+ 
+ As you could check the result of the above command, You could identify **jupyter_notebook_config.py** is created within **/home/USERNAM/.jupyter/** directory.
 
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter_Notebook_Generate-config.png)
 
+And then you need to chage some line of the file, **jupyter_notebook_config.py** to control jupyter notebook remotely.
 
+First, create password, When you access jupyter notebook server on web browser, you need it. If you don't make password, you would use a token number made by jupyter notebook which is complex to remember.
 
+As you could check how to generate password with a command,**$ jupyter notebook password**, above. that way is easy.
 
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter_Notebook_password_command.png)
 
+BUT I will make password different with the above way, Just type in terminal as follows :
 
+> $ ipython 
 
+And then you type in iPython like this : 
 
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/How_to_Generate_Jupyter_Passwd .png)
 
+So you will get hash code of your password. with the code, you have to copy it into the file, jupyter_notebook_config.py.
 
+If you open jupyter_notebook_config.py, you will see like this:
 
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter password.png)
 
+And then get rid of comment, and type your hash code from iPython in the file like this : 
 
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter_Scree_passwd.png)
+
+Finally it ramains two thing like IP Address and Portnubmer. 
+
+in the case of IP Address : 
+
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter_notebook_Host_IP_Address.png)
+
+As you could see above, just change comment to statement with you IP Address.
+
+In the case of port number, You don't need to change the number, basically, Jupyter notebook uses the number of **8888** as port number. 
+
+So If you want to change the number of port, change it like above things, password and IP Address :
+
+![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Jupyter_Notebook_PortNumber2.png)
+
+It is done with static configuration to invoke Jupyter notebook 
+
+Let's run Jupyter notebook remotely with a commend below :
+
+> $ jupyter notebook --no--browser
+
+and if you type your IP Address:port number on web browser. you will see like this :
 
 ![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Use_Jupyter_Notebook_Remotely_on_webbrowser.png)
 
-After typing password. 
+it's totally the same of first way, So it remains typing password. Just do it and then you can usually use jupyter notebook on the remote web browser like this :  
 
 ![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Finally_Complete.png)
 
 
+# Reference 
 
-
-
-
+ - [How to make IPython Server](https://www.slideshare.net/HyunsikYoo/ipython-serverjupyter-server)
+ 
