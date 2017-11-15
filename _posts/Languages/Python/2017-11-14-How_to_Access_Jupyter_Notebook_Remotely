@@ -92,7 +92,13 @@ After typing password. You could work with jupyter notebook about whatever you w
 
 ## Second way to statically configure jupyter notebook to run it remotely. 
 
-As you have seen how to run jupyter notebook remotely above. the first way is uncomfortable. That is because everytime you run jupyter notebook
+As you have seen how to run jupyter notebook remotely above. the first way is uncomfortable. That is because everytime you run jupyter notebook, You have to type like this :
+
+> $ jupyter notebook --no-browser --ip="your server IP Address" --port=8888
+
+This is so uncomfortable,So from now on, I will explain how to easily run jupyter notebook server statically.
+
+
 
 
 
