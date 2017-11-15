@@ -152,7 +152,7 @@ Let's run Jupyter notebook remotely with a commend below :
 
 > $ jupyter notebook --no--browser
 
-and if you type your IP Address:port number on web browser. you will see like this :
+and if you type your **IP Address:port number** on web browser. you will see like this :
 
 ![](/img/Image/Languages/Python/2017-11-14-How_to_Access_Jupyter_Notebook_Remotely/Use_Jupyter_Notebook_Remotely_on_webbrowser.png)
 
