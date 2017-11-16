@@ -30,37 +30,45 @@ above all, Let's see Regular Expression E-mail Matching Example
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-11-Regular_Expression/Matching_a_Username.png)
 
-###### Pattern:
+
+##### Pattern:
 
 ```
 /^[a-z0-9_-]{3,16}$/
 ```
+
 | Character | What does it do? | example | Matches |
 | ^ | Matches begingin of line | ^abc | abc, abcdef..., abc123 |
 | $ | Matches end of line | abc$ | my:abc, 123abc, theabc |
 | [a-z] | Matches any characters between 'a' and 'z' | [b-z] | bc, mind, xyz |  
 | {x, y} | Match between 'x' and 'y' times | (a){2,4} | aa, aaa, aaaaa |
 
-###### Description:
+
+##### Description:
 
 We start by tellingthe parser of regular expression to fine the beginning of the string(^), followed by and lowercase letter(a-z), number(0-9), an underscore, or a hyphen. 
 
 Next, {3, 6} Makes sure that are at least 3 of those characters, but no more than 16. Finally, We want the end of the string($).
 
-###### String that matches:
 
+##### String that matches:
+
+```
  my-us3r_n4m3
- 
+```
+
 ###### String that doesn't match:
 
+```
 th1s1s-wayt00_l0ngt0beauername (too long)
-
+```
 
 ### Second, Matching a password
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-11-Regular_Expression/Password.png)
 
-###### Pattern:
+
+##### Pattern:
 
 ```
 /^[a-z0-9_-]{6,18}$/
@@ -72,23 +80,32 @@ th1s1s-wayt00_l0ngt0beauername (too long)
 | [a-z] | Matches any characters between 'a' and 'z' | [b-z] | bc, mind, xyz |  
 | {x, y} | Match between 'x' and 'y' times | (a){2,4} | aa, aaa, aaaaa |
 
-###### Description:
+
+##### Description:
 
 Matching a password is very similar to matching a username. The only difference is that instead of 3 to 16 letters, numbers, underscore, or hyphens, we want 6 to 18 of them({6, 18})
 
-###### String that matches:
 
+##### String that matches:
+
+```
 myp4ssw0rd
+```
 
-###### String that doesn't match:
 
+##### String that doesn't match:
+
+```
 mypa$$w0rd (contains a dollar sign)
+```
+
 
 ### Third, Matching a password
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-11-Regular_Expression/Hex_Value.png)
 
-###### Pattern:
+
+##### Pattern:
 
 ```
 /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
@@ -100,9 +117,10 @@ mypa$$w0rd (contains a dollar sign)
 | [a-z] | Matches any characters between 'a' and 'z' | [b-z] | bc, mind, xyz |  
 | {x, y} | Match between 'x' and 'y' times | (a){2,4} | aa, aaa, aaaaa |
 | ? | Matches the character before the ? zero or one times. Also, used as a non-greedy match | ab?c | ac, abc |
-| || | OR operator | abc|xyz | abc or xyz |
+| \| | OR operator | abc\|xyz | abc or xyz |
 
-###### Description:
+
+##### Description:
 
 We start by telling the parser of regular expression to find the beginning of the string(^). Next, a number sign is optional because it is followed a question mark. The question mark(?) tells the parser that the precedinng character - in this case a number sign(#)- is optional, but to be greedy and capture it if it's there.
 Next, inside the first group(first group of parentheses), we can have two different situations. The first is any lowercase letter between **a** and **f** or **a number** six times.
@@ -110,20 +128,27 @@ The vertical bar tells us that we can also have three lowercase letters between 
 
 The reason that I put the six character before is that parser will capture a hex value like #fffff. If I had reversed it so that three characters came first, the parser would only pick up #fff and not the other three f's
 
-###### String that matches:
 
+##### String that matches:
+
+```
 \#a3c113
+```
 
-###### String that doesn't match:
 
+##### String that doesn't match:
+
+```
 \#4d82h4 (contains the letter h)
+```
 
 
 ### Fourth, Matching an E-mail
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-11-Regular_Expression/E-mail.png)
 
-###### Pattern:
+
+##### Pattern:
 
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
@@ -137,11 +162,12 @@ The reason that I put the six character before is that parser will capture a hex
 | ? | Matches the character before the ? zero or one times. Also, used as a non-greedy match | ab?c | ac, abc |
 | || | OR operator | abc|xyz | abc or xyz |
 
-###### Description:
 
-###### String that matches:
+##### Description:
 
-###### String that doesn't match:
+##### String that matches:
+
+##### String that doesn't match:
 
 
 ### Second, Matching a password
