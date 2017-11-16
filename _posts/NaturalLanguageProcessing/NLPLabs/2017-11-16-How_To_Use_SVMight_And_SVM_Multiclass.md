@@ -3,7 +3,7 @@ layout: post
 title: How To Use SVMight And SVM Multiclass
 subtitle: In order to classify with several or binary class, Utilize SVM light and SVM Multiclass
 category: Natural Language Processing Labs
-tags: [machine learning, svm]
+tags: [nlp, machine learning, svm]
 permalink: /2017-11-16/How_To_Use_SVMight_And_SVM_Multiclass/
 css : /css/ForPDFShareByHyun.css
 bigimg: 
