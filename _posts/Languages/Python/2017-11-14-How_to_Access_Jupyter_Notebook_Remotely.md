@@ -17,7 +17,7 @@ type in as follows :
 
 > $ jupyter notebook --help 
 
-```bash
+{% highlight bash linenos %}
 # hyunyoung2 @ hyunyoung2-desktop in ~ [21:52:14] 
 $ jupyter notebook --help
 The Jupyter HTML Notebook.
@@ -40,7 +40,7 @@ Examples
     jupyter notebook                       # start the notebook
     jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
     jupyter notebook password              # enter a password to protect the server
-```
+{% endhighlight %}
 
  As you could see above, the left ones is necessity for you to use jupyter notebook remotely. 
  
