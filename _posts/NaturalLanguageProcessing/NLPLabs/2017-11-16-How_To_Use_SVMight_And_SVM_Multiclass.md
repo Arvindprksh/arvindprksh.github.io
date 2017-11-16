@@ -33,7 +33,7 @@ According to the format above, if I make simple example like this :
 
 > 1 1:0.43 3:0.12 9284:0.2 # abcdef
 
-- 1 means target class (total +1 \| -1 \| 0)
+- 1 means target class (total +1 || -1 || 0)
 - a pair of 1:0.42 means 1 is feature number and 0.24 is value of feature. 
 
 If a pair of 1:0.42 is vector, 1 is index of a vector, and 0.42 is value of the index(in here 1) of a vector.
