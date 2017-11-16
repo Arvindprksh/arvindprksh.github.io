@@ -22,17 +22,21 @@ type in as follows :
 $ jupyter notebook --help
 The Jupyter HTML Notebook.
 
-.......
+~
+
 --no-browser
     Don't open the notebook in a browser after startup.
-.......
+
+~
+
 --ip=<Unicode> (NotebookApp.ip)
     Default: 'localhost'
     The IP address the notebook server will listen on.
 --port=<Int> (NotebookApp.port)
     Default: 8888
     The port the notebook server will listen on.
-.......
+
+~
 
 Examples
 --------
