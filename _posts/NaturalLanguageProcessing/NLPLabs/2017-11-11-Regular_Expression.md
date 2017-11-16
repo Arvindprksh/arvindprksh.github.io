@@ -100,7 +100,7 @@ mypa$$w0rd (contains a dollar sign)
 ```
 
 
-### Third, Matching a password
+### Third, Matching a hexa-value
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/2017-11-11-Regular_Expression/Hex_Value.png)
 
