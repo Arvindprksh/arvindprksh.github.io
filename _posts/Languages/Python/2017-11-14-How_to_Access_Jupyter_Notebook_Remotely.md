@@ -17,7 +17,7 @@ type in as follows :
 
 > $ jupyter notebook --help 
 
-```bash
+```
 # hyunyoung2 @ hyunyoung2-desktop in ~ [21:52:14] 
 $ jupyter notebook --help
 The Jupyter HTML Notebook.
