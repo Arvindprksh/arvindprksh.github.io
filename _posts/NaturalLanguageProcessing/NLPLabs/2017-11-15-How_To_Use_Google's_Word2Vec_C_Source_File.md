@@ -3,7 +3,7 @@ layout: post
 title: How To Use Google's Word2Vec C Source File
 subtitle: simple way to make word2vec file with google word2vec C Source file
 category: Natural Language Processing Labs
-tags: [tensorflow, machine learning]
+tags: [nlp, tensorflow, machine learning]
 permalink: /2017/11/15/How_To_Use_Google's_Word2Vec_C_Source_File/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
