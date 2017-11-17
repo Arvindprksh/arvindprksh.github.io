@@ -798,6 +798,8 @@ $ sudo pip3 install --upgrade tensorflow-gpu
 ```
 your installation of tensorflow-gpu is done with those commands.
 
+apart from those commands, you don't need to do anything.
+
 After those commands, check if tensorflow-gpu works well as follows:
 
 ```shell
