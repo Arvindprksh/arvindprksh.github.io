@@ -782,6 +782,31 @@ When you complete until completion of the whole processing above correctly.
 your CUDA driver works well. from now on, have a fun with TensorFlow or CUDA. 
 
 
+### Summary with commands to explain how to install tensorflow in Ubutu16.04
+
+In my case, CUDA Toolkit 8.0, cuDNNv6.0, and Python3.5
+ 
+```
+$ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+$ sudo apt update
+$ sudo apt install cuda$
+$ sudp dpkg -i cuda-repo-ubuntu1604-8-0-local-cublas-performance-update_8.0.61-1_amd64.de
+$ sudo apt upgrade cuda
+$ sudo apt-get install python3-pip python3-dev python-virtualenv 
+$ sudo dpkg -i libcudnn6_6.0.21-1+cuda8.0_amd64.deb OR sudo dpkg -i libcudnn6-dev_6.0.21-1+cuda8.0_amd64.deb
+$ sudo pip3 install --upgrade tensorflow-gpu
+```
+your installation of tensorflow-gpu is done with those commands.
+
+After those commands, check if tensorflow-gpu works well as follows:
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~/Downloads [2:10:12] 
+$ python3 -c "import tensorflow as tf; print(tf.__version__)"
+1.4.0
+```
+
+As you can see, you identify the version of tensorflow-gpu.
 
 # Reference 
  
