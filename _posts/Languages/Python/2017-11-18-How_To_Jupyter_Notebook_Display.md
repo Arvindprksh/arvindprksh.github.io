@@ -18,14 +18,13 @@ Then, I recommend you to use latex, which helps you write those signs in jupyter
 
 The basic way to use latex is **$$** as start and end mark like this 
 
->> $$c = \sqrt{a^2 + b^2}$$
+> $$c = \sqrt{a^2 + b^2}$$
 
 $$c = \sqrt{a^2 + b^2}$$
 
-```
-
 And another way is **%%** sign
 
+```
 %%latex
 \begin{align}
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
