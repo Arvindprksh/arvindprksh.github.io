@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: LatexPostByHyun
 title: How To Jupyter Notebook Display 
 subtitle: The primary target is latex. 
 category: Python
@@ -8,9 +8,6 @@ permalink: /2017/11/18/How_To_Jupyter_Notebook_Display/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
-
-{% include Mathjax.html %}
-
 
 If you use jupyter notebook. in particular with deep learing and machine learning. you need some mathematical sign to note in jupyter noteboke.
 
