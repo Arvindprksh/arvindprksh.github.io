@@ -51,15 +51,7 @@ Examples
  
 ## First, the easiest way to configure only on command line to invoke jupyter notebook remotely. 
 
-
-
 After checking output of "jupyter notebook --help", First of all you type in as follows to make password :
-
-**BUT** You must generate config file of jupyter with a command,**jupyter notebook --generate-config**
-
-then you could see the config file(**jupyter_notebook_config.py**) in /home/USERNAM/.jupyter/ 
-
-let's move on
 
 > $ jpyter notebook password
 
