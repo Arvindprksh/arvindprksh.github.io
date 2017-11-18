@@ -48,3 +48,11 @@ And another way is **%%** sign
  - [Stackoverflow](https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook)
 
  - [jupyter notebooke's an example](http://nbviewer.jupyter.org/github/ipython/ipython/blob/2.x/examples/Notebook/Display%20System.ipynb#LaTeX)
+ 
+ Appendix for MathJax:
+ 
+ - [The jekyll Extras](https://jekyllrb.com/docs/extras/)
+ 
+ - [How to use MathJax in jekyll](http://www.gastonsanchez.com/visually-enforced/opinion/2014/02/16/Mathjax-with-jekyll/ )
+ 
+ 
