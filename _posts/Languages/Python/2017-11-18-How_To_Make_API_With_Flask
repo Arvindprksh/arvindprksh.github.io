@@ -3,6 +3,31 @@
 
 
 
+I am going to try to arrange something that I've studied to make OpenAPI for my OpenSource project. 
+
+
+# [What is the API?](https://en.wikipedia.org/wiki/Application_programming_interface)
+
+ API is short for "Application programming interface." It is the same to call library when you are programming. 
+ 
+ Let's say you want to make function to copy the string from one to another place. If you are c programmer user, 
+ 
+ You are going to call **strcpy** or **strncpy** function. That is to say, API move calling function to application to do a particular functionality.
+ 
+ i.e. calling library is totally the same from saying "the programmer are using API" 
+ 
+ just depend on environment where you develope program like web, operating systems, and a certain framework.
+ 
+ If you want to know detail. go to [the wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)
+ 
+ 
+# [Open API with flask](https://prateekvjoshi.com/2016/03/08/how-to-create-a-web-server-in-python-using-flask/)
+
+
+
+
+
+
 
 
 
@@ -26,4 +51,6 @@
 
 # Reference 
  
- - [HOw To Create A web Server In python Using Flask](https://prateekvjoshi.com/2016/03/08/how-to-create-a-web-server-in-python-using-flask/)
+ - [How To Create A web Server In python Using Flask](https://prateekvjoshi.com/2016/03/08/how-to-create-a-web-server-in-python-using-flask/)
+
+ - [Application programming interface of wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)
