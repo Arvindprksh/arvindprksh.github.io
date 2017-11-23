@@ -795,6 +795,12 @@ $ sudo apt upgrade cuda
 $ sudo apt-get install python3-pip python3-dev python-virtualenv 
 $ sudo dpkg -i libcudnn6_6.0.21-1+cuda8.0_amd64.deb OR sudo dpkg -i libcudnn6-dev_6.0.21-1+cuda8.0_amd64.deb
 $ sudo pip3 install --upgrade tensorflow-gpu
+
+# Also you have to configure the path of file, "libcupti.so.8.0.". 
+# put the path of the bottom of .bashrc like this :
+# For Tensorflow
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/extras/CUPTI/lib64/${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 ```
 your installation of tensorflow-gpu is done with those commands.
 
