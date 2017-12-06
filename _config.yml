@@ -104,7 +104,8 @@ url-pretty: "hyunyoung2.com"  # eg. "deanattali.com/beautiful-jekyll"
 disqus: "hyunyoung-lee"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-92222719-1"
+# hyun02.engineer@gmail.com
+google_analytics: "UA-110805777-1"
 
 # Facebook App ID
 # fb_app_id: ""
