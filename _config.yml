@@ -27,10 +27,10 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: ""
   Study: "CloudCategories"
-  Projects: "Projects"
-  Search: "Search"
   Lecture:  
     - Machine Learning: "example-hugo-site"
+  Projects: "Projects"
+  Search: "Search"
   About Me: 
     - Time Line : "TimeLine"
     - Simple Time Line: "SimpleTimeLine"
