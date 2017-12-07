@@ -4,7 +4,9 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://hyunyoung2.github.io"
+# The baseurl make addition link
+# I mean if you enter the some reference, adding baseurl in the fron of the oringnal director python
+url: "https://hyunyoung2.github.io/"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -25,6 +27,8 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: ""
   Study: "CloudCategories"
+  Lecture:  
+    - Machine Learning: "example-hugo-site"
   Projects: "Projects"
   Search: "Search"
   About Me: 
