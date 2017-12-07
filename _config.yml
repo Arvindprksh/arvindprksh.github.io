@@ -34,7 +34,6 @@ navbar-links:
     - Simple Time Line: "SimpleTimeLine"
     - About me: "AboutMe"
     - Resume: "Resume"
-        -test: "AboutMe"
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
