@@ -27,11 +27,14 @@ navbar-links:
   Study: "CloudCategories"
   Projects: "Projects"
   Search: "Search"
+  Lecture:  
+    - Machine Learning: "example-hugo-site"
   About Me: 
     - Time Line : "TimeLine"
     - Simple Time Line: "SimpleTimeLine"
     - About me: "AboutMe"
     - Resume: "Resume"
+        -test: "AboutMe"
 
 #    - SSD(Solid-State Device): ""
 #    - Linux: ""
