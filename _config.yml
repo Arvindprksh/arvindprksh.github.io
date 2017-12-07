@@ -4,8 +4,10 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+# The baseurl make addition link
+# I mean if you enter the some reference, adding baseurl in the fron of the oringnal director python
 url: "https://hyunyoung2.github.io/"
-baseurl: "personal"
+baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
