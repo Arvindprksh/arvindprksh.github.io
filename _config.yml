@@ -28,7 +28,8 @@ navbar-links:
   Home: ""
   Study: "CloudCategories"
   Lecture:  
-    - Machine Learning: "example-hugo-site"
+    - Deep Learning: "example-hugo-site"
+    - Deep Learning: "customizing-version-hugo-example"
   Projects: "Projects"
   Search: "Search"
   About Me: 
