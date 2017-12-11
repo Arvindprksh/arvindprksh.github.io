@@ -35,7 +35,7 @@ bigimg:
   
   The follwoing is sharing button of my gitpage
   
-  ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/sharing icon.png)
+ ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/sharing icon.png)
 
   In the above code, about design, if  you have much better idea.
   
@@ -50,11 +50,11 @@ bigimg:
   
   for example. when I use a tag, after a tag, title of a list disappears in the back of navigation bar like this. 
 
-  ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/error with nav-bar.png)
+ ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/error with nav-bar.png)
   
   But after using a tag, what I want is like this. 
   
-  ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/error with nav-bar1.png)
+ ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/error with nav-bar1.png)
   
   In order to do the above thing. when I develop website first, I take a little time to fix it. 
   
