@@ -162,9 +162,9 @@ $ git push -u origin master
 
   Let's play youtube
 
-  <div id="tutorial-section">
+<div id="tutorial-section">
 
-  <div id="tutorial-title">Installling & using Themes on hugo</div>
+  <div id="tutorial-title">Installling & using Themes with hugo</div>
 
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="tab" href="#refrigerator">How to make a hugo website and put in online</a></li>
