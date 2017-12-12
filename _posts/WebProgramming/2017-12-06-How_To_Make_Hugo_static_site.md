@@ -131,7 +131,33 @@ publishDir = "docs"
   > git commit -m "generate web files"
   
   > git push origin master
+
+# To sum up 
+
+{% highlight shell linenos %}
+$ snap install hugo
+$ hugo new site "the direcotry name"
+$ cd "the directory name"
+$ git init
+$ git submodule add "theme you want" themes/"theme name"
+$ git submodule init
+$ git sumbmodule update
+$ vim config.toml  # about "theme", "themeDir", "publishDir"
+$ hugo
+$ git add --all
+$ git commit -m "first commmit"
+$ git remote add origin "git repository address"
+$ git push -u origin master
+{% endhighlight %}
   
+ after finishing the above sequence  
+ 
+ Just, pay attention to  the name of your git repository and baseURL in config.toml file.
+
+ be also careful of GitHub pages source which depends on master, master/docs or gh-pages. 
+ 
+ the easiest way to use github pages source is master or master/docs.
+
 # How To Make Hugo Static Site with theme from [https://gohugo.io](https://gohugo.io/)
 
   Let's play youtube
