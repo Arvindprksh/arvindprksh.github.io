@@ -5,6 +5,7 @@ subtitle: What is the hugo flatform for static site
 category: Web Programming
 tags: [hugo]
 permalink: /2017/12/06/How_To_Make_Hugo_static_site/
+css :  /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
 ---
