@@ -38,5 +38,22 @@ bigimg:
  
 # How To Make Hugo Static Site with theme from [https://gohugo.io](https://gohugo.io/)
 
-  Let's play youtub
+  Let's play youtube
 
+  <div id="tutorial-section">
+
+  <div id="tutorial-title">Installling & using Themes</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#refrigerator">Project video</a></li>
+    <li><a data-toggle="tab" href="#refrigerator_concept">Installing & Using Themes</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="refrigerator" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgth5cEyfYA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="refrigerator_concept" class="tab-pane fade">
+      <iframe width="560" height="315" src="https://youtu.be/L34JL_3Jkyc" frameborder="0" allowfullscreen></iframe> </div>
+  </div>
+</div>
