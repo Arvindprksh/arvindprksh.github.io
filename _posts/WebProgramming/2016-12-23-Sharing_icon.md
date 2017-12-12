@@ -42,7 +42,22 @@ bigimg:
   please let me know about what you know. 
   
   I will appreciate seriously. 
+  
+## [AddThis Tools](http://www.addthis.com/)
 
+  As you can see code above, you can make sharing icon, but it take so long when you make a bunch of sharing icons.
+  
+  So now I introduce some tool, Addthis tool is called.
+  
+  After you sign up this site, and then you will get some code to generate sharing icon like this figure :
+  
+  ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/addthis.png)
+  
+  ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/addthis2.png)
+  
+  
+  As you can see above, you attach sharing icons onto side and bottom. 
+ 
 
 ## Error with nav-custom bar. 
 
@@ -80,3 +95,4 @@ bigimg:
 
   - [css padding](http://www.w3schools.com/css/css_padding.asp)
   
+  - [AddThis](http://www.addthis.com/)
