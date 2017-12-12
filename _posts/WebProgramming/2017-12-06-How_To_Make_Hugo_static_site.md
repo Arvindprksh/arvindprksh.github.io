@@ -174,10 +174,11 @@ $ git push -u origin master
 
   <div class="tab-content">
     <div id="refrigerator" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://youtu.be/3wkR8GyDODs" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3wkR8GyDODs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
     <div id="refrigerator_concept" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://youtu.be/L34JL_3Jkyc" frameborder="0" allowfullscreen></iframe> </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0GZxidrlaRM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
