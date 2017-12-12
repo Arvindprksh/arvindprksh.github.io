@@ -55,7 +55,6 @@ bigimg:
   
   ![](/img/Image/WebProgramming/2016-12-23-Sharing_icon/addthis2.png)
   
-  
   As you can see above, you attach sharing icons onto side and bottom. 
  
 
