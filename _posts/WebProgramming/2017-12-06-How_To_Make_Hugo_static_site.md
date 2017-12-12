@@ -34,11 +34,11 @@ bigimg:
   
   In your directory you named what you want for hugo website, if you type ls. 
   
-  {% highlight shell linenos %}
-  # hyunyoung2 @ hyunyoung2-desktop in ~/Practice_Project/sample-hugo-site [18:25:11] 
-  $ ls -a  
-  .  ..  archetypes  config.toml  content  data  layouts  static  themes 
-  {% endhighlight %}
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~/Practice_Project/sample-hugo-site [18:25:11] 
+$ ls -a  
+.  ..  archetypes  config.toml  content  data  layouts  static  themes 
+{% endhighlight %}
   
   as you can see above, there are some folders you need when you generate hugo website. 
   
@@ -62,10 +62,10 @@ bigimg:
   
   In my case
   
-  {% highlight shell linenos %}
-  # hyunyoung2 @ hyunyoung2-desktop in ~ [18:37:44] 
-  $ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/dockdock   
-  {% endhighlight %}
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~ [18:37:44] 
+$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/dockdock   
+{% endhighlight %}
   
   And then, If you want the latest version of the theme you download, 
   
@@ -75,14 +75,14 @@ bigimg:
   
   finally, you have to change the **config.toml** file like this :
   
-  {% highlight shell linenos %}
-  baseURL = "http://example.org/"
-  languageCode = "en-us"
-  title = "My New Hugo Site"
+{% highlight shell linenos %}
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
 
-  theme = "dockdock; the name of the directory you downloaded in themes directory"
-  themeDir = "themes; the themes directory name"
-  {% endhighlight %}
+theme = "dockdock; the name of the directory you downloaded in themes directory"
+themeDir = "themes; the themes directory name"
+{% endhighlight %}
  
   Now, you can see hugo website of the themes you adopted. 
   
@@ -106,16 +106,16 @@ bigimg:
   
   on my case, I used doc directory of master branch to render website on github 
   
-  {% highlight shell linenos %}
-  baseURL = "youre github website address like https://your repository name.github.io"
-  languageCode = "en-us"
-  title = "My New Hugo Site"
+{% highlight shell linenos %}
+baseURL = "youre github website address like https://your repository name.github.io"
+languageCode = "en-us"
+title = "My New Hugo Site"
 
-  theme = "dockdock; the name of the directory you downloaded in themes directory"
-  themeDir = "themes; the themes directory name"
+theme = "dockdock; the name of the directory you downloaded in themes directory"
+themeDir = "themes; the themes directory name"
   
-  publishDir = "docs"
-  {% endhighlight %}
+publishDir = "docs"
+{% endhighlight %}
   
   I mean you have to add a line on config.toml,**publishDir= "docs"**  
   
