@@ -145,31 +145,9 @@ if __name__=='__main__':
 
 ![](/img/Image/Languages/Python/2017-11-18-How_To_Make_API_With_Flask/sample_of_flask_final.png)
 
+ Also keep in mide, if you don't know decorator like @app.route('/'), one thing is important in this example. 
  
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ "/sample" must be the same from function name below @app.route("/sample")
 
 # Reference 
  
