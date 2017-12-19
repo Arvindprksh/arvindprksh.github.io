@@ -29,10 +29,10 @@ navbar-links:
   Study: "CloudCategories"
   Lecture:  
     - documentPage: "example-hugo-site"
-    - CustomDocumentPag: "customizing-version-hugo-example"
+    - CustomDocumentPage: "customizing-version-hugo-example"
     - Deep Learning: "my-note-for-cs224n-stanford"
     - Deep Learning: "my-note-for-cs231n-stanford"
-    - Parallel Programming: "my-note-for-parallel-programming-at-Udacity"
+    - Parallel: "my-note-for-parallel-programming-at-Udacity"
   Projects: "Projects"
   Search: "Search"
   About Me: 
