@@ -31,6 +31,7 @@ navbar-links:
     - documentPage: "example-hugo-site"
     - Deep Learning: "example-hugo-site"
     - Deep Learning: "customizing-version-hugo-example"
+    - Parallel Programming: "my-note-for-parallel-programming-at-Udacity"
   Projects: "Projects"
   Search: "Search"
   About Me: 
