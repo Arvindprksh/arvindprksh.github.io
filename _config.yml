@@ -28,8 +28,8 @@ navbar-links:
   Home: ""
   Study: "CloudCategories"
   Lecture:  
-    - documentPage: "example-hugo-site"
-    - CustomDocumentPage: "customizing-version-hugo-example"
+    - DocsPage: "example-hugo-site"
+    - CustomizingDocs: "customizing-version-hugo-example"
     - Deep Learning: "my-note-for-cs224n-stanford"
     - Deep Learning: "my-note-for-cs231n-stanford"
     - Parallel: "my-note-for-parallel-programming-at-Udacity"
