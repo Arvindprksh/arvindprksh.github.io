@@ -29,7 +29,7 @@ A **tf.Tensor** has two properties :
        
 There are some types of tensor :
 
-    tf.Variable,  tf.Constant, tf.Placeholder, tf.SparseTensor.
+   - tf.Variable,  tf.Constant, tf.Placeholder, tf.SparseTensor.
     
 In the **key point**, with exceptoin of **tf.Variable**, **The value of a tensor is immutable**, which means that in the context of a single execution tensors only have a single value.
 
