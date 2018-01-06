@@ -15,9 +15,9 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_Machine_Learning/master/Tutorial/Tensorflow/01.BasicTensorflow/01.Tensor.ipynb)
+![](https://nbviewer.jupyter.org/github/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/01.Tensor.ipynb)
 
-# What is the tensor
+# What is the tensor?
 
 When you do programming of tensorflow, _Tensor is everything_. I mean the programming of Tensorflow is building a graph that freely transport tensors. Tensor in Tensorflow is a **generalization of vectos and matrices**. it potentially contains higher dimensions. Internally, Tensorflow representas tensors as n-dimension arrays of base datatype(**string, int32, float32 and so on**). 
 
