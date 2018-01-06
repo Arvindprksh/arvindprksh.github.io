@@ -87,7 +87,7 @@ If you don't specify datatye of python object, when you create a **tf.tensor**, 
    - Python's Floating point numbers ---> tf.float32
    
 
-If you want to check an executed example code above, visit [01.tensor.html](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/01.Tensor.ipynb)   
+If you want to check an executed example code above, visit [01.tensor of hyunyoung2 git repository](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/01.Tensor.ipynb)   
       
 # Reference
 
