@@ -3,7 +3,7 @@ layout: post
 title: How to do multi-booting CentOS 7 on Windows 10 
 category: Natural Language Processing Labs
 tags: [multibooting]
-permalink: /2017/03/20/How_to_booting_CentOS_7_on_windows_10
+permalink: /2017/03/20/How_to_booting_CentOS_7_on_windows_10/
 big-image:
    - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
 ---
