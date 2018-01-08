@@ -98,3 +98,5 @@ If you want to check an executed example code above, visit [01.tensor of hyunyou
    - [Tensors section of Programmer's guide of Tensorflow](https://www.tensorflow.org/programmers_guide/tensors)
    
    - [Variables section of Programmer's guide of Tensorflow](https://www.tensorflow.org/programmers_guide/variables)
+   
+   - [Tensor Ranks, Shapes, and Types](https://www.tensorflow.org/versions/r0.12/resources/dims_types)
