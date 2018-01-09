@@ -26,7 +26,7 @@ Tensorflow programs are usually structured into a construction phase that assemb
 the two phase existing together look like:
 
 <p align="center">
-<img scr="https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_Machine_Learning/master/Tutorial/Tensorflow/01.BasicTensorflow/images/04.Graph_and_Session/tensors_flowing.gif">
+                  ![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_Machine_Learning/master/Tutorial/Tensorflow/01.BasicTensorflow/images/04.Graph_and_Session/tensors_flowing.gif)
 </p>
 
 on the above figure. each nodes represent **tf.Operation** and each edges represent **tf.Tensor**. Tensorflow API function construct new tf.Operation(node) and tf.Tensor(edge) objects and add them to a tf.Graph, such as a default graph. i.e. Tensorflow provides a default graph that is an implicit argument to all API functions in the same contexts. 
