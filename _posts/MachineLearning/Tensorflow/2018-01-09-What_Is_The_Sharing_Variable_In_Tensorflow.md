@@ -292,16 +292,6 @@ with tf.Session() as sess:
         print("=== checking Variables in a session ===")
         print(_, "result1_:", result1_)
 ```
-
-# the additional property of tf.get_variable()
-
-As you have read this article. Note that you cannot set the reuse option flag to **False** explicitly. 
-
-  - you can go back and forth, i.e. you can enter a resuing variable scope and then exit it to go to a non-reusig variable scope one. So the reuse parameter is inherited into all sub scope. also the scope of variable can inherit initializer.
-  
-  - Capturing Variable scope not depending on the exact name of scope. 
-  
-  - tf.get_variable shares the name of scope with other op(operations)
   
 # the additional property of tf.get_variable()
 
