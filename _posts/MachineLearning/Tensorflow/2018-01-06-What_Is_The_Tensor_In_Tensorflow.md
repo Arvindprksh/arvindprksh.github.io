@@ -4,7 +4,7 @@ title: What it the tensor in Tensorflow?
 subtitle: Tutorial I wrote in my repository, 01.Tensor.
 category: Tensorflow
 tags: [tensorflow]
-permalink: /2018/01/06/What_Is_The_Tensor/
+permalink: /2018/01/06/What_Is_The_Tensor_In_Tensorflow/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
