@@ -473,7 +473,7 @@ two case of using **tf.get_variable()** is:
   
   If you want to check an executed example code above, visit [03.sharing variable](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/03.Sharing_Variable.ipynb) of hyunyoung2 git repository
   
- # Reference 
+# Reference 
 
   - [Variable sharing section of Tensorflow Programmer's guide_r1.4](https://www.tensorflow.org/programmers_guide/variables#sharing_variables)
   
