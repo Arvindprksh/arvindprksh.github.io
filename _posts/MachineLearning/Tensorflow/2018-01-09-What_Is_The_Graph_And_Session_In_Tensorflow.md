@@ -15,6 +15,8 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
+<!-- from https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/04.Graph_and_Session.ipynb -->
+
 # What is the graph in Tensorflow?
 
 Tensorflow is a graph of computation. it is comprised of **nodes(tf.Operation)** and **edge(tf.Tensor)** as a graph. When you call API of Tensorflow, each function of API is regarded as **a node(tf.operation)** in a graph. and each function return a tensor. i.e. tensor is the return value of each API. So each tensor move between **nodes(tf.Operation)**.
@@ -127,6 +129,8 @@ with tf.Session() as sess:
 ```
 
 And then, launch a directory path of **tf.summary.FileWriter** with tensorboard --logdir=**path of log directory**.
+
+If you want to check an executed example code above, visit [04.Graph and Session](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/01.BasicTensorflow/04.Graph_and_Session.ipynb) of hyunyoung2 git repository
 
 # Reference
 
