@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What it the sharing variable in Tensorflow?
-subtitle: Tutorial I wrote in my repository, 02. Variable.
+subtitle: Tutorial I wrote in my repository, 03. Sharing_Variable.
 category: Tensorflow
 tags: [tensorflow]
 permalink: /2018/01/09/What_Is_The_Sharing_Variable_In_Tensorflow/
