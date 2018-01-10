@@ -90,8 +90,6 @@ print(sub.eval())
 sess.close()
 ```
 
-If you want to check an executed example code above, visit [05.Getting_Started](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/tree/master/Tutorial/Tensorflow/01.BasicTensorflow) of hyunyoung2 git repository
-
 # Summary 
 
 running a session is two ways, one is Interactive Session, the other one is not Interactive Session. i.e. after drawing a graph of computation. it is runing a session with a graph you want to execute. When you make a model with tensorflow, I strongly recommend you to use the latter one.
@@ -139,6 +137,9 @@ with tf.Session() as sess:
     
     writer.close()
 ```
+
+
+If you want to check an executed example code above, visit [05.Getting_Started](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/tree/master/Tutorial/Tensorflow/01.BasicTensorflow) of hyunyoung2 git repository
 
 # Reference 
 
