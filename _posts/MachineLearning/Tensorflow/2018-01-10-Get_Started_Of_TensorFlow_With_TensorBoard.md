@@ -94,6 +94,24 @@ sess.close()
 
 running a session is two ways, one is Interactive Session, the other one is not Interactive Session. i.e. after drawing a graph of computation. it is runing a session with a graph you want to execute. When you make a model with tensorflow, I strongly recommend you to use the latter one.
 
+```python
+input1 = tf.constant([3.0])
+input2 = tf.constant([2.0])
+input3 = tf.constant([5.0])
+intermed = tf.add(input2, input3)
+mul = tf.mul(input1, intermed)
+
+with tf.Session() as sess:
+  result = sess.run([mul, intermed])
+  print(result)
+
+# output:
+# [array([ 21.], dtype=float32), array([ 7.], dtype=float32)]
+
+```
+
+All the ops needed to produce the values of the requested tensors are run once (not once per requested tensor)
+
 Finally, I add an example about using gradient descent algorithm. 
 
 ```python
