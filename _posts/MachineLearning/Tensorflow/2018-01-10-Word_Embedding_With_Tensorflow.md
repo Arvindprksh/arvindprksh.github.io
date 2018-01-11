@@ -56,7 +56,8 @@ The variable of **word_embeddings** is a array that is comprised of **total voca
  - a sentence(a document) : I have a cat. 
  - The total size of vocabularies : 5(I, have, a, cat, .)
  - The size of embedding : whatever size you want, 300-dimensional for each words that normally used.
- 
+
+
 In detail, Let's walk through the function of **tf.nn.embedding_lookup**.
 
 ```python
@@ -122,29 +123,42 @@ import os
 import tensorflow as tf
 
 LOG_DIR = os.path.join(os.getcwd(),"log/")
+EMBEDDING_SIZE = 3
+VOCA_SIZE = 3
 
 print("the current working directory:", LOG_DIR, "\n")
 
 # word vector of embedding. 
-embedding_temp = tf.Variable([[0.1,0.2],[0.5,0.5]], dtype=tf.float32, name="test_embedding-no-label")
+embedding_input = tf.Variable([[0.1,0.2, 0.2],[0.5, 0.5, 0.5],[0.3,0.3,0.3]], dtype=tf.float32, name="input_embedding-no-label")
 
-# To initilize the variable. 
-init = tf.global_variables_initializer()
+# For input of Tensorboard Projector
+embeddings = tf.Variable(tf.zeros([VOCA_SIZE, EMBEDDING_SIZE], name="embedding_intial_tensor"), name="real_Embedding")
+assignment = embeddings.assign(embedding_input)
 
 # To add ops to save and restore all the variable
 # When you want to make it
 saver = tf.train.Saver()
 
+# To initilize the variable. 
+global_init_op = tf.global_variables_initializer()
+
 with tf.Session() as sess:
+    writer = tf.summary.FileWriter(LOG_DIR, sess.graph)
+    # To initialize all the variable in the default graph
+    sess.run(global_init_op)
     
-    sess.run(init)
+    # print embedding_input
+    embedding_input_, embeddings_ = sess.run([embedding_input, embeddings])
+    print("embedding_ipnut:\n", embedding_input_)
+    print("embeddings:\n", embeddings_)
+    assignment_, embeddings2_ = sess.run([assignment, embeddings])
+    print("assignment:\n", assignment_)
+    print("embeddings2:\n", embeddings2_)
     
-    # print embedding_temp
-    embedding_temp_ = sess.run(embedding_temp)
-    print(embedding_temp_)
+    save_path1 = saver.save(sess, os.path.join(LOG_DIR, "test_embedding_model.ckpt"), global_step=0)
+    print("\nModel Saved in file: %s" % save_path1)
     
-    save_path = saver.save(sess, os.path.join(LOG_DIR, "test_embedding_model.ckpt"), global_step=0)
-    print("\nModel Saved in file: %s" % save_path)
+    writer.close()
 ```
 
 In here, you have to save checkpoint file to save all the variables on your model. if you completely save checkpoint file, move to directory you saved checkpoint file to. 
@@ -168,6 +182,8 @@ import os
 import tensorflow as tf
 
 LOG_DIR = os.path.join(os.getcwd(),"log/")
+EMBEDDING_SIZE = 3
+VOCA_SIZE = 3
 
 print("the current working directory:", LOG_DIR, "\n")
 
@@ -175,8 +191,8 @@ LABEL_FILE = os.path.join(os.getcwd(), "log/lables.tsv")
 
 print("the current LABEL_FILE:", LABEL_FILE, "\n")
 
-LABEL_NUM = 2
-LABEL = ["NLP", "Deep Learning"]
+LABEL_NUM = 3
+LABEL = ["NLP", "Deep Learning", "test"]
 
 # Write label file 
 with open(LABEL_FILE,"w") as f:
@@ -184,8 +200,12 @@ with open(LABEL_FILE,"w") as f:
         f.write(LABEL[i]+"\n")
     print("labels.tsv file Created!\n")
 
-# word vector variable to embedding. 
-embedding_temp = tf.Variable([[0.1,0.2],[0.5,0.5]], dtype=tf.float32, name="test_embedding")
+# word vector of embedding. 
+embedding_input = tf.Variable([[0.1,0.2, 0.2],[0.5, 0.5, 0.5],[0.3,0.3,0.3]], dtype=tf.float32, name="input_embedding-no-label")
+
+# For input of Tensorboard Projector
+embeddings = tf.Variable(tf.zeros([VOCA_SIZE,EMBEDDING_SIZE], name="embedding_intial_tensor"), name="real_Embedding")
+assignment = embeddings.assign(embedding_input)                       
 
 # To initilize the variable. 
 init = tf.global_variables_initializer()
@@ -198,15 +218,19 @@ with tf.Session() as sess:
     
     sess.run(init)
     
-    # print embedding_temp
-    embedding_temp_ = sess.run(embedding_temp)
-    print(embedding_temp_)
+    # print embedding_input
+    embedding_input_, embeddings_ = sess.run([embedding_input, embeddings])
+    print("embedding_ipnut:\n", embedding_input_)
+    print("embeddings:\n", embeddings_)
+    assignment_, embeddings2_ = sess.run([assignment, embeddings])
+    print("assignment:\n", assignment_)
+    print("embeddings2:\n", embeddings2_)
     
     # Format: tensorflow/contrib/tensorboard/plugins/projector/projector_config.proto
     config = tf.contrib.tensorboard.plugins.projector.ProjectorConfig()
     # You can add multiple embeddings. Here we add only one.
     embedding_config = config.embeddings.add()
-    embedding_config.tensor_name = embedding_temp.name
+    embedding_config.tensor_name = embeddings.name
     # Link this tensor to its metadata file (e.g. labels).
     embedding_config.metadata_path = LABEL_FILE
     
@@ -218,8 +242,8 @@ with tf.Session() as sess:
     tf.contrib.tensorboard.plugins.projector.visualize_embeddings(summary_writer, config)
     
     
-    save_path = saver.save(sess, os.path.join(LOG_DIR, "test_embedding_model.ckpt"), global_step=1)
-    print("\nModel Saved in file: %s" % save_path)
+    save_path1 = saver.save(sess, os.path.join(LOG_DIR, "test_embedding_model.ckpt"), global_step=1)
+    print("\nModel Saved in file: %s" % save_path1)
 ```
 
 The different one from the former one is **tf.contrib.tensorboard.plugins.projector.ProjectorConfig()**.
@@ -236,13 +260,56 @@ Deep Lerning\n
 ![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_Machine_Learning/master/Tutorial/Tensorflow/03.Word2Vec/images/01.Word_Embedding/Word_Embedding_With_label_on_tensorboard.png)
 
 
-In order to use Tensorboard projector, First you need variable to represent embedding data like **embedding_temp** on the above codes. And then just save checkpoint file to save all the variable of your model. 
+In order to use Tensorboard's embedding projector, First you need variable to represent embedding data like **embedding_temp** on the above codes. And then just save checkpoint file to save all the variable of your model. 
 
 It  is all what you have to do for projector of embeddin onto Tensorboard. 
 
 If you save checkpoint file, run the following:
 
 > tensorboard --logdir=the-path-you-saved-checkpoint-file-to
+
+# To sum up 
+
+To visualize your embeddings, there are 3 things your need to do:
+
+1) Set up a 2-D tensor variable(s) that holds your embedding(s):
+
+> embedding_var = tf.Variable(vocab_size, embedding_dimension)
+
+2) Periodically save your embeddings in a LOG_DIR which is you want to save for checkpoint file.
+
+> saver = tf.train.Saver()  
+> saver.save(session, op.path.join(LOG_DIR, "model.ckpt"), step)
+
+The following step is now required , however if you have any metadata(labels, images) associated with your embedding, you need to link them to the tensor so TensorBoard knows about it.
+
+3) Associated metadata with your embedding. 
+
+```python
+from tensorflow.contrib.tensorboard.plugins import projector
+# Use the same LOG_DIR where you stored your checkpoint.
+summary_writer = tf.train.SummaryWriter(LOG_DIR)
+
+# Format: tensorflow/contrib/tensorboard/plugins/projector/projector_config.proto
+config = projector.ProjectorConfig()
+
+# You can add multiple embeddings. Here we add only one.
+embedding = config.embeddings.add()
+embedding.tensor_name = embedding_var.name
+# Link this tensor to its metadata file (e.g. labels).
+embedding.metadata_path = os.path.join(LOG_DIR, 'metadata.tsv')
+
+# Saves a configuration file that TensorBoard will read during startup.
+projector.visualize_embeddings(summary_writer, config)
+```
+
+You don't need to write this Python code in your model, if you have metadata file(TSV.file), just on Tensorboard Embedding projector, load the metadata like this:
+
+![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_Machine_Learning/master/Tutorial/Tensorflow/03.Word2Vec/images/01.Word_Embedding/Word_Embedding_With_Loading_metadata_file.png)
+
+If you are done with 3 processes above, at leat 2 processes except for metadata. After running your model and training your embeddings, run TensorBoard and point it to the **LOG_DIR** of the job
+
+> tensorboard --logdir=LOG_DIR
 
 If you want to check an executed example code above, visit [01.Word_Embedding](https://github.com/hyunyoung2/hyunyoung2_Machine_Learning/blob/master/Tutorial/Tensorflow/03.Word2Vec/01.Word_Embedding.ipynb) of hyunyoung2 git repository
 
