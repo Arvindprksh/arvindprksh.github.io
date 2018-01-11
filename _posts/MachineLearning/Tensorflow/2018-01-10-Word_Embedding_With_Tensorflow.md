@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is the word embedding in Tensorflow with Tensorboard projector
+title: What is the word embedding in Tensorflow with Tensorboard's Embedding projector
 subtitle: Tutorial I wrote in my repository, 01. Word_Embedding.
 category: Tensorflow
 tags: [tensorflow]
