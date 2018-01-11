@@ -283,7 +283,20 @@ To visualize your embeddings, there are 3 things your need to do:
 
 The following step is now required , however if you have any metadata(labels, images) associated with your embedding, you need to link them to the tensor so TensorBoard knows about it.
 
-3) Associated metadata with your embedding. 
+3) (Optional )Associated metadata with your embedding. 
+
+If you have any **metadata (labels, images)** associated with your embedding, you can tell TensorBoard about it either by directly storing a **projector_config.pbtxt** in **the LOG_DIR**, or use our python API.
+
+For instance, the following **projector_config.ptxt** associates the word_embedding tensor with metadata stored in $LOG_DIR/metadata.tsv:  
+
+
+> embeddings {  
+>   tensor_name: 'word_embedding'  
+>   metadata_path: '$LOG_DIR/metadata.tsv'  
+> }  
+
+
+The same config can be produced programmatically using the following code snippet:
 
 ```python
 from tensorflow.contrib.tensorboard.plugins import projector
@@ -318,6 +331,8 @@ If you want to check an executed example code above, visit [01.Word_Embedding](h
    - [Tensorflow's Embeddings](https://www.tensorflow.org/programmers_guide/embedding)   
 
    - [Tensorflow's how to use Tensorboard for Embedding r1.0](https://www.tensorflow.org/versions/r1.0/get_started/embedding_viz)
+      
+   - [Tensorboard's Embedding Visualization](https://www.tensorflow.org/versions/r1.1/get_started/embedding_viz)   
       
    - [Tensorflow's API of tf.nn.embedding_lookup](https://www.tensorflow.org/api_docs/python/tf/nn/embedding_lookup)  
 
