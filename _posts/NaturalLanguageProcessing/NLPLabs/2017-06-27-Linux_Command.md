@@ -145,11 +145,11 @@ As you can read the above summary, It's simple to convert encoding.
 
 ## [How to Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
 
-Let's see the AWK command, this command is a powerful method for porcessing or analyzing text files-in particular, data files that are orgarnized by lines(rowss) and columns.
+Let's see the AWK command, this command is a powerful method for porcessing or analyzing text files, In particular, like data files that are orgarnized by lines(rows) and columns.
 
 > awk 'pattern {action}' input-file > output-file
 
-This means that each line of the output file; if the line contains the pattern apply the action to the line and write the resulting line to the output-file.
+This means that each line of the output file; if the line contains the pattern and awk apply the action to the line and write the resulting line to the output-file.
 
 Let's think some sample.
 
@@ -189,8 +189,101 @@ BUT, keep in mind of one based, I mean first column is $1, the second one is $2 
 373,
 ```
 
+## [How To Use SED Command](http://endic.naver.com/search.nhn?sLn=en&searchOption=all&query=repetition)
 
+let's see Sed command in Linux/Unix with examples.
 
+SED command in UNIX stands for stream editor and it can perform  a lot of function on file like searching, finde and replace,  insertion or deletion. Though most common use of SED command in UNIX is for substitution for for find and replace. By using SED command, you can edit files even without opening it, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it. 
+
+To sum up:
+
+  - SED is a powerful text stream editor. Can do insertion, deletion, search and replace 
+   
+  - SED command in unix supports regular expression which allows it perform comlex pattern matching.
+  
+**Syntax**
+
+```
+sed OPTION... [SCRIPT] [INPUTFILE...]
+```
+
+Let's set up test file like this: 
+
+```shell# hyunyoung2 @ hyunyoung2-desktop in ~ [19:27:11] 
+$ cat geekfile.txt 
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+```
+
+First example 
+
+> $ sed "s/unix/linux/' geekfile.txt
+
+Output : 
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~ [19:27:18] 
+$ sed "s/unix/linux/" geekfile.txt 
+linux is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+```
+
+Here the "s" specifies the substitution operation. The "/" is delimiter. so sed command replaces "unix" with "linux".
+
+But, By default, sed command replaces the first occurence of the pattern in each line and it won't replace the second, third.. occurence in the line.
+
+To raplace nth occurence of a pattern in a line. use /1 or /2 flag like this:
+
+> $ sed "s/unix/linux/2" geekfile.txt
+
+Output:
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~ [19:29:14] 
+$ sed "s/unix/linux/2" geekfile.txt
+unix is great os. linux is opensource. unix is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
+```
+
+If you want all occurence to be substituted. use "g"(global replacement) flag and then sed command will replace all the occurences of the string in the line.
+
+Or If you wan to see korean ver, visit [here](https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x12718.html)
+
+## [How To Use TR Command](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
+
+This command is so easy to tranlate the input into output. 
+
+Let' see an example of how we use tr command in linux/unix.
+
+As you already noticed what the tr means, tr stands for translate. 
+
+**Syntax**
+
+The syntax of tr command is: 
+
+> $ tr [OPTOIN] [SET1] [SET2]
+
+If both the SET1 and SET2 are specified and "-d" OPTION is not specified, then tr command will replace each characters in SET1 with each character in same poistion in SET2. 
+
+Let's see so easy sample. 
+
+```shell
+ # hyunyoung2 @ hyunyoung2-desktop in ~ [18:22:04] 
+$ tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ        
+thegeekstuff
+THEGEEKSTUFF
+``` 
+Another an example of joning all the line in a file into a single line
+
+```shell
+$ tr -s '\n' ' ' < file.txt
+```
 
 # Reference 
 
@@ -210,4 +303,14 @@ BUT, keep in mind of one based, I mean first column is $1, the second one is $2 
  
  - [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
- - [How to Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
+ - [How To Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
+
+ - [How To Use SED Command](http://endic.naver.com/search.nhn?sLn=en&searchOption=all&query=repetition)
+ 
+ - [How To Use SED Command2](http://conqueringthecommandline.com/book/sed)
+ 
+ - [How To Use TR Command](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
+ 
+ - [How To Use TR Command2](https://www.computerhope.com/unix/utr.htm)
+ 
+ - [How To practice Regular Expression](https://regexr.com/)
