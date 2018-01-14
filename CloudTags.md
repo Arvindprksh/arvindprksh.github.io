@@ -19,10 +19,11 @@ bigimg:
 
 <!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <div class="list-filters post-preview">
-  <a href="/" class="list-filter">All posts</a>
+  <a href="/" class="list-filter filter-selected">All posts</a>
   <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
-  <a href="/CloudTags" class="list-filter filter-selected">Tags Cloud</a>
+  <a href="/CloudTags" class="list-filter">Tags Cloud</a>
   <a href="/CloudDate" class="list-filter">List by Date</a>
+  <a href="/CloudPaperIStudied" class="list-filter">Papers that I studied</a>
 </div>
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html-->
