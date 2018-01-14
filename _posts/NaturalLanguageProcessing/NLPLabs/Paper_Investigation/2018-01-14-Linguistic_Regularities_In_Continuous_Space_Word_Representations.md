@@ -5,7 +5,6 @@ subtitle: Title of paper - Linguistic Regularities in Continuous Space Word Repr
 category: NLP papers
 tags: [nlp, word2vec, svm]
 permalink: /2018/01/14/Linguistic_Regularities_In_Continuous_Space_Word_Representations/
-css : /css/ForPDFShareByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
