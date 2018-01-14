@@ -20,11 +20,13 @@ bigimg:
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
 
+
 <div class="list-filters post-preview">
-  <a href="/" class="list-filter">All posts</a>
+  <a href="/" class="list-filter filter-selected">All posts</a>
   <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
   <a href="/CloudTags" class="list-filter">Tags Cloud</a>
-  <a href="/CloudDate" class="list-filter filter-selected">List by Date</a>
+  <a href="/CloudDate" class="list-filter">List by Date</a>
+  <a href="/CloudPaperIStudied" class="list-filter">Papers that I studied</a>
 </div>
 
 <div class="post-preview">
