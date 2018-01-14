@@ -69,3 +69,9 @@ That is [StackEdit site](https://stackedit.io/), this site explain to you almost
  [syntax highliting of rouge](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers)
 
  [syntax hilighting IDs of github](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-%28GFM%29-language-IDs)
+ 
+ Usefule site for markdown.
+
+ [Markdown Syntax Guide](https://sourceforge.net/p/acydmods/wiki/markdown_syntax/#md_ex_toc1)
+ 
+ [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
