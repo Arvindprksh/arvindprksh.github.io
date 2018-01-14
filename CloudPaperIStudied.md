@@ -31,7 +31,7 @@ bigimg:
 
 <!-- this code from https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html-->
   <div class="blog-tags"> 
-    {% assign tags = site.papers | sort %}
+    {% assign tags = site.labels | sort %}
     {% for tag in tags %}
     <a href="#{{ tag[0] | slugify }}" class="btn btn-default" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"> <!-- style="color: #1C1C1C;" is font color of cloud index -->
       <span class="fa fa-folder-open" aria-hidden="true" style="color: #1C1C1C;"> <!-- I get rid of left option -->
