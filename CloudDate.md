@@ -22,10 +22,10 @@ bigimg:
 
 
 <div class="list-filters post-preview">
-  <a href="/" class="list-filter filter-selected">All posts</a>
+  <a href="/" class="list-filter">All posts</a>
   <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
   <a href="/CloudTags" class="list-filter">Tags Cloud</a>
-  <a href="/CloudDate" class="list-filter">List by Date</a>
+  <a href="/CloudDate" class="list-filter filter-selected">List by Date</a>
   <a href="/CloudPaperIStudied" class="list-filter">Papers Cloud</a>
 </div>
 
