@@ -3,7 +3,7 @@ layout: post
 title: Python API with Flask Framework
 subtitle: How to make API with flask framework
 category: Python
-tags: [python, flask, tutorial]
+tags: [python, flask]
 permalink: /2017/12/13/Some_Example_For_APl_With_Flask_Framework/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
