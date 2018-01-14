@@ -19,7 +19,10 @@ baseurl: ""
 title: hyunyoung2
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: About What I have gotten when I study Computer Science
+
+# For CloudPaperIStudied page
+papers:
 
 # --- Navigation bar options --- #
 
@@ -117,9 +120,6 @@ google_analytics: "UA-110793901-2"
 
 # Facebook App ID
 # fb_app_id: ""
-
-# For CloudPaperIStudied page
-papers:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
