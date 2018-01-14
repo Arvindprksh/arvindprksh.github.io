@@ -20,7 +20,7 @@ bigimg:
 <!-- This code from another person of https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/blog/archivebydate-->
 <!-- for index of date, this code comes from https://github.com/digitaldrummerj/digitaldrummerj.github.io/blob/master/_includes/_sidebar.html-->
 
-
+<!-- this code si from https://github.com/daattali/daattali.github.io/blob/master/index.html --> 
 <div class="list-filters post-preview">
   <a href="/" class="list-filter">All posts</a>
   <a href="/CloudCategories" class="list-filter">Catergories Cloud</a>
