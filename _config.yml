@@ -118,8 +118,8 @@ google_analytics: "UA-110793901-2"
 # Facebook App ID
 # fb_app_id: ""
 
-# For CloudPaperIStudied.
-papers: ""
+# For CloudPaperIStudied page
+papers:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
