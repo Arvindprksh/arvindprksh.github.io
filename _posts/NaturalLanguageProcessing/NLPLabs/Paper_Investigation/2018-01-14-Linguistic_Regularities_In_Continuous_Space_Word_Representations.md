@@ -37,6 +37,7 @@ Using vector offsets, this paper tested the relationship of words vector to chec
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
 
+
 So when they created verification set of words relationship. they used tagged 276M words of newspaper text with PennTreebank POS tags. and they selected 100 of the most frequent comparatives adjectives, (words labeled JJR); 100 of the most frequent plural nouns (NNS); 100 of the most frequent possessive nouns(NN_POS); and 100 of the most frequent base form verbs(VB)
 
 With 100 words from each set of the above thing, they then systematically generated analogy quesions by randomly matching each of the 100 words with 5 other words from the same category, and creating variants as indicated in the above figure, Table 1. 
