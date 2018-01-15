@@ -19,8 +19,8 @@ bigimg:
 
 
 
-<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Attachment: </b>   
-<iframe src="https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/_posts/NaturalLanguageProcessing/Papers/Word2Vec/Linguistic_Regularities_in_Continuous_Space_Word_Representations.pdf">The paper: Linguistic  Regularities in Continous Space Word Representations</iframe>
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Attachment: </b><br>   
+[The paper: Linguistic  Regularities in Continous Space Word Representations](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hyunyoung2/hyunyoung2.github.io/blob/master/_posts/NaturalLanguageProcessing/Papers/Word2Vec/Linguistic_Regularities_in_Continuous_Space_Word_Representations.pdf)
 </div>
 
 # Reference 
