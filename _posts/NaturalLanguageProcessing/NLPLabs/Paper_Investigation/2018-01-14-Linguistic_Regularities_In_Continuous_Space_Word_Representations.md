@@ -19,8 +19,8 @@ bigimg:
 
 
 
-<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Attachment: </b><br>   
-[The paper: Linguistic  Regularities in Continous Space Word Representations](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hyunyoung2/hyunyoung2.github.io/blob/master/_posts/NaturalLanguageProcessing/Papers/Word2Vec/Linguistic_Regularities_in_Continuous_Space_Word_Representations.pdf)
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations</a>
 </div>
 
 # Reference 
