@@ -17,7 +17,9 @@ bigimg:
 
 The paper, "Linguisitic Regularities in Continuous Space Word Representation" explains how to evaluate sytantic and semantic regularities between the induced word vectors, with a form as "king - Man + Woman" result in a vector veryl clost to "Queen".
 
-i.e. When you evaluate syntatic and semantic regularities with word vector representations in continous space. you have to create a test set of analogy questions of the form "a is to b as c is to \_\_\_".   
+i.e. When you evaluate syntatic and semantic regularities with word vector representations in continous space. you have to create a test set of analogy questions of the form "a is to b as c is to \_\_\_".  i.e. If you know a, b, and c words. what is \_\_\_?
+
+> A : B = C : \_\_\_
 
 
 
