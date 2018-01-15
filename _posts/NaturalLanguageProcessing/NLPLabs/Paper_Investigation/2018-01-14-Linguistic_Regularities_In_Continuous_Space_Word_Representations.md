@@ -35,7 +35,6 @@ base, past and 3rd person present tense forms of verbs.
 
 Using vector offsets, this paper tested the relationship of words vector to check how well the vectors represents syntantic and semantic regularities. 
 
-
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
 
 
@@ -48,6 +47,7 @@ Total test set size is 8000.
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 In continous space for word vector, The key point is similar words are likely to have similar vectors. Thus, When the model parameters are adjusted in response to a particular word or word-sequence, The improvements will carry over to occurences of similar words and sequences.
 </div>
+  
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
   <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations</a>
