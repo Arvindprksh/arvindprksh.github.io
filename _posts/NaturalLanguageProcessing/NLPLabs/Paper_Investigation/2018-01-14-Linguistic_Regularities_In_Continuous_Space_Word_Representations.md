@@ -21,9 +21,33 @@ i.e. When you evaluate syntatic and semantic regularities with word vector repre
 
 > A : B = C : \_\_\_
 
+The above computation is so easy. it is observed as constant vetor offsets between pairs of words sharing a particular relationship.
+
+Their relationship is like : 
+
+> base/comparative/superlative forms of adjectives;  
+singular/plural forms of commmon nouns;   
+possessive/non-possessive froms of common nouns;  
+base, past and 3rd person present tense forms of verbs.  
 
 
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
 
+
+Using vector offsets, this paper tested the relationship of words vector to check how well the vectors represents syntantic and semantic regularities. 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
+
+So when they created verification set of words relationship. they used tagged 276M words of newspaper text with PennTreebank POS tags. and they selected 100 of the most frequent comparatives adjectives, (words labeled JJR); 100 of the most frequent plural nouns (NNS); 100 of the most frequent possessive nouns(NN_POS); and 100 of the most frequent base form verbs(VB)
+
+With 100 words from each set of the above thing, they then systematically generated analogy quesions by randomly matching each of the 100 words with 5 other words from the same category, and creating variants as indicated in the above figure, Table 1. 
+
+Total test set size is 8000.
+ 
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+In continous space for word vector, The key point is similar words are likely to have similar vectors. Thus, When the model parameters are adjusted in response to a particular word or word-sequence, The improvements will carry over to occurences of similar words and sequences.
+<div>
+  
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
   <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations</a>
 </div>
