@@ -18,4 +18,5 @@ bigimg:
 
 test
 
-<i class="icon-attach"></i>
+<i class="fa fa-paperclip" aria-hidden="true"></i>
+
