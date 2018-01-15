@@ -35,6 +35,7 @@ base, past and 3rd person present tense forms of verbs.
 
 Using vector offsets, this paper tested the relationship of words vector to check how well the vectors represents syntantic and semantic regularities. 
 
+
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
 
 
