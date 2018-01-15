@@ -30,7 +30,6 @@ singular/plural forms of commmon nouns;
 possessive/non-possessive froms of common nouns;  
 base, past and 3rd person present tense forms of verbs.  
 
-
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
 
 
