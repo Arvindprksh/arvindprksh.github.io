@@ -30,12 +30,12 @@ singular/plural forms of commmon nouns;
 possessive/non-possessive froms of common nouns;  
 base, past and 3rd person present tense forms of verbs.  
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
 
 
 Using vector offsets, this paper tested the relationship of words vector to check how well the vectors represents syntantic and semantic regularities. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
 
 
 So when they created verification set of words relationship. they used tagged 276M words of newspaper text with PennTreebank POS tags. and they selected 100 of the most frequent comparatives adjectives, (words labeled JJR); 100 of the most frequent plural nouns (NNS); 100 of the most frequent possessive nouns(NN_POS); and 100 of the most frequent base form verbs(VB)
