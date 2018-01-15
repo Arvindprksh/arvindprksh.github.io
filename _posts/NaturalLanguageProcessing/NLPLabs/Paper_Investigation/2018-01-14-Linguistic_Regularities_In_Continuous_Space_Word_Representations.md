@@ -16,7 +16,18 @@ bigimg:
 ---
 
 
-test
 
-<i class="fa fa-paperclip" aria-hidden="true"></i>
 
+
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Attachment</b> 
+
+ [The paper: Linguistic  Regularities in Continous Space Word Representations](https://github.com/hyunyoung2/hyunyoung2.github.io/blob/master/_posts/NaturalLanguageProcessing/Papers/Word2Vec/Linguistic%20Regularities%20in%20Continuous%20Space%20Word%20Representations.pdf
+</div>
+
+# Reference 
+
+ - Paper 
+ -- [Linguistic Regularities in Continuous Space Word Representations](https://www.aclweb.org/anthology/N13-1090)
+ 
+ - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+  
