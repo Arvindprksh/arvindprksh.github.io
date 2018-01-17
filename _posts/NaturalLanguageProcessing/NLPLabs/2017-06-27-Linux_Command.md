@@ -315,6 +315,7 @@ an example below is the result for me to type in type command on bash
 ```shell
 hyunyoung2@hyunyoung2-desktop:~$ type -t ll
 alias
+
 hyunyoung2@hyunyoung2-desktop:~$ type ll
 ll is aliased to `ls -alF'
 
