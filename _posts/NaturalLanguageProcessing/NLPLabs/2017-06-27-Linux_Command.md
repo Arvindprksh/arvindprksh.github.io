@@ -348,6 +348,21 @@ pwd is /bin/pwd
 
 Keep in mind with -p option, the -p option is used to find of the name of the disk file (external command) would executed by the shell. It will return nothing if it is not a disk file. 
 
+# [wget](https://www.gnu.org/software/wget/manual/html_node/Download-Options.html#Download-Options)
+
+In linux, when you wan to download some file, use **wget** command. 
+
+But here go through wget with -c option in detail
+
+> $ wget -c URL
+
+**-c**, **--continue** is to continue getting a partially-downloaded file. This is useful when you want to finish up a download started by a previous instance of Wget, or by another program. For examaple 
+
+> $ wget -c ftp://path-to-file/filename.
+
+
+
+
 # Reference 
 
  - [How To Uncompress A File With tar Command](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal)
@@ -380,4 +395,6 @@ Keep in mind with -p option, the -p option is used to find of the name of the di
  
  - [Type command](https://bash.cyberciti.biz/guide/Type_command)
 
- - [man type command](http://linuxcommand.org/lc3_man_pages/typeh.html)
+ - [Man type command](http://linuxcommand.org/lc3_man_pages/typeh.html)
+ 
+ - [Dwonload option of wget command](https://www.gnu.org/software/wget/manual/html_node/Download-Options.html#Download-Options)
