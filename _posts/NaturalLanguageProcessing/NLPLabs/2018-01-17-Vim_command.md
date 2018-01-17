@@ -25,21 +25,21 @@ bigimg:
  
  Basically, If you want to copy and paste in vim, remember three keywords, d, y, p
  
-  **d** stands for *delete* in Vim, which in other editor is usually called *cut* 
+  - **d** stands for *delete* in Vim, which in other editor is usually called *cut* 
   
-  **y** stands for *yank* in Vim, which in other editor is usually called *copy*
+  - **y** stands for *yank* in Vim, which in other editor is usually called *copy*
   
-  **p** means putting the text after the cursor where you are currently. 
+  - **p** means putting the text after the cursor where you are currently. 
  
 Let's go through two ways of "copy and paste" and "cut and paste"  
  
 ## Copy and Paste with a line in Vim
  
-  **yy or Y** - yank the current line including the newline character at the end of the line 
+  - **yy or Y** - yank the current line including the newline character at the end of the line 
   
-  **p** - put the text after the cursor where you are currently. 
+  - **p** - put the text after the cursor where you are currently. 
  
-  **P** - put the text before the cursor where you are currently.
+  - **P** - put the text before the cursor where you are currently.
   
 ## Cut and paste using visual selection in Vim 
 
@@ -47,11 +47,11 @@ First, let's go through how to select text or line using visual selection in Vim
 
 the key word of visual selection is **v** and **V**
  
- **v** - Select character
+ - **v** - Select character
  
- **V** - Select whole line
+ - **V** - Select whole line
  
- **Ctrl+v** - Select rectangular blocks
+ - **Ctrl+v** - Select rectangular blocks
  
 If you choose a block to copy with visual selection, from now on, it is the same from copy and paste with a line in Vim. 
 
@@ -71,15 +71,15 @@ you have to search for text you want in command mode of vim.
 
 Basically, Let's see key words of search in vim. in Command mode, press **/** or **?**
 
- **/** - Search forwards for the pattern you will type after **/**
+ - **/** - Search forwards for the pattern you will type after **/**
  
- **?** - Search backwords for the pateren you will type after **?**
+ - **?** - Search backwords for the pateren you will type after **?**
  
  To navigate continuously searh for the pattern, Press **n** or **N**
  
- **n** - Search forwards if you type some pattern with **/**. if you type some patter with **?** , Search backwards.
+ - **n** - Search forwards if you type some pattern with **/**. if you type some patter with **?** , Search backwards.
  
- **N** - This is vice versa in the case with **/**, search backwards, in other way of **?**, Search forwards. 
+ - **N** - This is vice versa in the case with **/**, search backwards, in other way of **?**, Search forwards. 
  
 ## Search for the current word in Vim 
  
