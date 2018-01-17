@@ -360,8 +360,15 @@ But here go through wget with -c option in detail
 
 > $ wget -c ftp://path-to-file/filename.
 
+Note that **-c** only works with FTP servers and with HTTP servers that support the *Range* header. 
 
+Let's say you alread have a file of filname. In this moment you type in to download the file of filename again without **-c**. 
 
+It would just download the remote file to filename.1, leaving the truncated filename alone.
+
+On the other hand, If you use **-c** on this situation and the server does ont support continued dowdloading, wget restart the download from scratch and overwrite the existing file entirely.
+
+But, Basically If you use **-c**, you can expect you will ask the server to continue the retrieval from an offset equal to the length of the local file. 
 
 # Reference 
 
