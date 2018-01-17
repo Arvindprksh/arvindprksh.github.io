@@ -72,7 +72,7 @@ $ ./test.sh
 
 As you can check from the resulting output of shell cript above, After making shell script, you have to change the shell script to be executable like this.
 
-> % chmod +x the-shell-script
+> $ chmod +x the-shell-script
 
 ## Variable
 
@@ -266,7 +266,7 @@ Command substitution is the mechanism by which the shell performs a given set of
 
 Ths command subsitution is performed when a command is given as: 
 
-> `command`
+> \`command\`
 
 **When performing the command substitution make sure that you use the backquote, not the single qoute character**.
 
