@@ -72,7 +72,7 @@ $ ./test.sh
 
 As you can check from the resulting output of shell cript above, After making shell script, you have to change the shell script to be executable like this.
 
-> $ chmod +x the-shell-script
+> chmod +x the-shell-script
 
 ## Variable
 
@@ -137,7 +137,7 @@ fi
 on execution 
 
 ```shell
- $ a is less than b
+  a is less than b
 ```
 
 In the case,
@@ -159,7 +159,7 @@ esac
 on execution 
 
 ```shell
- $ New Zealand is famous for kiwi.
+  New Zealand is famous for kiwi.
 ```
 
 ## Loops of shell
