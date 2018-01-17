@@ -235,7 +235,7 @@ Here the "s" specifies the substitution operation. The "/" is delimiter. so sed 
 
 But, By default, sed command replaces the first occurence of the pattern in each line and it won't replace the second, third.. occurence in the line.
 
-To raplace nth occurence of a pattern in a line. use /1 or /2 flag like this:
+To raplace nth occurrence of a pattern in a line. use /1 or /2 flag like this:
 
 > $ sed "s/unix/linux/2" geekfile.txt
 
@@ -250,7 +250,7 @@ unix linux which one you choose.
 unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
 ```
 
-If you want all occurence to be substituted. use "g"(global replacement) flag and then sed command will replace all the occurences of the string in the line.
+If you want all occurrence to be substituted. use "g"(global replacement) flag and then sed command will replace all the occurrences of the string in the line.
 
 Or If you wan to see korean ver, visit [here](https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x12718.html)
 
