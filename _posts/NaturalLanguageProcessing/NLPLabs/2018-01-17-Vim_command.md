@@ -85,8 +85,18 @@ Basically, Let's see key words of search in vim. in Command mode, press **/** or
  
 If you would like to search for the current work, move the cursor to any word you want to search for. 
 
-Press ***** to search forwards for the next occurrence of that word, or Press **#** to search backwards.
+Press __*__ to search forwards for the next occurrence of that word, or Press **#** to search backwards.
  
+__*__, **#** - Search for the exact word at the cursor like : 
+
+If you search for **rain**, it would not find out **rainbow**
+ 
+But when you type subword of a whole word, If you want to find a whole word including subword.
+
+Use **g** if you don't want to search for the exact word like this
+
+ __g*__, **g#**
+
  
  
 # Reference
