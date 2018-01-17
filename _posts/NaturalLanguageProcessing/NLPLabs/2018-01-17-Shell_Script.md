@@ -299,3 +299,5 @@ Uptime is Wed Jan 17 04:53:06 UTC 2018
  - [Tutorials point of shell programming](https://www.tutorialspoint.com/unix/unix-what-is-shell.htm)
 
  - [How to use and, or operator](https://stackoverflow.com/questions/20449680/unix-boolean-operators-a-o)
+ 
+ - [What is the difference between $variable and ${variable}]
