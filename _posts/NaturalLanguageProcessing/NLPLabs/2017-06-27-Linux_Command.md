@@ -306,6 +306,33 @@ ll is an alias for ls -lh
 
 as you can see the above things, type command displays information about command type. 
 
+If you want to know what kind of type the command is, **$ type the name of commmand you want to know**
+
+I recommend you to type in without -t option, that's why it is as follows:
+
+an example below is the result for me to type in type command on bash
+
+```shell
+hyunyoung2@hyunyoung2-desktop:~$ type -t ll
+alias
+hyunyoung2@hyunyoung2-desktop:~$ type ll
+ll is aliased to `ls -alF'
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [10:34:15] 
+$ type -t ll
+zsh: bad option: -t
+```
+
+without -t option, you can know more detail about what kind of type it is?
+
+BUT, with -t option, it is too bad to understand it. BUT If you know linux in detail. it is okay, 
+
+So If you are beginner of linux, type in type command without -t option.
+
+Also, zsh warn you -t when you use -t option, as you can see the last one above. 
+
+It said **-t option is bad**
+
 Also you can find out path about where command file is as follows
 
 ```shell
