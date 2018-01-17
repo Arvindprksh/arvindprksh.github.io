@@ -46,7 +46,7 @@ This is done using **shebang** construct like this:
 ```
 Basically, **#** means comment. But if you write like the above thing. This tells the system(Linux or UNIX) that the commands that follows are to be executed by the Bourne shell.
 
-It's called a **shebang** becuase the **!** is called **bang** and **#*** is called **hash**.
+It's called a **shebang** becuase the **!** is called **bang** and **#** is called **hash**.
 
 Basic shell script is: 
 
