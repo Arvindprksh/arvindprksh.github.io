@@ -95,8 +95,6 @@ But when you type subword of a whole word, If you want to find a whole word incl
 
 Use **g** if you don't want to search for the exact word like __g*__, **g#**
 
- 
- 
 # Reference
  
   - [Searching in Vim](http://vim.wikia.com/wiki/Searching)
