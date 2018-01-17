@@ -66,11 +66,11 @@ Also if the variable of **retrieval** is number, it works.
 ```shell
 #!/bin/sh
 
-
 hello () {
     retrieval=9
-
-    return $retrieval
+    
+    # Yon can also use a string number like "20" instead of number, 9, 
+    return $retrieval  
 }
 
 # call function 
@@ -100,6 +100,36 @@ $ ./test.sh
 
 In the case above, I changed the return value into a string, "tests"
 
+### 3. Share variable
+
+This is so easy to understand the process of shaing varialbe.
+
+Just consider that you use global variable. 
+
+```shell
+#!/bin/sh
+
+retrieval=9
+
+hello () {
+
+    retrieval=20
+}
+
+hello
+
+echo $retrieval
+```
+
+On Execution 
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:24:25] 
+$ ./test.sh
+20
+```
+
+As you can see above, the variable of retrieval is global variable. If you call a function assigning some value to global variable, the value of global variable is changed.
 
 # Reference
 
