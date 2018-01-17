@@ -93,9 +93,7 @@ If you search for **rain**, it would not find out **rainbow**
  
 But when you type subword of a whole word, If you want to find a whole word including subword.
 
-Use **g** if you don't want to search for the exact word like this
-
- __g*__, **g#**
+Use **g** if you don't want to search for the exact word like __g*__, **g#**
 
  
  
