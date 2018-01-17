@@ -68,7 +68,6 @@ Basically, If you want to extract a .tgz file with tar command
  if you use -b option. -b means it seperate a file according to size with -b option. 
 
 
-
 ## [How To USe Bash History Commands](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps) 
 
   Basically, You used to run "history", 
@@ -285,6 +284,42 @@ Another an example of joning all the line in a file into a single line
 $ tr -s '\n' ' ' < file.txt
 ```
 
+# [Type command](https://bash.cyberciti.biz/guide/Type_command)
+
+Here, Let's go through type command in linux. 
+
+The type command is used to find out What kind of type the command is among alias, file, builtin and so forth. 
+
+let's look at an example :
+
+> type ll and type pwd
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~ [10:19:18] 
+$ type pwd
+pwd is a shell builtin
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [10:19:24] 
+$ type ll
+ll is an alias for ls -lh
+```
+
+as you can see the above things, type command displays information about command type. 
+
+Also you can find out path about where command file is as follows
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~ [10:24:22] C:1
+$ type -p ls
+ls is /bin/ls
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [10:24:25] 
+$ type -p pwd
+pwd is /bin/pwd
+```
+
+Keep in mind with -p option, the -p option is used to find of the name of the disk file (external command) would executed by the shell. It will return nothing if it is not a disk file. 
+
 # Reference 
 
  - [How To Uncompress A File With tar Command](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal)
@@ -314,3 +349,7 @@ $ tr -s '\n' ' ' < file.txt
  - [How To Use TR Command2](https://www.computerhope.com/unix/utr.htm)
  
  - [How To practice Regular Expression](https://regexr.com/)
+ 
+ - [Type command](https://bash.cyberciti.biz/guide/Type_command)
+
+ - [man type command](http://linuxcommand.org/lc3_man_pages/typeh.html)
