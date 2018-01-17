@@ -389,6 +389,8 @@ But, Basically If you use **-c**, you can expect you will ask the server to cont
  - [How To Chage An Encoding Into Another Encoding](https://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
  - [How To Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
+ 
+ - [Awk Introduction Tutorial - 7 Awk Print Example](https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples/)
 
  - [How To Use SED Command](http://endic.naver.com/search.nhn?sLn=en&searchOption=all&query=repetition)
  
