@@ -85,7 +85,9 @@ Basically, Let's see key words of search in vim. in Command mode, press **/** or
  
 If you would like to search for the current work, move the cursor to any word you want to search for. 
 
-Press *
+Press ***** to search forwards for the next occurrence of that word, or Press **#** to search backwards.
+ 
+ 
  
 # Reference
  
