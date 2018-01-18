@@ -19,29 +19,29 @@ let's see an simple example with <i class="fa fa-paperclip"></i>
 # attach icon <i class="fa fa-paperclip"></i>
 
 ```html
-<i class="fa fa-papercli"></i> normal size (1x)
-<i class="fa fa-papercli fa-lg"></i> fa-lg
-<i class="fa fa-papercli fa-2x"></i> fa-2x
-<i class="fa fa-papercli fa-3x"></i> fa-3x
-<i class="fa fa-papercli fa-4x"></i> fa-4x
-<i class="fa fa-papercli fa-5x"></i> fa-5x
+<i class="fa fa-paperclip"></i> normal size (1x)
+<i class="fa fa-paperclip fa-lg"></i> fa-lg
+<i class="fa fa-paperclip fa-2x"></i> fa-2x
+<i class="fa fa-paperclip fa-3x"></i> fa-3x
+<i class="fa fa-paperclip fa-4x"></i> fa-4x
+<i class="fa fa-paperclip fa-5x"></i> fa-5x
 ```
 
-<i class="fa fa-papercli"></i> normal size (1x)
-<i class="fa fa-papercli fa-lg"></i> fa-lg
-<i class="fa fa-papercli fa-2x"></i> fa-2x
-<i class="fa fa-papercli fa-3x"></i> fa-3x
-<i class="fa fa-papercli fa-4x"></i> fa-4x
-<i class="fa fa-papercli fa-5x"></i> fa-5x
+<i class="fa fa-paperclip"></i> normal size (1x)
+<i class="fa fa-paperclip fa-lg"></i> fa-lg
+<i class="fa fa-paperclip fa-2x"></i> fa-2x
+<i class="fa fa-paperclip fa-3x"></i> fa-3x
+<i class="fa fa-paperclip fa-4x"></i> fa-4x
+<i class="fa fa-paperclip fa-5x"></i> fa-5x
 
-# alert :  <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>This is a special warning message.</div>
-
+# alert
 
 Note : 
 
 ```html
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b> Add your note here </div>
 ```
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b> Add your note here </div>
 
 ---
@@ -51,6 +51,7 @@ Tip :
 ```html
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b> Add your tip here </div>
 ```
+
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b> Add your tip here </div>
 
 ---
@@ -60,6 +61,7 @@ important :
 ```html
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b> Add your important here </div>
 ```
+
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b> Add your important here </div>
 
 ---
@@ -69,8 +71,11 @@ warning :
 ```html
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b> Add your warning here </div>
 ```
+
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b> Add your warning here </div>
 
 # Reference 
 
- - [icon of jekyll Doc Theme 6.0](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+ - [Icon of jekyll Doc Theme 6.0](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+ 
+ - [W3School.com](https://www.w3schools.com/)
