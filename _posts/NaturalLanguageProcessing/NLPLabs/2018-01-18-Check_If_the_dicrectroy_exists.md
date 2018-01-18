@@ -19,7 +19,7 @@ When I wrote shell script to downlowd corpus, I need to chekc if the directory I
 
 I found it, for practice of shell script I will organize it in here. 
 
-{% highlight linenos %}
+{% highlight lineos %}
 if [ -d $LINK_OF_DIR ]; then 
     if [ -L $LINK_OF_DIR ]; then
     fi
@@ -32,7 +32,7 @@ the below is to check if $LINK_OF_DIR is directory.
 
 So if a directory with the name exists, if statement returns **false**
 
-{% highlight linenos %}
+{% highlight lineos %}
 if [ -d $LINK_OF_DIR ]; then 
 ......
 fi
@@ -41,7 +41,7 @@ fi
 
 The follow is to check if $LINK_OF_DIR is symbolic link.
 
-{% highlight linenos %}
+{% highlight lineos %}
 ...
     if [ -L $LINK_OF_DIR ]; then
     fi
