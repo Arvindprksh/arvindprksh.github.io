@@ -3,7 +3,7 @@ layout: post
 title: Organization Of Linux Commands
 subtitle: during researching natural lanuage with Ubuntu, organizing Linux command.
 category: Natural Language Processing Labs
-tags: [linux, command]
+tags: [linux, command, nlp]
 permalink: /2017/6/27/Linux_Command/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
@@ -446,6 +446,50 @@ drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:25 test3
 
 If you use **mkdir** with -p option, you make the path of dirctory *hierarchical*. 
 
+# [shuf](https://shapeshed.com/unix-shuf/)
+
+shuf command means to generate random permutations from input to output
+
+I will walk through two cases. 
+
+one is that input is text file.
+
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:31:10] 
+$ cat geekfile.txt 
+AB
+CD
+EF
+GH
+IJ
+KL
+OP
+QR
+ST
+UV
+WX
+YZ
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:31:13] 
+$ shuf geekfile.txt 
+ST
+AB
+YZ
+KL
+EF
+UV
+GH
+CD
+QR
+WX
+OP
+IJ
+{% endhighlight %}
+
+
+the other is that input is words separated by spaces.
+
+
 
 # Reference 
 
@@ -484,3 +528,5 @@ If you use **mkdir** with -p option, you make the path of dirctory *hierarchical
  - [Man type command](http://linuxcommand.org/lc3_man_pages/typeh.html)
  
  - [Dwonload option of wget command](https://www.gnu.org/software/wget/manual/html_node/Download-Options.html#Download-Options)
+ 
+ - [shuf coomand tutorial with examples](https://shapeshed.com/unix-shuf/)
