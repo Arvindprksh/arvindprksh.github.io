@@ -541,6 +541,26 @@ First, whereis
 
 > whereis [-bms] [-BMS directory... -f] filename
 
+**whereis** command locate source/binary and manuals sections for specified files.
+
+  - **b**: Search only for binareis. 
+  
+  - **m**: Search only for manual sections.
+  
+  - **s**: Search only for sources.
+
+Second, find
+
+> find (starting point to search from) -name (filename or directory name)  
+
+OR if you want to specify the type you want to search for 
+
+> find (starting point to search from) -type (file and folder type you want to search for) -name (filename or directory name)  
+
+**find** command searches from starting point by name you specified .  
+
+
+
 
 
 
