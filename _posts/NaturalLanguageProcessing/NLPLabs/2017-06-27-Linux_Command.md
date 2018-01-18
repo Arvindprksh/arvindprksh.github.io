@@ -610,3 +610,5 @@ OR if you want to specify the type you want to search for
  - [whereis2](https://www.lifewire.com/find-linux-command-program-whereis-2201154)
  
  - [find](https://www.lifewire.com/uses-of-linux-command-find-2201100)
+
+ - [find2](https://www.cyberciti.biz/faq/howto-find-a-directory-linux-command/)
