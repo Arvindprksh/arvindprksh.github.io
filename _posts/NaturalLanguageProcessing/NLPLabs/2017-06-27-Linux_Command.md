@@ -252,7 +252,28 @@ unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
 
 If you want all occurrence to be substituted. use "g"(global replacement) flag and then sed command will replace all the occurrences of the string in the line.
 
-Or If you wan to see korean ver, visit [here](https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x12718.html)
+**If you want to use sed with -e option**, It is just a sequence of scripts of patterns like this:
+
+i.e. If you want to adapt above two patterns. use -e option like this:
+
+> $ sed -e "s/unix/linux/2" -e "s/one/two/" filename
+
+**This means the second occurrence of unix to linux and the first occurrence of one to two line by line.**
+
+Let's do pratice 
+
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~ [11:01:25] 
+$ sed -e "s/unix/linux/2" -e "s/one/two/" geekfile.txt 
+unix is great os. linux is opensource. unix is free os.
+learn operating system.
+unix linux which two you choose.
+unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
+{% endhighlight %}
+
+if you wan to know more about -e option, visit [stackexchagne](https://unix.stackexchange.com/questions/33157/what-is-the-purpose-of-e-in-sed-command)
+
+Or If you wan to see korean ver of sed command, visit [here](https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x12718.html)
 
 ## [How To Use TR Command](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
 
@@ -369,6 +390,62 @@ It would just download the remote file to filename.1, leaving the truncated file
 On the other hand, If you use **-c** on this situation and the server does ont support continued dowdloading, wget restart the download from scratch and overwrite the existing file entirely.
 
 But, Basically If you use **-c**, you can expect you will ask the server to continue the retrieval from an offset equal to the length of the local file. 
+
+# mkdir 
+
+This command is so easy to understand, it makes directory on the current direcotry. 
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:19:58] C:127
+$ ll        
+total 0
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:20:05] 
+$ mkdir test1 test2 test3 
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:20:10] 
+$ ll
+total 12K
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:20 test1
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:20 test2
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:20 test3
+```
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic/parrent [11:24:46] 
+$ mkdir te{1..5}
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic/parrent [11:24:48] 
+$ ll
+total 20K
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:24 te1
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:24 te2
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:24 te3
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:24 te4
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:24 te5
+```
+
+when you make directory, you can make it with parrent directory. use -p option
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:25:39] 
+$ mkdir -p parrent/{test1,test2,test3} 
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:25:49] 
+$ ll
+total 4.0K
+drwxrwxr-x 5 hyunyoung2 hyunyoung2 4.0K  1월 18 11:25 parrent
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/My_lab/dic [11:25:52] 
+$ ll ./parrent 
+total 12K
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:25 test1
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:25 test2
+drwxrwxr-x 2 hyunyoung2 hyunyoung2 4.0K  1월 18 11:25 test3
+```
+
+If you use **mkdir** with -p option, you make the path of dirctory *hierarchical*. 
+
 
 # Reference 
 
