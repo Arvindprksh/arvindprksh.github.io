@@ -484,12 +484,52 @@ QR
 WX
 OP
 IJ
+
+# again print geekfile.txt
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:31:30] 
+$ cat geekfile.txt 
+AB
+CD
+EF
+GH
+IJ
+KL
+OP
+QR
+ST
+UV
+WX
+YZ
 {% endhighlight %}
 
+If you want to limit ouput to the number you specified. use -n option 
 
-the other is that input is words separated by spaces.
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:32:29] 
+$ shuf -n 5 geekfile.txt 
+QR
+GH
+UV
+AB
+ST
+{% endhighlight %}
 
+The other is that input is words separated by spaces.
 
+i.e. you don't need to input the name of file. just enter words with -e option
+
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:34:02] 
+$ shuf -e AB CD EF GH IJ KL OP
+EF
+KL
+OP
+AB
+GH
+IJ
+CD
+{% endhighlight %}
 
 # Reference 
 
