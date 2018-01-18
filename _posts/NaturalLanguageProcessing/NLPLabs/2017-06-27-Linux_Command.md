@@ -531,6 +531,20 @@ IJ
 CD
 {% endhighlight %}
 
+# How to find a file or directory. 
+
+Basically, the commands to find the location of file or directory is **[whereis]((https://www.lifewire.com/find-linux-command-program-whereis-2201154))** and **[find](https://www.lifewire.com/uses-of-linux-command-find-2201100)**
+
+Let's see syntax of each command 
+
+First, whereis 
+
+> whereis [-bms] [-BMS directory... -f] filename
+
+
+
+
+
 # Reference 
 
  - [How To Uncompress A File With tar Command](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal)
@@ -570,3 +584,9 @@ CD
  - [Dwonload option of wget command](https://www.gnu.org/software/wget/manual/html_node/Download-Options.html#Download-Options)
  
  - [shuf coomand tutorial with examples](https://shapeshed.com/unix-shuf/)
+
+ - [whereis1](https://www.computerhope.com/unix/uwhereis.htm)
+ 
+ - [whereis2](https://www.lifewire.com/find-linux-command-program-whereis-2201154)
+ 
+ - [find](https://www.lifewire.com/uses-of-linux-command-find-2201100)
