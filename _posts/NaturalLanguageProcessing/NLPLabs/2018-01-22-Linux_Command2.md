@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Linux command
+title: What kind of Linux command is useful?
 subtitle: During researching natural lanuage with Ubuntu, organizing Linux command that I have used. 
 category: Natural Language Processing Labs
 tags: [linux, command, nlp]
@@ -61,8 +61,6 @@ Let's try it
 {% endhighlight %}
 
 In the above example, the "[^)] specifies an "non-')'" character, and the "*" after it completes this expression to mean "zero or more than non-")" characters"
-
-
 
 
 # Reference 
