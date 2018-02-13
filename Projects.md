@@ -105,6 +105,16 @@ css : /css/ForYouTubeByHyun.css
    <!-- * 제 12회 임베디드 소프트웨어 경진대회(2014) 본선 진출 -->
 
 ## Android & Web Application Project
+
+  - **[KoNLTK Home page](http://www.konltk.org/)**
+    Konltk mean python package tool of natural language processing about Korean as open source. I am in charge of this project.
+    - Langugeses : Javascript, html(css), go
+    - Platforms : hugo, github
+    - Tools : git, ubuntu 16.04.
+    - My role : created Basic static site using hugo framework to generate the main static web page for konltk open source. 
+    - Description : developed basic setting for main static web page to help my colleague(Younghun Cho) write some article of konltk(opne-source) in detail like tutorial or how-to-use, how-to-install with Markdown.
+    (Kor ver): konltk라는 오픈 소스 프로젝트의 [main homepage](http://www.konltk.org/)를 제작 및 유지 보수
+  
  
   - **[Making Github Page - hyunyoung2.github.io : 현재 이 web page](https://hyunyoung2.github.io)**
   
@@ -130,7 +140,17 @@ css : /css/ForYouTubeByHyun.css
   - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
 
   - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network -**
-
+    
+    - Langugeses : python, C 
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role : developed and researched all of things related to this project, "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". So I published the paper to "The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017)" and "The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)"
+(Kor ver): 문장 벡터와 전방향 신경망을 이용한 스팸 문자 필터링 연구를 진행하였다.
+    - Publication: 
+      1. The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017) 
+        Title - Spam Text Filtering by Using Sen2Vec and Feedforward Neural Network
+      2. The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)
+        Title - Spam Message Filtering by Using Sen2Vec and Feedforward Neural Network
 
   - **[COPYDET : Plagiarism Detected Source Retrieval and Text Alignment - 원본 문서 추출 및 표절 위치 탐색 기법 ](https://www.youtube.com/watch?v=prBhnX2CQbM&feature=youtu.be)**
     
