@@ -127,6 +127,8 @@ css : /css/ForYouTubeByHyun.css
 
 ## Natural Language Processing Project
 
+  - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
+
   - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network -**
 
 
