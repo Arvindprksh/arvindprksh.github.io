@@ -70,7 +70,7 @@ css : /css/ForYouTubeByHyun.css
     - My role : developed windows(UI), USB communication module and graphic card’s algorithm adjusting monitor' brightness, contrast and gamma of Windows application
     - Description : 모니터 연식이나 제조사 별로 모니터의 색상은 실제 색상가 다르게 표현이 됩니다. 이를 자동으로 조절하는 전문적인 장비가 있지만 가격이 상대적으로 비싸 보급형 모니터 캘리브레이션을 만들고자 진행한 프로젝트입니다. 대중화된 스마트 폰의 카메라를 센서로 하여 그래픽 카드의 look-up-table를 조절하여 사용자에게 모니터의 색상을 실제 색상과 같게 출력하도록 진행한 프로젝트 입니다. 
 <!-- 이 프로젝트 **[파검드레스](http://www.segye.com/content/html/2015/10/18/20151018000778.html?OutUrl=naver)**  문제도 해결 할 수 있을 거라고 생각합니다.-->
-    - Results : 
+    - Award : 
     전문적인 장비 Spider 4 Express와 이 프로젝트의 프로그램 성능을 비교한 결과 Spider 4 Express와 이 프로그램을 2~3회 반복 수행 시 모니터의 색상 출력은 유사했습니다. 이때, 색상의 정확도를 측정하기 위한 장비로 비교한 결과 입니다. 
     * 제 27회 글로벌 SW 공모대전(2015) 전자신문 사장상 수상
     
@@ -137,6 +137,10 @@ css : /css/ForYouTubeByHyun.css
 ## Natural Language Processing Project
 
   - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
+  
+    - Publication & Award:
+     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
+ 
 
   - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network -**
     
@@ -145,7 +149,7 @@ css : /css/ForYouTubeByHyun.css
     - Tools : vim, jupyter notebook
     - My role : developed and researched all of things related to this project, "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". So I published the paper to "The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017)" and "The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)"
 (Kor ver): 문장 벡터와 전방향 신경망을 이용한 스팸 문자 필터링 연구를 진행하였다.
-    - Publication: 
+    - Publication & Award: 
       1. The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017) 
         Title - Spam Text Filtering by Using Sen2Vec and Feedforward Neural Network
       2. The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)
@@ -159,7 +163,7 @@ css : /css/ForYouTubeByHyun.css
     - My role : developed & designed this project's algorithm and done this project as leader 
     - Description :
     영어 문서간의 표절검사를 진행하는 프로젝트입니다. 먼저 Database에서 의심 문서와 가장 유사한 원본 문서 후보군을 추출에 TF-IDF를 이용합니다. 이후 추출된 원본문서와 의심문서 쌍의 후보 문서들을 정밀 비교하여 의심 구간을 찾는 알고리즘을 연구 개발을 합니다. 정밀 비교 부분에서는 단어기반 문서간의 유사도와 코사인 유사도 등 다양한 알고리즘을 적용해 보며 선택한 것은 단어 기반의 매칭 알고리즘으로 이를 가지고 정밀 비교를 진행했습니다. 
-    - Results :
+    - Publication & Award :
     이 프로젝트를 기반으로 작성한 논문은 제 26회 한글 및 한국어 학술대회(2014.10)에서 우수논문으로 선정되어 발표를 했습니다. 이후 국회도서관(2015.06)이라는 학술지에 논문을 게재했습니다.
    <!-- PAN 2014 conpetition 출전 -->
 
