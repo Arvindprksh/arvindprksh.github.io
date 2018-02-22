@@ -106,8 +106,7 @@ css : /css/ForYouTubeByHyun.css
 
 ## Android & Web Application Project
 
-  - **[KoNLTK Home page](http://www.konltk.org/)**
-    Konltk mean python package tool of natural language processing about Korean as open source. I am in charge of this project.
+  - **[KoNLTK Home page](http://www.konltk.org/) : Konltk mean python package tool of natural language processing about Korean as open source. I am in charge of this project.**
     - Langugeses : Javascript, html(css), go
     - Platforms : hugo, github
     - Tools : git, ubuntu 16.04.
