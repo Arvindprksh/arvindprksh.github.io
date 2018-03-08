@@ -126,7 +126,6 @@ Pedersen, 1995)
  -- [The distributional hypothesis](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf)
  
  - material of lecture in stanford university
- 
  -- [Distributaional appraches to word embeddings](https://web.stanford.edu/class/linguist236/materials/ling236-handout-05-09-vsm.pdf)
  
  - How to use html for alert
