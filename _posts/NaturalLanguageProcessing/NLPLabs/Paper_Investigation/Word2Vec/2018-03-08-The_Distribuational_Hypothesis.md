@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reference paper for Word2Vec investigation
+title: Reference paper for Word2Vec investigation2
 subtitle: Title of paper - The Distributional Hypothesis
 category: NLP papers
 tags: [nlp, word2vec, word_embedding]
