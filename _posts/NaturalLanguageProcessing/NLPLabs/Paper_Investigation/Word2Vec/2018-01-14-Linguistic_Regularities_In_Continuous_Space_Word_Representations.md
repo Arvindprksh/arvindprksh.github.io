@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reference paper for Word2Vec investigation
+title: Reference paper for Word2Vec investigation1
 subtitle: Title of paper - Linguistic Regularities in Continuous Space Word Representations
 category: NLP papers
 tags: [nlp, word2vec, svm]
