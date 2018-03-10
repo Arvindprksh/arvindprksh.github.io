@@ -23,9 +23,11 @@ Representation from BOW is orthogonal when they don't have word even though thei
 
 BUT neural network language model is better rather than the relationship above. I mean inference using linear algebra of syntactic and semantic relationship.
 
-method of this paper that I am introducing is extrating centroid words which is represntative for each document per document. 
+Method for text summarization of this paper that I am introducing  is extrating centroid words which is represntative for each document per document. 
 
-Then they are just comparing centroid vector to sentence vector in a document to select the representative summary of sentences in the document. 
+Then they are just comparing centroid vector to sentence vector in a document to select the representative summary of sentences in the document like this.
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/figure1.png)
 
 This paper argue word embedding is great on the effectivness of the compositionality to encode the semantic relation between words through vector dense representations.
 
