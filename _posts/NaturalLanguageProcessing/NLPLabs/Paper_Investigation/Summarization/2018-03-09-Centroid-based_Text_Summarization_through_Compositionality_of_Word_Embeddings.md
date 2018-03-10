@@ -33,7 +33,7 @@ This paper argue word embedding is great on the effectivness of the compositiona
 
 I got idea about the effectiveness of compositionality of word embedding is better that encoding the semantic relations between words through vector dense representations. 
 
-**This paper emphasize about representation learning, when you summarize text, you could external knowledge. this means representation of word embedding from other corpus could be used to do something like NLP in the original corpus.** 
+**This paper emphasizes about representation learning, when you summarize text, you could external knowledge. this means representation of word embedding from other corpus could be used to do something like NLP in the original corpus.** 
 
 <!--
 Let's see the procedure of this paper's work as I undertood. 
