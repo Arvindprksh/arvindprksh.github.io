@@ -48,7 +48,14 @@ Let's see the procedure of this paper's work as I undertood.
 
  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: another way to extract centroid words using another way</b>
  
-3. creating sentence vector just using a summing the vectors for each word in the sentence.  
+3. creating sentence vector just using a summing the vectors for each word in the sentence. 
+
+dataset :  
+
+- each 10 documents in 50 clusters from Associated Press and New York newswire - multidocuments
+
+- 30 documents for each of 38 languages.
+
 -->
 
 
