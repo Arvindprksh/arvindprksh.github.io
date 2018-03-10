@@ -49,13 +49,8 @@ Let's see the procedure of this paper's work as I undertood.
 
 
 
-
-
-
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-The general idea behind the distributional similarity and meaning similarity, which allow us to utilize the former in order to estimate the latter.
-i.e. "words which are similar in meaning occur in similar context"(Rubenstein & Goodenough, 1965) or "words with similar meanings will occur with similar neighbors  if enough text material is available" (Sch ̈utze &
-Pedersen, 1995) 
+The textual similarity is a crucial aspect for many extractive text summarization methods. due to difficulty of text summarization, research work focused on the extractive aspect of summarization, where the generated summary is a selection of relevant sentences from a document(or a set of documents) in a copy-and-paste manner.
 </div>
   
   
