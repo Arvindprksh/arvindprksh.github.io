@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reference paper for Word2Vec investigation2
+title: Centroid-based Text Summarization through Compositionality of Word Embeddings for Text summarization
 subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings
 category: NLP papers
 tags: [nlp, word2vec, word_embedding, text_summarization]
