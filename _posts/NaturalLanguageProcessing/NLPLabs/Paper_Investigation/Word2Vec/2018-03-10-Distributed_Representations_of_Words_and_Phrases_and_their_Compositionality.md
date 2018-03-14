@@ -45,3 +45,6 @@ This paper introduces another loss function called negative sampling. An inheren
  - How to use html for alert
  -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
+ - Tutorial site of word2vec 
+ --[Chris McCormick's skip gram model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
+ --[Chris McCormick's negative sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
