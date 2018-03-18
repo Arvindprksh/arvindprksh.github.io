@@ -1,5 +1,19 @@
-
-
+---
+layout: post
+title: Centroid-based Text Summarization through Compositionality of Word Embeddings for Text summarization
+subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings
+category: NLP papers
+tags: [nlp, word2vec, word_embedding, text_summarization]
+permalink: /2018/03/09/Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
 
 This paper is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
 
@@ -11,4 +25,24 @@ Also, this paper explain how to make sentence vector or phrase vector.
 
 This ideas is so fundanmental way. But with regard to word embedding and phrase embedding, this paper simply explained to me. 
 
+i.e. This paper is about explaining extract some sentence to similar summarization of document using word embedding and phrase embedding.
 
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+This paper explained how to well extract some sentences to summarize a set of multi-document using word embedding and phrase embedding.
+Also basic explanation about word embedding is easy to understand to me. I mean explaining basic concept of FFNN, RvNN, and AE makes me easily understand them.  
+</div>
+  
+  
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="http://www.aclweb.org/anthology/W14-1504">The paper: Extractive Summarization using Continuous Vector Space Models</a>
+</div>
+
+# Reference 
+
+ - Paper 
+ -- [Extractive Summarization using Continuous Vector Space Models](http://www.aclweb.org/anthology/W14-1504)
+ 
+ - How to use html for alert
+ -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+ 
