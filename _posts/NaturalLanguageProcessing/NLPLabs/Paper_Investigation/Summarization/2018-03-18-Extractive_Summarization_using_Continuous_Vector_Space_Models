@@ -1,0 +1,14 @@
+
+
+
+This paper is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
+
+But I think this paper helps me understand the architecture base on neural newwork language modeling.  
+
+For example, Feed-forwar neural network, Auto-Encoder, and recursive neural network. 
+
+Also, this paper explain how to make sentence vector or phrase vector. 
+
+This ideas is so fundanmental way. But with regard to word embedding and phrase embedding, this paper simply explained to me. 
+
+
