@@ -62,7 +62,23 @@ Let's try it
 
 In the above example, the "[^)] specifies an "non-')'" character, and the "*" after it completes this expression to mean "zero or more than non-")" characters"
 
+# [paste command](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
+
+When you want to paste several words which are in multiple lines to a line with some delimiter like "\t" or " ". 
+
+Utilize **paste command** as follows
+
+{% highlight shell linenos %}
+ ls -1 | paste -sd " " - 
+ 
+ 
+ $ ls -1 | paste -sd " " -
+anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Project Public snap Templates Videos
+
+{% endhighlight %}
 
 # Reference 
 
- - [Sed command of IBM developerworks]
+ - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
+ 
+ - [paste stackoverflow](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
