@@ -79,6 +79,13 @@ anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Proje
 
 {% endhighlight %}
 
+
+**If you want to make a list formed line by line to a line with delimiter like white space**
+
+Type in this :
+
+> cat file_name | paste -sd " " - > output_file_name
+
 # [iconv](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
 
 This is covertor from a encoding set to another encoding set. 
