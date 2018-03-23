@@ -86,7 +86,7 @@ Type in this :
 
 > cat file_name | paste -sd " " - > output_file_name
 
-# [iconv](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
+# [iconv command](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
 
 This is covertor from a encoding set to another encoding set. 
 
@@ -96,7 +96,45 @@ This is covertor from a encoding set to another encoding set.
  $ iconv -c -f cp949 -t utf8 input_file > output_file
 {% endhighlight %}
 
+# [awk command](https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples)
 
+If you deal with numerous data in linux, I recommend you to use this command jsut when you select some column as follow:
+
+{% highlight shell linenos %}
+ # Syntax:
+
+# awk '/search pattern1/ {Actions}
+#     /search pattern2/ {Actions}' file
+     
+ # If you have the following file
+$cat employee.txt
+100  Thomas  Manager    Sales       $5,000
+200  Jason   Developer  Technology  $5,500
+300  Sanjay  Sysadmin   Technology  $7,000
+400  Nisha   Manager    Marketing   $9,500
+500  Randy   DBA        Technology  $6,000
+
+# If you wnat to select some column in the employee.txt 
+
+$ awk '{print $2, $5;}' employee.txt
+Thomas $5,000
+Jason $5,500
+Sanjay $7,000
+Nisha $9,500
+Randy $6,000
+{% endhighlight %}
+
+# [tr command](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
+
+If you translate a part into form you want to change, use this command as follows:
+
+{% highlight shell linenos %}
+  $ tr [OPTION] SET1 [SET2]
+  
+# hyunyoung2 @ hyunyoung2-desktop in ~ [14:50:46] 
+$ echo "This is for testing" | tr " " "\t"
+This	is	for	testing
+{% endhighlight %}
 
 # Reference 
 
@@ -107,3 +145,7 @@ This is covertor from a encoding set to another encoding set.
  - [paste stackoverflow](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
 
  - [iconv](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
+ 
+ - [THE GEEK STUFF's awk](https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples)
+ 
+ - [THE GEEK STUFF's tf](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
