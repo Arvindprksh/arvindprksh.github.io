@@ -62,6 +62,8 @@ Let's try it
 
 In the above example, the "[^)] specifies an "non-')'" character, and the "*" after it completes this expression to mean "zero or more than non-")" characters"
 
+Also, another tutorial of sed command is [here](https://www.tutorialspoint.com/unix/unix-regular-expressions.htm)
+
 # [paste command](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
 
 When you want to paste several words which are in multiple lines to a line with some delimiter like "\t" or " ". 
@@ -80,5 +82,7 @@ anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Proje
 # Reference 
 
  - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
+ 
+ - [Sed command tutorial](https://www.tutorialspoint.com/unix/unix-regular-expressions.htm)
  
  - [paste stackoverflow](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
