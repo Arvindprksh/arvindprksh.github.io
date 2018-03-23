@@ -79,6 +79,18 @@ anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Proje
 
 {% endhighlight %}
 
+# [iconv](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
+
+This is covertor from a encoding set to another encoding set. 
+
+{% highlight shell linenos %}
+  Usage: iconv [OPTION...] [FILE...]
+ 
+ $ iconv -c -f cp949 -t utf8 input_file > output_file
+{% endhighlight %}
+
+
+
 # Reference 
 
  - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
@@ -86,3 +98,5 @@ anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Proje
  - [Sed command tutorial](https://www.tutorialspoint.com/unix/unix-regular-expressions.htm)
  
  - [paste stackoverflow](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
+
+ - [iconv](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
