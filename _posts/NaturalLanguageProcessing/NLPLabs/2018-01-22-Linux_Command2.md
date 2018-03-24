@@ -102,7 +102,9 @@ anaconda3 Desktop Documents Downloads konlp Music My_lab Pictures Practice_Proje
 
 Type in this :
 
-> cat file_name | paste -sd " " - > output_file_name
+{% highlight shell linenos %}
+ cat file_name | paste -sd " " - > output_file_name
+{% endhighlight %}
 
 # [iconv command](https://www.mkssoftware.com/docs/man1/iconv.1.asp)
 
