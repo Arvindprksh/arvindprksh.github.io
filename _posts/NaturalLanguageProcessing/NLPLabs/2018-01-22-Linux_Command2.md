@@ -64,6 +64,24 @@ In the above example, the "[^)] specifies an "non-')'" character, and the "*" af
 
 Also, another tutorial of sed command is [here](https://www.tutorialspoint.com/unix/unix-regular-expressions.htm)
 
+# [Another usage of sed command](https://unix.stackexchange.com/questions/96226/delete-first-line-of-a-file)
+
+Sometimes, You can use sed comand to remove some lines in a document. i.e. If you have a document but you want to get rid of fist and second line in the document, You can do it with sed command like this :
+
+{% highlight shell linenos %}
+sed '1d' file.txt > tmpfile; mv tmpfile file.txt # POSIX
+sed -i '1d' file.txt # GNU sed only, creates a temporary file
+
+# this is for perl user
+perl -ip -e '$_ = undef if $. == 1' file.txt # also creates a temporary file
+{% endhighlight %}
+
+on the commands above, **sed '1d'** means erasing the first line. 
+
+**sed '1d' file.txt > tmpfile...** means stdout is redirected to tmpfile with the sed command result. 
+
+But if you use **i** option, the result of sed command will be overwritten in file.txt. i.e. the reuslt is overwritten to input file. 
+
 # [paste command](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
 
 When you want to paste several words which are in multiple lines to a line with some delimiter like "\t" or " ". 
@@ -143,6 +161,8 @@ another reference site is [a tutorial of awk command](https://www.tutorialspoint
  - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
  
  - [Sed command tutorial](https://www.tutorialspoint.com/unix/unix-regular-expressions.htm)
+ 
+ - [Another way to use sed command](https://unix.stackexchange.com/questions/96226/delete-first-line-of-a-file)
  
  - [paste stackoverflow](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
 
