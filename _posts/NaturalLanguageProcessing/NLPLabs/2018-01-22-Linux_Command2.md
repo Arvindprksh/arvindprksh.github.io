@@ -136,6 +136,8 @@ $ echo "This is for testing" | tr " " "\t"
 This	is	for	testing
 {% endhighlight %}
 
+another reference site is [a tutorial of awk command](https://www.tutorialspoint.com/unix_commands/awk.htm)
+
 # Reference 
 
  - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
