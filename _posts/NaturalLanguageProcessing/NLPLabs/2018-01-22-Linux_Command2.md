@@ -76,7 +76,7 @@ sed -i '1d' file.txt # GNU sed only, creates a temporary file
 perl -ip -e '$_ = undef if $. == 1' file.txt # also creates a temporary file
 {% endhighlight %}
 
-on the commands above, **sed '1d'** means erasing the first line. 
+on the commands above, **sed '1d'** means erasing the first line in input file.
 
 **sed '1d' file.txt > tmpfile...** means stdout is redirected to tmpfile with the sed command result. 
 
