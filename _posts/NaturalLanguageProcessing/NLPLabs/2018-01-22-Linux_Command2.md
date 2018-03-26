@@ -80,7 +80,15 @@ on the commands above, **sed '1d'** means erasing the first line in input file.
 
 **sed '1d' file.txt > tmpfile...** means stdout is redirected to tmpfile with the sed command result. 
 
-But if you use **i** option, the result of sed command will be overwritten in file.txt. i.e. the reuslt is overwritten to input file. 
+Also, if you want to delete several lines, prompt like this:
+
+**sed '(start-line number), (end-line number)d' text_file > tempfile**
+
+If you don't want to create tempfile, and then just want to overwrite on input file. Use **i** option like this:
+
+**sed -i '(start-line number), (end-line number)d' text_file(input_file)**
+
+i.e. if you use **i** option, the result of sed command will be overwritten in file.txt. i.e. the reuslt is overwritten to input file. 
 
 # [paste command](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
 
