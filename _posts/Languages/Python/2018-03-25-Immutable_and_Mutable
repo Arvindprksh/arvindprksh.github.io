@@ -1,0 +1,7 @@
+
+
+There are two types of variables on python, one is Mutable and the other is Immutable. 
+
+On python, it is different to manage reference of variable depending on whether or not variable is mutable. 
+
+So specifically, you want to check the state of variables 
