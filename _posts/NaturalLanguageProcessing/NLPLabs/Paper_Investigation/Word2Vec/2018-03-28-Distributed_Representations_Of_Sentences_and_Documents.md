@@ -1,4 +1,19 @@
-
+---
+layout: post
+title: Distributed_Representations_Of_Sentences_and_Documents
+subtitle: Title of paper - Distributed_Representations_Of_Sentences_and_Documents
+category: NLP papers
+tags: [nlp, word2vec, word_embedding]
+permalink: /2018/03/28/Distributed_Representations_Of_Sentences_and_Documents/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
 
 
 I think sentence embeddings, document embeddings, and pragraph embedding have been studied in NLP, Because word embedding have beend tired in NLP field. 
