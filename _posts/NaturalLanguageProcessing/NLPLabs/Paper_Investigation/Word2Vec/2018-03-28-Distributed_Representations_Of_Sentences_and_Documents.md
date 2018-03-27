@@ -50,7 +50,7 @@ Let's see the two models they argue for paragraph vector.
 
 First is the Distributed Memory Model of Paragraph Vector(PV-DM). 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-28-Distributed_Representations_Of_Sentences_and_Documents/Distributed_Memory_model .png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-28-Distributed_Representations_Of_Sentences_and_Documents/Distributed_Memory_model.png)
 
 In the model above, The contexts are fixed-lenghth and sampled from a sliding window over the paragraph. The paragraph is shared across all contexts generated from the same paragraph but not across paragraph. The word vector matrix W, however, is shared across pargraphs. i.e. the vector for "powerful" is the same for all paragraph. 
 
