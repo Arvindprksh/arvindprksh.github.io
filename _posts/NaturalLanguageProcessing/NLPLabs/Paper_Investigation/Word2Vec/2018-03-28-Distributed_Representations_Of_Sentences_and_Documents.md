@@ -60,6 +60,15 @@ This model is simple, This way is to ignore the context words in the input, But 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-28-Distributed_Representations_Of_Sentences_and_Documents/Distributed_bag_of_model.png)
 
+Keep in mind of how to learn the paragraph vector for new paragraph. 
+
+frankly speaking, If you have many documents, in all the documents, the same senteces is absolutely the fewest.
+
+So when you test with test data. you have to fix the rest of vector representation except for paragraph vector on test time to learn pragraph vector.
+
+
+
+
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 when you set the window size for a context into a particular value and if your sentence or paragragph is less than the windows size, In the case fo their experiment, they pre-pad with a special NULL word symbol.  
