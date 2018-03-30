@@ -1,0 +1,319 @@
+---
+layout: post
+title: Closure
+subtitle: What is the closure?
+category: Python
+tags: [python, middle]
+permalink: /2018/03/27/Closure/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
+
+{% highlight python linenos %}
+{% endhighlight %}
+
+From now on, I will deal with closure of python, First of all you have to understand the nested function. 
+
+I organized the contents [here](https://hyunyoung2.github.io/2018/03/26/Python_First_Class_function/). 
+
+Also I referenced the sites below in the reference section to summarize abaout closure. 
+
+# Function can capture Local state
+
+you understood how function can contain inner functions. 
+
+Not onle can functions return other functions, these functions can also capture and carry some of the parent functions's state with them.
+
+Let's make new fuction like this:
+
+{% highlight python linenos %}
+def get_speak_function(text, volume):
+    def whisper():
+        return text.lower() + "......."
+    def yell():
+        return text.upper() + "!"
+    if volume > 0.5:
+        return yell
+    else:
+        return whisper
+    
+print(get_speak_function("Hellow World!", 0.7))
+print(get_speak_function("Hellow World!", 0.7)())
+
+'''
+## the reuslt of the code above ##
+<function get_speak_function.<locals>.yell at 0x7f36345e5950>
+HELLOW WORLD!!
+'''
+{% endhighlight %}
+
+This function takes "volume" and "text" as argument for **get_speak_funciton** right away to make the returned function immediately callable.
+
+In the case above, suprising me is the fact that the yell and whisper function no longer have a text parameter. But even in the way the two function works well. 
+
+i.e. thye somehow access the text parameter defined in the parent function. In fact, they seem to capture and remember the value of that argument from parent function.
+
+These functions acting like this are called lexical closures or just closure for short. A closure remembers the values from its enclosing lexical scoope even when the program is no longer in that scope.
+
+In other words, function can not only return behaviors but they can also  pre-configure those behaviors. 
+
+Let's see more simple example than the code above : 
+
+{% highlight python linenos %}
+def make_adder(n):
+    def add(x):
+        return x + n
+    return add
+
+plus_3 = make_adder(3)
+plus_5 = make_adder(5)
+
+print(plus_3(7))
+print(plus_5(7))
+
+'''
+## the reuslt of the code above ##
+10
+12
+'''
+{% endhighlight %}
+
+In this example, make_adder serves as a factory to create and configure "adder" functions. note that "adder" function can still access the n argument of the make_adder function. 
+
+# Object can Behave like functions
+
+Object's aren't functions in Python. But they can be made callable, which allows you to treat them like functions in many cases.
+
+If an object is callable, it mean you can deal with the object as function like using round parantheses() on it, and passing argument as calling the function.
+
+{% highlight python linenos %}
+class Adder:
+    def __init__(self, n):
+        self.n = n
+    def __call__(self, x):
+        return self.n + x
+
+plus_3 = Adder(3)
+print(plus_3(7))
+
+'''
+## the reuslt of the code above ##
+10
+'''
+{% endhighlight %}
+
+As you can see the code above, "calling" an object instances as a function attempts to execute the object's **__call__** method.
+
+python has built-in callable function to check whether an object appears callable or not:
+
+
+{% highlight python linenos %}
+class Adder:
+    def __init__(self, n):
+        self.n = n
+    def __call__(self, x):
+        return self.n + x
+
+plus_3 = Adder(3)
+
+def yell(text):
+    return text.upper() + "!"
+
+print(callable(plus_3))
+print(callable(yell))
+print(callable(False))
+
+'''
+## the reuslt of the code above ##
+True
+True
+False
+'''
+{% endhighlight %}
+
+# Closure 
+
+As you have seen above, closure is functions that capture.
+
+Specifically speakin, closures are techniques for implementing lexically scoped name binding in language with first class functions.
+
+Let's see an simple example
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+
+def outer_func():
+    message = "Hi" #2
+    def inner_func():
+        print(message) #3
+    return inner_func() #4
+
+outer_func() #1
+
+'''
+## the reuslt of the code above ##
+Hi
+'''
+{% endhighlight %}
+
+Implementing process of the code above is the same from below :
+
+First, call **outer_func()**
+
+Second, the variable of message is assigned by "Hi". inner_funct() is declared. 
+
+Third, the inner function accesses message variable to print
+
+Fourth, print result of inner_func() is returned to caller of outer_func()
+
+But if you remove round parenthesis in the statement of "return inner_func()" like this:
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+
+def outer_func():
+    message = "Hi" #2
+    def inner_func():
+        print(message) #3
+    return inner_func #4
+
+my_func = outer_func() #1
+print(my_func)
+my_func()
+'''
+## the reuslt of the code above ##
+<function outer_func.<locals>.inner_func at 0x7f36345e5400>
+Hi
+'''
+{% endhighlight %}
+
+As you can see the code above, the returned value of outer_func() is inner_func object, So the result of calling outer_func() is address of inner_func object. 
+
+The value of my_func with round parenthesis is the same from "Hi" which prints the message variable from outer_func(). 
+
+In this case, calling **inner_func()** still accesses local variable of **outer_func()** of parent of inner_func(). 
+
+doing so is because of closure. i.e. closure store free variable somewhere. 
+
+free variable means accessing variable outside of the enclosing scope. 
+
+Let's see how to manage free variable for closure. 
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+
+def outer_func():
+    message = "Hi" #2
+    def inner_func():
+        print(message) #3
+    return inner_func #4
+
+my_func = outer_func() #1
+
+print(my_func)  #5
+print
+print(dir(my_func))  #6
+print
+print(type(my_func.__closure__)) #7
+print
+print(my_func.__closure__ )#8
+print
+print(my_func.__closure__[0]) #9
+print
+print(dir(my_func.__closure__[0])) #10
+print
+print(my_func.__closure__[0].cell_contents)  #11
+'''
+## the reuslt of the code above ##
+<function outer_func.<locals>.inner_func at 0x7f36345e5400>
+<function outer_func.<locals>.inner_func at 0x7f36345e5400>
+['__annotations__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__globals__', '__gt__', '__hash__', '__init__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+<class 'tuple'>
+(<cell at 0x7f3634588318: str object at 0x7f3634585298>,)
+<cell at 0x7f3634588318: str object at 0x7f3634585298>
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'cell_contents']
+Hi
+'''
+{% endhighlight %}
+
+In order to search for the closure, you could use dir() operation. after it, you could find out a attribute of **__closure__**.
+
+the resulting type of **__closure__** is tuple, as you can check above. 
+
+finally,  the index 0 of **__closure__** is object of string.  the attribute of the string object has **cell_contents**.
+
+The **cell_content** is the value of variable from parent variable. 
+
+You have found out where the closure have free variable. 
+
+Let's play with closure in detail. 
+
+below is to make tagged text with closure. 
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+
+def outer_func(tag): #1
+    text = "Some text" #5
+    tag = tag #6
+    def inner_func(): #7
+        print("<{0}>{1}<{0}>".format(tag, text)) #9
+        
+    return inner_func # 8
+
+h1_func = outer_func("h1") #2
+p_func = outer_func("p") #3
+
+h1_func()
+p_func()
+'''
+## the reuslt of the code above ##
+<h1>Some text<h1>
+<p>Some text<p>
+'''
+{% endhighlight %}
+
+If you make more advanced function than the function above such as **Some text** could change. 
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+
+def outer_func(tag): #1
+    tag = tag #5
+    def inner_func(text): #6
+        print("<{0}>{1}<{0}>".format(tag, text)) #7
+        
+    return inner_func # 8
+
+h1_func = outer_func("h1") #2
+p_func = outer_func("p") #3
+
+h1_func("h1 tagged text") #4
+p_func("p tagged text") # 10
+'''
+## the reuslt of the code above ##
+<h1>h1 tagged text<h1>
+<p>p tagged text<p>
+'''
+{% endhighlight %}
+
+the function of inner_func() above changed, the point changed is inner_function has parameter like text.
+
+So whenever calling the inner_function, you have to pass in a argument like text you want to plug in between tags. 
+
+To sum up, Closure makes the function a factory which could create different functionality, and  without fixing the original module and function, you can customizing using wrapper function.
+
+# Reference 
+
+ - Eng ver.
+  - [Dan Bader's python's functions are first-class](https://dbader.org/blog/python-first-class-functions)
+ 
+ - Kor ver.
+  - [The closure with first class function on python](https://tech.ssut.me/2017/03/24/python-functions-are-first-class/)
+  - [School of web's closure](http://schoolofweb.net/blog/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%81%B4%EB%A1%9C%EC%A0%80-closure/)
