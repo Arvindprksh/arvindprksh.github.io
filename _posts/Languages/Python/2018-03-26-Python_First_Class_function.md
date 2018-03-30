@@ -15,9 +15,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-{% highlight python linenos %}
-{% endhighlight %}
-
 I referenced [the site](https://dbader.org/blog/python-first-class-functions) which explainged about Python's function is first class.
 
 It makes me undestand a little how to do programming functional programming techniques.
@@ -161,6 +158,7 @@ funcs[0]("hey whant is going on?")
 ## The result to execute the code above ##
 'HEY WHANT IS GOING ON?!'
 '''
+{% endhighlight %}
 
 # Function can be passed to Other fucntion
 
