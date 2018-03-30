@@ -14,6 +14,7 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
+
 There are two types of variables on python, one is Mutable and the other is Immutable. 
 
 On python, it is different to manage reference of variable depending on whether or not variable is mutable. 
