@@ -4,7 +4,7 @@ title: Decorator
 subtitle: What is the Decorator on python?
 category: Python
 tags: [python, middle]
-permalink: /2018/03/27/Closure/
+permalink: /2018/03/28/Decorator/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
