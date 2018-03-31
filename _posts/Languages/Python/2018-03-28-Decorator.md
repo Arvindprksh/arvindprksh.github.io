@@ -15,9 +15,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-{% highlight python linenos %}
-{% endhighlight %}
-
 In the context of design patterns, decorators dynamically alter the functionality of a function, method or even class without having to directly use subclasses.
 
 The decorator is ideal when you need to extend the functionality of functions that you don't want to modify
