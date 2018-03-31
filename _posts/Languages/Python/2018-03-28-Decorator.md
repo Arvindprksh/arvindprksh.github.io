@@ -31,7 +31,7 @@ The functions on python is moved to another function and is stored to another va
 
 Let's see an example about what I was sayging above. 
 
-1. Assign functions to variables 
+- Assign functions to variables 
 
 {% highlight python linenos %}
 def greet(name):
@@ -46,7 +46,7 @@ hello hyun
 '''
 {% endhighlight %}
 
-2. Define functions insdies other functions. 
+- Define functions insdies other functions. 
 
 {% highlight python linenos %}
 def greet(name):
@@ -61,7 +61,7 @@ Hello hyun
 '''
 {% endhighlight %}
 
-3. Functions can be passed as parameters to other functions.
+- Functions can be passed as parameters to other functions.
 
 {% highlight python linenos %}
 def greet(name):
@@ -78,7 +78,7 @@ hello hyun
 '''
 {% endhighlight %}
 
-4. Functions can return other functions 
+- Functions can return other functions 
 
 To sum up, In this case, functions generates other functions.
 
@@ -97,7 +97,7 @@ Hello there!
 '''
 {% endhighlight %}
 
-5. Inner functions have access to the enclosing scope
+- Inner functions have access to the enclosing scope
 
 i.e. this is call and knowns as closure. 
 
