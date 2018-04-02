@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is the differenc between Unicode and UTF-8?
+title: What is the difference between Unicode and UTF-8?
 subtitle: UTF-8 is an encoding and Unicode is a character set
 category: Natural Language Processing Labs
 tags: [nlp, encoding]
