@@ -35,8 +35,8 @@ Normally It is used to get rid of **^M** in files copied from Windows to Unix su
 
 # Reference 
 
-  - Eng ver
+  - Eng ver.
    - [Stackoverflow](https://stackoverflow.com/questions/5843495/what-does-m-character-mean-in-vim)
    
-  - Kor ver
+  - Kor ver.
    - [how to remove ^M character in vim or vi](http://mwultong.blogspot.com/2007/08/vim-vi-m-m.html)
