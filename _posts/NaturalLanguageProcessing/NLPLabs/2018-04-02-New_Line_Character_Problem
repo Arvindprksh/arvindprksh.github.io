@@ -1,10 +1,10 @@
 ---
 layout: post
-title: What is the differenc between Unicode and UTF-8?
-subtitle: UTF-8 is an encoding and Unicode is a character set
+title: How to remove a character like ^M
+subtitle: %s/^M//g
 category: Natural Language Processing Labs
-tags: [nlp, encoding]
-permalink: /2018-04-02-New_Line_Character_Problem
+tags: [nlp, vim]
+permalink: /2018/04/02/New_Line_Character_Problem/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
