@@ -15,8 +15,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-
-
 In here, I am not going to explain in detail about How to translate the UTF-8 into another encoding ways like UTF-16 and UTF-32. 
 
 Also I am not goint to explain about big-endian and little endian of UTF 16. 
