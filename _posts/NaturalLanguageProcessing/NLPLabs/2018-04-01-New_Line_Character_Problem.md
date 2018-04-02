@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to remove a character like ^M ?
+title: How to remove a character like Carriage return character(\^M)?
 subtitle: %s/^M//g
 category: Natural Language Processing Labs
 tags: [nlp, vim]
