@@ -4,7 +4,7 @@ title: How to remove a character like ^M ?
 subtitle: %s/^M//g
 category: Natural Language Processing Labs
 tags: [nlp, vim]
-permalink: /2018/04/02/New_Line_Character_Problem/
+permalink: /2018/04/01/New_Line_Character_Problem/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
