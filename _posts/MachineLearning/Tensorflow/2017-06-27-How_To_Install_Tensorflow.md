@@ -484,7 +484,7 @@ hyunyoung2@hyunyoung2-desktop:~/Downloads$ zsh
 $ 
 ```
 
-Before configur PATH variable, you can't use **nvcc --version** like the following
+Before configuring PATH variable, you can't use **nvcc --version** like the following
 
 ```bash 
 hyunyoung2@hyunyoung2-desktop:~/Downloads$ nvcc --version
