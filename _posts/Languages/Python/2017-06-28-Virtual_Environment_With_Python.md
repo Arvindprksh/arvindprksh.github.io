@@ -15,9 +15,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-
-
-
 Python has a greate functionality which is called Virtual environment.
 
 Virtual environment you would use helps you manage a variety of library version. 
