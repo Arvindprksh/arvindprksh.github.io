@@ -461,6 +461,10 @@ In order to add this path to the PATH variable :
  
 ![](/img/Image/MachineLearning/Tensorflow/2017-06-27-How_To_Install_Tensorflow/zsh_export.png)
 
+Below is to have to configure when you used the runfile installation method.
+
+> $ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 In my case, I use [oh my zsh](http://ohmyz.sh/), So I want to configure PATH on olny zsh. 
 
