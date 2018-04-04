@@ -121,6 +121,8 @@ $ echo $PATH
 /usr/local/cuda-9.0/bin:/usr/local/cuda-9.0/bin:/home/hyunyoung2/bin:/home/hyunyoung2/.local/bin:.......
 {% endhighlight %}
 
+** if you want to system-site-packages, run venv with the option,--system-site-packages.**
+
 Finally, If you don't want to use virtual environment, you have to deactivate the activated environment with the command like:
 
 > deactivate
