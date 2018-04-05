@@ -170,7 +170,12 @@ take advantage of the command below.
 > pip freeze > requirement.txt  
 > pip install -r requirement.txt  
 
+# 
+
+
 # Reference 
+ 
+  - [Tutorial of venv on python3 from the official site](https://docs.python.org/3/tutorial/venv.html)
  
   - [CS231's Assignment1](http://cs231n.github.io/assignments2017/assignment1/)
   
