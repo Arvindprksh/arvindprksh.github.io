@@ -33,7 +33,7 @@ When you type in thing above, you have to install virtualenv like this:
 #If you have pip 
 sudo pip insatll virtualenv
 # if you have pip3
-sudo pip install virtualenv
+sudo pip3 install virtualenv
 # Also you can use software management of linux like this:
 sudo apt install pyton-virtualenv
 {% endhighlight %}
@@ -52,7 +52,7 @@ you can create virtual environment typing like :
 
 install **python-venv** with apt like this:
 
-> sudo apt install -y python-venv
+> sudo apt install -y python3-venv
 
 Let's say we have already installed python-venv. 
 
