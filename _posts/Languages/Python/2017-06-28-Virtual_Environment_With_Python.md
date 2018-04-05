@@ -127,6 +127,49 @@ Finally, If you don't want to use virtual environment, you have to deactivate th
 
 > deactivate
 
+# Anothe prarical way you use virtual environment
+
+When you create virtual environment with option --system-site-packages. you can use system python environment on your virtual environment. 
+
+But you have to be careful of using the option, --system-site-package. That is because the package is installed in system site package when you install a package on your virtual environment. 
+
+Let's say an example 
+{% highlight Shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock [11:09:58] 
+$ python3 -m venv --system-site-packages vevn
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock [11:10:10] 
+$ source vevn/bin/activate                   
+(vevn) 
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock/vevn [11:15:37] 
+$ pip freeze |  grep "pandas"
+pandas==0.22.0
+(vevn) 
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock/vevn [11:15:55] 
+$ deactivate
+
+# After deactivating 
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock/vevn [11:16:00] 
+$ pip3 freeze |  grep "pandas"
+pandas==0.22.0
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/codeOnBlock/vevn [11:16:13] 
+$ pip freeze |  grep "pandas" 
+pandas==0.22.0
+{% endhighlight %}
+
+As you can see, once you install pandas package on your virtual envrionment. That is install on system site package.
+
+So you have to be care of using --system-site-packages option. 
+
+So another way is here when you want to install system site package.
+
+take advantage of the command below. 
+
+> pip freeze > requirement.txt  
+> pip install -r requirement.txt  
+
 # Reference 
  
   - [CS231's Assignment1](http://cs231n.github.io/assignments2017/assignment1/)
@@ -134,3 +177,5 @@ Finally, If you don't want to use virtual environment, you have to deactivate th
   - [Virtual Python Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
   
   - [A introduction to venv](http://cewing.github.io/training.python_web/html/presentations/venv_intro.html)
+
+  - [pip list vs pip freeze on stackoverflow](https://stackoverflow.com/questions/18966564/pip-freeze-vs-pip-list)
