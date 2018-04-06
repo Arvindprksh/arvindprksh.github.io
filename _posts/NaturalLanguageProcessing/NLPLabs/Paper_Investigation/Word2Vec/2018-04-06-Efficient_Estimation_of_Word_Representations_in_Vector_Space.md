@@ -38,7 +38,7 @@ Finally they got rid of the hidden layer, so their model heavily depends on the 
 
 The models are called CBOW(continuous bag of word) and skip gram. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Word2vec_models.png)
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
