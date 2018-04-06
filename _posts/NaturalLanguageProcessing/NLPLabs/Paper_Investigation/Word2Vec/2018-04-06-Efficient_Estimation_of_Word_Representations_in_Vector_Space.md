@@ -46,7 +46,7 @@ Let's see an examle they used for testing syntactic and semantic questions.
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-They are providing a set of test about syntactic and semantic regularities, The test set is available at <a herf="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a><br/>
+They are providing a set of test about syntactic and semantic regularities, The test set is available at <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a><br/>
 Some of the resulting word vectors were made available for future research and comparison : <br/>
   - <a href="http://ronan.collobert.com/senna/">Senna</a><br/>
   - <a href="http://metaoptimize.com/projects/wordreprs/">Metaoptimize-wordreprs</a><br/>
