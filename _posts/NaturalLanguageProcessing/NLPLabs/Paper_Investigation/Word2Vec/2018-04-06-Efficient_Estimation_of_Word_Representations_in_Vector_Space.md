@@ -40,6 +40,10 @@ The models are called CBOW(continuous bag of word) and skip gram.
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Word2vec_models.png)
 
+Let's see an examle they used for testing syntactic and semantic questions. 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Example_of_five_types_of_semantic_and_nine_types_of_syntactic_qeustion.png)
+
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 They are providing a set of test about syntactic and semantic regularities, The test set is available at [word-test.v1.txt](http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt)
