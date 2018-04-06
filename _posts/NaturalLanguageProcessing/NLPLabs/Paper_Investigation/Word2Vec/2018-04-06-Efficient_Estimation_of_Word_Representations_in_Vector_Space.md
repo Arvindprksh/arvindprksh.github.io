@@ -46,22 +46,22 @@ Let's see an examle they used for testing syntactic and semantic questions.
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-They are providing a set of test about syntactic and semantic regularities, The test set is available at <a herf="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a>
-Some of the resulting word vectors were made available for future research and comparison : 
-  - <a href="http://ronan.collobert.com/senna/">Senna</a>
-  - <a href="http://metaoptimize.com/projects/wordreprs/">Metaoptimize-wordreprs</a>
-  - <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">RNNLM</a>
-  - <a href="http://ai.stanford.edu/~ehhuang/">AI stanford</a>
+They are providing a set of test about syntactic and semantic regularities, The test set is available at <a herf="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a><br/>
+Some of the resulting word vectors were made available for future research and comparison : <br/>
+  - <a href="http://ronan.collobert.com/senna/">Senna</a><br/>
+  - <a href="http://metaoptimize.com/projects/wordreprs/">Metaoptimize-wordreprs</a><br/>
+  - <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">RNNLM</a><br/>
+  - <a href="http://ai.stanford.edu/~ehhuang/">AI stanford</a><br/>
 </div>
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-It is was found that computational time depens on output and hidden layer, But In thi paper, they used hiarachical softmax for output layer and got rid of hidden layer. it is totally for reducing the computational time. 
-Their idea to create new model for the continous represenation of words is from that neural network language model can successfully trained in two steps: first continuous word vectors are learned using simple model, and then the N-gram NNLM is trained on top of these distributed representations of words.  
-They introduced two model based on their ideas. those are called one is CBOW and The other is Skip gram. 
+It is was found that computational time depens on output and hidden layer, But In thi paper, they used hiarachical softmax for output layer and got rid of hidden layer. it is totally for reducing the computational time. <br/>
+Their idea to create new model for the continous represenation of words is from that neural network language model can successfully trained in two steps: first continuous word vectors are learned using simple model, and then the N-gram NNLM is trained on top of these distributed representations of words.  <br/>
+They introduced two model based on their ideas. those are called one is CBOW and The other is Skip gram. <br/>
 
-CBOW : predicting a word with future and history words before and after a middle word, so The weight matrix between the input and the projection layer is shared for all word positions in the same way in the NNLM. 
-Skip gram : this model used each current words as an input to a log-linear classifier with continuous projections layer, and predict words within a certain range before and after the current word.  
+CBOW : predicting a word with future and history words before and after a middle word, so The weight matrix between the input and the projection layer is shared for all word positions in the same way in the NNLM. <br/>
+Skip gram : this model used each current words as an input to a log-linear classifier with continuous projections layer, and predict words within a certain range before and after the current word.  <br/>
 </div>
   
   
