@@ -46,12 +46,12 @@ Let's see an examle they used for testing syntactic and semantic questions.
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-They are providing a set of test about syntactic and semantic regularities, The test set is available at [word-test.v1.txt](http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt)
+They are providing a set of test about syntactic and semantic regularities, The test set is available at <a herf="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a>
 Some of the resulting word vectors were made available for future research and comparison : 
-  - [Senna](http://ronan.collobert.com/senna/)
-  - [Metaoptimize-wordreprs](metaoptimize.com/projects/wordreprs/)
-  - [RNNLM](http://www.fit.vutbr.cz/~imikolov/rnnlm/)
-  - [AI stanford](http://ai.stanford.edu/~ehhuang/)
+  - <a href="http://ronan.collobert.com/senna/">Senna</a>
+  - <a href="http://metaoptimize.com/projects/wordreprs/">Metaoptimize-wordreprs</a>
+  - <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">RNNLM</a>
+  - <a href="http://ai.stanford.edu/~ehhuang/">AI stanford</a>
 </div>
 
 
@@ -71,13 +71,13 @@ Skip gram : this model used each current words as an input to a log-linear class
 
 # Reference 
 
- - Paper 
+- Paper 
   - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781v3)
   - [word test set: syntactic and semantic regularities](http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt) 
  
- - Quoar
+- Quoar
   - [What is meant by a ditributed representation in Deep learning](https://www.quora.com/Deep-Learning-What-is-meant-by-a-distributed-representation) 
  
- - How to use html for alert
- -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- How to use html for alert
+ - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
