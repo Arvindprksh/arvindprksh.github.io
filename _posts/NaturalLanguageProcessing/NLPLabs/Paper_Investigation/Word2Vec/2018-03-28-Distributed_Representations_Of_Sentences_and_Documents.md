@@ -88,9 +88,9 @@ They have two ways you can embed setences, document or paragraph. So they propos
 
 # Reference 
 
- - Paper 
- -- [Distributed Representations of Sentences and Documents](https://arxiv.org/abs/1405.4053v2)
+- Paper 
+  - [Distributed Representations of Sentences and Documents](https://arxiv.org/abs/1405.4053v2)
  
- - How to use html for alert
- -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
