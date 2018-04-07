@@ -64,9 +64,9 @@ Also basic explanation about word embedding is easy to understand to me. I mean 
 
 # Reference 
 
- - Paper 
- -- [Extractive Summarization using Continuous Vector Space Models](http://www.aclweb.org/anthology/W14-1504)
+- Paper 
+  - [Extractive Summarization using Continuous Vector Space Models](http://www.aclweb.org/anthology/W14-1504)
  
- - How to use html for alert
- -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
  
