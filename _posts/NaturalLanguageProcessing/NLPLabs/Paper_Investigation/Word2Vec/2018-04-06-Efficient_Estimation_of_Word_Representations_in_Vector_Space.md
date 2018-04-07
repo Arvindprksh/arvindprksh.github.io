@@ -81,3 +81,5 @@ Skip gram : this model used each current words as an input to a log-linear class
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
+- My github repository to translate the test set of semantic and syntactic into Korean test set
+  - [Hyunyoung2 Korean test set v1](https://github.com/hyunyoung2/Hyunyoung2_Korean_test_set_v1)
