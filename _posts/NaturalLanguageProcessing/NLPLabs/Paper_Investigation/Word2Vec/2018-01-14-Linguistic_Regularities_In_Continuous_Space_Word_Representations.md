@@ -55,8 +55,8 @@ In continous space for word vector, The key point is similar words are likely to
 
 # Reference 
 
- - Paper 
- -- [Linguistic Regularities in Continuous Space Word Representations](https://www.aclweb.org/anthology/N13-1090)
+- Paper 
+  - [Linguistic Regularities in Continuous Space Word Representations](https://www.aclweb.org/anthology/N13-1090)
  
- - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
