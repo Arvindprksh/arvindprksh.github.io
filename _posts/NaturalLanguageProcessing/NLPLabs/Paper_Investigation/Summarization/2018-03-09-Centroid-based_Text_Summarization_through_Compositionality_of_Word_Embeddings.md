@@ -71,9 +71,9 @@ The textual similarity is a crucial aspect for many extractive text summarizatio
 
 # Reference 
 
- - Paper 
- -- [Centroid-based Text Summarization through Compositionality of Word Embeddings](http://www.aclweb.org/anthology/W17-1003)
+- Paper 
+  - [Centroid-based Text Summarization through Compositionality of Word Embeddings](http://www.aclweb.org/anthology/W17-1003)
  
- - How to use html for alert
- -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
