@@ -122,12 +122,12 @@ Pedersen, 1995)
 
 # Reference 
 
- - Paper 
- -- [The distributional hypothesis](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf)
+- Paper 
+  - [The distributional hypothesis](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf)
  
- - material of lecture in stanford university
- -- [Distributaional appraches to word embeddings](https://web.stanford.edu/class/linguist236/materials/ling236-handout-05-09-vsm.pdf)
+- material of lecture in stanford university
+  - [Distributaional appraches to word embeddings](https://web.stanford.edu/class/linguist236/materials/ling236-handout-05-09-vsm.pdf)
  
- - How to use html for alert
- -- [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
