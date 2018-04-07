@@ -136,3 +136,4 @@ If you want to download shell script to automatically download kowikimedia and p
  - [Wikiextractor's github](https://github.com/attardi/wikiextractor)
  - [doc2vec-api](https://github.com/roboreport/doc2vec-api/)
  - [someone's blog](http://kugancity.tistory.com/entry/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%9C%84%ED%82%A4%ED%94%BC%EB%94%94%EC%95%84-%EB%8D%A4%ED%94%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B0%9B%EA%B8%B0)
+ - [My github repository for practice of thing above](https://github.com/hyunyoung2/hyunyoung2_Korean_word2vec_research)
