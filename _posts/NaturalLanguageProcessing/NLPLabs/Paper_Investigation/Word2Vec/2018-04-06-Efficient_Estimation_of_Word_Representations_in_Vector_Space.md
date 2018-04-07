@@ -79,5 +79,5 @@ Skip gram : this model used each current words as an input to a log-linear class
   - [What is meant by a ditributed representation in Deep learning](https://www.quora.com/Deep-Learning-What-is-meant-by-a-distributed-representation) 
  
 - How to use html for alert
- - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
