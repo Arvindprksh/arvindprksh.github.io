@@ -62,6 +62,12 @@ Finally, after running the python script, **google_trans.py**, the result is as 
 
 After I finished this job, I think that has error on syntactic qeustions, Later I have to fix this data of syntactic question to Korean Language.
 
+Another problem is unigram in english is tuned into bigram or trigram in Korean after tranlating as follows:
+
+Georgetown -> 조지 타운
+
+Later I will resolve it. 
+
 # Reference 
 
  - [Python package googletrans 2.2.0](https://pypi.python.org/pypi/googletrans)
