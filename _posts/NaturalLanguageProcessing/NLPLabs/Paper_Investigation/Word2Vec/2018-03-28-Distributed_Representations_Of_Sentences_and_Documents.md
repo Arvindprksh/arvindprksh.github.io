@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Distributed_Representations_Of_Sentences_and_Documents
-subtitle: Title of paper - Distributed_Representations_Of_Sentences_and_Documents
+title: Distributed_Representations Of Sentences and Documents
+subtitle: Title of paper - Distributed Representations Of Sentences and Documents
 category: NLP papers
 tags: [nlp, word2vec, word_embedding]
 permalink: /2018/03/28/Distributed_Representations_Of_Sentences_and_Documents/
