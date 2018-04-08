@@ -78,7 +78,10 @@ when you set the window size for a context into a particular value and if your s
 They have proven How good their paragraph vector is at NLP task such sentiment analysis and informtional retrieval. 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-They have two ways you can embed setences, document or paragraph. So they propose Pragraph Vector, an unsupervised framework that learns continuous distributed vector representations for pieces of text. Two models is called PV-DM and PV-DBOW. PV-DM is The Distributed Memory Model of Paragraph Vector. PV-DBOW is the Distributed Bag of Words version of paragraph vector 
+They have two ways you can embed setences, document or paragraph. So they propose Pragraph Vector, an unsupervised framework that learns continuous distributed vector representations for pieces of text. Two models is called PV-DM and PV-DBOW. PV-DM is The Distributed Memory Model of Paragraph Vector. PV-DBOW is the Distributed Bag of Words version of paragraph vector.</br>
+</br>
+If you want to download the data set this paper used, visit the followings : </br>
+1. [Sentiment analysis from stanford university](https://nlp.stanford.edu/sentiment/) </br>
 </div>
   
   
