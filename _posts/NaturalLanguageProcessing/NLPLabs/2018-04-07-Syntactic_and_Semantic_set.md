@@ -26,7 +26,7 @@ But If you guys use this respository I store with work I did. you can translate 
 
 First, git clone the Hyunyoung2 [Korean test set v1](https://github.com/hyunyoung2/Hyunyoung2_Korean_test_set_v1)
 
-and then run **Download_test_set.sh** under the English directory. 
+and then run **Download_test_set.sh** under Efficient_Estimation_of_Word_Representations_in_Vector_Space dir in English dir. 
 
 you will get the text file, word-test.v1.txt like this:
 
@@ -36,7 +36,11 @@ you will get the text file, word-test.v1.txt like this:
 
 Second, run the python script, **google_trans.py**.
 
+before running **google_trans.py**, After enter the paper directory, run the script as follows:
+
 > python3 google_trans.py
+
+The directory is Efficient_Estimation_of_Word_Representations_in_Vector_Space.
 
 In my case, I normally use python3, so I run the python script above with python3. 
 
