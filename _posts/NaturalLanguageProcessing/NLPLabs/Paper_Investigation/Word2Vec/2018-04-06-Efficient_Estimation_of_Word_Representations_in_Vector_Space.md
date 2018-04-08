@@ -62,6 +62,8 @@ They introduced two model based on their ideas. those are called one is CBOW and
 
 CBOW : predicting a word with future and history words before and after a middle word, so The weight matrix between the input and the projection layer is shared for all word positions in the same way in the NNLM. <br/>
 Skip gram : this model used each current words as an input to a log-linear classifier with continuous projections layer, and predict words within a certain range before and after the current word.  <br/>
+</br>
+If you want to download the data set, visit [here](http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt) 
 </div>
   
   
