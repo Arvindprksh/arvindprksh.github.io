@@ -46,6 +46,7 @@ Total test set size is 8000.
  
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 In continous space for word vector, The key point is similar words are likely to have similar vectors. Thus, When the model parameters are adjusted in response to a particular word or word-sequence, The improvements will carry over to occurences of similar words and sequences.</br>
+</br>
 If you want to download the data set this paper used, visit here http://research.microsoft.com/en-us/projects/rnn/default.aspx
 </div>
   
