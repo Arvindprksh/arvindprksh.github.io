@@ -72,3 +72,5 @@ Keep in mind, normally string is character string which is human-readable but by
  - [Unicode space](http://jkorpela.fi/chars/spaces.html)
 
  - [Stackoverflow about encoding](https://stackoverflow.com/questions/6224052/what-is-the-difference-between-a-string-and-a-byte-string)
+
+ - [Unicode strings in Python: A basic tutorial](http://pgbovine.net/unicode-python.htm)
