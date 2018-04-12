@@ -59,6 +59,7 @@ In here, as you recognize What is the unicode, Unicode is character set used to 
 
 UTF-8, UTF-16(BE, LE), and UTF-32 is an encoding used to translate binary data into numbers. Unicode is a character set used to translate numbers into characters
 
+Keep in mind, normally string is character string which is human-readable but byte string is just byte string which is not human-readable and stored on disk.
 
 # Reference 
 
