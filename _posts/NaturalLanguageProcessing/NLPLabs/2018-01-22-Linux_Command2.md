@@ -166,6 +166,61 @@ This	is	for	testing
 
 another reference site is [a tutorial of awk command](https://www.tutorialspoint.com/unix_commands/awk.htm)
 
+# [shuf command](https://shapeshed.com/unix-shuf/)
+
+If you want to shuffle several lines and files into a file. use shuf command like this 
+
+{% highlight shell linenos %}
+$ shuf --help
+Usage: shuf [OPTION]... [FILE]
+  or:  shuf -e [OPTION]... [ARG]...
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [17:59:39] 
+$ shuf -e one two three four five six
+one
+five
+two
+six
+three
+four
+
+# hyunyoung2 @ hyunyoung2-desktop in ~ [18:09:04] C:127
+$ shuf -n 2 -e one two three four five six
+six
+four
+{% endhighlight %}
+
+As you can see the result above, **-n option** is to randomly select in a sequence above. 
+
+and **-e** option is just for using stdin on command line. 
+
+if you use stdin as files. type in like this :
+
+> cat file1 file2 | shuf -o ouput.txt
+
+**Be careful of the following one** When you use redirection of linux command such as **> output.txt**
+
+the **output.txt** could be empty, that is because **> output.txt** is already executed before **shuf** command is done!.
+
+you have to type in the command like this:
+
+> shuf file1 -o output.txt  
+
+or 
+
+> shuf file1 --output=output.txt
+
+or
+
+> shuf file1 > output_flie && mv output_file resulting_output_file    
+
+
+Keep in mind of **&&** lets you do something based on whether or not thr previous command completed successfully. 
+
+i.e. do_somthing && do_something_else_that_depended_on_something
+
+**gshuf is another way to randomly shuffle multiple lines**
+
 # Reference 
 
  - [Sed command of IBM developerworks](https://www.ibm.com/developerworks/library/l-sed2/)
@@ -181,3 +236,7 @@ another reference site is [a tutorial of awk command](https://www.tutorialspoint
  - [THE GEEK STUFF's awk](https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples)
  
  - [THE GEEK STUFF's tf](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
+ 
+ - [Shuf command](https://shapeshed.com/unix-shuf/)
+ - [stackchange of shuf command](https://unix.stackexchange.com/questions/110490/why-does-the-command-shuf-file-file-leave-an-empty-file-but-similar-commands)
+ - [Stackoverflow about "&&" in linux command](https://stackoverflow.com/questions/4510640/what-is-the-purpose-of-in-a-shell-command)
