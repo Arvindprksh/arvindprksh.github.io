@@ -69,3 +69,5 @@ UTF-8, UTF-16(BE, LE), and UTF-32 is an encoding used to translate binary data i
  - Appendix
  
  - [Unicode space](http://jkorpela.fi/chars/spaces.html)
+
+ - [Stackoverflow about encoding](https://stackoverflow.com/questions/6224052/what-is-the-difference-between-a-string-and-a-byte-string)
