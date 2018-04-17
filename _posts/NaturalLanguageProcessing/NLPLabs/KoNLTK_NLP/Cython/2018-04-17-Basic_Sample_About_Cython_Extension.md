@@ -25,22 +25,22 @@ First, Check out if your cython is installed. if not, do as follows:
 
 and then make **helloworld.pyx** to generate **\*.so** file. 
 
-```python
+{% highlight python linenos %}
 # in hellowworld.pyx
 
 print("Hello World")
-```
+{% endhighlight %}
+
 Second, **setup.py** which is like a python Makefile. 
 
-```python
+{% highlight python linenos %}
 from distutils.core import setup
 from Cython.Build import cythonize
 
 setup(
     ext_modules = cythonize("helloworld.pyx")
 )
-
-```
+{% endhighlight %}
 
 And the on prompt, type in as follows:
 
@@ -50,14 +50,14 @@ which will leave a file in your local directory called **helloworld.so** in linu
 
 Let's chekck if it works 
 
-```python3
+{% highlight python linenos %}
  python3
 Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
 [GCC 5.4.0 20160609] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import helloworld
 Hellow World
-```
+{% endhighlight %}
 
 ## Reference 
 
