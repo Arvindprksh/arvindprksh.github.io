@@ -15,7 +15,6 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-
 # GCC Practice
 
 A program can be split up into multiple files. This makse it easier to edit and understand, especialy in the case of large. i.e. It also allows the individual pfiles to be compiled independantly.
@@ -24,8 +23,8 @@ A program can be split up into multiple files. This makse it easier to edit and 
 
 As you can see image above, you can compile source files into object file with **-c** flag without linking. i.e. the **-c** flag tells the complier to stop after compliation phase, without linking like thise:
 
-gcc -c green.c
-gcc -c blue.c 
+>gcc -c green.c  
+>gcc -c blue.c   
 
 Then, you can link your two object files as following
 
@@ -39,7 +38,7 @@ For now, we have five files, **add.c, add.h, main.c, substraction.c, substractio
 
 add.c and substraction.c includ each function's body and signature like this
 
-```c
+{% highlight c linenos %}
 ## In a file of add.c
 int sum_function(int a, int b){
      return a + b;
@@ -56,23 +55,23 @@ int substraction_function(int a, int b){
         return b - a;
     }
 }
-```
+{% endhighlight %}
 
 and then each header file includes the declaration of each function like this :
 
-```c 
+{% highlight c linenos %}
 ## In a file of add.h
 int sum_function(int a, int b);
 
 ## In a file of substraction.h
 int substraction_function(int a, int b);
-```
+{% endhighlight %}
 
 As you can see each header file, each header file includes the prototype of the function in each c source file. 
 
 In the main.c file case : 
 
-```c 
+{% highlight c linenos %}
 #include <stdio.h>
 #include "add.h"
 #include "substraction.h"
@@ -91,7 +90,7 @@ int main(){
    printf("the result of substraction : %d\n", result);
    return 0;
 }
-```
+{% endhighlight %}
 
 As you can see that **main.c** file include each header file such as **add.h** and **substraction.h**. 
 
