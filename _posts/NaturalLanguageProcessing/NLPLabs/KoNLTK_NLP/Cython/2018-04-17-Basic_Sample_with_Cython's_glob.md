@@ -48,9 +48,12 @@ setup(
 
 And the on prompt, type in as follows:
 
-> python3 setup.py build_ext --inplace 
+> python3 setup.py build_ext --inplace   
 
-`{% highlight shell linenos %}
+
+The following is the result of running the command above.
+
+{% highlight shell linenos %}
 $ ./run.sh
 running build_ext
 building 'helloworld' extension
