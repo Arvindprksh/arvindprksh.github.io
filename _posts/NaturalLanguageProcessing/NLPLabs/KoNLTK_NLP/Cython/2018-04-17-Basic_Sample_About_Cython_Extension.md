@@ -80,3 +80,4 @@ Hellow World
  - [Cython Tutorial's Cython Hellow World](http://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html#cython-hello-world)
  - [Cython Tutorial's Source Files and Compilation](http://cython.readthedocs.io/en/latest/src/userguide/source_files_and_compilation.html#compilation)
  - [Cython compilation](http://cython.readthedocs.io/en/latest/src/reference/compilation.html)
+ - [How to set directives to setup.py](http://cython.readthedocs.io/en/latest/src/reference/compilation.html#globally)
