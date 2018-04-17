@@ -46,6 +46,22 @@ And the on prompt, type in as follows:
 
 > python3 setup.py build_ext --inplace 
 
+The following is the result of running the command above 
+
+{% highlight shell linenos %}
+# hyunyoung2 @ hyunyoung2-desktop in ~/Labs/Konltk/Cython/Basic_sample_with_Cython on git:master x [19:47:36] 
+$ ./run.sh 
+Compiling helloworld.pyx because it changed.
+[1/1] Cythonizing helloworld.pyx
+running build_ext
+building 'helloworld' extension
+creating build
+creating build/temp.linux-x86_64-3.5
+x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/hyunyoung2/Labs/Konltk/Cython/env/include -I/usr/include/python3.5m -c helloworld.c -o build/temp.linux-x86_64-3.5/helloworld.o
+x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.5/helloworld.o -o /home/hyunyoung2/Labs/Konltk/Cython/Basic_sample_with_Cython/helloworld.cpython-35m-x86_64-linux-gnu.so
+import helloworld like a regular python modul
+{% endhighlight %}
+
 which will leave a file in your local directory called **helloworld.so** in linux or **helloworld.pyd** in windows, Now to use this fileL: start the python interpreter and simply import it as if it was a regular python module.
 
 Let's chekck if it works 
