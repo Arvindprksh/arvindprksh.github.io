@@ -104,6 +104,8 @@ So If you want to compile the total files above such as **add.c and substraction
 
 > gcc -Wall main.c sum.c abstraction.c -o ./test
 
+This command would creates only executable file named **one_shot**
+
 The command above is in **one_shot_compiling.sh** under GCC practice of calling external c function dir in in the [repository of hyunyoung2 Cpython and Cython](https://github.com/hyunyoung2/hyunyoung2_Cpython_and_Cython)
 
 In this command above, We use th -o opotion to specify the particular output file you want to make as executable file like **test**. 
