@@ -32,7 +32,7 @@ print("Hellow world!")
 
 Finally without having to run **setup.py**, import the Cython extension with **pyximport**
 
-{% highlight python linenos %}
+{% highlight shell linenos %}
 $ python3
 Python 3.5.2 (default, Nov 23 2017, 16:37:01)
 [GCC 5.4.0 20160609] on linux
