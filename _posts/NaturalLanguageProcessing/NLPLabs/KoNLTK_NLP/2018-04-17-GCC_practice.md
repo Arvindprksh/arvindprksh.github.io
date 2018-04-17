@@ -4,7 +4,7 @@ title: GCC practice
 subtitle: How to compile multiple files on linux with GCC
 category: Natural Language Processing Labs
 tags: [nlp, konltk]
-permalink: /2018/04/07/Syntactic_and_Semantic_set/
+permalink: /2018/04/17/GCC_practice/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
