@@ -134,3 +134,5 @@ When you want to run them above, run the shell script, **two_ways_compiling_only
  - [Stackoverflow's compiling multiple c files with gcc](https://stackoverflow.com/questions/18777326/compiling-multiple-c-files-with-gcc)
 
  - [GCC wall option](https://www.rapidtables.com/code/linux/gcc/gcc-wall.html)
+ 
+ - [Basic GCC option](https://www.rapidtables.com/code/linux/gcc.html)
