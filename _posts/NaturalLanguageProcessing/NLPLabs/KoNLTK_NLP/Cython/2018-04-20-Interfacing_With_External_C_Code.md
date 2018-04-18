@@ -4,7 +4,7 @@ title: Interfacing with External C code
 subtitle: Let's practice
 category: Natural Language Processing Labs
 tags: [nlp, konltk, cython]
-permalink: /2018/04/20/Interfacing_With_External_C_code/
+permalink: /2018/04/20/Interfacing_With_External_C_Code/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
