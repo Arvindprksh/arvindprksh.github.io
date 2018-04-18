@@ -1,10 +1,10 @@
 ---
 layout: post
-title: GCC practice
-subtitle: How to compile multiple files on linux with GCC
+title: Extension module on Python2 
+subtitle: How to make extension module with CPython
 category: Natural Language Processing Labs
-tags: [nlp, konltk]
-permalink: /2018/04/17/GCC_practice/
+tags: [nlp, konltk, CPython]
+permalink: /2018/04/21/Extension_Module_With_CPython_On_Python2/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
