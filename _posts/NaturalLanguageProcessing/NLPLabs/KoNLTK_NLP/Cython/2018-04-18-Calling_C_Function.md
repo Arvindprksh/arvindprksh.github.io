@@ -238,7 +238,7 @@ from cpython.version cimport PY_VERSION_HEX
 print(PY_VERSION_HEX >= 0x030200F0)
 {% endhighlight %}
 
-> python3 setup.py build_ext --inplace
+> python3 setup.py build_ext \-\-inplace
 
 The resulting import is : 
 
