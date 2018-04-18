@@ -3,7 +3,7 @@ layout: post
 title: Extension module with CPython on Python3
 subtitle: How to make Extension module with CPython on Python3
 category: Natural Language Processing Labs
-tags: [nlp, konltk]
+tags: [nlp, konltk, cpython]
 permalink: /2018/04/21/Extension_Module_With_CPython_On_Python3/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
