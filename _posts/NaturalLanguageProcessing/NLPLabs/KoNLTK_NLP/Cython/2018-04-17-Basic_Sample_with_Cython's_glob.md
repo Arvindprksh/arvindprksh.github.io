@@ -48,7 +48,7 @@ setup(
 
 And the on prompt, type in as follows:
 
-> python3 setup.py build_ext --inplace   
+> python3 setup.py build_ext \-\-inplace   
 
 
 The following is the result of running the command above.
