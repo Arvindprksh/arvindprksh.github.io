@@ -136,3 +136,5 @@ When you want to run them above, run the shell script, **two_ways_compiling_only
  - [GCC wall option](https://www.rapidtables.com/code/linux/gcc/gcc-wall.html)
  
  - [Basic GCC option](https://www.rapidtables.com/code/linux/gcc.html)
+ 
+ - [compile gist](https://gist.github.com/gubatron/32f82053596c24b6bec6)
