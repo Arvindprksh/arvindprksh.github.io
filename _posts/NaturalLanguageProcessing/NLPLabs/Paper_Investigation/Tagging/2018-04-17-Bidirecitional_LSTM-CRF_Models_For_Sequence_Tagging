@@ -1,0 +1,49 @@
+---
+layout: post
+title: Efficient Estimation of Word Representations in Vector Space
+subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging
+category: NLP papers
+tags: [nlp, word2vec, tagging]
+permalink: /2018/04/17/Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
+
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
+$$$They are providing a set of test about syntactic and semantic regularities, The test set is available at <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt">word-test.v1.txt</a><br/>
+Some of the resulting word vectors were made available for future research and comparison : <br/>
+  - <a href="http://ronan.collobert.com/senna/">Senna</a><br/>
+  - <a href="http://metaoptimize.com/projects/wordreprs/">Metaoptimize-wordreprs</a><br/>
+  - <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">RNNLM</a><br/>
+  - <a href="http://ai.stanford.edu/~ehhuang/">AI stanford</a><br/>
+</div>
+
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+
+</div>
+  
+  
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://arxiv.org/abs/1508.01991v1">The paper: Efficient Estimation of Word Representations in Vector Space</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1508.01991v1)
+  
+ 
+- Quoar
+
+ 
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+  
