@@ -95,7 +95,7 @@ In this paper, they proposed a variety of Long Short-Term Memory based models fo
 # Reference 
 
 - Paper 
-  - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1508.01991v1)
+  - [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991v1)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
