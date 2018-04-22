@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Efficient Estimation of Word Representations in Vector Space
+title: Bidirectional LSTM-CRF Models for Seqeunce Tagging
 subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging
 category: NLP papers
 tags: [nlp, word2vec, tagging]
