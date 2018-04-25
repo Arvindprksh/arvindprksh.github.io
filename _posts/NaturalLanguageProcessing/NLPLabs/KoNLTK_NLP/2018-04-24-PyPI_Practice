@@ -1,3 +1,20 @@
+---
+layout: post
+title: How to upload PyPI
+subtitle: use the test PyPI and PyPI together
+category: Natural Language Processing Labs
+tags: [nlp, konltk, python]
+permalink: /2018/04/24/PyPI_Practice/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
+
 # Pypi practice
 
  When you normally distribute Python package, you have to use PyPi(Python Package Index).
