@@ -27,7 +27,8 @@ bigimg:
 
  In my case, I used setuptools. 
 
-```python
+
+{% highlight python linenos %}
 from setuptools import setup, find_package
 
 setup(
@@ -35,7 +36,8 @@ setup(
     version="your package version number",
     ... 
 )
-```
+{% endhighlight %}
+
 
  So you have to pass arguements to setup to Python package index. 
 
@@ -81,7 +83,7 @@ But Ther are comfortable way to upload with **$HOME/.pypirc**
 
 Create or modify **$HOME/.pypirc** with the following
 
-```
+{% highlight linenos %}
 [distutils]
 index-servers=
     pypi
@@ -96,7 +98,8 @@ password:your_password
 repository: https://test.pypi.org/legacy/
 username: your testpypi username
 password: your testpypi password
-```
+{% endhighlight %}
+
 
 When you are with **$HOME/.pypirc** and twine, type in like this: 
 
@@ -110,7 +113,7 @@ type in like this :
 
 The following is in Makefile
 
-```
+{% highlight linenos %}
 ##################################################################
 #                                                                #
 #                            testpypi                            #
@@ -155,7 +158,7 @@ pypi:
 	python setup.py register -r pypi
 	#python setup.py sdist --format=gztar upload -r pypi
 	python setup.py bdist_wheel upload -r pypi
-```
+{% endhighlight %}
 
 If you want to see my sample code, visit [my git repository](https://github.com/hyunyoung2/Hyunyoung2_Pypi_Python_package_index_for_practice)
 
