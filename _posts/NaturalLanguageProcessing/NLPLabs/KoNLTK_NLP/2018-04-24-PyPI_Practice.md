@@ -172,3 +172,4 @@ If you want to see my sample code, visit [my git repository](https://github.com/
  - [example github](https://github.com/konltk/konlp)
  - [test pypi](https://test.pypi.org/)
  - [pypi org](https://pypi.org/)
+ - [How to Publish Your Package on PyPI](https://blog.jetbrains.com/pycharm/2017/05/how-to-publish-your-package-on-pypi/)
