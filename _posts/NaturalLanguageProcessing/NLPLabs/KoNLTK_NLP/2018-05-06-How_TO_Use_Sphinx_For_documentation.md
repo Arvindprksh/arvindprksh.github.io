@@ -49,14 +49,24 @@ build your project like this:
 
 Then check 
 
-> open /path/to/\_\_build/index.html
+> open /path/to/\_build/index.html
 
+After that if you want to host on the html files with github page. 
 
+There ars wo simple way like this:
+
+> mv /path/to/\_build/html/* /path/to/your_git_repository/  
+
+Then push your local repository to your remote repository. 
+
+**Keep in mind, you should add \.nojekyll in remote repository for github page to render your html generated on python code.**
 
 The following is screencast of how to utilize sphinx : 
 
-
 [![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_sphinx_practice/master/imgs/sphinx_image.png)](https://www.youtube.com/embed/oJsUvBQyHBs)
+
+### add a \.nojekyll file
+
 
 
 # Reference 
