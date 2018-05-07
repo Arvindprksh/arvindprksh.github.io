@@ -67,7 +67,15 @@ The following is screencast of how to utilize sphinx :
 
 ### add a \.nojekyll file
 
+The last thing you have to do is add an empty file called **\.nojekyll** in your repository. This tells github's default software to ignore the sphinx-generated pages. Make sure you commit, too:
 
+> cd /path/to/\_build/html
+> touch .nojekyll
+> git add .nojekyll
+> git commit =m "added .nojekyll"
+> git push
+
+![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_sphinx_practice/master/imgs/nojekll_file.png)
 
 # Reference 
 
