@@ -33,6 +33,7 @@ navbar-links:
     - Deep Learning: "my-note-for-cs224n-stanford"
     - Deep Learning: "my-note-for-cs231n-stanford"
     - Parallel: "my-note-for-parallel-programming-at-Udacity"
+    - test: "konltk_test"
   Projects: "Projects"
   Search: "Search"
   About Me: 
