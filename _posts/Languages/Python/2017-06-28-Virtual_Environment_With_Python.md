@@ -170,8 +170,6 @@ take advantage of the command below.
 > pip freeze > requirement.txt  
 > pip install -r requirement.txt  
 
-# 
-
 
 # Reference 
  
