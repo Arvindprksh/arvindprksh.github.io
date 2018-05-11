@@ -4,7 +4,7 @@ title: How to wrapping function written in another language with ctypes
 subtitle: how to use ctypes
 category: Natural Language Processing Labs
 tags: [nlp, konltk, ctypes]
-permalink: /2017/05/11/How_To_Use_Ctypes_In_Python1/
+permalink: /2018/05/11/How_To_Use_Ctypes_In_Python1/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
