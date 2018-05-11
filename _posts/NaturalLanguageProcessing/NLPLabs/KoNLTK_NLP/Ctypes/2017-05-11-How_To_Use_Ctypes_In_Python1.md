@@ -25,28 +25,28 @@ Let's simple example :
 
 First 
 
-```c 
+{% highlight c linenos %}
 int simple_function(void) {
     static int couter = 0;
     counter++;
     return coutner;
 }
-```
+{% endhighlight %}
 
 The simple_function function simply returns counting numbers. Each time it called in increments counter and returns that value. 
 
-```c
+{% highlight c linenos %}
 void add_one_to_string(char *input){
    int ii = 0;
     for (; ii < strinlen(input): ii++){
         input[ii]++;
     }
 }
-```
+{% endhighlight %}
 
 With the function above, we talk about python's immutable strings. 
 
-```c 
+{% highlight c linenos %}
 char* alloc_C_string(voie){
    char* phrase = strdup("I was written in C");
    printf("C just allocated %p(%ld): %s\n", 
@@ -59,7 +59,7 @@ void free_C_string(char* ptr) {
          ptr, (long int)ptr, ptr);
    free(ptr);
 }
-```
+{% endhighlight %}
 
 with the function above, I would talk about memory management. 
 
@@ -68,16 +68,16 @@ with the function above, I would talk about memory management.
 
 Ctypes allows you to  load a shared library("DLL" on Windows) and access methods directly from it, 
 
-```python
+{% highlight python linenos %}
 import ctypes
 
 # Load the shared library into c types.
 libc = ctypes.CDLL("./dynamic_library.so")
-```
+{% endhighlight %}
 
 If you want to call c funtion called simple_function() defined before. Ctypes makes it easier. 
 
-```python
+{% highlight python linenos %}
 import ctypes
 
 # Load the shared library into c types. 
@@ -85,7 +85,7 @@ libc = ctypes.CDLL("./your_dynamic_library")
 
 # Call the C function from the Library
 counter = libc.simple_function()
-```
+{% endhighlight %}
 
 Basic types, ints, and floats generally get marshalled byt ctypes trivially, But in python string is immutable. 
 
@@ -93,7 +93,7 @@ So string cannot change in python. that is problem when you use string as arguem
 
 Let's see the exmaple 
 
-```python
+{% highlight python linenos %}
 print("Calling C function which tries to modify Python string")
 original_string = "starting string"
 print("Before:", original_string)
@@ -102,15 +102,15 @@ print("Before:", original_string)
 libc.add_one_to_string(original_string)
 
 print("After:", original_strin)
-```
+{% endhighlight %}
 
 the thing above results in this output
 
-```shell
+{% highlight shell linenos %}
 Calling C function which tries to modify Python string")
 Before: starting string
 After: straring string
-```
+{% endhighlight %}
 
 As you know, after some testing, there is nothing of changes. So In this time. I need a little marshalling work.
 
@@ -118,7 +118,7 @@ i.e. We need to  convert the original string bytes using str.encode, and then pa
 
 and they are passed to C as a char * as you would expect.
 
-```python
+{% highlight python linenos %}
 # The ctypes strings buffer is mutable, however. 
 print("Calling C function with mutable buffer this time")
 
@@ -128,30 +128,31 @@ mutable_string = cytpes.create_string_buffer(str.encode(original_string))
 print("Before:", mutable_string.value)
 libc.add_one_to_string(mutable_string) # Works!
 print("After:", mutable_string.value)
-```
+{% endhighlight %}
+
 The result is like this:
 
-```shell
+{% highlight shell linenos %}
 Calling C function with mutable buffer this time
 Before: b'string string'
 After: b'tubsujoh!tusjoh'
-```
+{% endhighlight %}
 
 As you can check on the above, string_buffer is printed as a byte arrary on the Python side.
 
 you can specify the return type of c function then this is necessary work, because each of the functions in the loaded library is actually a Python object which has its own properties. 
 
-```python
+{% highlight python linenos %}
 alloc_func = libc.alloc_C_string
 alloc_func.restype = ctypes.POINTER(ctypes.c_char)
-```
+{% endhighlight %}
 
 Also you can specify the types of any argument passed into the C function by setting the argtypes property to a list of types like this:
 
-```python
+{% highlight python linenos %}
 free_func = libc.free_C_string
 free_func.argtypes = [ctypes.POINTER(ctypes.c_char),]
-```
+{% endhighlight %}
 
 **One thing you need to keep in mind is when you allocate memory in c part, you have to free it in c passing in c language function.**
 
@@ -167,3 +168,5 @@ If you want to see material related to this article, vist [my repository](https:
  - [Dan Bader's tutorial](https://dbader.org/blog/python-ctypes-tutorial)
  
  - [The tutorial Github repository](https://github.com/jima80525/ctypes_example)
+
+ - [the official document of ctypes](https://docs.python.org/3/library/ctypes.html)
