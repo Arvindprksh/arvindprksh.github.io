@@ -123,7 +123,7 @@ and they are passed to C as a char * as you would expect.
 print("Calling C function with mutable buffer this time")
 
 # Need to encode the orifinal to get bytes for string_buffer
-mutable_string = cytpes.create_string_buffer(str.encode(original_string))
+mutable_string = ctypes.create_string_buffer(str.encode(original_string))
 
 print("Before:", mutable_string.value)
 libc.add_one_to_string(mutable_string) # Works!
