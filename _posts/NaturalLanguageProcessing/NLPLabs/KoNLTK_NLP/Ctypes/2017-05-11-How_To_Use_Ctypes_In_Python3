@@ -27,7 +27,7 @@ Let's see the code :
 
 ```c
 /*flags.c : Source file*/
-# include <stido.h>
+# include <stdio.h>
 # include "flags.h"
 
 int gFlag = 0;
@@ -47,7 +47,7 @@ void set_flag(int flag){
 }
 
 /*flags.h : Header file*/
-void welcom_msg(char *msg);
+void welcome_msg(char *msg);
 int get_flag();
 void set_flag(int flag);
 ```
