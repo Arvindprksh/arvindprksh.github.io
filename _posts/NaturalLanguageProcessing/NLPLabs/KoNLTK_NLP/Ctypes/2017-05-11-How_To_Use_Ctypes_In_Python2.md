@@ -238,6 +238,7 @@ This article is retyped for my study about ctype, all is from [Dan Bader's tutor
 
 Also the code is retyped from [git repository of Dan Bader's tutorial2 of ctypes](https://github.com/jima80525/ctypes_example/tree/master/tutorial2)
 
+If you want to know more about this article or an example code, visit [my repository](https://github.com/hyunyoung2/Hyunyoung2_Ctypes-CFFI-SWIG/tree/master/Ctypes/tutorial2) or [git repository of Dan Bader's tutorial2 of ctypes](https://github.com/jima80525/ctypes_example/tree/master/tutorial2)
 
 # Reference 
 
