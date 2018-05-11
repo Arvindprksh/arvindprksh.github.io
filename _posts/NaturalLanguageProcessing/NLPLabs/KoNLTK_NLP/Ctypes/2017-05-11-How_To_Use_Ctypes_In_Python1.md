@@ -159,6 +159,9 @@ This content and tutorial is [Dan Bader's tutorial1](https://dbader.org/blog/pyt
 
 also the code is from [git repository in dan Bader](https://github.com/jima80525/ctypes_example/tree/master/tutorial1)
 
+
+If you want to see material related to this article, vist [my repository](https://github.com/hyunyoung2/Hyunyoung2_Ctypes-CFFI-SWIG/tree/master/Ctypes/tutorial1) or [git repository in dan Bader](https://github.com/jima80525/ctypes_example/tree/master/tutorial1)
+
 # Referenc
 
  - [Dan Bader's tutorial](https://dbader.org/blog/python-ctypes-tutorial)
