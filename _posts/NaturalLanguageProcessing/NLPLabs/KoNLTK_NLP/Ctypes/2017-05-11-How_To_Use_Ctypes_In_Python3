@@ -55,7 +55,7 @@ void set_flag(int flag);
 Let's make shared object with the codes above : 
 
 > gcc -Wall -fPIC -c flags.c  
-> gcc -shared -Wl, -soname, libflags.so.1 -o libflags.so flags.o
+> gcc -shared -Wl,-soname,libflags.so.1 -o libflags.so flags.o
 
 then Let's use the library called shared object, libflags.so. with ctypes
 
