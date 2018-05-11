@@ -70,6 +70,19 @@ this article is from [here](http://karuppuswamy.com/wordpress/2012/01/28/how-to-
 
 If you want to konw about this article, just visit [my repository](https://github.com/hyunyoung2/Hyunyoung2_Ctypes-CFFI-SWIG/tree/master/Ctypes/tutorial3)
 
+In this case, that is differet result between python2 and python3.
+
+```shell
+# hyunyoung2 @ hyunyoung2-desktop in ~/konltk/Hyunyoung2_Ctypes-CFFI-SWIG/Ctypes/tutorial3 on git:master x [21:39:18] 
+$ python3 example.py
+H
+
+# hyunyoung2 @ hyunyoung2-desktop in ~/konltk/Hyunyoung2_Ctypes-CFFI-SWIG/Ctypes/tutorial3 on git:master x [21:39:22] 
+$ python example.py 
+Hi C, I am from Python!
+```
+
+
 # Reference
 
   - [The basic exmample of ctypes](http://karuppuswamy.com/wordpress/2012/01/28/how-to-use-c-library-in-python-generating-python-wrappers-for-c-library/)
