@@ -4,7 +4,7 @@ title: How to use ctypes more deeper to connect function written in c from pytho
 subtitle: Another example for using ctype more deeper
 category: Natural Language Processing Labs
 tags: [nlp, konltk, cython]
-permalink: /2017/05/11/How_To_Use_Ctypes2/
+permalink: /2017/05/11/How_To_Use_Ctypes_In_Python2/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
