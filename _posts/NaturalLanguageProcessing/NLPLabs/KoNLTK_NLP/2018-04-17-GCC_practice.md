@@ -140,3 +140,5 @@ When you want to run them above, run the shell script, **two_ways_compiling_only
  - [compile gist](https://gist.github.com/gubatron/32f82053596c24b6bec6)
 
  - [Kor ver. how to distribut dynamic library](https://github.com/krikit/krikit.github.io/wiki/2014-07-14-%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%B0%B0%ED%8F%AC%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
+
+ - [GCC option](http://ibabo.tistory.com/87)
