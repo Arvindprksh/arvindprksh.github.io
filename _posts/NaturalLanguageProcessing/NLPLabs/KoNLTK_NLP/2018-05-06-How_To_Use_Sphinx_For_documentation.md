@@ -23,19 +23,19 @@ bigimg:
 Above all, let's make virtual environment 
 
 > sudo apt install -y python3-venv  
-> pyvenv env  
-> source env/bin/activate
+> pyvenv env    
+> source env/bin/activate    
 
 After it, follow things below.
 
 First, in order to run sphinx, install them below:
 
-> pip install sphinx
+> pip install sphinx  
 
 Then, Create a directory inside your project to hold your docs: 
 
-> cd /path/to/project
-> mdkir docs
+> cd /path/to/project  
+> mdkir docs   
 
 So, Run **sphinx-quickstart**
 
@@ -45,17 +45,17 @@ This quick start will walk you through creating the basic configuration; When it
 
 build your project like this:
 
-> make html
+> make html  
 
 Then check 
 
-> open /path/to/\_build/index.html
+> open /path/to/\_build/index.html   
 
 After that if you want to host on the html files with github page. 
 
 There ars wo simple way like this:
 
-> mv /path/to/\_build/html/* /path/to/your_git_repository/  
+> mv /path/to/\_build/html/* /path/to/your_git_repository/    
 
 Then push your local repository to your remote repository. 
 
@@ -69,11 +69,11 @@ The following is screencast of how to utilize sphinx :
 
 The last thing you have to do is add an empty file called **\.nojekyll** in your repository. This tells github's default software to ignore the sphinx-generated pages. Make sure you commit, too:
 
-> cd /path/to/\_build/html
-> touch .nojekyll
-> git add .nojekyll
-> git commit =m "added .nojekyll"
-> git push
+> cd /path/to/\_build/html  
+> touch .nojekyll  
+> git add .nojekyll   
+> git commit =m "added .nojekyll"   
+> git push   
 
 ![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_sphinx_practice/master/imgs/nojekll_file.png)
 
