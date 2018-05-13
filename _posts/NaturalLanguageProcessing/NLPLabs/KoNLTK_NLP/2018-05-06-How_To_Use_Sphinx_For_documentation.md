@@ -18,7 +18,7 @@ bigimg:
 
 # sphinx practice for konlp of Konltk
 
-[![Documentation Status](https://readthedocs.org/projects/hyunyoung2s-sphinx-practice/badge/?version=latest)](http://hyunyoung2s-sphinx-practice.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/hyunyoung2s-sphinx-practice/badge/?version=latest)](http://hyunyoung2s-sphinx-practice.readthedocs.io/ko/latest/?badge=latest)
 
 Above all, let's make virtual environment 
 
@@ -76,6 +76,65 @@ The last thing you have to do is add an empty file called **\.nojekyll** in your
 > git push   
 
 ![](https://raw.githubusercontent.com/hyunyoung2/hyunyoung2_sphinx_practice/master/imgs/nojekll_file.png)
+
+
+### Readthedocs 
+
+If you want to use Readthedocs flatform, it is easy than explaining to you by now with github page and sphinx. 
+
+If you have git repository written in python, import it in readthedocs. 
+
+After that, run the following command: 
+
+> $ sphinx-quickstart  
+
+That makes some file to be needed when you make webpage with sphinx like : 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Konltk_NLP/2018-05-06-How_TO_Use_Sphinx_For_documentation/sphinx_basic_files.png)
+
+In the files, conf.py is important because sphinx create html based on the file option, conf.py.
+
+So enter the Advanced Setting then notify to readthedocs where the conf.py is. 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Konltk_NLP/2018-05-06-How_TO_Use_Sphinx_For_documentation/conf_readthedocs.png)
+
+After recognizing the location of conf.py, readthedocs would render the website based on the option of the file. 
+
+the following is my web site for practice of sphix. 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Konltk_NLP/2018-05-06-How_TO_Use_Sphinx_For_documentation/sphinx_website_for_my_practice.png)
+
+Tip : When you have Korean language, if building the Latexpdf fail. Keep in main of the latex option on conf.py.
+
+In my case, after the option changed, web site was rendered well like thing above. 
+
+the option I used is like :
+
+{% highlight python linenos %}
+latex_elements = {
+    # The paper size ('letterpaper' or 'a4paper').
+    #
+    # 'papersize': 'letterpaper',
+
+    # For konlp
+    'papersize': 'a4paper',
+
+    # The font size ('10pt', '11pt' or '12pt').
+    #
+    # 'pointsize': '10pt',
+
+    # Additional stuff for the LaTeX preamble.
+    #
+    # 'preamble': '',
+
+    # For konlp
+    'preamble': '\\usepackage{kotex}',
+
+    # Latex figure (float) alignment
+    #
+    # 'figure_align': 'htbp',
+}
+{% endhighlight %}
 
 # Reference 
 
