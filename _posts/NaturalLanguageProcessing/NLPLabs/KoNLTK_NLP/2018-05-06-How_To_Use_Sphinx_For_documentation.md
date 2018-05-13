@@ -4,7 +4,7 @@ title: How to use sphinx
 subtitle: Let's start documentation with sphinx
 category: Natural Language Processing Labs
 tags: [nlp, konltk, python]
-permalink: /2018/04/24/PyPI_Practice/
+permalink: /2018/05/06/How_To_Use_Sphinx_For_documentation/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
