@@ -28,10 +28,10 @@ The performance to infer meanings of words depends on the loss function.
 I recommend you to read this paper. 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-This paper presents several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significangant speedup and also learn more regular word representations. </br>
-This paper introduces another loss function called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. for example, The meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada"</br>
-</br>
-If you want to download the data set, visit [here](https://code.google.com/archive/p/word2vec/)
+<p>This paper presents several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significangant speedup and also learn more regular word representations.</p>
+<p>This paper introduces another loss function called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. for example, The meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada".</p>
+
+If you want to download the data set, visit <a href="https://code.google.com/archive/p/word2vec/">here</a>
 </div>
   
   
