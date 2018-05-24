@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensorflow practtice 
+title: Tensorflow practice 
 subtitle: how to use tensorflow 
 category: Natural Language Processing Labs
 tags: [nlp, tensorflow]
