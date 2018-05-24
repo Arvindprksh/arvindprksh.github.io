@@ -1,6 +1,19 @@
-
-
-
+---
+layout: post
+title: Tensorflow practtice 
+subtitle: how to use tensorflow 
+category: Natural Language Processing Labs
+tags: [nlp, tensorflow]
+permalink: /2018/05/24/NLP_Open_seminar/
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
 
 I Want to share tensorflow practice material(presentation) I have made for NLP(Natural Language Processing Open seminar) in Kookmin University. 
 
