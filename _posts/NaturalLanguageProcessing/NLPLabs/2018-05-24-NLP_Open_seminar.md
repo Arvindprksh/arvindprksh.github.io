@@ -18,8 +18,8 @@ bigimg:
 I Want to share tensorflow practice material(presentation) I have made for NLP(Natural Language Processing Open seminar) in Kookmin University. 
 
 
-I hope This presentation help People who want to know the basic of tensorflow about how to use it. 
+I hope This presentation helps People who want to know the basic of tensorflow about how to use it. 
 
-in particular, I hope this helps for beginner of tensorflow. 
+In particular, I hope this helps for beginner of tensorflow. 
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/eYCYk07yr3iRAv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/HyunYoungLee3/natural-language-processing-open-seminar" title="Natural language Processing Open Seminar" target="_blank">Natural language Processing Open Seminar</a> </strong> from <strong><a href="https://www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/53PbVrcu5pruAD" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/HyunYoungLee3/natural-language-processing-open-seminar-98596289" title="Natural language Processing Open Seminar" target="_blank">Natural language Processing Open Seminar</a> </strong> from <strong><a href="//www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
