@@ -1,19 +1,4 @@
----
-layout: post
-title: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
-subtitle: Title of paper - Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
-category: NLP papers
-tags: [nlp, word2vec, translation]
-permalink: /2018/05/31/Google's_Neural_Machine_Translation_System_Bridging_The_Gap_Between_Human_And_Machine_Translation/
-bigimg: 
-  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
-  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
-  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
-  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
-  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
-  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
-  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
----
+
 
 While I have studied for Korean Natural Language processing about Neural Network. I was finding the architecture for my work. 
 
