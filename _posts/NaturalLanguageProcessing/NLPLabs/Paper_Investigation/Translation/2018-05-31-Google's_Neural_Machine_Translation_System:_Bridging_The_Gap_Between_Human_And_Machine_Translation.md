@@ -15,6 +15,8 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
+
+
 While I have studied for Korean Natural Language processing about Neural Network. I was finding the architecture for my work. 
 
 So I read this paper and I realized about dealing with a seqeunce of data. 
