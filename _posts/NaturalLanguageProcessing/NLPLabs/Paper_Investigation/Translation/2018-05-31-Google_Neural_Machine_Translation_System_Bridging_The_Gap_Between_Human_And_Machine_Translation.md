@@ -1,3 +1,5 @@
+
+
 ---
 layout: post
 title: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
@@ -14,7 +16,6 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
-
 While I have studied for Korean Natural Language processing about Neural Network. I was finding the architecture for my work. 
 
 So I read this paper and I realized about dealing with a seqeunce of data. 
