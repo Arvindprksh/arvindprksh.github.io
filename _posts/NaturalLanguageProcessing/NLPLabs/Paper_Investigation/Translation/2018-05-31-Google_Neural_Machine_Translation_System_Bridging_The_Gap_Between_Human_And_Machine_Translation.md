@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
-subtitle: Title of paper - Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
+title: Google's Neural Machine Translation System
+subtitle: Title of paper - Google's Neural Machine Translation System
 category: NLP papers
 tags: [nlp, word2vec, translation]
 permalink: /2018/05/31/Google_Neural_Machine_Translation_System_Bridging_The_Gap_Between_Human_And_Machine_Translation/
