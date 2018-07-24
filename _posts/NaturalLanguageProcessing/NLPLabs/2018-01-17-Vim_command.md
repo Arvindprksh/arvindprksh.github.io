@@ -97,7 +97,8 @@ Use **g** if you don't want to search for the exact word like __g*__, **g#**
 
 ## How to see cp949 or another encoded character on vim
 
-> e ++ecn=<your text's encoding>
+> e ++ecn=<your text's encoding>   
+> e ++enc=cp949
 
 # Reference
  
