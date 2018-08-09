@@ -586,7 +586,9 @@ OR if you want to specify the type you want to search for
  - [How To Write AWK Commands and Scripts](https://www.lifewire.com/write-awk-commands-and-scripts-2200573)
  
  - [Awk Introduction Tutorial - 7 Awk Print Example](https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples/)
-
+ 
+ - [AWK command in Unix/Linux with examples on GeeksforGeeks](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
+ 
  - [How To Use SED Command](http://endic.naver.com/search.nhn?sLn=en&searchOption=all&query=repetition)
  
  - [How To Use SED Command2](http://conqueringthecommandline.com/book/sed)
