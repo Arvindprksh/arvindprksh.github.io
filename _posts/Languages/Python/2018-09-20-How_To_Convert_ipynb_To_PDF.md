@@ -112,5 +112,7 @@ If --user, The python site-packages is under **~/.local/lib**
  - [Pandoc](http://pandoc.org/)
  
  - [nbconvert's user documentation about installation](https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex)
+ 
+ - [How to converting notebook to other formats on ipython](https://ipython.org/ipython-doc/3/notebook/nbconvert.html)
 
  - [Kotex error problem Kor ver.](http://hoze.tistory.com/1426)
