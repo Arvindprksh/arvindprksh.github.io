@@ -85,7 +85,9 @@ you could convert ipynb to a lots of format in Jupyter on web browser,
 
 > File - Download as - PDF via LaTex or etc.
 
-In my case, when I used PDF via I had another error, Korean language problem. 
+In my case, when I used PDF via I had another error, Korean language problem like this:
+
+![](/img/Image/Languages/Python/2018-09-20-How_To_Convert_ipynb_To_PDF/Korean_language_problem.png)
 
 The solution of the problem is fixing template, base.tplx like this: 
 
@@ -93,6 +95,8 @@ The solution of the problem is fixing template, base.tplx like this:
 
 >\\usepackage{kotex}  
 >%\usepackage[T1]{fontenc}
+
+After typing in  kotex like above, Korean Language problem would be resolved.
 
 The location of base.tplx is under **lib/python3.5/site-packages/nbconvert/templates/latex**. 
 
