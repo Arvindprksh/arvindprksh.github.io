@@ -1,0 +1,39 @@
+
+
+
+
+
+
+# wget utility and curl
+
+The **wget utility** allows you to download we pages, files and images from the web using Linux command line.
+
+ > wget -c URL_or_IP_Address_of_what_you_want_to_download
+
+The **curl ** is a tool to transfer data from or to a server, using one of the supported protocoals.
+
+ > curl -O URL_or_IP_Address_of_what_you_want_to_download
+ 
+In more detailed, Let's say, If you want to Fetch the file **index.html** from a certain URL using HTTP protocol.
+and display it to standard output. it is similar to view the source of the webpage, I mean the following will display the raw HTML
+
+> curl a_certain_URL/index.html
+
+After fetching the same file as above, but If you want to redirect the output to a file, index_file, in the current directory.
+
+type in like this:
+
+> curl a_certain_URL/index.html > index_file
+
+If you want to output a file with the same name(index.html) in the current directory, this time use curl command with **-O** option like this:
+
+> curl -O curl a_certain_URL/index.html
+
+
+# Reference 
+
+ - [Wget utility](https://www.lifewire.com/uses-of-command-wget-2201085)
+ 
+ - [curl 1](https://www.lifewire.com/curl-definition-2184508)
+ 
+ - [curl 2](https://www.computerhope.com/unix/curl.htm)
