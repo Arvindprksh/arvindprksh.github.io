@@ -15,6 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
+
 This paper's title is [GhostWriter: Using an LSTM for Automatic Rap Lyric Generation](http://www.aclweb.org/anthology/D15-1221) from EMNLP 2015
 
 The model from this paper focus on generation of rap lyrics. the goal of Ghost Writer is to produce a system that can take a given artist's lyrics and generate similar yet unique lyrics.
