@@ -3,7 +3,7 @@ layout: post
 title: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation
 subtitle: Title of paper - GhostWriter: Using an LSTM for Automatic Rap Lyric Generation
 category: NLP papers
-tags: [nlp, nlg]
+tags: [nlp, lstm, nlg]
 permalink: /2018/09/21/GhostWriter_Using_an_LSTM_for_Automatic_Rap_Lyric_Generation/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
@@ -14,9 +14,7 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
-
-#  
-
+ 
 This paper's title is [GhostWriter: Using an LSTM for Automatic Rap Lyric Generation](http://www.aclweb.org/anthology/D15-1221) from EMNLP 2015
 
 The model from this paper focus on generation of rap lyrics. the goal of Ghost Writer is to produce a system that can take a given artist's lyrics and generate similar yet unique lyrics.
