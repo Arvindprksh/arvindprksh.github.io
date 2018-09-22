@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation
-subtitle: Title of paper - GhostWriter: Using an LSTM for Automatic Rap Lyric Generation
+title: GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
+subtitle: Title of paper : GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
 category: NLP papers
 tags: [nlp, lstm, nlg]
 permalink: /2018/09/21/GhostWriter_Using_an_LSTM_for_Automatic_Rap_Lyric_Generation/
