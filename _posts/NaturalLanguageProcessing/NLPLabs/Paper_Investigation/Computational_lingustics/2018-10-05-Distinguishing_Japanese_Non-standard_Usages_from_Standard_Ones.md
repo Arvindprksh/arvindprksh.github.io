@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones](https://www.aclweb.org/anthology/D17-1246) from EMNLP 2017
+This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones](https://www.aclweb.org/anthology/D17-1246) from EMNLP 2017.
 
 The following is paper seminar on NLP labs.
 
