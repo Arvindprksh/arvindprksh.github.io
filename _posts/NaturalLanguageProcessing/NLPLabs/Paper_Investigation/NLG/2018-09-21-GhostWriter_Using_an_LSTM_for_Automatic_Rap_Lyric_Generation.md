@@ -67,7 +67,7 @@ When producing lyrics with either the LSTM or baseline model. they said "we init
 They used python implementation of an LSTM  from [Jonathan Raiman](https://github.com/JonathanRaiman/theano_lstm).
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-word embedding, LSTM, some tokens(\<endLine\>, \<endVerse\>, \<startVerse\>), morkov model(n-gram base), language model,
+word embedding, LSTM, some tokens("<endLine>", "<endVerse>", "<startVerse>"), morkov model(n-gram base), language model,
 </div>
 
 
