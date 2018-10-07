@@ -72,7 +72,7 @@ word embedding, LSTM, some tokens(<endLine>, <endVerse>, <startVerse), morkov mo
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-This ppaer demonstrate the effectiveness to generate unconstrained rap lyrics using a Long Short-Term Memory Language Model. In this paper, the goal generates lyrics in style to that of a given rapper(Fabolous) but the generated lyrics are not identical to exiting lyrics. it is call ghostwriting task in this paper. It is also different than previous model using explicit templates. Their model defines its own rhyme scheme, line length, and verse length.
+This paer demonstrate the effectiveness to generate unconstrained rap lyrics using a Long Short-Term Memory Language Model. In this paper, the goal generates lyrics in style to that of a given rapper(Fabolous) but the generated lyrics are not identical to exiting lyrics. it is call ghostwriting task in this paper. It is also different than previous model using explicit templates. Their model defines its own rhyme scheme, line length, and verse length.
 </div>
   
   
