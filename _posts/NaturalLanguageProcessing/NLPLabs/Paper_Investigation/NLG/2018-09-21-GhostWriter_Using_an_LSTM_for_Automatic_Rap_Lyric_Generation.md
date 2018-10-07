@@ -45,7 +45,7 @@ For their goal, They used some tokens like this :
 
 > "\<endLine\>", "\<endVerse\>"
 
-They said they expect the system will generate its own line break(<endLine>) and define when the generated verse ends(<endVerse>).
+They said they expect the system will generate its own line break(\<endLine\>) and define when the generated verse ends(\<endVerse\>).
 
 They expected one thing more from "<endLine>", It is the system has a better chancd of understading rhyme schemes used by an artist.
 
@@ -60,9 +60,9 @@ For performance, they used a comparable model which is markov model for lyrics g
 
 In the case of n-gram model, they used back-off to a smaller n-gram against the probability that the context has been never encountered in training data.
 
-Their model's initialization used "<startVerse>" token.
+Their model's initialization used "\<startVerse\>" token.
 
-When producing lyrics with either the LSTM or baseline model. they said "we initialize  with the "<strtVerse>" token.
+When producing lyrics with either the LSTM or baseline model. they said "we initialize  with the "\<strtVerse\>" token.
 
 They used python implementation of an LSTM  from [Jonathan Raiman](https://github.com/JonathanRaiman/theano_lstm).
 
