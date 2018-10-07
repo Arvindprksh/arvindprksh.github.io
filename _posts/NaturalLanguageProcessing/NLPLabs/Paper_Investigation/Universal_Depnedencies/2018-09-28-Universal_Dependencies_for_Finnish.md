@@ -18,7 +18,7 @@ bigimg:
 This paper's title is [Universal Dependencies for Finnish](http://www.aclweb.org/anthology/W15-1821) from NODALIDA 
 2015
 
-The following is what I prepared for on paper seminar of  NLP labs.
+The following is what I prepared for for paper seminar of  NLP labs.
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/oKiTrIuvjAWn6V" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/HyunYoungLee3/distinguishing-japanese-non-standard-usage-from-standard-ones" title="Distinguishing japanese non standard usage from standard ones" target="_blank">Distinguishing japanese non standard usage from standard ones</a> </strong> from <strong><a href="https://www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
 
