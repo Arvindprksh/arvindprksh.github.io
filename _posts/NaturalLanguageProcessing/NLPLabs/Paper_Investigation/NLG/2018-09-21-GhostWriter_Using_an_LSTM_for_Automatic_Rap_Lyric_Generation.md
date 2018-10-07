@@ -43,7 +43,7 @@ They said the goal of their model is to not just generate lyrics, but generate t
 
 For their goal, They used some tokens like this :
 
-> "<endLine>", "<endVerse>"
+> "\<endLine\>", "\<endVerse\>"
 
 They said they expect the system will generate its own line break(<endLine>) and define when the generated verse ends(<endVerse>).
 
