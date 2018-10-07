@@ -44,7 +44,7 @@ This paper introduce to make Universal Dependencies for Finnish. To recap, There
 # Reference 
 
 - Paper 
-  - [Distinguishing Japanese Non-standard Usages from Standard Ones](http://www.aclweb.org/anthology/W15-1821)
+  - [Universal Dependencies for Finnish](http://www.aclweb.org/anthology/W15-1821)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html) 
