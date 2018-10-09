@@ -76,6 +76,8 @@ Then you could convert ipynb to PDF with prompt like two wasy below.
 
 > jupyter nbconvert --to pdf file_name.ipynb
 
+The line above is my case that I used.
+
 Another way is using template like this:
 
 > jupyter nbconvert --to pdf --template what_you_want_to_use file_name.ipynb
