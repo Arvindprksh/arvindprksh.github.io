@@ -292,3 +292,7 @@ Furthermore, if you want to get a code of the tutorial of argparse module, here 
  - [Argparse Tutorial](https://docs.python.org/2/howto/argparse.html)
  
  - [Argparse module](https://docs.python.org/2/library/argparse.html#module-argparse)
+
+ - [argparse – Command line option and argument parsing](https://pymotw.com/2/argparse/)
+  
+ - [argparse – Command line option and argument parsing_1](https://bip.weizmann.ac.il/course/python/PyMOTW/PyMOTW/docs/argparse/index.html)
