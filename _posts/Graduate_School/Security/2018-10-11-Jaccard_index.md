@@ -66,7 +66,7 @@ Let's see the definition of Jaccard Indes on wikipeidia
 
 > The **Jaccard index**, also known as **Intersection over Union(IOU)** and the **Jaccard similarity coefficient** is a statistics used for comparing the similarity and diversity of sample sets.
 
-![](/img/Image/Graduate_school/Security/Jaccard_Index.png)
+![](/img/Image/Graduate_school/Security/2018-10-11-Jaccard_index/Jaccard_Index.png)
 
 As you can see above, 
 
@@ -150,15 +150,15 @@ But in the method of Jaccard Index, There is problems.
  
     - Solution \> [Broder's theorem](https://www.cs.princeton.edu/courses/archive/spring13/cos598C/broder97resemblance.pdf)
     
-     ![](/img/Image/Graduate_school/Security/Broder's_theorem1.png)
+     ![](/img/Image/Graduate_school/Security/2018-10-11-Jaccard_index/Broder's_theorem1.png)
      
-     ![](/img/Image/Graduate_school/Security/Broder's_theorem2.png)
+     ![](/img/Image/Graduate_school/Security/2018-10-11-Jaccard_index/Broder's_theorem2.png)
  
  - A huge number fo files cause a large number of pair-wise comparison among files O(n^2)
     
      - simhash, [Locality sensitive hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134)
 
-     ![](/img/Image/Graduate_school/Security/Locality_sensitive_hashing.png)
+     ![](/img/Image/Graduate_school/Security/2018-10-11-Jaccard_index/Locality_sensitive_hashing.png)
      
 
 # Reference 
