@@ -93,6 +93,7 @@ e.g. let's see Distance exmpale like [Hamming distance](https://en.wikipedia.org
 The Hamming distance between the follwoings is 2
 
 |   Hamming distance    |
+|-----------------------|
 |-----|-|-|-|-|-|-----|-|
 |**1**|1|0|1|0|1|**0**|1|
 |**0**|1|0|1|0|1|**1**|1|
