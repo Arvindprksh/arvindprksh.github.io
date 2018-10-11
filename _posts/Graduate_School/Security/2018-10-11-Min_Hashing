@@ -1,0 +1,85 @@
+
+
+
+**This pase is summary of my class of Advancee Topics in computer science about MinHashing for Security Field's file similarity.**
+
+Before going through Minhashing, arrange the background information like 
+
+- What is the metric for whether data poits (X1, X2, ...) in high dimensional space is similar or not?
+
+The metric is distance, so We need the definition which quantifies the **distance** between X1 and X2. 
+
+i.e. finding all pairs of data point(Xi, Xj) that are within some distance threshold d(X1, X2) <= S(threshold)
+
+When finding all paris of data point against data point Xi which is near-neighbor, it takes O(N^2). 
+
+ - N is the number of data point.
+
+here distance metric means Jaccard distance and similarity, The relationship between Jaccard distance and Jaccard similarity is :
+
+> D(C1, C2) = 1 - Sim(C1, C2)
+
+ - C1, C2 : set 
+
+ - D(C1, C2) : Jaccard distance in the figuer below
+ 
+ - Sim(C1, C2): Jaccard similarity(Index) in the figure below - in two sets, The size of their intersection divided by the size of their union.
+
+![](/img/Image/Graduate_school/Security/2018-10-11-Min_Hashing/Jaccard_index_and_distance.png)
+
+Let's see an example:
+
+![](img/Image/Graduate_school/Security/2018-10-11-Min_Hashing/Jaccard_similairity_example.png)
+
+As you can see above, Jaccard similarity is 3/8. 
+
+3 is intersection set and  8 is union set. 
+
+** Keep in mind set is no-duplicate ***
+
+## Shingles
+
+For now, We know What is distance and similairity metric on relationship of set. 
+
+Let's see how to covert document to sets.
+
+The simple way is : 
+
+ - Document is the set of words appearing in document.
+ 
+So we could represent the document as set of **important** words.
+
+But There are problems which is what is the standard of importance and the set of important words ignore the ordering of words. 
+
+Shingle accounts for The ordering of words. 
+
+a K-Shingle (or K-gram) for a document si a sequence of K tokens that appear in the document.
+
+ - Tokens can be characters, words or something else, depending on the application. 
+ 
+Let's suppose here tokens is characters. 
+
+> K=2 , document D1 = abcab
+
+ - Set of 2-shingles: S(D1) = {ab, bc, ca}
+ 
+ - But bag of 2-shingles: S`(D1) = {ab, bc, ca, ab}, count ab twice. 
+
+From now on, We utilize Set of shigles for Minhashing. 
+
+
+
+
+
+
+
+** If you want to know Minhashing in detail, look at the Youtube below **
+
+<iframe width="944" height="531" src="https://www.youtube.com/embed/1LsAyQVB8sk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+# Reference 
+
+  - [Understading Locality sensitive hashing - toward Data Science](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134)
+  
+  - [CS246 slide for LSH of Stanford](http://i.stanford.edu/~ullman/cs246slides/LSH-1.pdf)
