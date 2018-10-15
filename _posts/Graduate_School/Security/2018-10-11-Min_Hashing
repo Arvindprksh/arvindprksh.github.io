@@ -67,7 +67,10 @@ Let's suppose here tokens is characters.
 
 From now on, We utilize Set of shigles for Minhashing. 
 
+## Minhashing
 
+
+make set to Boolean Matrics
 
 
 
@@ -78,8 +81,15 @@ From now on, We utilize Set of shigles for Minhashing.
 <iframe width="944" height="531" src="https://www.youtube.com/embed/1LsAyQVB8sk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
+And I recommend you a site, which is [**Minig of Massive Datasets**](http://www.mmds.org/), The site provide you lecture and PDF, PPT related to this article in addition to other good materials. 
+
+
 # Reference 
 
   - [Understading Locality sensitive hashing - toward Data Science](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134)
   
+  - [Mining of Massive Datasets at Stanford Infolab](http://www.mmds.org/)
+  
   - [CS246 slide for LSH of Stanford](http://i.stanford.edu/~ullman/cs246slides/LSH-1.pdf)
+  
+  
