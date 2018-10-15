@@ -21,7 +21,7 @@ The **wget utility** allows you to download we pages, files and images from the 
 
  > wget -c URL_or_IP_Address_of_what_you_want_to_download
 
-The **curl ** is a tool to transfer data from or to a server, using one of the supported protocoals.
+The **curl** is a tool to transfer data from or to a server, using one of the supported protocoals.
 
  > curl -O URL_or_IP_Address_of_what_you_want_to_download
  
