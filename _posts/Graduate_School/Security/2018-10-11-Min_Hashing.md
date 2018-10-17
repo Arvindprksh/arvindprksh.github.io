@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Min hash for similarity of two similarity
+title: Min hash for similarity of documents
 subtitle: Min hash function for dimension reduction.
 category: Security
 tags: [security, similarity]
