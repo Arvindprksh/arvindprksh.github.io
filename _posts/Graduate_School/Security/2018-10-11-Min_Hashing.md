@@ -44,7 +44,7 @@ here distance metric means Jaccard distance and similarity, The relationship bet
 
 Let's see an example:
 
-![](img/Image/Graduate_school/Security/2018-10-11-Min_Hashing/Jaccard_similairity_example.png)
+![](/img/Image/Graduate_school/Security/2018-10-11-Min_Hashing/Jaccard_similairity_example.png)
 
 As you can see above, Jaccard similarity is 3/8. 
 
