@@ -184,7 +184,7 @@ Let's calculate similarity of pairs in a signature matrix like this :
 As you can see the simllarities table, similarity of two columns in the original is similar to similarity of two columns in the sigature matrix.
 
 
-** If you want to know Minhashing in detail, look at the Youtube below **
+**If you want to know Minhashing in detail, look at the Youtube below**
 
 <iframe width="944" height="531" src="https://www.youtube.com/embed/96WOGPUgMfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
