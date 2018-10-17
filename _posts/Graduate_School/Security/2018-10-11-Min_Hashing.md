@@ -78,7 +78,7 @@ Let's suppose here tokens is characters.
 
  - Set of 2-shingles: S(D1) = {ab, bc, ca}
  
- - But bag of 2-shingles: S`(D1) = {ab, bc, ca, ab}, count ab twice. 
+ - But bag of 2-shingles: S\`(D1) = {ab, bc, ca, ab}, count ab twice. 
 
 So as to compress long shingles, I can hash them(2-shingle) to 4 bytes(int)
 
