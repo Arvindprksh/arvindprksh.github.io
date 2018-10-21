@@ -186,7 +186,9 @@ As you can see the simllarities table, similarity of two columns in the original
 
 **If you want to know Minhashing in detail, look at the Youtube below**
 
-<iframe width="944" height="531" src="https://www.youtube.com/embed/96WOGPUgMfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/96WOGPUgMfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 
 And I recommend you a site, which is [**Minig of Massive Datasets**](http://www.mmds.org/), The site provide you lecture and PDF, PPT related to this article in addition to other good materials. 
 
