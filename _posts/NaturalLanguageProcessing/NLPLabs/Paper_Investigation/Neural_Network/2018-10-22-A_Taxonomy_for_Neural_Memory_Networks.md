@@ -65,7 +65,7 @@ Neural stack is an example which uses a stack as its external memory bank and ge
 
 In this paper, the basic Neural stack structure is described as follows:
 
-![](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_RAM.png)
+![](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_stack.png)
 
 To sum up, one stack property is that only the topmost content of the stack can be read or written. Writing to the stack is implemented by three operations:
 
