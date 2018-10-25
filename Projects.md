@@ -107,7 +107,7 @@ css : /css/ForYouTubeByHyun.css
 ## Android & Web Application Project
   
   
-  - **[Making Github Page - hyunyoung2.github.io : 현재 이 web page](https://hyunyoung2.github.io)**
+  - **[Making Github Page - hyunyoung2.github.io : Currently, this web page](https://hyunyoung2.github.io)**
   
     - Langugeses : Javascript, html(css), ruby<!--, Markdown, liquid -->
     - Platforms :Jekyll, github, hugo
@@ -141,28 +141,34 @@ css : /css/ForYouTubeByHyun.css
 
     - Langugeses : python
     - Platforms : Ubuntu16.04, Tensorflow
-    - Tools : vim, jupyter notebook
-    - My role(alone) : (None)
+    - Tools : vim
+    - My role(alone) : In order to separate the compoun noun to unit nouns, used BI-LSTM encoder and Linear-chain CRF model.
     - Publication & Award: 
      1. The KIPS(Korea Information Proceeding Society) FALL CONFERENCE(11/02/2018) 
         Title - Compound Noun Decomposition by using Bi-LSTM and Linear-chain CRF
+     2. Excellence Award in "Automatic Spacing and Compound Noun Decoposition : 2018 Korean Natural Language Processing Contest"
+       - Reference of the performance & result When comparing to other models : 
+        - Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contest, " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2017.
+
 
   - **Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences**
 
     - Langugeses : python
     - Platforms : Ubuntu16.04, Tensorflow
-    - Tools : vim, jupyter notebook
-    - My role(alone) : (None)
+    - Tools : vim
+    - My role(alone) : used Neural Network methodology calle BI-LSTM-CRF for automatic spacing of Korean sentences
     - Publication & Award: 
      1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
         Title - Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences
-
+    - Reference of the performance & result comparing to another model : 
+     - Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contest, " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2017. 
+     
   - **Open source project : Konlp(Korean Natural Language toolkit)**
   
     - Langugeses : python
     - Platforms : Ubuntu16.04, Tensorflow
     - Tools : vim, jupyter notebook
-    - My role : (None)
+    - My role : designed and developed the structure of the open source call KoNLP such as how to contribute and test with test module, automatic build system, code checking, and documentation using [SPHINX](http://www.sphinx-doc.org/en/master/) with readthedoce as tech leader in NLP lab of Kookmin university. [Github](https://github.com/konltk/konlp), [Web page](https://www.konltk.org/)
     - Publication & Award: 
      1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
         Title - KoNLTK: Korean Natural Language Toolkit 
@@ -172,7 +178,7 @@ css : /css/ForYouTubeByHyun.css
     - Langugeses : python, C 
     - Platforms : Ubuntu16.04, Tensorflow
     - Tools : vim, jupyter notebook
-    - My role(alone) :
+    - My role(alone) : this projecto is for goal which is the generation of the keyword of document using word2vec and doc2vec, I construct the doc2vec as adding the word2vec of words in the document and then generated the representative keyword of the document comparing doc2vec and word2vec.
     - Publication & Award:
      1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
  
@@ -182,7 +188,7 @@ css : /css/ForYouTubeByHyun.css
     - Langugeses : python, C 
     - Platforms : Ubuntu16.04, Tensorflow
     - Tools : vim, jupyter notebook
-    - My role(alone) : developed and researched all of things related to this project, "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". So I published the paper to "The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017)" and "The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)"
+    - My role(alone) : developed and researched all of things related to "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". the project is classify whether the text message is the spam or not using neural network.
 (Kor ver): 문장 벡터와 전방향 신경망을 이용한 스팸 문자 필터링 연구를 진행하였다.
     - Publication & Award: 
       1. The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017) 
