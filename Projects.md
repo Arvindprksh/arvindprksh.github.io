@@ -168,7 +168,7 @@ css : /css/ForYouTubeByHyun.css
     - Langugeses : python
     - Platforms : Ubuntu16.04, Tensorflow
     - Tools : vim, jupyter notebook
-    - My role : designed and developed the structure of the open source call KoNLP such as how to contribute and test with test module, automatic build system, code checking, and documentation using [SPHINX](http://www.sphinx-doc.org/en/master/) with readthedoce as tech leader in NLP lab of Kookmin university. [Github](https://github.com/konltk/konlp), [Web page](https://www.konltk.org/)
+    - My role : designed and developed the structure of the open source call KoNLP such as how to contribute and test with test module, automatic build system, code checking, and documentation using [SPHINX](http://www.sphinx-doc.org/en/master/) with readthedoce as tech leader in NLP lab of Kookmin university. [\[Github\]](https://github.com/konltk/konlp), [\[Web page\]](https://www.konltk.org/)
     - Publication & Award: 
      1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
         Title - KoNLTK: Korean Natural Language Toolkit 
@@ -196,7 +196,7 @@ css : /css/ForYouTubeByHyun.css
       2. The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)
         Title - Spam Message Filtering by Using Sen2Vec and Feedforward Neural Network
 
-  - **Recommend Word in text which is A B x C D**
+  - **Recommending Word in text which is A B x C D**
     
     - Langugeses : python(3.6)
     - Platforms : Window10 
