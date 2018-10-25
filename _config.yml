@@ -36,7 +36,6 @@ navbar-links:
     - test: "hyunyoung2_konltk_test"
     - dir_test: "hyunyoung2_dir_konltk_test"
   Projects: "Projects"
-    - Template : "templates"
   Search: "Search"
   About Me: 
     - Time Line : "TimeLine"
