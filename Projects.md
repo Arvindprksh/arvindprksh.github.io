@@ -140,14 +140,25 @@ css : /css/ForYouTubeByHyun.css
   
     - Publication & Award:
      1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
+
+  - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
+  
+    - Publication & Award:
+     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
+
+
+  - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
+  
+    - Publication & Award:
+     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
  
 
-  - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network -**
+  - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network**
     
     - Langugeses : python, C 
     - Platforms : Ubuntu16.04, Tensorflow
     - Tools : vim, jupyter notebook
-    - My role : developed and researched all of things related to this project, "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". So I published the paper to "The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017)" and "The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)"
+    - My role(alone) : developed and researched all of things related to this project, "Spam Text Filtering by Using Sen2Vec and FeedForward Neural Nework". So I published the paper to "The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017)" and "The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)"
 (Kor ver): 문장 벡터와 전방향 신경망을 이용한 스팸 문자 필터링 연구를 진행하였다.
     - Publication & Award: 
       1. The 29th Anuual Conference on Human & Cognitive Language Technology(10/14/2017) 
@@ -155,6 +166,15 @@ css : /css/ForYouTubeByHyun.css
       2. The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)
         Title - Spam Message Filtering by Using Sen2Vec and Feedforward Neural Network
 
+- **Recommend Word in text which is A B x C D**
+    
+    - Langugeses : python(3.6)
+    - Platforms : Window10 
+    - Tools : spyder 3.1.2
+    - My role(alone) : this project is toy project, which recommend the best X word, if You have the text which is "A B x C D". I used statistics of n-gram frequency. <a href="https://github.com/hyunyoung2/Hyunyoung2_Recommending_System/tree/master/Python/3.6">[github]</a>.
+
+
+ 
   - **[COPYDET : Plagiarism Detected Source Retrieval and Text Alignment - 원본 문서 추출 및 표절 위치 탐색 기법 ](https://www.youtube.com/watch?v=prBhnX2CQbM&feature=youtu.be)**
     
     - Langugeses : Python
