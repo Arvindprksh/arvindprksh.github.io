@@ -105,22 +105,14 @@ css : /css/ForYouTubeByHyun.css
    <!-- * 제 12회 임베디드 소프트웨어 경진대회(2014) 본선 진출 -->
 
 ## Android & Web Application Project
-
-  - **[KoNLTK Home page](http://www.konltk.org/) : Konltk mean python package tool of natural language processing about Korean as open source. I am in charge of this project.**
-    - Langugeses : Javascript, html(css), go
-    - Platforms : hugo, github
-    - Tools : git, ubuntu 16.04.
-    - My role : created Basic static site using hugo framework to generate the main static web page for konltk open source. 
-    - Description : developed basic setting for main static web page to help my colleague(Younghun Cho) write some article of konltk(opne-source) in detail like tutorial or how-to-use, how-to-install with Markdown.
-    (Kor ver): konltk라는 오픈 소스 프로젝트의 [main homepage](http://www.konltk.org/)를 제작 및 유지 보수
   
- 
+  
   - **[Making Github Page - hyunyoung2.github.io : 현재 이 web page](https://hyunyoung2.github.io)**
   
     - Langugeses : Javascript, html(css), ruby<!--, Markdown, liquid -->
-    - Platforms :Jekyll, github
+    - Platforms :Jekyll, github, hugo
     - Tools : git, Xcode, Mac OS
-    - My role : developed github page alone using Open-Source Static Site Generator(Jekyll).
+    - My role : developed github page alone using Open-Source Static Site Generator(Jekyll) and I used hugo as addition to Jekyll which is another pen-source static site generators(Hugo).
     - Description :
     나만의 이력 및 프로젝트 관리의 위해 그리고 웹 프로래밍을 경험을 위해 진행한 프로젝트입니다.
 
@@ -136,19 +128,51 @@ css : /css/ForYouTubeByHyun.css
 
 ## Natural Language Processing Project
 
-  - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
+  - **Korean Dependency Parsing by using Transition-based Deep Learning Techonology**
+
+    - Langugeses : python
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role : developed the parsing algorithm based on Neural network(Bi-LSTM), the whole methodology of how to parse Korean Sentence to dependency structure(arc-eager and backward based on Head-final rule of Korean Language of transition base).
+    - Publication & Award: 
+     1. 0000
+
+  - **Compound Noun Decomposition by using Bi-LSTM and Linear-chain CRF**
+
+    - Langugeses : python
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role(alone) : (None)
+    - Publication & Award: 
+     1. The KIPS(Korea Information Proceeding Society) FALL CONFERENCE(11/02/2018) 
+        Title - Compound Noun Decomposition by using Bi-LSTM and Linear-chain CRF
+
+  - **Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences**
+
+    - Langugeses : python
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role(alone) : (None)
+    - Publication & Award: 
+     1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
+        Title - Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences
+
+  - **Open source project : Konlp(Korean Natural Language toolkit)**
   
-    - Publication & Award:
-     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
+    - Langugeses : python
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role : (None)
+    - Publication & Award: 
+     1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
+        Title - KoNLTK: Korean Natural Language Toolkit 
 
   - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
-  
-    - Publication & Award:
-     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
 
-
-  - **Deep Learning Method of keyword generation by using Doc2Vec and Word2Vec**
-  
+    - Langugeses : python, C 
+    - Platforms : Ubuntu16.04, Tensorflow
+    - Tools : vim, jupyter notebook
+    - My role(alone) :
     - Publication & Award:
      1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018)
  
@@ -166,13 +190,12 @@ css : /css/ForYouTubeByHyun.css
       2. The 4th Annual conf. on Computational Science & Computational Intelligence(CSCI 2017)-(12/16/2017)
         Title - Spam Message Filtering by Using Sen2Vec and Feedforward Neural Network
 
-- **Recommend Word in text which is A B x C D**
+  - **Recommend Word in text which is A B x C D**
     
     - Langugeses : python(3.6)
     - Platforms : Window10 
     - Tools : spyder 3.1.2
     - My role(alone) : this project is toy project, which recommend the best X word, if You have the text which is "A B x C D". I used statistics of n-gram frequency. <a href="https://github.com/hyunyoung2/Hyunyoung2_Recommending_System/tree/master/Python/3.6">[github]</a>.
-
 
  
   - **[COPYDET : Plagiarism Detected Source Retrieval and Text Alignment - 원본 문서 추출 및 표절 위치 탐색 기법 ](https://www.youtube.com/watch?v=prBhnX2CQbM&feature=youtu.be)**
@@ -195,7 +218,7 @@ css : /css/ForYouTubeByHyun.css
     - Langugeses : C.
     - Platforms : Lex, Yacc, cygwin. 
     - Tools : Visual Studio, Notepad++.
-    - My role : developed Mini-C complier alone.
+    - My role(alone) : developed Mini-C complier alone.
     - Description :
     현존하는 컴파일러와 같이 나만의 C언어를 설계하고, 이 언어로 생성된 코드를 syntax를 검사하여 파스 트리를 출력하는 프로젝입니다. 
 
