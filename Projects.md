@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Projects
-subtitle: this is collection of some things I have worked on what I have been interesting with challenge.
+subtitle: collections of what I have worked on with challenging works I was interested in.
 tag: personal 
 comments: true
 css : /css/ForYouTubeByHyun.css
 ---
 
-  While I Carried out the projects, This shows you My role. This page shows you my personal projects.
+  When I have carried out a variety of fileds like IOT, Kernel, Web, Windows, Natural Language processing, Deep learning and so on. Currently, I am interested in NLP technologies with Deep Learning and Machine Learning. This page would shows you my projects.
 
 ## IOT Project
 
