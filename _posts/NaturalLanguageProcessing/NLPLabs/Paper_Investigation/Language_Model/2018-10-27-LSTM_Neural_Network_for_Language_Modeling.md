@@ -15,9 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This article is just brief summary of [A Taxonomy for Neural Memory Networks](https://arxiv.org/pdf/1805.00327v1.pdf) and posting for me to study what the memory network is. 
-
-This page is brief summary of [], 
+This page is brief summary of [LSTM_Neural_Network_for_Language_Modeling](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
 
 Language model means If you have text which is "A B C X" and already know "A B C", and then from corpus, you can expect whether What kind of word, X appears in the context.
 
