@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LSTM_Neural_Network_for_Language_Modeling
-subtitle: Title of paper - LSTM_Neural_Network_for_Language_Modeling
+title: LSTM Neural Network for Language Modeling
+subtitle: Title of paper - LSTM Neural Network for Language Modeling
 category: NLP papers
 tags: [neural_network, nlp]
 permalink: /2018/10/27/LSTM_Neural_Network_for_Language_Modeling/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This page is brief summary of [LSTM_Neural_Network_for_Language_Modeling](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
+This page is brief summary of [LSTM Neural Network for Language Modeling](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
 
 Language model means If you have text which is "A B C X" and already know "A B C", and then from corpus, you can expect whether What kind of word, X appears in the context.
 
