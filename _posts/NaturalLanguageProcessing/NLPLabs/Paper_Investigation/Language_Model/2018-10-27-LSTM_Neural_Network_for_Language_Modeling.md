@@ -69,7 +69,7 @@ This paper said the result of using LSTM neural network on language model with c
  
 - [wikipedia about backing-off model](https://en.wikipedia.org/wiki/Katz%27s_back-off_model)
 
-
+- [Quora of what is back off in NLP](https://www.quora.com/What-is-backoff-in-NLP)
 
 
 
