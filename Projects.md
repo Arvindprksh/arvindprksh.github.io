@@ -131,7 +131,7 @@ css : /css/ForYouTubeByHyun.css
 
     - Langugeses : python
     - Platforms : Ubuntu16.04, Tensorflow
-    - Tools : vim, jupyter notebook
+    - Tools : vim
     - My role : developed the parsing algorithm based on Neural network(Bi-LSTM), the whole methodology of how to parse Korean Sentence to dependency structure(arc-eager and backward based on Head-final rule of Korean Language of transition base).
     - Publication & Award: 
      1. 0000 [\[Paper\]](), [\[Slide\]]()
