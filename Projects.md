@@ -177,7 +177,7 @@ css : /css/ForYouTubeByHyun.css
     - Tools : vim, jupyter notebook
     - My role(alone) : this projecto is for goal which is the generation of the keyword of document using word2vec and doc2vec, I construct the doc2vec as adding the word2vec of words in the document and then generated the representative keyword of the document comparing doc2vec and word2vec.
     - Publication & Award:
-     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018). [\[Poster\]]()
+     1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018). [\[Poster\]](), [\[Slide\]]() 
  
 
   - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network**
