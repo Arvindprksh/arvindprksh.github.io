@@ -92,7 +92,7 @@ css : /css/ForYouTubeByHyun.css
   </div>
 </div>  
   
-  - **[Cutomizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
+  - **[Customizing Governor in big.LITTLE Architecture - KBG : Kangbuk Governor](https://www.youtube.com/watch?v=K1lXRJxumwQ)**
   
     - Langugeses : C/C++, Java
     - Platforms : Android, Linux, ORDROID-XU+E 
