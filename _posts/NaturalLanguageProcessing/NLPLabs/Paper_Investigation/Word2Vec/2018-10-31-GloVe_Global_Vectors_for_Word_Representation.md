@@ -49,13 +49,13 @@ So, GloVe utilized are the matrix word-word co-coccurence with context window si
 
 Above all, Let's see notation for equation of GloVe.
 
-$$\begin{document}
-Let the matrix of word-word co-occurrence counts be denoted by X, whose entries X\textsubscript{ij} tabulate the number of times word j occurs in the context of word i.
+
+Let the matrix of word-word co-occurrence counts be denoted by X, whose entries X\\(textsubscript{ij})\\ tabulate the number of times word j occurs in the context of word i.
 
 Let X\textsubscript{i}=$\sum_{k}X\textsubscript{ik}$ be the number of times any word appears in the context of word i.
 
 Finally, let P\textsubscript{ij}=P(j|i)=X\textsubscript{ij}/X\textsubscript{i} be the probability that word j appear in the context of word i.
-\end{document}$$
+
 
 How to correlate the co-occurence matrix to two words in some phase. 
 
