@@ -74,7 +74,6 @@ As you can see above, \\( f(X_{ij} \\) is weighting function. The weigting funct
  - f(X) should be non-decreasing so that rara co-occurences are not overweighted.
  
  - f(X) should be relatively small for large value of X, so that frequent co-occurences are not overweighted.
-\end{document}$$
 
 f(X) function below was used in the GloVe paper
 
