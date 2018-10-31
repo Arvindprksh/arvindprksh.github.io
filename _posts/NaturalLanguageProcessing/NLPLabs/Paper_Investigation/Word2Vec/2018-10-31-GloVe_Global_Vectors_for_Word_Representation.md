@@ -52,7 +52,7 @@ Above all, Let's see notation for equation of GloVe.
 
 Let the matrix of word-word co-occurrence counts be denoted by X, whose entries \\(X_{ij})\\ tabulate the number of times word j occurs in the context of word i.
 
-Let \\(X_{i}=\\(\sum_{k}X_{ik})\\ be the number of times any word appears in the context of word i.
+Let \\(X_{i}=\sum_{k}X_{ik})\\ be the number of times any word appears in the context of word i.
 
 Finally, let \\(P_{ij}=P(j|i)=X_{ij}/X_{i})\\ be the probability that word j appear in the context of word i.
 
