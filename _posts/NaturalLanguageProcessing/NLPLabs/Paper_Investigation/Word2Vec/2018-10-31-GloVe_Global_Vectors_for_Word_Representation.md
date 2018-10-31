@@ -50,11 +50,11 @@ So, GloVe utilized are the matrix word-word co-coccurence with context window si
 Above all, Let's see notation for equation of GloVe.
 
 
-Let the matrix of word-word co-occurrence counts be denoted by X, whose entries X\\(textsubscript{ij})\\ tabulate the number of times word j occurs in the context of word i.
+Let the matrix of word-word co-occurrence counts be denoted by X, whose entries \\(X_{ij})\\ tabulate the number of times word j occurs in the context of word i.
 
-Let X\textsubscript{i}=$\sum_{k}X\textsubscript{ik}$ be the number of times any word appears in the context of word i.
+Let \\(X_{i}=\\(\sum_{k}X_{ik})\\ be the number of times any word appears in the context of word i.
 
-Finally, let P\textsubscript{ij}=P(j|i)=X\textsubscript{ij}/X\textsubscript{i} be the probability that word j appear in the context of word i.
+Finally, let \\(P_{ij}=P(j|i)=X_{ij}/X_{i})\\ be the probability that word j appear in the context of word i.
 
 
 How to correlate the co-occurence matrix to two words in some phase. 
@@ -69,8 +69,7 @@ GloVe is log-bilinear regression model so the cost function is the same from the
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
 
-$$\begin{document}
-As you can see above, f(X\textsubscript{ij}) is weighting function. The weigting function should be obey the following properties:
+As you can see above, \\(f(X_{ij}))\\ is weighting function. The weigting function should be obey the following properties:
 
  - f(X) should be non-decreasing so that rara co-occurences are not overweighted.
  
@@ -83,23 +82,21 @@ f(X) function below was used in the GloVe paper
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
 
-$$\begin{document}
+
 As you can see the cost function, GloVe calculate by co-occurence matrix size to update 
-W\textsubscript{i} is word vector, ith row on co-occurence matrix.
+\\(W_{i})\\ is word vector, ith row on co-occurence matrix.
 
 Also
 
-W\textsubscript{j} is context word vector for the context of ith row vector on co-occurence matrix.
+\\(W_{j})\\ is context word vector for the context of ith row vector on co-occurence matrix.
 
-The cost function calculate the least square of the dot product of W\textsubscript{i} and W\textsubscript{j} - log(X\textsubscript{ij})
+The cost function calculate the least square of the dot product of \\(W_{i})\\ and \\(W_{j})\\ - \\(log(X_{ij}))\\
 
 X\textsubscript{ij} is count of oc-occurence matrix.
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-W\textsubscript{i} and W\textsubscript{j} is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of W\textsubscript{i} and W\textsubscript{j} is used for word vector which boosts the performace in NLP task of thie paper
+\\(W_{i})\\\ and \\(W_{j})\\ is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of \\(W_{i})\\ and \\(W_{j})\\ is used for word vector which boosts the performace in NLP task of thie paper
 </div>
-\end{document}$$
-
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 GloVe is another way to represent words into continuous vector space with two features which are global cooccurence matrix and log-bilinear regression model. GloVe utilize the familes like 1) global matrix factorization method, 2) local context window methods.
