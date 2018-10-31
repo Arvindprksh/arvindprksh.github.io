@@ -54,7 +54,7 @@ Let the matrix of word-word co-occurrence counts be denoted by X, whose entries 
 
 Let \\( X_{i}=\sum_{k}X_{ik} \\) be the number of times any word appears in the context of word i.
 
-Finally, let \\( P_{ij}=P(j|i)=X_{ij}/X_{i} \\) be the probability that word j appear in the context of word i.
+Finally, let \\( P_{ij}=P(j\|i)=X_{ij}/X_{i} \\) be the probability that word j appear in the context of word i.
 
 
 How to correlate the co-occurence matrix to two words in some phase. 
@@ -69,7 +69,7 @@ GloVe is log-bilinear regression model so the cost function is the same from the
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
 
-As you can see above, \\( f(X_{ij} \\) is weighting function. The weigting function should be obey the following properties:
+As you can see above, \\( f(X_{ij}) \\) is weighting function. The weigting function should be obey the following properties:
 
  - f(X) should be non-decreasing so that rara co-occurences are not overweighted.
  
