@@ -94,7 +94,7 @@ The cost function calculate the least square of the dot product of \\(W_{i}\\) a
 \\(X_{ij}\\) is count of oc-occurence matrix.
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-\\( W_{i} \\) and \\( W_{j} \\) is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of \\( W_{i} \\) and \\( W_{j} \\) is used for word vector which boosts the performace in NLP task of thie paper
+`\(W_{i}$\)` and `(\W_{j}\)` is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of `(\W_{i}\)` and `\(W_{j}\)` is used for word vector which boosts the performace in NLP task of thie paper
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
