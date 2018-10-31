@@ -49,13 +49,13 @@ So, GloVe utilized are the matrix word-word co-coccurence with context window si
 
 Above all, Let's see notation for equation of GloVe.
 
-$$ \begin{document}
+$$\begin{document}
 Let the matrix of word-word co-occurrence counts be denoted by X, whose entries X\textsubscript{ij} tabulate the number of times word j occurs in the context of word i.
 
 Let X\textsubscript{i}=$\sum_{k}X\textsubscript{ik}$ be the number of times any word appears in the context of word i.
 
 Finally, let P\textsubscript{ij}=P(j|i)=X\textsubscript{ij}/X\textsubscript{i} be the probability that word j appear in the context of word i.
-\end{document} $$
+\end{document}$$
 
 How to correlate the co-occurence matrix to two words in some phase. 
 
@@ -69,13 +69,13 @@ GloVe is log-bilinear regression model so the cost function is the same from the
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
 
-$$ \begin{document}
+$$\begin{document}
 As you can see above, f(X\textsubscript{ij}) is weighting function. The weigting function should be obey the following properties:
 
  - f(X) should be non-decreasing so that rara co-occurences are not overweighted.
  
  - f(X) should be relatively small for large value of X, so that frequent co-occurences are not overweighted.
-\end{document} $$
+\end{document}$$
 
 f(X) function below was used in the GloVe paper
 
@@ -83,7 +83,7 @@ f(X) function below was used in the GloVe paper
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
 
-$$ \begin{document}
+$$\begin{document}
 As you can see the cost function, GloVe calculate by co-occurence matrix size to update 
 W\textsubscript{i} is word vector, ith row on co-occurence matrix.
 
@@ -98,7 +98,7 @@ X\textsubscript{ij} is count of oc-occurence matrix.
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 W\textsubscript{i} and W\textsubscript{j} is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of W\textsubscript{i} and W\textsubscript{j} is used for word vector which boosts the performace in NLP task of thie paper
 </div>
-\end{document} $$
+\end{document}$$
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
