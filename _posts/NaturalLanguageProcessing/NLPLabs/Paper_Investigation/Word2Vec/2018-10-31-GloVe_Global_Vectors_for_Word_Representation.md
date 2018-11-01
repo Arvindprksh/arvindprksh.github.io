@@ -142,3 +142,5 @@ GloVe is another way to represent words into continuous vector space with two fe
      * I think the aobve links I read a little is very interesting. later on I would read both of them and papers related to it.
   
  - [bilinear regression definition](https://www.statisticshowto.datasciencecentral.com/bilinear-regression/)
+
+ - [StackExchange about bilinear](https://math.stackexchange.com/questions/878325/what-is-a-bilinear-form)
