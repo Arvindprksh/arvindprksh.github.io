@@ -141,3 +141,4 @@ GloVe is another way to represent words into continuous vector space with two fe
   - [Online Learning on Linkedin Slide](https://www.slideshare.net/queirozfcom/online-machine-learning-introduction-and-examples)
      * I think the aobve links I read a little is very interesting. later on I would read both of them and papers related to it.
   
+ - [bilinear regression definition](https://www.statisticshowto.datasciencecentral.com/bilinear-regression/)
