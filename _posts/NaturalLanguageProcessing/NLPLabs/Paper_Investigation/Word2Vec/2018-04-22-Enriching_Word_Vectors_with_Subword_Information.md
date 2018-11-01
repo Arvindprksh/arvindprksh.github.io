@@ -35,7 +35,7 @@ On the example above, using hyperparameters for smallest ngram is 3 and largest 
 
 that is why they argue on small size of corpus the vector using the character level n grams is better than the vector using word as atomic entity.
 
-they present a word by the sum  of vector representations of its n-grams.
+They present a word by the sum  of vector representations of its n-grams.
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 be careful of how to handle n gram of character level <br/>
