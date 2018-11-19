@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to do padding in Tensorflwo 
+title: How to do padding in Tensorflow 
 subtitle: There are two types of padding, SAME and VALID
 category: Tensorflow
 tags: [tensorflow]
