@@ -4,7 +4,7 @@ title: Character-Aware Neural Language Models
 subtitle: Title of paper - Character-Aware Neural Language Models
 category: NLP papers
 tags: [neural_network, memory_network]
-permalink: /2018?11/30/Character-Aware_Neural_Language_Models/
+permalink: /2018/11/30/Character-Aware_Neural_Language_Models/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
