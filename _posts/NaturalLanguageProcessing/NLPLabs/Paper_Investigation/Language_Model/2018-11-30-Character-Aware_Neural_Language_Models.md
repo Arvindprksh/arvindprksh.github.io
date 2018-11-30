@@ -86,7 +86,7 @@ they used CNN network for LM(Language model) on morphologically richer languages
   - [affine transformation on stackexchange](https://datascience.stackexchange.com/questions/13405/what-is-affine-transformation-in-regards-to-neural-networks)
   - [affine transforamtion on Medium](https://medium.com/wwblog/transformation-in-neural-networks-cdf74cbd8da8)
   - [Language model on Machine Learning Mastery](https://machinelearningmastery.com/statistical-language-modeling-and-neural-language-models/)
-
+  - [list of Latex symbol on LaTeX Wiki](http://latex.wikia.com/wiki/List_of_LaTeX_symbols)
 
 
 
