@@ -33,7 +33,7 @@ the definition that LM predicts the next words given a sequence of words is from
 
 let's say the length of a sequence is 3, if we want to predict fourth word. the pobability of next word is conditional probability distribution is like :
 
-- \\( P(w_{3} | w_{1}, w_{2}) = p(w_{1})*p(w_{2}|w_{1})*p(w_(3)|w_{1},w_{2}) \\)
+- \\( P(w_{3} \| w_{1}, w_{2}) = p(w_{1})*p(w_{2}\|w_{1})*p(w_(3)\|w_{1},w_{2}) \\)
 
 they estimate the probability of LM withe their model. 
 
