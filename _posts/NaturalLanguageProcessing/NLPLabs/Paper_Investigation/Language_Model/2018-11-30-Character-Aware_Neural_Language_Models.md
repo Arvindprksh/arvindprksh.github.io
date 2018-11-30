@@ -54,6 +54,10 @@ one layer of a highway nework does the following :
 
 Also let's the result of Learned word representation
 
+Word embeddings obtained through NLMs show you the property whereby semantically close words are likewise close in the induced vector space. 
+
+Let's see the figure below with this intution about Word embeddings.
+
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-11-30-Character-Aware_Neural_Language_Models/Character-Aware Neural Language Models_figure2.png)
 
 
