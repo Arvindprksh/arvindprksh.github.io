@@ -64,6 +64,20 @@ Let's see the figure below with this intution about Word embeddings.
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-11-30-Character-Aware_Neural_Language_Models/haracter-Aware Neural Language Models_table6.png)
 
 
+Also, I realized What the hierarchical softmax is.
+
+
+Let's see the hierarchical softmax they used 
+
+they pcik the number of cluster  \\( c = \lceil \square|V| \rceil \\), and randomly split \\( V \\)  into mutually exclusive and collectively exhastive subsets \\( V_{1}, ....... , V_{c} \\) of approximately equal size. 
+
+The \\( \Pr(W_{i} = j \| W_{1:t}) = exp(h_{t} \cdot s^r + t^r)/ \sideset{}{_r'=1^c}exp(h_{t} \cdot s^r' + t^r') \times exp(h_{t} \cdot P_{r}^j + q_{r}^j)/ \sideset{}{_j''\inV_{r}}exp(h_{t} \cdot P_{r}^j' + q_{r}^j') \\)
+
+Wherer r is the cluster index such that \\( j \in V_{r} \\). The first term is imple the porbability of picking cluster r, and the second term is the probability of picking word j given that cluster r is picked.
+
+
+
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 they used CNN network for LM(Language model) on morphologically richer languages depending on character-level inputs. But. Predications are still word-level as output. the whole structure of the network is convolutional neural network(CNN) and a highway network over the characters, whose output is given to a long short-term model(RNN-LM). the analysis of word representations obtained from the character composition part of the model reveals that the model is able to encode, from character only, both semantic and orthographic information. 
 </div>
