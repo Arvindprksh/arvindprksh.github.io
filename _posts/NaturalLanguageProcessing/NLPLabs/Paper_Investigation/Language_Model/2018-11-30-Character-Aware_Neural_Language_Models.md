@@ -75,7 +75,7 @@ they pcik the number of cluster  \\( c = \lceil \sqrt{\|V\|} \rceil \\), and ran
 
 \\( G(x) = \frac{exp(h_{t} \cdot P_{r}^j + q_{r}^j)}{\sum_{j^{\`} \in V_{r}} exp(h_{t} \cdot P_{r}^j^{\`} + q_{r}^j^{\`})} \\)  
 
-The \\( Pr(W_{i} = j \| W_{1:t}) =  F(x) \times G(x) \\)
+The \\( Pr(W_{i+1} = j \| W_{1:t}) =  F(x) \times G(x) \\)
 
 Wherer r is the cluster index such that \\( j \in V_{r} \\). The first term is imple the porbability of picking cluster r, and the second term is the probability of picking word j given that cluster r is picked.
 
