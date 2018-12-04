@@ -71,9 +71,9 @@ Let's see the hierarchical softmax they used
 
 they pcik the number of cluster  \\( c = \lceil \sqrt{\|V\|} \rceil \\), and randomly split \\( V \\)  into mutually exclusive and collectively exhastive subsets \\( V_{1}, ....... , V_{c} \\) of approximately equal size. 
 
-\\( F(x) = \frac{exp(h_{t} \cdot s^r + t^r)}{\sum\limits_{r'=1}^n exp(h_{t} \cdot s^r' + t^r')} \\)
+\\( F(x) = \frac{exp(h_{t} \cdot s^r + t^r)}{\sum\limits_{r'=1}^n exp(h_{t} \cdot s^r' + t^r')} \\), \\( G(x) = \frac{exp(h_{t} \cdot P_{r}^j + q_{r}^j)}{\sum\limits_{j'\inV_{r}} exp(h_{t} \cdot P_{r}^j' + q_{r}^j')} \\)  
 
-The \\( Pr(W_{i} = j \| W_{1:t}) =  \frac{exp(h_{t} \cdot s^r + t^r)}{\sideset{_}{_r'=1^c}\sum exp(h_{t} \cdot s^r' + t^r')} \times \frac{exp(h_{t} \cdot P_{r}^j + q_{r}^j)}{\sideset{_}{_j'\inV_{r}}\sum exp(h_{t} \cdot P_{r}^j' + q_{r}^j')}  \\)
+The \\( Pr(W_{i} = j \| W_{1:t}) =  F(x) \times {G(x) \\)
 
 Wherer r is the cluster index such that \\( j \in V_{r} \\). The first term is imple the porbability of picking cluster r, and the second term is the probability of picking word j given that cluster r is picked.
 
