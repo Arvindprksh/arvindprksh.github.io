@@ -69,7 +69,7 @@ Also, I realized What the hierarchical softmax is.
 
 Let's see the hierarchical softmax they used 
 
-they pcik the number of cluster  \\( c = \lceil \square|V| \rceil \\), and randomly split \\( V \\)  into mutually exclusive and collectively exhastive subsets \\( V_{1}, ....... , V_{c} \\) of approximately equal size. 
+they pcik the number of cluster  \\( c = \lceil \square\|V\| \rceil \\), and randomly split \\( V \\)  into mutually exclusive and collectively exhastive subsets \\( V_{1}, ....... , V_{c} \\) of approximately equal size. 
 
 The \\( \Pr(W_{i} = j \| W_{1:t}) = exp(h_{t} \cdot s^r + t^r)/ \sideset{}{_r'=1^c}exp(h_{t} \cdot s^r' + t^r') \times exp(h_{t} \cdot P_{r}^j + q_{r}^j)/ \sideset{}{_j''\inV_{r}}exp(h_{t} \cdot P_{r}^j' + q_{r}^j') \\)
 
