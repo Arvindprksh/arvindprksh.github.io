@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-After reading this paper, the discributional hypothesis mean you can estimate the meaning of word from distribution of words in context. 
+After reading this paper,The Distributional Hypothesis(MagnusSahlgren 2008), the discributional hypothesis mean you can estimate the meaning of word from distribution of words in context. 
 
 In here, context could be a sentence, paragraph or document and so forth. So when I find the meaning of word, the distribution of words help rather than usage of words.
 
