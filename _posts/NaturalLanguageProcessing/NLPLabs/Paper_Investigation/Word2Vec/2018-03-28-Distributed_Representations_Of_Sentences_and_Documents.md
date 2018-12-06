@@ -22,7 +22,7 @@ Nowadays, it is important to embed sentences, documents, or paragraph on sentime
 
 So I read a paper about how to embed setences and documents. 
 
-The title of the paper is **Distributed Representations of Sentences and Documentes**.
+The title of the paper is **[Distributed Representations of Sentences and Documentes, Quoc V. Le. et al(2014)](https://arxiv.org/abs/1405.4053v2)**.
 
 Let's see the models they argue for paragraph vector. ahead of proceeding to the inpiration of their model. 
 
