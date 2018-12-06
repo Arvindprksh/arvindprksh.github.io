@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
+This paper,[Extractive Summarization using Continuous Vector Space Models(Mikael Kågebäck et al.(2014))](http://www.aclweb.org/anthology/W14-1504), is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
 
 But I think this paper helps me understand the architecture base on neural newwork language modeling.  
 
