@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-I think this paper is the best to understand why the addition of two vectors works well to meaningfully infer the relation between two words.
+I think this paper,Distributed Representations of Words and Phrases and their Compositionality(Mikolov et al. 2013), is the best to understand why the addition of two vectors works well to meaningfully infer the relation between two words.
 
 And also it is good to understand why I have to make phrase from words. let's think of the reason.
 
