@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-Overall, This paper is saying about comparing computational time with each other model, and extension of NNLM which turns into two step. one is training word vector and then the other step is using the trained vector on The NNLM.
+Overall, This paper,[Efficient Estimation of Word Representations in Vector Space, Mikolov et al.(2013)](https://arxiv.org/abs/1301.3781v3),  is saying about comparing computational time with each other model, and extension of NNLM which turns into two step. one is training word vector and then the other step is using the trained vector on The NNLM.
 
 In estimaiting continuous representations of words including the well-known Latent Semantic Analysis(LSA) and Latent Dirichlet Allocation(LDA). 
 
