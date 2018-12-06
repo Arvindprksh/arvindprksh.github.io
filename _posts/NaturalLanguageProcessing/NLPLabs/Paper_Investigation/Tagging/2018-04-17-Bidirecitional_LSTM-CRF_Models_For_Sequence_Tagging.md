@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
+This paper,[Bidirectional LSTM-CRF Models for Sequence Tagging,(Zhiheng Huang et al. 2015)](https://arxiv.org/abs/1508.01991v1), refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
 
 Normally, If you run into Sequence tagging problem, you would think of RNN. 
 
