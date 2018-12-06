@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper is about text summarization based on cetroid, and then they experiment multi-documents and a multi-lingual sigle document.
+This paper,[Centroid-based Text Summarization through Compositionality of Word Embeddings, Gaetano Rossiello et al.(2017)](http://www.aclweb.org/anthology/W17-1003), is about text summarization based on cetroid, and then they experiment multi-documents and a multi-lingual sigle document.
 
 This paper's idea is using word embedding which is better on what words is similar on syntantic and semantic relationship rather than BOW(bag-of-words). 
 
