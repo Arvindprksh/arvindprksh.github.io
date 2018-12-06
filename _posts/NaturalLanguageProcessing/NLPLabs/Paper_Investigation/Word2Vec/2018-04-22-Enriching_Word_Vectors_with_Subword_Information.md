@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Enriching Word Vectors with Subword Information Piotr Bojanowski et al.(2017)](https://arxiv.org/abs/1607.04606v2) have been arguing it is better on inference of words out of Vocabulary by using character levels n-gram. 
+This paper,[Enriching Word Vectors with Subword Information, Piotr Bojanowski et al.(2017)](https://arxiv.org/abs/1607.04606v2) have been arguing it is better on inference of words out of Vocabulary by using character levels n-gram. 
 
 i.e. word2vec treats each word in corpus like an atomic entity and generates a vector for each word. 
 
