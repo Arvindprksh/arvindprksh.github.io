@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [Universal Dependencies for Finnish](http://www.aclweb.org/anthology/W15-1821) from NODALIDA 
+This paper's title is [Universal Dependencies for Finnish, Sampo Pyysalo et al.(2015)](http://www.aclweb.org/anthology/W15-1821) from NODALIDA 
 2015
 
 The following is what I prepared for for paper seminar of  NLP labs.
