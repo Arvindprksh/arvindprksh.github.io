@@ -19,7 +19,7 @@ bigimg:
 {% include MathJax.html %}
 
 
-This psoting is summary about the paper, "[GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf)"
+This posting is summary about the paper, "[GloVe: Global Vectors for Word Representation, effrey Pennington et al.(2014)](https://nlp.stanford.edu/pubs/glove.pdf)"
 
 
 There are two methodologies for distributional word representations.
