@@ -19,7 +19,8 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
+This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model,Mikolov
+ et al.(2011)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
 
 This is for me to studying artificial neural network with NLP field. 
 
