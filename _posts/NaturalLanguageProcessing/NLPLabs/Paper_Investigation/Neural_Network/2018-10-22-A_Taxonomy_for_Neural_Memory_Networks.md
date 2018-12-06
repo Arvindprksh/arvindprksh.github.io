@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This article is just brief summary of [A Taxonomy for Neural Memory Networks](https://arxiv.org/pdf/1805.00327v1.pdf) and posting for me to study what the memory network is. 
+This article is just brief summary of [A Taxonomy for Neural Memory Networks, Ying Ma et al.(2018)](https://arxiv.org/pdf/1805.00327v1.pdf) and posting for me to study what the memory network is. 
 
 They suggest A taxonomy for Neural Memory Network with RNN, LSTM, Neural Stack, and Neural RAM.
 
@@ -110,13 +110,13 @@ Their Taxonomy includes all the popular memory networks; vanilla recurrent neura
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1805.00327v1">The paper: A Taxonomy for Neural Memory Networks</a>
+  <a href="https://arxiv.org/abs/1805.00327">The paper: A Taxonomy for Neural Memory Networks</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [A Taxonomy for Neural Memory Networks](https://arxiv.org/abs/1805.00327v1)
+  - [A Taxonomy for Neural Memory Networks](https://arxiv.org/abs/1805.00327)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
