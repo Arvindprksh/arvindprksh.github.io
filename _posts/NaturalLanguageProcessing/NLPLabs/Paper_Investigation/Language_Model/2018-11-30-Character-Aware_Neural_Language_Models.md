@@ -19,7 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of [Character-Aware Neural Language Models](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
+This article is just brief summary of [Character-Aware Neural Language Models, Yoon Kim et al.(2015)](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
 
 Their neural network consists of CNN for character-level as input, also high-way network before LSTM and finally LSTM-LM(Language model).
 
