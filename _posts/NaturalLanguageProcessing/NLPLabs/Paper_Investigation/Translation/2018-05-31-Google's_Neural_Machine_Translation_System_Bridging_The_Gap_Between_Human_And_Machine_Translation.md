@@ -14,9 +14,9 @@ bigimg:
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
-While I have studied for Korean Natural Language processing about Neural Network. I was finding the architecture for my work. 
+While I have studied for Korean Natural Language processing with Neural Network. I was finding the architecture for my work. 
 
-So I read this paper and I realized about dealing with a seqeunce of data. 
+So I read this paper,[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation, Yonghui Wu et al.(2016)](https://arxiv.org/abs/1609.08144v2) , and I realized about how to dealing with a seqeunce of data. 
 
 This paper is end-to-end model for Neural Network translation. In my case, I wondered the architectur of neural network about how to use LSTM for translation. 
 
