@@ -75,8 +75,8 @@ They introduce a new recurrent neural network based language model(RNN LM) with 
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
  
 - For your information
-  [Distributed representation on O'REILLY](https://mail.google.com/mail/u/0/#inbox/FMfcgxmZTlnNZMxzKqvPTzSHRMVSJZDs)
-  [Hierarchical Softmax as output activation function in Neural Network on becominghuman.ai](https://becominghuman.ai/hierarchical-softmax-as-output-activation-function-in-neural-network-1d19089c4f49)
+  -[Distributed representation on O'REILLY](https://www.oreilly.com/ideas/how-neural-networks-learn-distributed-representations)
+  -[Hierarchical Softmax as output activation function in Neural Network on becominghuman.ai](https://becominghuman.ai/hierarchical-softmax-as-output-activation-function-in-neural-network-1d19089c4f49)
 
 
 
