@@ -75,12 +75,12 @@ They introduce a new recurrent neural network based language model(RNN LM) with 
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
  
 - For your information
-  -[Distributed representation on O'REILLY](https://www.oreilly.com/ideas/how-neural-networks-learn-distributed-representations)
-  -[Hierarchical Softmax as output activation function in Neural Network on becominghuman.ai](https://becominghuman.ai/hierarchical-softmax-as-output-activation-function-in-neural-network-1d19089c4f49)
-  -[Language model on Wikipedia](https://en.wikipedia.org/wiki/Language_model)
-  -[Language model A Survey of the State-of-the-Art Techonology on medium](https://medium.com/syncedreview/language-model-a-survey-of-the-state-of-the-art-technology-64d1a2e5a466)
-  -[Stackexchange on log-linear vs log-bilear](https://stats.stackexchange.com/questions/157136/log-linear-vs-log-bilinear)
-  -[Neural Language models and word embedding as reference](https://piotrmirowski.files.wordpress.com/2014/06/piotrmirowski_2014_wordembeddings.pdf)
+  - [Distributed representation on O'REILLY](https://www.oreilly.com/ideas/how-neural-networks-learn-distributed-representations)
+  - [Hierarchical Softmax as output activation function in Neural Network on becominghuman.ai](https://becominghuman.ai/hierarchical-softmax-as-output-activation-function-in-neural-network-1d19089c4f49)
+  - [Language model on Wikipedia](https://en.wikipedia.org/wiki/Language_model)
+  - [Language model A Survey of the State-of-the-Art Techonology on medium](https://medium.com/syncedreview/language-model-a-survey-of-the-state-of-the-art-technology-64d1a2e5a466)
+  - [Stackexchange on log-linear vs log-bilear](https://stats.stackexchange.com/questions/157136/log-linear-vs-log-bilinear)
+  - [Neural Language models and word embedding as reference](https://piotrmirowski.files.wordpress.com/2014/06/piotrmirowski_2014_wordembeddings.pdf)
 
 
 
