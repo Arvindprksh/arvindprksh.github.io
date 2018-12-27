@@ -41,11 +41,18 @@ This article is just brief summary of [Generative Adversarial Networks, an J. Go
   - [Quora of Yann LeCun](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy)
   - [Quora](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning)
   - [GAN Lab](https://poloclub.github.io/ganlab/)
+  - [CS231N slide lecture13 2018](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture13.pdf)
   - [GAN github1-hwalsuklee/tensorflow-generative-model-collections](https://github.com/hwalsuklee/tensorflow-generative-model-collections/blob/master/GAN.py)
   - [GAN github2-JJashim/GANs-Tensorflow](https://github.com/JJashim/GANs-Tensorflow/blob/master/GANs-TensorFlow.ipynb)
   - [GAN github3-wiseodd/generative-models](https://github.com/wiseodd/generative-models)
   - [GAN github4-revsic/tf-vanilla-gan](https://github.com/revsic/tf-vanilla-gan/blob/master/model.py)
   - [GAN github5-goodfeli/adversarial](https://github.com/goodfeli/adversarial)
+
+
+  - [Expected value on wikipedia](https://en.wikipedia.org/wiki/Expected_value)
+  - [Marginal Probability on wikipedia](https://en.wikipedia.org/wiki/Marginal_distribution)
+  - [Kullback-Leibler divergence on wikipedia](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
+
 
   - Korean Ver.
     - [GAN Tutorial](https://kakalabblog.wordpress.com/2017/07/27/gan-tutorial-2016/)
