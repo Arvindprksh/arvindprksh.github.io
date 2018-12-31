@@ -32,7 +32,7 @@ This means there is a pair of words often written together, this information hel
 
 The other is **Paradigmatic relations**. These relations concern substiution, and relate entities that do not co-occur in the text; i.e. the neighbor of words in paradigmatic relations is the same but they cannot occur at the same time. 
 
-For example, like the words "hungry" and "thirsty" in the setence, "the man is [hungry|thirsty]". 
+For example, like the words "hungry" and "thirsty" in the setence, "the man is \[hungry|thirsty\]". 
 
 This information helps you make simliar vectors in semantics.
 
@@ -85,7 +85,7 @@ Thus, there are at least three parameters that apply to paradigmatic models:
  
 the contex window is the number of preceding or succeeding neighbor like 1+1-size.
 
-But if context size of preceding or succeeding neighbors could be differenct. it is like 1+2 size such as 1+0 1 which means the weight of each location is different. where 0 means that the word is ignored.
+But if context size of preceding or succeeding neighbors could be differenct. it is like 1+2 size such as 1+0, 1 which means the weight of each location is different. where 0 means that the word is ignored.
 
 For example, 
 
