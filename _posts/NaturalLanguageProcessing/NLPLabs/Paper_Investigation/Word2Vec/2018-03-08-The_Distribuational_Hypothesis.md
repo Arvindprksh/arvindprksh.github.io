@@ -85,7 +85,7 @@ Thus, there are at least three parameters that apply to paradigmatic models:
  
 the contex window is the number of preceding or succeeding neighbor like 1+1-size.
 
-But if context size of preceding or succeeding neighbors could be differenct. it is like 1+2 size such as 1+0, 1 which means the weight of each location is different. where 0 means that the word is ignored.
+But if context size of preceding or succeeding neighbors could be differenct. it is like 1+2 size such as 1+0 1, where 0 means that the word is ignored.
 
 For example, 
 
