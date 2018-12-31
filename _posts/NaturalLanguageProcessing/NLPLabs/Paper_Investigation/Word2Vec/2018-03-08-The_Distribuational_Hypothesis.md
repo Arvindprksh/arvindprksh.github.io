@@ -32,7 +32,7 @@ This means there is a pair of words often written together, this information hel
 
 The other is **Paradigmatic relations**. These relations concern substiution, and relate entities that do not co-occur in the text; i.e. the neighbor of words in paradigmatic relations is the same but they cannot occur at the same time. 
 
-For example, like the words "hungry" and "thirsty" in the setence, "the man is \[hungry|thirsty\]". 
+For example, like the words "hungry" and "thirsty" in the setence, "the man is [hungry\|thirsty]". 
 
 This information helps you make simliar vectors in semantics.
 
