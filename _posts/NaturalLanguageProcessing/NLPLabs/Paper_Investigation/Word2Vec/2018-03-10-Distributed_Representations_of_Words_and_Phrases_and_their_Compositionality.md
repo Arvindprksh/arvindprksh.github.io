@@ -4,7 +4,7 @@ title: Distributed Representations of Words and Phrases and their Compositionali
 subtitle: Title of paper - Distributed Representations of Words and Phrases and their Compositionality
 category: NLP papers
 tags: [nlp, word2vec, word_embedding]
-permalink: /2018/03/08/The_Distribuational_Hypothesis/
+permalink: /2018/03/10/Distributed_Representations_of_Words_and_Phrases_and_their_Compositionality/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
