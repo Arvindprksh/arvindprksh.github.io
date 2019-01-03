@@ -180,7 +180,7 @@ css : /css/ForYouTubeByHyun.css
      1. 2nd prize in Poster Presentation(IC-LYCS2018) by Asia Pacific Society for Computing and Information Technology(02/11/2018). [\[Poster\]](), [\[Slide\]]() 
  
 
-  - **spam text messagg filtering by using Sen2Vec and Feedforward Neural Network**
+  - **spam text filtering by using Sen2Vec and Feedforward Neural Network**
     
     - Langugeses : python, C 
     - Platforms : Ubuntu16.04, Tensorflow
