@@ -146,7 +146,7 @@ css : /css/ForYouTubeByHyun.css
      1. The KIPS(Korea Information Proceeding Society) FALL CONFERENCE(11/02/2018) 
         Title - Compound Noun Decomposition by using Bi-LSTM and Linear-chain CRF. [\[Paper\]](), [\[Slide\]]()
      2. Excellence Award in "Automatic Spacing and Compound Noun Decoposition : 2018 Korean Natural Language Processing Contest"
-     - Reference of the performance & result When comparing to other models : Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "[Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contest](), " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2018.
+     - Reference of the performance & result When comparing to other models : Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "[Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contest](http://ocean.kisti.re.kr/IS_mvpopo213L.do?ResultTotalCNT=142&pageNo=4&pageSize=10&method=view&acnCn1=&poid=sighlt&kojic=OOGHAK&sVnc=y2018m10a&id=5&setId=&iTableId=&iDocId=&sFree=&pQuery=%28kojic%3AOOGHAK%29+AND+%28voliss_ctrl_no%3Ay2018m10a%29), " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2018.
 
 
   - **Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences**
@@ -158,7 +158,7 @@ css : /css/ForYouTubeByHyun.css
     - Publication & Award: 
      1. The 30th Anuual Conference on Human & Cognitive Language Technology(10/13/2018) 
         Title - Bi-LSTM-CRF and Syllable Embedding for Automatic Spacing of Korean Sentences. [\[Paper\]](), [\[Slide\]]()
-    - Reference of the performance & result comparing to another model : Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "[Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contes](), " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2018. 
+    - Reference of the performance & result comparing to another model : Jin-Hyuk Choi, Pum-Mo Ryu, Hyo-Jung Oh, "[Overview of Automatic Spacing and Compound Noun Decomposition: 2018 Korean Natural Language Processing Contes](http://ocean.kisti.re.kr/IS_mvpopo213L.do?ResultTotalCNT=142&pageNo=4&pageSize=10&method=view&acnCn1=&poid=sighlt&kojic=OOGHAK&sVnc=y2018m10a&id=5&setId=&iTableId=&iDocId=&sFree=&pQuery=%28kojic%3AOOGHAK%29+AND+%28voliss_ctrl_no%3Ay2018m10a%29), " Proceedings of the 30th Annual Conference on Human and Cognitive Language Technology, pp. 193-196, 2018. 
      
   - **Open source project : Konlp(Korean Natural Language toolkit)**
   
