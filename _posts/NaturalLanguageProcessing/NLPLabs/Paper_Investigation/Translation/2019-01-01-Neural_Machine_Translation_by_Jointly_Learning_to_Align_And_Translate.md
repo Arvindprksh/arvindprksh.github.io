@@ -97,11 +97,10 @@ The context vector \\(c_{i}\\) is, then, computed as a weighted sum of these hid
 
 $$  c_{i} = \sum_{j=1}^T_{x} \alpha_{ij}h_{j}   $$
 
-
 The weight \\(a_{ij}\\) of each hidden state \\(h_{j}\\), which is call attention, is computed by
 
 $$   
-\alpha_{ij} = \frac{exp(e_{ij})}{\sum_{k=1}^T_{x} exp(e_{ik}}
+ \alpha_{ij} = \frac{exp(e_{ij})}{\sum_{k=1}^T_{x} exp(e_{ik}}
 $$
 
 where 
@@ -120,14 +119,13 @@ $$
 \alpha(s_{i-1}, h_{j}) = V_{\alpha}^\top tanh(W_{\alpha}s_{i-1} + U_{\alpha}h_{j})
 $$
 
-where \\(W_{\alpha} \in \mathbb{R}^{nxn}, U_{\alpha} \in \mathbb{R}b^{nx2n}\\) and \\(V_{\alpha} \in \mathbb{R}^n\\) are the weight metrices. 
+where \\(W_{\alpha} \in \mathbb{R}^{nxn}, U_{\alpha} \in \mathbb{R}^{nx2n}\\) and \\(V_{\alpha} \in \mathbb{R}^n\\) are the weight metrices. 
 
 They regard the approach of taking a weighted sum of all the hidden states as computing an **expected hiddend state**, where the expectation is over possible alignments. 
 
 Let \\(\alpha_{ij}\\) be a proability that the target word \\(y_{i}\\) is aligned to , or translated from.
 
-Then the \\(i\\)-th context vector \\
-(c_{i}\\) is the expected hidden state over all hidden states with probabilities \\(\alpha_{ij}\\).
+Then the \\(i\\)-th context vector \\(c_{i}\\) is the expected hidden state over all hidden states with probabilities \\(\alpha_{ij}\\).
 
 The probability \\(\alpha_{ij}\\), or its associated energy \\(e_{ij}\\) reflects the importance of the hidden state \\( h_{j}\\) with respect to the previous hidden state \\(s_{i-1}\\) in deciding the next state \\(s_{i}\\) and generating \\(y_{i}\\).
 
@@ -173,8 +171,12 @@ This paper explained how to pay attention on NMT(neural machine translation) tas
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
+- How to use MathJax
+  - [Stackexchange1](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+  - [Stackexchange2](https://tex.stackexchange.com/questions/5223/command-for-argmin-or-argmax)
+  
 - For your information
-  - [Attention> Attention! on Lil'Log blog](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
+  - [Attention? Attention! on Lil'Log blog](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
   - [Self-Attention Mechanisms in Natural Language Prcessing on Alibabacloud](https://www.alibabacloud.com/blog/self-attention-mechanisms-in-natural-language-processing_593968)
   - [Deep Learning for NLP Best Practices on ruder blog](http://ruder.io/deep-learning-nlp-best-practices/index.html#fn2)
   - [Soft & Hard Attention on Jonathan Hui Blog](https://jhui.github.io/2017/03/15/Soft-and-hard-attention/)
@@ -182,6 +184,7 @@ This paper explained how to pay attention on NMT(neural machine translation) tas
   - [A Brief Overview of Attention Mechanism on Medium](https://medium.com/syncedreview/a-brief-overview-of-attention-mechanism-13c578ba9129)
   - [Attention and Memory in Deep Learning and NLP on WILDML](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
   - [Attention Mechanism in Neural Network on Hackernoon](https://hackernoon.com/attention-mechanism-in-neural-network-30aaf5e39512)
+  
   
   - Kor ver
     - [Neural Turing machine no norman](https://norman3.github.io/papers/docs/neural_turing_machine.html)
