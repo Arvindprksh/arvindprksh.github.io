@@ -47,7 +47,7 @@ From now on, Let's see notion of the model, called RNN Encoder-Decoder, that the
 
 the model of theirs is learned to align and translate simultaneously on **Encoder-Decoder Framework**
 
-In the Encoder-Decoder Framework, An encoder reads the input sentence, a sequence of vectors, \( x = (x_{1},...,x_{T_{x}}) \).
+In the Encoder-Decoder Framework, An encoder reads the input sentence, a sequence of vectors, \\(x = (x_{1},...,x_{T_{x}})\\).
 
 The common RNN's structure to use it:
 
@@ -57,7 +57,7 @@ and
 
 $$ c = q(h_{1},....,h_{T_{x}}) $$
 
-Where \( h_{t} \supset R\Mathbb^n \) is a hidden state at time t, and c is a vector generated from the sequence of the hidden states. 
+Where \\(h_{t} \supset R\Mathbb^n\\) is a hidden state at time t, and c is a vector generated from the sequence of the hidden states. 
 
 **f** and **q** are some nonlinear functions. in their paper, **f** is GRU and **q** is feedforward neural network to pay attend to hiddens of Encoder.
 
@@ -65,7 +65,7 @@ The decoder to sequentially predict target words defines a probability over the 
 
 $$    P(y_{1},....,y_{n}) = \prod_{t=1}^nP(y_{t} | {y_{1},...,y_{t-1}}, c)   $$
 
-where \(y = (y_{1},...., y_{n})\). with an RNN each conditional probability is modeled as 
+where \\(y = (y_{1},...., y_{n})\\). with an RNN each conditional probability is modeled as 
 
 $$  p(y_{t} | {y_{1},...,y_{t-1}}, c) = g(y_{y-1}, s_{t}, c) $$
 
