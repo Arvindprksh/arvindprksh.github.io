@@ -120,15 +120,16 @@ $$
 \alpha(s_{i-1}, h_{j}) = V_{\alpha}^\top tanh(W_{\alpha}s_{i-1} + U_{\alpha}h_{j})
 $$
 
-where $ W_{\alpha} \supset R\Mathbb^{nxn}, U_{\alpha} \supset R\Mathbb^{nx2n} $ and $ V_{\alpha} \supset R\Mathbb^n $  are the weight metrices. 
+where \\(W_{\alpha} \in \mathbb{R}^{nxn}, U_{\alpha} \in \mathbb{R}b^{nx2n}\\) and \\(V_{\alpha} \in \mathbb{R}^n\\) are the weight metrices. 
 
 They regard the approach of taking a weighted sum of all the hidden states as computing an **expected hiddend state**, where the expectation is over possible alignments. 
 
-Let $ \alpha_{ij} $ be a proability that the target word $ y_{i} $ is aligned to , or translated from.
+Let \\(\alpha_{ij}\\) be a proability that the target word \\(y_{i}\\) is aligned to , or translated from.
 
-Then the i-th context vector $ c_{i} $ is the expected hidden state over all hidden states with probabilities $ \alpha_{ij} $.
+Then the \\(i\\)-th context vector \\
+(c_{i}\\) is the expected hidden state over all hidden states with probabilities \\(\alpha_{ij}\\).
 
-The probability $ \alpha_{ij} $, or its associated energy $ e_{ij} $ reflects the importance of the hidden state $ h_{j} $ with respect to the previous hidden state $ s_{i-1} $ in deciding the next state $ s_{i} $ and generating $ y_{i} $.
+The probability \\(\alpha_{ij}\\), or its associated energy \\(e_{ij}\\) reflects the importance of the hidden state \\( h_{j}\\) with respect to the previous hidden state \\(s_{i-1}\\) in deciding the next state \\(s_{i}\\) and generating \\(y_{i}\\).
 
 Intuitively, this implement an mechanism of attention in the decoder. The decoder decides parts of the source sentence to pay attention to.
 
