@@ -57,9 +57,9 @@ and
 
 $$ c = q(h_{1},....,h_{T_{x}}) $$
 
-Where \\(h_{t} \supset R\Mathbb^n\\) is a hidden state at time t, and c is a vector generated from the sequence of the hidden states. 
+Where \\(h_{t} \in \Mathbb{R}^n\\) is a hidden state at time t, and c is a vector generated from the sequence of the hidden states. 
 
-**f** and **q** are some nonlinear functions. in their paper, **f** is GRU and **q** is feedforward neural network to pay attend to hiddens of Encoder.
+\\(f\\) and \\(q\\) are some nonlinear functions. in their paper, \\(f\\) is GRU and \\(q\\) is feedforward neural network to pay attend to hiddens of Encoder.
 
 The decoder to sequentially predict target words defines a probability over the translation **y** by decomposing the joint probability into the ordered conditional : 
 
