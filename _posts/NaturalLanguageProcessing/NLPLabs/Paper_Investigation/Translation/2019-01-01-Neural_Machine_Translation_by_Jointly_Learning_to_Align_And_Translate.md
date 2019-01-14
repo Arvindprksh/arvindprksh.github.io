@@ -59,33 +59,33 @@ $$ c = q(h_{1},....,h_{T_{x}}) $$
 
 Where \\(h_{t} \in \mathbb{R}^n\\) is a hidden state at time t, and c is a vector generated from the sequence of the hidden states. 
 
-\\(f\\) and \\(q\\) are some nonlinear functions. in their paper, \\(f\\) is GRU and \\(q\\) is feedforward neural network to pay attend to hiddens of Encoder.
+\\(f\\) and \\(q\\) are some non-linear functions. in their paper, \\(f\\) is GRU and \\(q\\) is feedforward neural network to pay attend to hiddens of Encoder.
 
 The decoder to sequentially predict target words defines a probability over the translation **y** by decomposing the joint probability into the ordered conditional : 
 
 $$    P(y_{1},....,y_{n}) = \prod_{t=1}^nP(y_{t} | {y_{1},...,y_{t-1}}, c)   $$
 
-where \\(y = (y_{1},...., y_{n})\\). with an RNN each conditional probability is modeled as 
+With an RNN each conditional probability is modeled as 
 
-$$  p(y_{t} | {y_{1},...,y_{t-1}}, c) = g(y_{y-1}, s_{t}, c) $$
+$$  p(y_{t} | {y_{1},...,y_{t-1}}, c) = g(y_{i-1}, s_{t}, c) $$
 
-where g is a nonlinear, potentially multi_layered, function that output the probability of \(y_{t}\), and \(s_{t}\) is the hidden state of the RNN.
+where \\(g\\) is a non-linear, potentially multi-layered, function that outputs the probability of \\(y_{t}\\), and \\(s_{t}\\) is the hidden state of the RNN.
 
-Based on the notion above for translation with RNN, Their architecture is :
+with the notion above for translation using RNN, the architecture of decoder they say is :
 
 ![Bahdanau_et_al_(2015)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-01-01-Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/Bahdanau_et_al_(2015).png)
 
-The image above is decoder of their NMT, in the model, they define each conditional probability as :
+The image above is a decoder of their NMT, in the model, they define each conditional probability as :
 
-$$  p(y_{i} | y_{1},...,y_{i-1},**x**) = g(y_{i-1},s_{i},c_{i})   $$
+$$  p(y_{i} | {y_{1},...,y_{i-1}},x) = g(y_{i-1},s_{i},c_{i})   $$
 
-where $ s_{i} $ is an RNN hidden state for time i. computed by 
+where \\(s_{i}\\) is an RNN hidden state for time \\(i\\) computed by 
 
 $$ s_{i} = f(s_{i-1}, y_{i-1}, c_{i}) $$
 
-here the probability is conditioned on a distinct context vector $ c_{i} $ for each target word $ y_{i} $.
+Here, the probability is conditioned on a distinct context vector \\(c_{i}\\) for each target word \\(y_{i}\\).
 
-The context vector $ c_{i} $ depends on a sequece of annotations $ (h_{1},...,h_{T_{x}}) $ which is hidden states that an encoder maps an input sentence.
+The context vector \\(c_{i}\\) depends on a sequece of hidden states \\((h_{1},...,h_{T_{x}})\\) that an encoder maps an input sentence to.
 
 Each hidden state $ h_{i} $ contains information about the whole input sequence with a strong focus on the parts surrounding the **i**-th word of the input seqeunce.
 
