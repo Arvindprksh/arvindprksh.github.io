@@ -5,6 +5,7 @@ subtitle: Title of paper - Neural Machine Translation By Jointly Learning to ali
 category: NLP papers
 tags: [neural_network, translation]
 permalink: /2019/01/01/Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/
+css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
@@ -13,6 +14,7 @@ bigimg:
   - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
   - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
 ---
 
 This is a brief summary of paper, [Neural Machine Translation By jointly Learning to align and translate, Bahdanau et al.(ICLR 2015)](https://arxiv.org/abs/1409.0473) I read and studied. 
@@ -87,32 +89,32 @@ Here, the probability is conditioned on a distinct context vector \\(c_{i}\\) fo
 
 The context vector \\(c_{i}\\) depends on a sequece of hidden states \\((h_{1},...,h_{T_{x}})\\) that an encoder maps an input sentence to.
 
-Each hidden state $ h_{i} $ contains information about the whole input sequence with a strong focus on the parts surrounding the **i**-th word of the input seqeunce.
+Each hidden state \\(h_{i}\\) contains information about the whole input sequence with a strong focus on the parts surrounding the \\(i\\)-th word of the input sequence.
 
 Let's see how for them to compute context vector. 
 
-the context vector $ c_{i} $ is , then, computed as a weighted sume of these hidden states $ h_{i} $ as 
+The context vector \\(c_{i}\\) is, then, computed as a weighted sum of these hidden states \\(h_{i}\\) as : 
 
-$$  c_{i} = \sum_{j=1}^T_{x} \alpha_{ij}h_{j}   $$
+$$  c_{i} = \sum_{j=1}^T_{x}a_{ij}h_{j}   $$
 
 
-the weight $ \alpha_{ij} $ of each hidden state $ h_{j} $, which is call anttention, is computed by
+The weight \\(a_{ij}\\) of each hidden state \\(h_{j}\\), which is call attention, is computed by
 
 $$   
-\alpha_{ij} = exp(e_{ij})/\sum_{k=1}^T_{x}exp(e_{ik})
+a_{ij} = exp(e_{ij})/\sum_{k=1}^T_{x}exp(e_{ik})
 $$
 
 where 
 
-$$  e_{ij} = a(s_{i-1}, hj)  $$
+$$  e_{ij} = alignment(s_{i-1}, h_{j})  $$
 
-the $ e_{ij} $ is an alignment model which score how well the inptus around position j and the output at position i match. 
+the \\(e_{ij}\\) is an alignment model which score how well the inptus around position \\(j\\) and the output at position \\(i\\) match. 
 
-The score is based on the RNN(decoder) hidden state $ s_{i-1} $ before emitting $ y_{i} $ and the j-th hidden state $ h_{j} $ of input sentence.
+The score is based on the RNN(decoder) hidden state \\(s_{i-1}\\) before emitting \\(y_{i}\\) and the \\(j\\)-th hidden state \\(h_{j}\\) of input sentence.
 
-They parameterized the alignment model **a** as a feedforward neural network which is jointly trained with all the other components of the proposed system.
+They parameterized the alignment model \\(alignment\\) as a feedforward neural network which is jointly trained with all the other components of the proposed system.
 
-specifically, the alignment model is modeled as 
+Specifically, the alignment model is modeled as 
 
 $$
 \alpha(s_{i-1}, h_{j}) = V_{\alpha}^\top tanh(W_{\alpha}s_{i-1} + U_{\alpha}h_{j})
