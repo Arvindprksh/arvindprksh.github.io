@@ -33,21 +33,21 @@ In order to resolve the problem using a fixed-length vector, they used soft-alig
 
 From a probabilistice perspective, translation is eqaul to find a target sentence **y** that maximizes the conditional probability of **y** given a source sentence **x**.
 
-$$ \hat{y} = \underset{y}{\mathrm{argmax}}p(y|x) $$
+$$ \hat{y} = \underset{y}{\mathrm{argmax}} P(y|x) $$
 
 In the equation above,
 
  - x is a source sentence
  - y is a target sentence
- - p(y\|x) is the conditional probabliity of y given x. 
+ - P(y\|x) is the conditional probabliity of y given x. 
 
-So the equation above means maximizing the condtional probability of a target sentence **y** given a source sentence **x**. it is parameterized in neural network model. 
+So the equation above means maximizing the conditional probability of a target sentence **y** given a source sentence **x**. it is parameterized in neural network model. 
 
-From now on, Let's see the model, called RNN Encoder-Decoder, that they was saying for NMT task.
+From now on, Let's see notion of the model, called RNN Encoder-Decoder, that they was saying for NMT task.
 
-Their model is learned to align and translate simultaneously on **Encoder-Decoder Framework**
+the model of theirs is learned to align and translate simultaneously on **Encoder-Decoder Framework**
 
-In the Encoder-Decoder Framwork, An encoder reads the input sentence, a sequence of vectors, $ x = (x_{1},...,x_{T_{x}}) $.
+In the Encoder-Decoder Framework, An encoder reads the input sentence, a sequence of vectors, $x = (x_{1},...,x_{T_{x}})$.
 
 The common RNN's structure to use it:
 
