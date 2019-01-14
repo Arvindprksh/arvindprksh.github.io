@@ -95,7 +95,7 @@ Let's see how for them to compute context vector.
 
 The context vector \\(c_{i}\\) is, then, computed as a weighted sum of these hidden states \\(h_{i}\\) as : 
 
-$$  c_{i} = \sum_{j=1}^T_{x}a_{ij}h_{j}   $$
+$$  c_{i} = \sum_{j=1}^T_{x} \alpha_{ij}h_{j}   $$
 
 
 The weight \\(a_{ij}\\) of each hidden state \\(h_{j}\\), which is call attention, is computed by
