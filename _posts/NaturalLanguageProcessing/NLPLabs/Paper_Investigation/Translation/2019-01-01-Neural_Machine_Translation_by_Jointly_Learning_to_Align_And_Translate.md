@@ -101,18 +101,18 @@ $$  c_{i} = \sum_{j=1}^T_{x} \alpha_{ij}h_{j}   $$
 The weight \\(a_{ij}\\) of each hidden state \\(h_{j}\\), which is call attention, is computed by
 
 $$   
-a_{ij} = exp(e_{ij})/\sum_{k=1}^T_{x}exp(e_{ik})
+\alpha_{ij} = \frac{exp(e_{ij})}{\sum_{k=1}^T_{x} exp(e_{ik}}
 $$
 
 where 
 
-$$  e_{ij} = alignment(s_{i-1}, h_{j})  $$
+$$  e_{ij} = \alpha(s_{i-1}, h_{j})  $$
 
-the \\(e_{ij}\\) is an alignment model which score how well the inptus around position \\(j\\) and the output at position \\(i\\) match. 
+the \\(e_{ij}\\) is an alignment model which scores how well the inputs around position \\(j\\) and the output at position \\(i\\) match. 
 
 The score is based on the RNN(decoder) hidden state \\(s_{i-1}\\) before emitting \\(y_{i}\\) and the \\(j\\)-th hidden state \\(h_{j}\\) of input sentence.
 
-They parameterized the alignment model \\(alignment\\) as a feedforward neural network which is jointly trained with all the other components of the proposed system.
+They parameterized the alignment model \\(\alpha\\) as a feedforward neural network which is jointly trained with all the other components of the proposed system.
 
 Specifically, the alignment model is modeled as 
 
