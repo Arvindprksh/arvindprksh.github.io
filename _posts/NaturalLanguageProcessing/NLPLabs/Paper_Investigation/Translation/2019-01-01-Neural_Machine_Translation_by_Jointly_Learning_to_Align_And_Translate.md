@@ -27,19 +27,19 @@ However, after using neural network on Machine Translation task. The performance
 
 So the authors used additive attention to improve the performance of NMT. 
 
-The reason they used additive attention is it is difficult to include all information of a source sentence into fixed-length vector as an context vector.
+The reason they used additive attention is it is difficult to include all information of a source sentence into a fixed-length vector as a context vector.
 
-In order to resolve problem using of a fixed-length vector, they used soft-alignment jointly learning alignment and translation.
+In order to resolve the problem using a fixed-length vector, they used soft-alignment jointly learning alignment and translation.
 
-From a probabilistice perspective, translation is eqaul to find a target sentence **y** that maximizes the conditional probability of y given a source sentence **x**.
+From a probabilistice perspective, translation is eqaul to find a target sentence **y** that maximizes the conditional probability of **y** given a source sentence **x**.
 
-$$ y\hat = \argmax_{y}p(y|x) $$
+$$ \haty = argmax_{y}p(y|x) $$
 
 In the equation above,
 
  - x is a source sentence
  - y is a target sentence
- - p(y|x) is the conditional probabliity of y given x. 
+ - p(y\|x) is the conditional probabliity of y given x. 
 
 So the equation above means maximizing the condtional probability of a target sentence **y** given a source sentence **x**. it is parameterized in neural network model. 
 
