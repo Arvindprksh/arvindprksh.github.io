@@ -33,7 +33,7 @@ In order to resolve the problem using a fixed-length vector, they used soft-alig
 
 From a probabilistice perspective, translation is eqaul to find a target sentence **y** that maximizes the conditional probability of **y** given a source sentence **x**.
 
-$$ \hat{y} = argmax\limits_y p(y|x) $$
+$$ \hat{y} = \underset{y}{\mathrm{argmax}}p(y|x) $$
 
 In the equation above,
 
