@@ -81,7 +81,7 @@ They followed Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets
 
 ## Neural RAM
 
-Neural stack's content could be access on the topmost content, But There is more powerful momory network structure that is all contents in the memory bank can be accessed.
+Neural stack's content could be accessed on the topmost content, But There is more powerful momory network structure that is all contents in the memory bank can be accessed.
 
 i.e. since Neural RAM's accessible content is not restricted to the top of the memory as neural stack, Neural RAM has more flexibility to handle its memory bank.
 
