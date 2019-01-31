@@ -31,7 +31,7 @@ The one is to be learned from count-based method like latent semantic anlaysis-L
     1) In LSA, matrix of term-document type like bag-of-words matrix: rows correspond to words or terms, and the columns correspond to different documents in corpus.
     
     2) In HAL, matrix of term-term type like co-occurence matrix: rows correspond to words, and the columns correspond to the entries which is the number of times a given word occurs in the context of another given word.
-       - In particular, co-occurence matrix could be transformed to an entropy- and asn correlations-based normalization.
+       - In particular, co-occurence matrix could be transformed to an entropy- or correlations-based normalization.
 
     3) PPMI(Bullinaria and Levy 2007), square root type HPCA-Hellinger PCA(Lebret and Collobert, 2014) and so on.
     
