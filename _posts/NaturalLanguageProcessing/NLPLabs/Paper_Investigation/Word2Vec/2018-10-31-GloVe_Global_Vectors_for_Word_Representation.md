@@ -57,7 +57,7 @@ Let \\( X_{i}=\sum_{k}X_{ik} \\) be the number of times any word appears in the 
 Finally, let \\( P_{ij}=P(j\|i)=X_{ij}/X_{i} \\) be the probability that word j appear in the context of word i.
 
 
-The following would explain How to correlate the ratio of co-occurrence of target words for information to embed the distinction of words. 
+The following would explain how to correlate the ratio of co-occurrence of target words for information to embed the distinction of words. 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Co-occurence_matrix_probability.png)
 
