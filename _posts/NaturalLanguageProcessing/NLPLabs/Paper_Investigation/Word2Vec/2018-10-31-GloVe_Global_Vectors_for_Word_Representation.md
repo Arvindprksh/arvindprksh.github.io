@@ -38,7 +38,7 @@ The one is to be learned from count-based method like latent semantic anlaysis-L
 The other is to be learned prediction-based method like Word2Vec(Mikolov et al., 2013), vLBL and ivLBL(Mnih and Kavukcuoglu 2013), Bengio et al.(2003), Collobert and Weston(2008), Collobert et al.(2011).
 
 
-All the methods above could be separated into Matrix Factorization Method(i.e. NMF:Non-negative Factorization) and Winodw-Based Methods.
+All the methods above could be separated into the Matrix Factorization Method(i.e. NMF:Non-negative Factorization) and the Shallow Window-Based Methods.
 
 
 ### GloVe
