@@ -95,7 +95,7 @@ The cost function calculates the least square of \\(W_{i}^T\\)*\\(W_{j}\\) - \\(
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-GloVe is another way to represent words into continuous vector space with two ways which are global cooccurence matrix and log-bilinear regression model. GloVe utilize the families like 1) global matrix factorization method, 2) local context window methods.
+GloVe is another way to represent words into continuous vector space with two ways which are global cooccurence matrix and log-bilinear regression model. GloVe also utilize the families like 1) global matrix factorization method, 2) local context window methods.
 </div>
   
   
