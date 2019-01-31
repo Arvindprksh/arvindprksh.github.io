@@ -57,14 +57,12 @@ Let \\( X_{i}=\sum_{k}X_{ik} \\) be the number of times any word appears in the 
 Finally, let \\( P_{ij}=P(j\|i)=X_{ij}/X_{i} \\) be the probability that word j appear in the context of word i.
 
 
-How to correlate the co-occurence matrix to two words in some phase. 
-
-The following table from the GloVe paper would explain it. 
+The following would explain How to correlate the ratio of co-occurence of target words for information to embed the distinction of words. 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Co-occurence_matrix_probability.png)
 
 
-GloVe is log-bilinear regression model so the cost function is the same from the following
+GloVe is log-bilinear regression model and then the cost function is the same from the following
 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
