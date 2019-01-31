@@ -82,12 +82,11 @@ f(X) function below was used in the GloVe paper
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
 
 
-As you can see the cost function, GloVe calculatea by co-occurence matrix size to update 
-\\( W_{i} \\) is word vector.
+As you can see the cost function, GloVe calculates co-occurence matrix to update 
 
-Also
+\\( W_{i} \\), word vector and \\( W_{j} \\), context word vector.
 
-\\( W_{j} \\) is context word vector.
+So, if the corpus is changed, you need to update the co-occurence matrix.
 
 The cost function calculates the least square of \\(W_{i}^T\\)*\\(W_{j}\\) - \\(log(X_{ij})\\)
 
