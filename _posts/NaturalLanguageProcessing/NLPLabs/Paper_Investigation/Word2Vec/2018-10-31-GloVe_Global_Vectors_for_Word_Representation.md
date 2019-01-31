@@ -43,7 +43,7 @@ All the methods above could be separated into the Matrix Factorization Method(i.
 
 ### GloVe
 
-GloVe paper said the statistics of word occurence in a corpus is the primary source of information available to al unsupervised methods for learning  word representation.
+GloVe paper said the statistics of word occurrence in a corpus is the primary source of information available to al unsupervised methods for learning  word representation.
 
 So, GloVe utilized are the matrix word-word co-coccurence with context window size.
 
@@ -57,7 +57,7 @@ Let \\( X_{i}=\sum_{k}X_{ik} \\) be the number of times any word appears in the 
 Finally, let \\( P_{ij}=P(j\|i)=X_{ij}/X_{i} \\) be the probability that word j appear in the context of word i.
 
 
-The following would explain How to correlate the ratio of co-occurence of target words for information to embed the distinction of words. 
+The following would explain How to correlate the ratio of co-occurrence of target words for information to embed the distinction of words. 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Co-occurence_matrix_probability.png)
 
@@ -67,7 +67,7 @@ GloVe is log-bilinear regression model and then the cost function is the same fr
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
 
-As you can see above, \\( f(X_{ij}) \\) is weighting function. The weigting function should be obey the following properties:
+As you can see above, \\( f(X_{ij}) \\) is weighting function. The weighting function should be obey the following properties:
 
  - f(X) should be non-decreasing so that rare co-occurences are not overweighted.
  
@@ -91,11 +91,11 @@ The cost function calculates the least square of \\(W_{i}^T\\)*\\(W_{j}\\) - \\(
 \\(X_{ij}\\) is the number of times word **k** appears in the context of word **i**. 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-`\(W_{i}\)` and `\(W_{j}\)` is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of `\(W_{i}\)` and `\(W_{j}\)` is used for word vector which boosts the performace in NLP task of thie paper
+`\(W_{i}\)` and `\(W_{j}\)` is weight matrix(i.e. vector) and X(co-occurence matrix) is symmetric. the sum of `\(W_{i}\)` and `\(W_{j}\)` is used for word vector which boosts the performance in NLP task of this paper
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-GloVe is another way to represent words into continuous vector space with two features which are global cooccurence matrix and log-bilinear regression model. GloVe utilize the familes like 1) global matrix factorization method, 2) local context window methods.
+GloVe is another way to represent words into continuous vector space with two ways which are global cooccurence matrix and log-bilinear regression model. GloVe utilize the families like 1) global matrix factorization method, 2) local context window methods.
 </div>
   
   
