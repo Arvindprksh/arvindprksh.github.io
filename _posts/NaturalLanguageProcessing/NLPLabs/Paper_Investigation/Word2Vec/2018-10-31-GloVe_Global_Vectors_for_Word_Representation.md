@@ -24,7 +24,7 @@ This posting is summary about the paper, "[GloVe: Global Vectors for Word Repres
 
 There are two methodologies for distributional word representations.
 
-The one is to be learned from count-based method like latent semantic anlaysis-LSA(Deer-wester et al., 1990) and hyperspace analogue to Language-HAL(Lund and Burgess, 1996).
+one is to be learned from count-based method like latent semantic anlaysis-LSA(Deer-wester et al., 1990) and hyperspace analogue to Language-HAL(Lund and Burgess, 1996).
 
   - based on frequencies of terms.
   
@@ -35,7 +35,7 @@ The one is to be learned from count-based method like latent semantic anlaysis-L
 
     3) PPMI(Bullinaria and Levy 2007), square root type HPCA-Hellinger PCA(Lebret and Collobert, 2014) and so on.
     
-The other is to be learned prediction-based method like Word2Vec(Mikolov et al., 2013), vLBL and ivLBL(Mnih and Kavukcuoglu 2013), Bengio et al.(2003), Collobert and Weston(2008), Collobert et al.(2011).
+The other is prediction-based method like Word2Vec(Mikolov et al., 2013), vLBL and ivLBL(Mnih and Kavukcuoglu 2013), Bengio et al.(2003), Collobert and Weston(2008), Collobert et al.(2011).
 
 
 All the methods above could be separated into the Matrix Factorization Method(i.e. NMF:Non-negative Factorization) and the Shallow Window-Based Methods.
