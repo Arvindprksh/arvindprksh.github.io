@@ -81,6 +81,7 @@ They introduce a new recurrent neural network based language model(RNN LM) with 
   - [Language model A Survey of the State-of-the-Art Techonology on medium](https://medium.com/syncedreview/language-model-a-survey-of-the-state-of-the-art-technology-64d1a2e5a466)
   - [Stackexchange on log-linear vs log-bilear](https://stats.stackexchange.com/questions/157136/log-linear-vs-log-bilinear)
   - [Neural Language models and word embedding as reference](https://piotrmirowski.files.wordpress.com/2014/06/piotrmirowski_2014_wordembeddings.pdf)
+  - [Language Modelling and Text generation using LSTMs-Deep Learning for NLP](https://medium.com/@shivambansal36/language-modelling-text-generation-using-lstms-deep-learning-for-nlp-ed36b224b275)
   - [Build your LSTM language model with Tensorflow on medium](https://medium.com/@MilkKnight/build-your-lstm-language-model-with-tensorflow-3416142c9919)
   - [Language modeling with Deep Learning](https://hub.packtpub.com/language-modeling-with-deep-learning/)
   - [What's an LSTM-LM formulation on Stackexchange](https://datascience.stackexchange.com/questions/13188/whats-an-lstm-lm-formulation)
