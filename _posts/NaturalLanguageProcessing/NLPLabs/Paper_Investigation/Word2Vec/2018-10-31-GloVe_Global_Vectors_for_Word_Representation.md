@@ -71,7 +71,7 @@ GloVe is log-bilinear regression model so the cost function is the same from the
 
 As you can see above, \\( f(X_{ij}) \\) is weighting function. The weigting function should be obey the following properties:
 
- - f(X) should be non-decreasing so that rara co-occurences are not overweighted.
+ - f(X) should be non-decreasing so that rare co-occurences are not overweighted.
  
  - f(X) should be relatively small for large value of X, so that frequent co-occurences are not overweighted.
 
@@ -82,16 +82,16 @@ f(X) function below was used in the GloVe paper
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
 
 
-As you can see the cost function, GloVe calculate by co-occurence matrix size to update 
-\\( W_{i} \\) is word vector, ith row on co-occurence matrix.
+As you can see the cost function, GloVe calculatea by co-occurence matrix size to update 
+\\( W_{i} \\) is word vector.
 
 Also
 
-\\( W_{j} \\) is context word vector for the context of ith row vector on co-occurence matrix.
+\\( W_{j} \\) is context word vector.
 
-The cost function calculate the least square of the dot product of \\(W_{i}\\) and \\(W_{j}\\) - \\(log(X_{ij})\\)
+The cost function calculates the least square of \\(W_{i}^T\\)*\\(W_{j}\\) - \\(log(X_{ij})\\)
 
-\\(X_{ij}\\) is count of oc-occurence matrix.
+\\(X_{ij}\\) is the number of times word **k** appears in the context of word **i**. 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 `\(W_{i}\)` and `\(W_{j}\)` is weight matrix(i.e. vector) and is equivalent and differ only as a result of their random initializations, and X(co-occurence matrix) is symmetric. the sum of `\(W_{i}\)` and `\(W_{j}\)` is used for word vector which boosts the performace in NLP task of thie paper
