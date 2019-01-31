@@ -133,7 +133,9 @@ GloVe is another way to represent words into continuous vector space with two fe
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
-- [TowardsdataScience about GloVe](https://towardsdatascience.com/emnlp-what-is-glove-part-i-3b6ce6a7f970)  
+- [TowardsdataScience about GloVe](https://towardsdatascience.com/emnlp-what-is-glove-part-i-3b6ce6a7f970)
+ 
+- [What is the GloVe? Part 2 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-ii-9e5ad227ee0)
   
 - online Learning
   - [Online Learning of Word Embeddings on Medium](https://medium.com/explorations-in-language-and-learning/online-learning-of-word-embeddings-7c2889c99704)
