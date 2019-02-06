@@ -135,6 +135,10 @@ GloVe is another way to represent words into continuous vector space with two wa
 - [What is the GloVe? Part 2 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-ii-9e5ad227ee0)
 
 - [What is the GloVe? Part 3 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-iii-c6090bed114)
+
+- [What is the GloVe? Part 4 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-iv-e605a4c407c8)
+  
+- [What is the GloVe? Part 5 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-v-fa888272c290) 
   
 - online Learning
   - [Online Learning of Word Embeddings on Medium](https://medium.com/explorations-in-language-and-learning/online-learning-of-word-embeddings-7c2889c99704)
