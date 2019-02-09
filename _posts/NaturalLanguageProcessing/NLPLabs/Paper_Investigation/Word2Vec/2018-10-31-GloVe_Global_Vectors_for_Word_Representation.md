@@ -140,6 +140,8 @@ GloVe is another way to represent words into continuous vector space with two wa
   
 - [What is the GloVe? Part 5 on Towards Data Science](https://towardsdatascience.com/emnlp-what-is-glove-part-v-fa888272c290) 
   
+- [CBOW vs Skip-gram on Stackoverflow](https://stackoverflow.com/questions/38287772/cbow-v-s-skip-gram-why-invert-context-and-target-words)
+  
 - online Learning
   - [Online Learning of Word Embeddings on Medium](https://medium.com/explorations-in-language-and-learning/online-learning-of-word-embeddings-7c2889c99704)
   
