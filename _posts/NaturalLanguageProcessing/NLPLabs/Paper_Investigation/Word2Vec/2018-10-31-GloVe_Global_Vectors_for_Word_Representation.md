@@ -149,3 +149,9 @@ GloVe is another way to represent words into continuous vector space with two wa
  - [bilinear regression definition](https://www.statisticshowto.datasciencecentral.com/bilinear-regression/)
 
  - [StackExchange about bilinear](https://math.stackexchange.com/questions/878325/what-is-a-bilinear-form)
+ 
+ - [word embedding part 1 on Sebastian Ruder blog](http://ruder.io/word-embeddings-1/)
+ 
+ - [word embedding part 2 on Sebastian Ruder blog](http://ruder.io/word-embeddings-softmax/)
+ 
+ - [word embedding part 3 on Sebastian Ruder blog](http://ruder.io/secret-word2vec/)
