@@ -157,3 +157,7 @@ GloVe is another way to represent words into continuous vector space with two wa
  - [word embedding part 2 on Sebastian Ruder blog](http://ruder.io/word-embeddings-softmax/)
  
  - [word embedding part 3 on Sebastian Ruder blog](http://ruder.io/secret-word2vec/)
+
+ - [word embeddings in 2017: Trends and Future directions on Sebastian Ruder blog](http://ruder.io/word-embeddings-2017/)
+ 
+ - [A survey of cross-lingual word embedding models on Sebastian Ruder blog](http://ruder.io/cross-lingual-embeddings/index.html)
