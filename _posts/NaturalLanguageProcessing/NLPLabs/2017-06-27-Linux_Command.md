@@ -614,3 +614,5 @@ OR if you want to specify the type you want to search for
  - [find](https://www.lifewire.com/uses-of-linux-command-find-2201100)
 
  - [find2](https://www.cyberciti.biz/faq/howto-find-a-directory-linux-command/)
+
+ - [vsp command](https://www.cs.oberlin.edu/~kuperman/help/vim/windows.html)
