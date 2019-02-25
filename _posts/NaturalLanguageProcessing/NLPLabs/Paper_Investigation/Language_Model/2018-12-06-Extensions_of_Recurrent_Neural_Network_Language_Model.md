@@ -98,6 +98,9 @@ This paper introduce literally extensions of recurrent neural network language m
  
 - For your information
   - [Distributed representation on O'REILLY](https://www.oreilly.com/ideas/how-neural-networks-learn-distributed-representations)
+  
+  - [Deep Learning: What is meant by a distbuted represenatation? on Quora](https://www.quora.com/Deep-Learning-What-is-meant-by-a-distributed-representation)
+  
   - [Hierarchical Softmax as output activation function in Neural Network on becominghuman.ai](https://becominghuman.ai/hierarchical-softmax-as-output-activation-function-in-neural-network-1d19089c4f49)
 
 
