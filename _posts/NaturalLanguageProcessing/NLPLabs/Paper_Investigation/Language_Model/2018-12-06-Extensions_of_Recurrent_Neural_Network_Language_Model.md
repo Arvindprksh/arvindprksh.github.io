@@ -52,7 +52,7 @@ Let's see the time complexity they said in their paper.
 
 The time complexity of on training step is propotional  to 
 
-- \\( O = (1+H)\*H\*t + H\*V  and in this equation, usually H \<\< V,so the computaional bottleneck exists between hiiden and output layer. \\)
+- \\( O = (1+H)\*H\*t + H\*V  \\) and in this equation, usually \\( H \<\< V \\), so the computaional bottleneck exists between hiiden and output layer. 
 
    - H : the size of the hidden layer
    - V : the size of the vocabulary
