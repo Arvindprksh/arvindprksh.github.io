@@ -27,7 +27,7 @@ The task that the paper applied is Language model, just it predict the condition
 
 let's say the length of a sequence of words is 3, if we want to predict fourth word. the pobability of next word is conditional probability distribution is like :
 
-- \\(  P(w_{3} \| w_{1}, w_{2}) = P(w_{1})\*P(w_{2}\|w_{1})\*P(w_(3)\|w_{1}, w_{2})  \\)
+- \\(  P(w_{3} \| w_{1}, w_{2}) = P(w_{1})\*P(w_{2}\|w_{1})\*P(w_{3}\|w_{1}, w_{2})  \\)
 
 Their model estimate the conditional probability of the next word given the previous words. 
 
