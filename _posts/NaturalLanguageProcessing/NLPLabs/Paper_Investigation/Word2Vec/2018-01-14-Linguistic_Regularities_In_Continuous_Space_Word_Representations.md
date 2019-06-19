@@ -44,6 +44,9 @@ With 100 words from each set of the above thing, they then systematically genera
 
 Total test set size is 8000.
  
+To the key point in this paper, the distributed representation by recurrent neural network language model has no knowledge of syntax, morphology or semantics on words. however suprisingly, training such a purely lexical word representations showed striking syntantic and semantic properties. 
+ 
+ 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 In continous space for word vector, The key point is similar words are likely to have similar vectors. Thus, When the model parameters are adjusted in response to a particular word or word-sequence, The improvements will carry over to occurences of similar words and sequences.
 
