@@ -20,14 +20,30 @@ bigimg:
 
 This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning, Lucy and Gauthier(first workshop on Language Grouding for Robotics 2017)](https://www.aclweb.org/anthology/W17-2810)"
 
+Befere entering deep, I was wondering what is the Language grounding. 
+
+So I read [a blog](https://ehudreiter.com/2018/09/13/language-grounding/) which introduce the concept of Language Grounding. 
+
+After reading the blog above, I think langauge grounding is mapping words into real world considering context. 
+
+The context means a avariety of facets which is other data, expectation and interpretation, individual speakers, and discourse context and so on.
+
+## Grounded learning
+
+The auhtors doubt that the modern reperesenation of word is distributional representation which encode vector into the compact one using co-occurences, however, it could accurately encode facets of conceptual meaning. 
+ 
+In order to identify the capability of how well these representations can predict perceptual and conceptual feature of concerete concepts. 
+
+They evaluate it with two semantic norm datasets sourced from human participants. 
+
+Finally, they find out that several standard word representationa fail to encode many salient perceptual features of concepts. 
 
 
-    
+They have two dataset of semantic feature norm for testing whether or not distributional represenation has the conceptual and perceptual meaning.
 
+- First dataset is, McRae et al(205): Semantic feature productions norm for a large set of living and nonliving things.
 
-
-
-
+- Second is CLBS(Devereux et al. 2014): The centre for speech, language and the grain(cslb) concept property norms.
 
 
 
@@ -51,3 +67,5 @@ This posting is summary for my study about the paper, "[Are distributed represen
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+  
+  - [introduction to Language Groudning to vision and control on Carnegie Mellon school of computer science](https://katefvision.github.io/LanguageGrounding/Slides/LGVC_lecture_intro.pdf)
