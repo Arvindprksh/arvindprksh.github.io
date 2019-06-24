@@ -1,0 +1,53 @@
+---
+layout: post
+title: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning
+subtitle: Title of paper - Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning
+category: NLP papers
+tags: [nlp, word2vec]
+permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world?_Evaluating_word_vectors_for_grounded_perceptual_meaning/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+---
+
+{% include MathJax.html %}
+
+This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning, Lucy and Gauthier(first workshop on Language Grouding for Robotics 2017)](https://www.aclweb.org/anthology/W17-2810)"
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
+
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+
+</div>
+  
+  
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> In Proceeding of the first workshop on Language Grounding for Robotics.
+</div>
+
+# Reference 
+
+- Paper 
+  - [GloVe:Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
+ 
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
