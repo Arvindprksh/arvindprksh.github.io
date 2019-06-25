@@ -66,13 +66,12 @@ For example, in order to explain feature of a word, airplane, there are a variet
 They argued that the feature deficiencies affect word-word similarity measure and domain clustering. 
 
 
-
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
-
+They think of the feature as "has_legs" and "is_round", the test of perceptual meaing is whether distributional representation has it or not.
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-Distributional word representation methods exploit word co-occurrences to build compact vector encodings of words. While these representations enjoy widespread use in modern natural language processing, it is unclear whether they accurately encode all necessary facets of conceptual meaning. In this paper, we evaluate how well these representations can predict perceptual and conceptual features of concrete concepts, drawing on two semantic norm datasets sourced from human participants. We find that several standard word representations fail to encode many salient perceptual features of concepts, and show that these deficits correlate with word-word similarity prediction errors. Our analyses provide motivation for grounded and embodied language learning approaches, which may help to remedy these deficits.
+Distributional word representation methods exploit word co-occurrences to build compact vector encodings of words. However it is unclear whether they accurately encode all necessary facets of conceptual meaning. they evaluated how well these representations can predict perceptual and conceptual features of concrete concepts with two semantic norm datasets sourced from human participants. they found that several standard word representations fail to encode many salient perceptual features of concepts, and show that these deficits correlate with word-word similarity prediction errors. 
 </div>
   
   
