@@ -41,9 +41,29 @@ Finally, they find out that several standard word representationa fail to encode
 
 They have two dataset of semantic feature norm for testing whether or not distributional represenation has the conceptual and perceptual meaning.
 
-- First dataset is, McRae et al(205): Semantic feature productions norm for a large set of living and nonliving things.
+- First dataset is, [McRae et al.](https://sites.google.com/site/kenmcraelab/norms-data)(2005): Semantic feature productions norm for a large set of living and nonliving things.
+
+Let's see an example of semantic norm data above. 
+
+
+![]()
+
+
+the concepts have various features which is related to perceptual and conceptual meaning.
 
 - Second is CLBS(Devereux et al. 2014): The centre for speech, language and the grain(cslb) concept property norms.
+
+
+As you can see the semantic norm dataset, concept means words and feature means characteristic the words have. 
+
+For example, in order to explain feature of a word, airplane, there are a variety of features as follows: 
+
+- airplane has_wings(visual-from_and_surface)
+- airplane used_for_passengers(function)
+- airplane found_in_airports(encclopaedic)
+- airplane is_large(visual-form_and_surface)
+
+They argued that the feature deficiencies affect word-word similarity measure and domain clustering. 
 
 
 
@@ -52,7 +72,7 @@ They have two dataset of semantic feature norm for testing whether or not distri
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-
+Distributional word representation methods exploit word co-occurrences to build compact vector encodings of words. While these representations enjoy widespread use in modern natural language processing, it is unclear whether they accurately encode all necessary facets of conceptual meaning. In this paper, we evaluate how well these representations can predict perceptual and conceptual features of concrete concepts, drawing on two semantic norm datasets sourced from human participants. We find that several standard word representations fail to encode many salient perceptual features of concepts, and show that these deficits correlate with word-word similarity prediction errors. Our analyses provide motivation for grounded and embodied language learning approaches, which may help to remedy these deficits.
 </div>
   
   
@@ -69,3 +89,7 @@ They have two dataset of semantic feature norm for testing whether or not distri
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
   - [introduction to Language Groudning to vision and control on Carnegie Mellon school of computer science](https://katefvision.github.io/LanguageGrounding/Slides/LGVC_lecture_intro.pdf)
+
+  - [McRaelabe's norm dataset](https://sites.google.com/site/kenmcraelab/norms-data)
+  
+  - [a proportion of McRae dataset](https://drive.google.com/file/d/0B2ga8vUirua7UlJ0VEJzaUJnVmc/view)
