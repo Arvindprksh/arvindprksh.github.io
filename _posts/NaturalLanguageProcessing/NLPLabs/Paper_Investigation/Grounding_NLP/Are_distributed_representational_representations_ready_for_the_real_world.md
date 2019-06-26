@@ -4,7 +4,7 @@ title: Are distributed representational ready for the real world? Evaluating wor
 subtitle: Title of paper - Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning
 category: NLP papers
 tags: [nlp, word2vec]
-permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world?_Evaluating_word_vectors_for_grounded_perceptual_meaning/
+permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
@@ -45,7 +45,7 @@ They have two dataset of semantic feature norm for testing whether or not distri
 
 Let's see an example of semantic norm data above. 
 
-![a sample of McRae norm dataset](/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Grounding_NLP/Are_distributed_representational_representations_ready_for_the_real_world?_Evaluating_word_vectors_for_grounded_perceptual_meaning/McRae_norm_dataset.JPG)
+![a sample of McRae norm dataset](Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Grounding_NLP/Are_distributed_representational_representations_ready_for_the_real_world/McRae_norm_dataset.JPG)
 
 
 the concepts have various features which is related to perceptual and conceptual meaning.
