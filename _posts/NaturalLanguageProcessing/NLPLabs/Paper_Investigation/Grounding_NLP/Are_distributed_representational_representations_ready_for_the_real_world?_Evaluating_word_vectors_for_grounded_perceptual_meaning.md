@@ -45,8 +45,7 @@ They have two dataset of semantic feature norm for testing whether or not distri
 
 Let's see an example of semantic norm data above. 
 
-
-![]()
+![a sample of McRae norm dataset](/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Grounding_NLP/Are_distributed_representational_representations_ready_for_the_real_world?_Evaluating_word_vectors_for_grounded_perceptual_meaning/McRae_norm_dataset.JPG)
 
 
 the concepts have various features which is related to perceptual and conceptual meaning.
