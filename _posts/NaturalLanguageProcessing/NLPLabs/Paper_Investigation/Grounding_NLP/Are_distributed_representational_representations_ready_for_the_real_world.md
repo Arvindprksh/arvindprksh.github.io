@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning
-subtitle: Title of paper - Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning
+title: Are distributed representational ready for the real world
+subtitle: Title of paper - Are distributed representational ready for the real world
 category: NLP papers
-tags: [nlp, word2vec]
+tags: [nlp, ground_learning]
 permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
