@@ -73,7 +73,7 @@ First, LSTM with a CRF layer
 
 Second, Bi-direcational LSTM with A CRF Layer
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.JPG)
 
 As you can know, in this paper, LSTM is variant like Peephole LSTM. 
 
