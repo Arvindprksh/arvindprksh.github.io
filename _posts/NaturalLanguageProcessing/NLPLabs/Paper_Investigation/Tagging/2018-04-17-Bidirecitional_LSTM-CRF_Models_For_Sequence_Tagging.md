@@ -88,6 +88,15 @@ also they use the connection trick of features like this:
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
 
 
+They estimated the robustness of models with respect to engineered features(spelling and context features).
+
+So they trained their models with word features only(spelling and context features removed).
+
+they argued that 
+
+- CRF model heavily rely on engineered features to obtain good performance. 
+
+- on the other hand, LSTM, BiLSTM, and BiLSTM-CRF models are more robust and they are less affected by the  removal of engineering features.
 
 
 
