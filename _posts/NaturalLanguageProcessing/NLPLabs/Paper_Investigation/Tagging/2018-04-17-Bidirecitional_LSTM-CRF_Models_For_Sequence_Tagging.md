@@ -21,45 +21,75 @@ Normally, If you run into Sequence tagging problem, you would think of RNN.
 
 It is because the key point is seqeunce in the problem.
 
-So This paper implemented LSTM network, BiLSTM network, and LSTM-CRF Network. 
+So This paper implemented LSTM network, BiLSTM network, LSTM-CRF Network, BiLSTM-CRF network. 
 
-First, A LSTM network : 
+First, A LSTM network deals with information from left to right : 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/A_LSTM_Network.png)
 
-If you already know and understand RNN structure, for Sequence tagging, that is it. 
+as you can already know and understand RNN structure, the utilize the infromation of previous information and current input. 
+
+So LSTM utilize the past information at the time, But BiLSTM is different as follows:
 
 Second, Bidirectional LSTM network is like this :
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM.png)
 
-But, You have to consider how to use bidirectional LSTM's infomations: 
+BiLSTM have two type of LSTM, one is forward LSTM and the other is backward LSTM. 
 
-There are two types information. 
+operation of the two LSTM is the same, the direction of information flow is different. 
 
-one is to use final hidden layers forward and backward
+Let's see how to take advantage of BiLSTM to extract information. 
+
+there two ways to extract information. one is only final state, the other is sequence output at the time. 
+
+
+firstly, use final state(output) that it summarize the infromation of forward and backward respectively :
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
 
 OR
 
-The other is to use contextual represetation. 
+Seconde, methods to use contextual represetation of forward and backward respectively. 
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
 
 
-Finally, LSTM-CRF Network means LSTM plus CRF. 
+as you could know, for sequence labeling problem, we need to use contextual represenation. 
+
+## conditional random field
+
+Conditional random field(CRF) is useful graphical model on probability. 
+
+It consider sentence level tag sequence information. 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
+
+Let's see the combination of LSTM and CRF 
+
+First, LSTM with a CRF layer 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/LSTM_CRF.JPG)
+
+Second, Bi-direcational LSTM with A CRF Layer
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.png)
 
+As you can know, in this paper, LSTM is variant like Peephole LSTM. 
 
-CRF is normally used to tag sequence label in statistics way.
+They use cell state as input for input, output, forget gate.
 
-In particular, There are two ways to make use of neighbor tag information in predicting current tags. 
+In particular, the weight matrix from cell to gate vectors are diagonal.
 
-The first is to predict a distribution of tags for each time step and then use beam-like decoding to find optimal tag seqeunces. 
+additionaly, they used BIO2 annotation standard for Chunking and NER tasks.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
+also they use the connection trick of features like this: 
+
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
+
+
+
+
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
 If you use this model for sequence tagging, be careful of the following about how to extract features :<br/>
