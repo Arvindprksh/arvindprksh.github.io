@@ -2,7 +2,7 @@
 layout: post
 title: Enriching Word Vectors with Subword Information
 subtitle: Title of paper - Enriching Word Vectors with Subword Information
-category: NLP papers
+category: NLP papers - Word2vec
 tags: [nlp, word2vec]
 permalink: /2018/04/22/Enriching_Word_Vectors_with_Subword_Information/
 bigimg: 
