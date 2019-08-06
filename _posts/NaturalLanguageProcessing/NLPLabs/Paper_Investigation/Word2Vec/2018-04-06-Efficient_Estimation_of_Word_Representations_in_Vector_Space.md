@@ -2,7 +2,7 @@
 layout: post
 title: Efficient Estimation of Word Representations in Vector Space
 subtitle: Title of paper - Efficient Estimation of Word Representations in Vector Space
-category: NLP papers
+category: NLP papers - Word2vec
 tags: [nlp, word2vec, word_embedding]
 permalink: /2018/04/06/Efficient_Estimation_of_Word_Representations_in_Vector_Space/
 bigimg: 
