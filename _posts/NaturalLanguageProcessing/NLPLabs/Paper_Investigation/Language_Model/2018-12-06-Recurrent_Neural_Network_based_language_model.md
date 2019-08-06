@@ -2,7 +2,7 @@
 layout: post
 title: Recurrent neural network based language model
 subtitle: Title of paper - Recurrent neural network based language model
-category: NLP papers
+category: NLP papers - LM
 tags: [neural_network, language_model]
 permalink: /2018/12/06/Recurrent_Neural_Network_based_language_model/
 bigimg: 
