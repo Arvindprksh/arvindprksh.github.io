@@ -2,7 +2,7 @@
 layout: post
 title: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
 subtitle: Title of paper - End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
-category: NLP papers
+category: NLP papers - Tagging
 tags: [nlp, tagging]
 permalink: /2019/06/28/End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/
 css : /css/ForYouTubeByHyun.css
