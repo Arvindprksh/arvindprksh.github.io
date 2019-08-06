@@ -2,7 +2,7 @@
 layout: post
 title: Extractive Summarization using Continuous Vector Space Models for Text summarization
 subtitle: Title of paper - Extractive Summarization using Continuous Vector Space Models
-category: NLP papers - summarization
+category: NLP papers - Summarization
 tags: [nlp, word2vec, word_embedding, text_summarization, phrase_embedding]
 permalink: /2018/03/18/Extractive_Summarization_using_Continuous_Vector_Space_Models/
 bigimg: 
