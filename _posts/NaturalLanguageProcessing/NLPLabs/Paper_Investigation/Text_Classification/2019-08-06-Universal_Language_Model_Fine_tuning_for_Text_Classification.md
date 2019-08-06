@@ -52,7 +52,7 @@ The way to fine-tune the classifier is  **gradual unfreezing** which is unfreezi
 
   <div class="tab-content">
     <div id="refrigerator" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit?usp=sharing" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_177_4" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
  
