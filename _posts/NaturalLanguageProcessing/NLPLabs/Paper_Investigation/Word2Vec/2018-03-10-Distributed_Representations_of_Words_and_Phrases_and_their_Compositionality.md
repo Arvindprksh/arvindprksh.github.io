@@ -2,7 +2,7 @@
 layout: post
 title: Distributed Representations of Words and Phrases and their Compositionality for Word2Vec investigation
 subtitle: Title of paper - Distributed Representations of Words and Phrases and their Compositionality
-category: NLP papers
+category: NLP papers - Word2vec
 tags: [nlp, word2vec, word_embedding]
 permalink: /2018/03/10/Distributed_Representations_of_Words_and_Phrases_and_their_Compositionality/
 bigimg: 
