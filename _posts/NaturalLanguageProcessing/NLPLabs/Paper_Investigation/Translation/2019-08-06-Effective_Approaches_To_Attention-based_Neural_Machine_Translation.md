@@ -50,9 +50,7 @@ They suggested two attention machanisms. one is the global attention mechanism a
 
 local attention mechanism considers the trade-off between soft and hard vesrion attention model proposed by Xu et al. (2015)
 
-![Global attention model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Global_Attention_model.png)
-
-![Local attentio model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Local_attention_model.png)
+![Global attention model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Global_Attention_model.png) ![Local attentio model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Local_attention_model.png)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
