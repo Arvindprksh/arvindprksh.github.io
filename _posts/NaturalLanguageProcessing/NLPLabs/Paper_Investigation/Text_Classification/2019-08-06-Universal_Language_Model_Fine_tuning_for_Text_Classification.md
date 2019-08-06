@@ -42,22 +42,6 @@ The way to fine-tune the classifier is  **gradual unfreezing** which is unfreezi
 
 ![Howard and Ruder(ACL 2018)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-08-06-Universal_Language_Model_Fine_tuning_for_Text_Classification/ULMFiT.png)
 
-<div id="tutorial-section">
-
-  <div id="tutorial-title">Transfer learning in NLP tutorial NAACL 2019</div>
-
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#refrigerator">Transfer Learning in Natural Language Processing on NAACL-HLT 2019</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="refrigerator" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_177_4" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
- 
-</div>
-
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.
 </div>
