@@ -40,7 +40,7 @@ Also they proposed fine-tuning of classifier.
 
 The way to fine-tune the classifier is  **gradual unfreezing** which is unfreezing the the model starting from last layer as this contains the least gneenral knowledge. i.e. They first unfreeze the last layer and fine-tune all unfrozen layers for one epoch. They then unfreeze the next lower layer and repeat, until they fine-tune all layers until convergence at the last iteration.
 
-![Howard and Ruder.(ACL 2018)](Text_Classification/2019-08-06-Universal_Language_Model_Fine_tuning_for_Text_Classification/ULMFiT.png)
+![Howard and Ruder\(ACL 2018\)](Text_Classification/2019-08-06-Universal_Language_Model_Fine_tuning_for_Text_Classification/ULMFiT.png)
 
 <div id="tutorial-section">
 
