@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Neural Machine Translation By Jointly Learning to align and translate
-subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate
-category: NLP papers - Translation
-tags: [neural_network, translation]
-permalink: /2019/01/01/Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/
+title: Universal Language Model Fine-tuning for Text Classification
+subtitle: Title of paper - Universal Language Model Fine-tuning for Text Classification
+category: NLP papers - transfer_learning
+tags: [neural_network, text_classification]
+permalink: /2019/08/06/Universal_Language_Model_Fine_tuning_for_Text_Classification/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
@@ -18,7 +18,6 @@ bigimg:
 ---
 
 This is a brief summary of paper for me to study and organize it, [Universal Language Model Fine-tuning for Text Classification, Howard and Ruder.(ACL 2018)](https://arxiv.org/abs/1801.06146) I read and studied. 
-
 {% include MathJax.html %}
 
 They propose how to fine-tune Language model to transfer into another task. 
@@ -40,6 +39,8 @@ They propose two types of fine-tuning, **discriminative fine-tuning** and **slan
 Also they proposed fine-tuning of classifier. 
 
 The way to fine-tune the classifier is  **gradual unfreezing** which is unfreezing the the model starting from last layer as this contains the least gneenral knowledge. i.e. They first unfreeze the last layer and fine-tune all unfrozen layers for one epoch. They then unfreeze the next lower layer and repeat, until they fine-tune all layers until convergence at the last iteration.
+
+![Howard and Ruder.(ACL 2018)](Text_Classification/2019-08-06-Universal_Language_Model_Fine_tuning_for_Text_Classification/ULMFiT.png)
 
 <div id="tutorial-section">
 
