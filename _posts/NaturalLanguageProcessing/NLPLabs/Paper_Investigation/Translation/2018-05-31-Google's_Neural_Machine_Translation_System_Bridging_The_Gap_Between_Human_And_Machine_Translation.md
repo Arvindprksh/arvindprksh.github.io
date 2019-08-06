@@ -2,7 +2,7 @@
 layout: post
 title: Google's Neural Machine Translation System
 subtitle: Title of paper - Google's Neural Machine Translation System
-category: NLP papers
+category: NLP papers - Translation
 tags: [nlp, word2vec, translation]
 permalink: /2018/05/31/Google's_Neural_Machine_Translation_System_Bridging_The_Gap_Between_Human_And_Machine_Translation/
 bigimg: 
