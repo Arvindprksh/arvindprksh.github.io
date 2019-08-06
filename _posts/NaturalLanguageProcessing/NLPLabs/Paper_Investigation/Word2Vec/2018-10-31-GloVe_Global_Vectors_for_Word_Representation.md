@@ -2,7 +2,7 @@
 layout: post
 title: GloVe-Global Vectors for Word Representation
 subtitle: Title of paper - GloVe-Global Vectors for Word Representation
-category: NLP papers
+category: NLP papers - Word2vec
 tags: [nlp, word2vec]
 permalink: /2018/10/31/GloVe_Global_Vectors_for_Word_Representation/
 css : /css/ForYouTubeByHyun.css
