@@ -2,7 +2,7 @@
 layout: post
 title: The Distributional Hypothesis for Word2Vec investigation
 subtitle: Title of paper - The Distributional Hypothesis
-category: NLP papers
+category: NLP papers - Word2vec
 tags: [nlp, word2vec, word_embedding]
 permalink: /2018/03/08/The_Distribuational_Hypothesis/
 bigimg: 
