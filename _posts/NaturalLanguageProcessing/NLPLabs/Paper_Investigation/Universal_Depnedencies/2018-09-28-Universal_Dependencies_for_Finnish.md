@@ -2,7 +2,7 @@
 layout: post
 title: Universal Dependencies for Finnish
 subtitle: Title of paper - Universal Dependencies for Finnish
-category: NLP papers
+category: NLP papers - Universal Dependency
 tags: [nlp, universal_dependencies]
 permalink: /2018/09/28/Universal_Dependencies_for_Finnish/
 bigimg: 
