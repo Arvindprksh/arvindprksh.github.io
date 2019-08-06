@@ -2,7 +2,7 @@
 layout: post
 title: Are distributed representational ready for the real world
 subtitle: Title of paper - Are distributed representational ready for the real world
-category: NLP papers
+category: NLP papers - grounded Learning
 tags: [nlp, ground_learning]
 permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world/
 css : /css/ForYouTubeByHyun.css
