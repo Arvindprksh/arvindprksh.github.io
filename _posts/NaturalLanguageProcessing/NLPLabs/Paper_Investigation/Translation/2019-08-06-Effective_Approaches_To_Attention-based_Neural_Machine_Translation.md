@@ -56,9 +56,9 @@ They proposed three formulas which caculate aligment scores with a **content-bas
 
 $$a_t(s) = align(h_t, \bar{h}_s) = \frac{exp(score(h_t, \bar{h}_s))}{exp(\sum_{s'}score(h_t, \bar{h}_{s'})}$$
 $$score(h_t, \bar{h}\_s)= \begin{Bmatrix}
-    h^T_s \bar{h}_s && dot \\
-    h^T_s W_a\bar{h}_s && general \\
-    V^T_a tanh(W_a[h^T_s;\bar{h}_s] && concat\\
+    h^T_t \bar{h}_s && dot \\
+    h^T_t W_a\bar{h}_s && general \\
+    V^T_a tanh(W_a[h_t;\bar{h}_s] && concat\\
     \end{Bmatrix}$$
 
 Another one is a **location-based** funtion
