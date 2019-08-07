@@ -52,16 +52,18 @@ local attention mechanism considers the trade-off between soft and hard vesrion 
 
 ![Global attention model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Global_Attention_model.png) ![Local attentio model by Luong et al.(2016)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-06-Effective_Approaches_To_Attention-based_Neural_Machine_Translation/Local_attention_model.png)
 
-They proposed three formulas which caculate aligment scores. 
+They proposed three formulas which caculate aligment scores with a **content-based** funtion. 
 
+$$a_t(s) = align(h_t, \bar{h}\_s) = \frac{exp(score(h_t,h_t, \bar{h}\_s))}{exp(\sum{s'}score(h_t,h_t, \bar{h}\_s')}$$
+$$score(h_t,h_t, \bar{h}\_s)= \begin{Bmatrix}
+    h^T_s \bar{h}\_s dot \\
+    h^T_s W_a\bar{h}\_s general \\
+    V^T_a tanh(W_a\[h^T_s;\bar{h}\_s\]  concat\\
+    \end{Bmatrix}$$
 
-$$a_t(s) = align(h_t, h_s)$$
-$$a_t(s) = align(h_t, h_s)$$
+Another one is a **location-based** funtion
 
-
-
-
-
+$$a_t = softmax(W_ah_t) location$$
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 This paper explained Attention mechanism on translation task, from English to German. They proposed two types of attention mechanism called local and global. The global attension is other variants of (Bahdanau et al. 2015), and the local attention is new attention mechanism using a subset of source states each time. 
