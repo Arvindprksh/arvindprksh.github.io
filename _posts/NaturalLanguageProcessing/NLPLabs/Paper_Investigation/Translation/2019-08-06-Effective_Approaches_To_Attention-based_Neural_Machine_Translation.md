@@ -55,7 +55,7 @@ local attention mechanism considers the trade-off between soft and hard vesrion 
 They proposed three formulas which caculate aligment scores with a **content-based** funtion. 
 
 $$a_t(s) = align(h_t, \bar{h}_s) = \frac{exp(score(h_t, \bar{h}_s))}{exp(\sum_{s'}score(h_t, \bar{h}_{s'})}$$
-$$score(h_t, \bar{h}\_s)= \begin{Bmatrix}
+$$score(h_t, \bar{h}_s)= \begin{Bmatrix}
     h^T_t \bar{h}_s && dot \\
     h^T_t W_a\bar{h}_s && general \\
     V^T_a tanh(W_a[h_t;\bar{h}_s] && concat\\
@@ -63,7 +63,7 @@ $$score(h_t, \bar{h}\_s)= \begin{Bmatrix}
 
 Another one is a **location-based** funtion
 
-$$a_t = softmax(W_ah_t) && location$$ 
+$$ \begin{matrix} a_t = softmax(W_ah_t) && location\end{matrix} $$
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 This paper explained Attention mechanism on translation task, from English to German. They proposed two types of attention mechanism called local and global. The global attension is other variants of (Bahdanau et al. 2015), and the local attention is new attention mechanism using a subset of source states each time. 
