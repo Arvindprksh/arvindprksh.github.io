@@ -54,11 +54,11 @@ local attention mechanism considers the trade-off between soft and hard vesrion 
 
 They proposed three formulas which caculate aligment scores with a **content-based** funtion. 
 
-$$a_t(s) = align(h_t, \bar{h}\_s) = \frac{exp(score(h_t,h_t, \bar{h}\_s))}{exp(\sum{s'}score(h_t,h_t, \bar{h}\_s')}$$
+$$a_t(s) = align(h_t, \bar{h}_s) = \frac{exp(score(h_t, \bar{h}_s))}{exp(\sum{s'}score(h_t, \bar{h}_s')}$$
 $$score(h_t,h_t, \bar{h}\_s)= \begin{Bmatrix}
-    h^T_s \bar{h}\_s dot \\
-    h^T_s W_a\bar{h}\_s general \\
-    V^T_a tanh(W_a\[h^T_s;\bar{h}\_s\]  concat\\
+    h^T_s \bar{h}_s && dot \\
+    h^T_s W_a\bar{h}_s && general \\
+    V^T_a tanh(W_a[h^T_s;\bar{h}_s] && concat\\
     \end{Bmatrix}$$
 
 Another one is a **location-based** funtion
