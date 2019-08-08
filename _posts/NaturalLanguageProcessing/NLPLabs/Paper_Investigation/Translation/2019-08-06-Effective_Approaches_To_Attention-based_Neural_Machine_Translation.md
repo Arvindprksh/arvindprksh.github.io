@@ -79,7 +79,7 @@ This paper explained Attention mechanism on translation task, from English to Ge
 
 - Paper 
   - [ArXiv version: Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
-  - [ACL version: Effective Approaches to Attention-based Neural Machine Translation](https://aclweb.org/anthology/D15-1166)
+  - [EMNLP version: Effective Approaches to Attention-based Neural Machine Translation](https://aclweb.org/anthology/D15-1166)
   
  
 - How to use html for alert
