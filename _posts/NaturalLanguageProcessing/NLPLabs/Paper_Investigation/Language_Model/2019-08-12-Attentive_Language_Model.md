@@ -83,6 +83,8 @@ They then concatenate \(c_t\) with the current state \(h_t\) using a concatenati
 
 $$h_t^{'}=tanh(W_c[h_t;c_t]+b_t)$$
 
+$$p(w_t|w_{<t},x) = softmax(Wh_t^{'}+b)$$
+
 Let's see the single anc combined score :
 
 $$single(h_i) = v_s\bullet tanh(W_sh_i)$$
