@@ -60,7 +60,7 @@ The following illustrates a step of our model when predicting the fourth word in
 
 Also they proposed two different attention score funtions that can be used to compute the context vector $c_t$.
 
-One calculates the attention score of each $h_i$ using just the information in the state(**the single($h_i$) score**).
+One calculates the attention score of each $h_i$ using just the information in the state(**the single(\\h_i\\) score**).
 
 The other calculates the attention scores for each $h_i$ by combining the information from that state with the information from the current state $h_t$(**the conmbined($h_i$,$h_t$**).
 
