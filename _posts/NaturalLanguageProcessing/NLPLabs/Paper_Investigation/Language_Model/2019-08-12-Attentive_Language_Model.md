@@ -52,7 +52,7 @@ where N is the number of words in the sequence.
 
 
 They employ a multi-layered RNN to encode the input and, at each timestep, they store the output of the last recurrent layer (i.e., its hidden state \\(h_t\\)) into a memory buffer. 
-We compute a score for each hidden state \\(h_i\\) (\\(forall\\) i ∈ {1, . . . , t − 1}) stored in memory and use these scores to weight each \\(h_i\\). 
+We compute a score for each hidden state \\(h_i\\) (\\(\forall\\) i ∈ {1, . . . , t − 1}) stored in memory and use these scores to weight each \\(h_i\\). 
 From these weighted hidden states we generate a context vector \\(c_t\\) that is concatenated with the current hidden state \\(h_t\\) to predict the next word in the sequence.
 The following illustrates a step of our model when predicting the fourth word in a sequence.
 
