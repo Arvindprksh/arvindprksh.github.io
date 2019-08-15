@@ -51,26 +51,26 @@ $$p(w_1, ... , w_N) = \prod_{t=1}^{N}p(w_n | w_1, ... , w_{n-1})$$
 where N is the number of words in the sequence.
 
 
-They employ a multi-layered RNN to encode the input and, at each timestep, they store the output of the last recurrent layer (i.e., its hidden state \(h_t)\) into a memory buffer. 
-We compute a score for each hidden state \(h_i)\ (\(forall)\ i ∈ {1, . . . , t − 1}) stored in memory and use these scores to weight each \(h_i)\. 
-From these weighted hidden states we generate a context vector $c_t$ that is concatenated with the current hidden state \(h_t)\ to predict the next word in the sequence.
+They employ a multi-layered RNN to encode the input and, at each timestep, they store the output of the last recurrent layer (i.e., its hidden state \(h_t\) ) into a memory buffer. 
+We compute a score for each hidden state \(h_i\) (\(forall\) i ∈ {1, . . . , t − 1}) stored in memory and use these scores to weight each \(h_i\). 
+From these weighted hidden states we generate a context vector \(c_t\) that is concatenated with the current hidden state \(h_t\) to predict the next word in the sequence.
 The following illustrates a step of our model when predicting the fourth word in a sequence.
 
 ![Salton et al.(2017)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2019-08-12-Attentive_Language_Model/Attentive_LM_1.JPG)
 
-Also they proposed two different attention score funtions that can be used to compute the context vector \(c_t)\.
+Also they proposed two different attention score funtions that can be used to compute the context vector \(c_t\).
 
-One calculates the attention score of each \(h_i)\ using just the information in the state(**the single(\(h_i)\) score**).
+One calculates the attention score of each \(h_i\) using just the information in the state(**the single(\(h_i\)) score**).
 
-The other calculates the attention scores for each \(h_i)\ by combining the information from that state with the information from the current state \(h_t)\(**the conmbined(\(h_i,h_t)\**).
+The other calculates the attention scores for each \(h_i\) by combining the information from that state with the information from the current state \(h_t\)(**the conmbined(\(h_i,h_t\)**).
 
-Let's see the formal way to calcualte each \(h_i)\.
+Let's see the formal way to calcualte each \(h_i\).
 
-where \(x_t)\ is the input at timestep t:
+where \(x_t\) is the input at timestep t:
 
 $$h_t = RNN(x_t, h_{t-1})$$
 
-The context vector \(c_t)\ is then generated as follows:
+The context vector \(c_t\) is then generated as follows:
 
 $$c_t = \sum_{i=1}^{t-1}a_ih_i$$
 
@@ -79,7 +79,7 @@ $$score(h_i, h_t) = \begin{Bmatrix}
     combined(h_i, h_t) \\
     \end{Bmatrix}$$
 
-They then concatenate \(c_t)\ with the current state \(h_t)\ using a concatenation layer, where \(W_c)\ is a matrix of parameters and \(b_t)\ is a bias vector.
+They then concatenate \(c_t\) with the current state \(h_t\) using a concatenation layer, where \(W_c\) is a matrix of parameters and \(b_t\) is a bias vector.
 
 $$h_t^{'}=tanh(W_c[h_t;c_t]+b_t)$$
 
@@ -87,11 +87,11 @@ Let's see the single anc combined score :
 
 $$single(h_i) = v_s\bullet tanh(W_sh_i)$$
 
-where the parameter matrix \(W_s)\ and vector \(v_s)\ are both learned by the attention mechanism and \(\bullet)\ represent the dot product.
+where the parameter matrix \(W_s\) and vector \(v_s\) are both learned by the attention mechanism and \(\bullet\) represent the dot product.
 
 $$combined(h_i,h_t) = v_s\bullet tanh(W_sh_i+W_qh_t)$$
 
-where the parameter matrices \(W_s)\ and \(W_q)\ and vector \(v_s)\ are learned by the attention mechanism, and \(\bullet)\ is also dot product.
+where the parameter matrices \(W_s\) and \(W_q\) and vector \(v_s\) are learned by the attention mechanism, and \(\bullet\) is also dot product.
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
