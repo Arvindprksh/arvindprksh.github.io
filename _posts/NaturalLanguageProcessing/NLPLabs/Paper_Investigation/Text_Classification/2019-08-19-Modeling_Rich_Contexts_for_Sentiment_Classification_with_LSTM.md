@@ -2,8 +2,8 @@
 layout: post
 title: Modeling Rich Contexts for Sentiment Classification with LSTM
 subtitle: Title of paper - Modeling Rich Contexts for Sentiment Classification with LSTM
-category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+category: NLP papers - Text_classification
+tags: [neural_network, sentiment_classification]
 permalink: /2019/08/19/Modeling_Rich_Contexts_for_Sentiment_Classification_with_LSTM/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
