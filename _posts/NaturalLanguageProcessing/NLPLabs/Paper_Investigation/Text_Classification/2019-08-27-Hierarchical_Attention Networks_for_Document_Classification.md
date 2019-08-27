@@ -45,7 +45,7 @@ $$\begin{matrix}h_{it} = [\vec{h_{it}},\cev{h_{it}}]$$
 
 $$a_{it}(s) = \frac{exp(u_{it}^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)}$$
 
-$$s_i(s) = \sum_{t}a_{it}h_{it}} &&  \end{matrix}$$
+$$s_i(s) = \sum_{t}a_{it}h_{it}}$$
 
 They first feed the word annotation \\(h_{it}\\) through a one-layer MLP to get  \\(u_{it}\) as a hiden representation of  \\(h_{it}\\), then they measure the importance of the word as the similarity of \\(u_{it}\\) with a word level context vector  \\(u_w\\) and get normalized importance weight  \\(a_{it}\\) through a softmax fucntion.
 
