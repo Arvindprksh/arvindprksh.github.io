@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and note it, [Hierarchical Attention Networks for Document Classification (Yang et al. (2016)](https://www.aclweb.org/anthology/N16-1174). 
+This is a brief summary of paper for me to study and note it, [Hierarchical Attention Networks for Document Classification (Yang et al., 2016)](https://www.aclweb.org/anthology/N16-1174). 
 {% include MathJax.html %}
 
 They propose hierarchical attention Network which mirrors the hierarchical structure of a document(words from sentences, sentences from a document)
