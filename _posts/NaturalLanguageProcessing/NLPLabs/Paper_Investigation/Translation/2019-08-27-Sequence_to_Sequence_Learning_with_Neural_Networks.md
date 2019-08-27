@@ -27,7 +27,7 @@ The goal of the LSTM is to estimate the conditional probability \\(p(y_1, . . . 
 
 $$p(y_1,...,y_{T'}|x_1,...,x_T) = \prod_{t=1}^{T'} p(y_t+v, y_1,...,y_{t-1})$$
 
-In this equation, each \\(p(y_t|v, y_1, . . . , y_{t−1})\\) distribution is represented with a softmax over all the words in the vocabulary. Note that we require that each sentence ends with a special end-of-sentence symbol “<EOS>”, which enables the model to define a distribution over sequences of all possible lengths. The overall scheme is outlined in figure below, where the shown LSTM computes the representation of “A”, “B”, “C”, “<EOS>” and then uses this representation to compute the probability of “W”, “X”, “Y”, “Z”, “<EOS>”.
+In this equation, each \\(p(y_t|v, y_1, . . . , y_{t−1})\\) distribution is represented with a softmax over all the words in the vocabulary. Note that we require that each sentence ends with a special end-of-sentence symbol “<EOS>”, which enables the model to define a distribution over sequences of all possible lengths. The overall scheme is outlined in figure below, where the shown LSTM computes the representation of “A”, “B”, “C”, “\<EOS\>” and then uses this representation to compute the probability of “W”, “X”, “Y”, “Z”, “\<EOS\>”.
 
 The one below is simple illustration of their architecture.
 
