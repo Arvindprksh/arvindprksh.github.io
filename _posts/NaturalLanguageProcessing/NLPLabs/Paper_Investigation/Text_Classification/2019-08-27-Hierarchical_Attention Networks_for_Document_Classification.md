@@ -41,7 +41,7 @@ Let's see the word attention
 
 $$\begin{matrix}h_{it} = [\vec{h_{it}},\cev{h_{it}}]$$
 
-\\(h_{it}\\) && which summarizes the information of the whole sentence centered around \\(W_{it}\\)
+\\(h_{it}\\) which summarizes the information of the whole sentence centered around \\(W_{it}\\)
 
 $$a_{it}(s) = \frac{exp(u_{it}^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)}$$
 
