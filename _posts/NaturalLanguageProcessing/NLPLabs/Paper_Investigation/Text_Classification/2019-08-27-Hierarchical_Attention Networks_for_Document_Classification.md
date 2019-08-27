@@ -42,7 +42,7 @@ $$\begin{matrix} a_it(s) = \frac{exp(u_it^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)} && 
 
 $$\begin{matrix} s_i(s) = \sum_{t}a_it h_it} &&  \end{matrix}$$
 
-They first feed the word annotation \(h_it\) through a one-layer MLP to get  \(u_it\) as a hiden representation of  \(h_it\), then they measure the importance of the word as the similarity of  \(u_it\) with a word level context vector  \(u_w\) and get normalized importance weight  \(a_it\) through a softmax fucntion.
+They first feed the word annotation \((h_it\)) through a one-layer MLP to get  \((u_it\)) as a hiden representation of  \((h_it\)), then they measure the importance of the word as the similarity of  \(u_it\) with a word level context vector  \(u_w\) and get normalized importance weight  \(a_it\) through a softmax fucntion.
 
 After that, they get a weighted sum of the word annotations based on the weights.
 
@@ -62,15 +62,15 @@ Let's see the baseline they prepared to compare with their result.
  - **n-grams and n-grams+TFIDF**: used the most frequent 500,000 n-grams (up to 5-grams). Bag-of-means The average word2vec embedding is used as feature set.
  
 - SVMs: SVMs-based methods are reported including SVM+Unigrams, Bigrams, Text Features, AverageSG, SSWE. In detail, Unigrams and Bigrams uses bag-of-unigrams and bagof-bigrams as features respectively. 
- -**Text Features** are constructed, including word and character n-grams, sentiment lexicon features etc.
- -**AverageSG** constructs 200-dimensional word vectors using word2vec and the average word embeddings of each document are used.
- -**SSWE** uses sentiment specific word embeddings
+ - **Text Features** are constructed, including word and character n-grams, sentiment lexicon features etc.
+ - **AverageSG** constructs 200-dimensional word vectors using word2vec and the average word embeddings of each document are used.
+ - **SSWE** uses sentiment specific word embeddings
 
 - Neural Network methods: The neural network based methods are reported.
- -**CNN-word**: Word based CNN models
- -**CNN-char**: Character level CNN models
- -**LSTM** takes the whole document as a single sequence and the average of the hidden states of all words is used as feature for classification.
- -**Conv-GRNN and LSTM-GRNN** : it also explores the hierarchical structure: a CNN or LSTM provides a sentence vector, and then a gated recurrent neural network (GRNN) combines the sentence vectors from a document level vector representation for classification.
+ - **CNN-word**: Word based CNN models
+ - **CNN-char**: Character level CNN models
+ - **LSTM** takes the whole document as a single sequence and the average of the hidden states of all words is used as feature for classification.
+ - **Conv-GRNN and LSTM-GRNN** : it also explores the hierarchical structure: a CNN or LSTM provides a sentence vector, and then a gated recurrent neural network (GRNN) combines the sentence vectors from a document level vector representation for classification.
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
