@@ -23,6 +23,12 @@ This is a brief summary of paper for me to note it, [Sequence to Sequence Learni
 
 Their architecture is end-to-end neural network with two LSTM(one for input sequence, another for output sequence). 
 
+The goal of the LSTM is to estimate the conditional probability \\(p(y_1, . . . , y_{T′} |x_1, . . . , x_T)\\) where \\((x_1, . . . , x_T )\\) is an input sequence and \\(y_1, . . . , y_{T′}\\) is its corresponding output sequence whose length \\(T′\\) may differ from \\(T\\). The LSTM computes this conditional probability by first obtaining the fixeddimensional representation \\(v\\) of the input sequence \\((x_1, . . . , x_T )\\) given by the last hidden state of the LSTM, and then computing the probability of \\(y_1, . . . , y_{T′}\\) with a standard LSTM-LM formulation whose initial hidden state is set to the representation \\(v\\) of \\(x_1, . . . , x_T\\)
+
+$$p(y_1,...,y_{T'}|x_1,...,x_T) = \prod_{t=1}^{T'} p(y_t+v, y_1,...,y_{t-1})$$
+
+In this equation, each \\(p(y_t|v, y_1, . . . , y_{t−1})\\) distribution is represented with a softmax over all the words in the vocabulary. Note that we require that each sentence ends with a special end-of-sentence symbol “<EOS>”, which enables the model to define a distribution over sequences of all possible lengths. The overall scheme is outlined in figure below, where the shown LSTM computes the representation of “A”, “B”, “C”, “<EOS>” and then uses this representation to compute the probability of “W”, “X”, “Y”, “Z”, “<EOS>”.
+
 The one below is simple illustration of their architecture.
 
 ![Sutskever et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-27-Sequence_to_Sequence_Learning_with_Neural_Networks/sequence_to_sequence_learning_with_neural_networks.JPG)
