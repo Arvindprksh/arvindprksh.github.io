@@ -26,7 +26,7 @@ They created the repersentation for a document using words and sentences vectors
 
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-08-27-Hierarchical_Attention Networks_for_Document_Classification/Hierarchical_Attention_Network_for_document_classification.JPG)
 
-Their idea is simple and used Bidirecational GRU to get contextual vector around a word \(W_t\) in sentence.
+Their idea is simple and used Bidirecational GRU to get contextual vector around a word \\(W_t\\) in sentence.
 
 it is called sentence vector then they repeated with sentence vector and another bidirectional GRU once again.
 
@@ -36,19 +36,22 @@ Becaus the importance of words is highly context dependent.
 
 Let's see the word attention 
 
-$$\begin{matrix}h_it = [\vec{h_it},\cev{h_it}] && which summarizes the information of the whole sentence centered around W_it \end{matrix}$$
 
-$$\begin{matrix} a_it(s) = \frac{exp(u_it^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)} &&  \end{matrix}$$
+$$\begin{matrix}h_{it} = [\vec{h_{it}},\cev{h_{it}}]$$
 
-$$\begin{matrix} s_i(s) = \sum_{t}a_it h_it} &&  \end{matrix}$$
+\\(h_{it}\\) && which summarizes the information of the whole sentence centered around \\(W_{it}\\)
 
-They first feed the word annotation \((h_it\)) through a one-layer MLP to get  \((u_it\)) as a hiden representation of  \((h_it\)), then they measure the importance of the word as the similarity of  \(u_it\) with a word level context vector  \(u_w\) and get normalized importance weight  \(a_it\) through a softmax fucntion.
+$$a_{it}(s) = \frac{exp(u_{it}^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)}$$
+
+$$s_i(s) = \sum_{t}a_{it}h_{it}} &&  \end{matrix}$$
+
+They first feed the word annotation \\(h_{it}\\) through a one-layer MLP to get  \\(u_{it}\) as a hiden representation of  \\(h_{it}\\), then they measure the importance of the word as the similarity of \\(u_{it}\\) with a word level context vector  \\(u_w\\) and get normalized importance weight  \\(a_{it}\\) through a softmax fucntion.
 
 After that, they get a weighted sum of the word annotations based on the weights.
 
-In here, the context vector  \(u_w\) can be seen as a high level representation of a fixed query over the words like that used in Memory network.
+In here, the context vector \\(u_w\\) can be seen as a high level representation of a fixed query over the words like that used in Memory network.
 
-So the context vector  \(u_w\) is randomly initialized and jointly learned during the training process.
+So the context vector  \\(u_w\\) is randomly initialized and jointly learned during the training process.
 
 In the case of sentence level, it is the same from the process above. 
 
