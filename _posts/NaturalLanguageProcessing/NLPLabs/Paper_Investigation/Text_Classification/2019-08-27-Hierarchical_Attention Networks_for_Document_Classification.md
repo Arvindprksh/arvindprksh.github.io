@@ -24,9 +24,9 @@ They propose hierarchical attention Network which mirrors the hierarchical struc
 
 They created the repersentation for a document using words and sentences vectors with bidirectional GRU as follows.
 
-<p align="center">
+
 ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-08-27-Hierarchical_Attention Networks_for_Document_Classification/Hierarchical_Attention_Network_for_document_classification.JPG)
-</p>
+
 
 Their idea is simple and used Bidirecational GRU to get contextual vector around a word \\(W_t\\) in sentence.
 
