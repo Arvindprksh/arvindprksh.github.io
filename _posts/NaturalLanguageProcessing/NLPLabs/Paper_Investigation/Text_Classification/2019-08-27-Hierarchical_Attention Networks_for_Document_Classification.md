@@ -36,7 +36,7 @@ Becaus the importance of words is highly context dependent.
 
 Let's see the word attention 
 
-$$\begin{matrix}h_it = [vec{h_it},\cev{h_it}] && which summarizes the information of the whole sentence centered around W_it \end{matrix}$$
+$$\begin{matrix}h_it = [\vec{h_it},\cev{h_it}] && which summarizes the information of the whole sentence centered around W_it \end{matrix}$$
 
 $$\begin{matrix} a_it(s) = \frac{exp(u_it^{T}u_w)}{\sum_{t}exp(u_it^{T}u_w)} &&  \end{matrix}$$
 
