@@ -39,7 +39,7 @@ Becaus the importance of words is highly context dependent.
 Let's see the word attention 
 
 
-$$h_{it} = [\vec{h_{it}}, \\overleftarrow{h_{it}}]$$
+$$h_{it} = [\vec{h_{it}}, \overleftarrow{h_{it}}]$$
 
 \\(h_{it}\\) which summarizes the information of the whole sentence centered around \\(W_{it}\\)
 
