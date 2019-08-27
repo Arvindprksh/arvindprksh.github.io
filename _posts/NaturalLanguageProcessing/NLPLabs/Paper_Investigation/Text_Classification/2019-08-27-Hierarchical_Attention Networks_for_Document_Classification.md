@@ -83,13 +83,13 @@ They proposed a hierarchical attention network for document classification. Thei
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1605.01478">Modeling Rich Contexts for Sentiment Classification with LSTM</a>
+  <a href="https://www.aclweb.org/anthology/N16-1174">Hierarchical Attention Networks for Document Classification</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [NAACL-HLT ver: Hierarchical Attention Networks for Document Classification (Yang et al.)](https://www.aclweb.org/anthology/N16-1174)
+  - [NAACL-HLT ver: Hierarchical Attention Networks for Document Classification(Yang et al.,2016)](https://www.aclweb.org/anthology/N16-1174)
   
   
 - How to use html for alert
