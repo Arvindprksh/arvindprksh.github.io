@@ -33,8 +33,11 @@ From here, I describe their model in three parts: the encoder, decoder, and obje
 To encode a sentence, they iterate the following sequence of equations (dropping the subscript i):
 
 $$ \begin{matrix} r^t = \sigma(W_rx^t + U_rh^{t-1}) &  (1)    \end{matrix}$$
+
 $$ \begin{matrix} z^t = \sigma(W_zx^t + U_zh^{t-1}) &  (2)    \end{matrix}$$
+
 $$ \begin{matrix} \bar{h^t} = tanh(Wx^t + U(r^t \bigodot h^{t-1})) &  (3)    \end{matrix}$$
+
 $$ \begin{matrix} h^t = (1-z^t) \bigodot h^{t-1} + z^t \bigodot \bar{h^t} &  (4)    \end{matrix}$$
 
 where \\(\bar{h^t}\\) is the proposed state update at time t, \\(z^t\\) is the update gate, \\(r^t\\) is the reset gate (\\(\bigodot\\)) denotes a component-wise product. Both update gates takes values between zero and one.
@@ -44,8 +47,11 @@ where \\(\bar{h^t}\\) is the proposed state update at time t, \\(z^t\\) is the u
 They describe the decoder for the next sentence \\(s_{i+1}\\) although an analogous computation is used for the previous sentence \\(s_{i-1}\\). Let \\(h_{i+1}^t\\) denote the hidden state of the decoder at time *t*. Decoding involves iterating through the following sequence of equations (dropping the subscript **i+1**):
 
 $$ \begin{matrix} r^t = \sigma(W_r^dx^t + U_r^dh^{t-1} + C_rh_i) &  (5)    \end{matrix}$$
+
 $$ \begin{matrix} z^t = \sigma(W_z^dx^t + U_z^dh^{t-1}) + C_zh_i &  (6)    \end{matrix}$$
+
 $$ \begin{matrix} \bar{h^t} = tanh(Wx^t + U(r^t \bigodot h^{t-1}))+ Ch_i &  (7)    \end{matrix}$$
+
 $$ \begin{matrix} h^t = (1-z^t) \bigodot h^{t-1} + z^t \bigodot \bar{h^t} &  (8)    \end{matrix}$$
 
 Given \\(h_{i+1}^t\\), the probability of word \\(w_{i+1}^t \\) given the previous t-1 words and the encoder vector is 
