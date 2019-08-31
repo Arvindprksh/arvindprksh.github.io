@@ -38,6 +38,13 @@ Let's see the Recurrent Neural Network with Gated Hidden Neurons.
 ![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Recurrent_network.JPG)
 
 
+A recurrent neural network works on a variable-length sequence \\(x = (x_1,X_2,...,X_T)\\) by maintaining a hidden state **h** over time. At each timestip t, the hidden state \\(h^{(t)}\\) is updated by:
+
+$$h^{t} = f(h^{t-1}, x_t)$$
+
+where **f** is an activation function. Often **f** is as simple as performing a linear transformation on the input vectors, summing them, and applying an element-wise logisitic sigmoid function.
+
+
 Let's see the Gated Recursive Convolutional Neural Network. 
 
 ![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Gated_Recursive_Convolution_Neural_Network.JPG)
