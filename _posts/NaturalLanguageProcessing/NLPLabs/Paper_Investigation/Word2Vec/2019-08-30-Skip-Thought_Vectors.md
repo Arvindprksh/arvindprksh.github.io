@@ -48,9 +48,9 @@ They describe the decoder for the next sentence \\(s_{i+1}\\) although an analog
 
 $$ \begin{matrix} r^t = \sigma(W_r^dx^t + U_r^dh^{t-1} + C_rh_i) &  (5)    \end{matrix}$$
 
-$$ \begin{matrix} z^t = \sigma(W_z^dx^t + U_z^dh^{t-1}) + C_zh_i &  (6)    \end{matrix}$$
+$$ \begin{matrix} z^t = \sigma(W_z^dx^t + U_z^dh^{t-1} + C_zh_i) &  (6)    \end{matrix}$$
 
-$$ \begin{matrix} \bar{h^t} = tanh(Wx^t + U(r^t \bigodot h^{t-1}))+ Ch_i &  (7)    \end{matrix}$$
+$$ \begin{matrix} \bar{h^t} = tanh(Wx^t + U(r^t \bigodot h^{t-1}) + Ch_i) &  (7)    \end{matrix}$$
 
 $$ \begin{matrix} h^t = (1-z^t) \bigodot h^{t-1} + z^t \bigodot \bar{h^t} &  (8)    \end{matrix}$$
 
