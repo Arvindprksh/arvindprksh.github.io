@@ -1,0 +1,116 @@
+---
+layout: post
+title: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches
+subtitle: Title of paper - On the Properties of Neural Machine Translation: Encoder-Decoder Approaches
+category: NLP papers - Translation
+tags: [neural_network, translation]
+permalink: /2019/08/27/Sequence_to_Sequence_Learning_with_Neural_Networks/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to note it, [On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)](https://www.aclweb.org/anthology/W14-4012)
+
+{% include MathJax.html %}
+
+They analyzed the properties of machine translation model based on neural network. 
+
+Since most of neural-netwrok-based translation model is sequence-to-seqeunc model, the translation model has a encoder and a decoder. 
+
+![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Sequence_to_sequence.JPG)
+
+Encoder summarize input sentence (source sentence) into a fixed-length vector and Decoder generate output sentence (target sentence).
+
+To sum up their results. When the number of unkown words and the length of sentence increase, the performance is degraded.
+
+Above all, before entering to what kind of encoder they use, note that they use an RNN with gated hidden units (GRU) as a decoder.
+
+Let's see the Recurrent Neural Network with Gated Hidden Neurons. 
+
+![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Recurrent_network.JPG)
+
+
+Let's see the Gated Recursive Convolutional Neural Network. 
+
+![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Gated_Recursive_Convolution_Neural_Network.JPG)
+
+
+
+
+
+
+
+
+
+
+When they generate target sentence, they use a basic form of beam-search to find a translation that maximizes the conditional probability given by a specific models.
+
+If you want to know what beam-search is, see the following (e.g. Youtube lecture)
+
+
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Youtube of Deeplearning Ai</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#refrigerator">Beam search</a></li>
+    <li><a data-toggle="tab" href="#refrigerator_concept">Refinements to beam search</a></li>
+    <li><a data-toggle="tab" href="#refrigerator_concept2">Error Analysis of Beam Search</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="refrigerator" class="tab-pane fade in active">
+      <iframe width="1205" height="753" src="https://www.youtube.com/embed/RLWuzLLSIgw?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="refrigerator_concept" class="tab-pane fade">
+      <iframe width="1205" height="753" src="https://www.youtube.com/embed/gb__z7LlN_4?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+     <div id="refrigerator_concept2" class="tab-pane fade">
+      <iframe width="1205" height="753" src="https://www.youtube.com/embed/ZGUZwk7xIwk?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+     </div>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+Neural machine translation is a relatively new approach to statistical machine translation based purely on neural networks. The neural machine translation models often consist of an encoder and a decoder. The encoder extracts a fixed-length representation from a variable-length input sentence, and the decoder generates a correct translation from this representation. In thi spaper, they focus on analyzing the properties of the neural machine translation using two models; RNN Encoder–Decoder and a newly proposed gated recursive convolutional neural network. they show that the neural machine translation performs relatively well on short sentences without unknown words, but its performance degrades rapidly as the length of the sentence and the number of unknown words increase. Furthermore, we find that the proposed gated recursive convolutional network learns a grammatical structure of a sentence automatically.
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/W14-4012">The paper: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [ArXiv version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)](https://arxiv.org/abs/1409.1259)
+  - [ACL version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)](https://www.aclweb.org/anthology/W14-4012)
+  
+ 
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+
