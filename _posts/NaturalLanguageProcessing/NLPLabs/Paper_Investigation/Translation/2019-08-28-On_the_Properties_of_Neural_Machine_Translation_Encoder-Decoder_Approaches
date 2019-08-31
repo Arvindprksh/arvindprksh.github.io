@@ -53,6 +53,8 @@ Let's see the Gated Recursive Convolutional Neural Network.
 
 When they generate target sentence, they use a basic form of beam-search to find a translation that maximizes the conditional probability given by a specific models.
 
+it is better than [Greed search](https://youtu.be/Er2ucMxjdHE).  
+
 If you want to know what beam-search is, see the following (e.g. Youtube lecture)
 
 
