@@ -52,9 +52,9 @@ Let's see the Gated Recursive Convolutional Neural Network.
 
 They also introduce a new binary convolutional neural network whose weights are recursively applied to the input sequence until it outputs a single fixed-length vector. 
 
-Let \\(x = (x_1, x_2, ... , X_T) \\) be an input sequence, where \\(x_t \in \mathbbR^d\\). The proposed gated recursive convolutional neural network consists fo four weight matrices \\(W^l, W^r, G^l\\) and \\(G^r\\). At each recursion level \\(t \in [1, T-1]\\), the activation of the j-th hidden unit \\(h_j^{t}\\) is computed by:
+Let \\(x = (x_1, x_2, ... , X_T) \\) be an input sequence, where \\(x_t \in \mathR^d\\). The proposed gated recursive convolutional neural network consists fo four weight matrices \\(W^l, W^r, G^l\\) and \\(G^r\\). At each recursion level \\(t \in [1, T-1]\\), the activation of the j-th hidden unit \\(h_j^{t}\\) is computed by:
 
-$$ \begin{matrix} h_j^{(t)} = w_c\bar{h_j^{(t)} + w_l{h_{j-1}^{(t-1)} + w_r{h_j^{(t-1)} &  (1)    \end{matrix}$$
+$$ \begin{matrix} h_j^{(t)} = w_c\bar{h_j^{(t)} + w_lh_{j-1}^{(t-1)} + w_rh_j^{(t-1)} &  (1)    \end{matrix}$$
 
 where \\(w_c, w_l\\) and \\(w_r\\) are the values of a gater that sum to 1. The hidden unit is initialized as 
 
@@ -62,17 +62,17 @@ $$ \begin{matrix} h_j^{(0)} = Ux_j &  (2)    \end{matrix}$$
 
 Where **U** projects the input into a hidden space.
 
-The new activation \\(\barh_j^{t}\\) is computed as usual :
+The new activation \\(\bar{h_j^{t}}\\) is computed as usual :
 
-$$ \begin{matrix} \barh_j^{(t)} = \sigma(W^lh_{j-1}^{(t)} + W^rh_j^{(t)}) &  (3)    \end{matrix}$$
+$$ \begin{matrix} \bar{h_j^{(t)}} = \sigma(W^lh_{j-1}^{(t)} + W^rh_j^{(t)}) &  (3)    \end{matrix}$$
 
 Where \\(\sigma\\) is an element-wise nonlinearity.
 
 The gating coefficients \\(w's\\) are computed by:
 
-$$ \begin{matrix} w_c \\ w_l \\ w_r \\ \end{matrix} = \frac{Z}{1}exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)}) $$
+$$ \begin{bmatrix} w_c \\ w_l \\ w_r \\ \end{bmatrix} = \frac{Z}{1}exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)}) $$
 
-Where \\(G^l, G^r \in \mathbbR^{3xd}\\) and Z is normalized term :
+Where \\(G^l, G^r \in \mathR^{3xd}\\) and Z is normalized term :
 
 $$ \begin{matrix} Z = \sum_{k=1}^{3}[exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)})]_k &  (3)    \end{matrix}$$
 
@@ -99,13 +99,13 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
 
   <div class="tab-content">
     <div id="refrigerator" class="tab-pane fade in active">
-      <iframe width="1205" height="753" src="https://www.youtube.com/embed/RLWuzLLSIgw?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RLWuzLLSIgw?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="refrigerator_concept" class="tab-pane fade">
-      <iframe width="1205" height="753" src="https://www.youtube.com/embed/gb__z7LlN_4?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gb__z7LlN_4?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
      <div id="refrigerator_concept2" class="tab-pane fade">
-      <iframe width="1205" height="753" src="https://www.youtube.com/embed/ZGUZwk7xIwk?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGUZwk7xIwk?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
      </div>
   </div>
  
