@@ -132,3 +132,5 @@ Neural machine translation is a relatively new approach to statistical machine t
 
 - For your information
   - [Beam Search - A Search Strategy on HACKERNOON](https://hackernoon.com/beam-search-a-search-strategy-5d92fb7817f)
+  - [How to use Latex with latex4technics.com](https://www.latex4technics.com/?note=gw021j)
+  - [MathJax on Stackexchange](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
