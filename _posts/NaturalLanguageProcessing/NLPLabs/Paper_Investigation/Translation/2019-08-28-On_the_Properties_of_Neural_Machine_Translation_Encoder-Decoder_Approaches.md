@@ -44,18 +44,41 @@ $$h^{t} = f(h^{t-1}, x_t)$$
 
 where **f** is an activation function. Often **f** is as simple as performing a linear transformation on the input vectors, summing them, and applying an element-wise logisitic sigmoid function.
 
+They used new activation fucntion which augments the usual logisitc sigmoid activation function with two gating units called reset gate, **r** and update gate, **z**. Each gate depends on the previous hidden state \\(h^{t-1}\\), and the current intput , \\(x_t\\) controls the flow of information.
 
 Let's see the Gated Recursive Convolutional Neural Network. 
 
 ![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Gated_Recursive_Convolution_Neural_Network.JPG)
 
+They also introduce a new binary convolutional neural network whose weights are recursively applied to the input sequence until it outputs a single fixed-length vector. 
 
+Let \\(x = (x_1, x_2, ... , X_T) \\) be an input sequence, where \\(x_t \in \mathbbR^d\\). The proposed gated recursive convolutional neural network consists fo four weight matrices \\(W^l, W^r, G^l\\) and \\(G^r\\). At each recursion level \\(t \in [1, T-1]\\), the activation of the j-th hidden unit \\(h_j^{t}\\) is computed by:
 
+$$ \begin{matrix} h_j^{(t)} = w_c\bar{h_j^{(t)} + w_l{h_{j-1}^{(t-1)} + w_r{h_j^{(t-1)} &  (1)    \end{matrix}$$
 
+where \\(w_c, w_l\\) and \\(w_r\\) are the values of a gater that sum to 1. The hidden unit is initialized as 
 
+$$ \begin{matrix} h_j^{(0)} = Ux_j &  (2)    \end{matrix}$$
 
+Where **U** projects the input into a hidden space.
 
+The new activation \\(\barh_j^{t}\\) is computed as usual :
 
+$$ \begin{matrix} \barh_j^{(t)} = \sigma(W^lh_{j-1}^{(t)} + W^rh_j^{(t)}) &  (3)    \end{matrix}$$
+
+Where \\(\sigma\\) is an element-wise nonlinearity.
+
+The gating coefficients \\(w's\\) are computed by:
+
+$$ \begin{matrix} w_c \\ w_l \\ w_r \\ \end{matrix} = \frac{Z}{1}exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)}) $$
+
+Where \\(G^l, G^r \in \mathbbR^{3xd}\\) and Z is normalized term :
+
+$$ \begin{matrix} Z = \sum_{k=1}^{3}[exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)})]_k &  (3)    \end{matrix}$$
+
+According to this activation, one can think of the activation of a single node at recursion level **t** as a choice between either a enw activation computed from both left and right children, the activation from the left child, or the activation from right child. 
+
+The choice allows the overal structure of the recursive convolution to change adaptively with respect to an input sample.
 
 
 When they generate target sentence, they use a basic form of beam-search to find a translation that maximizes the conditional probability given by a specific models.
@@ -63,7 +86,6 @@ When they generate target sentence, they use a basic form of beam-search to find
 it is better than [Greed search](https://youtu.be/Er2ucMxjdHE).  
 
 If you want to know what beam-search is, see the following (e.g. Youtube lecture)
-
 
 <div id="tutorial-section">
 
