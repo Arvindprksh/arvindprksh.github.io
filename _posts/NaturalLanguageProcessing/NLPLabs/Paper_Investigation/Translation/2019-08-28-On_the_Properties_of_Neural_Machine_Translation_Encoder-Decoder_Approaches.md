@@ -112,21 +112,6 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Neural machine translation is a relatively new approach to statistical machine translation based purely on neural networks. The neural machine translation models often consist of an encoder and a decoder. The encoder extracts a fixed-length representation from a variable-length input sentence, and the decoder generates a correct translation from this representation. In thi spaper, they focus on analyzing the properties of the neural machine translation using two models; RNN Encoder–Decoder and a newly proposed gated recursive convolutional neural network. they show that the neural machine translation performs relatively well on short sentences without unknown words, but its performance degrades rapidly as the length of the sentence and the number of unknown words increase. Furthermore, we find that the proposed gated recursive convolutional network learns a grammatical structure of a sentence automatically.
 </div>
@@ -145,3 +130,5 @@ Neural machine translation is a relatively new approach to statistical machine t
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
 
+- For your information
+  - [Beam Search - A Search Strategy on HACKERNOON](https://hackernoon.com/beam-search-a-search-strategy-5d92fb7817f)
