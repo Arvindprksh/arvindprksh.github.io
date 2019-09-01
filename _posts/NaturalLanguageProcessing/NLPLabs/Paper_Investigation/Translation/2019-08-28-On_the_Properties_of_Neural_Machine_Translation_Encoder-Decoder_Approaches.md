@@ -52,9 +52,9 @@ Let's see the Gated Recursive Convolutional Neural Network.
 
 They also introduce a new binary convolutional neural network whose weights are recursively applied to the input sequence until it outputs a single fixed-length vector. 
 
-Let \\(x = (x_1, x_2, ... , X_T) \\) be an input sequence, where \\(x_t \in \mathR^d\\). The proposed gated recursive convolutional neural network consists fo four weight matrices \\(W^l, W^r, G^l\\) and \\(G^r\\). At each recursion level \\(t \in [1, T-1]\\), the activation of the j-th hidden unit \\(h_j^{t}\\) is computed by:
+Let \\(x = (x_1, x_2, ... , X_T) \\) be an input sequence, where \\(x_t \in \mathbb{R^d}\\). The proposed gated recursive convolutional neural network consists fo four weight matrices \\(W^l, W^r, G^l\\) and \\(G^r\\). At each recursion level \\(t \in [1, T-1]\\), the activation of the j-th hidden unit \\(h_j^{t}\\) is computed by:
 
-$$ \begin{matrix} h_j^{(t)} = w_c\bar{h_j^{(t)} + w_lh_{j-1}^{(t-1)} + w_rh_j^{(t-1)} &  (1)    \end{matrix}$$
+$$ \begin{matrix} h_j^{(t)} = w_c\bar{h_j^{(t)}} + w_lh_{j-1}^{(t-1)} + w_rh_j^{(t-1)} &  (1)    \end{matrix}$$
 
 where \\(w_c, w_l\\) and \\(w_r\\) are the values of a gater that sum to 1. The hidden unit is initialized as 
 
@@ -72,7 +72,7 @@ The gating coefficients \\(w's\\) are computed by:
 
 $$ \begin{bmatrix} w_c \\ w_l \\ w_r \\ \end{bmatrix} = \frac{Z}{1}exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)}) $$
 
-Where \\(G^l, G^r \in \mathR^{3xd}\\) and Z is normalized term :
+Where \\(G^l, G^r \in \mathbb{R^{3xd}}\\) and Z is normalized term :
 
 $$ \begin{matrix} Z = \sum_{k=1}^{3}[exp(G^lh_{j-1}^{(t)} + G^rh_j^{(t)})]_k &  (3)    \end{matrix}$$
 
