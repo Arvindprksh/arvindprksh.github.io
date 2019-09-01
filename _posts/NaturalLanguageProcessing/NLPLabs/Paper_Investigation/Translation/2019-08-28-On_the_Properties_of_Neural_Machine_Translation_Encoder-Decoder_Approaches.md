@@ -95,6 +95,7 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
     <li class="active"><a data-toggle="tab" href="#refrigerator">Beam search</a></li>
     <li><a data-toggle="tab" href="#refrigerator_concept">Refinements to beam search</a></li>
     <li><a data-toggle="tab" href="#refrigerator_concept2">Error Analysis of Beam Search</a></li>
+    <li><a data-toggle="tab" href="#refrigerator_concept3">Greedy Search</a></li>
   </ul>
 
   <div class="tab-content">
@@ -106,6 +107,9 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
     </div>
      <div id="refrigerator_concept2" class="tab-pane fade">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGUZwk7xIwk?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+     </div>
+    <div id="refrigerator_concept3" class="tab-pane fade">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Er2ucMxjdHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </div>
   </div>
  
