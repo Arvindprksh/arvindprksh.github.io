@@ -144,4 +144,5 @@ In this paper, they proposed a variety of Long Short-Term Memory based models fo
   - [WILDML's RNN](http://www.wildml.com/2016/08/rnns-in-tensorflow-a-practical-guide-and-undocumented-features/)
   - [aymericdamien's RNN](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/bidirectional_rnn.py)
   - [Implementing a linear-chain Conditional Random Field (CRF) in PyTorch on towardsdatascience](https://towardsdatascience.com/implementing-a-linear-chain-conditional-random-field-crf-in-pytorch-16b0b9c4b4ea) 
-  
+  - [HMM, MEMM, and CRF: A Comparative Analysis of Statistical Modeling Methods on llibabacloud](https://www.alibabacloud.com/blog/hmm-memm-and-crf-a-comparative-analysis-of-statistical-modeling-methods_592049?spm=a2c41.11544581.0.0)
+  - [Maximum Entropy Markov Models and Logistic Regression on David S. Batista blog](http://www.davidsbatista.net/blog/2017/11/12/Maximum_Entropy_Markov_Model/)
