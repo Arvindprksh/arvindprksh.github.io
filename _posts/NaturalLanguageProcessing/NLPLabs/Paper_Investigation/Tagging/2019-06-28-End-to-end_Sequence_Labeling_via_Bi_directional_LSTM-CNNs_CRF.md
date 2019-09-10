@@ -90,4 +90,6 @@ their model is truely end-to-end, requiring no feature engineering or data pre-p
   - [stackoverflow understanding 1D, 2D, 3D in convolutional Neural Network](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
   - [CNN 1D, 2D on stackexchange](https://stats.stackexchange.com/questions/292751/is-a-1d-convolution-of-size-m-with-k-channels-the-same-as-a-2d-convolution-o)
   - [Implementing a linear-chain Conditional Random Field (CRF) in PyTorch on towardsdatascience](https://towardsdatascience.com/implementing-a-linear-chain-conditional-random-field-crf-in-pytorch-16b0b9c4b4ea)
+  - [HMM, MEMM, and CRF: A Comparative Analysis of Statistical Modeling Methods on llibabacloud](https://www.alibabacloud.com/blog/hmm-memm-and-crf-a-comparative-analysis-of-statistical-modeling-methods_592049?spm=a2c41.11544581.0.0)
+  - [Maximum Entropy Markov Models and Logistic Regression on David S. Batista blog](http://www.davidsbatista.net/blog/2017/11/12/Maximum_Entropy_Markov_Model/)
   
