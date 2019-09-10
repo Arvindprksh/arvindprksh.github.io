@@ -89,4 +89,5 @@ their model is truely end-to-end, requiring no feature engineering or data pre-p
   - [stackexchange cnn translation invariant](https://stats.stackexchange.com/questions/208936/what-is-translation-invariance-in-computer-vision-and-convolutional-neural-netwo)
   - [stackoverflow understanding 1D, 2D, 3D in convolutional Neural Network](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
   - [CNN 1D, 2D on stackexchange](https://stats.stackexchange.com/questions/292751/is-a-1d-convolution-of-size-m-with-k-channels-the-same-as-a-2d-convolution-o)
+  - [Implementing a linear-chain Conditional Random Field (CRF) in PyTorch on towardsdatascience](https://towardsdatascience.com/implementing-a-linear-chain-conditional-random-field-crf-in-pytorch-16b0b9c4b4ea)
   
