@@ -29,7 +29,7 @@ This paper focused on the multi-task in NLP, the portion of sharing between diff
 Their concept using look-up,Variation on Word Representation, is used for other feature like capitalization and relative position between each word and predicate.
 
 
-![Collobert	and Weston. (2008)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Multi_Task/2019-10-05-A_Unified_Archtecture_for_Natural_Language_Processing:_Deep_Neural_Networks_With_Multitask_Learning/Multi-Task1.JPG)
+![Collobert	and Weston. (2008)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Multi_Task/2019-10-05-A_Unified_Archtecture_for_Natural_Language_Processing_Deep_Neural_Networks_With_Multitask_Learning/Multi-Task1.JPG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
