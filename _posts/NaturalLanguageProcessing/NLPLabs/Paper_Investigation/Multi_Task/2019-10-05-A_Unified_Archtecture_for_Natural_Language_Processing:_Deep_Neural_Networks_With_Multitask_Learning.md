@@ -17,7 +17,10 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study it, [A unified architecture for natural language processing: deep neural networks with multitask learning, Collobert	and Weston. (2008)](https://dl.acm.org/citation.cfm?id=1390177)
+This is a brief summary of paper named [A unified architecture for natural language processing: deep neural networks with multitask learning, Collobert	and Weston. (2008)](https://dl.acm.org/citation.cfm?id=1390177)
+
+This post is arranged for me to understand multi-task learning.
+
 
 {% include MathJax.html %}
 
