@@ -43,8 +43,8 @@ They report on a series of experiments with convolutional neural networks (CNN) 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Convolutional Neural Networks for Sentence Classification (Kim. 2014)](https://arxiv.org/abs/1408.5882)
-  - [EMNLP 2014 version: Convolutional Neural Networks for Sentence Classification (Kim. 2014)](https://www.aclweb.org/anthology/D14-1181/)
+  - [Arxiv version: Convolutional Neural Networks for Sentence Classification (Kim 2014)](https://arxiv.org/abs/1408.5882)
+  - [EMNLP 2014 version: Convolutional Neural Networks for Sentence Classification (Kim 2014)](https://www.aclweb.org/anthology/D14-1181/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
