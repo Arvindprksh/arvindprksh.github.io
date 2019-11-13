@@ -109,7 +109,7 @@ Below is youtube about Korean tokenizing for your information but the person of 
 
 <div id="tutorial-section">
 
-  <div id="tutorial-title">GloVe Youtube</div>
+  <div id="tutorial-title">Tokenization</div>
 
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="tab" href="#refrigerator">Korean Tokenizing with soynlp</a></li>
