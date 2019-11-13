@@ -49,18 +49,18 @@ In order to be able to learn where where to put spaces from the data and make it
 >>4. During decodding the best path according to the model will be chosen, which preserves where to put spaces and where not. The attached space markers obviously have to be filtered out from the decoding output for correct display Assuming. The common scenario where the decoder puts automatically a space between each unit in the output string this procedure the is :  
 >>    (a) Remove all spaces (" " -> "")    
 >>    (b) Remove double space marker by space ("\_\_" -> " ")   
->>    (C) Remove remaining single space markers ("\_" -> "")     
+>>    (c) Remove remaining single space markers ("\_" -> "")     
 >>This last step could potentially be also a replacement by space as this is the rare case when the decoder hypothesize a word unit with space followed by one without space or vice versa.
 
 Let's see an exmaple explained in their paper:
 
 They showed an example of the segmentation and gluing proceduer-note that the original and final texts contain where there is a space.
 
->>(1) Janpanese original unsegmented text 
->>(2) After segementation 
->>(3) the addition of underscores to retain location of spaces
->>(4) a possible raw decoder result
->>(5) with the final result after removing underscores
+>>(1) Janpanese original unsegmented text   
+>>(2) After segementation   
+>>(3) the addition of underscores to retain location of spaces   
+>>(4) a possible raw decoder result    
+>>(5) with the final result after removing underscores     
 
 ![(Mike Schuster and Kaisuke Nakajima. 2012)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tokenizer/2019-11-13-JAPANESE_AND_KOREAN_VOICE_SEARCH/WordPieceModel_example.PNG)
 
@@ -80,7 +80,7 @@ If you can also use the version of python, type in as follows:
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-
+This paper describe the techniques used to handle an infinite vocabulary and how to build dictionaries and so on. However, I focused on how to tokenize the Asian language making the OOV(out-of-vocabulary) problem less happen and using independent-language tokenizing techniques.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
