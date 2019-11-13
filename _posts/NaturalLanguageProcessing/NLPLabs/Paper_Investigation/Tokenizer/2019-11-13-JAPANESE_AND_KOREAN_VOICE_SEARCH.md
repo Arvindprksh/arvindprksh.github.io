@@ -104,7 +104,7 @@ This paper describe the techniques used to handle an infinite vocabulary and how
     - [word segmentation about NLP on WHAT IS NATURAL LANGUAGE PROCESSING? wikidocs](https://wikidocs.net/22592)
     - [Unsupervised tokenizers in soynlp project on lovit blog](https://lovit.github.io/nlp/2018/04/09/three_tokenizers_soynlp/)
     - [SoyNLP github](https://github.com/lovit/soynlp)
-
+    - [soynlp youtube](https://youtu.be/Vj55zaDvn4Q)    
 
 
 
