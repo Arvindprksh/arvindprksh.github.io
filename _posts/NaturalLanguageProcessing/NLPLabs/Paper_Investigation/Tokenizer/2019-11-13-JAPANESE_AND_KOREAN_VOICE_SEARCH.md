@@ -104,9 +104,23 @@ This paper describe the techniques used to handle an infinite vocabulary and how
     - [word segmentation about NLP on WHAT IS NATURAL LANGUAGE PROCESSING? wikidocs](https://wikidocs.net/22592)
     - [Unsupervised tokenizers in soynlp project on lovit blog](https://lovit.github.io/nlp/2018/04/09/three_tokenizers_soynlp/)
     - [SoyNLP github](https://github.com/lovit/soynlp)
-    - [soynlp youtube](https://youtu.be/Vj55zaDvn4Q)    
 
+Below is youtube about Korean tokenizing for your information
 
+<div id="tutorial-section">
+
+  <div id="tutorial-title">GloVe Youtube</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#refrigerator">Korean Tokenizing with soynlp</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="refrigerator" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj55zaDvn4Q" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 
 
 
