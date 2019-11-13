@@ -47,9 +47,9 @@ In order to be able to learn where where to put spaces from the data and make it
 >>2. when segmenting the LM data with **WordPieceModel** attach a space marker (they used an underscore or a tilde) before and after each unit when you see a space, otherwise don't attach. Each word unit can hence appear in four different forms, with underscore on both sides (there was a space originally on both sides in the data), with a space marker only on the left or only the right, and without space markers at all. The word inventory si now larger, possibly up to four times the original size if every combination exists.  
 >>3. Biuld LM and dictionary based on this new inventory.  
 >>4. During decodding the best path according to the model will be chosen, which preserves where to put spaces and where not. The attached space markers obviously have to be filtered out from the decoding output for correct display Assuming. The common scenario where the decoder puts automatically a space between each unit in the output string this procedure the is :  
->>    (a) Remove all spaces (" " -> "")
->>    (b) Remove double space marker by space ("__" -> " ")
->>    (C) Remove remaining single space markers ("_" -> "")
+>>    (a) Remove all spaces (" " -> "")    
+>>    (b) Remove double space marker by space ("\_\_" -> " ")   
+>>    (C) Remove remaining single space markers ("\_" -> "")     
 >>This last step could potentially be also a replacement by space as this is the rare case when the decoder hypothesize a word unit with space followed by one without space or vice versa.
 
 Let's see an exmaple explained in their paper:
