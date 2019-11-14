@@ -64,6 +64,7 @@ The process of learning good features for machine learning applications can be v
   - [Siamese Neural Networks for One-Shot Image Recognition by Koch](http://www.cs.toronto.edu/~gkoch/files/msc-thesis.pdf)
   - [Meta-Learning: Learning to Learn Fast on Lil'Log](https://lilianweng.github.io/lil-log/2018/11/30/meta-learning.html)
   - [Learning to Learn on BAIR](https://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
+  - [Omniglot dataset github](https://github.com/brendenlake/omniglot/tree/057f034baf2ecb8530bc5710e5a23584d2a519cc)
 
 
 
