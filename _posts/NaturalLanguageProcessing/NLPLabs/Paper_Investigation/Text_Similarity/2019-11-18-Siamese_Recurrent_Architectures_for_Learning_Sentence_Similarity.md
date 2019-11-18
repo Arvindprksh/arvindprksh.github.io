@@ -24,7 +24,7 @@ Thes propose a siamese neural network based on LSTM to compare a pair of sentenc
 
 First, they encode two sentence of different length into fixed-size vectors using an LSTM as follows:
 
-![Mueller and Thyagarajan. AAAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Similarity/2019-11-18-Siamese_Recurrent_Architectures_for_Learing_Sentence_Similarity/Siamese_LSTM_neural_network.PNG)
+![Mueller and Thyagarajan. AAAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Similarity/2019-11-18-Siamese_Recurrent_Architectures_for_Learning_Sentence_Similarity/Siamese_LSTM_neural_network.PNG)
 
 As you can see, they used Manhattan distance as objective function.
 
