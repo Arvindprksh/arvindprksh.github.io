@@ -34,8 +34,6 @@ They have a focus on transfer-learning from Machine translation task to downstre
 
   <div class="tab-content">
     <div id="refrigerator" class="tab-pane fade in active">
-       # I have to fixt thie line below.
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ASn7ExxLZws" frameborder="0" allowfullscreen></iframe>
       <iframe src="//www.slideshare.net/slideshow/embed_code/key/7VRMLPec3iyhPU" width="560" height="315" frameborder="0" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/7VRMLPec3iyhPU" title="(paper seminar)Learned in Translation: Contextualized Word Vectors" target="_blank">(paper seminar)Learned in Translation: Contextualized Word Vectors</a> </strong> from <strong><a href="https://www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
     </div>
   </div>
