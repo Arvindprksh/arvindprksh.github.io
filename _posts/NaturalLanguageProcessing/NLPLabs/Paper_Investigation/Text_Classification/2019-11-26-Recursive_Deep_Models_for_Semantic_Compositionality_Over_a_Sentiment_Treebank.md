@@ -60,7 +60,7 @@ The second member of RNNs is Matrix-Vector RNN (MV-RNN) that is linguistically m
 
 For this model, each n-gram is represented as al ist of (vector, matrix) paris, together with the parse tree. For the tree with (vector, matrix) nodes: 
 
-![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation2.PNG)
+![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation_2.PNG)
 
 Where \\(W_M \in \mathbb R^{d \times 2d}\\) and the result is againa \\(d \times d \\) matrix
 
