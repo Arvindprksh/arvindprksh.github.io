@@ -50,7 +50,7 @@ Let's walk through recursive neural network ahead of getting to their model RNTN
 
 The simplest member of the family of recursive neural networks is the **standard recursive neural network**
 
-First, it is determined which parent already has all its children computed. In the above exmple figure, \(p_1)\ has its two children's vectors since both are words. the standard recursive neural network(RNN) uses the following equations to compute the parent node vectors:
+First, it is determined which parent already has all its children computed. In the above exmple figure, \(p_1\) has its two children's vectors since both are words. the standard recursive neural network(RNN) uses the following equations to compute the parent node vectors:
 
 ![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation1.PNG)
 
@@ -62,7 +62,7 @@ For this model, each n-gram is represented as al ist of (vector, matrix) paris, 
 
 ![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation2.PNG)
 
-Where \(W_M \in \mathbbR^{d * 2d})\ and the result is againa d * d matrik
+Where \(W_M \in \mathbbR^{d * 2d}\) and the result is againa d * d matrik
 
 Finally, Their resulting model to resolve the one problem with the MV-RNN is RNTN(recursive Neural Tensor Netowrk) as followings:
 
