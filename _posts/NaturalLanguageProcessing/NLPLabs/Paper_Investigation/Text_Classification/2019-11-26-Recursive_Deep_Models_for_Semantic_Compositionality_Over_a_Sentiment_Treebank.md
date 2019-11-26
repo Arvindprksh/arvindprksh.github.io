@@ -62,7 +62,7 @@ For this model, each n-gram is represented as al ist of (vector, matrix) paris, 
 
 ![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation2.PNG)
 
-Where \\(W_M \in \mathbb R^{d * 2d}\\) and the result is againa d * d matrik
+Where \\(W_M \in \mathbb R^{d \times 2d}\\) and the result is againa \\(d \times d \\) matrix
 
 Finally, Their resulting model to resolve the one problem with the MV-RNN is RNTN(recursive Neural Tensor Netowrk) as followings:
 
