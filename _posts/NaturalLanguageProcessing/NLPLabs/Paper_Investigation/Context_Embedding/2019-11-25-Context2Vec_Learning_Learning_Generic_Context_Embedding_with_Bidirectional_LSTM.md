@@ -30,8 +30,6 @@ Objective function is how likely the target word vector and sentential context v
 
 In their embedding, they used two special tokens, BOS and EOS signified as the end and beginning of a sentence.
 
-I think they separate the embedding into two type, one for sentential context and another for target word 
-
 ![Melamud et al. 2016 SIGNLL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Context_Embedding/2019-11-25-Context2Vec_Learning_Learning_Generic_Context_Embedding_with_Bidirectional_LSTM/context2_vec.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
