@@ -29,7 +29,7 @@ The following is the material for the presenation on paper seminar in my class.
   <div id="tutorial-title">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="#refrigerator">Selected Topics in Computer Science Class</a></li>
+    <li class="active"><a data-toggle="tab" href="#refrigerator">Selected Topics in Computer Science class</a></li>
   </ul>
 
   <div class="tab-content">
