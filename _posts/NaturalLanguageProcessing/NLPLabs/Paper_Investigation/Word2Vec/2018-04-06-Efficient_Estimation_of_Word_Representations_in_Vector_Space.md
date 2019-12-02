@@ -79,6 +79,7 @@ If you want to download the data set, visit <a href="http://www.fit.vutbr.cz/~im
  
 - Quoar
   - [What is meant by a ditributed representation in Deep learning](https://www.quora.com/Deep-Learning-What-is-meant-by-a-distributed-representation) 
+  - [How does word2vec work? Can someone walk through a speicific example](https://www.quora.com/How-does-word2vec-work-Can-someone-walk-through-a-specific-example)
   
 - Reference
    - [Learning Word Embedding on Lil'Log](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html)
