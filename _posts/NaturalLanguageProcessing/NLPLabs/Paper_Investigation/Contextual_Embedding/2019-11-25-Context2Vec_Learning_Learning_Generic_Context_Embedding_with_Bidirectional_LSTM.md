@@ -3,7 +3,7 @@ layout: post
 title: context2vec- Learning Generic Context Embedding with Bidirectional LSTM
 subtitle: Title of paper - context2vec- Learning Generic Context Embedding with Bidirectional LSTM
 category: NLP papers - Transfer_learning
-tags: [neural_network, Context_Embedding]
+tags: [neural_network, Contextual_Embedding]
 permalink: /2019/11/25/Context2Vec_Learning_Learning_Generic_Context_Embedding_with_Bidirectional_LSTM/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
