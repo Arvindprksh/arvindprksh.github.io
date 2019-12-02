@@ -3,7 +3,7 @@ layout: post
 title: Learned in Translation- Contextualized Word Vectors
 subtitle: Title of paper - Learned in Translation- Contextualized Word Vectors
 category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+tags: [neural_network, contextual_embedding]
 permalink: /2019/11/19/Learned_in_Translation-Contextualized_Word_Vectors/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
