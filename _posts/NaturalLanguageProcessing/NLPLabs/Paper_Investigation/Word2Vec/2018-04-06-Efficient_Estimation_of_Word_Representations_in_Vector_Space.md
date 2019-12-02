@@ -79,6 +79,9 @@ If you want to download the data set, visit <a href="http://www.fit.vutbr.cz/~im
  
 - Quoar
   - [What is meant by a ditributed representation in Deep learning](https://www.quora.com/Deep-Learning-What-is-meant-by-a-distributed-representation) 
+  
+- Reference
+   - [Learning Word Embedding on Lil'Log](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
