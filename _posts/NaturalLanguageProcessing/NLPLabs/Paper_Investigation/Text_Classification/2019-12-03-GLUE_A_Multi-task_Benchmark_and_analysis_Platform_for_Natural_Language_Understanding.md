@@ -22,7 +22,7 @@ This is a brief summary of paper for me to study and organize it, [GLUE- A Multi
 
 This paper show a platform for Natural Language understaing tasks as follows:
 
-![GLUE Benchmark](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-03-GLUE_A_Multi-task_Benchmark_and_analysis_Platform_for_Natural_Language_Understanding/GLUE site.PNG)
+![GLUE Benchmark](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-03-GLUE_A_Multi-task_Benchmark_and_analysis_Platform_for_Natural_Language_Understanding/GLUE_site.PNG)
 
 
 If you want to submission the platform to test your model across a variety of tasks for NLU.
@@ -33,7 +33,7 @@ They provide each 9 bechmark sets about NLU tasks.
 
 To recap, the set is composed of the following: 
 
-![Wang et al. 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-03-GLUE_A_Multi-task_Benchmark_and_analysis_Platform_for_Natural_Language_Understanding/GLUE data.PNG)
+![Wang et al. 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-03-GLUE_A_Multi-task_Benchmark_and_analysis_Platform_for_Natural_Language_Understanding/GLUE_data.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 For natural language understanding (NLU) technology to be maximally useful, it must be able to process language in a way that is not exclusive to a single task, genre, or dataset. In pursuit of this objective, they introduce the General Language Understanding Evaluation (GLUE) benchmark, a collection of tools for evaluating the performance of models across a diverse set of existing NLU tasks. By including tasks with limited training data, GLUE is designed to favor and encourage models that share general linguistic knowledge across tasks. GLUE also includes a hand-crafted diagnostic test suite that enables detailed linguistic analysis of models. They evaluate baselines based on current methods for transfer and representation learning and find that multi-task training on all tasks performs better than training a separate model per task. However, the low absolute performance of our best model indicates the need for improved general NLU systems.
@@ -53,10 +53,8 @@ For natural language understanding (NLU) technology to be maximally useful, it m
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
     
 - For your information
-  - [NAACL 2019 Highlight on Ruder.io](http://ruder.io/naacl2019/)
+  - [GLUE benchmark](https://gluebenchmark.com/)
   
-  - Slide 
-    - [Transfer Learning in Natural Language Processing tutorial on NAACL-HLT 2019](https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_177_4)
 
 
 
