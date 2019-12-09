@@ -3,7 +3,7 @@ layout: post
 title: Semi-supervised Sequence Learning
 subtitle: Title of paper - Semi-supervised Sequence Learning
 category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+tags: [neural_network, text_classification, word_dropout]
 permalink: /2019/11/11/Semi-supervised_Sequence_Learning/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
