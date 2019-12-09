@@ -44,6 +44,8 @@ They said
 
 >>  They demonstrated that a language model or a sequence autoencoder can help stabilize the learning in LSTM recurrent networks.
 
+Also They used **word dropout**
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 They present two approaches to use unlabeled data to improve Sequence Learning with recurrent networks. The first approach is to predict what comes next in a sequence, which is a language model in NLP. The second approach is to use a sequence autoencoder, which reads the input sequence into a vector and predicts the input sequence again. These two algorithms can be used as a “pretraining” algorithm for a later supervised sequence learning algorithm. In other words, the parameters obtained from the pretraining step can then be used as a starting point for other supervised training models. In they experiments, we find that long short term memory recurrent networks after pretrained with the two approaches become more stable to train and generalize better.
 </div>
