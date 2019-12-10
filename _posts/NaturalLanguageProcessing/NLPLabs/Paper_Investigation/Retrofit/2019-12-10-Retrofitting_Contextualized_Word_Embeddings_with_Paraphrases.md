@@ -31,7 +31,7 @@ There are tow phases of specialization methods:
 
 However, this paper exaplain how to retrofit context information of paraphrases, suggestting the figure below:
 
-![Shi et al. 2019 EMNLP](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_1.PNG)
+![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_1.PNG)
 
 They said 
 
@@ -41,19 +41,19 @@ Without retraining the parameters of an existing model, In order to learns the t
 
 They propose the model called paraphrase-aware Retrofitting (PAR) below:
 
-![Shi et al. 2019 EMNLP](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_2.PNG)
+![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_2.PNG)
 
 PAR learns an orthogonal transformation $M \in \mathbbR^{k*k}$ to reshap the input representation into a specific space to complement the collocate.
 
 Given two contexts S1 and S2 that both contain a shared word w, the contextual difference of a input representation w is defined by the L2 distance:
 
-![Shi et al. 2019 EMNLP](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_3.PNG)
+![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_3.PNG)
 
-![Shi et al. 2019 EMNLP](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_4.PNG)
+![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_4.PNG)
 
 The training objective of PAR is the dentoed as follows:
 
-![Shi et al. 2019 EMNLP](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_5.PNG)
+![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_5.PNG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
