@@ -67,7 +67,7 @@ frankly speaking, If you have many documents, in all the documents, the same sen
 So when you test with test data. you have to fix the rest of vector representation except for paragraph vector on test time to learn pragraph vector.
 
 
-
+If you want to know information about appilication of thie method, read another paper, titled [Document Embedding with Paragraph Vectors. Dai et al. 2015 arXiv](https://arxiv.org/abs/1507.07998)
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
@@ -96,3 +96,5 @@ If you want to download the data set this paper used, visit the followings :
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
+ - For your information 
+  - [Document Embedding with Paragraph Vectors. Dai et al. 2015 arXiv](https://arxiv.org/abs/1507.07998)
