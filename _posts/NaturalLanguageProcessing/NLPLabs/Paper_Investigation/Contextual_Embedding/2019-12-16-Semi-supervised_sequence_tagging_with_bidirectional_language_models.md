@@ -26,11 +26,11 @@ In order to make the context sensitive representation, they used pre-training LM
 
 They show how to used a LM embedding component in the following
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_1.PNG)
+![Peters et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_1.PNG)
 
 The total overview of their TagLM is as follows: 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_2.PNG)
+![Peters et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_2.PNG)
 
 Though their idea is simple, the resuling performance is superior to the previous moethod at the moment. 
 
