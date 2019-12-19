@@ -50,3 +50,4 @@ If you want to download the data set, visit <a href="https://code.google.com/arc
 - Tutorial site of word2vec 
   - [Chris McCormick's skip gram model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
   - [Chris McCormick's negative sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
+  - [Optimize Computational Efficiency of Skip-Gram with Negative Sampling on aegis4048](https://aegis4048.github.io/optimize_computational_efficiency_of_skip-gram_with_negative_sampling)
