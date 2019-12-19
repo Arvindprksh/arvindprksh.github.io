@@ -83,6 +83,8 @@ If you want to download the data set, visit <a href="http://www.fit.vutbr.cz/~im
   
 - Reference
    - [Learning Word Embedding on Lil'Log](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html)
+   - [Demystifying Neural Network in Skip-Gram Language Modeling on aegis4048](https://aegis4048.github.io/demystifying_neural_network_in_skip_gram_language_modeling)
+   - [Understanding Multi-Dimensionality in Vector Space Modeling on aegis4048](https://aegis4048.github.io/understanding_multi-dimensionality_in_vector_space_modeling)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
