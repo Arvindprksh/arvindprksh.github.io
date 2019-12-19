@@ -52,3 +52,4 @@ If you want to download the data set, visit <a href="https://code.google.com/arc
   - [Chris McCormick's negative sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
   - [Optimize Computational Efficiency of Skip-Gram with Negative Sampling on aegis4048](https://aegis4048.github.io/optimize_computational_efficiency_of_skip-gram_with_negative_sampling)
   - [word2vec Explained: deriving Mikolov et al.'s negative-sampling word-embedding method](https://arxiv.org/abs/1402.3722)
+  - [what is the subsmapling on Quora](https://www.quora.com/How-does-sub-sampling-of-frequent-words-work-in-the-context-of-Word2Vec)
