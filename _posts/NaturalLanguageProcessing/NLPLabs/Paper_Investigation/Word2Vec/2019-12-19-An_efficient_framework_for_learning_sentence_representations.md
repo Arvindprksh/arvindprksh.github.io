@@ -56,6 +56,8 @@ speedup in training time.
   - [Word2Vec Tutorial Part 2 - Negative Sampling on Chris McCormick blog](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
   - [Optimize Computational Efficiency of Skip-Gram with Negative Sampling on aegis4048 blog](https://aegis4048.github.io/optimize_computational_efficiency_of_skip-gram_with_negative_sampling#fig1)
   - [How does sub-sampling of frequent words work in the context of Word2Vec? on quora](https://www.quora.com/How-does-sub-sampling-of-frequent-words-work-in-the-context-of-Word2Vec)
+  - [word2vec: negative sampling (in layman term)? on stackoverflow](https://stackoverflow.com/questions/27860652/word2vec-negative-sampling-in-layman-term)
+  - [Learning Word Embedding on Lil'log](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html)
 
 
 
