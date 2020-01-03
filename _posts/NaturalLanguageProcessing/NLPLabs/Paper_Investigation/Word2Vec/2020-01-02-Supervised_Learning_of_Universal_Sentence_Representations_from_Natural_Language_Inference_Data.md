@@ -2,8 +2,8 @@
 layout: post
 title: Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
 subtitle: Title of paper - Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
-category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+category: NLP papers - Sentence_Embedding
+tags: [neural_network, embedding]
 permalink: /2020/01/02/Supervised_Learning_of_Universal_Sentence_Representations_from_Natural_Language_Inference_Data/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
