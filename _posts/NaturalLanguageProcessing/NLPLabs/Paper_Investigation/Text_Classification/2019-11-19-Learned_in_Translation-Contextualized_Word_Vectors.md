@@ -34,7 +34,7 @@ They have a focus on transfer-learning from Machine translation task to downstre
 
   <div class="tab-content">
     <div id="refrigerator" class="tab-pane fade in active">
-      <iframe src="//www.slideshare.net/slideshow/embed_code/key/7VRMLPec3iyhPU" width="560" height="315" frameborder="0" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/7VRMLPec3iyhPU" title="(paper seminar)Learned in Translation: Contextualized Word Vectors" target="_blank">(paper seminar)Learned in Translation: Contextualized Word Vectors</a> </strong> from <strong><a href="https://www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
+      <iframe src="//www.slideshare.net/slideshow/embed_code/key/tF31VQ0NnmxUNF" width="560" height="315" frameborder="0" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/HyunYoungLee3/paper-seminarretrofitting-word-vector-to-semantic-lexicons-216492254" title="(Paper seminar)Retrofitting word vector to semantic lexicons" target="_blank">(Paper seminar)Retrofitting word vector to semantic lexicons</a> </strong> from <strong><a href="https://www.slideshare.net/HyunYoungLee3" target="_blank">hyunyoung Lee</a></strong> </div>
     </div>
   </div>
 </div>
