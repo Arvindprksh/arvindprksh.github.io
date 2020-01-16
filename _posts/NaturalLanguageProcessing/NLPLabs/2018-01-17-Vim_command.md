@@ -100,8 +100,29 @@ Use **g** if you don't want to search for the exact word like __g*__, **g#**
 > e ++ecn=<your text's encoding>   
 > e ++enc=cp949
 
+## How to execute code in vim window 
+
+go to command mode by pressing <esc> key and type:
+
+> ! clear; python3 %
+
+step by step about explanation of the command 
+
+**!**: allows you to run a termainal command 
+
+**clear**: will empty your terminal screen 
+
+**;**: ends the first command, allowing you to introduce a second command
+
+**python3**: will you python3 to run your script (it could be replaced with ruby for example)
+
+**%**: concats the current filename, passing it as a parameter to the python command
+
 # Reference
  
   - [Searching in Vim](http://vim.wikia.com/wiki/Searching)
   
   - [copy and paste](http://vim.wikia.com/wiki/Copy,_cut_and_paste)
+  
+  - [how to execute code in vim windown](https://stackoverflow.com/questions/18948491/running-python-code-in-vim)
+
