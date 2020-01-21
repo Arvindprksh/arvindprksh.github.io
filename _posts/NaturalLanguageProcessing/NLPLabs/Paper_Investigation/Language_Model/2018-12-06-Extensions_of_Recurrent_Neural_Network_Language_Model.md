@@ -2,8 +2,8 @@
 layout: post
 title: Extensions of recurrent neural network Language model
 subtitle: Title of paper - Extensions of recurrent neural network language model
-category: NLP papers - LM
-tags: [neural_network, language_model]
+category: NLP papers - Language model
+tags: [neural network, language model]
 permalink: /2018/12/06-Extensions_of_Recurrent_Neural_Network_Language_Model
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
