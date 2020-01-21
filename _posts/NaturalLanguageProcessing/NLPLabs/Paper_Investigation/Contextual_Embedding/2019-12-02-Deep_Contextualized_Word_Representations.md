@@ -2,8 +2,8 @@
 layout: post
 title: Deep contextualized word representations
 subtitle: Title of paper - Deep contextualized word representations
-category: NLP papers - Transfer_learning
-tags: [neural_network, contextual_embedding]
+category: NLP papers - Transfer learning
+tags: [neural network, contextual embedding]
 permalink: /2019/12/02/Deep_Contextualized_Word_Representations/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
