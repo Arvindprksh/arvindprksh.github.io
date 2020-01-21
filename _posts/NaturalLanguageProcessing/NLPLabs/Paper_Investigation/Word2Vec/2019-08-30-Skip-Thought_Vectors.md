@@ -2,8 +2,8 @@
 layout: post
 title: Skip-Thought Vectors
 subtitle: Title of paper - Skip-Thought Vectors
-category: NLP papers - Sentence_Embedding
-tags: [neural_network, embedding]
+category: NLP papers - Sentence Embedding
+tags: [neural network, sentence embedding]
 permalink: /2019/08/30/Skip-Thought_Vectors/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
