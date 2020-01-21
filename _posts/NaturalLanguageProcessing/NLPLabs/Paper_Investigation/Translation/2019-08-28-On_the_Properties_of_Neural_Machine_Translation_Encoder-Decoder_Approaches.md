@@ -3,7 +3,7 @@ layout: post
 title: On the Properties of Neural Machine Translation- Encoder-Decoder Approaches
 subtitle: Title of paper - On the Properties of Neural Machine Translation- Encoder-Decoder Approaches
 category: NLP papers - Translation
-tags: [neural_network, translation]
+tags: [neural network, translation]
 permalink: /2019/08/28/On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
