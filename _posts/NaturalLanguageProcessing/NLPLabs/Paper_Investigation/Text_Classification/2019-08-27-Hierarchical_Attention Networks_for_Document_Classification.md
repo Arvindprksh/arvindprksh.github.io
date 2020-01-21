@@ -2,8 +2,8 @@
 layout: post
 title: Hierarchical Attention Networks for Document Classification
 subtitle: Title of paper - Hierarchical Attention Networks for Document Classification
-category: NLP papers - Text_classification
-tags: [neural_network, text_classification]
+category: NLP papers - Text Classification
+tags: [neural network, text classification]
 permalink: /2019/08/27/Hierarchical_Attention Networks_for_Document_Classification/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
