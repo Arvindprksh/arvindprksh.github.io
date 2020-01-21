@@ -2,7 +2,7 @@
 layout: post
 title: Distinguishing Japanese Non-standard Usages from Standard Ones
 subtitle: Title of paper - Distinguishing Japanese Non-standard Usages from Standard Onesn
-category: NLP papers
+category: NLP papers-MISC
 tags: [nlp, word2vec, emnlp]
 permalink: /2018/10/05/Distinguishing_Japanese_Non-standard_Usages_from_Standard_Ones/
 bigimg: 
