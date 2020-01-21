@@ -2,8 +2,8 @@
 layout: post
 title: Universal Language Model Fine-tuning for Text Classification
 subtitle: Title of paper - Universal Language Model Fine-tuning for Text Classification
-category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+category: NLP papers - Transfer Learning
+tags: [neural network, text classification]
 permalink: /2019/08/06/Universal_Language_Model_Fine_tuning_for_Text_Classification/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
