@@ -2,8 +2,8 @@
 layout: post
 title: Retrofitting Contextualized Word Embeddings with Paraphrases
 subtitle: Title of paper - Retrofitting Contextualized Word Embeddings with Paraphrases
-category: NLP papers - Retrofit
-tags: [neural_network, text_classification]
+category: NLP papers - Retrofitting
+tags: [neural network, text classification]
 permalink: /2019/12/10/Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
