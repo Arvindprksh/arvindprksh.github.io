@@ -3,7 +3,7 @@ layout: post
 title: Sequence to Sequence Learning with Neural Networks
 subtitle: Title of paper - Sequence to Sequence Learning with Neural Networks
 category: NLP papers - Translation
-tags: [neural_network, translation]
+tags: [neural network, translation]
 permalink: /2019/08/27/Sequence_to_Sequence_Learning_with_Neural_Networks/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
