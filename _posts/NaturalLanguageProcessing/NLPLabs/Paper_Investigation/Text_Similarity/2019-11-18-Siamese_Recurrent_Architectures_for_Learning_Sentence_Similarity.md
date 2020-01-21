@@ -2,8 +2,8 @@
 layout: post
 title: Siamese Recurrent Architectures for Learning Sentence Similarity
 subtitle: Title of paper - Siamese Recurrent Architectures for Learning Sentence Similarity
-category: NLP papers - Text_similarity
-tags: [neural_network, setence_similarity]
+category: NLP papers - Text Similarity
+tags: [neural network, setence similarity]
 permalink: /2019/11/18/Siamese_Recurrent_Architectures_for_Learning_Sentence_Similarity/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
