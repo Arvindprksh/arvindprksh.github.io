@@ -3,7 +3,7 @@ layout: post
 title: Effective Approaches to Attention-based Neural Machine Translation
 subtitle: Title of paper - Effective Approaches to Attention-based Neural Machine Translation
 category: NLP papers - Translation
-tags: [neural_network, translation]
+tags: [neural network, translation]
 permalink: /2019/08/06/Effective_Approaches_To_Attention-based_Neural_Machine_Translation/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
