@@ -2,8 +2,8 @@
 layout: post
 title: How transferable are features in deep neural networks?
 subtitle: Title of paper - How transferable are features in deep neural networks?
-category: neural network papers - Properties
-tags: [neural_network, properties]
+category: NN papers - Analysis
+tags: [neural network, analysis]
 permalink: /2019/09/24/How_Transferable_are_Features_in_Deep_Neural_Networks/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
