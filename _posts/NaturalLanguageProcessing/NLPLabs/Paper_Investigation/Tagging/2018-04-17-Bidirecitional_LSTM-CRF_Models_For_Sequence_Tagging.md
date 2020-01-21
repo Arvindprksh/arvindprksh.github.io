@@ -3,7 +3,7 @@ layout: post
 title: Bidirectional LSTM-CRF Models for Seqeunce Tagging
 subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging
 category: NLP papers - Tagging
-tags: [nlp, word2vec, tagging]
+tags: [nlp, tagging]
 permalink: /2018/04/17/Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
