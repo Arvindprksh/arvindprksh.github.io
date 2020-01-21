@@ -2,8 +2,8 @@
 layout: post
 title: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank
 subtitle: Title of paper - Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank
-category: NLP papers - Text_classification
-tags: [neural_network, text_classification]
+category: NLP papers - Text Classification
+tags: [neural network, text classification]
 permalink: /2019/11/26/Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
