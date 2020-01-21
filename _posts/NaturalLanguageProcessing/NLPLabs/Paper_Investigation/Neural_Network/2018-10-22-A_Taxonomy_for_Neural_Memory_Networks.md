@@ -2,8 +2,8 @@
 layout: post
 title: A Taxonomy for Neural Memory Networks
 subtitle: Title of paper - A Taxonomy for Neural Memory Networks
-category: neural network papers
-tags: [neural_network, memory_network]
+category: papers - Survey
+tags: [neural network, memory network]
 permalink: /2018/10/22/A_Taxonomy_for_Neural_Memory_Networks/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
