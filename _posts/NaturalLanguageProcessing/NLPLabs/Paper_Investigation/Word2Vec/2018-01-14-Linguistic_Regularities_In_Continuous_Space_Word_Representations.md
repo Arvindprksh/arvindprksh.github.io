@@ -2,7 +2,7 @@
 layout: post
 title: Linguistic Regularities in Continuous Space Word Representations for Word2Vec investigation
 subtitle: Title of paper - Linguistic Regularities in Continuous Space Word Representations
-category: NLP papers - Word2vec
+category: NLP papers - Word Embedding
 tags: [nlp, word2vec, svm]
 permalink: /2018/01/14/Linguistic_Regularities_In_Continuous_Space_Word_Representations/
 bigimg: 
