@@ -2,7 +2,7 @@
 layout: post
 title: A Taxonomy for Neural Memory Networks
 subtitle: Title of paper - A Taxonomy for Neural Memory Networks
-category: papers - Survey
+category: NN papers - Survey
 tags: [neural network, memory network]
 permalink: /2018/10/22/A_Taxonomy_for_Neural_Memory_Networks/
 bigimg: 
