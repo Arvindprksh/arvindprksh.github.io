@@ -2,8 +2,8 @@
 layout: post
 title: An efficient framework for learning sentence representations
 subtitle: Title of paper - An efficient framework for learning sentence representations
-category: NLP papers - Sentence_Embedding
-tags: [neural_network, embedding]
+category: NLP papers - Sentence Embedding
+tags: [neural network, sentence embedding]
 permalink: /2019/12/19/An_efficient_framework_for_learning_sentence_representations/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
