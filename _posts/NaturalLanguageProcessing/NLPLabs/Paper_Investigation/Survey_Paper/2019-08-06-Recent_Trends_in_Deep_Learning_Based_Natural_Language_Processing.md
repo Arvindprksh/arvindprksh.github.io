@@ -3,7 +3,7 @@ layout: post
 title: Recent Trends in Deep Learning Based Natural Language Processing
 subtitle: Title of paper - Recent Trends in Deep Learning Based Natural Language Processing
 category: NLP papers - Survey
-tags: [neural network, review paper]
+tags: [neural network, nlp]
 permalink: /2019/08/06/Recent_Trends_in_Deep_Learning_Based_Natural_Language_Processing/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
