@@ -3,7 +3,7 @@ layout: post
 title: Neural Machine Translation By Jointly Learning to align and translate
 subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate
 category: NLP papers - Translation
-tags: [neural_network, translation]
+tags: [neural network, translation]
 permalink: /2019/01/01/Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
