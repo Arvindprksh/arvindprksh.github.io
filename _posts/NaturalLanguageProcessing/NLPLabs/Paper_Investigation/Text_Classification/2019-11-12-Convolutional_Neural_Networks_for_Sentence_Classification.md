@@ -2,8 +2,8 @@
 layout: post
 title: Convolutional Neural Networks for Sentence Classification
 subtitle: Title of paper - Convolutional Neural Networks for Sentence Classification
-category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+category: NLP papers - Transfer Learning
+tags: [neural network, text classification]
 permalink: /2019/11/12/Convolutional_Neural_Networks_for_Sentence_Classification/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
