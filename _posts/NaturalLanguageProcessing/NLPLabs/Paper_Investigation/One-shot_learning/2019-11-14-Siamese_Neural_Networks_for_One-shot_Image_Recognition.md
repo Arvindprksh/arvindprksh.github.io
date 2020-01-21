@@ -2,7 +2,7 @@
 layout: post
 title: Siamese Neural Networks for One-shot Image Recognition
 subtitle: Title of paper - Siamese Neural Networks for One-shot Image Recognition
-category: NLP papers - One(Few or zero)-shot learning
+category: papers - One(Few or zero)-shot learning
 tags: [neural network, image classification]
 permalink: /2019/11/14/Siamese_Neural_Networks_for_One-shot_Image_Recognition/
 css : /css/ForYouTubeByHyun.css
