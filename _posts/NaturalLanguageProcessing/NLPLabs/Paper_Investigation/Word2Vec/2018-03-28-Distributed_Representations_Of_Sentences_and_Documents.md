@@ -2,8 +2,8 @@
 layout: post
 title: Distributed Representations Of Sentences and Documents
 subtitle: Title of paper - Distributed Representations Of Sentences and Documents
-category: NLP papers - Doc2vec
-tags: [nlp, word2vec, word_embedding]
+category: NLP papers - Sentence Embedding
+tags: [nlp, sentence embedding]
 permalink: /2018/03/28/Distributed_Representations_Of_Sentences_and_Documents/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
