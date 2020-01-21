@@ -2,8 +2,8 @@
 layout: post
 title: Recurrent neural network based language model
 subtitle: Title of paper - Recurrent neural network based language model
-category: NLP papers - LM
-tags: [neural_network, language_model]
+category: NLP papers - Language model
+tags: [neural network, language model]
 permalink: /2018/12/06/Recurrent_Neural_Network_based_language_model/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
