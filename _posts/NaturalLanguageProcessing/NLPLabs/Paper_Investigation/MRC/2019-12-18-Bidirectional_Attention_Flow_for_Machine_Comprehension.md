@@ -2,8 +2,8 @@
 layout: post
 title: Bidirectional Attention Flow for Machine Comprehension
 subtitle: Title of paper - Bidirectional Attention Flow for Machine Comprehension
-category: NLP papers - Machine_Reading_Comprehension
-tags: [neural_network, machine_reading_comprehension]
+category: NLP papers - Machine Reading Comprehension
+tags: [neural network, machine reading comprehension]
 permalink: /2019/12/18/Bidirectional_Attention_Flow_for_Machine_Comprehension/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
