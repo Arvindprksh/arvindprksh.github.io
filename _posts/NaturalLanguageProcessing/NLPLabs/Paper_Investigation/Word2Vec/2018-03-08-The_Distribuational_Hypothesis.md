@@ -2,8 +2,8 @@
 layout: post
 title: The Distributional Hypothesis for Word2Vec investigation
 subtitle: Title of paper - The Distributional Hypothesis
-category: NLP papers - Word2vec
-tags: [nlp, word2vec, word_embedding]
+category: NLP papers - Word Embedding
+tags: [nlp, word embedding]
 permalink: /2018/03/08/The_Distribuational_Hypothesis/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
