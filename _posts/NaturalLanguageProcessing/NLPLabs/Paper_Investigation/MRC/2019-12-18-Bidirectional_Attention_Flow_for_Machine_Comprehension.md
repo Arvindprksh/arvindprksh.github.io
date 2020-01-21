@@ -29,8 +29,7 @@ And then they make query-aware representation of context words with the two atte
 
 The following is their multi-stage hierarchical model structure:
 
-![Seo et al. ICLR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2019-12-18-Bidirectional_Attention_Flow_for_Machine_Comprehension
-/BIDAF_1.PNG)
+![Seo et al. ICLR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2019-12-18-idirectional_Attention_Flow_for_Machine_Comprehension/BIDAF_1.PNG)
 
 For simple explanation of their model, 
 
