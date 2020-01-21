@@ -3,7 +3,7 @@ layout: post
 title: GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
 subtitle: Title of paper - GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
 category: NLP papers - NLG
-tags: [nlp, lstm, nlg]
+tags: [nlp, nlg]
 permalink: /2018/09/21/GhostWriter_Using_an_LSTM_for_Automatic_Rap_Lyric_Generation/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
