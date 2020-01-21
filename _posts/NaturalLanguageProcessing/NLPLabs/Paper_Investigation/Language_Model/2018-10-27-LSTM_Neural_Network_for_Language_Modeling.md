@@ -2,8 +2,8 @@
 layout: post
 title: LSTM Neural Network for Language Modeling
 subtitle: Title of paper - LSTM Neural Network for Language Modeling
-category: NLP papers - LM
-tags: [neural_network, language_model]
+category: NLP papers - Language model
+tags: [neural network, language model]
 permalink: /2018/10/27/LSTM_Neural_Network_for_Language_Modeling/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
