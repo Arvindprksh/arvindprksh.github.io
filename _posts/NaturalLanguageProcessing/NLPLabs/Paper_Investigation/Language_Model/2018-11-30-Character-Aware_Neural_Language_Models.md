@@ -2,7 +2,7 @@
 layout: post
 title: Character-Aware Neural Language Models
 subtitle: Title of paper - Character-Aware Neural Language Models
-category: NLP papers - Language model
+category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/11/30/Character-Aware_Neural_Language_Models/
 bigimg: 
