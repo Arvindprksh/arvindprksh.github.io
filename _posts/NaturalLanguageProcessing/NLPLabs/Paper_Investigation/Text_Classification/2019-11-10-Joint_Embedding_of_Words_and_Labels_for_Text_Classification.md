@@ -2,7 +2,7 @@
 layout: post
 title: Joint Embedding of Words and Labels for Text Classification
 subtitle: Title of paper - Joint Embedding of Words and Labels for Text Classification
-category: NLP papers - Text classification
+category: NLP papers - Text Classification
 tags: [neural network, text classification, label embedding]
 permalink: /2019/11/10/Joint_Embedding_of_Words_and_Labels_for_Text_Classification/
 css : /css/ForYouTubeByHyun.css
