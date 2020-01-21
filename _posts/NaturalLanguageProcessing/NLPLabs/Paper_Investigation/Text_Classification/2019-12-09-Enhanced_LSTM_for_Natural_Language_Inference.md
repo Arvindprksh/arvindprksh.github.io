@@ -2,8 +2,8 @@
 layout: post
 title: Enhanced LSTM for Natural Language Inference
 subtitle: Title of paper - Enhanced LSTM for Natural Language Inference
-category: NLP papers - Natural_Language_Inference
-tags: [neural_network, text_classification, NLI]
+category: NLP papers - Natural Language Inference
+tags: [neural network, text classification, NLI]
 permalink: /2019/12/09/Enhanced_LSTM_for_Natural_Language_Inference/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
