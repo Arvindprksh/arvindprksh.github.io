@@ -2,7 +2,7 @@
 layout: post
 title: Semi-supervised sequence tagging with bidirectional language models
 subtitle: Title of paper - Semi-supervised sequence tagging with bidirectional language models
-category: NLP papers - Transfer learning
+category: NLP papers - Transfer Learning
 tags: [neural network, contextual embedding]
 permalink: /2019/08/06/Semi-supervised_sequence_tagging_with_bidirectional_language_models/
 css : /css/ForYouTubeByHyun.css
