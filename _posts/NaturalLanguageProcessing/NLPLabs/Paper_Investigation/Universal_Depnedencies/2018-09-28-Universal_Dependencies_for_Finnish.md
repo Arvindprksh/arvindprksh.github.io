@@ -3,7 +3,7 @@ layout: post
 title: Universal Dependencies for Finnish
 subtitle: Title of paper - Universal Dependencies for Finnish
 category: NLP papers - Universal Dependency
-tags: [nlp, universal_dependencies]
+tags: [nlp, universal dependencies]
 permalink: /2018/09/28/Universal_Dependencies_for_Finnish/
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
