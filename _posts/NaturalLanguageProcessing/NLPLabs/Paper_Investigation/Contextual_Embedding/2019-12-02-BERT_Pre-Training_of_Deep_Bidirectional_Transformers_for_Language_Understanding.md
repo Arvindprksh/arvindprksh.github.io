@@ -3,7 +3,7 @@ layout: post
 title: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding
 subtitle: Title of paper - BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding
 category: NLP papers - Transfer learning
-tags: [neural_network, contextual_embedding]
+tags: [neural network, contextual embedding]
 permalink: /2019/12/02/BERT_Pre-Training_of_Deep_Bidirectional_Transformers_for_Language_Understanding/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
