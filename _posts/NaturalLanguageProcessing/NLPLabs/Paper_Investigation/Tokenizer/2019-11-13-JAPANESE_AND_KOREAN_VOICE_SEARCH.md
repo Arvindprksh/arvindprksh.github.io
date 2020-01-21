@@ -3,7 +3,7 @@ layout: post
 title: Japanese and Korean voice search
 subtitle: Title of paper - Japanese and Korean voice search
 category: NLP papers - Tokenizer
-tags: [rule_based, Tokenizer]
+tags: [language model, tokenizer]
 permalink: /2019/11/13/JAPANESE_AND_KOREAN_VOICE_SEARCH/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
