@@ -2,8 +2,8 @@
 layout: post
 title: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding.
 subtitle: Title of paper - GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding.
-category: NLP papers - Transfer_learning
-tags: [neural_network, text_classification]
+category: NLP papers - Transfer Learning
+tags: [neural network, text classification]
 permalink: /2019/12/03/GLUE_A_Multi-task_Benchmark_and_analysis_Platform_for_Natural_Language_Understanding/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
