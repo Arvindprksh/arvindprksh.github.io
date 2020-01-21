@@ -2,7 +2,7 @@
 layout: post
 title: Linguistic Knowledge and Transferability of Contextual Representations
 subtitle: Title of paper - Linguistic Knowledge and Transferability of Contextual Representations
-category: NLP papers - Contextual embedding
+category: NLP papers - Contextual Embedding
 tags: [neural network, contextual embedding]
 permalink: /2019/08/06/Universal_Language_Model_Fine_tuning_for_Text_Classification/
 css : /css/ForYouTubeByHyun.css
