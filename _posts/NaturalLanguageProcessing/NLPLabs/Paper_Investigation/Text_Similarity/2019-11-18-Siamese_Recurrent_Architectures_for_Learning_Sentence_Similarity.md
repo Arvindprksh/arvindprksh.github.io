@@ -32,6 +32,24 @@ In their paper, they use data augmentation for NLP(natural language processing) 
 
 synonym augmentation replace random words with one of their synonyms, for example, using Wordnet. 
 
+If you want to know the property of simamese network, refer to the lecture below:
+
+<div id="tutorial-section">
+
+  <div id="tutorial-title">Siamese network on face recognition</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#refrigerator">NLP labs Seminar</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="refrigerator" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6jfw8MuKwpI" frameborder="0" allowfullscreen></iframe>
+  </div>
+    </div>
+  </div>
+</div>
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 They present a siamese adaptation of the Long Short-Term Memory (LSTM) network for labeled data comprised of pairs of variable-length sequences. Their model is applied to assess semantic similarity between sentences, where we exceed state of the art, outperforming carefully handcrafted features and recently proposed neural network systems of greater complexity. For these applications, They provide wordembedding vectors supplemented with synonymic information to the LSTMs, which use a fixed size vector to encode the underlying meaning expressed in a sentence (irrespective of the particular wording/syntax). By restricting subsequent operations to rely on a simple Manhattan metric, we compel the sentence representations learned by our model to form a highly structured space whose geometry reflects complex semantic relationships.
 </div>
