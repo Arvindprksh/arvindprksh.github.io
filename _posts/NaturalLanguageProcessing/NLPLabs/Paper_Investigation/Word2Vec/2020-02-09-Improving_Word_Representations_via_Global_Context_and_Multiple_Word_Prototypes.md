@@ -46,7 +46,7 @@ They alos used **idf-weighting** as weighting functions for context vector.
 
 Finally, for multi-prototype approach, each occurence in the corpus is re-labeled to its associated cluster and is used to train the word representation for that cluster.
 
-The following is the architecture using **global context**.
+The following is the architecture figure using **global context** from [Improving Word Representations via Global Context and Multiple Word Prototypes. Huang et al. ACL 2012](https://www.aclweb.org/anthology/P12-1092/).
 
 ![Huang et al. ACL 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-02-09-Improving_Word_Representations_via_Global_Context_and_Multiple_Word_Prototypes/multi-prototypes.PNG)
 
