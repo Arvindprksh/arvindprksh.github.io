@@ -48,7 +48,7 @@ Finally, for multi-prototype approach, each occurence in the corpus is re-labele
 
 The following is the architecture using **global context**.
 
-![Huang et al. ACL 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-02-09-Improving Word Representations via Global Context and Multiple Word Prototypes)
+![Huang et al. ACL 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-02-09-Improving_Word_Representations_via_Global_Context_and_Multiple_Word_Prototypes/multi-prototypes.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Unsupervised word representations are very useful in NLP tasks both as inputs to learning algorithms and as extra word features in NLP systems. However, most of these models are built with only local context and one representation per word. This is problematic because words are often polysemous and global context can also provide useful information for learning word meanings. They present a new neural network architecture which 1) learns word embeddings that better capture the semantics of words by incorporating both local and global document context, and 2) accounts for homonymy and polysemy by learning multiple embeddings per word. They also introduce a new dataset with human judgments on pairs of words in sentential context.
