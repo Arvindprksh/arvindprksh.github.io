@@ -118,6 +118,40 @@ step by step about explanation of the command
 
 **%**: concats the current filename, passing it as a parameter to the python command
 
+## [How to set current line and column](https://coderwall.com/p/adbciq/highlight-line-and-column-in-vim)
+
+If you want to represent current line and columns in vim. 
+
+set confirguration below in vimrc file.
+
+> set cursorcolumns # highlight current line   
+> set cursorline # highlight current column
+
+If you give [cursorline and cursorcolumn an effect](https://stackoverflow.com/questions/8640276/how-do-i-change-my-vim-highlight-line-to-not-be-an-underline) like bold 
+
+type in the following option in vimrc file 
+
+> highlight-Cursorcolumn-cterm=bold   
+> highlight-Cursorline-cterm=bold
+
+## [How to set tab sign with '|'](https://stackoverflow.com/questions/41206522/how-can-i-display-tab-as-bars-in-vim)
+
+If you want to set tab setting consisting of two character **|** and a space. 
+
+> set list lcs=tab:\|\ #the last character is space!
+
+but if you want to change a sapce into another character. 
+
+set as follows
+
+> set list listchars=tab:\|\- 
+
+## [How to set white-space sign with another character](https://stackoverflow.com/questions/40498265/show-space-character-via-listchars-only-for-leading-spaces)
+
+If you want to see the white-space character, 
+
+> set list listchars=space:-
+
 # Reference
  
   - [Searching in Vim](http://vim.wikia.com/wiki/Searching)
@@ -125,4 +159,12 @@ step by step about explanation of the command
   - [copy and paste](http://vim.wikia.com/wiki/Copy,_cut_and_paste)
   
   - [how to execute code in vim windown](https://stackoverflow.com/questions/18948491/running-python-code-in-vim)
+  
+  - [How to set current line and column](https://vim.fandom.com/wiki/Highlight_current_line)
+  
+  - [How do I change my Vim highlight line to not be an underline on stackoverflow](https://stackoverflow.com/questions/8640276/how-do-i-change-my-vim-highlight-line-to-not-be-an-underline)
 
+  - [How to set tab sign with '|'](https://stackoverflow.com/questions/41206522/how-can-i-display-tab-as-bars-in-vim)
+  
+  - [How to set white-space sign with another character](https://stackoverflow.com/questions/40498265/show-space-character-via-listchars-only-for-leading-spaces)
+  
