@@ -240,3 +240,7 @@ i.e. do_somthing && do_something_else_that_depended_on_something
  - [Shuf command](https://shapeshed.com/unix-shuf/)
  - [stackchange of shuf command](https://unix.stackexchange.com/questions/110490/why-does-the-command-shuf-file-file-leave-an-empty-file-but-similar-commands)
  - [Stackoverflow about "&&" in linux command](https://stackoverflow.com/questions/4510640/what-is-the-purpose-of-in-a-shell-command)
+
+
+Korea ver. 
+  - [awk command](https://recipes4dev.tistory.com/171)
