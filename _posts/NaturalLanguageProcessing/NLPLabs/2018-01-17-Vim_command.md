@@ -152,6 +152,16 @@ If you want to see the white-space character,
 
 > set list listchars=space:-
 
+## [Undo and Redo in vim](https://vim.fandom.com/wiki/Undo_and_Redo)
+
+undo 
+
+> u
+
+Redo 
+> Ctrl + r
+
+
 # Reference
  
   - [Searching in Vim](http://vim.wikia.com/wiki/Searching)
@@ -167,4 +177,6 @@ If you want to see the white-space character,
   - [How to set tab sign with '|'](https://stackoverflow.com/questions/41206522/how-can-i-display-tab-as-bars-in-vim)
   
   - [How to set white-space sign with another character](https://stackoverflow.com/questions/40498265/show-space-character-via-listchars-only-for-leading-spaces)
+  
+  - [Undo and Redo in vim](https://vim.fandom.com/wiki/Undo_and_Redo)
   
