@@ -294,6 +294,27 @@ Uptime is Wed Jan 17 04:53:06 UTC 2018
  04:53:06 up 29 days, 23:12,  0 users,  load average: 74.24, 73.94, 73.71
 ```
 
+## [Shellscript for statement](https://linuxize.com/post/bash-for-loop/)
+
+```shell
+ARRAY=("1" "2" "3" "4" "5")       
+for i in ${ARRAY[@]}
+do        
+    echo $i
+                                                                                                                                                                  
+done      
+```
+
+Below is ouptut
+
+```shell
+1
+2
+3
+4
+5
+```
+
 # Reference 
 
  - [Tutorials point of shell programming](https://www.tutorialspoint.com/unix/unix-what-is-shell.htm)
@@ -301,3 +322,5 @@ Uptime is Wed Jan 17 04:53:06 UTC 2018
  - [How to use and, or operator](https://stackoverflow.com/questions/20449680/unix-boolean-operators-a-o)
  
  - [What is the difference between $variable and ${variable}](https://stackoverflow.com/questions/8254864/what-is-the-difference-between-variable-and-variable)
+ 
+ -  [Shellscript for statement](https://linuxize.com/post/bash-for-loop/)
