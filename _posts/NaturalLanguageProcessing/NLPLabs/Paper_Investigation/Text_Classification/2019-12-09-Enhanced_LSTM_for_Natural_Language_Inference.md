@@ -55,7 +55,7 @@ Reasoning and inference are central to human and artificial intelligence. Modeli
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Enhanced LSTM for Natural Language Inference  Chen et al. 2017 AC</a>
+  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Enhanced LSTM for Natural Language Inference  Chen et al. 2017 ACL</a>
 </div>
 
 # Reference 
