@@ -60,6 +60,7 @@ measures the dissimilarity between two text documents as the minimum amount of d
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
 - References
+  - [Word Embedding to Document distances at slideshare](https://www.slideshare.net/GaneshBorle/word-embedding-to-document-distances)
   - [From Word Embeddings To Document Distances pdf](https://stat.snu.ac.kr/idea/seminar/20180426/RNN_tex.pdf)
   - [Earth mover’s distance on towards data science](https://towardsdatascience.com/earth-movers-distance-68fff0363ef2)
   - [Paper: The Earth Mover's Distance as a Metric for Image Retrieval. Rubner et al. 2000 in International journal of computer vision](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
