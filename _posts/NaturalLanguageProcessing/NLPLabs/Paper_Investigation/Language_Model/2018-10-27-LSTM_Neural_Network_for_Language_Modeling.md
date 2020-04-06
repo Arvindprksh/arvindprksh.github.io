@@ -71,6 +71,8 @@ This paper said the result of using LSTM neural network on language model with c
 
 - [Quora of what is back off in NLP](https://www.quora.com/What-is-backoff-in-NLP)
 
+- [N-gram Language Models - Stanford University](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
+
 
 
 
