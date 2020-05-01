@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Modeling Rich Contexts for Sentiment Classification with LSTM, Huang et al., (2016)](https://arxiv.org/abs/1801.06146) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Modeling Rich Contexts for Sentiment Classification with LSTM, Huang et al., (2016)](https://arxiv.org/abs/1605.01478) I read and studied. 
 {% include MathJax.html %}
 
 They propose how to get representation with rich context in tweets which constitute a thread like conversation. 
