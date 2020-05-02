@@ -25,7 +25,7 @@ So This paper implemented LSTM network, BiLSTM network, LSTM-CRF Network, BiLSTM
 
 First, A LSTM network deals with information from left to right : 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/A_LSTM_Network.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/A_LSTM_Network.png)
 
 as you can already know and understand RNN structure, the utilize the infromation of previous information and current input. 
 
@@ -33,7 +33,7 @@ So LSTM utilize the past information at the time, But BiLSTM is different as fol
 
 Second, Bidirectional LSTM network is like this :
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM.png)
 
 BiLSTM have two type of LSTM, one is forward LSTM and the other is backward LSTM. 
 
@@ -46,13 +46,13 @@ there two ways to extract information. one is only final state, the other is seq
 
 firstly, use final state(output) that it summarize the infromation of forward and backward respectively :
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
 
 OR
 
 Seconde, methods to use contextual represetation of forward and backward respectively. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
 
 
 as you could know, for sequence labeling problem, we need to use contextual represenation. 
@@ -63,17 +63,17 @@ Conditional random field(CRF) is useful graphical model on probability.
 
 It consider sentence level tag sequence information. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
 
 Let's see the combination of LSTM and CRF 
 
 First, LSTM with a CRF layer 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/LSTM_CRF.JPG)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/LSTM_CRF.JPG)
 
 Second, Bi-direcational LSTM with A CRF Layer
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.JPG)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.JPG)
 
 As you can know, in this paper, LSTM is variant like Peephole LSTM. 
 
@@ -85,7 +85,7 @@ additionaly, they used BIO2 annotation standard for Chunking and NER tasks.
 
 also they use the connection trick of features like this: 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
 
 
 They estimated the robustness of models with respect to engineered features(spelling and context features).
