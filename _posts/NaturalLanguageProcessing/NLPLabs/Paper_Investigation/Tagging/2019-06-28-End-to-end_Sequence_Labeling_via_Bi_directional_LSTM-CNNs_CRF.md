@@ -22,11 +22,11 @@ Their models is end-to-end models relying on no task-specific resources, feature
 
 They use convolutiona neural network to extract morphogical information from characters of words and encode it inot neural representations as follows.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/CNN_with_char.JPG)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/CNN_with_char.JPG)
 
 The whole model architecture they argued is the following
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/BLSTM_CNN_CRF.JPG)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/BLSTM_CNN_CRF.JPG)
 
 As you can see their model above, they used character-level representation by concating word vector as input of Bidirectional LSTM.
 
