@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs. Chiu and Nichols. 2016 TACL](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols. 2016 TACL](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to NER tagging. 
@@ -42,7 +42,7 @@ based on their experiement, they said that the plain SGD is bettern than other o
 Named entity recognition is a challenging task that has traditionally required large amountsof knowledge in the form of feature engineering and lexicons to achieve high performance. In this paper, they present a novel neural network architecture that automatically detects word- and character-level features using a hybrid bidirectional LSTM and CNN architecture, eliminating the need for most feature engineering. They also propose a novel method of encoding partial lexicon matches in neural networks and compare it to existing approaches. Extensive evaluation shows that, given only tokenized text and publicly available word embeddings </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Enhanced LSTM for Natural Language Inference  Chen et al. 2017 ACL</a>
+  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols 2016 TACL</a>
 </div>
 
 # Reference 
