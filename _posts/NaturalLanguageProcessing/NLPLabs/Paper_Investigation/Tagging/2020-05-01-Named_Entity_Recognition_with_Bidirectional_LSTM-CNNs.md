@@ -28,11 +28,11 @@ Their model is as follows:
 
 The whole model is 
 
-![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/BLSTM_CNN.PNG)
+![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/BLSTM_CNN.PNG)
 
 To extract a feature vector from the per-character vector
 
-![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/Character_embedding_with_CNN.PNG)
+![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/Character_embedding_with_CNN.PNG)
 
 They used the BIOES annotation to label the word into the corresponding catergorical tag, methioning this scheme has reported to outperform others such as BIO([Ratino and Roth, 2009 CoNLL](https://www.aclweb.org/anthology/W09-1119/))
 
