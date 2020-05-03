@@ -17,41 +17,40 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC](https://www.aclweb.org/anthology/L16-1138/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Joint learning of character and word embeddings. Chen et al. 2015 IJCAI](https://www.ijcai.org/Proceedings/15/Papers/178.pdf) I read and studied. 
 {% include MathJax.html %}
 
-This paper is a research ralted to character embedding 
+This paper is a research ralted to word embedding to handle internal information with character.
 
-They designed the model to train character vector based on skip-gram model with word as input. there are a reason for their to suggest multi-prototype character embedidng. 
+The existing model for word embedding considers the external context of words without internal information of a word. 
 
-The reason is that Characters are highly polysemous in forming words.
+So they propose joint learning of character and word embeddigs as follows:
 
-They make three significant changes to [MSSG](https://www.aclweb.org/anthology/D14-1113/) for the character embedding task.
+![Chen et al. 2015 IJCAI](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-03-Joint_Learning of_Character_and_Word_Embeddings/CWE1.PNG)
 
-First, they predict the sense of the current character given the context directly by using a neural model, rather than by finding the cluster center which is closed to average context vector. 
+They propose various variants of joint learning of character word embeddings named as character-enhanced word embedding model (CWE)
 
-Second, characters are highly order-sensitive in forming words, they add position into the context by combining a character with its position, so each character in each position (relative to the current character position) has a embedding.
+- Position-based character embeddigs for CWE
 
-This results in a position-sensitive variation of the Skipgram model.
+![Chen et al. 2015 IJCAI](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-03-Joint_Learning of_Character_and_Word_Embeddings/CWE2.PNG)
 
-In addition, the number of senses per character is induced from a lexicon rather than automatically.
+- cluster-based character embedding for CWE 
 
-Their model is as follows:
-
-![Lu, Zhang, and Ji. 2016 LREC](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-02-Multi-prototype_Chinese_Character_Embedding/Multi-prototype_embedding.PNG)
-
+![Chen et al. 2015 IJCAI](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-03-Joint_Learning of_Character_and_Word_Embeddings/CWE3.PNG)
+Most word embedding methods take a word as a basic unit and learn embeddings according to words’external contexts, ignoring the internal structures of words. However, in some languages such as Chinese, a word is usually composed of several characters and contains rich internal information. The semantic meaning of a word is also related to the meanings of its composing characters. Hence, they take Chinese for example, and present a characterenhanced word embedding model (CWE). In order to address the issues of character ambiguity and non-compositional words, they propose multiple prototype character embeddings and an effective word selection method. they evaluate the effectiveness of CWE on word relatedness computation and analogical reasoning. The results show that CWE outperforms other baseline methods which ignore internal character information.
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-Chinese sentences are written as sequences of characters, which are elementary units of syntax and semantics. Characters are highly polysemous in forming words. They present a position-sensitive skip-gram model to learn multi-prototype Chinese character embeddings, and explore the usefulness of such character embeddings to Chinese NLP tasks. Evaluation on character similarity shows that multi-prototype embeddings are significantly better than a single-prototype baseline.
+
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/L16-1138/">The paper:  Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC</a>
+  <a href="https://www.ijcai.org/Proceedings/15/Papers/178.pdf">The paper:  Joint learning of character and word embeddings. Chen et al. 2015 IJCAI</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [LREC 2016 version: Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC](https://www.aclweb.org/anthology/L16-1138/)
+  - [ACM publisher: Joint learning of character and word embeddings. Chen et al. 2015 IJCAI](https://dl.acm.org/doi/10.5555/2832415.2832421)
+  - [IJCAI 2015 version: Joint learning of character and word embeddings. Chen et al. 2015 IJCAI](https://www.ijcai.org/Proceedings/15/Papers/178.pdf)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
