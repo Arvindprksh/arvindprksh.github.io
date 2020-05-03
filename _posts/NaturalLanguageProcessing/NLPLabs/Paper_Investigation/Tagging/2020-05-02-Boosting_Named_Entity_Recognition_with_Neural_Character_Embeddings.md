@@ -32,6 +32,14 @@ So they joinlty concatenate word and character embedding corresponding to each w
 
 ![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/CharWNN.PNG)
 
+They use a tag style called IOB2.
+
+The following is an example they show in their paper:
+
+![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/IOB2.PNG)
+
+
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Most state-of-the-art named entity recognition (NER) systems rely on handcrafted features and on the output of other NLP tasks such as part-of-speech (POS) tagging and text chunking. In this work they propose a language-independent NER system that uses automatically learned features only. Their approach is based on the CharWNN deep neural network, which uses word-level and character-level representations (embeddings) to perform sequential classification. 
 </div>
