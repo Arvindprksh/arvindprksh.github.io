@@ -36,7 +36,7 @@ To extract a feature vector from the per-character vector
 
 They used the BIOES annotation to label the word into the corresponding catergorical tag, methioning this scheme has reported to outperform others such as BIO([Ratino and Roth, 2009 CoNLL](https://www.aclweb.org/anthology/W09-1119/))
 
-BIOES annotation (Begin, Inside, Outside, End, Single), indicating the position of the token in the matched entry. In other words, B will not appear in a suffix-only partial match, and E will not appear in a prefix-only partial match.
+>> BIOES annotation (Begin, Inside, Outside, End, Single), indicating the position of the token in the matched entry. In other words, B will not appear in a suffix-only partial match, and E will not appear in a prefix-only partial match.
 
 based on their experiement, they said that the plain SGD is bettern than other optimization algorithms.
 
