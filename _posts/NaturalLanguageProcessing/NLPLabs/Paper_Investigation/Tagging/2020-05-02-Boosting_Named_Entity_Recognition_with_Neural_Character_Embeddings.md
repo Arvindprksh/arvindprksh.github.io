@@ -32,9 +32,7 @@ So they joinlty concatenate word and character embedding corresponding to each w
 
 ![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/CharWNN.PNG)
 
-They use a tag style called IOB2.
-
-The following is an example they show in their paper:
+They use a tag style called IOB2 where: O, means that the word is not a NE; B-X is used for the leftmost word of a NE type X; and I-X means that the word is inside of a NE type X. The IOB2 tagging style is illustrated in the following example.
 
 ![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/IOB2.PNG)
 
