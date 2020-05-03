@@ -45,7 +45,6 @@ their dataset preprocessing:
 - All digit sequences are replaced by a single “0”.
 - Before training, we group sentences by word length into mini-batches and shuffle them.
 
-In addition, for the OntoNotes dataset, in order to handle the Date, Time, Money, Percent, Quantity, Ordinal, and Cardinal named entity tags, we split tokens before and after every digit.
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Named entity recognition is a challenging task that has traditionally required large amountsof knowledge in the form of feature engineering and lexicons to achieve high performance. In this paper, they present a novel neural network architecture that automatically detects word- and character-level features using a hybrid bidirectional LSTM and CNN architecture, eliminating the need for most feature engineering. They also propose a novel method of encoding partial lexicon matches in neural networks and compare it to existing approaches. Extensive evaluation shows that, given only tokenized text and publicly available word embeddings 
