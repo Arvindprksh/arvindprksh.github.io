@@ -24,7 +24,7 @@ This paper is a research ralted to chinese word segmentation task.
 
 They adjust the dimenstion of a vector making with context character vectors in window size of 5. 
 
-For example, we have a sequence of characters in window size of 5 like \\(w_1\\) =  \\([x_{i-2}, x_{i-1}, x_{i}, x_{i+1}, x_{i+2}]\\) which is concatenation of 5 character embedding around 
+For example, we have a sequence of characters in window size of 5 like $w_1$ =  \\([x_{i-2}, x_{i-1}, x_{i}, x_{i+1}, x_{i+2}]\\) which is concatenation of 5 character embedding around 
 \\(x_i\\)
 
 The semantic mask is generated as :
