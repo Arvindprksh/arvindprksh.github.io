@@ -32,6 +32,7 @@ The following figure is their architectur of Xception:
 
 ![Francois Cholletl. CVPR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/CNN/2020-05-11-Xception_Deep_Learning_with_Depthwise_Separable_Convolutions/Xception.PNG)
 
+As you can see image above,  they decoupled mapping of cross-channel correlation and spatial correlation.
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 They present an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution). In this light, a depthwise separable convolution can be understood as an Inception module with a maximally large number of towers. This observation leads them to propose a novel deep convolutional neural network architecture inspired by Inception, where Inception modules have been replaced with depthwise separable convolutions. They show that this architecture, dubbed Xception. Since the Xception architecture has the same number of parameters as Inception V3, the performance gains are not due to increased capacity but rather to a more efficient use of model parameters.
