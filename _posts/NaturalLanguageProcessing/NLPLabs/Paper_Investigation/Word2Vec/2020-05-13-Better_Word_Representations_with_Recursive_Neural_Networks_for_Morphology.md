@@ -40,7 +40,7 @@ The context-sensitive morphological RNN below separates morphemes(stem + affix) 
 
 They train the models above with ranking-type cost function to minimize in defining their objective funtion as below:
 
-$$J(\theta) = \sum_{i=1}^N max{0, 1 - s(n_i) + s(\bar n_i)}$$
+$$J(\theta) = \sum_{i=1}^N max\{0, 1 - s(n_i) + s(\bar n_i)\}$$
 
 Here, N is the number of all avaliable ngrams in the training corpus, whereas \\(\bar n_i\\) is a **corrected** ngram created from $n_i$ by replacing its last word with a random word. 
 
