@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/) I read and studied. 
 {% include MathJax.html %}
 
 They said that The existing methods treat each full-form word as indentity entity adn fail to capture the explicit relationship among morphologidcal variants of a word.
@@ -50,13 +50,13 @@ Vector-space word representations have been very successful in recent years at i
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W13-3512/">The paper: 2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology. Luong et al. CoNLL 2013</a>
+  <a href="https://www.aclweb.org/anthology/W13-3512/">The paper: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [CoNLL  2013 Ver: 2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/)
+  - [CoNLL  2013 Ver: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
