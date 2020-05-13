@@ -44,7 +44,7 @@ The ability to accurately represent sentences is central to language understandi
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P14-1062/">The paper: A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. ACL 20146</a>
+  <a href="https://www.aclweb.org/anthology/P14-1062/">The paper: A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. ACL 2014</a>
 </div>
 
 # Reference 
