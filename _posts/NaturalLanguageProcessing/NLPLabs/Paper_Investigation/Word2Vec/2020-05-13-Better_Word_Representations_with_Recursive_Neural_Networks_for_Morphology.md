@@ -56,7 +56,7 @@ Vector-space word representations have been very successful in recent years at i
 # Reference 
 
 - Paper 
-  - [CoNLL  2013 Ver: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/)
+  - [CoNLL 2013 Ver: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
