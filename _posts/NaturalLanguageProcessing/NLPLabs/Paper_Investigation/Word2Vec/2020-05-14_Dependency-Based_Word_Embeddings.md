@@ -40,7 +40,7 @@ The result shwo up on Table 1 figure below.
 
 ![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-14_Dependency-Based_Word_Embeddings/Dependency_base_embedding_result.PNG)
 
-The neural word-embeddings are considered opaque, in the sense that it is hard to assign meanings to the dimensions of the induced representation. They show that the SKIPGRAM model does allow for some introspection by querying it for contexts that are “activated by” a target word. This allows us to peek into the learned representation and explore the contexts that are found by the learning process to be most discriminative of particular words (or groups of words)
+The neural word-embeddings are considered opaque, in the sense that it is hard to assign meanings to the dimensions of the induced representation. They show that the SKIPGRAM model does allow for some introspection by querying it for contexts that are “activated by” a target word. This allows us to peek into the learned representation and explore the contexts that are found by the learning process to be most discriminative of particular words (or groups of words).
 
 Neural word embeddings are often considered opaque and uninterpretable, unlike sparse vector space representations in which each dimension corresponds to a particular known context, or LDA models where dimensions correspond to latent topics. While this is true to a large extent, they observe that SKIPGRAM does allow a non-trivial amount of introspection. Although they cannot assign a meaning to any particular dimension, they can indeed get a glimpse at the kind of information being captured by the model, by examining which contexts are “activated” by a target word.
 
