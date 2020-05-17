@@ -3,7 +3,7 @@ layout: post
 title: Dependency-Based Word Embeddings
 subtitle: Title of paper - Dependency-Based Word Embeddings
 category: NLP papers - Word Embedding
-tags: [neural network, word embedding, morpheme embedding]
+tags: [neural network, word embedding]
 permalink: /2020/05/14/Dependency-Based_Word_Embeddings/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
