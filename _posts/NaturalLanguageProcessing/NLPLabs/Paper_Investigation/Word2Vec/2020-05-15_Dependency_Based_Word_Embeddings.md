@@ -32,13 +32,13 @@ They thus expect the syntactic contexts to yield more focused embeddings, captur
 
 The following is an example of dependency-base context extraction.
 
-![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-14_Dependency-Based_Word_Embeddings/Dependency_base_embedding.PNG)
+![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding.PNG)
 
 They found out that BOW find words that associate with w, while DEPS find words that behave like w and then observe that while both BOW5 and BOW2 yield topical similarities, the larger window size result in more topicality, as expected
 
 The result shwo up on Table 1 figure below. 
 
-![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-14_Dependency-Based_Word_Embeddings/Dependency_base_embedding_result.PNG)
+![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding_result.PNG)
 
 The neural word-embeddings are considered opaque, in the sense that it is hard to assign meanings to the dimensions of the induced representation. They show that the SKIPGRAM model does allow for some introspection by querying it for contexts that are “activated by” a target word. This allows us to peek into the learned representation and explore the contexts that are found by the learning process to be most discriminative of particular words (or groups of words).
 
