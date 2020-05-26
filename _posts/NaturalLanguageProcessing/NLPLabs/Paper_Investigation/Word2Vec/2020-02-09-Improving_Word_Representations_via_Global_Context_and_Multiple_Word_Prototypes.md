@@ -4,7 +4,7 @@ title: Improving Word Representations via Global Context and Multiple Word Proto
 subtitle: Title of paper - Improving Word Representations via Global Context and Multiple Word Prototypes
 category: NLP papers - Word Embedding
 tags: [neural network, word embedding]
-permalink: /2019/08/06/Universal_Language_Model_Fine_tuning_for_Text_Classification/
+permalink: /2020/02/09/Improving_Word_Representations_via_Global_Context_and_Multiple_Word_Prototypes/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
