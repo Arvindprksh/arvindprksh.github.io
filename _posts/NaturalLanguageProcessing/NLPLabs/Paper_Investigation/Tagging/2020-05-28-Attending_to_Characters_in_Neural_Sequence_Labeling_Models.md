@@ -65,6 +65,14 @@ are used for training, and Section 20 as the test data.
 
 >> GENIA-POS: The GENIA corpus is one of the most widely used resources for biomedical NLP and has a rich set of annotations including parts of speech, phrase structure syntax, entity mentions, and events. Here, they make use of the GENIA POS annotations, which cover 2,000 PubMed abstracts (approx. 20,000 sentences). They use the same 210-document test set, and additionally split off a sample of 210 from the remaining documents as a development set.
 
+They preprocess text like this :
+
+>> All digits were replaced with the character ’0’. Any words that occurred only once in the training data were replaced by the generic OOV token for word embeddings, but were still used in the character-level components.
+
+
+The conclusion is :
+
+>>Developments in neural network research allow for model architectures that work well on a wide range of sequence labeling datasets without requiring hand-crafted data. While word-level representation learning is a powerful tool for automatically discovering useful features, these models still come with certain weaknesses – rare words have low-quality representations, previously unseen words cannot be modeled at all, and morpheme-level information is not shared with the whole vocabulary. So they used character embedding with attention mechanism to overcome those problems.
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Sequence labeling architectures use word embeddings for capturing similarity, but suffer when handling previously unseen or rare words. They investigate character-level extensions to such models and propose a novel architecture for combining alternative word representations. By using an attention mechanism, the model is able to dynamically decide how much information to use from a word- or character-level component. They evaluated different architectures on a range of sequence labeling datasets, and character-level extensions were found to improve performance on every benchmark. In addition, the proposed attention-based architecture delivered the best results even with a smaller number of trainable parameters.
