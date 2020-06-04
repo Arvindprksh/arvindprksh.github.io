@@ -33,7 +33,7 @@ They implemented three scenarios which are authentic data only, syntenthic data 
 
 When they evalute the performance, they used a number of common evaluation metrics – BLEU, TER, METEOR, and CHRF– to give a more comprehensive estimation of the comparative translation quality.
 
-With the exception of TER, the higher the score, the better the translation is estimated to be; for TER, being an error metric, the lower the score, the better the quality.
+With the exception of TER, the higher the score, the better the performance; for TER which is an error metric, the lower the score, the better the quality.
 
 They showed that hybrid model is better than model with authentic data only, and then the quality of hybrid starts degrading as the synthetic data overpowers the authentic.
 
