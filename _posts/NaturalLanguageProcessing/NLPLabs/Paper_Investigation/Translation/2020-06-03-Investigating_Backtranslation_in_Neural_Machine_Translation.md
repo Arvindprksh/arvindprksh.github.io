@@ -31,7 +31,11 @@ But They hypothesize that NMT with 'imperfect' data will - at some point - undo 
 
 They implemented three scenarios which are authentic data only, syntenthic data only, and hybrid data.
 
-They showed that hybrid model is better than model with authentic data only, and then the quality of hybrid starts degrading as the synthetic data overpowers the authentic. 
+When they evalute the performance, they used a number of common evaluation metrics – BLEU, TER, METEOR, and CHRF– to give a more comprehensive estimation of the comparative translation quality.
+
+With the exception of TER, the higher the score, the better the translation is estimated to be; for TER, being an error metric, the lower the score, the better the quality.
+
+They showed that hybrid model is better than model with authentic data only, and then the quality of hybrid starts degrading as the synthetic data overpowers the authentic.
 
 In their experimental set-up and data, they reached that point at a synthetic-to-authentic ratio of 2:1. 
 
