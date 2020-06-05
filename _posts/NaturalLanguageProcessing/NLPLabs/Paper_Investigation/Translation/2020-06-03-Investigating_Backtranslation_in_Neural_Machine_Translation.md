@@ -21,7 +21,7 @@ This is a brief summary of paper for me to note it, [Investigating Backtranslati
 
 {% include MathJax.html %}
 
-This paper exploer empirically how effective the back-traslationt technique is in NMT system. 
+This paper explore empirically how effective the back-traslationt technique is in NMT system. 
 
 As in their saying, There is a scenario where there are not enough authentic data (human-translated parallel data) available to obtain high-quality results. 
 
