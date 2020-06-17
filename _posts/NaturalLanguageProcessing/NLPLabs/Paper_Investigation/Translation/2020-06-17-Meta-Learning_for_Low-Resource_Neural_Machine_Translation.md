@@ -21,8 +21,15 @@ This is a brief summary of paper for me to note it, [Meta-Learning for Low-Resou
 
 {% include MathJax.html %}
 
+They suggest application from model-agnostic meta-learning to neuarl machine tralsation.
 
-They suggest application from model-agnostic meta-learning to neuarl machine tralsation as follows:
+There are two categories of meta-learning:
+
+1. learning a meta-policy for updating model parameters
+
+2. learning a good parameter initialization for fast adaptation 
+
+They implement translation task adapting second one of two categories below to neural machine translation. 
 
 ![Gu et al. EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-17-Meta-Learning_for_Low-Resource_Neural_Machine_Translation/Meta-Learning1.PNG)
 
