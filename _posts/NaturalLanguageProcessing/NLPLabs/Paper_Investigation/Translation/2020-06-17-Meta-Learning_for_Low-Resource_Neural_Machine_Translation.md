@@ -72,7 +72,7 @@ In this paper, they propose to extend the recently introduced model-agnostic met
 # Reference 
 
 - Paper 
-  - [ArXiv version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://arxiv.org/abs/1808.08437)
+  - [ArXiv version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. ArXiv 2018](https://arxiv.org/abs/1808.08437)
   - [EMNLP version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1398/)
   
  
