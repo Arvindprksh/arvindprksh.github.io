@@ -44,9 +44,3 @@ The encoder-decoder framework for neural machine translation (NMT) has been show
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
-
-- For your information
-  - [Meta-Learning: Learning to Learn Fast on Lil'Log](https://lilianweng.github.io/lil-log/2018/11/30/meta-learning.html)
-  - [Learning to learn on BAIR](https://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
-  - [How to use Latex with latex4technics.com](https://www.latex4technics.com/?note=gw021j)
-  - [MathJax on Stackexchange](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
