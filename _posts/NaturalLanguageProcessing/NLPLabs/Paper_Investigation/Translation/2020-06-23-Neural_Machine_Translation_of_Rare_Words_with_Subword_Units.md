@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P17-1194/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1162/) I read and studied. 
 {% include MathJax.html %}
 
 This paper introduce the subword unit into Neural Machine translation task to well handle rare or unseen words. 
@@ -29,14 +29,14 @@ Neural machine translation (NMT) models typically operate with a fixed vocabular
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1194/">The paper: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/P16-1162/">The paper: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016</a>
 </div>
 
 # Reference 
 
 - Paper 
   - [Arxiv version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1508.07909)
-  - [ACL 2016 version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P17-1194/)
+  - [ACL 2016 version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1162/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
