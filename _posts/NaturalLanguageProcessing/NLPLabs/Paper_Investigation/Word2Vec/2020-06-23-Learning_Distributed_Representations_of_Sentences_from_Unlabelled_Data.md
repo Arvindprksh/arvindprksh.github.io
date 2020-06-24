@@ -45,7 +45,7 @@ Unsupervised methods for learning distributed representations of words are ubiqu
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D16-1157/">The paper- CHARAGRAM: Embedding Words and Sentences via Character n-grams. Wieting et al. EMNLP 2016</a>
+  <a href="https://www.aclweb.org/anthology/N16-1162/">The paper: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. NAACL 2016</a>
 </div>
 
 # Reference 
