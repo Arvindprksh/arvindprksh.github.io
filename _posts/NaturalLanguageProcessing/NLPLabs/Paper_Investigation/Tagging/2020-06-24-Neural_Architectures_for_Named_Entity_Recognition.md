@@ -34,9 +34,7 @@ In their methods, they used character embeddding to use e orthographic or morpho
 
 ![Lample et al. NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/character_embedding.PNG)
 
->>They found that the Stack-LSTM model is more dependent on character-based representations to achieve competitive performance.  
->>they hypothesize that the LSTM-CRF model requires less orthographic information since it gets more contextual information out of the bidirectional LSTMs.  
->>however, the Stack-LSTM model consumes the words one by one and it just relies on the word representations when it chunks words.  
+>>They found that the Stack-LSTM model is more dependent on character-based representations to achieve competitive performance. they hypothesize that the LSTM-CRF model requires less orthographic information since it gets more contextual information out of the bidirectional LSTMs. However, the Stack-LSTM model consumes the words one by one and it just relies on the word representations when it chunks words.  
 
 
 
