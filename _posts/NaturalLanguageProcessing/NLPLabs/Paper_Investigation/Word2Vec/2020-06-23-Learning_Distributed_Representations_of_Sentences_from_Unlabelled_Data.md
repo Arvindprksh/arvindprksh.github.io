@@ -51,7 +51,7 @@ Unsupervised methods for learning distributed representations of words are ubiqu
 # Reference 
 
 - Paper 
-  - [arXiv version: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al.](https://arxiv.org/abs/1602.03483)
+  - [arXiv version: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. 2016](https://arxiv.org/abs/1602.03483)
   - [NAACL 2016 version: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1162/)
   
 - How to use html for alert
