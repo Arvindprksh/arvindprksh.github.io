@@ -24,6 +24,8 @@ This paper popose a method to detect error in learner writing by tackling it as 
 
 Empirically, they experimented the method with compoistion architectures which are convolution neural network, recurrent netword, and Long-short term memory as follows:
 
+In paritcular, for LSTM, they used peephole LSTM.
+
 ![Rei and Yannakoudakis. ACL 2016](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-07-01-Compositional_Sequence_Labeling_Models_for_Error_Detection_in_Learner_Writing/error_dectection.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
