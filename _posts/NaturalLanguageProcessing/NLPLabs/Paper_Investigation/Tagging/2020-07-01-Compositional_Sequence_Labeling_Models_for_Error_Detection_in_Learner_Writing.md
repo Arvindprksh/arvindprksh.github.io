@@ -26,7 +26,7 @@ Empirically, they experimented the method with compoistion architectures which a
 
 In paritcular, for LSTM, they used peephole LSTM.
 
-![Rei and Yannakoudakis. ACL 2016](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-07-01-Compositional_Sequence_Labeling_Models_for_Error_Detection_in_Learner_Writing/error_dectection.PNG)
+![Rei and Yannakoudakis. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-07-01-Compositional_Sequence_Labeling_Models_for_Error_Detection_in_Learner_Writing/error_dectection.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 In this paper, they present the first experiments using neural network models for the task of error detection in learner writing. We perform a systematic comparison of alternative compositional architectures and propose a framework for error detection based on bidirectional LSTMs. Experiments on the CoNLL-14 shared task dataset show the model is able to outperform other participants on detecting errors in learner writing. Finally, the model is integrated with a publicly deployed self-assessment system, leading to performance comparable to human annotators.
