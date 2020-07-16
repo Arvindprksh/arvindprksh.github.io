@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dependency-Based Word Embeddings
-subtitle: Title of paper - Dependency-Based Word Embeddings
+title: Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures
+subtitle: Title of paper - Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures
 category: NLP papers - Word Embedding
 tags: [neural network, word embedding, dependency embedding]
 permalink: /2020/06/12/Jointly_Learning_Word_Representations_and_Composition_Functions_Using_Predicate-Argument_Structures/
