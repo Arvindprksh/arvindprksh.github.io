@@ -4,7 +4,7 @@ title: Dependency-Based Word Embeddings
 subtitle: Title of paper - Dependency-Based Word Embeddings
 category: NLP papers - Word Embedding
 tags: [neural network, word embedding, dependency embedding]
-permalink: /2020/05/15/Dependency_Based_Word_Embeddings/
+permalink: /2020/06/12/Jointly_Learning_Word_Representations_and_Composition_Functions_Using_Predicate-Argument_Structures/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
