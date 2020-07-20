@@ -22,13 +22,13 @@ This is a brief summary of paper for me to study and arrange it, [Bag-of-Embeddi
 
 They thought One useful feature beyond bag-of-words as bag-of-ngrams.
 
-In particular they said bigrams offer a certain degree of compositionality while being relatively less sparse compared with larger n-gram features with text below: 
+In particular, they said bigrams offer a certain degree of compositionality while being relatively less sparse compared with larger n-gram features in their paper with text below: 
 
-'''
-For example, the bigram “abnormal return” strongly indicates finance, although both “abnormal” and “return” can be common across difference classes. Similar examples include “world cup” and “large bank”, where bi-grams indicate text classes, but the words do not.  
 
-One intuitive reason behind the strength of bigrams is that they resolve the ambiguity of polysemous words. In the above examples the words ”return”, ”cup”, and ”bank” have different meanings under different document classes, and the correct identification of their word sense under a ngram context is useful for identifying the document class. For example, when the word ”bank” exists under a context with words such as ”card” and ”busy”, it strongly indicates the ”finance” sense. This fact suggests a simple extension to bag-of-word features by incorporating context and word sense information. We propose a natural extension to the skip-gram word embedding model
-'''
+>> For example, the bigram “abnormal return” strongly indicates finance, although both “abnormal” and “return” can be common across difference classes. Similar examples include “world cup” and “large bank”, where bi-grams indicate text classes, but the words do not.    
+
+>> One intuitive reason behind the strength of bigrams is that they resolve the ambiguity of polysemous words. In the above examples the words ”return”, ”cup”, and ”bank” have different meanings under different document classes, and the correct identification of their word sense under a ngram context is useful for identifying the document class. For example, when the word ”bank” exists under a context with words such as ”card” and ”busy”, it strongly indicates the ”finance” sense. This fact suggests a simple extension to bag-of-word features by incorporating context and word sense information. We propose a natural extension to the skip-gram word embedding model.  
+
 
 With article above, They proposed bag-of-embedding by exploiting using multi-prototype word embedding as follows:
 
