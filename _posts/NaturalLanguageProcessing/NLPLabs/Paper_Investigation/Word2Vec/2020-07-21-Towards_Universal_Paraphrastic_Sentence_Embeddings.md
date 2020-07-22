@@ -53,7 +53,7 @@ $$h_i = f(W_xW_w^{x_t} + W_hh_{t-1}+b)$$
 
 $$g_{RNN}(x) = h_{-1}$$
 
-where \\(f\\) is the activation function (either tanh or rectified linear unit: the choice is tuned), \\(W_x\\) and \\(W+h\\) are parameter matrices \\(b\\) is a bias vector, and \\(h_{-1}\\) refers to the hidden vector of the last token.
+where \\(f\\) is the activation function (either tanh or rectified linear unit: the choice is tuned), \\(W_x\\) and \\(W_h\\) are parameter matrices \\(b\\) is a bias vector, and \\(h_{-1}\\) refers to the hidden vector of the last token.
 
 - The fifth model is a special RNN which we call an **identity-RNN**. In the **identity-RNN**, the weight matrices are initialized to identity, the bias is initialized to zero, and the activation is the identity function. They divide the final output vector of the **identity-RNN** by the number of tokens in the sequence.
 
