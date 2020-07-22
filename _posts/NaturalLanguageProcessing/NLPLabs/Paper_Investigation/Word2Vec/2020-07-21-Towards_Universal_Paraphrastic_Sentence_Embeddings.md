@@ -32,16 +32,16 @@ From now on, I will explain the six compoistion models which they used.
 
 Their purpose is to represent sequences into a low-dimenstional space and they experimented with six models of increasing complexity. 
 
-- The simplest model embeds a word sequence $x = <x_1, x_2, ..., x_n>$ by averaging the vectors of its tokens. The only parameters learned by this model are the word embedding matrix $W_w$
+- The simplest model embeds a word sequence \(x = <x_1, x_2, ..., x_n>\) by averaging the vectors of its tokens. The only parameters learned by this model are the word embedding matrix $W_w$
 :  
 
-$$g_{paragram-phrase}(x) = \frac{1}{n} \sum_{i=1}^{n}=W_{w}^{x_i}$$  
+$$g_{paragram-phrase}(x) = \frac{1}{n} \sum_{i=1}^{n}W_{w}^{x_i}$$  
 
 Where $W_{w}^{x_i}$ is the word embedding for word $x_i$. They call the learned embeddins PARAGRAM-PHARASE embeddings.
 
 - The second model is to projection the simplest model as follows:
 
-$$g_{proj}(x) = W_p (\frac{1}{n}\sum_{i=1}{n} W_{w}^{x_i}) + b$$
+$$g_{proj}(x) = W_p (\frac{1}{n}\sum_{i=1}^{n} W_{w}^{x_i}) + b$$
 
 Where $W_p$ is the projections matrix and b is a bias vector.
 
@@ -49,7 +49,8 @@ Where $W_p$ is the projections matrix and b is a bias vector.
 
 - The fourth model is a standard recurrent network(RNN) with randomly initialized weight matrices and nonlinea activations:
 
-$$h_i = f(W_xW_w^{x_t} + W_hh_{t-1}+b$$
+$$h_i = f(W_xW_w^{x_t} + W_hh_{t-1}+b)$$
+
 $$g_{RNN}(x) = h_{-1}$$
 
 where $f$ is the activation function (either tanh or rectified linear unit: the choice is tuned), $W_x$ and $W+h$ are parameter matrices $b$ is a bias vector, and $h_{-1}$ refers to the hidden vector of the last token.
