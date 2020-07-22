@@ -71,7 +71,7 @@ $$c_t = f_tc_{t-1} + i_ttanh(W_{xc}W_w^{x_t} + + W_{hc}h_{t-1} + b_c)$$
 
 $$o_t = \sigma(W_{xo}W_w^{x_t} + W_{ho}h_{t-1} + W_{co}c_{t} + b_o)$$
 
-$$h_t = o_tanh(c_t)$$
+$$h_t = o_ttanh(c_t)$$
 
 $$g_{LSTM}(x) = h_{-1}$$
 
