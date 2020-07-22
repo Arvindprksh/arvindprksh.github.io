@@ -32,7 +32,7 @@ From now on, I will explain the six compoistion models which they used.
 
 Their purpose is to represent sequences into a low-dimenstional space and they experimented with six models of increasing complexity. 
 
-- The simplest model embeds a word sequence \\(x = <x_1, x_2, ..., x_n>\\) by averaging the vectors of its tokens. The only parameters learned by this model are the word embedding matrix $W_w$
+- The simplest model embeds a word sequence \\(x = <x_1, x_2, ..., x_n>\\) by averaging the vectors of its tokens. The only parameters learned by this model are the word embedding matrix \\(W_w\\).
 :  
 
 $$g_{paragram-phrase}(x) = \frac{1}{n} \sum_{i=1}^{n}W_{w}^{x_i}$$  
