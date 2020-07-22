@@ -37,13 +37,13 @@ Their purpose is to represent sequences into a low-dimenstional space and they e
 
 $$g_{paragram-phrase}(x) = \frac{1}{n} \sum_{i=1}^{n}W_{w}^{x_i}$$  
 
-Where $W_{w}^{x_i}$ is the word embedding for word $x_i$. They call the learned embeddins PARAGRAM-PHARASE embeddings.
+Where \(W_{w}^{x_i}\) is the word embedding for word \(x_i\). They call the learned embeddins PARAGRAM-PHARASE embeddings.
 
 - The second model is to projection the simplest model as follows:
 
 $$g_{proj}(x) = W_p (\frac{1}{n}\sum_{i=1}^{n} W_{w}^{x_i}) + b$$
 
-Where $W_p$ is the projections matrix and b is a bias vector.
+Where $\(W_p\) is the projections matrix and b is a bias vector.
 
 - The third model is the deep averaging network which is generalization of the above models that uses mulitple layers as well as nonlinear activation functions.
 
@@ -53,7 +53,7 @@ $$h_i = f(W_xW_w^{x_t} + W_hh_{t-1}+b)$$
 
 $$g_{RNN}(x) = h_{-1}$$
 
-where $f$ is the activation function (either tanh or rectified linear unit: the choice is tuned), $W_x$ and $W+h$ are parameter matrices $b$ is a bias vector, and $h_{-1}$ refers to the hidden vector of the last token.
+where \(f\) is the activation function (either tanh or rectified linear unit: the choice is tuned), \(W_x\) and \(W+h\) are parameter matrices \(b\) is a bias vector, and \(h_{-1}\) refers to the hidden vector of the last token.
 
 - The fifth model is a special RNN which we call an **identity-RNN**. In the **identity-RNN**, the weight matrices are initialized to identity, the bias is initialized to zero, and the activation is the identity function. They divide the final output vector of the **identity-RNN** by the number of tokens in the sequence.
 
@@ -63,21 +63,21 @@ However it is a richer architecture and can take into account word order and hop
 
 - The sixth model is long short-term memory(LSTM) which is the mose complex in their compositionality function for sentence embedding. The LSTM is peephole version.
 
-$$i_t = \sigmoid(W_{xi}W_w^{x_t} + W_{hi}h_{t-1} + W_{ci}c_{t-1} + b_i)$$
+$$i_t = \sigma(W_{xi}W_w^{x_t} + W_{hi}h_{t-1} + W_{ci}c_{t-1} + b_i)$$
 
-$$f_t = \sigmoid(W_{xf}W_w^{x_t} + W_{hf}h_{t-1} + W_{cf}c_{t-1} + b_f)$$
+$$f_t = \sigma(W_{xf}W_w^{x_t} + W_{hf}h_{t-1} + W_{cf}c_{t-1} + b_f)$$
 
 $$c_t = f_tc_{t-1} + i_ttanh(W_{xc}W_w^{x_t} + + W_{hc}h_{t-1} + b_c)$$
 
-$$o_t = \sigmoid(W_{xo}W_w^{x_t} + W_{ho}h_{t-1} + W_{co}c_{t} + b_o)$$
+$$o_t = \sigma(W_{xo}W_w^{x_t} + W_{ho}h_{t-1} + W_{co}c_{t} + b_o)$$
 
 $$h_t = o_tanh(c_t)$$
 
 $$g_{LSTM}(x) = h_{-1}$$
 
-where $\sigmoid$ is the logistic sigmoid funciton. They found that the choice of whether or not ot include the output gate had a significant impact on performance, so they used two versions of the LSTM model, one with the output gate and one without. 
+where \(\sigma\) is the logistic sigmoid funciton. They found that the choice of whether or not ot include the output gate had a significant impact on performance, so they used two versions of the LSTM model, one with the output gate and one without. 
 
-In their experiment, for all models above, they learn the word embeddings themselves, denoting the trainable word ebmedding parameters by $W_w$. They denote all other trainable parameters by $W_c$ ("compositional parameters"), though the PARAGRAM_PHRASE model has no compositional paramters. They initialized $W_w$ using some embeddings pretrained from large corpora.
+In their experiment, for all models above, they learn the word embeddings themselves, denoting the trainable word ebmedding parameters by \(W_w\). They denote all other trainable parameters by \(W_c\) ("compositional parameters"), though the PARAGRAM_PHRASE model has no compositional paramters. They initialized \(W_w\) using some embeddings pretrained from large corpora.
 
 In their result, they empirically demonstrated the averaging model is better in in-domain data but LSTM in out-domain data.
 
