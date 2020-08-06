@@ -20,7 +20,9 @@ bigimg:
 This is a brief summary of paper for me to study and simply arrange it, [From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. 2017 ACL](https://www.aclweb.org/anthology/P17-1184/) I read and studied. 
 {% include MathJax.html %}
 
-They investigated the composotion function on word using character, morphem, and word with language model task. 
+They investigated the composotion function on word using character, morphem, and word with language model task as follows:
+
+![Vania and Lopez. 2017 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2020-08-05-From_Characters_to_Words_to_in_Between_Do_We_Capture_Morphology/LSTM_LM.PNG)
 
 They found out the Bi-LSTM compostion function is usually better than CNN and add in different languages. 
 
