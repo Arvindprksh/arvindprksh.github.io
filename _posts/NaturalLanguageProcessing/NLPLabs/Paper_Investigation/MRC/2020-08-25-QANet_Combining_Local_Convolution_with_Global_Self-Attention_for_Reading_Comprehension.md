@@ -29,7 +29,7 @@ output a span S = {\\(c_i, c_{i+1}, ..., c_{i+j})\\} from the original paragraph
 
 The resulting representation from their model is encoded again with our recurrency-free encoder before finally decoding to the probability of each position being the start or end of the answer span as following:
 
-![Yu et al. ICLR 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-08-25-QANet_Combining_Local_Convolution_with_Global_Self-Attention_for_Reading_Comprehension/)
+![Yu et al. ICLR 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-08-25-QANet_Combining_Local_Convolution_with_Global_Self-Attention_for_Reading_Comprehension/QAnet.PNG)
 
 They argued that the recurrency-free model make  their model faster than The RNN counterparts.
 
