@@ -30,15 +30,15 @@ Normally, research of it was consider sequence labeling task to choose sentences
 
 Let's see an example data 
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/example_data.PNG)
+![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/example_data.PNG)
 
 First of all, sentence extractor is as following:
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Sentence_extractor.PNG)
+![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Sentence_extractor.PNG)
 
 Finally, Word extractor,which is the extracted unit change from sentence to word , is as following:
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Word_extractor.PNG)
+![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Word_extractor.PNG)
 
 They argued that the recurrency-free model make  their model faster than The RNN counterparts.
 
