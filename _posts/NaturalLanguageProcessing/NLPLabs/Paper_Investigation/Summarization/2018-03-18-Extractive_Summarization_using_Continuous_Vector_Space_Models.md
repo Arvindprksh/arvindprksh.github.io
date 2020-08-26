@@ -26,24 +26,24 @@ The architectur above is as follows:
 The basic and famous way : skip gram - target word(central of context) is used as input to predict words of window size surrounding it. 
 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Skip_gram.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Skip_gram.png)
 
 Feed-forward neural network : the direction of dataflow is one way forwards.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/FFNN.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/FFNN.png)
 
 
 Auto-encoder : based on central of Coding Later, input and output is symmetrically the same. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Auto_Encoder.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Auto_Encoder.png)
 
 Recursive Neural Network : after parsing a sentence to binary search tree, this is evaluated on Neural Network.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/RecursiveNN.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/RecursiveNN.png)
 
 Recursive Auto Encoder : combination of Auto-encoder and Recursive Neural Network
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-09-Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Unfolding_Recursive_Auto_encoder.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2018-03-18-Extractive_Summarization_using_Continuous_Vector_Space_Models/Unfolding_Recursive_Auto_encoder.png)
 
 Also, this paper explain how to make sentence vector or phrase vector. 
 
