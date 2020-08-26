@@ -40,13 +40,8 @@ Finally, Word extractor,which is the extracted unit change from sentence to word
 
 ![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Word_extractor.PNG)
 
-They argued that the recurrency-free model make  their model faster than The RNN counterparts.
+on evaluation, they used ROUGE-1,2 as means of assessing informativeness and the longest common subsequences(ROUGE-L) as a means of assessing fluency.
 
-For the detailed model components, refer to [the paper, QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW/)
-
-For data augmentation, they used back-translation techique for machine reading comprehension task that they are interested in. 
-
-![Yu et al. ICLR 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-08-25-QANet_Combining_Local_Convolution_with_Global_Self-Attention_for_Reading_Comprehension/Data_augmentation.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Traditional approaches to extractive summarization rely heavily on humanengineered features. In this work they propose a data-driven approach based on neural networks and continuous sentence features. They develop a general framework for single-document summarization composed of a hierarchical document encoder and an attention-based extractor. This architecture allows them to develop different classes of summarization models which can extract sentences or words. 
