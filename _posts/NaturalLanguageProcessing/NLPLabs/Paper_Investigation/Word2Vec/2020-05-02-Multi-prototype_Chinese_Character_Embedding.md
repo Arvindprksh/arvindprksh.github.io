@@ -53,6 +53,11 @@ Chinese sentences are written as sequences of characters, which are elementary u
 - Paper 
   - [LREC 2016 version: Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC](https://www.aclweb.org/anthology/L16-1138/)
   
+  
+- For Information 
+  - [COLING 2014 version: A Probabilistic Model for Learning Multi-Prototype Word Embeddings. Tian et al. 2014 COLING](https://www.aclweb.org/anthology/C14-1016/)
+  
+  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
     
