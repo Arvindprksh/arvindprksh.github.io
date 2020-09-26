@@ -40,7 +40,7 @@ Almost all current dependency parsers classify based on millions of sparse indic
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P16-1009/">The paper: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/D14-1082/">The paper: A Fast and Accurate Dependency Parser using Neural Networks. Chen and Manning. EMNLP 2014</a>
 </div>
 
 # Reference 
