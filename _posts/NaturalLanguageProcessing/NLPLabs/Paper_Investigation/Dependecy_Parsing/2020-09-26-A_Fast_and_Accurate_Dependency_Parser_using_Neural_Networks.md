@@ -34,6 +34,7 @@ They propose the denpendecy parsing system with transition-based arc-standard, b
 
 ![Chen and Manning. EMNLP 2014](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Dependecy_Parsing/2020-09-26-A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks/transition_based_dependency_parsing.PNG)
 
+**Also they showed a variety of model analysis: Pos tag and arc label embedding can capture semantic information very well in Section 4.4 expecting the possiblity to use it in other NLP task.**
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Almost all current dependency parsers classify based on millions of sparse indicator features. Not only do these features generalize poorly, but the cost of feature computation restricts parsing speed significantly. In this work, they propose a novel way of learning a neural network classifier for use in a greedy, transition-based dependency parser. Because this classifier learns and uses just a small number of dense features, it can work very fast, while achieving an about 2% improvement in unlabeled and labeled attachment scores on both English and Chinese datasets. Concretely, our parser is able to parse more than 1000 sentences per second at 92.2% unlabeled attachment score on the English Penn Treebank.
