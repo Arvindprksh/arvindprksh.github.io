@@ -27,12 +27,12 @@ They address the problem that feature is sparsness and depends on expertise for 
 Especially back then using property that low-dimensional, dense word embedding can effectively alleviate sparsity by sharing statistical strength between similar wors, and can provide them a good starting poit to construct features of words and their interactions.
 
 
-![Chen and Manning. EMNLP 2014](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Dependecy_Parsing/2020-09-26-A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks/transition_based_dependency_parsing_architecture.PNG)
+![Chen and Manning. EMNLP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Dependecy_Parsing/2020-09-26-A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks//transition_based_dependency_parsing_architecture.PNG)
 
 
 They propose the denpendecy parsing system with transition-based arc-standard, briefly saying how for the arc-standard-based transition-based dependency parsing to work.
 
-![Chen and Manning. EMNLP 2014](img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Dependecy_Parsing/2020-09-26-A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks/transition_based_dependency_parsing.PNG)
+![Chen and Manning. EMNLP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Dependecy_Parsing/2020-09-26-A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks/transition_based_dependency_parsing.PNG)
 
 **Also they showed a variety of model analysis: Pos tag and arc label embedding can capture semantic information very well in Section 4.4 expecting the possiblity to use it in other NLP task.**
 
