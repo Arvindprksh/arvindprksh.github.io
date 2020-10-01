@@ -2,8 +2,8 @@
 layout: post
 title: The Curious Case of Neural Text Degeneration
 subtitle: Title of paper - The Curious Case of Neural Text Degeneration
-category: NLP papers - Translation
-tags: [neural network, translation]
+category: NLP papers - NLG
+tags: [neural network, generataion]
 permalink: /2020/06/04/The_Curious_Case_of_Neural_Text_Degeneration/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
