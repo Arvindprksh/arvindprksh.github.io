@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it,   - [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/) I read and studied. 
 {% include MathJax.html %}
 
 They used character embedding not pretrained other than word embedding pretrained. 
