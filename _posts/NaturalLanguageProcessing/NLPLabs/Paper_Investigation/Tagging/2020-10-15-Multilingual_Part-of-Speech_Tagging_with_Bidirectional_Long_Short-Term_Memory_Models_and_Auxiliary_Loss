@@ -1,0 +1,42 @@
+---
+layout: post
+title: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss
+subtitle: Title of paper - Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss
+category: NLP papers - POS Tagging
+tags: [pos tagging]
+permalink: /2020/10/15/Multilingual_Part-of-Speech_Tagging_with_Bidirectional_Long_Short-Term_Memory_Models_and_Auxiliary_Loss/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/) I read and studied. 
+{% include MathJax.html %}
+
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/P16-2067/">The paper: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016</a>
+</div>
+
+# Reference 
+
+- Paper 
+   - [Arxiv 2016 version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. arXiv 2016](https://arxiv.org/abs/1604.05529)
+   - [ACL 2016 version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+    
+
+
