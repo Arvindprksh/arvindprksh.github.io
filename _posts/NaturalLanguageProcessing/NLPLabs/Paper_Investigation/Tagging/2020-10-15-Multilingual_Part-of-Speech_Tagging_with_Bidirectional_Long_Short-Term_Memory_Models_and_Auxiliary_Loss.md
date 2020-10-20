@@ -2,8 +2,8 @@
 layout: post
 title: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss
 subtitle: Title of paper - Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss
-category: NLP papers - POS Tagging
-tags: [pos tagging]
+category: NLP papers - Tagging
+tags: [tagging]
 permalink: /2020/10/15/Multilingual_Part-of-Speech_Tagging_with_Bidirectional_Long_Short-Term_Memory_Models_and_Auxiliary_Loss/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
