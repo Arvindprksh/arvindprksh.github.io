@@ -2,8 +2,8 @@
 layout: post
 title: Learning Character-level Representations for Part-of-Speech Tagging
 subtitle: Title of paper - Learning Character-level Representations for Part-of-Speech Tagging
-category: NLP papers - POS Tagging
-tags: [pos tagging]
+category: NLP papers - Tagging
+tags: [tagging]
 permalink: /2020/07/07/Learning_Character-level_Representations_for_Part-of-Speech_Tagging/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
