@@ -29,7 +29,7 @@ They used character embedding and byte embedding to handle rare words as follows
 
 on their model, they train the bi-LSTM tagger to predict both the tags of the sequence, as well as a label that represents the log frequency of the next token as estimated from the training data
 
-- log frequency label : \((int(log(fre_{train}(w))\))
+- log frequency label : \\(int(log(fre_{train}(w)))\\
 
 They measured the performance with respect to label noise, data size, and rare word. 
 
