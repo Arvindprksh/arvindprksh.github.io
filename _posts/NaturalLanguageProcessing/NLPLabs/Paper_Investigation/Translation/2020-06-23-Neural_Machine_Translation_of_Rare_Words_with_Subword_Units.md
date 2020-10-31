@@ -51,8 +51,24 @@ The encoder is a bidirectional neural network with gated recurrent units ([Cho e
 The decoder is a reccurent neural network that predicts a target sequence y = (\\( y_1, ..., y_n \\)). Each \\( y_i \\)  is predicted based on a recurrent hidden state \\( s_i \\), the previously predicted word \\( y_{i-1} \\), and a context vector \\( c_i \\). \\( c_i \\) is computed as a weighted sum of the annotation of \\( h_j \\). The weight of each annotation \\( h_j \\) is computed throught an alignment model \\( a_{ij} \\), which models the probablity that \\( y_i \\) is anligned to \\( x_j \\). The alignment model is a single-layer feedforward neuarl network that is learned joinlty with the rest of the network through backpropagation. 
 
 
+The Byte pair Encoding(BPE) is refered to in their paper as follow:
 
+>> a simpoe data comporession techinique that iteratively replaces the most frequent pair of bytes in a sequence with a sinlge, unused byte. They adapt this alogrithm for word segmentation. Instead of merging frequent pairs of bytes, they merge characters or shcaracter sequences.   
 
+>> Firstly, they initialize the symbol vocabulary with the character vocabulary, and represent each word as a sequence of characters, plus a special end-of-word symble which allows us to restore the original tokenization after translation. They iteratively count all symbol pairs and replace each occurence of the most frequent pair ('A', 'B') with a new symbol ('AB'). Each merge operation produces a new symbol which represents a character n-gram. Frequent character n-grams (or whole words) are eventually merged into a single symbol, thus BPE requires no shortlist. The final symbol vocabulary is equal to the size of the initial vocabulary, plus the number of merge operations - the latter is the only hyperparameter of the algorithm.
+
+>> The algorith m can be run on the dictionary extracted from a text, with each word being weighted by its frequency. 
+
+They didn't consider pairs cross the boudary of word for the efficience.
+
+In their evaluation, they used as baseline a simple segmentation of words into character n-grams, i.e. bi-gram.
+
+They evaluate two methods of applying BPE:
+
+ - learning two independent encodings, one for the source vocabulary and one for the target vocabulary.
+ - learning the encoding on the union of the two vocabulariese they called **joint BPE**.
+
+The detalied result can be found in [Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1162/)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Neural machine translation (NMT) models typically operate with a fixed vocabulary, but translation is an open-vocabulary problem. Previous work addresses the translation of out-of-vocabulary words by backing off to a dictionary. In this paper, they introduce a simpler and more effective approach, making the NMT model capable of open-vocabulary translation by encoding rare and unknown words as sequences of subword units. This is based on the intuition that various word classes are translatable via smaller units than words, for instance names (via character copying or transliteration), compounds (via compositional translation), and cognates and loanwords (via phonological and morphological transformations). They discuss the suitability of different word segmentation techniques, including simple character ngram models and a segmentation based on the byte pair encoding compression algorithm, and empirically show that subword models improve over a back-off dictionary baseline for the WMT 15 translation tasks English→German and English→Russian by up to 1.1 and 1.3 BLEU, respectively.
