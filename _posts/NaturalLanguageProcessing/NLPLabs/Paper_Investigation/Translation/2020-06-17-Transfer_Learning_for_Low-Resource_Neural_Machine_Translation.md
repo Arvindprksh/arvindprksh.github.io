@@ -27,6 +27,9 @@ They trained the sequence-to-sequence model for high-resource langauge pair as p
 
 Next, transfer some of the learned parameters to the low-resource lanauge pair as child model to initialize and constrain training. 
 
+In other words, **their key idea is to first train a high-resource language pair (the parent model), then transfer some of the
+learned parameters to the low-resource pair (the child model) to initialize and constrain training**.
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 The encoder-decoder framework for neural machine translation (NMT) has been shown effective in large data scenarios, but is much less effective for low-resource languages. They present a transfer learning method that significantly improves BLEU scores across a range of low-resource languages. They key idea is to first train a high-resource language pair (the parent model), then transfer some of the learned parameters to the low-resource pair (the child model) to initialize and constrain training. 
 </div>
