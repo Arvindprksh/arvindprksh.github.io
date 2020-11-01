@@ -32,6 +32,7 @@ These three hidden states are then passed to a linear layer on which a softmax i
 
 The output of this layer is then used to produce a weighted sum of the hidden states. Finally, a simple layer compoute an embedding from this sum.
 
+If you want to know the result of their experiment, refer to [Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5439/)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 They propose a novel way to handle out of vocabulary (OOV) words in downstream natural language processing (NLP) tasks. They implement a network that predicts useful embeddings for OOV words based on their morphology and on the context in which they appear. Their model also incorporates an attention mechanism indicating the focus allocated to the left context words, the right context words or the word’s characters, hence making the prediction more interpretable. The model is a “drop-in” module that is jointly trained with the downstream task’s neural network, thus producing embeddings specialized for the task at hand. When the task is mostly syntactical, they observe that our model aims most of its attention on surface form characters. On the other hand, for tasks more semantical, the network allocates more attention to the surrounding words. In all their tests, the module helps the network to achieve better performances in comparison to the use of simple random embeddings.
