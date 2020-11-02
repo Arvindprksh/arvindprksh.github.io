@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IOn Using Very Large Target Vocabulary for Neural Machine Translation
+title: On Using Very Large Target Vocabulary for Neural Machine Translation
 subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
