@@ -48,6 +48,8 @@ The accumulated vocabulary will be used for this partition of the corpus during 
 
 They repeat this until the end of the training set is reached. 
 
+They also used the most likely target words as shortlist to deconding and call it a candidate list.
+
 If you want to know the result of their experiment, I refer you to [On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
