@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/) that I read and studied. 
 {% include MathJax.html %}
 
 Despite its recent success to neural machine translation, the neural machine translation has its limitation in handling a larger vocabulary.
