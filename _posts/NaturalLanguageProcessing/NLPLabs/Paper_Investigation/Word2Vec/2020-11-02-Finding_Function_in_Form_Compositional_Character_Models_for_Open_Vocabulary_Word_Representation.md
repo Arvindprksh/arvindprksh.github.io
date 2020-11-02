@@ -40,7 +40,7 @@ The input word \\(w\\)is decomposed into a sequence of characters \\(c_1, ..., c
 
 Each \\(c_i\\) is defined as a one hot vector \\(1_{c_i}\\), with one on the index of \\(c_i\\) in vocabulary \\(M\\). 
 
-They defined the projection layer \\(P_C \in \mathbb R^{d_c \times |C|}\\), where \\(d_C\\) is the number of parameters for each character in the character set \\(C\\).
+They defined the projection layer \\(P_C \in \mathbb R^{d_c \times \|C\|}\\), where \\(d_C\\) is the number of parameters for each character in the character set \\(C\\).
 
 That is, this is just character look up table. 
 
