@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/) that I read and studied. 
 {% include MathJax.html %}
 
 This paper propose new data augmentation they call back-tranlsation. 
