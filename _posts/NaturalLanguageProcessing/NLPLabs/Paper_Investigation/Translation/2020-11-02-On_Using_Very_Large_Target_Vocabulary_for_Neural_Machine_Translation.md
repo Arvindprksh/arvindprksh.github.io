@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Improving Neural Machine Translation Models with Monolingual Data
-subtitle: Title of paper - Improving Neural Machine Translation Models with Monolingual Data
+title: IOn Using Very Large Target Vocabulary for Neural Machine Translation
+subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
-permalink: /2020/09/14/Improving_Neural_Machine_Translation_Models_with_Monolingual_Data/
+permalink: /2020/11/02/On_Using_Very_Large_Target_Vocabulary_for_Neural_Machine_Translation/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
