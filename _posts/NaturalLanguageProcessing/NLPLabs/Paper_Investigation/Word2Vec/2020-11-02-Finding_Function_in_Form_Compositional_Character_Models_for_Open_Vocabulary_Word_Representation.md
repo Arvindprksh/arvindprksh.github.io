@@ -2,8 +2,8 @@
 layout: post
 title: Finding Function in Form- Compositional Character Models for Open Vocabulary Word Representation
 subtitle: Title of paper - Finding Function in Form- Compositional Character Models for Open Vocabulary Word Representation
-category: NLP papers - Tagging
-tags: [Tagging]
+category: NLP papers - OOV Embedding
+tags: [OOV Embedding]
 permalink: /2020/11/02/Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
