@@ -90,7 +90,7 @@ Aligned words that are too far apart are condiered unaligned, and unaligned word
 
 their annotation is illustrated in Figure 3 below.
 
-![Luong et al. ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation_2.PNG)
+![Luong et al. ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation2.PNG)
 
 3. Positional Unknown Model (PosUnk)
 
