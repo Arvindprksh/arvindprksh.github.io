@@ -70,7 +70,7 @@ They annotate the OOV words in the source sentence with \\(UNK_1, UNK_2, UNK_3\\
 
 The annotation of the unknown words in the target language is slightly more elaborate: (a) each unknown target word that is aligned to an unknown source word is assigned the same unknown token. It is why they call their model copy model.
 
-and (b) an unknow target word that has no alignment or that aligned with a known word uses the speical null token \\(UNK_{\O}\\).
+and (b) an unknow target word that has no alignment or that aligned with a known word uses the speical null token \\(UNK_{\emptyset}\\).
 
 See the Figure 2 below for an example. This annotation enables us to translate every non-null unknown token.
 
@@ -86,7 +86,7 @@ Specifically, they return to using only a single universl **UNK** token. But, on
 
 where \\(d\\) indicates a relative position (\((d = -7, ..., -1, 0, 1, ..., +7 \\)) to denote that a trage words at position \\(j\\) is aligned to a soruce word as position \\(i = j - d\\). 
 
-Aligned words that are too far apart are condiered unaligned, and unaligned words reannotated with a null token \\(p_{\0}\\)
+Aligned words that are too far apart are condiered unaligned, and unaligned words reannotated with a null token \\(p_{\emptyset}\\)
 
 their annotation is illustrated in Figure 3 below.
 
@@ -102,7 +102,7 @@ Their post-processing step is concerned only with the alignment of the unkwnown 
 
 Based on it, they create the poistional Unknown model (PosUnk) which uses \\(unkpos_d\\)) tokens (for \\(d\\) in -7, ..., 7 or \\(\0\\)) to simultaneously denote (a) the fact that a word is unknown and (b) its relative position \\(d\\) with respect to its aligned source word.
 
-They also use the symbol \\(unkpos_{\0}\\) for unknown target words that do not have an alignment.
+They also use the symbol \\(unkpos_{\emptyset}\\) for unknown target words that do not have an alignment.
 
 They use the universal **UNK** for all unknown tokens in the source language.
 
