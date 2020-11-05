@@ -1,10 +1,10 @@
 ---
 layout: post
-title: On Using Very Large Target Vocabulary for Neural Machine Translation
-subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation
+title: Addressing the Rare Word Problem in Neural Machine Translation
+subtitle: Title of paper - Addressing the Rare Word Problem in Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
-permalink: /2020/11/02/On_Using_Very_Large_Target_Vocabulary_for_Neural_Machine_Translation/
+permalink: /2020/11/05/Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
