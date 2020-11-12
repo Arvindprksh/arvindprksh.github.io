@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sequence to Sequence Learning with Neural Networks. Sutskever et al. NIPS. 2014.
-subtitle: Title of paper - Sequence to Sequence Learning with Neural Networks. Sutskever et al. NIPS. 2014.
+title: Sequence to Sequence Learning with Neural Networks
+subtitle: Title of paper - Sequence to Sequence Learning with Neural Networks
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/08/27/Sequence_to_Sequence_Learning_with_Neural_Networks/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Sequence to Sequence Learning with Neural Networks, Sutskever et al. (2014)](https://arxiv.org/abs/1409.3215) 
+This is a brief summary of paper for me to note it, [Sequence to Sequence Learning with Neural Networks, Sutskever et al. NIPS 2014](https://arxiv.org/abs/1409.3215) 
 
 {% include MathJax.html %}
 
@@ -58,8 +58,8 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 # Reference 
 
 - Paper 
-  - [ArXiv version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. ArXiv 2014](https://arxiv.org/abs/1409.3215)
-  - [NIPS version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. NIPS 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
+  - [arXiv Version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. arXiv 2014](https://arxiv.org/abs/1409.3215)
+  - [NIPS Version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. NIPS 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
   
  
 - How to use html for alert
