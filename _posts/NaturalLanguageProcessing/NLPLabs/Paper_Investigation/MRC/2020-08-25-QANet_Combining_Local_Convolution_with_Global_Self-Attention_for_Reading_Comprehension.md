@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed data augmentation technique and model, which execulsively used convolution and self-attention, for question answering task. 
@@ -44,14 +44,14 @@ Current end-to-end machine reading and question answering (Q&A) models are prima
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=B14TlG-RW/">The paper: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018</a>
+  <a href="https://openreview.net/forum?id=B14TlG-RW">The paper: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018</a>
 </div>
 
 # Reference 
 
 - Paper 
   - [arXiv Version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. arXiv 2018](https://arxiv.org/abs/1804.09541)
-  - [ICLR Version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW/)
+  - [ICLR Version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
