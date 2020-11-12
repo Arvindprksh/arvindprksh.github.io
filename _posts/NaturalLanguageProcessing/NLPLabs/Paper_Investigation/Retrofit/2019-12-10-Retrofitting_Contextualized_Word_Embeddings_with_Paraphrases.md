@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Retrofitting Contextualized Word Embeddings with Paraphrases
-subtitle: Title of paper - Retrofitting Contextualized Word Embeddings with Paraphrases
+title: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP. 2019.
+subtitle: Title of paper - Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP. 2019.
 category: NLP papers - Retrofitting
 tags: [neural network, text classification]
 permalink: /2019/12/10/Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Contextualized Word Embeddings with Paraphrases. Shi et al. 2019 EMNLP](https://www.aclweb.org/anthology/D19-1113/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP 2019](https://www.aclweb.org/anthology/D19-1113/) I read and studied. 
 {% include MathJax.html %}
 
 Retrofitting means semantic speicalization of distrobutional word vector. i.e. already trained vector can be retrofitted with external knowledges like lexicon-semantic knowledge, as known as semantic specialization. 
@@ -67,8 +67,8 @@ Contextualized word embedding models, such as ELMo, generate meaningful represen
 # Reference 
 
 - Paper 
-  - [Arxiv version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. 2019 EMNLP](https://arxiv.org/abs/1909.09700)
-  - [EMNLP 2019 version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. 2019 EMNLP](https://www.aclweb.org/anthology/D19-1113/)
+  - [arXiv Version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. arXiv 2019](https://arxiv.org/abs/1909.09700)
+  - [EMNLP Version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP 2019](https://www.aclweb.org/anthology/D19-1113/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
