@@ -47,7 +47,7 @@ Recently, neural models have shown superior performance over conventional models
 # Reference 
 
 - Paper 
-  - [SCLeM 2017 version: Character-based Bidirectional LSTM-CRF with words and characters for Japanese Named Entity Recognition. Misawa et al. SCLeM 2017](https://www.aclweb.org/anthology/W17-4114/)
+  - [SCLeM Version: Character-based Bidirectional LSTM-CRF with words and characters for Japanese Named Entity Recognition. Misawa et al. SCLeM 2017](https://www.aclweb.org/anthology/W17-4114/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
