@@ -81,7 +81,7 @@ Neural machine translation (NMT) models typically operate with a fixed vocabular
 # Reference 
 
 - Paper 
-  - [arxiv Version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1508.07909)
+  - [arXiv Version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1508.07909)
   - [ACL Version: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1162/)
   
 - How to use html for alert
