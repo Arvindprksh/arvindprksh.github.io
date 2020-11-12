@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and simply arrange it, [Language Models are Unsupervised Multitask Learners. Radford et al.](https://paperswithcode.com/paper/language-models-are-unsupervised-multitask) I read and studied. 
+This is a brief summary of paper for me to study and simply arrange it, [Language Models are Unsupervised Multitask Learners (Radford et al.)](https://paperswithcode.com/paper/language-models-are-unsupervised-multitask) I read and studied. 
 {% include MathJax.html %}
 
 This paper extend GPT for model with sufficient capacity to converge.
@@ -33,13 +33,13 @@ Natural language processing tasks, such as question answering, machine translati
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://paperswithcode.com/paper/language-models-are-unsupervised-multitask">The paper: Language Models are Unsupervised Multitask Learners. Radford et al.</a>
+  <a href="https://paperswithcode.com/paper/language-models-are-unsupervised-multitask">The paper: Language Models are Unsupervised Multitask Learners (Radford et al.)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [paperwithcode version: Language Models are Unsupervised Multitask Learners. Radford et al.](https://paperswithcode.com/paper/language-models-are-unsupervised-multitask)
+  - [paperwithcode version: Language Models are Unsupervised Multitask Learners (Radford et al.)](https://paperswithcode.com/paper/language-models-are-unsupervised-multitask)
   
   
 - How to use html for alert
