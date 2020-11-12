@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning
-subtitle: Title of paper - Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning
+title: Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning. Lucy and Gauthier. RoboNLP-WS. 2017.
+subtitle: Title of paper - Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning. Lucy and Gauthier. RoboNLP-WS. 2017.
 category: NLP papers - Grounding NLP
 tags: [nlp, ground learning]
 permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world/
@@ -75,13 +75,13 @@ Distributional word representation methods exploit word co-occurrences to build 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> RoboNLP-WS 2017.
+  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> Lucy and Gauthier. RoboNLP-WS 2017.
 </div>
 
 # Reference 
 
 - Paper 
-  - [RoboNLP-WS Version: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning. RoboNLP-WS 2017](https://www.aclweb.org/anthology/W17-2810)
+  - [RoboNLP-WS Version: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning. Lucy and Gauthier. RoboNLP-WS 2017](https://www.aclweb.org/anthology/W17-2810)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
