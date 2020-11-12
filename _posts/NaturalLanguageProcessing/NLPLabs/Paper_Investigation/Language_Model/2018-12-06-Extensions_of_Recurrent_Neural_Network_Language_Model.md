@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extensions of recurrent neural network Language model. Mikolov et al. ICASSP. 2011.
-subtitle: Title of paper - Extensions of recurrent neural network language model. Mikolov et al. ICASSP. 2011.
+title: Extensions of recurrent neural network Language model
+subtitle: Title of paper - Extensions of recurrent neural network language model
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/12/06-Extensions_of_Recurrent_Neural_Network_Language_Model
