@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. NAACL 2019)](https://www.aclweb.org/anthology/N19-1423/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al., NAACL 2019)](https://www.aclweb.org/anthology/N19-1423/) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -44,14 +44,14 @@ They introduce a new language representation model called BERT, which stands for
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N19-1423/">The paper: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. NAACL 2019)</a>
+  <a href="https://www.aclweb.org/anthology/N19-1423/">The paper: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al., NAACL 2019)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. arXiv 2019)](https://arxiv.org/abs/1810.04805)
-  - [NAACL 2019 version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. NAACL 2019)](https://www.aclweb.org/anthology/N19-1423/)
+  - [arXiv Version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al., arXiv 2019)](https://arxiv.org/abs/1810.04805)
+  - [NAACL Version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al., NAACL 2019)](https://www.aclweb.org/anthology/N19-1423/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
