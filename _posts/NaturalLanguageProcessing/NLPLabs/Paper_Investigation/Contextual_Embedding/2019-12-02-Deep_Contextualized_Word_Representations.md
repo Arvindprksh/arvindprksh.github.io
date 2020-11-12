@@ -63,7 +63,7 @@ They introduce a new type of deep contextualized word representation that models
 # Reference 
 
 - Paper 
-  - [ArXiv version: Deep Contextualized Word Representations. Peters et al. ArXiv 2018](https://arxiv.org/abs/1802.05365)
+  - [arXiv version: Deep Contextualized Word Representations. Peters et al. arXiv 2018](https://arxiv.org/abs/1802.05365)
   - [NAACL 2018 version: Deep Contextualized Word Representations. Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/)
  
 - How to use html for alert
