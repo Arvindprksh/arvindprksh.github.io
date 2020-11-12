@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP. 2015.
-subtitle: Title of paper - Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP. 2015.
+title: Effective Approaches to Attention-based Neural Machine Translation
+subtitle: Title of paper - Effective Approaches to Attention-based Neural Machine Translation
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/08/06/Effective_Approaches_To_Attention-based_Neural_Machine_Translation/
@@ -78,8 +78,8 @@ This paper explained Attention mechanism on translation task, from English to Ge
 # Reference 
 
 - Paper 
-  - [ArXiv version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. ArXiv 2015](https://arxiv.org/abs/1508.04025)
-  - [EMNLP version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP 2015](https://aclweb.org/anthology/D15-1166)
+  - [arXiv Version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. arXiv 2015](https://arxiv.org/abs/1508.04025)
+  - [EMNLP Version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP 2015](https://aclweb.org/anthology/D15-1166)
   
  
 - How to use html for alert
