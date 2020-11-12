@@ -30,7 +30,7 @@ It underlies the inception architecture, So they named their method Xception, wh
 
 The following figure is their architectur of Xception:
 
-![Francois Cholletl. CVPR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/CNN/2020-05-11-Xception_Deep_Learning_with_Depthwise_Separable_Convolutions/Xception.PNG)
+![Francois Cholletl., CVPR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/CNN/2020-05-11-Xception_Deep_Learning_with_Depthwise_Separable_Convolutions/Xception.PNG)
 
 As you can see image above,  they decoupled mapping of cross-channel correlation and spatial correlation.
 
@@ -45,8 +45,8 @@ They present an interpretation of Inception modules in convolutional neural netw
 # Reference 
 
 - Paper 
-  - [arXiv 2017 Ver: Xception: Deep Learning with Depthwise Separable Convolutions, Chollet., arXiv 2017](https://arxiv.org/abs/1610.02357v3)
-  - [CVPR 2017 Ver: Xception: Deep Learning with Depthwise Separable Convolutions, Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
+  - [arXiv Ver.: Xception: Deep Learning with Depthwise Separable Convolutions, Chollet., arXiv 2017](https://arxiv.org/abs/1610.02357v3)
+  - [CVPR Ver.: Xception: Deep Learning with Depthwise Separable Convolutions, Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
