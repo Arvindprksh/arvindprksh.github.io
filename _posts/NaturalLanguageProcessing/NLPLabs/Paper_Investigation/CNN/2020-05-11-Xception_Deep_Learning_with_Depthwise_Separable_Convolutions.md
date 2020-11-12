@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xception Deep Learning with Depthwise Separable Convolutions. Francois Cholletl. CVPR. 2017.
-subtitle: Title of paper - Xceptio Deep Learning with Depthwise Separable Convolutions. Francois Cholletl. CVPR. 2017.
+title: Xception Deep Learning with Depthwise Separable Convolutions
+subtitle: Title of paper - Xceptio Deep Learning with Depthwise Separable Convolutions
 category: NLP papers - CNN
 tags: [cnn]
 permalink: /2020/05/11/Xception_Deep_Learning_with_Depthwise_Separable_Convolutions/
