@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Google's Neural Machine Translation System
-subtitle: Title of paper - Google's Neural Machine Translation System
+title: Google's Neural Machine Translation System. Wu et al. arXiv. 2016.
+subtitle: Title of paper - Google's Neural Machine Translation System. Wu et al. arXiv. 2016.
 category: NLP papers - Translation
 tags: [nlp, word2vec, translation]
 permalink: /2018/05/31/Google's_Neural_Machine_Translation_System_Bridging_The_Gap_Between_Human_And_Machine_Translation/
@@ -16,7 +16,7 @@ bigimg:
 ---
 While I have studied for Korean Natural Language processing with Neural Network. I was finding the architecture for my work. 
 
-So I read this paper,[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation, Yonghui Wu et al.(2016)](https://arxiv.org/abs/1609.08144v2) , and I realized about how to dealing with a seqeunce of data. 
+So I read this paper,[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation, Wu et al. ArXiv 2016](https://arxiv.org/abs/1609.08144v2) , and I realized about how to dealing with a seqeunce of data. 
 
 This paper is end-to-end model for Neural Network translation. In my case, I wondered the architectur of neural network about how to use LSTM for translation. 
 
@@ -73,7 +73,7 @@ And the connection between encoder and decoder is attention mechanism is respons
 - [OPentNMT](http://opennmt.net/OpenNMT/training/models/)
 
 - Paper 
-  - [Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation](https://arxiv.org/abs/1609.08144v2)
+  - [ArXiv Version: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation. Wu et al. ArXiv 2016](https://arxiv.org/abs/1609.08144v2)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
