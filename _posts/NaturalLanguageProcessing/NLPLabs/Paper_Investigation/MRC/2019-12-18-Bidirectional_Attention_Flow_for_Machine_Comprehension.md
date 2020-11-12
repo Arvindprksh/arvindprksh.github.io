@@ -21,7 +21,7 @@ This is a brief summary of paper for me to study and organize it, [Bidirectional
 {% include MathJax.html %}
 
 
-They propose the bidirectional attention flow, i.e. they separate the attention layer and modeling layer in contrary with dynamically learning the attention within modeling layer like the previous work ([Bahdanau et al. 2015 ICLR](https://arxiv.org/abs/1409.0473))
+They propose the bidirectional attention flow, i.e. they separate the attention layer and modeling layer in contrary with dynamically learning the attention within modeling layer like the previous work ([Bahdanau et al., 2015 ICLR](https://arxiv.org/abs/1409.0473))
 
 That is, they use similarity matrix (called affinity matrix in another way) to make Context-to-query attention and Query-to-Context attention.
 
