@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A unified architecture for natural language processing- deep neural networks with multitask learning. Collobert and Weston. ICML. 2008.
-subtitle: Title of paper - A unified architecture for natural language processing- deep neural networks with multitask learning. Collobert and Weston. ICML. 2008.
+title: A unified architecture for natural language processing- deep neural networks with multitask learning
+subtitle: Title of paper - A unified architecture for natural language processing- deep neural networks with multitask learning
 category: NLP papers - Multi-Task
 tags: [neural network, multi task]
 permalink: /2019/10/05/A_Unified_Archtecture_for_Natural_Language_Processing-_Deep_Neural_Networks_With_Multitask_Learning/
