@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL 2016](https://www.aclweb.org/anthology/P16-1046/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Neural Summarization by Extracting Sentences and Words (Cheng and Lapata., ACL 2016)](https://www.aclweb.org/anthology/P16-1046/) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed an extractive summarization method based on neuaral networks.
@@ -30,15 +30,15 @@ Normally, research of it was consider sequence labeling task to choose sentences
 
 Let's see an example data 
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/example_data.PNG)
+![Cheng and Lapata., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/example_data.PNG)
 
 First of all, sentence extractor is as following:
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Sentence_extractor.PNG)
+![Cheng and Lapata., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Sentence_extractor.PNG)
 
 Finally, Word extractor,which is the extracted unit change from sentence to word , is as following:
 
-![Cheng and Lapata. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Word_extractor.PNG)
+![Cheng and Lapata., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-26-Neural_Summarization_by_Extracting_Sentences_and_Words/Word_extractor.PNG)
 
 on evaluation, they used ROUGE-1,2 as means of assessing informativeness and the longest common subsequences(ROUGE-L) as a means of assessing fluency.
 
@@ -48,14 +48,14 @@ Traditional approaches to extractive summarization rely heavily on humanengineer
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P16-1046/">The paper: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/P16-1046/">The paper: Neural Summarization by Extracting Sentences and Words (Cheng and Lapata., ACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Neural Summarization by Extracting Sentences and Words.  Cheng and Lapata. arXiv 2016](https://arxiv.org/abs/1603.07252)
-  - [ACL Version: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL 2016](https://www.aclweb.org/anthology/P16-1046/)
+  - [arXiv Version: Neural Summarization by Extracting Sentences and Words (Cheng and Lapata., arXiv 2016)](https://arxiv.org/abs/1603.07252)
+  - [ACL Version: Neural Summarization by Extracting Sentences and Words (Cheng and Lapata., ACL 2016)](https://www.aclweb.org/anthology/P16-1046/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
