@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv. 2019.
-subtitle: Title of paper - Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv. 2019.
+title: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond
+subtitle: Title of paper - Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond
 category: NLP papers - Cross-lingual Sentence Embedding
 tags: [cross_lingual_sentence_embedding]
 permalink: /2020/06/16/Massively_Multilingual_Sentence_Embeddings_or_Zero-Shot_Cross-Lingual_Transfer_and_Beyond/
