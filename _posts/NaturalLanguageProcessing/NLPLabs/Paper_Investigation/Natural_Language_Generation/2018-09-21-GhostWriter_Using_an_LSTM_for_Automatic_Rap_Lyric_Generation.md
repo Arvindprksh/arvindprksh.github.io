@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
-subtitle: Title of paper - GhostWriter - Using an LSTM for Automatic Rap Lyric Generation
+title: GhostWriter - Using an LSTM for Automatic Rap Lyric Generation. Potash et al. EMNLP. 2015.
+subtitle: Title of paper - GhostWriter - Using an LSTM for Automatic Rap Lyric Generation. Potash et al. EMNLP. 2015.
 category: NLP papers - NLG
 tags: [nlp, nlg]
 permalink: /2018/09/21/GhostWriter_Using_an_LSTM_for_Automatic_Rap_Lyric_Generation/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [GhostWriter: Using an LSTM for Automatic Rap Lyric Generation, Peter Potash et al.(2015)](http://www.aclweb.org/anthology/D15-1221) from EMNLP 2015
+This paper's title is [GhostWriter: Using an LSTM for Automatic Rap Lyric Generation. Potash et al. EMNLP 2015](http://www.aclweb.org/anthology/D15-1221) from EMNLP 2015
 
 The model from this paper focus on generation of rap lyrics. the goal of Ghost Writer is to produce a system that can take a given artist's lyrics and generate similar yet unique lyrics.
 
@@ -77,13 +77,13 @@ This paer demonstrate the effectiveness to generate unconstrained rap lyrics usi
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221">The paper: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation</a>
+  <a href="https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221">The paper: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation. Potash et al. EMNLP 2015</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [GhostWriter: Using an LSTM for Automatic Rap Lyric Generation](https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221)
+  - [EMNLP Version: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation. Potash et al. EMNLP 2015](https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html) 
