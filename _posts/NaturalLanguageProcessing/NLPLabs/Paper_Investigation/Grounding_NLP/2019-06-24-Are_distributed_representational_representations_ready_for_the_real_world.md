@@ -18,7 +18,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning, Lucy and Gauthier(first workshop on Language Grouding for Robotics 2017)](https://www.aclweb.org/anthology/W17-2810)"
+This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning, Lucy and Gauthier. (first workshop on Language Grouding for Robotics 2017)](https://www.aclweb.org/anthology/W17-2810)"
 
 Befere entering deep, I was wondering what is the Language grounding. 
 
@@ -81,7 +81,7 @@ Distributional word representation methods exploit word co-occurrences to build 
 # Reference 
 
 - Paper 
-  - [GloVe:Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
+  - [GloVe:Global Vectors for Word Representation](https://www.aclweb.org/anthology/W17-2810)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
