@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding. Devlin et al. NAACL. 2019.
-subtitle: Title of paper - BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding. Devlin et al. NAACL. 2019.
+title: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding
+subtitle: Title of paper - BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding
 category: NLP papers - Transfer Learning
 tags: [neural network, contextual embedding]
 permalink: /2019/12/02/BERT_Pre-Training_of_Deep_Bidirectional_Transformers_for_Language_Understanding/
