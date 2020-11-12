@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP. 2015.
-subtitle: Title of paper - Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP. 2015.
+title: Addressing the Rare Word Problem in Neural Machine Translation
+subtitle: Title of paper - Addressing the Rare Word Problem in Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/11/05/Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/
@@ -125,8 +125,8 @@ Neural Machine Translation (NMT) is a new approach to machine translation that h
 # Reference 
 
 - Paper 
-  - [Arxiv version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. arXiv 2014](https://arxiv.org/abs/1410.8206)
-  - [ACL and IJCNLP 2015 version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1002/)
+  - [arXiv Version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. arXiv 2014](https://arxiv.org/abs/1410.8206)
+  - [ACL and IJCNLP Version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1002/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
