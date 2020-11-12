@@ -31,7 +31,7 @@ They introduce an architecture to learn joint multilingual sentence representati
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1812.10464">The paper: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv 2019</a>
+  <a href="https://arxiv.org/abs/1812.10464">The paper: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond (Artetxe and Schwenk., arXiv 2019)</a>
 </div>
 
 # Reference 
