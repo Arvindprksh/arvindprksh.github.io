@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Google's Multilingual Neural Machine Translation System- Enabling Zero-Shot Translation
-subtitle: Title of paper - Google's Multilingual Neural Machine Translation System- Enabling Zero-Shot Translation
+title: Google's Multilingual Neural Machine Translation System- Enabling Zero-Shot Translation. Johnson et al. TACL. 2017.
+subtitle: Title of paper - Google's Multilingual Neural Machine Translation System- Enabling Zero-Shot Translation. Johnson et al. TACL. 2017.
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/06/23/Google's_Multilingual_Neural_Machine_Translation_System_Enabling_Zero-Shot_Translation/
