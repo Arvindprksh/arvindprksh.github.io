@@ -1,7 +1,7 @@
 ---
 layout: post
-title: On the Properties of Neural Machine Translation- Encoder-Decoder Approaches
-subtitle: Title of paper - On the Properties of Neural Machine Translation- Encoder-Decoder Approaches
+title: On the Properties of Neural Machine Translation- Encoder-Decoder Approaches. Cho et al. ACL. 2014.
+subtitle: Title of paper - On the Properties of Neural Machine Translation- Encoder-Decoder Approaches. Cho et al. ACL. 2014.
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/08/28/On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/
@@ -127,8 +127,8 @@ Neural machine translation is a relatively new approach to statistical machine t
 # Reference 
 
 - Paper 
-  - [ArXiv version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)](https://arxiv.org/abs/1409.1259)
-  - [ACL version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)](https://www.aclweb.org/anthology/W14-4012)
+  - [ArXiv version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. ArXiv 2014](https://arxiv.org/abs/1409.1259)
+  - [ACL version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. ACL 2014](https://www.aclweb.org/anthology/W14-4012)
   
  
 - How to use html for alert
