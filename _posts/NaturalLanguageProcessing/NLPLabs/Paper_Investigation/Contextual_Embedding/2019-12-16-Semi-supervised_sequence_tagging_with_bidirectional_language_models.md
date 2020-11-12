@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Semi-supervised sequence tagging with bidirectional language models. Peters et al. ACL 2017](https://www.aclweb.org/anthology/P17-1161/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Semi-supervised sequence tagging with bidirectional language models (Peters et al., ACL 2017)](https://www.aclweb.org/anthology/P17-1161/) I read and studied. 
 {% include MathJax.html %}
 
 They used the tokens (i.e. words) sensitive to context surrounding it. 
@@ -26,11 +26,11 @@ In order to make the context sensitive representation, they used pre-training LM
 
 They show how to used a LM embedding component in the following
 
-![Peters et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_1.PNG)
+![Peters et al., ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_1.PNG)
 
 The total overview of their TagLM is as follows: 
 
-![Peters et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_2.PNG)
+![Peters et al., ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-16-Semi-supervised_sequence_tagging_with_bidirectional_language_models/Semi-supervised_sequence_tagging_2.PNG)
 
 Though their idea is simple, the resuling performance is superior to the previous moethod at the moment. 
 
@@ -39,14 +39,14 @@ Pre-trained word embeddings learned from unlabeled text have become a standard c
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1161/">The paper: Semi-supervised sequence tagging with bidirectional language models. Peters et al. ACL 2017</a>
+  <a href="https://www.aclweb.org/anthology/P17-1161/">The paper: Semi-supervised sequence tagging with bidirectional language models (Peters et al., ACL 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Semi-supervised sequence tagging with bidirectional language models. Peters et al. arXiv 2017](https://arxiv.org/abs/1705.00108)
-  - [ACL 2017 version: Semi-supervised sequence tagging with bidirectional language models. Peters et al. ACL 2017](https://www.aclweb.org/anthology/P17-1161/)
+  - [arXiv Version: Semi-supervised sequence tagging with bidirectional language models (Peters et al., arXiv 2017](https://arxiv.org/abs/1705.00108)
+  - [ACL Version: Semi-supervised sequence tagging with bidirectional language models (Peters et al., ACL 2017)](https://www.aclweb.org/anthology/P17-1161/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
