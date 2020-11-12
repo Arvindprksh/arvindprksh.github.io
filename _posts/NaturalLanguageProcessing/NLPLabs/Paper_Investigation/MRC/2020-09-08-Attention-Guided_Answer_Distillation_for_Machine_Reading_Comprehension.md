@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1232/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Attention-Guided Answer Distillation for Machine Reading Comprehension (Hu et al., EMNLP 2018)](https://www.aclweb.org/anthology/D18-1232/) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed a simple way to distill knowledge from teacher to student. 
@@ -43,14 +43,14 @@ Despite that current reading comprehension systems have achieved significant adv
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D18-1232/">The paper: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP 2018</a>
+  <a href="https://www.aclweb.org/anthology/D18-1232/">The paper: Attention-Guided Answer Distillation for Machine Reading Comprehension (Hu et al., EMNLP 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. arXiv 2018](https://arxiv.org/abs/1808.07644)
-  - [EMNLP version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1232/)
+  - [arXiv Version: Attention-Guided Answer Distillation for Machine Reading Comprehension (Hu et al., arXiv 2018)](https://arxiv.org/abs/1808.07644)
+  - [EMNLP Version: Attention-Guided Answer Distillation for Machine Reading Comprehension (Hu et al., EMNLP 2018)](https://www.aclweb.org/anthology/D18-1232/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
