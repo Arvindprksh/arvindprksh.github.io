@@ -50,8 +50,8 @@ Computer vision has benefited from initializing multiple deep layers with weight
 # Reference 
 
 - Paper 
-  - [Arxiv version: Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)](https://arxiv.org/abs/1708.00107)
-  - [NIPS 2017 version: Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors)
+  - [arXiv Version: Learned in Translation: Contextualized Word Vectors (McCann et al. arXiv 2017)](https://arxiv.org/abs/1708.00107)
+  - [NIPS Version: Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
