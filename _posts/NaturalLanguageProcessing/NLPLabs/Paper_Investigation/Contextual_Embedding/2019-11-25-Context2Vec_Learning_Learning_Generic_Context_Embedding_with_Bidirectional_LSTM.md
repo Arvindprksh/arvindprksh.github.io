@@ -1,7 +1,7 @@
 ---
 layout: post
-title: context2vec- Learning Generic Context Embedding with Bidirectional LSTM. Melamud et al. CoNLL. 2016.
-subtitle: Title of paper - context2vec- Learning Generic Context Embedding with Bidirectional LSTM. Melamud et al. CoNLL. 2016.
+title: context2vec- Learning Generic Context Embedding with Bidirectional LSTM
+subtitle: Title of paper - context2vec- Learning Generic Context Embedding with Bidirectional LSTM
 category: NLP papers - Contextual Embedding
 tags: [neural network, contextual embedding]
 permalink: /2019/11/25/Context2Vec_Learning_Learning_Generic_Context_Embedding_with_Bidirectional_LSTM/
