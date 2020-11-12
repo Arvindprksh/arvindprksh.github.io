@@ -1,7 +1,7 @@
 ---
 layout: post
-title: On Using Very Large Target Vocabulary for Neural Machine Translation
-subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation
+title: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP. 2015.
+subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP. 2015.
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/11/02/On_Using_Very_Large_Target_Vocabulary_for_Neural_Machine_Translation/
@@ -40,7 +40,7 @@ In other word, they also used the small subset of the target vocabulary at each 
 
 Once training is over, Their method can use the full target vocabulary to compute the output probabliity of each target word. 
 
-For their approach, since the number of parameter being updated for each sentence pair cannot be controlled, they partitions the training corpus and define a subset \\(v^{`}\\) of target vocabulary for each partition prior to training.
+For their approach, since the number of parameter being updated for each sentence pair cannot be controlled, they partitions the training corpus and define a subset \\(v^{\`}\\) of target vocabulary for each partition prior to training.
 
 That is, before training begins, they sequentially examine each target sentence in the training corpus and accumulate unique target words until the number of unique target words reaches the predefined threshold τ.
 
