@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper, [Attentive Language Models. Salton et al. IJCNLP 2017](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/). 
+This is a brief summary of paper, [Attentive Language Models (Salton et al., IJCNLP 2017)](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/). 
 
 The reason I summarize the paper is to study attention mechanism and arrange the paper I read.
 
@@ -56,7 +56,7 @@ We compute a score for each hidden state \\(h_i\\) (\\(\forall\\) i ∈ {1, . . 
 From these weighted hidden states we generate a context vector \\(c_t\\) that is concatenated with the current hidden state \\(h_t\\) to predict the next word in the sequence.
 The following illustrates a step of our model when predicting the fourth word in a sequence.
 
-![Salton et al.(2017)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2019-08-12-Attentive_Language_Model/Attentive_LM_1.JPG)
+![Salton et al., IJCNLP 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2019-08-12-Attentive_Language_Model/Attentive_LM_1.JPG)
 
 Also they proposed two different attention score funtions that can be used to compute the context vector \\(c_t\\).
 
@@ -101,13 +101,13 @@ In this paper, we extend Recurrent Neural Network Language Models (RNN-LMs) with
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/papers/I/I17/I17-1045/">The paper: Attentive Language Models</a>
+  <a href="https://www.aclweb.org/anthology/papers/I/I17/I17-1045/">The paper: Attentive Language Models (Salton et al., IJCNLP 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [IJCNLP Version: Attentive Language Models. Salton et al. IJCNLP 2017](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/)
+  - [IJCNLP Version: Attentive Language Models (Salton et al., IJCNLP 2017)](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/)
   
  
 - How to use html for alert
