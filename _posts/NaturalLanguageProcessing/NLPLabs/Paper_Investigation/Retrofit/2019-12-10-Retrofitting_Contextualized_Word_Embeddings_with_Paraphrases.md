@@ -61,7 +61,7 @@ Contextualized word embedding models, such as ELMo, generate meaningful represen
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D19-1113/">The paper: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. 2019 EMNLP</a>
+  <a href="https://www.aclweb.org/anthology/D19-1113/">The paper: Retrofitting Contextualized Word Embeddings with Paraphrases (Shi et al., EMNLP and IJCNLP 2019)</a>
 </div>
 
 # Reference 
