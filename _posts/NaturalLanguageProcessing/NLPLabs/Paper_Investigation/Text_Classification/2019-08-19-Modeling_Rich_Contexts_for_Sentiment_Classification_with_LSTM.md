@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Modeling Rich Contexts for Sentiment Classification with LSTM, Huang et al., (2016)](https://arxiv.org/abs/1605.01478) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Modeling Rich Contexts for Sentiment Classification with LSTM. Huang et al. arXiv 2016](https://arxiv.org/abs/1605.01478) I read and studied. 
 {% include MathJax.html %}
 
 They propose how to get representation with rich context in tweets which constitute a thread like conversation. 
@@ -51,13 +51,13 @@ Sentiment analysis on social media data such as tweets and weibo has become a ve
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1605.01478">Modeling Rich Contexts for Sentiment Classification with LSTM</a>
+  <a href="https://arxiv.org/abs/1605.01478">Modeling Rich Contexts for Sentiment Classification with LSTM. Huang et al. arXiv 2016</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Modeling Rich Contexts for Sentiment Classification with LSTM](https://arxiv.org/abs/1605.01478)
+  - [arXiv Version: Modeling Rich Contexts for Sentiment Classification with LSTM. Huang et al. arXiv 2016](https://arxiv.org/abs/1605.01478)
   
   
 - How to use html for alert
