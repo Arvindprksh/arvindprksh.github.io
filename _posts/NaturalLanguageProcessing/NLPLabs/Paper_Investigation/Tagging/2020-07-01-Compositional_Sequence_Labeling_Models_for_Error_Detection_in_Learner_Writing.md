@@ -39,8 +39,8 @@ In this paper, they present the first experiments using neural network models fo
 # Reference 
 
 - Paper 
-  - [Arxiv 2016 version: Compositional Sequence Labeling Models for Error Detection in Learner Writing. Rei and Yannakoudakis. arXiv 2016](https://arxiv.org/abs/1607.06153)
-  - [ACL 2016 version: Compositional Sequence Labeling Models for Error Detection in Learner Writing.  Rei and Yannakoudakis. ACL 2016](https://www.aclweb.org/anthology/P16-1112/)
+  - [arXiv Version: Compositional Sequence Labeling Models for Error Detection in Learner Writing. Rei and Yannakoudakis. arXiv 2016](https://arxiv.org/abs/1607.06153)
+  - [ACL Version: Compositional Sequence Labeling Models for Error Detection in Learner Writing.  Rei and Yannakoudakis. ACL 2016](https://www.aclweb.org/anthology/P16-1112/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
