@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS. 2017.
-subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS. 2017.
+title: Centroid-based Text Summarization through Compositionality of Word Embeddings
+subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings
 category: NLP papers - Summarization
 tags: [nlp, word embedding, text summarization]
 permalink: /2018/03/09/Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/
