@@ -2,8 +2,8 @@
 layout: post
 title: Xception Deep Learning with Depthwise Separable Convolutions
 subtitle: Title of paper - Xceptio Deep Learning with Depthwise Separable Convolutions
-category: NLP papers - classification
-tags: [classification]
+category: NLP papers - CNN
+tags: [cnn]
 permalink: /2020/05/11/Xception_Deep_Learning_with_Depthwise_Separable_Convolutions/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Xception: Deep Learning with Depthwise Separable Convolutions.  Francois Cholletl. CVPR 2017](https://ieeexplore.ieee.org/document/8099678) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Xception: Deep Learning with Depthwise Separable Convolutions. Francois Cholletl. CVPR 2017](https://ieeexplore.ieee.org/document/8099678) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to answer to the quextion which is how the convolutional network works.
