@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation
-subtitle: Title of paper - Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation
+title: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL. 2015.
+subtitle: Title of paper - Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL. 2015.
 category: NLP papers - Cross-lingual Word Embedding
 tags: [cross_lingual_word_embedding]
 permalink: /2020/06/01/Normalized_Word_Embedding_and_Orthogonal_Transform_for_Bilingual_Word_Translation/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing, et al. 2015 NAACL](https://www.aclweb.org/anthology/N15-1104/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1104/) I read and studied. 
 {% include MathJax.html %}
 
 This paper propose handling the inconsistence among the objective function used to learn word vectors (maximum likelihood based on inner product), the distance measurement for word vectors (cosine distance), and the objective function used to learn the linear transform(mean square error). Conjecturing this inconsistence may lead to suboptimal estimation for both word vectors and the bilingual transform.
@@ -41,7 +41,7 @@ Word embedding has been found to be highly powerful to translate words from one 
 # Reference 
 
 - Paper 
-   - [NAACL version: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing, et al. 2015 NAACL](https://www.aclweb.org/anthology/N15-1104/)
+   - [NAACL version: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1104/)
   
   
 - How to use html for alert
