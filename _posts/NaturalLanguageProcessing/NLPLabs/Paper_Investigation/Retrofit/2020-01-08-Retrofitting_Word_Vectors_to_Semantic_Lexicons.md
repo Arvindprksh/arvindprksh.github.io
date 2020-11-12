@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL. 2015.
-subtitle: Title of paper - Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL. 2015.
+title: Retrofitting Word Vectors to Semantic Lexicons
+subtitle: Title of paper - Retrofitting Word Vectors to Semantic Lexicons
 category: NLP papers - Retrofitting
 tags: [neural network, word embedding]
 permalink: /2020/01/08/Retrofitting_Word_Vectors_to_Semantic_Lexicons/
