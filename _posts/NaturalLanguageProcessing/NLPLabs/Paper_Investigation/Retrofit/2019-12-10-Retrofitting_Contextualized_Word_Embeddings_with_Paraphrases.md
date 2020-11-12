@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP. 2019.
-subtitle: Title of paper - Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP. 2019.
+title: Retrofitting Contextualized Word Embeddings with Paraphrases
+subtitle: Title of paper - Retrofitting Contextualized Word Embeddings with Paraphrases
 category: NLP papers - Retrofitting
 tags: [neural network, text classification]
 permalink: /2019/12/10/Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/
