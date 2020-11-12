@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR 2017](https://openreview.net/forum?id=HJ0UKP9ge) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Bidirectional Attention Flow for Machine Comprehension (Seo et al., ICLR 2017)](https://openreview.net/forum?id=HJ0UKP9ge) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -29,7 +29,7 @@ And then they make query-aware representation of context words with the two atte
 
 The following is their multi-stage hierarchical model structure:
 
-![Seo et al. ICLR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2019-12-18-Bidirectional_Attention_Flow_for_Machine_Comprehension/BIDAF_1.PNG)
+![Seo et al., ICLR 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2019-12-18-Bidirectional_Attention_Flow_for_Machine_Comprehension/BIDAF_1.PNG)
 
 For simple explanation of their model, 
 
@@ -47,14 +47,14 @@ Machine comprehension (MC), answering a query about a given context paragraph, r
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=HJ0UKP9ge">The paper: Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR 2017</a>
+  <a href="https://openreview.net/forum?id=HJ0UKP9ge">The paper: Bidirectional Attention Flow for Machine Comprehension (Seo et al., ICLR 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. arXiv 2017](https://arxiv.org/abs/1611.01603)
-  - [ICLR Version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR 2017](https://openreview.net/forum?id=HJ0UKP9ge)
+  - [arXiv Version: Bidirectional Attention Flow for Machine Comprehension (Seo et al. arXiv 2017)](https://arxiv.org/abs/1611.01603)
+  - [ICLR Version: Bidirectional Attention Flow for Machine Comprehension (Seo et al., ICLR 2017)](https://openreview.net/forum?id=HJ0UKP9ge)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
