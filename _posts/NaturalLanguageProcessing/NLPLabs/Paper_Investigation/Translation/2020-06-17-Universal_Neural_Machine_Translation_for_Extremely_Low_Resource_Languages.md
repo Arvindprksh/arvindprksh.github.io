@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Universal Neural Machine Translation for Extremely Low Resource Languages
-subtitle: Title of paper - Universal Neural Machine Translation for Extremely Low Resource Languages
+title: Universal Neural Machine Translation for Extremely Low Resource Languages.  Gu et al. NAACL. 2018.
+subtitle: Title of paper - Universal Neural Machine Translation for Extremely Low Resource Languages.  Gu et al. NAACL. 2018.
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/06/17/Universal_Neural_Machine_Translation_for_Extremely_Low_Resource_Languages/
