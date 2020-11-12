@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bidirectional LSTM-CRF Models for Seqeunce Tagging
-subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging
+title: Bidirectional LSTM-CRF Models for Seqeunce Tagging. Huang et al. arXiv. 2015.
+subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging. Huang et al. arXiv. 2015.
 category: NLP papers - Tagging
 tags: [nlp, tagging]
 permalink: /2018/04/17/Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Bidirectional LSTM-CRF Models for Sequence Tagging,(Zhiheng Huang et al. 2015)](https://arxiv.org/abs/1508.01991v1), refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
+This paper,[Bidirectional LSTM-CRF Models for Sequence Tagging. Huang et al. arXiv 2015](https://arxiv.org/abs/1508.01991v1), refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
 
 Normally, If you run into Sequence tagging problem, you would think of RNN. 
 
@@ -134,7 +134,7 @@ In this paper, they proposed a variety of Long Short-Term Memory based models fo
 # Reference 
 
 - Paper 
-  - [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991v1)
+  - [arXiv Version: Bidirectional LSTM-CRF Models for Sequence Tagging. Huang et al. arXiv 2015](https://arxiv.org/abs/1508.01991v1)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
