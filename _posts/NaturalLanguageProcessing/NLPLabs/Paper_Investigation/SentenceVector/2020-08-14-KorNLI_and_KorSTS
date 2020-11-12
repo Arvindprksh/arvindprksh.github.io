@@ -17,18 +17,18 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020](https://arxiv.org/abs/2004.03289) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding (Ham et al., arXiv 2020)](https://arxiv.org/abs/2004.03289) I read and studied. 
 {% include MathJax.html %}
 
 They proposes dataset for natural lanuage inference(NLI) and semantic textual similarity(STS) in Korean.
 
 For NLI in Korean, 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/SentenceVector/2020-08-14-KorNLI_and_KorSTS/KorNLI.PNG)
+![Ham et al., arXiv 2020](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/SentenceVector/2020-08-14-KorNLI_and_KorSTS/KorNLI.PNG)
 
 For STS In Korean,
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/SentenceVector/2020-08-14-KorNLI_and_KorSTS/KorSTS.PNG)
+![Ham et al., arXiv 2020](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/SentenceVector/2020-08-14-KorNLI_and_KorSTS/KorSTS.PNG)
 
 
 As shown in figures above, they released the dataset for NLI and STS in Korean on [git repository](https://github.com/kakaobrain/KorNLUDatasets)
@@ -39,13 +39,13 @@ Natural language inference (NLI) and semantic textual similarity (STS) are key t
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/2004.03289">The paper: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020</a>
+  <a href="https://arxiv.org/abs/2004.03289">The paper: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding (Ham et al., arXiv 2020)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020](https://arxiv.org/abs/2004.03289)
+  - [arXiv version: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding (Ham et al., arXiv 2020)](https://arxiv.org/abs/2004.03289)
  
   
 - How to use html for alert
