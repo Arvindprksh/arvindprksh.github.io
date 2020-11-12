@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bidirectional LSTM-CRF Models for Seqeunce Tagging. Huang et al. arXiv. 2015.
-subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging. Huang et al. arXiv. 2015.
+title: Bidirectional LSTM-CRF Models for Seqeunce Tagging
+subtitle: Title of paper - Bidirectional LSTM-CRF Models for Seqeunce Tagging
 category: NLP papers - Tagging
 tags: [nlp, tagging]
 permalink: /2018/04/17/Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/
