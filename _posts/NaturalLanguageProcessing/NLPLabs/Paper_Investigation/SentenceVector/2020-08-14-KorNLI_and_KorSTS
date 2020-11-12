@@ -1,7 +1,7 @@
 ---
 layout: post
-title: KorNLI and KorSTS- New Benchmark Datasets for Korean Natural Language Understanding
-subtitle: Title of paper - KorNLI and KorSTS- New Benchmark Datasets for Korean Natural Language Understanding
+title: KorNLI and KorSTS- New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv. 2020.
+subtitle: Title of paper - KorNLI and KorSTS- New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv. 2020.
 category: NLP papers - Sentence Embedding
 tags: [neural network, sentence embedding]
 permalink: /2020/07/21/Towards_Universal_Paraphrastic_Sentence_Embeddings/
@@ -39,13 +39,13 @@ Natural language inference (NLI) and semantic textual similarity (STS) are key t
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/2004.03289">The paper: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020.</a>
+  <a href="https://arxiv.org/abs/2004.03289">The paper: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020.](https://arxiv.org/abs/2004.03289)
+  - [arXiv version: KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding. Ham et al. arXiv 2020](https://arxiv.org/abs/2004.03289)
  
   
 - How to use html for alert
