@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Contextual String Embeddings for Sequence Labeling. Akbik et al. 2018 COLING](https://www.aclweb.org/anthology/C18-1139/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Contextual String Embeddings for Sequence Labeling. Akbik et al. COLING 2018](https://www.aclweb.org/anthology/C18-1139/) I read and studied. 
 {% include MathJax.html %}
 
 They propose the pre-training model to language model, most of research train language model based on word level. 
@@ -28,11 +28,11 @@ They propose a novel type of contextualized characterlevel word embedding which 
 
 To sum up , they present a method to generate such a contextualized embedding for any string of characters in a sentential context, and thus refer to the proposed representations as contextual string embeddings as follows:
 
-![Akbik et al. 2018 COLING](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Contextual_String_Embeddings_for_Sequence_Labeling/contextualized_string_embedding_1.PNG)
+![Akbik et al. COLING 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Contextual_String_Embeddings_for_Sequence_Labeling/contextualized_string_embedding_1.PNG)
 
 The following show they extracter wored embedding from character sequence language model. 
 
-![Akbik et al. 2018 COLING](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Contextual_String_Embeddings_for_Sequence_Labeling/contextualized_string_embedding_2.PNG)
+![Akbik et al. COLING 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Contextual_String_Embeddings_for_Sequence_Labeling/contextualized_string_embedding_2.PNG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -46,7 +46,7 @@ Recent advances in language modeling using recurrent neural networks have made i
 # Reference 
 
 - Paper 
-  - [COLING 2018 version: Contextual String Embeddings for Sequence Labeling. Akbik et al. 2018 COLING](https://www.aclweb.org/anthology/C18-1139/)
+  - [COLING Version: Contextual String Embeddings for Sequence Labeling. Akbik et al. COLING 2018](https://www.aclweb.org/anthology/C18-1139/)
   
   
 - How to use html for alert
