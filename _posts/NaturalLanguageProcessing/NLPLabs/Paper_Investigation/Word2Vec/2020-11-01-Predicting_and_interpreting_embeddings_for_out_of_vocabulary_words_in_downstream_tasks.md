@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP. 2018.
-subtitle: Title of paper - Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP. 2018.
+title: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP-WS. 2018.
+subtitle: Title of paper - Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP-WS. 2018.
 category: NLP papers - OOV Embedding
 tags: [OOV Embedding]
 permalink: /2020/11/01/Predicting_and_interpreting_embeddings_for_out_of_vocabulary_words_in_downstream_tasks/
@@ -46,7 +46,7 @@ They propose a novel way to handle out of vocabulary (OOV) words in downstream n
 
 - Paper 
   - [Arxiv version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. arXiv 2019](https://arxiv.org/abs/1903.00724)
-  - [EMNLP 2018 version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5439/)
+  - [EMNLP 2018 version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP-WS 2018](https://www.aclweb.org/anthology/W18-5439/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
