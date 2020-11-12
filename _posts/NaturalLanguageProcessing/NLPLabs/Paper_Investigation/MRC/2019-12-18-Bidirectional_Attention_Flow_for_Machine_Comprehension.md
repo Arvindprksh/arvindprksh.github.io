@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bidirectional Attention Flow for Machine Comprehension
-subtitle: Title of paper - Bidirectional Attention Flow for Machine Comprehension
+title: Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR. 2017. 
+subtitle: Title of paper - Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR. 2017.
 category: NLP papers - Machine Reading Comprehension
 tags: [neural network, machine reading comprehension]
 permalink: /2019/12/18/Bidirectional_Attention_Flow_for_Machine_Comprehension/
@@ -53,8 +53,8 @@ Machine comprehension (MC), answering a query about a given context paragraph, r
 # Reference 
 
 - Paper 
-  - [Arxiv version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. Arxiv 2017](https://arxiv.org/abs/1611.01603)
-  - [ICLR 2017 version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR 2017](https://openreview.net/forum?id=HJ0UKP9ge)
+  - [arXiv Version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. arXiv 2017](https://arxiv.org/abs/1611.01603)
+  - [ICLR Version: Bidirectional Attention Flow for Machine Comprehension. Seo et al. ICLR 2017](https://openreview.net/forum?id=HJ0UKP9ge)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
