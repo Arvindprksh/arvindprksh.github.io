@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS 2015](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Siamese Neural Networks for One-shot Image Recognition (Koch et al., ICML-WS 2015)](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf) I read and studied. 
 {% include MathJax.html %}
 
 They said whta one-shot learning is:
@@ -30,7 +30,7 @@ They hypothesize that networks which do well at verification should generalize t
 
 ahead of entering siamese convolutional neural network, Let's see the siamese network: 
 
-![Koch et al. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/One-shot_learning/2019-11-14-Siamese_Neural_Networks_for_One-shot_Image_Recognition/siamese_network.PNG)
+![Koch et al., ICML-WS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/One-shot_learning/2019-11-14-Siamese_Neural_Networks_for_One-shot_Image_Recognition/siamese_network.PNG)
 
 The Siamese neural network consists of twin networks which accept distinct inputs but are joined by an energy function(e.g. a loss function) at the top.
 
@@ -40,7 +40,7 @@ Their model's architecture :
 
 Below show one example of twin networks. 
 
-![Koch et al. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/One-shot_learning/2019-11-14-Siamese_Neural_Networks_for_One-shot_Image_Recognition/siamese_convolutional_1.PNG
+![Koch et al., ICML-WS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/One-shot_learning/2019-11-14-Siamese_Neural_Networks_for_One-shot_Image_Recognition/siamese_convolutional_1.PNG
 )
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -48,13 +48,13 @@ The process of learning good features for machine learning applications can be v
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf">The paper: Siamese Neural Networks for One-shot Image Recognition (Koch et al. 2015)</a>
+  <a href="http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf">The paper: Siamese Neural Networks for One-shot Image Recognition (Koch et al., ICML-WS 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ICML Version: Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS 2015](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf)
+  - [ICML Version: Siamese Neural Networks for One-shot Image Recognition (Koch et al., ICML-WS 2015)](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf)
   
   
 - How to use html for alert
