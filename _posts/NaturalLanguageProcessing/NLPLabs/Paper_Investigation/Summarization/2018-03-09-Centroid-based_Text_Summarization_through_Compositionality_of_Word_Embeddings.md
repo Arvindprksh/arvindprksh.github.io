@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS. 2017.
-subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS. 2017.
+title: Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS. 2017.
+subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS. 2017.
 category: NLP papers - Summarization
 tags: [nlp, word embedding, text summarization]
 permalink: /2018/03/09/Centroid-based_Text_Summarization_through_Compositionality_of_Word_Embeddings/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS 2017](http://www.aclweb.org/anthology/W17-1003), is about text summarization based on cetroid, and then they experiment multi-documents and a multi-lingual sigle document.
+This paper,[Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS 2017](http://www.aclweb.org/anthology/W17-1003), is about text summarization based on cetroid, and then they experiment multi-documents and a multi-lingual sigle document.
 
 This paper's idea is using word embedding which is better on what words is similar on syntantic and semantic relationship rather than BOW(bag-of-words). 
 
@@ -66,13 +66,13 @@ The textual similarity is a crucial aspect for many extractive text summarizatio
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.aclweb.org/anthology/W17-1003">The paper: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS 2017</a>
+  <a href="http://www.aclweb.org/anthology/W17-1003">The paper: Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS 2017</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [MultiLing Version: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS 2017](http://www.aclweb.org/anthology/W17-1003)
+  - [MultiLing Version: Centroid-based Text Summarization through Compositionality of Word Embeddings. Rossiello et al. MultiLing-WS 2017](http://www.aclweb.org/anthology/W17-1003)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
