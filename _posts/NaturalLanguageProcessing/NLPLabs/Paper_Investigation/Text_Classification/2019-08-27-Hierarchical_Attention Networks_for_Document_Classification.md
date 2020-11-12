@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and note it, [Hierarchical Attention Networks for Document Classification (Yang et al., 2016)](https://www.aclweb.org/anthology/N16-1174). 
+This is a brief summary of paper for me to study and note it, [Hierarchical Attention Networks for Document Classification Yang et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1174). 
 {% include MathJax.html %}
 
 They propose hierarchical attention Network which mirrors the hierarchical structure of a document(words from sentences, sentences from a document)
@@ -25,7 +25,7 @@ They propose hierarchical attention Network which mirrors the hierarchical struc
 They created the repersentation for a document using words and sentences vectors with bidirectional GRU as follows.
 
 
-![Yang et al., 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-08-27-Hierarchical_Attention Networks_for_Document_Classification/Hierarchical_Attention_Network_for_document_classification.JPG)
+![Yang et al. NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-08-27-Hierarchical_Attention Networks_for_Document_Classification/Hierarchical_Attention_Network_for_document_classification.JPG)
 
 
 Their idea is simple and used Bidirecational GRU to get contextual vector around a word \\(W_t\\) in sentence.
@@ -89,7 +89,7 @@ They proposed a hierarchical attention network for document classification. Thei
 # Reference 
 
 - Paper 
-  - [NAACL-HLT ver: Hierarchical Attention Networks for Document Classification(Yang et al.,2016)](https://www.aclweb.org/anthology/N16-1174)
+  - [NAACL-HLT Ver: Hierarchical Attention Networks for Document Classification(Yang et al. NAACL 2016)](https://www.aclweb.org/anthology/N16-1174)
   
   
 - How to use html for alert
