@@ -16,7 +16,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This is a brief summary of paper for me to study and organize it, [Deep Contextualized Word Representations. Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Deep Contextualized Word Representations (Peters et al., NAACL 2018)](https://www.aclweb.org/anthology/N18-1202/) I read and studied. 
 {% include MathJax.html %}
 
 Their archtecture could be shown as following:
@@ -33,7 +33,7 @@ They introduce a new type of deep contextualized word representation that models
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N18-1202/">The paper: Deep Contextualized Word Representations Peters et al. NAACL 2018</a>
+  <a href="https://www.aclweb.org/anthology/N18-1202/">The paper: Deep Contextualized Word Representations (Peters et al., NAACL 2018)</a>
 </div>
 
 <div id="tutorial-section">
@@ -63,8 +63,8 @@ They introduce a new type of deep contextualized word representation that models
 # Reference 
 
 - Paper 
-  - [arXiv version: Deep Contextualized Word Representations. Peters et al. arXiv 2018](https://arxiv.org/abs/1802.05365)
-  - [NAACL 2018 version: Deep Contextualized Word Representations. Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/)
+  - [arXiv Version: Deep Contextualized Word Representations (Peters et al., arXiv 2018)](https://arxiv.org/abs/1802.05365)
+  - [NAACL Version: Deep Contextualized Word Representations (Peters et al., NAACL 2018)](https://www.aclweb.org/anthology/N18-1202/)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
