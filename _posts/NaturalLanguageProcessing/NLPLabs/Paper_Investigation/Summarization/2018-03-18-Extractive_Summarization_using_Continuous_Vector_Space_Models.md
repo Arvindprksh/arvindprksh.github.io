@@ -59,7 +59,7 @@ Also basic explanation about word embedding is easy to understand to me. I mean 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.aclweb.org/anthology/W14-1504">The paper: Extractive Summarization using Continuous Vector Space Models. (Kågebäck et al., CVSC-WS 2014)</a>
+  <a href="http://www.aclweb.org/anthology/W14-1504">The paper: Extractive Summarization using Continuous Vector Space Models (Kågebäck et al., CVSC-WS 2014)</a>
 </div>
 
 # Reference 
