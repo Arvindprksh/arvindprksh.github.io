@@ -19,7 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of the paper, [Recurrent neural network based language model. Mikolov et al. INTERSPEECH 2010](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
+This article is just brief summary of the paper, [Recurrent neural network based language model (Mikolov et al., INTERSPEECH 2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
 
 This is for me to studying artificial neural network with NLP field. 
 
@@ -39,7 +39,7 @@ They said that recurrent neural network is a model which could encode temporal i
 
 Their model is like :  
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Recurrent_Neural_Network_based_language_model/Recurrent_neural_network_based_language_model.png)
+![Mikolov et al., INTERSPEECH 2010](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Recurrent_Neural_Network_based_language_model/Recurrent_neural_network_based_language_model.png)
 
 As you can check, By using recurrent connection of prior context, information can cycle inside these networks for arbitrarily long time. 
 
@@ -61,13 +61,13 @@ They introduce a new recurrent neural network based language model(RNN LM) with 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.fit.vutbr.cz/research/pubs/index.php?id=9362">The paper: Recurrent Neural Network based Language model</a>
+  <a href="http://www.fit.vutbr.cz/research/pubs/index.php?id=9362">The paper: Recurrent Neural Network based Language model (Mikolov et al., INTERSPEECH 2010)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Recurrent neural network based language model](http://www.fit.vutbr.cz/research/pubs/index.php?id=9362)
+  - [INTERSPEECH Version: Recurrent neural network based language model (Mikolov et al., INTERSPEECH 2010)](http://www.fit.vutbr.cz/research/pubs/index.php?id=9362)
  
   - [A Neural Probabilistic Language Model](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
  
