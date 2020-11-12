@@ -1,8 +1,8 @@
 
 ---
 layout: post
-title: Character-based Neural Machine Translation. Ling et al. arXiv. 2015.
-subtitle: Title of paper - Character-based Neural Machine Translation. Ling et al. arXiv. 2015.
+title: Character-based Neural Machine Translation
+subtitle: Title of paper - Character-based Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/11/11/Character-based_Neural_Machine_Translation/
@@ -36,7 +36,7 @@ For detailed experiment analysis, you can found in [Character-based Neural Machi
 # Reference 
 
 - Paper 
-  - [Arxiv version: Character-based Neural Machine Translation. Ling et al. arXiv 2015.](https://arxiv.org/abs/1511.04586)
+  - [arXiv Version: Character-based Neural Machine Translation. Ling et al. arXiv 2015.](https://arxiv.org/abs/1511.04586)
 
   
 - How to use html for alert
