@@ -36,7 +36,7 @@ Attention distillation is similar to distill intermediate representations to pro
 
 The following is overview of their appproach:
 
-![Hu et al. EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-09-08-Attention-Guided_Answer_Distillation_for_Machine_Reading_Comprehension/Guided_attention_to_distill_knowledge.PNG)
+![Hu et al., EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-09-08-Attention-Guided_Answer_Distillation_for_Machine_Reading_Comprehension/Guided_attention_to_distill_knowledge.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Despite that current reading comprehension systems have achieved significant advancements, their promising performances are often obtained at the cost of making an ensemble of numerous models. Besides, existing approaches are also vulnerable to adversarial attacks. This paper tackles these problems by leveraging knowledge distillation, which aims to transfer knowledge from an ensemble model to a single model. They first demonstrate that vanilla knowledge distillation applied to answer span prediction is effective for reading comprehension systems. They then propose two novel approaches that not only penalize the prediction on confusing answers but also guide the training with alignment information distilled from the ensemble. Experiments show that their best student model has only a slight drop of 0.4% F1 on the SQuAD test set compared to the ensemble teacher, while running 12× faster during inference. It even outperforms the teacher on adversarial SQuAD datasets and NarrativeQA benchmark.
