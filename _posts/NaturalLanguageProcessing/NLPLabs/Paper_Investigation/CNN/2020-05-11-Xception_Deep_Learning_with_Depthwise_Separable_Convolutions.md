@@ -45,8 +45,8 @@ They present an interpretation of Inception modules in convolutional neural netw
 # Reference 
 
 - Paper 
-  - [arXiv 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions, Chollet., arXiv 2017](https://arxiv.org/abs/1610.02357v3)
-  - [CVPR 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions, Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
+  - [arXiv 2017 Ver: Xception: Deep Learning with Depthwise Separable Convolutions, Chollet., arXiv 2017](https://arxiv.org/abs/1610.02357v3)
+  - [CVPR 2017 Ver: Xception: Deep Learning with Depthwise Separable Convolutions, Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
