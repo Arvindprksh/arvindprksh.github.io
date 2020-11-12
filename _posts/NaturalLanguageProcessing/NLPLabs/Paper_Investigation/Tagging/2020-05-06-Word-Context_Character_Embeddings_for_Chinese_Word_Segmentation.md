@@ -45,7 +45,7 @@ Neural parsers have benefited from automatically labeled data via dependencycont
 # Reference 
 
 - Paper 
-  - [EMNLP version: Word-Context Character Embeddings for Chinese Word Segmentation. Zhou et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1079/)
+  - [EMNLP Version: Word-Context Character Embeddings for Chinese Word Segmentation. Zhou et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1079/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
