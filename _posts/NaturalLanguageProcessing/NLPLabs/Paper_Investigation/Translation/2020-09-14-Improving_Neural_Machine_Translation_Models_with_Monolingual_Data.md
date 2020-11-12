@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL. 2016.
-subtitle: Title of paper - Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL. 2016.
+title: Improving Neural Machine Translation Models with Monolingual Data
+subtitle: Title of paper - Improving Neural Machine Translation Models with Monolingual Data
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/09/14/Improving_Neural_Machine_Translation_Models_with_Monolingual_Data/
@@ -45,8 +45,8 @@ Neural Machine Translation (NMT) has obtained state-of-the art performance for s
 # Reference 
 
 - Paper 
-  - [Arxiv version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1511.06709)
-  - [ACL 2016 version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/)
+  - [arxiv Version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1511.06709)
+  - [ACL Version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
