@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extensions of recurrent neural network Language model
-subtitle: Title of paper - Extensions of recurrent neural network language model
+title: Extensions of recurrent neural network Language model. Mikolov et al. ICASSP. 2011.
+subtitle: Title of paper - Extensions of recurrent neural network language model. Mikolov et al. ICASSP. 2011.
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/12/06-Extensions_of_Recurrent_Neural_Network_Language_Model
@@ -19,8 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model,Mikolov
- et al.(2011)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
+This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model. Mikolov et al. ICASSP 2011](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
 
 This is for me to studying artificial neural network with NLP field. 
 
@@ -90,7 +89,8 @@ This paper introduce literally extensions of recurrent neural network language m
 
 - Paper 
   - [Extensions of Recurrent Neural Network Language model](https://ieeexplore.ieee.org/abstract/document/5947611)
- 
+  
+- Paper for Reference
   - [A Neural Probabilistic Language Model](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
  
 - How to use html for alert
