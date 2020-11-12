@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This article is just brief summary of [A Taxonomy for Neural Memory Networks. Ma et al. arXiv 2018](https://arxiv.org/abs/1805.00327) and posting for me to study what the memory network is. 
+This article is just brief summary of [A Taxonomy for Neural Memory Networks (Ma et al., arXiv 2018)](https://arxiv.org/abs/1805.00327) and posting for me to study what the memory network is. 
 
 They suggest A taxonomy for Neural Memory Network with RNN, LSTM, Neural Stack, and Neural RAM.
 
@@ -25,7 +25,7 @@ due to this focuses, Memory structure become complex to remember the depth and t
 
 Let's see the taxonmoy they said for memory network. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Taxonomy.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Taxonomy.png)
 
 From now on, I will deal with the the components of taxonomy for memory network. 
 
@@ -35,7 +35,7 @@ As you can see below, The RNN network is composed of three layers: input, recurr
 
 In this paper, the basic RNN structure is described as follows:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_RNN.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_RNN.png)
 
 
 ## LSTM 
@@ -50,14 +50,14 @@ i.e. LSTM and its variants is that previous memories are erased after they are u
 
 In this paper, the basic LSTM structure is described as follows:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_LSTM.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_LSTM.png)
 
 
 Another case : 
 
 LSTM has a problem that the previous memory is erased after it is updated. So there is another architecture to resolve the problem as follows.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_with_LTSM_parallel_memory_slot.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_with_LTSM_parallel_memory_slot.png)
 
 ## Neural stack 
 
@@ -65,7 +65,7 @@ Neural stack is an example which uses a stack as its external memory bank and ge
 
 In this paper, the basic Neural stack structure is described as follows:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_stack.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_stack.png)
 
 To sum up, one stack property is that only the topmost content of the stack can be read or written. Writing to the stack is implemented by three operations:
 
@@ -88,7 +88,7 @@ i.e. since Neural RAM's accessible content is not restricted to the top of the m
 
 In this paper, the basic Neural RAM structure is described as follows:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_RAM.png)
+![Ma et al., arXiv 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2018-10-22-A_Taxonomy_for_Neural_Memory_Networks/A_Taxonomy_for_Neural_Memory_Network_Neural_RAM.png)
 
 As you can see above, The neural RAM  can be seen as an improvement of the neural stack in the sense that all the contents in the memory bank can be read from and written to.
 
@@ -110,13 +110,13 @@ Their Taxonomy includes all the popular memory networks; vanilla recurrent neura
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1805.00327">The paper: A Taxonomy for Neural Memory Networks. Ma et al. arXiv 2018</a>
+  <a href="https://arxiv.org/abs/1805.00327">The paper: A Taxonomy for Neural Memory Networks (Ma et al., arXiv 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [aXiv Version: A Taxonomy for Neural Memory Networks. Ma et al. arXiv 2018](https://arxiv.org/abs/1805.00327)
+  - [aXiv Version: A Taxonomy for Neural Memory Networks (Ma et al., arXiv 2018)](https://arxiv.org/abs/1805.00327)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
