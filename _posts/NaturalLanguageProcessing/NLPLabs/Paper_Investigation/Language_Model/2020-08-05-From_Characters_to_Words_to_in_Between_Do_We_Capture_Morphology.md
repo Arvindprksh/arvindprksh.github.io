@@ -1,7 +1,7 @@
 ---
 layout: post
-title: From Characters to Words to in Between- Do We Capture Morphology?
-subtitle: Title of paper - From Characters to Words to in Between- Do We Capture Morphology?
+title: From Characters to Words to in Between- Do We Capture Morphology?. Vania and Lopez. ACL. 2017. 
+subtitle: Title of paper - From Characters to Words to in Between- Do We Capture Morphology?. Vania and Lopez. ACL. 2017. 
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2020/08/05/From_Characters_to_Words_to_in_Between_Do_We_Capture_Morphology/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and simply arrange it, [From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. 2017 ACL](https://www.aclweb.org/anthology/P17-1184/) I read and studied. 
+This is a brief summary of paper for me to study and simply arrange it, [From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. ACL 2017](https://www.aclweb.org/anthology/P17-1184/) I read and studied. 
 {% include MathJax.html %}
 
 They investigated the composotion function on word using character, morphem, and word with language model task as follows:
@@ -41,8 +41,8 @@ Words can be represented by composing the representations of subword units such 
 # Reference 
 
 - Paper 
-  - [Arxiv version: From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. Arxiv 2017](https://arxiv.org/abs/1704.08352)
-  - [ACL 2017 version: From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. 2017 ACL](https://www.aclweb.org/anthology/P17-1184/)
+  - [arXiv Version: From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. arXiv 2017](https://arxiv.org/abs/1704.08352)
+  - [ACL Version: From Characters to Words to in Between: Do We Capture Morphology?. Vania and Lopez. ACL 2017](https://www.aclweb.org/anthology/P17-1184/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
