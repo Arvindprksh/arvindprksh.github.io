@@ -51,8 +51,8 @@ Bidirectional long short-term memory (biLSTM) networks have recently proven succ
 # Reference 
 
 - Paper 
-   - [Arxiv 2016 version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. arXiv 2016](https://arxiv.org/abs/1604.05529)
-   - [ACL 2016 version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/)
+   - [arXiv Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. arXiv 2016](https://arxiv.org/abs/1604.05529)
+   - [ACL Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
