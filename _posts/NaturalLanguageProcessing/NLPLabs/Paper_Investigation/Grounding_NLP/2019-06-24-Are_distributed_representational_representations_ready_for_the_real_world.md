@@ -50,7 +50,7 @@ Let's see an example of semantic norm data above.
 
 the concepts have various features which is related to perceptual and conceptual meaning.
 
-- Second is CLBS(Devereux et al. 2014): The centre for speech, language and the grain(cslb) concept property norms.
+- Second is CLBS(Devereux et al., 2014): The centre for speech, language and the grain(cslb) concept property norms.
 
 
 As you can see the semantic norm dataset, concept means words and feature means characteristic the words have. 
