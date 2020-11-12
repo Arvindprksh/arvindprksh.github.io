@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1184/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Retrofitting Word Vectors to Semantic Lexicons (Faruqui et al., NAACL 2015)](https://www.aclweb.org/anthology/N15-1184/) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -41,14 +41,14 @@ Vector space word representations are learned from distributional information of
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N15-1184/">The paper: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL 2015</a>
+  <a href="https://www.aclweb.org/anthology/N15-1184/">The paper: Retrofitting Word Vectors to Semantic Lexicons (Faruqui et al., NAACL 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. arXiv 2015](https://arxiv.org/abs/1411.4166)
-  - [NAACL Version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1184/)
+  - [arXiv Version: Retrofitting Word Vectors to Semantic Lexicons (Faruqui et al., arXiv 2015)](https://arxiv.org/abs/1411.4166)
+  - [NAACL Version: Retrofitting Word Vectors to Semantic Lexicons (Faruqui et al., NAACL 2015)](https://www.aclweb.org/anthology/N15-1184/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
