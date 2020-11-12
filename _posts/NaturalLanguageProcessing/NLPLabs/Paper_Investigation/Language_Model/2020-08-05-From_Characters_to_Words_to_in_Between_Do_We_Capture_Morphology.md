@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From Characters to Words to in Between- Do We Capture Morphology?
-subtitle: Title of paper - From Characters to Words to in Between- Do We Capture Morphology?
+subtitle: Title of paper - From Characters to Words to in Between\: Do We Capture Morphology?
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2020/08/05/From_Characters_to_Words_to_in_Between_Do_We_Capture_Morphology/
