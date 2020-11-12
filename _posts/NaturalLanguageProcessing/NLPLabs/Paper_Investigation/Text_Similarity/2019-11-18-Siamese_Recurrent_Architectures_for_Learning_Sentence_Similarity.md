@@ -61,7 +61,7 @@ They present a siamese adaptation of the Long Short-Term Memory (LSTM) network f
 # Reference 
 
 - Paper 
-  - [AAAI 2019 version: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan. AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195)
+  - [AAAI Version: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan. AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
