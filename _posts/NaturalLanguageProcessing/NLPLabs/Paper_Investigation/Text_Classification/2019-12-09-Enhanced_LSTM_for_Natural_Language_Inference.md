@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Enhanced LSTM for Natural Language Inference.  Chen et al. 2017 ACL](https://www.aclweb.org/anthology/P17-1152/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Enhanced LSTM for Natural Language Inference.  Chen et al. ACL 2017](https://www.aclweb.org/anthology/P17-1152/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research related to  Natural Language inference task.
@@ -26,11 +26,11 @@ Entailment task is to predict whether the two sentences are entailment, contradi
 
 Their model is called ESIM (Enhanced Sequential Inference Model) as in the left below figure.
 
-![Chen et al. 2017 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure1.PNG)
+![Chen et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure1.PNG)
 
 In here, they used tree-LSTM as follows:
 
-![Chen et al. 2017 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure2.PNG)
+![Chen et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure2.PNG)
 
 ![Chen et al. 2017 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure3.PNG)
 
@@ -43,7 +43,7 @@ Before classifying, in order to enhance local inference information, they comput
 
 Also they used Bidirectional LSTM to compose local inferences into a fixed-lenght vector:
 
-![Chen et al. 2017 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure4.PNG)
+![Chen et al. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-12-09-Enhanced_LSTM_for_Natural_Language_Inference/ESIM_firgure4.PNG)
 
 Also this paper showed the a variety of sentence embedding for Natural languae Inference task, suggesting their model outputperform the previous models: 
 
@@ -55,14 +55,14 @@ Reasoning and inference are central to human and artificial intelligence. Modeli
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Enhanced LSTM for Natural Language Inference  Chen et al. 2017 ACL</a>
+  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Enhanced LSTM for Natural Language Inference  Chen et al. ACL 2017</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Enhanced LSTM for Natural Language Inference.  Chen et al. 2017 arXiv](https://arxiv.org/abs/1609.06038)
-  - [ACL 2017 version: Enhanced LSTM for Natural Language Inference.  Chen et al. 2017 ACL](https://www.aclweb.org/anthology/P17-1152/)
+  - [arXiv Version: Enhanced LSTM for Natural Language Inference.  Chen et al. arXiv 2017](https://arxiv.org/abs/1609.06038)
+  - [ACL Version: Enhanced LSTM for Natural Language Inference.  Chen et al. ACL 2017](https://www.aclweb.org/anthology/P17-1152/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
