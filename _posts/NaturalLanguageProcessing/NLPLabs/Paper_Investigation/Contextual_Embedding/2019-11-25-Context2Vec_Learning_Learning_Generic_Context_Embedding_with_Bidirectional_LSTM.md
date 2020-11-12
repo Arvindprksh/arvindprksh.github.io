@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [context2vec: Learning Generic Context Embedding with Bidirectional LSTM, Melamud et al., CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [context2vec: Learning Generic Context Embedding with Bidirectional LSTM (Melamud et al., CoNLL 2016)](https://www.aclweb.org/anthology/K16-1006/) I read and studied. 
 {% include MathJax.html %}
 
 This paper shows how to embed sentential context into a fixed-length vector with Bidirectional LSTM. 
@@ -44,7 +44,7 @@ sense disambiguation tasks. They release their [code and pretrained models](http
 # Reference 
 
 - Paper 
-  - [ACL Version: context2vec- Learning Generic Context Embedding with Bidirectional LSTM, Melamud et al., CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/)
+  - [ACL Version: context2vec- Learning Generic Context Embedding with Bidirectional LSTM (Melamud et al., CoNLL 2016)](https://www.aclweb.org/anthology/K16-1006/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
