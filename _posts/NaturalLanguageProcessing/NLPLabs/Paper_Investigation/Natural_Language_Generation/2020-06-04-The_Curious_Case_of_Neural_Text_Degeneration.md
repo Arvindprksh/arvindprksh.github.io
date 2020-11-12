@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR 2020](https://openreview.net/forum?id=rygGQyrFvH)
+This is a brief summary of paper for me to note it, [The Curious Case of Neural Text Degeneration (Holtzman et al., ICLR 2020)](https://openreview.net/forum?id=rygGQyrFvH)
 
 {% include MathJax.html %}
 
@@ -109,14 +109,14 @@ Despite considerable advances in neural language modeling, it remains an open qu
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=rygGQyrFvH">The paper: The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR 2020</a>
+  <a href="https://openreview.net/forum?id=rygGQyrFvH">The paper: The Curious Case of Neural Text Degeneration (Holtzman et al., ICLR 2020)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: The Curious Case of Neural Text Degeneration. Holtzman et al. arXiv 2020](https://arxiv.org/abs/1904.09751)
-  - [ICLR Version: The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR 2020](https://openreview.net/forum?id=rygGQyrFvH)
+  - [arXiv Version: The Curious Case of Neural Text Degeneration (Holtzman et al., arXiv 2020)](https://arxiv.org/abs/1904.09751)
+  - [ICLR Version: The Curious Case of Neural Text Degeneration (Holtzman et al., ICLR 2020)](https://openreview.net/forum?id=rygGQyrFvH)
   
  
 - How to use html for alert
