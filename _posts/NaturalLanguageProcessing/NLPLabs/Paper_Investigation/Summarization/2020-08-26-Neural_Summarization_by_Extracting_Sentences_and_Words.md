@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neural Summarization by Extracting Sentences and Words
-subtitle: Title of paper - Neural Summarization by Extracting Sentences and Words
+title: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL. 2016.
+subtitle: Title of paper - Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL. 2016.
 category: NLP papers - Summarization
 tags: [neural network, extractive summarization]
 permalink: /2020/08/26/Neural_Summarization_by_Extracting_Sentences_and_Words/
@@ -54,8 +54,8 @@ Traditional approaches to extractive summarization rely heavily on humanengineer
 # Reference 
 
 - Paper 
-  - [Arxiv version: Neural Summarization by Extracting Sentences and Words.  Cheng and Lapata. Arxiv 2016](https://arxiv.org/abs/1603.07252)
-  - [ACL 2016 version: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL 2016](https://www.aclweb.org/anthology/P16-1046/)
+  - [arXiv Version: Neural Summarization by Extracting Sentences and Words.  Cheng and Lapata. arXiv 2016](https://arxiv.org/abs/1603.07252)
+  - [ACL Version: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL 2016](https://www.aclweb.org/anthology/P16-1046/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
