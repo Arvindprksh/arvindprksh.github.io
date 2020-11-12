@@ -93,6 +93,7 @@ they used CNN network for LM(Language model) on morphologically richer languages
 
 - Paper 
   - [arXiv Version: Character-Aware Neural Language Models. Kim et al. arXiv 2016](https://arxiv.org/abs/1508.06615v4)
+  - [AAAI Version: Character-Aware Neural Language Models. Kim et al. AAAI 2016](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewFile/12489/12017)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
