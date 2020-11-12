@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Character-Aware Neural Language Models
-subtitle: Title of paper - Character-Aware Neural Language Models
+title: Character-Aware Neural Language Models. Kim et al. AAAI. 2016.
+subtitle: Title of paper - Character-Aware Neural Language Models. Kim et al. AAAI. 2016. 
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/11/30/Character-Aware_Neural_Language_Models/
@@ -19,7 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of [Character-Aware Neural Language Models, Yoon Kim et al.(2015)](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
+This article is just brief summary of [Character-Aware Neural Language Models, Kim et al. AAAI 2016](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
 
 Their neural network consists of CNN for character-level as input, also high-way network before LSTM and finally LSTM-LM(Language model).
 
@@ -92,7 +92,7 @@ they used CNN network for LM(Language model) on morphologically richer languages
 # Reference 
 
 - Paper 
-  - [Character-Aware Neural Language Models](https://arxiv.org/abs/1508.06615v4)
+  - [arXiv Version: Character-Aware Neural Language Models. Kim et al. arXiv 2016](https://arxiv.org/abs/1508.06615v4)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
