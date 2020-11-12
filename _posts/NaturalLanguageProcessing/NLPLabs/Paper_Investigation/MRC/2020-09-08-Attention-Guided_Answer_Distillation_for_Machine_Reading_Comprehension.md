@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attention-Guided Answer Distillation for Machine Reading Comprehension
-subtitle: Title of paper - Attention-Guided Answer Distillation for Machine Reading Comprehension
+title: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP. 2018.
+subtitle: Title of paper - Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP. 2018.
 category: NLP papers - Question Answering
 tags: [neural network, machine reading comprehension, question answering]
 permalink: /2020/09/08/Attention-Guided_Answer_Distillation_for_Machine_Reading_Comprehension/
@@ -49,8 +49,8 @@ Despite that current reading comprehension systems have achieved significant adv
 # Reference 
 
 - Paper 
-  - [Arxiv version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. Arxiv 2018](https://arxiv.org/abs/1808.07644)
-  - [EMNLP 2018 version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1232/)
+  - [arXiv version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. arXiv 2018](https://arxiv.org/abs/1808.07644)
+  - [EMNLP version: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1232/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
