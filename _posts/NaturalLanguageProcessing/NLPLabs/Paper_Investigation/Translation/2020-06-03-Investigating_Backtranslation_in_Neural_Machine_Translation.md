@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Investigating Backtranslation in Neural Machine Translation
-subtitle: Title of paper - Investigating Backtranslation in Neural Machine Translation
+title: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv. 2018.
+subtitle: Title of paper - Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv. 2018.
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2020/06/03/Investigating_Backtranslation_in_Neural_Machine_Translation/
