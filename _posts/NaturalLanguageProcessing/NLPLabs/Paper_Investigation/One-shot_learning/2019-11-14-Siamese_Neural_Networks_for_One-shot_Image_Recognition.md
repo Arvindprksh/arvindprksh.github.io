@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS. 2015.
-subtitle: Title of paper - Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS. 2015.
+title: Siamese Neural Networks for One-shot Image Recognition
+subtitle: Title of paper - Siamese Neural Networks for One-shot Image Recognition
 category: NLP papers - One(Few or Zero)-shot Learning
 tags: [neural network, image classification]
 permalink: /2019/11/14/Siamese_Neural_Networks_for_One-shot_Image_Recognition/
