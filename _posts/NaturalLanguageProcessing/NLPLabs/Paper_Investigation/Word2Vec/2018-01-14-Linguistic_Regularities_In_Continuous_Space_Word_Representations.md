@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-The paper, "[Linguisitic Regularities in Continuous Space Word Representation, Mikolov et al.(2013)](https://www.aclweb.org/anthology/N13-1090)" explains how to evaluate sytantic and semantic regularities between the induced word vectors, with a form as "king - Man + Woman" result in a vector veryl clost to "Queen".
+The paper, "[Linguisitic Regularities in Continuous Space Word Representation, Mikolov et al. NAACL 2013](https://www.aclweb.org/anthology/N13-1090)" explains how to evaluate sytantic and semantic regularities between the induced word vectors, with a form as "king - Man + Woman" result in a vector veryl clost to "Queen".
 
 i.e. When you evaluate syntatic and semantic regularities with word vector representations in continous space. you have to create a test set of analogy questions of the form "a is to b as c is to \_\_\_".  i.e. If you know a, b, and c words. what is \_\_\_?
 
@@ -55,13 +55,13 @@ If you want to download the data set this paper used, visit <a href="http://rese
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations</a>
+  <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations, Mikolov et al. NAACL 2013</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Linguistic Regularities in Continuous Space Word Representations](https://www.aclweb.org/anthology/N13-1090)
+  - [NAACL Version: Linguistic Regularities in Continuous Space Word Representations, Mikolov et al. NAACL 2013](https://www.aclweb.org/anthology/N13-1090)
  
 - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
