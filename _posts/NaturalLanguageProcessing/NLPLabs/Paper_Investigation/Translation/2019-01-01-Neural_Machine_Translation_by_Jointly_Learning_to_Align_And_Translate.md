@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR. 2015.
-subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR. 2015.
+title: Neural Machine Translation By Jointly Learning to align and translate
+subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/01/01/Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/
@@ -165,7 +165,7 @@ This paper explained how to pay attention on NMT(neural machine translation) tas
 # Reference 
 
 - Paper 
-  - [Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR 2015](https://arxiv.org/abs/1409.0473)
+  - [arXiv Version: Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. arXiv 2015](https://arxiv.org/abs/1409.0473)
   
  
 - How to use html for alert
