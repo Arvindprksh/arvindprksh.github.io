@@ -18,7 +18,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning, Lucy and Gauthier. RoboNLP-WS 2017)](https://www.aclweb.org/anthology/W17-2810)"
+This posting is summary for my study about the paper, "[Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning (Lucy and Gauthier., RoboNLP-WS 2017)](https://www.aclweb.org/anthology/W17-2810)"
 
 Befere entering deep, I was wondering what is the Language grounding. 
 
@@ -75,13 +75,13 @@ Distributional word representation methods exploit word co-occurrences to build 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> Lucy and Gauthier. RoboNLP-WS 2017.
+  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> (Lucy and Gauthier., RoboNLP-WS 2017)
 </div>
 
 # Reference 
 
 - Paper 
-  - [RoboNLP-WS Version: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning. Lucy and Gauthier. RoboNLP-WS 2017](https://www.aclweb.org/anthology/W17-2810)
+  - [RoboNLP-WS Version: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning (Lucy and Gauthier., RoboNLP-WS 2017)](https://www.aclweb.org/anthology/W17-2810)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
