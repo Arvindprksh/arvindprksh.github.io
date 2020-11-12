@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL. 2016.
-subtitle: Title of paper - Neural Summarization by Extracting Sentences and Words. Cheng and Lapata. ACL. 2016.
+title: Neural Summarization by Extracting Sentences and Words
+subtitle: Title of paper - Neural Summarization by Extracting Sentences and Words
 category: NLP papers - Summarization
 tags: [neural network, extractive summarization]
 permalink: /2020/08/26/Neural_Summarization_by_Extracting_Sentences_and_Words/
