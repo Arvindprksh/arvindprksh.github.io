@@ -49,8 +49,8 @@ State-of-the-art named entity recognition systems rely heavily on hand-crafted f
 # Reference 
 
 - Paper 
-  - [Arxiv version: Neural Architectures for Named Entity Recognition. Lample et al. arXiv 2016](https://arxiv.org/abs/1603.01360)
-  - [NAACL 2016 version: Neural Architectures for Named Entity Recognition. Lample et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1030/)
+  - [arXiv Version: Neural Architectures for Named Entity Recognition. Lample et al. arXiv 2016](https://arxiv.org/abs/1603.01360)
+  - [NAACL Version: Neural Architectures for Named Entity Recognition. Lample et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1030/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
