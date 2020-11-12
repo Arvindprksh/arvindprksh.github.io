@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [How transferable are features in deep neural networks?. Yosinski et al. NIPS 2014](https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks)
+This is a brief summary of paper for me to note it, [How transferable are features in deep neural networks? (Yosinski et al., NIPS 2014)](https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks)
 
 {% include MathJax.html %}
 
@@ -31,7 +31,7 @@ However, the last-layer features, they called specific, is greatly dependent on 
 Let's see the figure they demonstrated :
 
 
-![Yosinski et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2019-09-24-How_Transferable_are_Features_in_Deep_Neural_Networks/how_transferable_are_features_in_deep_neural_networks.JPG)
+![Yosinski et al., NIPS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Neural_Network/2019-09-24-How_Transferable_are_Features_in_Deep_Neural_Networks/how_transferable_are_features_in_deep_neural_networks.JPG)
 
 
 
@@ -40,14 +40,14 @@ Many deep neural networks trained on natural images exhibit a curious phenomenon
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks">The paper: How transferable are features in deep neural networks?, Yosinski et al. (2014)</a>
+  <a href="https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks">The paper: How transferable are features in deep neural networks? (Yosinski et al. NIPS 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ArXiv version: How transferable are features in deep neural networks?, Yosinski et al. arXiv 2014](https://arxiv.org/abs/1411.1792)
-  - [NIPS version: How transferable are features in deep neural networks?, Yosinski et al. NIPS 2014](https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks)
+  - [ArXiv Version: How transferable are features in deep neural networks? (Yosinski et al. arXiv 2014)](https://arxiv.org/abs/1411.1792)
+  - [NIPS Version: How transferable are features in deep neural networks? (Yosinski et al. NIPS 2014)](https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks)
   
  
 - How to use html for alert
