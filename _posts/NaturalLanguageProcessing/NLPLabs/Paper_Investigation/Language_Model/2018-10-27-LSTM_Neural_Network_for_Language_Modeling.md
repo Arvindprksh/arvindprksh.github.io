@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LSTM Neural Network for Language Modeling
-subtitle: Title of paper - LSTM Neural Network for Language Modeling
+title: LSTM Neural Network for Language Modeling. Martin Sundermeyer et al. INTERSPEECH. 2012.
+subtitle: Title of paper - LSTM Neural Network for Language Modeling. Martin Sundermeyer et al. INTERSPEECH. 2012.
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/10/27/LSTM_Neural_Network_for_Language_Modeling/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This page is brief summary of [LSTM Neural Network for Language Modeling, Martin Sundermeyer et al.(2012)](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
+This page is brief summary of [LSTM Neural Network for Language Modeling, Martin Sundermeyer et al. INTERSPEECH 2012](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
 
 Language model means If you have text which is "A B C X" and already know "A B C", and then from corpus, you can expect whether What kind of word, X appears in the context.
 
@@ -62,7 +62,7 @@ This paper said the result of using LSTM neural network on language model with c
 # Reference 
 
 - Paper 
-  - [LSTM_Neural_Network_for_Language_Modeling](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html)
+  - [INTERSPEECH Version: LSTM_Neural_Network_for_Language_Modeling. Martin Sundermeyer et al. INTERSPEECH 2012](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
