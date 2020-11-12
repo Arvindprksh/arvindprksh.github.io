@@ -68,8 +68,8 @@ They propose a simple solution to use a single Neural Machine Translation (NMT) 
 # Reference 
 
 - Paper 
-  - [ArXiv version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. ArXiv 2017](https://arxiv.org/abs/1611.04558)
-  - [TACL version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. TACL 2017](https://www.aclweb.org/anthology/Q17-1024/)
+  - [arXiv Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. arXiv 2017](https://arxiv.org/abs/1611.04558)
+  - [TACL Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. TACL 2017](https://www.aclweb.org/anthology/Q17-1024/)
   
  
 - How to use html for alert
