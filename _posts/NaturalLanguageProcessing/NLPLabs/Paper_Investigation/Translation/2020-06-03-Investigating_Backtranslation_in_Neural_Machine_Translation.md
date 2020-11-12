@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv. 2018.
-subtitle: Title of paper - Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv. 2018.
+title: Investigating Backtranslation in Neural Machine Translation
+subtitle: Title of paper - Investigating Backtranslation in Neural Machine Translation
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2020/06/03/Investigating_Backtranslation_in_Neural_Machine_Translation/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Investigating Backtranslation in Neural Machine Translation. Poncelas et al. ArXiv 2018](https://arxiv.org/abs/1804.06189v1)
+This is a brief summary of paper for me to note it, [Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv 2018](https://arxiv.org/abs/1804.06189v1)
 
 {% include MathJax.html %}
 
@@ -52,7 +52,7 @@ A prerequisite for training corpus-based machine translation (MT) systems – ei
 # Reference 
 
 - Paper 
-  - [ArXiv version: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. ArXiv 2018](https://arxiv.org/abs/1804.06189v1)
+  - [arXiv version: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv 2018](https://arxiv.org/abs/1804.06189v1)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
