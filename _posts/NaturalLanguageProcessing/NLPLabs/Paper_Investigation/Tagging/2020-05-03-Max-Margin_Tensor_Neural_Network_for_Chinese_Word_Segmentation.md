@@ -46,19 +46,19 @@ Finally it evaluates score for each tag types.
 
 They propose Max-margin Tensor Neural Network to model tag-tag, tag-character and character-character interactions in neural network as follows:
 
-![Pei et al. 2014 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/feature_engineering.PNG)
+![Pei et al. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/feature_engineering.PNG)
 
 
 They regarded each slice of the tensor as capturing a specific type of tag-character interaction and character-character interaction. 
 
 The following is bilinear form with tensor on vector a.
 
-![Pei et al. 2014 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/tensor-based_transformation.PNG)
+![Pei et al. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/tensor-based_transformation.PNG)
 
 
 For tensor operation, it is expensive and has the risk of overfitting so they proposed tesor factorization as follows:
 
-![Pei et al. 2014 ACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/tensor_factorization.PNG)
+![Pei et al. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-03-Max-Margin_Tensor_Neural_Network_for_Chinese_Word_Segmentation/tensor_factorization.PNG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -66,7 +66,7 @@ Recently, neural network models for natural language processing tasks have been 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P14-1028/">The paper: Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al. 2014 ACL</a>
+  <a href="https://www.aclweb.org/anthology/P14-1028/">The paper: Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al. ACL 2014</a>
 </div>
 
 # Reference 
