@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neural Machine Translation of Rare Words with Subword Units
-subtitle: Title of paper - Neural Machine Translation of Rare Words with Subword Units
+title: Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL. 2016.
+subtitle: Title of paper - Neural Machine Translation of Rare Words with Subword Units. Sennrich et al. ACL. 2016.
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/06/23/Neural_Machine_Translation_of_Rare_Words_with_Subword_Units/
