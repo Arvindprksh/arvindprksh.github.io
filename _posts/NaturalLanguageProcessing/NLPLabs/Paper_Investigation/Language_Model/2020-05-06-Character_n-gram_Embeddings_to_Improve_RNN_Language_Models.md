@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Character n-gram Embeddings to Improve RNN Language Models
-subtitle: Title of paper - Character n-gram Embeddings to Improve RNN Language Models
+title: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI. 2019.
+subtitle: Title of paper - Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI. 2019.
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2020/05/06/Character_n-gram_Embeddings_to_Improve_RNN_Language_Models/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and simply arrange it, [Character n-gram Embeddings to Improve RNN Language Models. Takase et al. 2019 AAAI](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440) I read and studied. 
+This is a brief summary of paper for me to study and simply arrange it, [Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -44,8 +44,8 @@ This paper proposes a novel Recurrent Neural Network (RNN) language model that t
 # Reference 
 
 - Paper 
-  - [Arxiv version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. Arxiv 2019](https://arxiv.org/abs/1906.05506)
-  - [AAAI 2019 version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. 2019 AAAI](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440)
+  - [arXiv Version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. arXiv 2019](https://arxiv.org/abs/1906.05506)
+  - [AAAI  Version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
