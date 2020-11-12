@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Improving Neural Machine Translation Models with Monolingual Data
-subtitle: Title of paper - Improving Neural Machine Translation Models with Monolingual Data
+title: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL. 2016.
+subtitle: Title of paper - Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016.
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/09/14/Improving_Neural_Machine_Translation_Models_with_Monolingual_Data/
