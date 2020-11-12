@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [From word embeddings to document distances. Kusner et al. ICML 2015](https://dl.acm.org/doi/10.5555/3045118.3045221) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [From word embeddings to document distances (Kusner et al., ICML 2015)](https://dl.acm.org/doi/10.5555/3045118.3045221) I read and studied. 
 {% include MathJax.html %}
 
 WMD use word embeddings to calculate the distance so that it can calculate even though there is no common word. The assumption is that similar words should have similar vectors.
@@ -47,13 +47,13 @@ measures the dissimilarity between two text documents as the minimum amount of d
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://dl.acm.org/doi/10.5555/3045118.304522">The paper: From word embeddings to document distances. Kusner et al. 2015 ICML</a>
+  <a href="https://dl.acm.org/doi/10.5555/3045118.304522">The paper: From word embeddings to document distances (Kusner et al., ICML 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ICML Version: From word embeddings to document distances. Kusner et al. ICML 2015](https://dl.acm.org/doi/10.5555/3045118.3045221)
+  - [ICML Version: From word embeddings to document distances (Kusner et al., ICML 2015)](https://dl.acm.org/doi/10.5555/3045118.3045221)
   
   
 - How to use html for alert
