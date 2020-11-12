@@ -17,14 +17,14 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [RACE: Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1082/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [RACE: Large-scale ReAding Comprehension Dataset From Examinations (Lai et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1082/) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed the new dataset for reading comprehension that they called RACE.
 
 An example of RACE is as follows:
 
-![Lai et al. EMNLP 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-06-21-RACE_Large-scale_ReAding_Comprehension_Dataset_From_Examinations/RACE_sample.PNG)
+![Lai et al., EMNLP 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/MRC/2020-06-21-RACE_Large-scale_ReAding_Comprehension_Dataset_From_Examinations/RACE_sample.PNG)
 
 
 They explain strenghts of their dataset:
@@ -64,14 +64,14 @@ They present RACE, a new dataset for benchmark evaluation of methods in the read
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D17-1082/">The paper: RACE: Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP 2017</a>
+  <a href="https://www.aclweb.org/anthology/D17-1082/">The paper: RACE: Large-scale ReAding Comprehension Dataset From Examinations (Lai et al., EMNLP 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. arXiv 2017](https://arxiv.org/abs/1704.04683)
-  - [EMNLP Version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1082/)
+  - [arXiv Version: RACE Large-scale ReAding Comprehension Dataset From Examinations (Lai et al. arXiv 2017)](https://arxiv.org/abs/1704.04683)
+  - [EMNLP Version: RACE Large-scale ReAding Comprehension Dataset From Examinations (Lai et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1082/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
