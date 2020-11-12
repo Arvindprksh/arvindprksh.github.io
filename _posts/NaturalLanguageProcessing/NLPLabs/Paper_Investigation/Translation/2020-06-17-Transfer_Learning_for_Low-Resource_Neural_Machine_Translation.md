@@ -41,8 +41,8 @@ The encoder-decoder framework for neural machine translation (NMT) has been show
 # Reference 
 
 - Paper 
-  - [ArXiv version: Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. ArXiv 2016](https://arxiv.org/abs/1604.02201)
-  - [EMNLP version: Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. EMNLP 2016](https://www.aclweb.org/anthology/D16-1163/)
+  - [arXiv Version: Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. arXiv 2016](https://arxiv.org/abs/1604.02201)
+  - [EMNLP Version: Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. EMNLP 2016](https://www.aclweb.org/anthology/D16-1163/)
   
  
 - How to use html for alert
