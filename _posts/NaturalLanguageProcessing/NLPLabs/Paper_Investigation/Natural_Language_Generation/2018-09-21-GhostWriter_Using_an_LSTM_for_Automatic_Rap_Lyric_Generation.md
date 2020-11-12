@@ -77,7 +77,7 @@ This paer demonstrate the effectiveness to generate unconstrained rap lyrics usi
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221">The paper: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation (Potash et al., EMNLP 2015)/a>
+  <a href="https://aclanthology.coli.uni-saarland.de/papers/D15-1221/d15-1221">The paper: GhostWriter: Using an LSTM for Automatic Rap Lyric Generation (Potash et al., EMNLP 2015)</a>
 </div>
 
 # Reference 
