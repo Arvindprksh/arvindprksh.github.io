@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The Curious Case of Neural Text Degeneration
-subtitle: Title of paper - The Curious Case of Neural Text Degeneration
+title: The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR. 2020.
+subtitle: Title of paper - The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR. 2020.
 category: NLP papers - NLG
 tags: [neural network, generataion]
 permalink: /2020/06/04/The_Curious_Case_of_Neural_Text_Degeneration/
@@ -115,8 +115,8 @@ Despite considerable advances in neural language modeling, it remains an open qu
 # Reference 
 
 - Paper 
-  - [ArXiv version: The Curious Case of Neural Text Degeneration. Holtzman et al. ArXiv 2020](https://arxiv.org/abs/1904.09751)
-  - [ICLR version: The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR 2020](https://openreview.net/forum?id=rygGQyrFvH)
+  - [arXiv Version: The Curious Case of Neural Text Degeneration. Holtzman et al. arXiv 2020](https://arxiv.org/abs/1904.09751)
+  - [ICLR Version: The Curious Case of Neural Text Degeneration. Holtzman et al. ICLR 2020](https://openreview.net/forum?id=rygGQyrFvH)
   
  
 - How to use html for alert
