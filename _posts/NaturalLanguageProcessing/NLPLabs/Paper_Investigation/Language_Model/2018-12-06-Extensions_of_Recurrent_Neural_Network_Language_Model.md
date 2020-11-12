@@ -19,7 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model. Mikolov et al. ICASSP 2011](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
+This article is just brief summary of the paper, [Extensions of Recurrent Neural Network Language model (Mikolov et al., ICASSP 2011)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5947611).
 
 This is for me to studying artificial neural network with NLP field. 
 
@@ -33,7 +33,7 @@ They also said recurrent neural network can perform **clustering of similar hist
 
 Their simple recurrent neural network is like :
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Extensions_of_Recurrent_Neural_Network_Language_Model/simple_reccurent_neural_network.png)
+![Mikolov et al., ICASSP 2011](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Extensions_of_Recurrent_Neural_Network_Language_Model/simple_reccurent_neural_network.png)
 
 As you can check their original model, recurrent neural network, they here also used sigmoid as activation function in hidden layer and softmax function in output layer as probability distribution function.
 
@@ -43,7 +43,7 @@ So they were saying the network learned to remember information for several time
 
 The following figure is the result of BPTT depeding on the number of BPTT steps.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Extensions_of_Recurrent_Neural_Network_Language_Model/BPTT_effect.png)
+![Mikolov et al., ICASSP 2011](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-12-06-Extensions_of_Recurrent_Neural_Network_Language_Model/BPTT_effect.png)
 
 They were also saying the compuational bottlneck is because of the size of vocabularies.
 
@@ -82,13 +82,13 @@ This paper introduce literally extensions of recurrent neural network language m
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://ieeexplore.ieee.org/abstract/document/5947611">The paper: Extensions of recurrent neural network language model</a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/5947611">The paper: Extensions of recurrent neural network language model (Mikolov et al., ICASSP 2011)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Extensions of Recurrent Neural Network Language model](https://ieeexplore.ieee.org/abstract/document/5947611)
+  - [ICASSP Version: Extensions of Recurrent Neural Network Language model (Mikolov et al., ICASSP 2011)](https://ieeexplore.ieee.org/abstract/document/5947611)
   
 - Paper for Reference
   - [A Neural Probabilistic Language Model](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
