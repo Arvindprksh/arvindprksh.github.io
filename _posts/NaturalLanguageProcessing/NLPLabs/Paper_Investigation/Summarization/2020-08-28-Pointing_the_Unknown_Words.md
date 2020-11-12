@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointing the Unknown Words. Gulcehre et al. ACL. 2016.
-subtitle: Title of paper - Pointing the Unknown Words.  Gulcehre et al. ACL. 2016.
+title: Pointing the Unknown Words
+subtitle: Title of paper - Pointing the Unknown Words
 category: NLP papers - Summarization
 tags: [neural network, extractive summarization]
 permalink: /2020/08/28/Pointing_the_Unknown_Words/
