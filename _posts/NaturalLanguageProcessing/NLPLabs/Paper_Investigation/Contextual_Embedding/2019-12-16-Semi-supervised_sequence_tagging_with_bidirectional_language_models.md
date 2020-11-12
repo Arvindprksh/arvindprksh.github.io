@@ -45,7 +45,7 @@ Pre-trained word embeddings learned from unlabeled text have become a standard c
 # Reference 
 
 - Paper 
-  - [Arxiv version: Semi-supervised sequence tagging with bidirectional language models. Peters et al. ACL 2017](https://arxiv.org/pdf/1705.00108.pdf)
+  - [arXiv version: Semi-supervised sequence tagging with bidirectional language models. Peters et al. arXiv 2017](https://arxiv.org/pdf/1705.00108.pdf)
   - [ACL 2017 version: Semi-supervised sequence tagging with bidirectional language models. Peters et al. ACL 2017](https://www.aclweb.org/anthology/P17-1161/)
   
 - How to use html for alert
