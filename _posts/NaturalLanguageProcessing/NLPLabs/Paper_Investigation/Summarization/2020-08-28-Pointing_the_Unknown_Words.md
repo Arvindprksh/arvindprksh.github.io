@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Pointing the Unknown Words. Gulcehre et al. ACL 2016](https://www.aclweb.org/anthology/P16-1014/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Pointing the Unknown Words. (Gulcehre et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1014/) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -45,21 +45,21 @@ As per this problem, this paper proposed the way to point the unknown word from 
 
 So they used pointer softmax which consists of two types, location softmax and shortlist softmax as follows. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-28-Pointing_the_Unknown_Words/pointer_softmax.PNG)
+![Gulcehre et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2020-08-28-Pointing_the_Unknown_Words/pointer_softmax.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 The problem of rare and unknown words is an important issue that can potentially effect the performance of many NLP systems, including traditional count-based and deep learning models. They propose a novel way to deal with the rare and unseen words for the neural network models using attention. Their model uses two softmax layers in order to predict the next word in conditional language models: one predicts the location of a word in the source sentence, and the other predicts a word in the shortlist vocabulary. At each timestep, the decision of which softmax layer to use is adaptively made by an MLP which is conditioned on the context. They motivate this work from a psychological evidence that humans naturally have a tendency to point towards objects in the context or the environment when the name of an object is not known. Using their proposed model, they observe improvements on two tasks, neural machine translation on the Europarl English to French parallel corpora and text summarization on the Gigaword dataset.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P16-1014/">The paper: Pointing the Unknown Words. Gulcehre et al. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/P16-1014/">The paper: Pointing the Unknown Words (Gulcehre et al., ACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Pointing the Unknown Words.  Gulcehre et al. arXiv 2016](https://arxiv.org/abs/1603.08148)
-  - [ACL Version: Pointing the Unknown Words. Gulcehre et al. ACL 2016](https://www.aclweb.org/anthology/P16-1014/)
+  - [arXiv version: Pointing the Unknown Words (Gulcehre et al., arXiv 2016)](https://arxiv.org/abs/1603.08148)
+  - [ACL Version: Pointing the Unknown Words (Gulcehre et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1014/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
