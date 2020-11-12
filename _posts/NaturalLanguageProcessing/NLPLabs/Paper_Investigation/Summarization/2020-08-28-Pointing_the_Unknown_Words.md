@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointing the Unknown Words
-subtitle: Title of paper - Pointing the Unknown Words
+title: Pointing the Unknown Words. Gulcehre et al. ACL. 2016.
+subtitle: Title of paper - Pointing the Unknown Words.  Gulcehre et al. ACL. 2016.
 category: NLP papers - Summarization
 tags: [neural network, extractive summarization]
 permalink: /2020/08/28/Pointing_the_Unknown_Words/
@@ -58,8 +58,8 @@ The problem of rare and unknown words is an important issue that can potentially
 # Reference 
 
 - Paper 
-  - [Arxiv version: Pointing the Unknown Words.  Gulcehre et al. Arxiv 2016](https://arxiv.org/abs/1603.08148)
-  - [ACL 2016 version: Pointing the Unknown Words. Gulcehre et al. ACL 2016](https://www.aclweb.org/anthology/P16-1014/)
+  - [arXiv version: Pointing the Unknown Words.  Gulcehre et al. arXiv 2016](https://arxiv.org/abs/1603.08148)
+  - [ACL Version: Pointing the Unknown Words. Gulcehre et al. ACL 2016](https://www.aclweb.org/anthology/P16-1014/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
