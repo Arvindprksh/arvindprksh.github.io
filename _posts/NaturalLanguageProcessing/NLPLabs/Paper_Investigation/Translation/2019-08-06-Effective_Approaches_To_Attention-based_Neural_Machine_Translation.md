@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Effective Approaches to Attention-based Neural Machine Translation
-subtitle: Title of paper - Effective Approaches to Attention-based Neural Machine Translation
+title: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP. 2016.
+subtitle: Title of paper - Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP. 2016.
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/08/06/Effective_Approaches_To_Attention-based_Neural_Machine_Translation/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study it, [Effective Approaches to Attention-based Neural Machine Translation, Luong et al. (2016)](https://arxiv.org/abs/1508.04025) 
+This is a brief summary of paper for me to study it, [Effective Approaches to Attention-based Neural Machine Translation, Luong et al. EMNLP. 2015](https://arxiv.org/abs/1508.04025) 
 
 The reason that I am writing this post is for me to organize about studying what the Attention is in deep learning.
 
