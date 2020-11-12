@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL. 2015.
-subtitle: Title of paper - Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation. Xing et al. NAACL. 2015.
+title: Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation
+subtitle: Title of paper - Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation
 category: NLP papers - Cross-lingual Word Embedding
 tags: [cross_lingual_word_embedding]
 permalink: /2020/06/01/Normalized_Word_Embedding_and_Orthogonal_Transform_for_Bilingual_Word_Translation/
