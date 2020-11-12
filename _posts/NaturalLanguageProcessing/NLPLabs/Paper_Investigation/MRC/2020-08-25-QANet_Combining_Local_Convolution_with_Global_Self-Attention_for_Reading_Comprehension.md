@@ -1,7 +1,7 @@
 ---
 layout: post
-title: QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR. 2018.
-subtitle: Title of paper - QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR. 2018.
+title: QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension
+subtitle: Title of paper - QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension
 category: NLP papers - Question Answering
 tags: [neural network, machine reading comprehension, question answering]
 permalink: /2020/08/25/QANet_Combining_Local_Convolution_with_Global_Self-Attention_for_Reading_Comprehension/
