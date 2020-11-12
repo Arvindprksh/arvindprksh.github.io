@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP. 2018.
-subtitle: Title of paper - Attention-Guided Answer Distillation for Machine Reading Comprehension. Hu et al. EMNLP. 2018.
+title: Attention-Guided Answer Distillation for Machine Reading Comprehension
+subtitle: Title of paper - Attention-Guided Answer Distillation for Machine Reading Comprehension
 category: NLP papers - Question Answering
 tags: [neural network, machine reading comprehension, question answering]
 permalink: /2020/09/08/Attention-Guided_Answer_Distillation_for_Machine_Reading_Comprehension/
