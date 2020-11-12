@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. 2012)](https://ieeexplore.ieee.org/document/6289079) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079) I read and studied. 
 {% include MathJax.html %}
 
 I was interested in WordPiece model. The reason is When I read the paper published by Google they used **WordPiece** model.
@@ -91,7 +91,7 @@ This paper describe the techniques used to handle an infinite vocabulary and how
 
 - Paper 
   - [Google AI Research: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. 2012)](https://ai.google/research/pubs/pub37842/)
-  - [ICASSP 2012: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. 2012)](https://ieeexplore.ieee.org/document/6289079)
+  - [ICASSP Ver: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
