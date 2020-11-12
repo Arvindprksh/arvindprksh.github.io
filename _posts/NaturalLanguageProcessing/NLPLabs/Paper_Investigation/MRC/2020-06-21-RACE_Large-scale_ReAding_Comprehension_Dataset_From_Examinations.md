@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP. 2017.
-subtitle: Title of paper - RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP. 2017.
+title: RACE Large-scale ReAding Comprehension Dataset From Examinations
+subtitle: Title of paper - RACE Large-scale ReAding Comprehension Dataset From Examinations
 category: NLP papers - Machine Reading Comprehension
 tags: [neural network, machine reading comprehension]
 permalink: /2020/06/21/RACE_Large-scale_ReAding_Comprehension_Dataset_From_Examinations/
