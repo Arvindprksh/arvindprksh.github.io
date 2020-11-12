@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How transferable are features in deep neural networks?. Yosinski et al. NIPS. 2014.
-subtitle: Title of paper - How transferable are features in deep neural networks?. Yosinski et al. NIPS. 2014.
+title: How transferable are features in deep neural networks?
+subtitle: Title of paper - How transferable are features in deep neural networks?
 category: NN papers - Analysis
 tags: [neural network, analysis]
 permalink: /2019/09/24/How_Transferable_are_Features_in_Deep_Neural_Networks/
