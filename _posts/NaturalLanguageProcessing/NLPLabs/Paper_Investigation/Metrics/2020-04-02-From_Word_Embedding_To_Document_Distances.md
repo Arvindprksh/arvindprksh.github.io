@@ -1,7 +1,7 @@
 ---
 layout: post
-title: From Word Embeddings To Document Distances. Kusner et al. ICML. 2015.
-subtitle: Title of paper - From Word Embeddings To Document Distances. Kusner et al. ICML. 2015.
+title: From Word Embeddings To Document Distances
+subtitle: Title of paper - From Word Embeddings To Document Distances
 category: NLP papers - Metrics
 tags: [metrics, distance]
 permalink: /2020/04/02/From_Word_Embedding_To_Document_Distances/
