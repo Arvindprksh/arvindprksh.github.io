@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols. 2016 TACL](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols. TACL 2016](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to NER tagging. 
@@ -57,8 +57,8 @@ Named entity recognition is a challenging task that has traditionally required l
 # Reference 
 
 - Paper 
-  - [Arxiv version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols 2015 arXiv](https://arxiv.org/abs/1511.08308)
-  - [TACL 2016 version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols 2016 TACL](https://www.aclweb.org/anthology/Q16-1026/)
+  - [arXiv Version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols. arXiv 2015](https://arxiv.org/abs/1511.08308)
+  - [TACL Version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols. TACL 2016](https://www.aclweb.org/anthology/Q16-1026/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
