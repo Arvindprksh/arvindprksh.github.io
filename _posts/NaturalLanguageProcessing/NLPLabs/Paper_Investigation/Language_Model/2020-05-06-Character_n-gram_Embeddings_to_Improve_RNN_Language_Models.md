@@ -17,13 +17,13 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and simply arrange it, [Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440) I read and studied. 
+This is a brief summary of paper for me to study and simply arrange it, [Character n-gram Embeddings to Improve RNN Language Models (Takase et al., AAAI 2019)](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440) I read and studied. 
 {% include MathJax.html %}
 
 
 They propose character n-gram embedding with simplified Multi-dimensional self embedding as follows:
 
-![Takase et al. 2019 AAAI](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2020-05-06-Character_n-gram_Embeddings_to_Improve_RNN_Language_Models/simplified_multi-dimensional_self_embedding.PNG)
+![Takase et al., 2019 AAAI](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2020-05-06-Character_n-gram_Embeddings_to_Improve_RNN_Language_Models/simplified_multi-dimensional_self_embedding.PNG)
 
 The Multi-dimensional self embedding used the Mutli-dimensional self attention.
 
@@ -38,14 +38,14 @@ This paper proposes a novel Recurrent Neural Network (RNN) language model that t
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4440">The paper: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. 2019 AAAI</a>
+  <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4440">The paper: Character n-gram Embeddings to Improve RNN Language Models (Takase et al., AAAI 2019)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. arXiv 2019](https://arxiv.org/abs/1906.05506)
-  - [AAAI  Version: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440)
+  - [arXiv Version: Character n-gram Embeddings to Improve RNN Language Models (Takase et al. arXiv 2019)](https://arxiv.org/abs/1906.05506)
+  - [AAAI  Version: Character n-gram Embeddings to Improve RNN Language Models (Takase et al., AAAI 2019)](https://www.aaai.org/ojs/index.php/AAAI/article/view/4440)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
