@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al. 2014 ACL](https://www.aclweb.org/anthology/P14-1028/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al.ACL 2014](https://www.aclweb.org/anthology/P14-1028/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to chinese word segmentation task. 
@@ -72,7 +72,7 @@ Recently, neural network models for natural language processing tasks have been 
 # Reference 
 
 - Paper 
-  - [ACL 2014 version: Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al. 2014 ACL](https://www.aclweb.org/anthology/P14-1028/)
+  - [ACL Version: Max-Margin Tensor Neural Network for Chinese Word Segmentation. Pei et al. ACL 2014](https://www.aclweb.org/anthology/P14-1028/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
