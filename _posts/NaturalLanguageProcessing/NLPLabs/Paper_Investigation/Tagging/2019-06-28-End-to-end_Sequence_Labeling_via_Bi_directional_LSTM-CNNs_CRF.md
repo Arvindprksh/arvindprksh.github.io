@@ -1,7 +1,7 @@
 ---
 layout: post
-title: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
-subtitle: Title of paper - End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
+title: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. ACL. 2016.
+subtitle: Title of paper - End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. ACL. 2016.
 category: NLP papers - Tagging
 tags: [nlp, tagging]
 permalink: /2019/06/28/End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/
@@ -16,7 +16,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper, [End-to-end Sequence Labeling via Bi directional LSTM-CNNs-CRF,(Xuezhe Ma and Eduard Hovy 2016)](https://www.aclweb.org/anthology/P16-1101), proposed a neural network architectural for sequence labeling, which is NER and POS.
+This paper, [End-to-end Sequence Labeling via Bi directional LSTM-CNNs-CRF. Ma and Hovy. ACL 2016](https://www.aclweb.org/anthology/P16-1101), proposed a neural network architectural for sequence labeling, which is NER and POS.
 
 Their models is end-to-end models relying on no task-specific resources, feature engineering or data pre-procsessing.
 
@@ -78,8 +78,8 @@ their model is truely end-to-end, requiring no feature engineering or data pre-p
 # Reference 
 
 - Paper 
-  - [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF on arXive version](https://arxiv.org/abs/1603.01354)
-  - [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF on ACL version](https://www.aclweb.org/anthology/P16-1101)
+  - [arXiv Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. arXiv 2016](https://arxiv.org/abs/1603.01354)
+  - [ACL Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. ACL 2016](https://www.aclweb.org/anthology/P16-1101)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
