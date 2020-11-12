@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A Fast and Accurate Dependency Parser using Neural Networks
-subtitle: Title of paper - A Fast and Accurate Dependency Parser using Neural Networks
+title: A Fast and Accurate Dependency Parser using Neural Networks. Chen and Manning. EMNLP. 2014.
+subtitle: Title of paper - A Fast and Accurate Dependency Parser using Neural Networks. Chen and Manning. EMNLP. 2014.
 category: NLP papers - Dependency Parsing
 tags: [dependency parsing]
 permalink: /2020/09/26/A_Fast_and_Accurate_Dependency_Parser_using_Neural_Networks/
