@@ -19,7 +19,7 @@ bigimg:
 
 {% include MathJax.html %}
 
-This article is just brief summary of [Character-Aware Neural Language Models, Kim et al. AAAI 2016](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
+This article is just brief summary of [Character-Aware Neural Language Models (Kim et al., AAAI 2016)](https://arxiv.org/abs/1508.06615v4) and posting for me to study what the memory network is. 
 
 Their neural network consists of CNN for character-level as input, also high-way network before LSTM and finally LSTM-LM(Language model).
 
@@ -39,7 +39,7 @@ they estimate the probability of LM withe their model.
 
 Let's see their model!! 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-11-30-Character-Aware_Neural_Language_Models/Character-Aware_Neural_Language_Models.png)
+![Kim et al., AAAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-11-30-Character-Aware_Neural_Language_Models/Character-Aware_Neural_Language_Models.png)
 
 They used CNN, Highway network and LSTM.
 
@@ -86,14 +86,14 @@ they used CNN network for LM(Language model) on morphologically richer languages
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1508.06615v4">The paper: Character-Aware Neural Language Models</a>
+  <a href="https://arxiv.org/abs/1508.06615v4">The paper: Character-Aware Neural Language Models (Kim et al., AAAI 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Character-Aware Neural Language Models. Kim et al. arXiv 2016](https://arxiv.org/abs/1508.06615v4)
-  - [AAAI Version: Character-Aware Neural Language Models. Kim et al. AAAI 2016](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewFile/12489/12017)
+  - [arXiv Version: Character-Aware Neural Language Models (Kim et al. arXiv 2016)](https://arxiv.org/abs/1508.06615v4)
+  - [AAAI Version: Character-Aware Neural Language Models (Kim et al. AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewFile/12489/12017)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
