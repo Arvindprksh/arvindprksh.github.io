@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neural Machine Translation By Jointly Learning to align and translate
-subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate
+title: Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR. 2015.
+subtitle: Title of paper - Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR. 2015.
 category: NLP papers - Translation
 tags: [neural network, translation]
 permalink: /2019/01/01/Neural_Machine_Translation_by_Jointly_Learning_to_Align_And_Translate/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper, [Neural Machine Translation By jointly Learning to align and translate, Bahdanau et al.(ICLR 2015)](https://arxiv.org/abs/1409.0473) I read and studied. 
+This is a brief summary of paper, [Neural Machine Translation By jointly Learning to align and translate, Bahdanau et al. ICLR 2015](https://arxiv.org/abs/1409.0473) I read and studied. 
 
 The reason that I am writing this post is for me to organize about studying what the Attention is in deep learning.
 
@@ -165,7 +165,7 @@ This paper explained how to pay attention on NMT(neural machine translation) tas
 # Reference 
 
 - Paper 
-  - [Neural Machine Translation By Jointly Learning to align and translate](https://arxiv.org/abs/1409.0473)
+  - [Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. ICLR 2015](https://arxiv.org/abs/1409.0473)
   
  
 - How to use html for alert
