@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP. 2018.
-subtitle: Title of paper - Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP. 2018.
+title: Meta-Learning for Low-Resource Neural Machine Translation
+subtitle: Title of paper - Meta-Learning for Low-Resource Neural Machine Translation
 category: NLP papers - Translation
 tags: [meta-learning, translation]
 permalink: /2020/06/17/Meta-Learning_for_Low-Resource_Neural_Machine_Translation/
@@ -72,8 +72,8 @@ In this paper, they propose to extend the recently introduced model-agnostic met
 # Reference 
 
 - Paper 
-  - [ArXiv version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. ArXiv 2018](https://arxiv.org/abs/1808.08437)
-  - [EMNLP version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1398/)
+  - [arXiv Version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. arXiv 2018](https://arxiv.org/abs/1808.08437)
+  - [EMNLP Version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1398/)
   
  
 - How to use html for alert
