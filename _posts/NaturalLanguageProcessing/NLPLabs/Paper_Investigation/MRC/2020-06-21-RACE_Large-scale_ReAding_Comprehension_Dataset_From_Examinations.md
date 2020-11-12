@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RACE Large-scale ReAding Comprehension Dataset From Examinations
-subtitle: Title of paper - RACE Large-scale ReAding Comprehension Dataset From Examinations
+title: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP. 2017.
+subtitle: Title of paper - RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP. 2017.
 category: NLP papers - Machine Reading Comprehension
 tags: [neural network, machine reading comprehension]
 permalink: /2020/06/21/RACE_Large-scale_ReAding_Comprehension_Dataset_From_Examinations/
@@ -70,8 +70,8 @@ They present RACE, a new dataset for benchmark evaluation of methods in the read
 # Reference 
 
 - Paper 
-  - [Arxiv version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. Arxiv 2017](https://arxiv.org/abs/1704.04683)
-  - [EMNLP 2017 version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1082/)
+  - [arXiv Version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. arXiv 2017](https://arxiv.org/abs/1704.04683)
+  - [EMNLP Version: RACE Large-scale ReAding Comprehension Dataset From Examinations. Lai et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1082/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
