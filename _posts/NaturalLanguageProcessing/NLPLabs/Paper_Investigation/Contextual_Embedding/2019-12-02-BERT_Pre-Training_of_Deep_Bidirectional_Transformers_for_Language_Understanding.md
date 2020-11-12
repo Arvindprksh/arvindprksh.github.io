@@ -50,7 +50,7 @@ They introduce a new language representation model called BERT, which stands for
 # Reference 
 
 - Paper 
-  - [Arxiv version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. arXiv 2019)](https://arxiv.org/abs/1810.04805)
+  - [arXiv version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. arXiv 2019)](https://arxiv.org/abs/1810.04805)
   - [NAACL 2019 version: BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al. NAACL 2019)](https://www.aclweb.org/anthology/N19-1423/)
   
 - How to use html for alert
