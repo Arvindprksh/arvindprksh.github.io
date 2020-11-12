@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. 2017 NLPCC](https://dblp.uni-trier.de/rec/html/conf/nlpcc/Bao0GX17) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. NLPCC 2017](https://dblp.uni-trier.de/rec/html/conf/nlpcc/Bao0GX17) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to chinese word segmentation task. 
@@ -46,7 +46,7 @@ In order to train teh contextualized character embedding, they use character seq
 
 after contextualized charater embedding by seqeunce to sequence model. They implemented word segmentor with convolutional layer as follows:
 
-![Bao et al. 2017 NLPCC](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-04-Neural_Domain_Adaptation_with_Contextualized_Character_Embedding_for_Chinese_Word_Segmentation/convolution_layer_with_mask.PNG)
+![Bao et al. NLPCC 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-04-Neural_Domain_Adaptation_with_Contextualized_Character_Embedding_for_Chinese_Word_Segmentation/convolution_layer_with_mask.PNG)
 
 Their method shares the contextualized character embedding layer with character sequence auto encoder and the neural segmentor.
 
@@ -57,14 +57,14 @@ There has a large scale annotated newswire data for Chinese word segmentation. H
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://dblp.uni-trier.de/rec/html/conf/nlpcc/Bao0GX17">The paper: Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. 2017 NLPCC</a>
+  <a href="https://dblp.uni-trier.de/rec/html/conf/nlpcc/Bao0GX17">The paper: Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. NLPCC 2017</a>
 </div>
 
 # Reference 
 
 - Paper 
   - [Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. 2017 NLPCC on dblp](https://dblp.uni-trier.de/rec/html/conf/nlpcc/Bao0GX17)
-  - [Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. 2017 NLPCC](http://tcci.ccf.org.cn/conference/2017/papers/1111.pdf)
+  - [Neural Domain Adaptation with Contextualized Character Embedding for Chinese Word Segmentation. Bao et al. NLPCC 2017](http://tcci.ccf.org.cn/conference/2017/papers/1111.pdf)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
