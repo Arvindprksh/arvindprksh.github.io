@@ -53,7 +53,7 @@ Machine comprehension (MC), answering a query about a given context paragraph, r
 # Reference 
 
 - Paper 
-  - [arXiv Version: Bidirectional Attention Flow for Machine Comprehension (Seo et al. arXiv 2017)](https://arxiv.org/abs/1611.01603)
+  - [arXiv Version: Bidirectional Attention Flow for Machine Comprehension (Seo et al., arXiv 2017)](https://arxiv.org/abs/1611.01603)
   - [ICLR Version: Bidirectional Attention Flow for Machine Comprehension (Seo et al., ICLR 2017)](https://openreview.net/forum?id=HJ0UKP9ge)
   
 - How to use html for alert
