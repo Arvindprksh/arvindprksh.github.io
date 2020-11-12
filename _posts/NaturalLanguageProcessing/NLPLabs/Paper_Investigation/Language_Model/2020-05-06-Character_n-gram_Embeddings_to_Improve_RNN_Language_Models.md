@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI. 2019.
-subtitle: Title of paper - Character n-gram Embeddings to Improve RNN Language Models. Takase et al. AAAI. 2019.
+title: Character n-gram Embeddings to Improve RNN Language Models
+subtitle: Title of paper - Character n-gram Embeddings to Improve RNN Language Models
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2020/05/06/Character_n-gram_Embeddings_to_Improve_RNN_Language_Models/
