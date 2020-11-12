@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Centroid-based Text Summarization through Compositionality of Word Embeddings for Text summarization. Gaetano Rossiello et al. MultiLing-WS. 2017.
+title: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS. 2017.
 subtitle: Title of paper - Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS. 2017.
 category: NLP papers - Summarization
 tags: [nlp, word embedding, text summarization]
@@ -66,13 +66,13 @@ The textual similarity is a crucial aspect for many extractive text summarizatio
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.aclweb.org/anthology/W17-1003">The paper: Centroid-based Text Summarization through Compositionality of Word Embeddings</a>
+  <a href="http://www.aclweb.org/anthology/W17-1003">The paper: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS 2017</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Centroid-based Text Summarization through Compositionality of Word Embeddings](http://www.aclweb.org/anthology/W17-1003)
+  - [MultiLing Version: Centroid-based Text Summarization through Compositionality of Word Embeddings. Gaetano Rossiello et al. MultiLing-WS 2017](http://www.aclweb.org/anthology/W17-1003)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
