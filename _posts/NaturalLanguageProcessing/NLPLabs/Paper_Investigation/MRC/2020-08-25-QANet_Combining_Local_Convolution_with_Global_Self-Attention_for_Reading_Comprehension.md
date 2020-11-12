@@ -33,7 +33,7 @@ The resulting representation from their model is encoded again with our recurren
 
 They argued that the recurrency-free model make  their model faster than The RNN counterparts.
 
-For the detailed model components, refer to [the paper, QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension (Yu et al., ICLR 2018)](https://openreview.net/forum?id=B14TlG-RW/)
+For the detailed model components, refer to [the paper, QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension (Yu et al., ICLR 2018)](https://openreview.net/forum?id=B14TlG-RW)
 
 For data augmentation, they used back-translation techique for machine reading comprehension task that they are interested in. 
 
