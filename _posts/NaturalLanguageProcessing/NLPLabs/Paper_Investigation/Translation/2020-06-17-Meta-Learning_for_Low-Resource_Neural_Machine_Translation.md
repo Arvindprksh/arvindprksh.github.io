@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Meta-Learning for Low-Resource Neural Machine Translation
-subtitle: Title of paper - Meta-Learning for Low-Resource Neural Machine Translation
+title: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP. 2018.
+subtitle: Title of paper - Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP. 2018.
 category: NLP papers - Translation
 tags: [meta-learning, translation]
 permalink: /2020/06/17/Meta-Learning_for_Low-Resource_Neural_Machine_Translation/
