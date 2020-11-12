@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Recent Trends in Deep Learning Based Natural Language Processing
-subtitle: Title of paper - Recent Trends in Deep Learning Based Natural Language Processing
+title: Recent Trends in Deep Learning Based Natural Language Processing. Young et al. arXiv. 2018.
+subtitle: Title of paper - Recent Trends in Deep Learning Based Natural Language Processing. Young et al. arXiv. 2018.
 category: NLP papers - Survey
 tags: [neural network, nlp]
 permalink: /2019/08/06/Recent_Trends_in_Deep_Learning_Based_Natural_Language_Processing/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study it and organize the material, [Recent Trends in Deep Learning Based Natural Language Processing, Young et al.(2018)](https://arxiv.org/abs/1708.02709). 
+This is a brief summary of paper for me to study it and organize the material, [Recent Trends in Deep Learning Based Natural Language Processing. Young et al. arXiv 2018](https://arxiv.org/abs/1708.02709). 
 
 {% include MathJax.html %}
 
@@ -95,13 +95,13 @@ Deep learning methods employ multiple processing layers to learn hierarchical re
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1708.02709">The paper: Recent Trends in Deep Learning Based Natural Language Processing</a>
+  <a href="https://arxiv.org/abs/1708.02709">The paper: Recent Trends in Deep Learning Based Natural Language Processing. Young et al. arXiv 2018</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Recent Trends in Deep Learning Based Natural Language Processing](https://arxiv.org/abs/1708.02709)
+  - [arXiv Version: Recent Trends in Deep Learning Based Natural Language Processing. Young et al. arXiv 2018](https://arxiv.org/abs/1708.02709)
    
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
