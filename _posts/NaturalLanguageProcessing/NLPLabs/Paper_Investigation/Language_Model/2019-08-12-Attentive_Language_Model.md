@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attentive Language models
-subtitle: Title of paper - Attentive Language Models
+title: Attentive Language models. Salton et al. IJCNLP. 2017. 
+subtitle: Title of paper - Attentive Language Models. Salton et al. IJCNLP. 2017.
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2019/08/12/Attentive_Language_Model/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper, [Attentive Language Models, Salton et al.(2017)](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/). 
+This is a brief summary of paper, [Attentive Language Models. Salton et al. IJCNLP 2017](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/). 
 
 The reason I summarize the paper is to study attention mechanism and arrange the paper I read.
 
@@ -107,7 +107,7 @@ In this paper, we extend Recurrent Neural Network Language Models (RNN-LMs) with
 # Reference 
 
 - Paper 
-  - [Attentive Language Models](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/)
+  - [IJCNLP Version: Attentive Language Models. Salton et al. IJCNLP 2017](https://www.aclweb.org/anthology/papers/I/I17/I17-1045/)
   
  
 - How to use html for alert
