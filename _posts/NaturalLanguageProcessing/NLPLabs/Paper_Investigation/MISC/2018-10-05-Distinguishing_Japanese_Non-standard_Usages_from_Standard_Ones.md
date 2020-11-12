@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Distinguishing Japanese Non-standard Usages from Standard Ones
-subtitle: Title of paper - Distinguishing Japanese Non-standard Usages from Standard Onesn
+title: Distinguishing Japanese Non-standard Usages from Standard Ones. Aoki et al. EMNLP. 2017.
+subtitle: Title of paper - Distinguishing Japanese Non-standard Usages from Standard Onesn. Aoki et al. EMNLP. 2017.
 category: NLP papers - MISC
 tags: [nlp, word2vec, emnlp]
 permalink: /2018/10/05/Distinguishing_Japanese_Non-standard_Usages_from_Standard_Ones/
@@ -15,8 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones, Tatsuya Aoki
- et al.(2017)](https://www.aclweb.org/anthology/D17-1246) from EMNLP 2017.
+This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones. Aoki et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1246).
 
 The following is what I prepared for for paper seminar of  NLP labs.
 
@@ -42,7 +41,7 @@ This paper focus on non-standard usages of common words on social media. In the 
 # Reference 
 
 - Paper 
-  - [Distinguishing Japanese Non-standard Usages from Standard Ones](https://www.aclweb.org/anthology/D17-1246)
+  - [EMNLP Version: Distinguishing Japanese Non-standard Usages from Standard Ones. Aoki et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1246)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html) 
