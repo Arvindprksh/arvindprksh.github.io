@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Attending to Characters in Neural Sequence Labeling Models. Rei et al. 2016 COLING](https://www.aclweb.org/anthology/C16-1030/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Attending to Characters in Neural Sequence Labeling Models. Rei et al. COLING 2016](https://www.aclweb.org/anthology/C16-1030/) I read and studied. 
 {% include MathJax.html %}
 
 This paper implemented seqeunce labeling task on a range of the benchmark dataset and then they extend the character embedding to word-based model for unseen or rare words.
@@ -27,11 +27,11 @@ They said the conventional model used feature engineering, integrating **gazette
 
 They first described the word-level neural network for sequence labeling like this:
 
-![Rei et al. 2016 COLING](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Attending_to_Characters_in_Neural_Sequence_Labeling_Models/labeling_task.PNG)
+![Rei et al. COLING 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Attending_to_Characters_in_Neural_Sequence_Labeling_Models/labeling_task.PNG)
 
 Next, They describe how to extend character embedding to word-level model.
 
-![Rei et al. 2016 COLING](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Attending_to_Characters_in_Neural_Sequence_Labeling_Models/character_embedding.PNG)
+![Rei et al. COLING 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-28-Attending_to_Characters_in_Neural_Sequence_Labeling_Models/character_embedding.PNG)
 
 As you can see above, one possibel approach is to concatenate the two vectors and use this asthe new word-level representataion like Left in Figure2. 
 
@@ -85,8 +85,8 @@ Sequence labeling architectures use word embeddings for capturing similarity, bu
 # Reference 
 
 - Paper 
-  - [Arxiv version: Attending to Characters in Neural Sequence Labeling Models. Rei et al. 2016 arXiv](https://arxiv.org/abs/1611.04361)
-  - [COLING 2016 version: Attending to Characters in Neural Sequence Labeling Models. Rei et al. 2016 COLING](https://www.aclweb.org/anthology/C16-1030/)
+  - [arXiv Version: Attending to Characters in Neural Sequence Labeling Models. Rei et al. arXiv 2016](https://arxiv.org/abs/1611.04361)
+  - [COLING Version: Attending to Characters in Neural Sequence Labeling Models. Rei et al. COLING 2016](https://www.aclweb.org/anthology/C16-1030/)
   
   
 - How to use html for alert
