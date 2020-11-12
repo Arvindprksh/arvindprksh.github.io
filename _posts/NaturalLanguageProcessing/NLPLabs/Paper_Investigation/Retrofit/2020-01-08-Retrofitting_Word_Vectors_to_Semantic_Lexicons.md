@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Retrofitting Word Vectors to Semantic Lexicons
-subtitle: Title of paper - Retrofitting Word Vectors to Semantic Lexicons
+title: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL. 2015.
+subtitle: Title of paper - Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL. 2015.
 category: NLP papers - Retrofitting
 tags: [neural network, word embedding]
 permalink: /2020/01/08/Retrofitting_Word_Vectors_to_Semantic_Lexicons/
@@ -47,8 +47,8 @@ Vector space word representations are learned from distributional information of
 # Reference 
 
 - Paper 
-  - [arXiv 2015 version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. arXiv 2015](https://arxiv.org/abs/1411.4166)
-  - [NAACL 2015 version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1184/)
+  - [arXiv Version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. arXiv 2015](https://arxiv.org/abs/1411.4166)
+  - [NAACL Version: Retrofitting Word Vectors to Semantic Lexicons. Faruqui et al. NAACL 2015](https://www.aclweb.org/anthology/N15-1184/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
