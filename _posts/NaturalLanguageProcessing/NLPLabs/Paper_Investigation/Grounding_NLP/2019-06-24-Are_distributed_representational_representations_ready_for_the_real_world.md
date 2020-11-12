@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning. Lucy and Gauthier. RoboNLP-WS. 2017.
-subtitle: Title of paper - Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning. Lucy and Gauthier. RoboNLP-WS. 2017.
+title: Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning
+subtitle: Title of paper - Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning
 category: NLP papers - Grounding NLP
 tags: [nlp, ground learning]
 permalink: /2019/06/24/Are_distributed_representational_representations_ready_for_the_real_world/
