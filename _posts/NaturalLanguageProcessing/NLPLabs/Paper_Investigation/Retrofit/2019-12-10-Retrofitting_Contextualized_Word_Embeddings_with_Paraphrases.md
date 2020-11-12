@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP 2019](https://www.aclweb.org/anthology/D19-1113/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Contextualized Word Embeddings with Paraphrases (Shi et al., EMNLP and IJCNLP 2019)](https://www.aclweb.org/anthology/D19-1113/) I read and studied. 
 {% include MathJax.html %}
 
 Retrofitting means semantic speicalization of distrobutional word vector. i.e. already trained vector can be retrofitted with external knowledges like lexicon-semantic knowledge, as known as semantic specialization. 
@@ -31,7 +31,7 @@ There are tow phases of specialization methods:
 
 However, this paper exaplain how to retrofit context information of paraphrases, suggestting the figure below:
 
-![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_1.PNG)
+![Shi et al., EMNLP and IJCNLP 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_1.PNG)
 
 They said 
 
@@ -41,19 +41,19 @@ Without retraining the parameters of an existing model, In order to learns the t
 
 They propose the model called paraphrase-aware Retrofitting (PAR) below:
 
-![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_2.PNG)
+![Shi et al., EMNLP and IJCNLP 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_2.PNG)
 
 PAR learns an orthogonal transformation $M \in \mathbbR^{k*k}$ to reshap the input representation into a specific space to complement the collocate.
 
 Given two contexts S1 and S2 that both contain a shared word w, the contextual difference of a input representation w is defined by the L2 distance:
 
-![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_3.PNG)
+![Shi et al., EMNLP and IJCNLP 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_3.PNG)
 
-![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_4.PNG)
+![Shi et al., EMNLP and IJCNLP 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/Retrofit_4.PNG)
 
 The training objective of PAR is the dentoed as follows:
 
-![Shi et al. 2019 EMNLP](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_5.PNG)
+![Shi et al., EMNLP and IJCNLP 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Retrofit/2019-12-10-Retrofitting_Contextualized_Word_Embeddings_with_Paraphrases/retrofit_5.PNG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -67,8 +67,8 @@ Contextualized word embedding models, such as ELMo, generate meaningful represen
 # Reference 
 
 - Paper 
-  - [arXiv Version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. arXiv 2019](https://arxiv.org/abs/1909.09700)
-  - [EMNLP Version: Retrofitting Contextualized Word Embeddings with Paraphrases. Shi et al. EMNLP and IJCNLP 2019](https://www.aclweb.org/anthology/D19-1113/)
+  - [arXiv Version: Retrofitting Contextualized Word Embeddings with Paraphrases (Shi et al., arXiv 2019)](https://arxiv.org/abs/1909.09700)
+  - [EMNLP Version: Retrofitting Contextualized Word Embeddings with Paraphrases (Shi et al., EMNLP and IJCNLP 2019)](https://www.aclweb.org/anthology/D19-1113/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
