@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deep contextualized word representations
-subtitle: Title of paper - Deep contextualized word representations
+title: Deep contextualized word representations. Peters et al. NAACL. 2018.
+subtitle: Title of paper - Deep contextualized word representations. Peters et al. NAACL. 2018.
 category: NLP papers - Transfer Learning
 tags: [neural network, contextual embedding]
 permalink: /2019/12/02/Deep_Contextualized_Word_Representations/
@@ -16,7 +16,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This is a brief summary of paper for me to study and organize it, [Deep Contextualized Word Representations Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Deep Contextualized Word Representations. Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/) I read and studied. 
 {% include MathJax.html %}
 
 Their archtecture could be shown as following:
@@ -63,8 +63,8 @@ They introduce a new type of deep contextualized word representation that models
 # Reference 
 
 - Paper 
-  - [ArXiv version: Deep Contextualized Word Representations Peters et al. ArXiv 2018](https://arxiv.org/abs/1802.05365)
-  - [NAACL 2018 version: Deep Contextualized Word Representations Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/)
+  - [ArXiv version: Deep Contextualized Word Representations. Peters et al. ArXiv 2018](https://arxiv.org/abs/1802.05365)
+  - [NAACL 2018 version: Deep Contextualized Word Representations. Peters et al. NAACL 2018](https://www.aclweb.org/anthology/N18-1202/)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
