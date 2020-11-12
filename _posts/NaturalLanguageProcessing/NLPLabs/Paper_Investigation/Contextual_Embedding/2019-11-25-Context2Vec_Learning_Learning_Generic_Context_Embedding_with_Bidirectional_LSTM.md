@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [context2vec: Learning Generic Context Embedding with Bidirectional LSTM. Melamud et al. CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [context2vec: Learning Generic Context Embedding with Bidirectional LSTM, Melamud et al., CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/) I read and studied. 
 {% include MathJax.html %}
 
 This paper shows how to embed sentential context into a fixed-length vector with Bidirectional LSTM. 
@@ -38,13 +38,13 @@ sense disambiguation tasks. They release their [code and pretrained models](http
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/K16-1006/">The paper: context2vec- Learning Generic Context Embedding with Bidirectional LSTM Melamud et al. 2016 SIGNLL</a>
+  <a href="https://www.aclweb.org/anthology/K16-1006/">The paper: context2vec- Learning Generic Context Embedding with Bidirectional LSTM, Melamud et al., CoNLL 2016</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ACL 2016 version: context2vec- Learning Generic Context Embedding with Bidirectional LSTM. Melamud et al. CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/)
+  - [ACL Ver.: context2vec- Learning Generic Context Embedding with Bidirectional LSTM, Melamud et al., CoNLL 2016](https://www.aclweb.org/anthology/K16-1006/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
