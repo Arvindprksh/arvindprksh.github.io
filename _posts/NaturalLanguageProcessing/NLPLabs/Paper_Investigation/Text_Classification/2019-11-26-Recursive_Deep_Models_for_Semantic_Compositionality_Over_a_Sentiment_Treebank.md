@@ -79,7 +79,7 @@ Semantic word spaces have been very useful but cannot express the meaning of lon
 # Reference 
 
 - Paper 
-  - [ACL 2018 version: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/)
+  - [ACL Version: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
