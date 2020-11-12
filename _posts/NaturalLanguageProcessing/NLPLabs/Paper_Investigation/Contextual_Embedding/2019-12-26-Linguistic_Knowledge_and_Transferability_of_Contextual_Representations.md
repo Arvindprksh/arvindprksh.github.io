@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linguistic Knowledge and Transferability of Contextual Representations
-subtitle: Title of paper - Linguistic Knowledge and Transferability of Contextual Representations
+title: Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. NAACL. 2019.
+subtitle: Title of paper - Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. NAACL. 2019.
 category: NLP papers - Contextual Embedding
 tags: [neural network, contextual embedding]
 permalink: /2019/12/26/Linguistic_Knowledge_and_Transferability_of_Contextual_Representations/
