@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Semi-supervised Sequence Learning, Andrew M. Dai and Quoc V. Le.(NIPS 2015)](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Semi-supervised Sequence Learning, Dai and Le. NIPS 2015](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning) I read and studied. 
 {% include MathJax.html %}
 
 This paper showed the pretrainig with unlabeled data improve the performance of text classification. 
@@ -57,8 +57,8 @@ They present two approaches to use unlabeled data to improve Sequence Learning w
 # Reference 
 
 - Paper 
-  - [Arxiv version: Semi-supervised Sequence Learning, Andrew M. Dai and Quoc V. Le.(NIPS 2015)](https://arxiv.org/abs/1511.01432)
-  - [NIPS 2015 version: Semi-supervised Sequence Learning, Andrew M. Dai and Quoc V. Le.(NIPS 2015)](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning)
+  - [arXiv Version: Semi-supervised Sequence Learning, Dai and Le. arXiv 2015](https://arxiv.org/abs/1511.01432)
+  - [NIPS Version: Semi-supervised Sequence Learning, Dai and Le. NIPS 2015](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
