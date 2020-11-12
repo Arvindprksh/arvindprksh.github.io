@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This page is brief summary of [LSTM Neural Network for Language Modeling. Sundermeyer et al. INTERSPEECH 2012](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
+This page is brief summary of [LSTM Neural Network for Language Modeling (Sundermeyer et al., INTERSPEECH 2012)](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html) for my study.
 
 Language model means If you have text which is "A B C X" and already know "A B C", and then from corpus, you can expect whether What kind of word, X appears in the context.
 
@@ -43,11 +43,11 @@ The existing model to LM has a problem like this :
  
  Below is their LSTM variant from the orignal LSTM which is [F.A. Gers et al](https://ieeexplore.ieee.org/document/818041). 
  
- ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-10-27-LSTM_Neural_Network_for_Language_Modeling/LSTM_memory_cell.png)
+ ![Sundermeyer et al., INTERSPEECH 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-10-27-LSTM_Neural_Network_for_Language_Modeling/LSTM_memory_cell.png)
  
  also they used one-hot encoding and projection layer.
  
- ![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-10-27-LSTM_Neural_Network_for_Language_Modeling/projection_layer.png)
+ ![Sundermeyer et al., INTERSPEECH 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Language_Model/2018-10-27-LSTM_Neural_Network_for_Language_Modeling/projection_layer.png)
  
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -56,13 +56,13 @@ This paper said the result of using LSTM neural network on language model with c
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html">The paper: LSTM_Neural_Network_for_Language_Modeling</a>
+  <a href="https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html">The paper: LSTM_Neural_Network_for_Language_Modeling (Sundermeyer et al., INTERSPEECH 2012)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [INTERSPEECH Version: LSTM_Neural_Network_for_Language_Modeling. Sundermeyer et al. INTERSPEECH 2012](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html)
+  - [INTERSPEECH Version: LSTM_Neural_Network_for_Language_Modeling (Sundermeyer et al., INTERSPEECH 2012)](https://www.isca-speech.org/archive/interspeech_2012/i12_0194.html)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
