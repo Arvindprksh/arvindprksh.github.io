@@ -1,7 +1,7 @@
 ---
 layout: post
-title: QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension
-subtitle: Title of paper - QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension
+title: QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR. 2018.
+subtitle: Title of paper - QANet- Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR. 2018.
 category: NLP papers - Question Answering
 tags: [neural network, machine reading comprehension, question answering]
 permalink: /2020/08/25/QANet_Combining_Local_Convolution_with_Global_Self-Attention_for_Reading_Comprehension/
@@ -50,8 +50,8 @@ Current end-to-end machine reading and question answering (Q&A) models are prima
 # Reference 
 
 - Paper 
-  - [Arxiv version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. Arxiv 2018](https://arxiv.org/abs/1804.09541)
-  - [ICLR 2018 version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW/)
+  - [arXiv Version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. arXiv 2018](https://arxiv.org/abs/1804.09541)
+  - [ICLR Version: QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension. Yu et al. ICLR 2018](https://openreview.net/forum?id=B14TlG-RW/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
