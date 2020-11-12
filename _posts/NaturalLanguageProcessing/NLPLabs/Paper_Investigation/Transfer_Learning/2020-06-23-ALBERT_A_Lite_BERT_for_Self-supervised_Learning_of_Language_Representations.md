@@ -53,8 +53,8 @@ Increasing model size when pretraining natural language representations often re
 # Reference 
 
 - Paper 
-  - [Arxiv version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. arXiv 2020](https://arxiv.org/abs/1909.11942)
-  - [ICLR 2020 version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. ICLR 2020](https://openreview.net/forum?id=H1eA7AEtvS)
+  - [arXiv Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. arXiv 2020](https://arxiv.org/abs/1909.11942)
+  - [ICLR Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. ICLR 2020](https://openreview.net/forum?id=H1eA7AEtvS)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
