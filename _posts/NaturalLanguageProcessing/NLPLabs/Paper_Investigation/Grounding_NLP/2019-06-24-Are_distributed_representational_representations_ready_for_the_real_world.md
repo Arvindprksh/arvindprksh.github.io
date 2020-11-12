@@ -75,7 +75,7 @@ Distributional word representation methods exploit word co-occurrences to build 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning</a> (Lucy and Gauthier., RoboNLP-WS 2017)
+  <a href="https://www.aclweb.org/anthology/W17-2810">The paper: Are distributed representational ready for the real world? Evaluating word vectors for grounded perceptual meaning (Lucy and Gauthier., RoboNLP-WS 2017)</a>
 </div>
 
 # Reference 
