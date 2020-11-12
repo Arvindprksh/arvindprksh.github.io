@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond
-subtitle: Title of paper - Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond
+title: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv. 2019.
+subtitle: Title of paper - Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv. 2019.
 category: NLP papers - Cross-lingual Sentence Embedding
 tags: [cross_lingual_sentence_embedding]
 permalink: /2020/06/16/Massively_Multilingual_Sentence_Embeddings_or_Zero-Shot_Cross-Lingual_Transfer_and_Beyond/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. 2019 ArXiv](https://arxiv.org/abs/1812.10464) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv 2019](https://arxiv.org/abs/1812.10464) I read and studied. 
 {% include MathJax.html %}
 
 This paper propose sentence embedding by using a BiLSTM encoder sharing a large number of languages as follows:
@@ -31,13 +31,13 @@ They introduce an architecture to learn joint multilingual sentence representati
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1812.10464">The paper: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. 2019 ArXiv</a>
+  <a href="https://arxiv.org/abs/1812.10464">The paper: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv 2019</a>
 </div>
 
 # Reference 
 
 - Paper 
-   - [ArXiv version: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. 2019 ArXiv](https://arxiv.org/abs/1812.10464)
+   - [arXiv version: Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond. Artetxe and Schwenk. arXiv 2019](https://arxiv.org/abs/1812.10464)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
