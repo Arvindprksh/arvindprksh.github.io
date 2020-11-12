@@ -1,7 +1,7 @@
 ---
 layout: post
-title: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP. 2015.
-subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP. 2015.
+title: On Using Very Large Target Vocabulary for Neural Machine Translation
+subtitle: Title of paper - On Using Very Large Target Vocabulary for Neural Machine Translation
 category: NLP papers - Translation
 tags: [translation]
 permalink: /2020/11/02/On_Using_Very_Large_Target_Vocabulary_for_Neural_Machine_Translation/
@@ -63,8 +63,8 @@ Neural machine translation, a recently proposed approach to machine translation 
 # Reference 
 
 - Paper 
-  - [Arxiv version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. arXiv 2015](https://arxiv.org/abs/1412.2007)
-  - [ACL and IJCNLP 2015 version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/)
+  - [arxiv Version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. arXiv 2015](https://arxiv.org/abs/1412.2007)
+  - [ACL and IJCNLP Version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
