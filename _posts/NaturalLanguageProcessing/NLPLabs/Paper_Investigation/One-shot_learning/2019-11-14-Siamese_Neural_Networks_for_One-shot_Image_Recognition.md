@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Siamese Neural Networks for One-shot Image Recognition
-subtitle: Title of paper - Siamese Neural Networks for One-shot Image Recognition
+title: Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS. 2015.
+subtitle: Title of paper - Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS. 2015.
 category: NLP papers - One(Few or Zero)-shot Learning
 tags: [neural network, image classification]
 permalink: /2019/11/14/Siamese_Neural_Networks_for_One-shot_Image_Recognition/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Siamese Neural Networks for One-shot Image Recognition (Koch et al. 2015)](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS 2015](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf) I read and studied. 
 {% include MathJax.html %}
 
 They said whta one-shot learning is:
@@ -54,7 +54,7 @@ The process of learning good features for machine learning applications can be v
 # Reference 
 
 - Paper 
-  - [Siamese Neural Networks for One-shot Image Recognition (Koch et al. 2015)](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf)
+  - [ICML Version: Siamese Neural Networks for One-shot Image Recognition. Koch et al. ICML-WS 2015](http://www.cs.toronto.edu/~rsalakhu/papers/oneshot1.pdf)
   
   
 - How to use html for alert
