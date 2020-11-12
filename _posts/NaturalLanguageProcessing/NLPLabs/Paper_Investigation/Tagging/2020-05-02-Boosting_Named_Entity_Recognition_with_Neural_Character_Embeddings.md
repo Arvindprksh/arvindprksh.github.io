@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. 2015 NEWS workshop](https://www.aclweb.org/anthology/W15-3904/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. NEWS-WS 2015](https://www.aclweb.org/anthology/W15-3904/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to NER tagging and focus on not using the handcrafted fetaures and the output of other NLP tasks such as part-of-speech tagging and text chuncking.
@@ -49,8 +49,8 @@ Most state-of-the-art named entity recognition (NER) systems rely on handcrafted
 # Reference 
 
 - Paper 
-  - [Arxiv version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. 2015 arXiv](https://arxiv.org/abs/1505.05008)
-  - [TACL 2016 version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. 2015 NEWS workshop](https://www.aclweb.org/anthology/W15-3904/)
+  - [arXiv version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. arXiv 2015](https://arxiv.org/abs/1505.05008)
+  - [NEWS Version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. NEWS-WS 2015](https://www.aclweb.org/anthology/W15-3904/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
