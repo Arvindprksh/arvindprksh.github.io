@@ -43,7 +43,7 @@ Distributed word representations have recently been proven to be an invaluable r
 # Reference 
 
 - Paper 
-  - [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/)
+  - [ICML Version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
