@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extractive Summarization using Continuous Vector Space Models for Text summarization
-subtitle: Title of paper - Extractive Summarization using Continuous Vector Space Models
+title: Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS. 2014.
+subtitle: Title of paper - Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS. 2014.
 category: NLP papers - Summarization
 tags: [nlp, word2vec, word_embedding, text_summarization, phrase_embedding]
 permalink: /2018/03/18/Extractive_Summarization_using_Continuous_Vector_Space_Models/
@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Extractive Summarization using Continuous Vector Space Models(Mikael Kågebäck et al.(2014))](http://www.aclweb.org/anthology/W14-1504), is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
+This paper,[Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS 2014](http://www.aclweb.org/anthology/W14-1504), is related to how to summarize document in the way to well extract sentence from input sentences using continuous vector representaion.
 
 But I think this paper helps me understand the architecture base on neural newwork language modeling.  
 
@@ -59,13 +59,13 @@ Also basic explanation about word embedding is easy to understand to me. I mean 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.aclweb.org/anthology/W14-1504">The paper: Extractive Summarization using Continuous Vector Space Models</a>
+  <a href="http://www.aclweb.org/anthology/W14-1504">The paper: Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS 2014</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Extractive Summarization using Continuous Vector Space Models](http://www.aclweb.org/anthology/W14-1504)
+  - [CVSC Version: Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS 2014](http://www.aclweb.org/anthology/W14-1504)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
