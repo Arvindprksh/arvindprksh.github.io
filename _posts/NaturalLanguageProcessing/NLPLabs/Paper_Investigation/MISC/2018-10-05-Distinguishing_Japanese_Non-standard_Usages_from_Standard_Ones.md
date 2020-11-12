@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones. Aoki et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1246).
+This paper's title is [Distinguishing Japanese Non-standard Usages from Standard Ones (Aoki et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1246).
 
 The following is what I prepared for for paper seminar of  NLP labs.
 
@@ -35,13 +35,13 @@ This paper focus on non-standard usages of common words on social media. In the 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D17-1246">The paper: Distinguishing Japanese Non-standard Usages from Standard Ones</a>
+  <a href="https://www.aclweb.org/anthology/D17-1246">The paper: Distinguishing Japanese Non-standard Usages from Standard Ones (Aoki et al., EMNLP 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [EMNLP Version: Distinguishing Japanese Non-standard Usages from Standard Ones. Aoki et al. EMNLP 2017](https://www.aclweb.org/anthology/D17-1246)
+  - [EMNLP Version: Distinguishing Japanese Non-standard Usages from Standard Ones (Aoki et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1246)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html) 
