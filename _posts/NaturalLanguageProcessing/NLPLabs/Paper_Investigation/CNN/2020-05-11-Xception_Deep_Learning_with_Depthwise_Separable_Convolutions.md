@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Xception: Deep Learning with Depthwise Separable Convolutions. Francois Cholletl. CVPR 2017](https://ieeexplore.ieee.org/document/8099678) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Xception: Deep Learning with Depthwise Separable Convolutions, Francois Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to answer to the quextion which is how the convolutional network works.
@@ -39,14 +39,14 @@ They present an interpretation of Inception modules in convolutional neural netw
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://ieeexplore.ieee.org/document/8099678">The paper: Xception: Deep Learning with Depthwise Separable Convolutions.  Franc¸ois Cholletl. CVPR 2017</a>
+  <a href="https://ieeexplore.ieee.org/document/8099678">The paper: Xception: Deep Learning with Depthwise Separable Convolutions, Franc¸ois Cholletl., CVPR 2017</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions. Francois Chollet. arXiv 2017](https://arxiv.org/abs/1610.02357v3)
-  - [CVPR 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions. Francois Cholletl. CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
+  - [arXiv 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions, Francois Chollet., arXiv 2017](https://arxiv.org/abs/1610.02357v3)
+  - [CVPR 2017 ver: Xception: Deep Learning with Depthwise Separable Convolutions, Francois Cholletl., CVPR 2017](https://ieeexplore.ieee.org/document/8099678)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
