@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A unified architecture for natural language processing- deep neural networks with multitask learning
-subtitle: Title of paper - A unified architecture for natural language processing- deep neural networks with multitask learning
+title: A unified architecture for natural language processing- deep neural networks with multitask learning. Collobert and Weston. ICML. 2008.
+subtitle: Title of paper - A unified architecture for natural language processing- deep neural networks with multitask learning. Collobert and Weston. ICML. 2008.
 category: NLP papers - Multi-Task
 tags: [neural network, multi task]
 permalink: /2019/10/05/A_Unified_Archtecture_for_Natural_Language_Processing-_Deep_Neural_Networks_With_Multitask_Learning/
@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper named [A unified architecture for natural language processing: deep neural networks with multitask learning, Collobert	and Weston. (2008)](https://dl.acm.org/citation.cfm?id=1390177)
+This is a brief summary of paper named [A unified architecture for natural language processing: deep neural networks with multitask learning. Collobert	and Weston. ICML 2008](https://dl.acm.org/citation.cfm?id=1390177)
 
 This post is arranged for me to understand multi-task learning.
 
@@ -43,7 +43,7 @@ They describe a single convolutional neural network architecture that, given a s
 # Reference 
 
 - Paper 
-  - [ACM DIGITRAL LIBRARY: A unified architecture for natural language processing: deep neural networks with multitask learning, Collobert	and Weston. (2008)](https://dl.acm.org/citation.cfm?id=1390177)
+  - [ACM DIGITRAL LIBRARY: A unified architecture for natural language processing: deep neural networks with multitask learning, Collobert	and Weston. ICML 2008](https://dl.acm.org/citation.cfm?id=1390177)
   
  
 - How to use html for alert
