@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS. 2014.
-subtitle: Title of paper - Extractive Summarization using Continuous Vector Space Models. Kågebäck et al. CVSC-WS. 2014.
+title: Extractive Summarization using Continuous Vector Space Models
+subtitle: Title of paper - Extractive Summarization using Continuous Vector Space Models
 category: NLP papers - Summarization
 tags: [nlp, word2vec, word_embedding, text_summarization, phrase_embedding]
 permalink: /2018/03/18/Extractive_Summarization_using_Continuous_Vector_Space_Models/
