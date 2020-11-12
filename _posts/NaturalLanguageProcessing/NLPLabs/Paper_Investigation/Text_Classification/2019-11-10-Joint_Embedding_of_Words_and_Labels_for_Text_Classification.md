@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Joint Embedding of Words and Labels for Text Classification, Wang.(ACL 2018)](https://www.aclweb.org/anthology/P18-1216/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Joint Embedding of Words and Labels for Text Classification, Wang et al. ACL 2018](https://www.aclweb.org/anthology/P18-1216/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is interested in combining word embedding with label embeddig to make word embedding efficient to a task (i.e. text classification).
@@ -54,8 +54,8 @@ Word embeddings are effective intermediate representations for capturing semanti
 # Reference 
 
 - Paper 
-  - [Arxiv version: Joint Embedding of Words and Labels for Text Classification](https://arxiv.org/abs/1805.04174)
-  - [ACL 2018 version: Joint Embedding of Words and Labels for Text Classification, Wang.(ACL 2018)](https://www.aclweb.org/anthology/P18-1216/)
+  - [arXiv Version: Joint Embedding of Words and Labels for Text Classification. Wang et al. arXiv 2018](https://arxiv.org/abs/1805.04174)
+  - [ACL Version: Joint Embedding of Words and Labels for Text Classification. Wang et al. ACL 2018](https://www.aclweb.org/anthology/P18-1216/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
