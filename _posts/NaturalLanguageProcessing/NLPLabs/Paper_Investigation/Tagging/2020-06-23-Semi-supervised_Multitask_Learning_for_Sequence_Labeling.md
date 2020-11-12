@@ -38,7 +38,7 @@ They propose a sequence labeling framework with a secondary training objective, 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Semi-supervised Multitask Learning for Sequence Labelingg. Marek Rei. arXiv 2017](https://arxiv.org/abs/1704.07156)
+  - [arXiv version: Semi-supervised Multitask Learning for Sequence Labelingg. Marek Rei. arXiv 2017](https://arxiv.org/abs/1704.07156)
   - [ACL 2017 version: Semi-supervised Multitask Learning for Sequence Labeling. Marek Rei. ACL 2017](https://www.aclweb.org/anthology/P17-1194/)
   
 - How to use html for alert
