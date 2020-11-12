@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Recurrent neural network based language model. Mikolov et al. INTERSPEECH. 2010.
-subtitle: Title of paper - Recurrent neural network based language model. Mikolov et al. INTERSPEECH. 2010. 
+title: Recurrent neural network based language model
+subtitle: Title of paper - Recurrent neural network based language model
 category: NLP papers - Language Model
 tags: [neural network, language model]
 permalink: /2018/12/06/Recurrent_Neural_Network_based_language_model/
