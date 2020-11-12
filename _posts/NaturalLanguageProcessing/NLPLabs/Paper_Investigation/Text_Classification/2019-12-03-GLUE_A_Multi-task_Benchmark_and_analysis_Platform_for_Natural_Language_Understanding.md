@@ -46,8 +46,8 @@ For natural language understanding (NLU) technology to be maximally useful, it m
 # Reference 
 
 - Paper 
-  - [Arxiv version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. arXiv 2019](https://arxiv.org/abs/1804.07461)
-  - [EMNLP 2018 version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5446/)
+  - [arXiv Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. arXiv 2019](https://arxiv.org/abs/1804.07461)
+  - [EMNLP Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5446/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
