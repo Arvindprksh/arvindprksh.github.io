@@ -17,12 +17,12 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. NAACL 2019](https://www.aclweb.org/anthology/N19-1112/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Linguistic Knowledge and Transferability of Contextual Representations (Liu et al., NAACL 2019)](https://www.aclweb.org/anthology/N19-1112/) I read and studied. 
 {% include MathJax.html %}
 
 This paper investigated the linguistic knowledge and transferability on contextual representation (e.g. ELMo, BERT) as follows:
 
-![Liu et al. NAACL 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-26-Linguistic_Knowledge_and_Transferability_of_Contextual_Representations/Linguistic_Knowledge_N_transferability_0.PNG)
+![Liu et al., NAACL 2019](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Contextual_Embedding/2019-12-26-Linguistic_Knowledge_and_Transferability_of_Contextual_Representations/Linguistic_Knowledge_N_transferability_0.PNG)
 
 They said their analysis reveals interesting insights: 
 
@@ -42,14 +42,14 @@ Contextual word representations derived from large-scale neural language models 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N19-1112/">The paper: Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. NAACL 2019</a>
+  <a href="https://www.aclweb.org/anthology/N19-1112/">The paper: Linguistic Knowledge and Transferability of Contextual Representations (Liu et al., NAACL 2019)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. arXiv 2019](https://arxiv.org/abs/1903.08855)
-  - [NAACL 2019 version: Linguistic Knowledge and Transferability of Contextual Representations. Liu et al. NAACL 2019](https://www.aclweb.org/anthology/N19-1112/)
+  - [arXiv Version: Linguistic Knowledge and Transferability of Contextual Representations (Liu et al., arXiv 2019)](https://arxiv.org/abs/1903.08855)
+  - [NAACL Version: Linguistic Knowledge and Transferability of Contextual Representations (Liu et al., NAACL 2019)](https://www.aclweb.org/anthology/N19-1112/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
