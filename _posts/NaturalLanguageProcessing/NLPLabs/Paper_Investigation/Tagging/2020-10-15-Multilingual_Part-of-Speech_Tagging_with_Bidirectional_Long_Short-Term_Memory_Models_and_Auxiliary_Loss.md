@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss (Plank et al., ACL 2016)](https://www.aclweb.org/anthology/P16-2067/) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -25,7 +25,7 @@ They performed the experiment on POS tagging with multiple languages.
 
 They used character embedding and byte embedding to handle rare words as follows:
 
-![Plank et al. ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-10-15-Multilingual_Part-of-Speech_Tagging_with_Bidirectional_Long_Short-Term_Memory_Models_and_Auxiliary_Loss/pos_bi_lstm_wih_fre.PNG)
+![Plank et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-10-15-Multilingual_Part-of-Speech_Tagging_with_Bidirectional_Long_Short-Term_Memory_Models_and_Auxiliary_Loss/pos_bi_lstm_wih_fre.PNG)
 
 on their model, they train the bi-LSTM tagger to predict both the tags of the sequence, as well as a label that represents the log frequency of the next token as estimated from the training data
 
@@ -45,14 +45,14 @@ Bidirectional long short-term memory (biLSTM) networks have recently proven succ
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P16-2067/">The paper: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/P16-2067/">The paper: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss (Plank et al., ACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-   - [arXiv Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. arXiv 2016](https://arxiv.org/abs/1604.05529)
-   - [ACL Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss. Plank et al. ACL 2016](https://www.aclweb.org/anthology/P16-2067/)
+   - [arXiv Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss (Plank et al., arXiv 2016)](https://arxiv.org/abs/1604.05529)
+   - [ACL Version: Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss (Plank et al., ACL 2016)](https://www.aclweb.org/anthology/P16-2067/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
