@@ -17,14 +17,14 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Semi-supervised Multitask Learning for Sequence Labeling. Marek Rei. ACL 2017](https://www.aclweb.org/anthology/P17-1194/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Semi-supervised Multitask Learning for Sequence Labeling (Marek Rei., ACL 2017)](https://www.aclweb.org/anthology/P17-1194/) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed a method using auxiliary objection for sequence labeling task. 
 
 They chose the language modeling as secondary objective loss for sequence labelding as follow:
 
-![Marek Rei. ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-23-Semi-supervised_Multitask_Learning_for_Sequence_Labeling/secondary_objective_model.PNG)
+![Marek Rei., ACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-23-Semi-supervised_Multitask_Learning_for_Sequence_Labeling/secondary_objective_model.PNG)
 
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
@@ -32,14 +32,14 @@ They propose a sequence labeling framework with a secondary training objective, 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1194/">The paper: Semi-supervised Multitask Learning for Sequence Labeling. Marek Rei. ACL 2017</a>
+  <a href="https://www.aclweb.org/anthology/P17-1194/">The paper: Semi-supervised Multitask Learning for Sequence Labeling (Marek Rei., ACL 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Semi-supervised Multitask Learning for Sequence Labelingg. Marek Rei. arXiv 2017](https://arxiv.org/abs/1704.07156)
-  - [ACL Version: Semi-supervised Multitask Learning for Sequence Labeling. Marek Rei. ACL 2017](https://www.aclweb.org/anthology/P17-1194/)
+  - [arXiv Version: Semi-supervised Multitask Learning for Sequence Labelingg (Marek Rei., arXiv 2017)](https://arxiv.org/abs/1704.07156)
+  - [ACL Version: Semi-supervised Multitask Learning for Sequence Labeling (Marek Rei., ACL 2017)](https://www.aclweb.org/anthology/P17-1194/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
