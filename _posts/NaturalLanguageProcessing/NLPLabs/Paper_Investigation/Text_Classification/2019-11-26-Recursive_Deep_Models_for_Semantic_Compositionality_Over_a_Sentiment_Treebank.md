@@ -17,14 +17,14 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank (Socher et al., EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/) I read and studied. 
 {% include MathJax.html %}
 
 This paper focused on the compositionalty of semantic vector space based on a well-structed tree. 
 
 They suggest model and how to compositionality of sentimental data as followings: 
 
-![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank1.PNG)
+![Socher et al., EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank1.PNG)
 
 They provide a new model to embed the compositionality of new dataset called the [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/)
 
@@ -42,7 +42,7 @@ Also they found
 
 They used softmax as classifier on each node as followings: 
 
-![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank2.PNG)
+![Socher et al., EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank2.PNG)
 
 As you can see the figure above, they use word vectors immediately as parameters to optimize and as feature input to a softmax classifier.
 
@@ -52,7 +52,7 @@ The simplest member of the family of recursive neural networks is the **standard
 
 First, it is determined which parent already has all its children computed. In the above exmple figure, \\(p_1\\) has its two children's vectors since both are words. the standard recursive neural network(RNN) uses the following equations to compute the parent node vectors:
 
-![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation1.PNG)
+![Socher et al., EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation1.PNG)
 
 Where $f=tanh$ is a standard element-wise nonlinearity. The dimensionality of parent node vectors is the same from that of childrens for recursive composition.
 
@@ -60,7 +60,7 @@ The second member of RNNs is Matrix-Vector RNN (MV-RNN) that is linguistically m
 
 For this model, each n-gram is represented as al ist of (vector, matrix) paris, together with the parse tree. For the tree with (vector, matrix) nodes: 
 
-![Socher et al. EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation_2.PNG)
+![Socher et al., EMNLP 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-26-Recursive_Deep_Models_for_Semantic_Compositionality_Over_a_Sentiment_Treebank/SENT_tree_bank_equation_2.PNG)
 
 Where \\(W_M \in \mathbb R^{d \times 2d}\\) and the result is againa \\(d \times d \\) matrix
 
@@ -73,19 +73,19 @@ Semantic word spaces have been very useful but cannot express the meaning of lon
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D13-1170/">The paper: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)</a>
+  <a href="https://www.aclweb.org/anthology/D13-1170/">The paper: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank (Socher et al., EMNLP 2013)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [EMNLP Version: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/)
+  - [EMNLP Version: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank (Socher et al., EMNLP 2013)](https://www.aclweb.org/anthology/D13-1170/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
     
 - For your information
-  - [Supplementary Material: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank. (Socher et al. EMNLP 2013)](https://www.aclweb.org/anthology/attachments/D13-1170.Attachment.pdf)
+  - [Supplementary Material: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank (Socher et al., EMNLP 2013)](https://www.aclweb.org/anthology/attachments/D13-1170.Attachment.pdf)
   - [Sentiment Analysis by Stanford NLP Group](https://nlp.stanford.edu/sentiment/)
 
 
