@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Improving Word Representations via Global Context and Multiple Word Prototypes. Huang et al. ACL 2012](https://www.aclweb.org/anthology/P12-1092/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Improving Word Representations via Global Context and Multiple Word Prototypes (Huang et al., ACL 2012)](https://www.aclweb.org/anthology/P12-1092/) I read and studied. 
 {% include MathJax.html %}
 
 They propose new language model using both local and global context. 
@@ -48,20 +48,20 @@ Finally, for multi-prototype approach, each occurence in the corpus is re-labele
 
 The following is the architecture figure using **global context** from [Improving Word Representations via Global Context and Multiple Word Prototypes. Huang et al. ACL 2012](https://www.aclweb.org/anthology/P12-1092/).
 
-![Huang et al. ACL 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-02-09-Improving_Word_Representations_via_Global_Context_and_Multiple_Word_Prototypes/multi-prototypes.PNG)
+![Huang et al., ACL 2012](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-02-09-Improving_Word_Representations_via_Global_Context_and_Multiple_Word_Prototypes/multi-prototypes.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Unsupervised word representations are very useful in NLP tasks both as inputs to learning algorithms and as extra word features in NLP systems. However, most of these models are built with only local context and one representation per word. This is problematic because words are often polysemous and global context can also provide useful information for learning word meanings. They present a new neural network architecture which 1) learns word embeddings that better capture the semantics of words by incorporating both local and global document context, and 2) accounts for homonymy and polysemy by learning multiple embeddings per word. They also introduce a new dataset with human judgments on pairs of words in sentential context.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P12-1092/">The paper: Improving Word Representations via Global Context and Multiple Word Prototypes. Huang et al. ACL 2012</a>
+  <a href="https://www.aclweb.org/anthology/P12-1092/">The paper: Improving Word Representations via Global Context and Multiple Word Prototypes (Huang et al., ACL 2012)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ACL 2012 version: Improving Word Representations via Global Context and Multiple Word Prototypes. Huang et al. ACL 2012](https://www.aclweb.org/anthology/P12-1092/)
+  - [ACL Version: Improving Word Representations via Global Context and Multiple Word Prototypes (Huang et al., ACL 2012)](https://www.aclweb.org/anthology/P12-1092/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
