@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Improving Language Understanding by Generative Pre-Training. Radford et al. 2018](https://paperswithcode.com/paper/improving-language-understanding-by) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Improving Language Understanding by Generative Pre-Training (Radford et al., 2018)](https://paperswithcode.com/paper/improving-language-understanding-by) I read and studied. 
 {% include MathJax.html %}
 
 This paper focus on transfer learning with generative pre-training. 
@@ -26,7 +26,7 @@ They also proposed task-agnostic model as follows:
 
 When they used lagnauge modeling as pre-training objective and then fine-tunes model on target task with auxiliary training objective, which is language modeling.
 
-![Radford et al. 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Transfer_Learning/2020-06-22-Improving_Language_Understanding_by_Generative_Pre-Training/task-agnostic_model.PNG)
+![Radford et al., 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Transfer_Learning/2020-06-22-Improving_Language_Understanding_by_Generative_Pre-Training/task-agnostic_model.PNG)
 
 To sum up, 
 
@@ -76,13 +76,13 @@ Natural language understanding comprises a wide range of diverse tasks such as t
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://paperswithcode.com/paper/improving-language-understanding-by">The paper: Improving Language Understanding by Generative Pre-Training. Radford et al. 2018</a>
+  <a href="https://paperswithcode.com/paper/improving-language-understanding-by">The paper: Improving Language Understanding by Generative Pre-Training (Radford et al., 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Paperswithcode: Improving Language Understanding by Generative Pre-Training. Radford et al. 2018](https://paperswithcode.com/paper/improving-language-understanding-by)
+  - [Paperswithcode: Improving Language Understanding by Generative Pre-Training (Radford et al., 2018)](https://paperswithcode.com/paper/improving-language-understanding-by)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
