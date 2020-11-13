@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-After reading this paper,[The Distributional Hypothesis(MagnusSahlgren 2008)](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf), the discributional hypothesis mean you can estimate the meaning of word from distribution of words in context. 
+After reading this paper,[The Distributional Hypothesis (MagnusSahlgren., 2008)](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf), the discributional hypothesis mean you can estimate the meaning of word from distribution of words in context. 
 
 In here, context could be a sentence, paragraph or document and so forth. So when I find the meaning of word, the distribution of words help rather than usage of words.
 
@@ -65,7 +65,7 @@ The point of this representation is that we can compare the row vector called **
 
 using linear algebra,  so that words that have occured in the same documents will get high pair-wise similarity scores. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-08-The_Distribuational_Hypothesis/table1.png)
+![MagnusSahlgren., 2008](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-08-The_Distribuational_Hypothesis/table1.png)
 
 # Paradigmatic model
 
@@ -100,7 +100,7 @@ paradigmatic models collect text data in a words-by-words co-occurence matrix th
 
 Let's see an example as folloings:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-08-The_Distribuational_Hypothesis/table2.png) 
+![MagnusSahlgren., 2008](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-03-08-The_Distribuational_Hypothesis/table2.png) 
  
 The words-by-words matrix above is called a directional co-occurence matrix, in the table 2 above, thr row vectors contain co-occurence counts with words that have occured one position to the right of the words, while the column vectors contain co-occurence counts with words that have occured one position to their left.
 
@@ -117,13 +117,13 @@ Pedersen, 1995)
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf">The paper: The distributional hypothesis</a>
+  <a href="http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf">The paper: The distributional hypothesis (MagnusSahlgren., 2008)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [The distributional hypothesis](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf)
+  - [The distributional hypothesis (MagnusSahlgren., 2008)](http://www.diva-portal.org/smash/get/diva2:1041938/FULLTEXT01.pdf)
  
 - material of lecture in stanford university
   - [Distributaional appraches to word embeddings](https://web.stanford.edu/class/linguist236/materials/ling236-handout-05-09-vsm.pdf)
