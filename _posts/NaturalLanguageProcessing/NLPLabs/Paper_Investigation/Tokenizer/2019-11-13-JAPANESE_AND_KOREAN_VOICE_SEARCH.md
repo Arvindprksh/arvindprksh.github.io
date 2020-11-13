@@ -84,7 +84,7 @@ This paper describe the techniques used to handle an infinite vocabulary and how
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://ieeexplore.ieee.org/document/6289079">The paper: Japanese and Korean Voice Search (Schuster and Nakajima. 2012)</a>
+  <a href="https://ieeexplore.ieee.org/document/6289079">The paper: Japanese and Korean Voice Search (Schuster and Nakajima., 2012)</a>
 </div>
 
 # Reference 
