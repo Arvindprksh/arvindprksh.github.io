@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Dependency-Based Word Embeddings. Levy and Goldberg. ACL 2014](https://www.aclweb.org/anthology/P14-2050/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Dependency-Based Word Embeddings (Levy and Goldberg., ACL 2014)](https://www.aclweb.org/anthology/P14-2050/) I read and studied. 
 {% include MathJax.html %}
 
 Previous work on neural word embeddings take the contexts of a word to be its linear context – words that precede and follow the target word, typically in a window of k tokens to each side. In this work, we generalize the SKIPGRAM model, and move from linear bag-of-words contexts to arbitrary word contexts.
@@ -32,13 +32,13 @@ They thus expect the syntactic contexts to yield more focused embeddings, captur
 
 The following is an example of dependency-base context extraction.
 
-![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding.PNG)
+![Levy and Goldberg., ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding.PNG)
 
 They found out that BOW find words that associate with w, while DEPS find words that behave like w and then observe that while both BOW5 and BOW2 yield topical similarities, the larger window size result in more topicality, as expected
 
 The result shwo up on Table 1 figure below. 
 
-![Levy and Goldberg. ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding_result.PNG)
+![Levy and Goldberg., ACL 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-15_Dependency_Based_Word_Embeddings/Dependency_base_embedding_result.PNG)
 
 The neural word-embeddings are considered opaque, in the sense that it is hard to assign meanings to the dimensions of the induced representation. They show that the SKIPGRAM model does allow for some introspection by querying it for contexts that are “activated by” a target word. This allows us to peek into the learned representation and explore the contexts that are found by the learning process to be most discriminative of particular words (or groups of words).
 
@@ -49,13 +49,13 @@ While continuous word embeddings are gaining popularity, current models are base
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P14-2050/">The paper: Dependency-Based Word Embeddings. Levy and Goldberg. ACL 2014</a>
+  <a href="https://www.aclweb.org/anthology/P14-2050/">The paper: Dependency-Based Word Embeddings (Levy and Goldberg., ACL 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ACL 2014 Ver: Dependency-Based Word Embeddings. Levy and Goldberg. ACL 2014](https://www.aclweb.org/anthology/P14-2050/)
+  - [ACL Version: Dependency-Based Word Embeddings (Levy and Goldberg., ACL 2014)](https://www.aclweb.org/anthology/P14-2050/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
