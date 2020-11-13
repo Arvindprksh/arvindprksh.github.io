@@ -17,12 +17,12 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and note it, [Skip-Thought Vectors (Kiros et al., 2015)](https://papers.nips.cc/paper/5950-skip-thought-vectors). 
+This is a brief summary of paper for me to study and note it, [Skip-Thought Vectors (Kiros et al., NIPS 2015)](https://papers.nips.cc/paper/5950-skip-thought-vectors). 
 {% include MathJax.html %}
 
 This papre is related to how to representation a sentence to a fixed-size vector utilizing sequence to sequence model with GRU.
 
-![Kiros et al., 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2019-08-30-Skip-Thought_Vectors/Skip-Thought_Vector.JPG)
+![Kiros et al., NIPS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2019-08-30-Skip-Thought_Vectors/Skip-Thought_Vector.JPG)
 
 They model use a sentence tuple \\((s_{t-1}, s_t, s_{t+1})\\). Let \\(w_i^t\\) denote the *t*-th word for sentence \\(s_i\\) and let \\(x_i^t\\) denote its word embedding. 
 
@@ -83,8 +83,8 @@ They describe an approach for unsupervised learning of a generic, distributed se
 # Reference 
 
 - Paper 
-  - [ArXiv ver: Skip-Thought Vectors (Kiros et al., 2015)](https://arxiv.org/abs/1506.06726)
-  - [NIPS ver: Skip-Thought Vectors (Kiros et al., 2015)](https://papers.nips.cc/paper/5950-skip-thought-vectors)
+  - [arXiv Version: Skip-Thought Vectors (Kiros et al., arXiv 2015)](https://arxiv.org/abs/1506.06726)
+  - [NIPS Version: Skip-Thought Vectors (Kiros et al., NIPS 2015)](https://papers.nips.cc/paper/5950-skip-thought-vectors)
   
   
 - How to use html for alert
