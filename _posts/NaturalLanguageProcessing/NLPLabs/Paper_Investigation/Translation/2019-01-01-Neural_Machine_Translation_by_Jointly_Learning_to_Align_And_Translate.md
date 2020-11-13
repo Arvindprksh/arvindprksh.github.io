@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper, [Neural Machine Translation By jointly Learning to align and translate, Bahdanau et al. ICLR 2015](https://arxiv.org/abs/1409.0473) I read and studied. 
+This is a brief summary of paper, [Neural Machine Translation By jointly Learning to align and translate (Bahdanau et al., ICLR 2015)](https://arxiv.org/abs/1409.0473) I read and studied. 
 
 The reason that I am writing this post is for me to organize about studying what the Attention is in deep learning.
 
@@ -159,13 +159,13 @@ This paper explained how to pay attention on NMT(neural machine translation) tas
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1409.0473">The paper: Neural Machine Translation By Jointly Learning to align and translate</a>
+  <a href="https://arxiv.org/abs/1409.0473">The paper: Neural Machine Translation By Jointly Learning to align and translate (Bahdanau et al., arXiv 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Neural Machine Translation By Jointly Learning to align and translate. Bahdanau et al. arXiv 2015](https://arxiv.org/abs/1409.0473)
+  - [arXiv Version: Neural Machine Translation By Jointly Learning to align and translate (Bahdanau et al., arXiv 2015)](https://arxiv.org/abs/1409.0473)
   
  
 - How to use html for alert
