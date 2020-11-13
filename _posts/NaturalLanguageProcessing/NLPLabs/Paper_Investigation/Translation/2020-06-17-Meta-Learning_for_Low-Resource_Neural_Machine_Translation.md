@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1398/)
+This is a brief summary of paper for me to note it, [Meta-Learning for Low-Resource Neural Machine Translation (Gu et al., EMNLP 2018)](https://www.aclweb.org/anthology/D18-1398/)
 
 {% include MathJax.html %}
 
@@ -31,7 +31,7 @@ There are two categories of meta-learning:
 
 They implement translation task adapting second one of two categories below to neural machine translation. 
 
-![Gu et al. EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-17-Meta-Learning_for_Low-Resource_Neural_Machine_Translation/Meta-Learning1.PNG)
+![Gu et al., EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-17-Meta-Learning_for_Low-Resource_Neural_Machine_Translation/Meta-Learning1.PNG)
 
 In this paper, they follow up on these latest approaches based on multilingual NMT and propose a meta-learning algorithm for low-resource neural machine translation. We start by arguing that the recently proposed model-agnostic meta-learning algorithm could be applied to low-resource machine translation by viewing language pairs as separate tasks. This view enables us to use MAML to find the initialization of model parameters that facilitate fast adaptation for a new language pair with a minimal amount of training examples. 
 
@@ -49,7 +49,7 @@ In multilingual translation, this issue has been tackled by using a vocabulary o
 
 This surface-level sharing is however limited, as it cannot be applied to languages exhibiting distinct orthography (e.g., IndoEuroepan languages vs. Korean.)
 
-![Gu et al. EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-17-Meta-Learning_for_Low-Resource_Neural_Machine_Translation/Meta-Learning2.PNG)
+![Gu et al., EMNLP 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-17-Meta-Learning_for_Low-Resource_Neural_Machine_Translation/Meta-Learning2.PNG)
 
 Illustration In Fig. 2, they contrast transfer learning, multilingual learning and meta-learning using three source language pairs (Fr-En, Es-En and Pt-En) and two target pairs (Ro-En and Lv-En).
 
@@ -66,14 +66,14 @@ In this paper, they propose to extend the recently introduced model-agnostic met
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D18-1398">The paper: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018</a>
+  <a href="https://www.aclweb.org/anthology/D18-1398">The paper: Meta-Learning for Low-Resource Neural Machine Translation (Gu et al., EMNLP 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. arXiv 2018](https://arxiv.org/abs/1808.08437)
-  - [EMNLP Version: Meta-Learning for Low-Resource Neural Machine Translation. Gu et al. EMNLP 2018](https://www.aclweb.org/anthology/D18-1398/)
+  - [arXiv Version: Meta-Learning for Low-Resource Neural Machine Translation (Gu et al., arXiv 2018)](https://arxiv.org/abs/1808.08437)
+  - [EMNLP Version: Meta-Learning for Low-Resource Neural Machine Translation (Gu et al., EMNLP 2018)](https://www.aclweb.org/anthology/D18-1398/)
   
  
 - How to use html for alert
