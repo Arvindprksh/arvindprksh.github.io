@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Semi-supervised Sequence Learning, Dai and Le. NIPS 2015](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Semi-supervised Sequence Learning (Dai and Le., NIPS 2015)](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning) I read and studied. 
 {% include MathJax.html %}
 
 This paper showed the pretrainig with unlabeled data improve the performance of text classification. 
@@ -26,7 +26,7 @@ They present two approaches that sequence autoencoder and Language modeling with
 
 Below is the sequence autoencoder firgure they used: 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-11-Semi-supervised_Sequence_Learning/semi-supervised_sequence_learning.PNG)
+![Dai and Le., NIPS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2019-11-11-Semi-supervised_Sequence_Learning/semi-supervised_sequence_learning.PNG)
 
 Interesting experiment to me is that they used CIFAR-10 to classify imaget with LSTM pretraining.
 
@@ -51,14 +51,14 @@ They present two approaches to use unlabeled data to improve Sequence Learning w
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning">The paper: Semi-supervised Sequence Learning, Andrew M. Dai and Quoc V. Le.(NIPS 2015)</a>
+  <a href="https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning">The paper: Semi-supervised Sequence Learning (Dai and Le., NIPS 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Semi-supervised Sequence Learning, Dai and Le. arXiv 2015](https://arxiv.org/abs/1511.01432)
-  - [NIPS Version: Semi-supervised Sequence Learning, Dai and Le. NIPS 2015](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning)
+  - [arXiv Version: Semi-supervised Sequence Learning (Dai and Le., arXiv 2015)](https://arxiv.org/abs/1511.01432)
+  - [NIPS Version: Semi-supervised Sequence Learning (Dai and Le., NIPS 2015)](https://papers.nips.cc/paper/5949-semi-supervised-sequence-learning)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
