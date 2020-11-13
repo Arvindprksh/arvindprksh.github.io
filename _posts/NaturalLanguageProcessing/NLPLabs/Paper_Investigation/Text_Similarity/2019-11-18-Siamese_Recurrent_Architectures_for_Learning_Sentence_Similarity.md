@@ -17,14 +17,14 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan. AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan., AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195) I read and studied. 
 {% include MathJax.html %}
 
 Thes propose a siamese neural network based on LSTM to compare a pair of sentences.
 
 First, they encode two sentence of different length into fixed-size vectors using an LSTM as follows:
 
-![Mueller and Thyagarajan. AAAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Similarity/2019-11-18-Siamese_Recurrent_Architectures_for_Learning_Sentence_Similarity/Siamese_LSTM_neural_network.PNG)
+![Mueller and Thyagarajan., AAAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Similarity/2019-11-18-Siamese_Recurrent_Architectures_for_Learning_Sentence_Similarity/Siamese_LSTM_neural_network.PNG)
 
 As you can see, they used Manhattan distance as objective function.
 
@@ -55,13 +55,13 @@ They present a siamese adaptation of the Long Short-Term Memory (LSTM) network f
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195">The paper: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan. AAAI 2016)</a>
+  <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195">The paper: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan., AAAI 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [AAAI Version: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan. AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195)
+  - [AAAI Version: Siamese Recurrent Architectures for Learning Sentence Similarity (Mueller and Thyagarajan., AAAI 2016)](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
