@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [An efficient framework for learning sentence representations. Lajanugen Logeswaran and Honglak Lee. ICLR 2018](https://openreview.net/forum?id=rJvJXZb0W) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [An efficient framework for learning sentence representations (Logeswaran and Lee., ICLR 2018)](https://openreview.net/forum?id=rJvJXZb0W) I read and studied. 
 {% include MathJax.html %}
 
 They propose simple method to represent a sentence into a fixed-length vectors they call **[Quick Thought Vectors](https://github.com/lajanugen/S2V)**
@@ -30,7 +30,7 @@ They turn the part of decoder to generate adjacent sentences into discriminative
 
 The method is as follows:
 
-![Lajanugen Logeswaran and Honglak Lee. ICLR 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2019-12-19-An_efficient_framework_for_learning_sentence_representations/quick_thought_vectors1.PNG)
+![Logeswaran and Lee., ICLR 2018](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2019-12-19-An_efficient_framework_for_learning_sentence_representations/quick_thought_vectors1.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 In this work they propose a simple and efficient framework for learning sentence representations from unlabelled data. Drawing inspiration from the distributional hypothesis and recent work on learning sentence representations, they reformulate the problem of predicting the context in which a sentence appears as a classification problem. Given a sentence and its context, a classifier distinguishes context sentences from other contrastive sentences based on their vector representations. This allows them to efficiently learn different types of encoding functions. Their method is calle qucik-thougt vectors.
@@ -38,14 +38,14 @@ speedup in training time.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=rJvJXZb0W">The paper: An efficient framework for learning sentence representations. Lajanugen Logeswaran and Honglak Lee. ICLR 2018</a>
+  <a href="https://openreview.net/forum?id=rJvJXZb0W">The paper: An efficient framework for learning sentence representations (Logeswaran and Lee., ICLR 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Arxiv version: An efficient framework for learning sentence representations. Lajanugen Logeswaran and Honglak Lee. Arxiv 2018](https://arxiv.org/abs/1803.02893)
-  - [ICLR 2018 version: An efficient framework for learning sentence representations. Lajanugen Logeswaran and Honglak Lee. ICLR 2018](https://openreview.net/forum?id=rJvJXZb0W)
+  - [arXiv Version: An efficient framework for learning sentence representations  (Logeswaran and Lee., arXiv 2018)](https://arxiv.org/abs/1803.02893)
+  - [ICLR Version: An efficient framework for learning sentence representations (Logeswaran and Lee., ICLR 2018)](https://openreview.net/forum?id=rJvJXZb0W)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
