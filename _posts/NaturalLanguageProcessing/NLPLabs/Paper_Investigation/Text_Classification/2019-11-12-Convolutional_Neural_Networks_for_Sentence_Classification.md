@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [EMNLP 2014 version: Convolutional Neural Networks for Sentence Classification (Kim., EMNLP 2014)](https://www.aclweb.org/anthology/D14-1181/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Convolutional Neural Networks for Sentence Classification (Kim., EMNLP 2014)](https://www.aclweb.org/anthology/D14-1181/) I read and studied. 
 {% include MathJax.html %}
 
 They propose CNN architecture on top two sets of pre-training **word2vecs**, static and dynamic one.  
