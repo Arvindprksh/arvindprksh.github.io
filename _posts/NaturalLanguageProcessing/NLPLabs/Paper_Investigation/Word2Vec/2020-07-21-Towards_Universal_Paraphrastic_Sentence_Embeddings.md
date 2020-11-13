@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Towards Universal Paraphrastic Sentence Embeddings. Wieting et al. ICLR 2016](https://arxiv.org/abs/1511.08198) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Towards Universal Paraphrastic Sentence Embeddings (Wieting et al. arXiv 2016)](https://arxiv.org/abs/1511.08198) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -92,8 +92,8 @@ They consider the problem of learning general-purpose, paraphrastic sentence emb
 # Reference 
 
 - Paper 
-  - [arXiv version: Towards Universal Paraphrastic Sentence Embeddings. Wieting et al. ICLR 2016](https://arxiv.org/abs/1511.08198)
-  - [ICRL 2016 version: Towards Universal Paraphrastic Sentence Embeddings. Wieting et al. 2016](https://www.aclweb.org/anthology/N16-1162/)
+  - [arXiv Version: Towards Universal Paraphrastic Sentence Embeddings (Wieting et al. arXiv 2016)](https://arxiv.org/abs/1511.08198)
+  - [ICLR Version: Towards Universal Paraphrastic Sentence Embeddings (Wieting et al., ICLR 2016)](https://iclr.cc/archive/www/doku.php%3Fid=iclr2016:accepted-main.html/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
