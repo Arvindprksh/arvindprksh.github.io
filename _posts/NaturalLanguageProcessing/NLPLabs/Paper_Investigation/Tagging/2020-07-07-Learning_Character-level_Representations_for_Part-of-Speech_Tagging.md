@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](http://proceedings.mlr.press/v32/santos14.html/) I read and studied. 
 {% include MathJax.html %}
 
 They used character embedding not pretrained other than word embedding pretrained. 
@@ -26,7 +26,7 @@ They concatented character and word embedding, and characters is a intra-word to
 
 When constructing a word-level representation from characters, they used CNN network as follows:
 
-![Santos and Zadrozny. ICML 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-07-07-Learning_Character-level_Representations_for_Part-of-Speech_Tagging/cnn_embedding.PNG)
+![Santos and Zadrozny., ICML 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-07-07-Learning_Character-level_Representations_for_Part-of-Speech_Tagging/cnn_embedding.PNG)
 
 The next layer used the concatenation of word-symbol and word-level representation with sucessive window centralized in a target word. 
 
@@ -37,13 +37,13 @@ Distributed word representations have recently been proven to be an invaluable r
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://proceedings.mlr.press/v32/santos14.html/">The paper: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014</a>
+  <a href="http://proceedings.mlr.press/v32/santos14.html/">The paper: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ICML Version: Learning Character-level Representations for Part-of-Speech Tagging. Santos and Zadrozny. ICML 2014](http://proceedings.mlr.press/v32/santos14.html/)
+  - [ICML Version: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](http://proceedings.mlr.press/v32/santos14.html/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
