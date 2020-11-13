@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. ACL 2014](https://www.aclweb.org/anthology/P14-1062/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [A Convolutional Neural Network for Modelling Sentences (Kalchbrenner et al., ACL 2014)](https://www.aclweb.org/anthology/P14-1062/) I read and studied. 
 {% include MathJax.html %}
 
 This paper propose sentence embedding method by convoutionala neural network with dynamic max pooling operation. 
@@ -26,7 +26,7 @@ Their method complements the Time-Delay Neural Network(TDNN), in particular, MAX
 
 The architecture is the following:
 
-![Kalchbrenner et al. ACL 20146](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-12-A_Convolutional_Neural_Network_for_Modelling_Sentences/dynamic_pooling.PNG)
+![Kalchbrenner et al., ACL 20146](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-12-A_Convolutional_Neural_Network_for_Modelling_Sentences/dynamic_pooling.PNG)
 
 As you can see figure above, their propose K-Max pooling which extract K highest valures in time sequence of p(i.e a sequence p). 
 
@@ -44,14 +44,14 @@ The ability to accurately represent sentences is central to language understandi
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P14-1062/">The paper: A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. ACL 2014</a>
+  <a href="https://www.aclweb.org/anthology/P14-1062/">The paper: A Convolutional Neural Network for Modelling Sentences (Kalchbrenner et al., ACL 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. arXiv 2014](https://arxiv.org/abs/1404.2188)
-  - [ACL 2014 version: A Convolutional Neural Network for Modelling Sentences. Kalchbrenner et al. ACL 2014](https://www.aclweb.org/anthology/P14-1062/)
+  - [arXiv Version: A Convolutional Neural Network for Modelling Sentences (Kalchbrenner et al., arXiv 2014)](https://arxiv.org/abs/1404.2188)
+  - [ACL Version: A Convolutional Neural Network for Modelling Sentences (Kalchbrenner et al., ACL 2014)](https://www.aclweb.org/anthology/P14-1062/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
