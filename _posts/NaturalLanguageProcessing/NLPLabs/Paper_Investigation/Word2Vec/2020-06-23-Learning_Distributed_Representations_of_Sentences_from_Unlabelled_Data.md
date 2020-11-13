@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1162/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Learning Distributed Representations of Sentences from Unlabelled Data (Hill et al., NAACL 2016)](https://www.aclweb.org/anthology/N16-1162/) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -45,14 +45,14 @@ Unsupervised methods for learning distributed representations of words are ubiqu
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N16-1162/">The paper: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. NAACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/N16-1162/">The paper: Learning Distributed Representations of Sentences from Unlabelled Data (Hill et al., NAACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. 2016](https://arxiv.org/abs/1602.03483)
-  - [NAACL 2016 version: Learning Distributed Representations of Sentences from Unlabelled Data. Hill et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1162/)
+  - [arXiv Version: Learning Distributed Representations of Sentences from Unlabelled Data (Hill et al., arXiv 2016)](https://arxiv.org/abs/1602.03483)
+  - [NAACL Version: Learning Distributed Representations of Sentences from Unlabelled Data (Hill et al., NAACL 2016)](https://www.aclweb.org/anthology/N16-1162/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
