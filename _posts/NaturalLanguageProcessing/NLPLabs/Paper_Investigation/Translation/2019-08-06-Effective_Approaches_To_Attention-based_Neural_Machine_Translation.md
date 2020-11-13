@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study it, [Effective Approaches to Attention-based Neural Machine Translation, Luong et al. EMNLP. 2015](https://arxiv.org/abs/1508.04025) 
+This is a brief summary of paper for me to study it, [Effective Approaches to Attention-based Neural Machine Translation (Luong et al., EMNLP 2015)](https://arxiv.org/abs/1508.04025) 
 
 The reason that I am writing this post is for me to organize about studying what the Attention is in deep learning.
 
@@ -72,14 +72,14 @@ This paper explained Attention mechanism on translation task, from English to Ge
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1508.04025">The paper: Effective Approaches to Attention-based Neural Machine Translation</a>
+  <a href="https://arxiv.org/abs/1508.04025">The paper: Effective Approaches to Attention-based Neural Machine Translation (Luong et al., EMNLP 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. arXiv 2015](https://arxiv.org/abs/1508.04025)
-  - [EMNLP Version: Effective Approaches to Attention-based Neural Machine Translation. Luong et al. EMNLP 2015](https://aclweb.org/anthology/D15-1166)
+  - [arXiv Version: Effective Approaches to Attention-based Neural Machine Translation (Luong et al., arXiv 2015)](https://arxiv.org/abs/1508.04025)
+  - [EMNLP Version: Effective Approaches to Attention-based Neural Machine Translation (Luong et al., EMNLP 2015)](https://aclweb.org/anthology/D15-1166)
   
  
 - How to use html for alert
