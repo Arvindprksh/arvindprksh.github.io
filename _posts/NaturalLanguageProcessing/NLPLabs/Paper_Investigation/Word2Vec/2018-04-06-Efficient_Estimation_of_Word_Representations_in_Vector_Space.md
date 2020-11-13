@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-Overall, This paper,[Efficient Estimation of Word Representations in Vector Space, Mikolov et al.(2013)](https://arxiv.org/abs/1301.3781v3),  is saying about comparing computational time with each other model, and extension of NNLM which turns into two step. one is training word vector and then the other step is using the trained vector on The NNLM.
+Overall, This paper,[Efficient Estimation of Word Representations in Vector Space (Mikolov et al., arXiv 2013)](https://arxiv.org/abs/1301.3781v3),  is saying about comparing computational time with each other model, and extension of NNLM which turns into two step. one is training word vector and then the other step is using the trained vector on The NNLM.
 
 In estimaiting continuous representations of words including the well-known Latent Semantic Analysis(LSA) and Latent Dirichlet Allocation(LDA). 
 
@@ -38,11 +38,11 @@ Finally they got rid of the hidden layer, so their model heavily depends on the 
 
 The models are called CBOW(continuous bag of word) and skip gram. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Word2vec_models.png)
+![Mikolov et al., arXiv 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Word2vec_models.png)
 
 Let's see an examle they used for testing syntactic and semantic questions. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Example_of_five_types_of_semantic_and_nine_types_of_syntactic_qeustion.png)
+![Mikolov et al., arXiv 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-04-06-Efficient_Estimation_of_Word_Representations_in_Vector_Space/Example_of_five_types_of_semantic_and_nine_types_of_syntactic_qeustion.png)
 
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>
@@ -68,13 +68,13 @@ If you want to download the data set, visit <a href="http://www.fit.vutbr.cz/~im
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1301.3781v3">The paper: Efficient Estimation of Word Representations in Vector Space</a>
+  <a href="https://arxiv.org/abs/1301.3781v3">The paper: Efficient Estimation of Word Representations in Vector Space (Mikolov et al., arXiv 2013)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781v3)
+  - [arXiv Version: Efficient Estimation of Word Representations in Vector Space (Mikolov et al., arXiv 2013)](https://arxiv.org/abs/1301.3781v3)
   - [word test set: syntactic and semantic regularities](http://www.fit.vutbr.cz/~imikolov/rnnlm/word-test.v1.txt) 
  
 - Quoar
