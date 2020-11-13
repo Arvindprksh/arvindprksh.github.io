@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima., ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079) I read and studied. 
 {% include MathJax.html %}
 
 I was interested in WordPiece model. The reason is When I read the paper published by Google they used **WordPiece** model.
@@ -62,7 +62,7 @@ They showed an example of the segmentation and gluing proceduer-note that the or
 >>(4) a possible raw decoder result    
 >>(5) with the final result after removing underscores     
 
-![(Mike Schuster and Kaisuke Nakajima. 2012)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tokenizer/2019-11-13-JAPANESE_AND_KOREAN_VOICE_SEARCH/WordPieceModel_example.PNG)
+![(Mike Schuster and Kaisuke Nakajima., 2012)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tokenizer/2019-11-13-JAPANESE_AND_KOREAN_VOICE_SEARCH/WordPieceModel_example.PNG)
 
 Also, they said:
 >>this techniques are successfully used for some Asian languages (Japanese, Korean, Mandarin) across multiple applications, Voice Search, dictation as well as YouTube caption generation.  
@@ -90,8 +90,8 @@ This paper describe the techniques used to handle an infinite vocabulary and how
 # Reference 
 
 - Paper 
-  - [Google AI Research: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. 2012)](https://ai.google/research/pubs/pub37842/)
-  - [ICASSP Ver: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima. ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079)
+  - [Google AI Research: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima., 2012)](https://ai.google/research/pubs/pub37842/)
+  - [ICASSP Ver: Japanese and Korean Voice Search (Mike Schuster and Kaisuke Nakajima., ICASSP 2012)](https://ieeexplore.ieee.org/document/6289079)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
