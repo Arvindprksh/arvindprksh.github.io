@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Better Word Representations with Recursive Neural Networks for Morphology (Luong et al., CoNLL 2013)](https://www.aclweb.org/anthology/W13-3512/) I read and studied. 
 {% include MathJax.html %}
 
 They said that The existing methods treat each full-form word as indentity entity adn fail to capture the explicit relationship among morphologidcal variants of a word.
@@ -30,13 +30,13 @@ In orther words, this model focuses on contructing word vector from its morpheme
 
 The context-insensitive morphological RNN
 
-![Luong et al. CoNLL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology/MRNN.PNG)
+![Luong et al., CoNLL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology/MRNN.PNG)
 
 The following based on ngram neural language model has two layer. The first is to construct word embedding from its morphemes and the second is n gram neural network with ranking-type cost function.
 
 The context-sensitive morphological RNN below separates morphemes(stem + affix) and word which is the minimum meaning-bearing unit. 
 
-![Luong et al. CoNLL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology/CMRNN.PNG)
+![Luong et al., CoNLL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-13-Better_Word_Representations_with_Recursive_Neural_Networks_for_Morphology/CMRNN.PNG)
 
 They train the models above with ranking-type cost function to minimize in defining their objective funtion as below:
 
@@ -50,13 +50,13 @@ Vector-space word representations have been very successful in recent years at i
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W13-3512/">The paper: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013</a>
+  <a href="https://www.aclweb.org/anthology/W13-3512/">The paper: Better Word Representations with Recursive Neural Networks for Morphology (Luong et al., CoNLL 2013)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [CoNLL 2013 Ver: Better Word Representations with Recursive Neural Networks for Morphology. Luong et al. CoNLL 2013](https://www.aclweb.org/anthology/W13-3512/)
+  - [CoNLL Version: Better Word Representations with Recursive Neural Networks for Morphology (Luong et al., CoNLL 2013)](https://www.aclweb.org/anthology/W13-3512/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
