@@ -16,17 +16,17 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper, [End-to-end Sequence Labeling via Bi directional LSTM-CNNs-CRF. Ma and Hovy. ACL 2016](https://www.aclweb.org/anthology/P16-1101), proposed a neural network architectural for sequence labeling, which is NER and POS.
+This paper, [End-to-end Sequence Labeling via Bi directional LSTM-CNNs-CRF (Ma and Hovy., ACL 2016)](https://www.aclweb.org/anthology/P16-1101), proposed a neural network architectural for sequence labeling, which is NER and POS.
 
 Their models is end-to-end models relying on no task-specific resources, feature engineering or data pre-procsessing.
 
 They use convolutiona neural network to extract morphogical information from characters of words and encode it inot neural representations as follows.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/CNN_with_char.JPG)
+![Ma and Hovy., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/CNN_with_char.JPG)
 
 The whole model architecture they argued is the following
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/BLSTM_CNN_CRF.JPG)
+![Ma and Hovy., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2019-06-28-End-to-end_Sequence_Labeling_via_Bi_directional_LSTM-CNNs_CRF/BLSTM_CNN_CRF.JPG)
 
 As you can see their model above, they used character-level representation by concating word vector as input of Bidirectional LSTM.
 
@@ -78,8 +78,8 @@ their model is truely end-to-end, requiring no feature engineering or data pre-p
 # Reference 
 
 - Paper 
-  - [arXiv Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. arXiv 2016](https://arxiv.org/abs/1603.01354)
-  - [ACL Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF. Ma and Hovy. ACL 2016](https://www.aclweb.org/anthology/P16-1101)
+  - [arXiv Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF (Ma and Hovy., arXiv 2016)](https://arxiv.org/abs/1603.01354)
+  - [ACL Version: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF (Ma and Hovy., ACL 2016)](https://www.aclweb.org/anthology/P16-1101)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
