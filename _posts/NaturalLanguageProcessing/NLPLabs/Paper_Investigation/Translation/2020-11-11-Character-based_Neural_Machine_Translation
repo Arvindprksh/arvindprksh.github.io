@@ -18,25 +18,25 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Character-based Neural Machine Translation. Ling et al. arXiv 2015.](https://arxiv.org/abs/1511.04586)
+This is a brief summary of paper for me to study and organize it, [Character-based Neural Machine Translation (Ling et al., arXiv 2015.)](https://arxiv.org/abs/1511.04586)
  that I read and studied. 
 {% include MathJax.html %}
 
 
-For detailed experiment analysis, you can found in [Character-based Neural Machine Translation. Ling et al. arXiv 2015.](https://arxiv.org/abs/1511.04586)
+For detailed experiment analysis, you can found in [Character-based Neural Machine Translation (Ling et al., arXiv 2015)](https://arxiv.org/abs/1511.04586)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1511.04586">The paper: Character-based Neural Machine Translation. Ling et al. arXiv 2015.</a>
+  <a href="https://arxiv.org/abs/1511.04586">The paper: Character-based Neural Machine Translation (Ling et al., arXiv 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Character-based Neural Machine Translation. Ling et al. arXiv 2015.](https://arxiv.org/abs/1511.04586)
+  - [arXiv Version: Character-based Neural Machine Translation (Ling et al., arXiv 2015)](https://arxiv.org/abs/1511.04586)
 
   
 - How to use html for alert
