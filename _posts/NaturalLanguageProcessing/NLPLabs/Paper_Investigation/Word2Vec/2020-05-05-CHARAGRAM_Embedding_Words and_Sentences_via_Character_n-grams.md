@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [CHARAGRAM: Embedding Words and Sentences via Character n-grams. Wieting et al. EMNLP 2016](https://www.aclweb.org/anthology/D16-1157/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [CHARAGRAM: Embedding Words and Sentences via Character n-grams (Wieting et al., EMNLP 2016)](https://www.aclweb.org/anthology/D16-1157/) I read and studied. 
 {% include MathJax.html %}
 
 This paper propose character embedding for word, sentence similarity and tagging problem.
@@ -37,14 +37,14 @@ They present CHARAGRAM embeddings, a simple approach for learning character-base
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D16-1157/">The paper- CHARAGRAM: Embedding Words and Sentences via Character n-grams. Wieting et al. EMNLP 2016</a>
+  <a href="https://www.aclweb.org/anthology/D16-1157/">The paper- CHARAGRAM: Embedding Words and Sentences via Character n-grams (Wieting et al., EMNLP 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version- CHARAGRAM: Embedding Words and Sentences via Character n-grams. Wieting et al. arXiv 2016](https://arxiv.org/abs/1607.02789v1)
-  - [EMNLP 2016 version- CHARAGRAM: Embedding Words and Sentences via Character n-grams. Wieting et al. EMNLP 2016](https://www.aclweb.org/anthology/D16-1157/)
+  - [arXiv Version- CHARAGRAM: Embedding Words and Sentences via Character n-grams (Wieting et al., arXiv 2016)](https://arxiv.org/abs/1607.02789v1)
+  - [EMNLP Version- CHARAGRAM: Embedding Words and Sentences via Character n-grams (Wieting et al., EMNLP 2016)](https://www.aclweb.org/anthology/D16-1157/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
