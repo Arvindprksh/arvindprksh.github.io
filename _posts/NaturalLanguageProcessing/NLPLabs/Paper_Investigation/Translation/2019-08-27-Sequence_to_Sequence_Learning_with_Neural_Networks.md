@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Sequence to Sequence Learning with Neural Networks, Sutskever et al. NIPS 2014](https://arxiv.org/abs/1409.3215) 
+This is a brief summary of paper for me to note it, [Sequence to Sequence Learning with Neural Networks (Sutskever et al., NIPS 2014)](https://arxiv.org/abs/1409.3215) 
 
 {% include MathJax.html %}
 
@@ -31,7 +31,7 @@ In this equation, each \\(p(y_t\|v, y_1, . . . , y_{t−1})\\) distribution is r
 
 The one below is simple illustration of their architecture.
 
-![Sutskever et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-27-Sequence_to_Sequence_Learning_with_Neural_Networks/sequence_to_sequence_learning_with_neural_networks.JPG)
+![Sutskever et al., NIPS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-27-Sequence_to_Sequence_Learning_with_Neural_Networks/sequence_to_sequence_learning_with_neural_networks.JPG)
 
 This paper for translation task in NLP field propose three key points.
 
@@ -45,21 +45,21 @@ For train and test time, they were able to do well on long sentences **because t
 
 As you can see below, **the representation shows that the representations are sensitive to the order of words, while being fairly insensitive to the replacement of an active voice with a pssive voice.**
 
-![Sutskever et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-27-Sequence_to_Sequence_Learning_with_Neural_Networks/sequence_to_sequence_learning_with_neural_networks_pca.JPG)
+![Sutskever et al., NIPS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-27-Sequence_to_Sequence_Learning_with_Neural_Networks/sequence_to_sequence_learning_with_neural_networks_pca.JPG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, they present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. their method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Additionally, the LSTM did not have difficulty on long sentences. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, they found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM’s performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">The paper: Sequence to Sequence Learning with Neural Networks, Sutskever et al. (2014)</a>
+  <a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">The paper: Sequence to Sequence Learning with Neural Networks (Sutskever et al., NIPS 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. arXiv 2014](https://arxiv.org/abs/1409.3215)
-  - [NIPS Version: Sequence to Sequence Learning with Neural Networks, Sutskever et al. NIPS 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
+  - [arXiv Version: Sequence to Sequence Learning with Neural Networks (Sutskever et al., arXiv 2014)](https://arxiv.org/abs/1409.3215)
+  - [NIPS Version: Sequence to Sequence Learning with Neural Networks (Sutskever et al., NIPS 2014)](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
   
  
 - How to use html for alert
