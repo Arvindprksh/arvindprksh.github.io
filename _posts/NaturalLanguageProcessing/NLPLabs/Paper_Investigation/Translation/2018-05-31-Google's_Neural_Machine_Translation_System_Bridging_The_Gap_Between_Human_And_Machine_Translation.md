@@ -16,7 +16,7 @@ bigimg:
 ---
 While I have studied for Korean Natural Language processing with Neural Network. I was finding the architecture for my work. 
 
-So I read this paper,[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation, Wu et al. arXiv 2016](https://arxiv.org/abs/1609.08144v2) , and I realized about how to dealing with a seqeunce of data. 
+So I read this paper,[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation (Wu et al., arXiv 2016)](https://arxiv.org/abs/1609.08144v2) , and I realized about how to dealing with a seqeunce of data. 
 
 This paper is end-to-end model for Neural Network translation. In my case, I wondered the architectur of neural network about how to use LSTM for translation. 
 
@@ -26,16 +26,16 @@ Their basic architecture of neural network translation :
 
 encoder, attention mechanism, and decoder. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation1.JPG)
+![Wu et al., arXiv 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation1.JPG)
 
 Also they used residual connection like this:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation2.JPG)
+![Wu et al., arXiv 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation2.JPG)
 
 
 plus, For feature generation as vector, they used Bi-directional LSTM considering long and short dependancy from output.
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation3.JPG)
+![Wu et al., arXiv 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2018-05-31-Google-s_Neural_Machine_Translation_System-_Bridging_The_Gap_Between_Human_And_Machine_Translation/Google_Neural_Network_Translation3.JPG)
 
 except for thing above, they said for computational speed, they used parallelism to each layers. 
 
@@ -65,7 +65,7 @@ And the connection between encoder and decoder is attention mechanism is respons
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1609.08144v2">The paper: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation</a>
+  <a href="https://arxiv.org/abs/1609.08144v2">The paper: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation (Wu et al., arXiv 2016)</a>
 </div>
 
 # Reference 
@@ -73,7 +73,7 @@ And the connection between encoder and decoder is attention mechanism is respons
 - [OPentNMT](http://opennmt.net/OpenNMT/training/models/)
 
 - Paper 
-  - [arXiv Version: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation. Wu et al. arXiv 2016](https://arxiv.org/abs/1609.08144v2)
+  - [arXiv Version: Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation (Wu et al., arXiv 2016)](https://arxiv.org/abs/1609.08144v2)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
