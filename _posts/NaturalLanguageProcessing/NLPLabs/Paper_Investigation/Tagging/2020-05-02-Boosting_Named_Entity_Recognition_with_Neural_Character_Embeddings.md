@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. NEWS-WS 2015](https://www.aclweb.org/anthology/W15-3904/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Boosting Named Entity Recognition with Neural Character Embeddings (Santos and Guimarães., NEWS-WS 2015)](https://www.aclweb.org/anthology/W15-3904/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to NER tagging and focus on not using the handcrafted fetaures and the output of other NLP tasks such as part-of-speech tagging and text chuncking.
@@ -30,11 +30,11 @@ And then they have an assumption that in sequential classification tag of word m
 
 So they joinlty concatenate word and character embedding corresponding to each word in a window which is hyper-parameter as follows:
 
-![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/CharWNN.PNG)
+![Santos and Guimarães., NEWS-WS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/CharWNN.PNG)
 
 They use a tag style called IOB2 where: O, means that the word is not a NE; B-X is used for the leftmost word of a NE type X; and I-X means that the word is inside of a NE type X. The IOB2 tagging style is illustrated in the following example.
 
-![Santos and Guimarães. 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/IOB2.PNG)
+![Santos and Guimarães., NEWS-WS 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-02-Boosting_Named_Entity_Recognition_with_Neural_Character_Embeddings/IOB2.PNG)
 
 
 
@@ -43,14 +43,14 @@ Most state-of-the-art named entity recognition (NER) systems rely on handcrafted
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W15-3904/">The paper: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães 2015 NEWS workshop</a>
+  <a href="https://www.aclweb.org/anthology/W15-3904/">The paper: Boosting Named Entity Recognition with Neural Character Embeddings (Santos and Guimarães.,  NEWS workshop 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. arXiv 2015](https://arxiv.org/abs/1505.05008)
-  - [NEWS Version: Boosting Named Entity Recognition with Neural Character Embeddings. Santos and Guimarães. NEWS-WS 2015](https://www.aclweb.org/anthology/W15-3904/)
+  - [arXiv version: Boosting Named Entity Recognition with Neural Character Embeddings (Santos and Guimarães., arXiv 2015)](https://arxiv.org/abs/1505.05008)
+  - [NEWS Version: Boosting Named Entity Recognition with Neural Character Embeddings (Santos and Guimarães., NEWS-WS 2015)](https://www.aclweb.org/anthology/W15-3904/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
