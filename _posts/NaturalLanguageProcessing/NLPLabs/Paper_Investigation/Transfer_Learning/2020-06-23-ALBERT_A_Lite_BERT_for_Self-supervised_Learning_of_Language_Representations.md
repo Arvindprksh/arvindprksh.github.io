@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. ICLR 2020](https://openreview.net/forum?id=H1eA7AEtvS) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [ALBERT- A Lite BERT for Self-supervised Learning of Language Representations (Lan et al., ICLR 2020)](https://openreview.net/forum?id=H1eA7AEtvS) I read and studied. 
 {% include MathJax.html %}
 
 They propose light version of BERT_based model by using two parameter redcutions.
@@ -47,14 +47,14 @@ Increasing model size when pretraining natural language representations often re
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=H1eA7AEtvS">The paper: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. ICLR 2020</a>
+  <a href="https://openreview.net/forum?id=H1eA7AEtvS">The paper: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations (Lan et al., ICLR 2020)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. arXiv 2020](https://arxiv.org/abs/1909.11942)
-  - [ICLR Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations. Lan et al. ICLR 2020](https://openreview.net/forum?id=H1eA7AEtvS)
+  - [arXiv Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations (Lan et al., arXiv 2020)](https://arxiv.org/abs/1909.11942)
+  - [ICLR Version: ALBERT- A Lite BERT for Self-supervised Learning of Language Representations (Lan et al., ICLR 2020)](https://openreview.net/forum?id=H1eA7AEtvS)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
