@@ -19,7 +19,7 @@ bigimg:
 {% include MathJax.html %}
 
 
-This posting is summary for my study about the paper, "[GloVe: Global Vectors for Word Representation, Jeffrey Pennington et al.(2014)](https://nlp.stanford.edu/pubs/glove.pdf)"
+This posting is summary for my study about the paper, "[GloVe: Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://nlp.stanford.edu/pubs/glove.pdf)"
 
 
 There are two methodologies for distributional word representations.
@@ -59,13 +59,13 @@ Finally, let \\( P_{ij}=P(j\|i)=X_{ij}/X_{i} \\) be the probability that word j 
 
 The following would explain how to correlate the ratio of co-occurrence of target words for information to embed the distinction of words. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Co-occurence_matrix_probability.png)
+![Pennington et al., EMLNP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Co-occurence_matrix_probability.png)
 
 
 GloVe is log-bilinear regression model and then the cost function is the same from the following
 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
+![Pennington et al., EMLNP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Cost_function.png)
 
 As you can see above, \\( f(X_{ij}) \\) is weighting function. The weighting function should be obey the following properties:
 
@@ -75,9 +75,9 @@ As you can see above, \\( f(X_{ij}) \\) is weighting function. The weighting fun
 
 f(X) function below was used in the GloVe paper
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weighting_function.png)
+![Pennington et al., EMLNP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weighting_function.png)
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
+![Pennington et al., EMLNP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-10-31-GloVe_Global_Vectors_for_Word_Representation/Weigting_function_equation.png)
 
 
 As you can see the cost function, GloVe calculates co-occurence matrix to update 
@@ -125,7 +125,7 @@ GloVe is another way to represent words into continuous vector space with two wa
 # Reference 
 
 - Paper 
-  - [GloVe:Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
+  - [GloVe:Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://nlp.stanford.edu/projects/glove/)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
