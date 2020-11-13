@@ -17,22 +17,22 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Neural Architectures for Named Entity Recognition. Lample et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1030/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Neural Architectures for Named Entity Recognition (Lample et al., NAACL 2016)](https://www.aclweb.org/anthology/N16-1030/) I read and studied. 
 {% include MathJax.html %}
 
 They propose two method for Named Entity recognition (NER) task. 
 
 The one is bidirectinal LSTM with conditional random field.
 
-![Lample et al. NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/BiLSTM_CRF.PNG)
+![Lample et al., NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/BiLSTM_CRF.PNG)
 
 The other is stack LSTMs for chuncking method, inspired by transition-based parsing
 
-![Lample et al. NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/transition_based.PNG)
+![Lample et al., NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/transition_based.PNG)
 
 In their methods, they used character embeddding to use e orthographic or morphological information.
 
-![Lample et al. NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/character_embedding.PNG)
+![Lample et al., NAACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-06-24-Neural_Architectures_for_Named_Entity_Recognition/character_embedding.PNG)
 
 >>They found that the Stack-LSTM model is more dependent on character-based representations to achieve competitive performance. they hypothesize that the LSTM-CRF model requires less orthographic information since it gets more contextual information out of the bidirectional LSTMs. However, the Stack-LSTM model consumes the words one by one and it just relies on the word representations when it chunks words.  
 
@@ -43,14 +43,14 @@ State-of-the-art named entity recognition systems rely heavily on hand-crafted f
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N16-1030/">The paper: Neural Architectures for Named Entity Recognition. Lample et al. NAACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/N16-1030/">The paper: Neural Architectures for Named Entity Recognition (Lample et al., NAACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Neural Architectures for Named Entity Recognition. Lample et al. arXiv 2016](https://arxiv.org/abs/1603.01360)
-  - [NAACL Version: Neural Architectures for Named Entity Recognition. Lample et al. NAACL 2016](https://www.aclweb.org/anthology/N16-1030/)
+  - [arXiv Version: Neural Architectures for Named Entity Recognition (Lample et al., arXiv 2016)](https://arxiv.org/abs/1603.01360)
+  - [NAACL Version: Neural Architectures for Named Entity Recognition (Lample et al., NAACL 2016)](https://www.aclweb.org/anthology/N16-1030/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
