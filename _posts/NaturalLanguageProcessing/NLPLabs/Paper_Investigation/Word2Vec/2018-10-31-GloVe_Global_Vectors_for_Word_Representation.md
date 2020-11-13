@@ -19,7 +19,7 @@ bigimg:
 {% include MathJax.html %}
 
 
-This posting is summary for my study about the paper, "[GloVe: Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://nlp.stanford.edu/pubs/glove.pdf)"
+This posting is summary for my study about the paper, "[GloVe: Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://www.aclweb.org/anthology/D14-1162/)"
 
 
 There are two methodologies for distributional word representations.
@@ -125,7 +125,7 @@ GloVe is another way to represent words into continuous vector space with two wa
 # Reference 
 
 - Paper 
-  - [GloVe:Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://nlp.stanford.edu/projects/glove/)
+  - [GloVe:Global Vectors for Word Representation (Pennington et al., EMLNP 2014)](https://www.aclweb.org/anthology/D14-1162/)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
