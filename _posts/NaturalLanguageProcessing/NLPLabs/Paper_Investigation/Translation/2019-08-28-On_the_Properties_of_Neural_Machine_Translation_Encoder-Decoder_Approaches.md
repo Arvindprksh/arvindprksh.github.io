@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. SSST-WS 2014](https://www.aclweb.org/anthology/W14-4012)
+This is a brief summary of paper for me to note it, [On the Properties of Neural Machine Translation: Encoder-Decoder Approaches (Cho et al., SSST-WS 2014)](https://www.aclweb.org/anthology/W14-4012)
 
 {% include MathJax.html %}
 
@@ -25,7 +25,7 @@ They analyzed the properties of machine translation model based on neural networ
 
 Since most of neural-netwrok-based translation model is sequence-to-seqeunc model, the translation model has a encoder and a decoder. 
 
-![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Sequence_to_sequence.JPG)
+![Cho et al., SSST-WS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Sequence_to_sequence.JPG)
 
 Encoder summarize input sentence (source sentence) into a fixed-length vector and Decoder generate output sentence (target sentence).
 
@@ -35,7 +35,7 @@ Above all, before entering to what kind of encoder they use, note that they use 
 
 Let's see the Recurrent Neural Network with Gated Hidden Neurons. 
 
-![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Recurrent_network.JPG)
+![Cho et al., SSST-WS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Recurrent_network.JPG)
 
 
 A recurrent neural network works on a variable-length sequence \\(x = (x_1,X_2,...,X_T)\\) by maintaining a hidden state **h** over time. At each timestip t, the hidden state \\(h^{(t)}\\) is updated by:
@@ -48,7 +48,7 @@ They used new activation fucntion which augments the usual logisitc sigmoid acti
 
 Let's see the Gated Recursive Convolutional Neural Network. 
 
-![Cho et al. (2014)](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Gated_Recursive_Convolution_Neural_Network.JPG)
+![Cho et al., SSST-WS 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2019-08-28-On_the_Properties_of_Neural_Machine_Translation_Encoder-Decoder_Approaches/Gated_Recursive_Convolution_Neural_Network.JPG)
 
 They also introduce a new binary convolutional neural network whose weights are recursively applied to the input sequence until it outputs a single fixed-length vector. 
 
@@ -121,14 +121,14 @@ Neural machine translation is a relatively new approach to statistical machine t
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W14-4012">The paper: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. (2014)</a>
+  <a href="https://www.aclweb.org/anthology/W14-4012">The paper: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches (Cho et al., SSST-WS 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. arXiv 2014](https://arxiv.org/abs/1409.1259)
-  - [SSST-WS Version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches, Cho et al. SSST-WS 2014](https://www.aclweb.org/anthology/W14-4012)
+  - [arXiv Version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches (Cho et al., arXiv 2014)](https://arxiv.org/abs/1409.1259)
+  - [SSST-WS Version: On the Properties of Neural Machine Translation: Encoder-Decoder Approaches (Cho et al., SSST-WS 2014)](https://www.aclweb.org/anthology/W14-4012)
   
  
 - How to use html for alert
