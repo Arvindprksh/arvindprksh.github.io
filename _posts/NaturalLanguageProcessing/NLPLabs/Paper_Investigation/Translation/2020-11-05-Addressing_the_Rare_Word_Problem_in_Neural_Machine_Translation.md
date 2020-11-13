@@ -17,14 +17,14 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1002/) that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1002/) that I read and studied. 
 {% include MathJax.html %}
 
 They resoved the problem to handling OOV word on neural machine translation which is a conceptually simple large neural network that reads the etire source sentence and produces an output translation one word at a time.
 
 Example of the rare word problem:
 
-![Luong et al. ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/problem_1_of_the_rare_word.PNG)
+![Luong et al., ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/problem_1_of_the_rare_word.PNG)
 
 The minimum of domain knowledge is used in neural machine translation since neural machine translation archtecture can be formulated to make it to any problem such as mapping input sequence to output sequence. 
 
@@ -90,7 +90,7 @@ Aligned words that are too far apart are condiered unaligned, and unaligned word
 
 their annotation is illustrated in Figure 3 below.
 
-![Luong et al. ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation2.PNG)
+![Luong et al., ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation2.PNG)
 
 3. Positional Unknown Model (PosUnk)
 
@@ -108,25 +108,25 @@ They use the universal **UNK** for all unknown tokens in the source language.
 
 See Figure 4 below for an annotated example.
 
-![Luong et al. ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation_3.PNG)
+![Luong et al., ACL and IJCNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-11-05-Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/Annotation_3.PNG)
 
-For training, they used the same neural network structure such as [Sutskever et al. NIPS 2014](https://arxiv.org/abs/1409.3215) which uses a deep LSTM ot encode the input sequence and a separate deep LSTM to output the translation.
+For training, they used the same neural network structure such as [Sutskever et al., NIPS 2014](https://arxiv.org/abs/1409.3215) which uses a deep LSTM ot encode the input sequence and a separate deep LSTM to output the translation.
 
-For detailed experiment analysis, you can found in [Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1002/)
+For detailed experiment analysis, you can found in [Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1002/)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Neural Machine Translation (NMT) is a new approach to machine translation that has shown promising results that are comparable to traditional approaches. A significant weakness in conventional NMT systems is their inability to correctly translate very rare words: end-to-end NMTs tend to have relatively small vocabularies with a single unk symbol that represents every possible out-of-vocabulary (OOV) word. In this paper, they propose and implement an effective technique to address this problem. They train an NMT system on data that is augmented by the output of a word alignment algorithm, allowing the NMT system to emit, for each OOV word in the target sentence, the position of its corresponding word in the source sentence. This information is later utilized in a post-processing step that translates every OOV word using a dictionary. Their experiments on the WMT’14 English to French translation task show that this method provides a substantial improvement of up to 2.8 BLEU points over an equivalent NMT system that does not use this technique. With 37.5 BLEU points, their NMT system is the first to surpass the best result achieved on a WMT’14 contest task.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P15-1002/">The paper: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015</a>
+  <a href="https://www.aclweb.org/anthology/P15-1002/">The paper: Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., ACL and IJCNLP 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. arXiv 2014](https://arxiv.org/abs/1410.8206)
-  - [ACL and IJCNLP Version: Addressing the Rare Word Problem in Neural Machine Translation. Luong et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1002/)
+  - [arXiv Version: Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., arXiv 2014)](https://arxiv.org/abs/1410.8206)
+  - [ACL and IJCNLP Version: Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1002/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
