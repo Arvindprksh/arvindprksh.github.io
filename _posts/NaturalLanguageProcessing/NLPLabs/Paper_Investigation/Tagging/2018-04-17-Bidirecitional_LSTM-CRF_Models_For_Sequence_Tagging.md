@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Bidirectional LSTM-CRF Models for Sequence Tagging. Huang et al. arXiv 2015](https://arxiv.org/abs/1508.01991v1), refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
+This paper,[Bidirectional LSTM-CRF Models for Sequence Tagging (Huang et al., arXiv 2015)](https://arxiv.org/abs/1508.01991v1), refered to how to use BiLSTM+CRF for seqeunce tagging in NLT task. 
 
 Normally, If you run into Sequence tagging problem, you would think of RNN. 
 
@@ -25,7 +25,7 @@ So This paper implemented LSTM network, BiLSTM network, LSTM-CRF Network, BiLSTM
 
 First, A LSTM network deals with information from left to right : 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/A_LSTM_Network.png)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/A_LSTM_Network.png)
 
 as you can already know and understand RNN structure, the utilize the infromation of previous information and current input. 
 
@@ -33,7 +33,7 @@ So LSTM utilize the past information at the time, But BiLSTM is different as fol
 
 Second, Bidirectional LSTM network is like this :
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM.png)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM.png)
 
 BiLSTM have two type of LSTM, one is forward LSTM and the other is backward LSTM. 
 
@@ -46,13 +46,13 @@ there two ways to extract information. one is only final state, the other is seq
 
 firstly, use final state(output) that it summarize the infromation of forward and backward respectively :
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
 
 OR
 
 Seconde, methods to use contextual represetation of forward and backward respectively. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
 
 
 as you could know, for sequence labeling problem, we need to use contextual represenation. 
@@ -63,17 +63,17 @@ Conditional random field(CRF) is useful graphical model on probability.
 
 It consider sentence level tag sequence information. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/CRF_network.png)
 
 Let's see the combination of LSTM and CRF 
 
 First, LSTM with a CRF layer 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/LSTM_CRF.JPG)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/LSTM_CRF.JPG)
 
 Second, Bi-direcational LSTM with A CRF Layer
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.JPG)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Bidirectional_LSTM_CRF.JPG)
 
 As you can know, in this paper, LSTM is variant like Peephole LSTM. 
 
@@ -85,7 +85,7 @@ additionaly, they used BIO2 annotation standard for Chunking and NER tasks.
 
 also they use the connection trick of features like this: 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
+![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/feature_connection.JPG)
 
 
 They estimated the robustness of models with respect to engineered features(spelling and context features).
@@ -128,13 +128,13 @@ In this paper, they proposed a variety of Long Short-Term Memory based models fo
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1508.01991v1">The paper: Bidirectional LSTM-CRF Models for Sequence Tagging</a>
+  <a href="https://arxiv.org/abs/1508.01991v1">The paper: Bidirectional LSTM-CRF Models for Sequence Tagging (Huang et al., arXiv 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Bidirectional LSTM-CRF Models for Sequence Tagging. Huang et al. arXiv 2015](https://arxiv.org/abs/1508.01991v1)
+  - [arXiv Version: Bidirectional LSTM-CRF Models for Sequence Tagging (Huang et al., arXiv 2015)](https://arxiv.org/abs/1508.01991v1)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
