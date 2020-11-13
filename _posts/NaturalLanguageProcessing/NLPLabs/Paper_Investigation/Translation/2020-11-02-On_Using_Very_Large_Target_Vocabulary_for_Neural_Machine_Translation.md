@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/) that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [On Using Very Large Target Vocabulary for Neural Machine Translation (Jean et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1001/) that I read and studied. 
 {% include MathJax.html %}
 
 Despite its recent success to neural machine translation, the neural machine translation has its limitation in handling a larger vocabulary.
@@ -57,14 +57,14 @@ Neural machine translation, a recently proposed approach to machine translation 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P15-1001/">The paper: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015</a>
+  <a href="https://www.aclweb.org/anthology/P15-1001/">The paper: On Using Very Large Target Vocabulary for Neural Machine Translation (Jean et al., ACL and IJCNLP 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arxiv Version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. arXiv 2015](https://arxiv.org/abs/1412.2007)
-  - [ACL and IJCNLP Version: On Using Very Large Target Vocabulary for Neural Machine Translation. Jean et al. ACL and IJCNLP 2015](https://www.aclweb.org/anthology/P15-1001/)
+  - [arxiv Version: On Using Very Large Target Vocabulary for Neural Machine Translation (Jean et al., arXiv 2015)](https://arxiv.org/abs/1412.2007)
+  - [ACL and IJCNLP Version: On Using Very Large Target Vocabulary for Neural Machine Translation (Jean et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1001/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
