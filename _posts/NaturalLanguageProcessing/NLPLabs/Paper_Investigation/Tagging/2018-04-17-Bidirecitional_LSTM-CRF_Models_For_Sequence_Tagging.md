@@ -46,13 +46,13 @@ there two ways to extract information. one is only final state, the other is seq
 
 firstly, use final state(output) that it summarize the infromation of forward and backward respectively :
 
-![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/word_representation.png)
 
 OR
 
 Seconde, methods to use contextual represetation of forward and backward respectively. 
 
-![Huang et al., arXiv 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
+![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2018-04-17-Bidirecitional_LSTM-CRF_Models_For_Sequence_Tagging/Contextual_word_representation.png)
 
 
 as you could know, for sequence labeling problem, we need to use contextual represenation. 
