@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols. TACL 2016](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Named Entity Recognition with Bidirectional LSTM-CNNs (Chiu and Nichols., TACL 2016)](https://www.aclweb.org/anthology/Q16-1026/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to NER tagging. 
@@ -28,11 +28,11 @@ Their model is as follows:
 
 The whole model is 
 
-![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/BLSTM_CNN.PNG)
+![Chiu and Nichols., 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/BLSTM_CNN.PNG)
 
 To extract a feature vector from the per-character vector
 
-![Chiu and Nichols. 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/Character_embedding_with_CNN.PNG)
+![Chiu and Nichols., 2016 TACL](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-01-Named_Entity_Recognition_with_Bidirectional_LSTM-CNNs/Character_embedding_with_CNN.PNG)
 
 They used the BIOES annotation to label the word into the corresponding catergorical tag, methioning this scheme has reported to outperform others such as BIO([Ratino and Roth, 2009 CoNLL](https://www.aclweb.org/anthology/W09-1119/))
 
@@ -51,14 +51,14 @@ Named entity recognition is a challenging task that has traditionally required l
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Named Entity Recognition with Bidirectional LSTM-CNNs. Chiu and Nichols 2016 TACL</a>
+  <a href="https://www.aclweb.org/anthology/P17-1152/">The paper: Named Entity Recognition with Bidirectional LSTM-CNNs (Chiu and Nichols., TACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols. arXiv 2015](https://arxiv.org/abs/1511.08308)
-  - [TACL Version: Named Entity Recognition with Bidirectional LSTM-CNNs.  Chiu and Nichols. TACL 2016](https://www.aclweb.org/anthology/Q16-1026/)
+  - [arXiv Version: Named Entity Recognition with Bidirectional LSTM-CNNs  (Chiu and Nichols., arXiv 2015)](https://arxiv.org/abs/1511.08308)
+  - [TACL Version: Named Entity Recognition with Bidirectional LSTM-CNNs  (Chiu and Nichols., TACL 2016)](https://www.aclweb.org/anthology/Q16-1026/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
