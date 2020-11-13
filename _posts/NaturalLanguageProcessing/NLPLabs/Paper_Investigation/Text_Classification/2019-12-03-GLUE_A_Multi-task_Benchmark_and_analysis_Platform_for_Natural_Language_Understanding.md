@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. arXiv 2019](https://arxiv.org/abs/1804.07461) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding (Wang et al., arXiv 2019)](https://arxiv.org/abs/1804.07461) I read and studied. 
 {% include MathJax.html %}
 
 This paper show a platform for Natural Language understaing tasks as follows:
@@ -40,14 +40,14 @@ For natural language understanding (NLU) technology to be maximally useful, it m
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1804.07461">The paper: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding</a>
+  <a href="https://arxiv.org/abs/1804.07461">The paper: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding (Wang et al., EMNLP 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. arXiv 2019](https://arxiv.org/abs/1804.07461)
-  - [EMNLP Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. Wang et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5446/)
+  - [arXiv Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding (Wang et al., arXiv 2019)](https://arxiv.org/abs/1804.07461)
+  - [EMNLP Version: GLUE- A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding (Wang et al., EMNLP 2018)](https://www.aclweb.org/anthology/W18-5446/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
