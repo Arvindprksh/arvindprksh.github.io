@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/) that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Improving Neural Machine Translation Models with Monolingual Data (Sennrich et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1009/) that I read and studied. 
 {% include MathJax.html %}
 
 This paper propose new data augmentation they call back-tranlsation. 
@@ -39,14 +39,14 @@ Neural Machine Translation (NMT) has obtained state-of-the art performance for s
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/P16-1009/">The paper: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016</a>
+  <a href="https://www.aclweb.org/anthology/P16-1009/">The paper: Improving Neural Machine Translation Models with Monolingual Data (Sennrich et al., ACL 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arxiv Version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. arXiv 2016](https://arxiv.org/abs/1511.06709)
-  - [ACL Version: Improving Neural Machine Translation Models with Monolingual Data. Sennrich et al. ACL 2016](https://www.aclweb.org/anthology/P16-1009/)
+  - [arxiv Version: Improving Neural Machine Translation Models with Monolingual Data (Sennrich et al., arXiv 2016)](https://arxiv.org/abs/1511.06709)
+  - [ACL Version: Improving Neural Machine Translation Models with Monolingual Data (Sennrich et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1009/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
