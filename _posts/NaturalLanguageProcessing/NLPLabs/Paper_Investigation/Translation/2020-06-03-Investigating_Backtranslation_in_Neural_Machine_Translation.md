@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv 2018](https://arxiv.org/abs/1804.06189v1)
+This is a brief summary of paper for me to note it, [Investigating Backtranslation in Neural Machine Translation (Poncelas et al., arXiv 2018)](https://arxiv.org/abs/1804.06189v1)
 
 {% include MathJax.html %}
 
@@ -46,13 +46,13 @@ A prerequisite for training corpus-based machine translation (MT) systems – ei
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1804.06189v1">The paper: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. ArXiv 2018</a>
+  <a href="https://arxiv.org/abs/1804.06189v1">The paper: Investigating Backtranslation in Neural Machine Translation (Poncelas et al., ArXiv 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv version: Investigating Backtranslation in Neural Machine Translation. Poncelas et al. arXiv 2018](https://arxiv.org/abs/1804.06189v1)
+  - [arXiv version: Investigating Backtranslation in Neural Machine Translation (Poncelas et al., arXiv 2018)](https://arxiv.org/abs/1804.06189v1)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
