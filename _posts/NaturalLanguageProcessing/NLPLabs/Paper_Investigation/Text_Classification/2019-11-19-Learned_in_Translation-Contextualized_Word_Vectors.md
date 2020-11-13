@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Learned in Translation: Contextualized Word Vectors (McCann et al., NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors) I read and studied. 
 {% include MathJax.html %}
 
 
@@ -44,14 +44,14 @@ Computer vision has benefited from initializing multiple deep layers with weight
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors">The paper: Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)</a>
+  <a href="http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors">The paper: Learned in Translation: Contextualized Word Vectors (McCann et al., NIPS 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Learned in Translation: Contextualized Word Vectors (McCann et al. arXiv 2017)](https://arxiv.org/abs/1708.00107)
-  - [NIPS Version: Learned in Translation: Contextualized Word Vectors (McCann et al. NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors)
+  - [arXiv Version: Learned in Translation: Contextualized Word Vectors (McCann et al., arXiv 2017)](https://arxiv.org/abs/1708.00107)
+  - [NIPS Version: Learned in Translation: Contextualized Word Vectors (McCann et al., NIPS 2017)](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
