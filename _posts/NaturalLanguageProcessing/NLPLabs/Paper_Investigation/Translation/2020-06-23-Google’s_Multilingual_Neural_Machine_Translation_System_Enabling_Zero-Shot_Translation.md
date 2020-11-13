@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to note it, [Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. TACL 2017](https://www.aclweb.org/anthology/Q17-1024/)
+This is a brief summary of paper for me to note it, [Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)](https://www.aclweb.org/anthology/Q17-1024/)
 
 {% include MathJax.html %}
 
@@ -28,7 +28,7 @@ They only amend to data which introduce artificial token at the beginning of the
 
 The basic model is the following:
 
-![Johnson et al. TACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-23-Google’s_Multilingual_Neural_Machine_Translation_System_Enabling_Zero-Shot_Translation/translation_model.PNG)
+![Johnson et al., TACL 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Translation/2020-06-23-Google’s_Multilingual_Neural_Machine_Translation_System_Enabling_Zero-Shot_Translation/translation_model.PNG)
 
 
 Their method's strength is explained as follows:
@@ -62,14 +62,14 @@ They propose a simple solution to use a single Neural Machine Translation (NMT) 
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/Q17-1024/">The paper: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. TACL 2017</a>
+  <a href="https://www.aclweb.org/anthology/Q17-1024/">The paper: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [arXiv Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. arXiv 2017](https://arxiv.org/abs/1611.04558)
-  - [TACL Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Johnson et al. TACL 2017](https://www.aclweb.org/anthology/Q17-1024/)
+  - [arXiv Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., arXiv 2017)](https://arxiv.org/abs/1611.04558)
+  - [TACL Version: Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)](https://www.aclweb.org/anthology/Q17-1024/)
   
  
 - How to use html for alert
