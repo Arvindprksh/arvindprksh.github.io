@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper's title is [Universal Dependencies for Finnish. Pyysalo et al. NODALIDA-WS 2015](http://www.aclweb.org/anthology/W15-1821).
+This paper's title is [Universal Dependencies for Finnish (Pyysalo et al., NODALIDA-WS 2015)](http://www.aclweb.org/anthology/W15-1821).
 
 The following is what I prepared for for paper seminar of  NLP labs.
 
@@ -43,7 +43,7 @@ This paper introduce to make Universal Dependencies for Finnish. To recap, There
 # Reference 
 
 - Paper 
-  - [NODALIDA Version: Universal Dependencies for Finnish. Pyysalo et al. NODALIDA-WS 2015](http://www.aclweb.org/anthology/W15-1821)
+  - [NODALIDA Version: Universal Dependencies for Finnish (Pyysalo et al., NODALIDA-WS 2015)](http://www.aclweb.org/anthology/W15-1821)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html) 
