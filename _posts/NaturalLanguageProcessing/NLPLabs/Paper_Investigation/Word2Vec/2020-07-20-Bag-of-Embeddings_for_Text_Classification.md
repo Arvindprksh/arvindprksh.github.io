@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Bag-of-Embeddings for Text Classification. Jin et al. IJCAI 2016](https://dl.acm.org/doi/10.5555/3060832.3061016) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Bag-of-Embeddings for Text Classification (Jin et al., IJCAI 2016)](https://dl.acm.org/doi/10.5555/3060832.3061016) I read and studied. 
 {% include MathJax.html %}
 
 They thought One useful feature beyond bag-of-words as bag-of-ngrams.
@@ -32,7 +32,7 @@ In particular, they said bigrams offer a certain degree of compositionality whil
 
 With article above, They proposed bag-of-embedding by exploiting using multi-prototype word embedding as follows:
 
-![Jin et al. IJCAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-07-20-Bag-of-Embeddings_for_Text_Classification/bag-of-embedding.PNG)
+![Jin et al., IJCAI 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-07-20-Bag-of-Embeddings_for_Text_Classification/bag-of-embedding.PNG)
 
 As you can see image above, they are different from the skip-gram model in the definition of target and context embeddings in that the target embeddings are class-dependent, and each word can have different target embeddings in different classes. On the other hand, each word has a unique context embedding across classes.
 
@@ -48,14 +48,14 @@ Words are central to text classification. It has been shown that simple Naive Ba
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://dl.acm.org/doi/10.5555/3060832.3061016">The paper: Bag-of-Embeddings for Text Classification. Jin et al. IJCAI 2016</a>
+  <a href="https://dl.acm.org/doi/10.5555/3060832.3061016">The paper: Bag-of-Embeddings for Text Classification (Jin et al., IJCAI 2016)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [IJCAI 2016 version: Bag-of-Embeddings for Text Classification. Jin et al. IJCAI 2016](https://www.ijcai.org/Proceedings/16/Papers/401.pdf)
-  - [IJCAI 2016 version on ACM library: Bag-of-Embeddings for Text Classification. Jin et al. IJCAI 2016](https://dl.acm.org/doi/10.5555/3060832.3061016)
+  - [IJCAI Version: Bag-of-Embeddings for Text Classification (Jin et al., IJCAI 2016)](https://www.ijcai.org/Proceedings/16/Papers/401.pdf)
+  - [IJCAI Version on ACM library: Bag-of-Embeddings for Text Classification (Jin et al., IJCAI 2016)](https://dl.acm.org/doi/10.5555/3060832.3061016)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
