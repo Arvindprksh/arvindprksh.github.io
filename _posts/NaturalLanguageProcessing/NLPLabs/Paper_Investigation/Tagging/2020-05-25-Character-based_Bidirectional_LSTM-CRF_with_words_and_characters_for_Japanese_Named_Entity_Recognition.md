@@ -34,7 +34,7 @@ And They Japanese has boundary conflict problem when a part of a word compose an
 
 They propose character-based model to predict a tag for a character with word embeddign as follows:
 
-![Misawa et al., SCLeM 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-25-Character-based_Bidirectional_LSTM-CRF_with_words_and_characters_for_Japanese_Named_Entity_Recognition/)
+![Misawa et al., SCLeM 2017](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Tagging/2020-05-25-Character-based_Bidirectional_LSTM-CRF_with_words_and_characters_for_Japanese_Named_Entity_Recognition/Japanese_NER.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Recently, neural models have shown superior performance over conventional models in NER tasks. These models use CNN to extract sub-word information along with RNN to predict a tag for each word. However, these models have been tested almost entirely on English texts. It remains unclear whether they perform similarly in other languages. They worked on Japanese NER using neural models and discovered two obstacles of the state-of-the-art model. First, CNN is unsuitable for extracting Japanese sub-word information. Secondly, a model predicting a tag for each word cannot extract an entity when a part of a word composes an entity. The contributions of this work are (1) verifying the effectiveness of the state-of-the-art NER model for Japanese, (2) proposing a neural model for predicting a tag for each character using word and character information.
