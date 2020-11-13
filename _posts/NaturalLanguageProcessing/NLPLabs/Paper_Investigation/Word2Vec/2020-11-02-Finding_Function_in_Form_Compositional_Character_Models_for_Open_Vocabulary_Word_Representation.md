@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation. Ling et al. EMNLP 2015](https://www.aclweb.org/anthology/D15-1176/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation (Ling et al., EMNLP 2015)](https://www.aclweb.org/anthology/D15-1176/) I read and studied. 
 {% include MathJax.html %}
 
 This paper proposed the method to use character embedding instead of word look up table, which cannot generate representations for previously unseen words.
@@ -32,7 +32,7 @@ Their model assumes that each character type is associated with a vector, and th
 
 C2W model(i.e. their compositional character to word model) is based on bidirectional LSTM  as follow:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_model.PNG)
+![Ling et al., EMNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_model.PNG)
 
 as shown in the figure above, The input of the C2W model use an alphabet of characters \\(C\\). 
 
@@ -48,11 +48,11 @@ They implemented the C2W model on two tasks such as POS tagging and Language mod
 
 The following is for language modeling:
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_language_model.PNG)
+![Ling et al., EMNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_language_model.PNG)
 
 The following is for POS tagging 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_pos_tagging.PNG)
+![Ling et al., EMNLP 2015](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-11-02-Finding_Function_in_Form_Compositional_Character_Models_for_Open_Vocabulary_Word_Representation/C2W_pos_tagging.PNG)
 
 The detailed result can be found in Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation. Ling et al. EMNLP 2015](https://www.aclweb.org/anthology/D15-1176/)
 
@@ -62,14 +62,14 @@ They introduce a model for constructing vector representations of words by compo
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D15-1176/">The paper: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation. Ling et al. EMNLP 2015</a>
+  <a href="https://www.aclweb.org/anthology/D15-1176/">The paper: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation (Ling et al., EMNLP 2015)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation. Ling et al. arXiv 2015](https://arxiv.org/abs/1508.02096)
-  - [EMNLP 2015 version: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation. Ling et al. EMNLP 2015](https://www.aclweb.org/anthology/D15-1176/)
+  - [arXiv Version: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation (Ling et al., arXiv 2015)](https://arxiv.org/abs/1508.02096)
+  - [EMNLP Version: Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation (Ling et al., EMNLP 2015)](https://www.aclweb.org/anthology/D15-1176/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
