@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-The paper, "[Linguisitic Regularities in Continuous Space Word Representation, Mikolov et al. NAACL 2013](https://www.aclweb.org/anthology/N13-1090)" explains how to evaluate sytantic and semantic regularities between the induced word vectors, with a form as "king - Man + Woman" result in a vector veryl clost to "Queen".
+The paper, "[Linguisitic Regularities in Continuous Space Word Representation (Mikolov et al., NAACL 2013)](https://www.aclweb.org/anthology/N13-1090)" explains how to evaluate sytantic and semantic regularities between the induced word vectors, with a form as "king - Man + Woman" result in a vector veryl clost to "Queen".
 
 i.e. When you evaluate syntatic and semantic regularities with word vector representations in continous space. you have to create a test set of analogy questions of the form "a is to b as c is to \_\_\_".  i.e. If you know a, b, and c words. what is \_\_\_?
 
@@ -30,12 +30,12 @@ singular/plural forms of commmon nouns;
 possessive/non-possessive froms of common nouns;  
 base, past and 3rd person present tense forms of verbs.  
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
+![Mikolov et al., NAACL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/vector_offset_relationship.png)
 
 
 Using vector offsets, this paper tested the relationship of words vector to check how well the vectors represents syntantic and semantic regularities. 
 
-![](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
+![Mikolov et al., NAACL 2013](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2018-01-14-Linguistic_Regularities_In_Continuous_Space_Word_Representations/Test set pattern.png)
 
 
 So when they created verification set of words relationship. they used tagged 276M words of newspaper text with PennTreebank POS tags. and they selected 100 of the most frequent comparatives adjectives, (words labeled JJR); 100 of the most frequent plural nouns (NNS); 100 of the most frequent possessive nouns(NN_POS); and 100 of the most frequent base form verbs(VB)
@@ -55,13 +55,13 @@ If you want to download the data set this paper used, visit <a href="http://rese
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations, Mikolov et al. NAACL 2013</a>
+  <a href="https://www.aclweb.org/anthology/N13-1090">The paper: Linguistic  Regularities in Continous Space Word Representations (Mikolov et al., NAACL 2013)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [NAACL Version: Linguistic Regularities in Continuous Space Word Representations, Mikolov et al. NAACL 2013](https://www.aclweb.org/anthology/N13-1090)
+  - [NAACL Version: Linguistic Regularities in Continuous Space Word Representations (Mikolov et al., NAACL 2013)](https://www.aclweb.org/anthology/N13-1090)
  
 - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
   
