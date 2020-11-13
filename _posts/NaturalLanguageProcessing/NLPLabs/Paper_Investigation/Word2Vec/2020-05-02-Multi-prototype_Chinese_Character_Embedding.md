@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange for [Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC](https://www.aclweb.org/anthology/L16-1138/) I read and studied. 
+This is a brief summary of paper for me to study and arrange for [Multi-prototype Chinese Character Embedding (Lu et al. LREC 2016)](https://www.aclweb.org/anthology/L16-1138/) I read and studied. 
 {% include MathJax.html %}
 
 This paper is a research ralted to character embedding 
@@ -38,7 +38,7 @@ In addition, the number of senses per character is induced from a lexicon rather
 
 Their model is as follows:
 
-![Lu, Zhang, and Ji. 2016 LREC](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-02-Multi-prototype_Chinese_Character_Embedding/Multi-prototype_embedding.PNG)
+![Lu et al. LREC 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-05-02-Multi-prototype_Chinese_Character_Embedding/Multi-prototype_embedding.PNG)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Chinese sentences are written as sequences of characters, which are elementary units of syntax and semantics. Characters are highly polysemous in forming words. They present a position-sensitive skip-gram model to learn multi-prototype Chinese character embeddings, and explore the usefulness of such character embeddings to Chinese NLP tasks. Evaluation on character similarity shows that multi-prototype embeddings are significantly better than a single-prototype baseline.
@@ -51,11 +51,11 @@ Chinese sentences are written as sequences of characters, which are elementary u
 # Reference 
 
 - Paper 
-  - [LREC 2016 version: Multi-prototype Chinese Character Embedding. Lu, Zhang, and Ji. 2016 LREC](https://www.aclweb.org/anthology/L16-1138/)
+  - [LREC Version: Multi-prototype Chinese Character Embedding (Lu et al. LREC 2016)](https://www.aclweb.org/anthology/L16-1138/)
   
   
 - For Information 
-  - [COLING 2014 version: A Probabilistic Model for Learning Multi-Prototype Word Embeddings. Tian et al. 2014 COLING](https://www.aclweb.org/anthology/C14-1016/)
+  - [COLING Version: A Probabilistic Model for Learning Multi-Prototype Word Embeddings (Tian et al. COLING 2014)](https://www.aclweb.org/anthology/C14-1016/)
   
   
 - How to use html for alert
