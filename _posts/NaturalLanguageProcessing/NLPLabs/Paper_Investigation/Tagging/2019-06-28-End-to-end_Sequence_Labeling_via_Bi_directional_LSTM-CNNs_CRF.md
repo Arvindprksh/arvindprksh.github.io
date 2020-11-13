@@ -50,7 +50,7 @@ their model is truely end-to-end, requiring no feature engineering or data pre-p
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1603.01354">The paper: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF on arXive version</a>
+  <a href="https://arxiv.org/abs/1603.01354">The paper: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF on arXive version</a></br>
   <a href="https://www.aclweb.org/anthology/P16-1101">The paper: End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF on ACL version</a>
 </div>
 
