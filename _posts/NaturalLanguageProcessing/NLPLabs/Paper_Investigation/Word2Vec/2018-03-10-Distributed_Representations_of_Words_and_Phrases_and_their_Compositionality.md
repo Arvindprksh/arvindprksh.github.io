@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-I think this paper, [Distributed Representations of Words and Phrases and their Compositionality(Mikolov et al. 2013)](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf), is the best to understand why the addition of two vectors works well to meaningfully infer the relation between two words.
+I think this paper, [Distributed Representations of Words and Phrases and their Compositionality (Mikolov et al. NIPS 2013)](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf), is the best to understand why the addition of two vectors works well to meaningfully infer the relation between two words.
 
 And also it is good to understand why I have to make phrase from words. let's think of the reason.
 
@@ -36,13 +36,13 @@ If you want to download the data set, visit <a href="https://code.google.com/arc
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">The paper: Distributed Representations of Words and Phrases and their Compositionality</a>
+  <a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">The paper: Distributed Representations of Words and Phrases and their Compositionality (Mikolov et al. NIPS 2013)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+  - [NIPS Version: Distributed Representations of Words and Phrases and their Compositionality (Mikolov et al. NIPS 2013)](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
