@@ -15,7 +15,7 @@ bigimg:
   - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
 ---
 
-This paper,[Enriching Word Vectors with Subword Information, Piotr Bojanowski et al.(2017)](https://arxiv.org/abs/1607.04606v2) have been arguing it is better on inference of words out of Vocabulary by using character levels n-gram. 
+This paper,[Enriching Word Vectors with Subword Information (Piotr Bojanowski et al., arXiv 2017)](https://arxiv.org/abs/1607.04606v2) have been arguing it is better on inference of words out of Vocabulary by using character levels n-gram. 
 
 i.e. word2vec treats each word in corpus like an atomic entity and generates a vector for each word. 
 
@@ -51,13 +51,13 @@ Continuous word representations ingores the morphology of words, by assigning a 
   
   
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://arxiv.org/abs/1607.04606v2">The paper: Enriching Word Vectors with Subword Information</a>
+  <a href="https://arxiv.org/abs/1607.04606v2">The paper: Enriching Word Vectors with Subword Information (Piotr Bojanowski et al., arXiv 2017)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606v2)
+  - [arXiv Version: Enriching Word Vectors with Subword Information (Piotr Bojanowski et al., arXiv 2017)](https://arxiv.org/abs/1607.04606v2)
  
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
