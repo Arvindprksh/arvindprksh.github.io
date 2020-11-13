@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP 2018](https://www.aclweb.org/anthology/W18-5439/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Predicting and interpreting embeddings for out of vocabulary words in downstream tasks (Garneau et al., EMNLP 2018)](https://www.aclweb.org/anthology/W18-5439/) I read and studied. 
 {% include MathJax.html %}
 
 This paper focus on handling the OOV words for downstream task. 
@@ -39,14 +39,14 @@ They propose a novel way to handle out of vocabulary (OOV) words in downstream n
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/W18-5439/">The paper: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP 2018</a>
+  <a href="https://www.aclweb.org/anthology/W18-5439/">The paper: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks (Garneau et al., EMNLP 2018)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [Arxiv version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. arXiv 2019](https://arxiv.org/abs/1903.00724)
-  - [EMNLP 2018 version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks. Garneau et al. EMNLP-WS 2018](https://www.aclweb.org/anthology/W18-5439/)
+  - [arXiv Version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks (Garneau et al., arXiv 2019)](https://arxiv.org/abs/1903.00724)
+  - [EMNLP Version: Predicting and interpreting embeddings for out of vocabulary words in downstream tasks  (Garneau et al., EMNLP-WS 2018)](https://www.aclweb.org/anthology/W18-5439/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
