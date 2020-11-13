@@ -17,12 +17,12 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and arrange it, [Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures. Hashimoto et al. EMNLP 2014](https://www.aclweb.org/anthology/D14-1163/) I read and studied. 
+This is a brief summary of paper for me to study and arrange it, [Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures (Hashimoto et al., EMNLP 2014)](https://www.aclweb.org/anthology/D14-1163/) I read and studied. 
 {% include MathJax.html %}
 
 They focus on the dependecy embedding with predictate-arguemtne structure as follows:
 
-![Hashimoto et al. EMNLP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-06-12-Jointly_Learning_Word_Representations_and_Composition_Functions_Using_Predicate-Argument_Structures/predict_argument_structure1.PNG)
+![Hashimoto et al., EMNLP 2014](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Word2Vec/2020-06-12-Jointly_Learning_Word_Representations_and_Composition_Functions_Using_Predicate-Argument_Structures/predict_argument_structure1.PNG)
 
 In order for them to resolve the word disambiguation, they used POS information by combine word with POS taggging such as cause_NN.
 
@@ -31,13 +31,13 @@ They introduce a novel compositional language model that works on PredicateArgum
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://www.aclweb.org/anthology/D14-1163/">The paper: Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures. Hashimoto et al. EMNLP 2014</a>
+  <a href="https://www.aclweb.org/anthology/D14-1163/">The paper: Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures (Hashimoto et al., EMNLP 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [EMNLP 2014 Ver: Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures. Hashimoto et al. EMNLP 2014](https://www.aclweb.org/anthology/D14-1163/)
+  - [EMNLP Version: Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures (Hashimoto et al., EMNLP 2014)](https://www.aclweb.org/anthology/D14-1163/)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
