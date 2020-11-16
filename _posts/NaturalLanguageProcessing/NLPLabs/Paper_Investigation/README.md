@@ -4,7 +4,7 @@ When I read the paper related to NLP, I would try to summarize it on this for my
 
 When I search for paper, I will refer to the followings 
 
-- [Arxiv](https://arxiv.org/) 
+- [arXiv](https://arxiv.org/) 
 
 - Conference 
 
