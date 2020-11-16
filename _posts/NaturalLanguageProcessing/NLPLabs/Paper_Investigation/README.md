@@ -19,3 +19,12 @@ When I search for paper, I will refer to the followings
   - [NAACL(North American Chapter of the Association for Computational Linguistics)](http://naacl.org/)
  
   - [IJCNLP(International Joint Conference on Natural Language Processing)](http://ijcnlp2017.org)
+  
+- Other conferences which is not related to the NLP conference (i.e. the main field is not NLP)
+
+  - [AAAI](https://aaai.org/Conferences/AAAI-21/)
+  
+  - [ICLR](https://iclr.cc/)
+  
+  - [ICML](https://icml.cc/)
+  
