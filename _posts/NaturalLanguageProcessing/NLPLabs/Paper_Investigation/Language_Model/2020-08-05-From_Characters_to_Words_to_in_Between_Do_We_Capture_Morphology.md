@@ -41,7 +41,7 @@ Words can be represented by composing the representations of subword units such 
 # Reference 
 
 - Paper 
-  - [arXiv Version: From Characters to Words to in Between: Do We Capture Morphology?  (Vania and Lopez. arXiv 2017)](https://arxiv.org/abs/1704.08352)
+  - [arXiv Version: From Characters to Words to in Between: Do We Capture Morphology?  (Vania and Lopez., arXiv 2017)](https://arxiv.org/abs/1704.08352)
   - [ACL Version: From Characters to Words to in Between: Do We Capture Morphology? (Vania and Lopez., ACL 2017)](https://www.aclweb.org/anthology/P17-1184/)
   
 - How to use html for alert
