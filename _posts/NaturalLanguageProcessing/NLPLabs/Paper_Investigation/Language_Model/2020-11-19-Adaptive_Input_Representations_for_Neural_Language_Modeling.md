@@ -45,7 +45,7 @@ They introduce adaptive input representations for neural language modeling which
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="https://openreview.net/forum?id=ByxZX20qFQ">The paper:  Adaptive Input Representations for Neural Language Modeling  (Baevski and Auli., ICLR 2019)L</a>
+  <a href="https://openreview.net/forum?id=ByxZX20qFQ">The paper:  Adaptive Input Representations for Neural Language Modeling  (Baevski and Auli., ICLR 2019)</a>
 </div>
 
 # Reference 
