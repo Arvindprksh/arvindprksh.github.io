@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Character-based Neural Machine Translation
