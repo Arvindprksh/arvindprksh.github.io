@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Addressing the Rare Word Problem in Neural Machine Translation
-subtitle: Title of paper - Addressing the Rare Word Problem in Neural Machine Translation
-category: NLP papers - Translation
-tags: [translation]
-permalink: /2020/11/05/Addressing_the_Rare_Word_Problem_in_Neural_Machine_Translation/
+title: What do you learn from context? Probing for sentence structure in contextualized word representations
+subtitle: Title of paper - What do you learn from context? Probing for sentence structure in contextualized word representations
+category: NLP papers - Contextual Embedding
+tags: [neural network, contextual embedding]
+permalink: /2020/11/26/What_do_you_learn_from_context_Probing_for_sentence_structure_in_contextualized_word_representations/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
