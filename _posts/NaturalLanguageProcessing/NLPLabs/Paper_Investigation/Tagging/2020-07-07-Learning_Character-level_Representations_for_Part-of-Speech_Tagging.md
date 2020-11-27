@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [ICML 2014 version: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](http://proceedings.mlr.press/v32/santos14.html/) I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](https://openreview.net/forum?id=HJb9yibubH) I read and studied. 
 {% include MathJax.html %}
 
 They used character embedding not pretrained other than word embedding pretrained. 
@@ -37,13 +37,13 @@ Distributed word representations have recently been proven to be an invaluable r
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
-  <a href="http://proceedings.mlr.press/v32/santos14.html/">The paper: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)</a>
+  <a href="https://openreview.net/forum?id=HJb9yibubH">The paper: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)</a>
 </div>
 
 # Reference 
 
 - Paper 
-  - [ICML Version: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](http://proceedings.mlr.press/v32/santos14.html/)
+  - [ICML Version: Learning Character-level Representations for Part-of-Speech Tagging (Santos and Zadrozny., ICML 2014)](https://openreview.net/forum?id=HJb9yibubH)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
