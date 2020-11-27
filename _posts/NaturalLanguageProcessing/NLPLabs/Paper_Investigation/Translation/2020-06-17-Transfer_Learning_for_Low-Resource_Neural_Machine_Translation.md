@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. EMNLP. 2016.
-subtitle: Title of paper - Transfer Learning for Low-Resource Neural Machine Translation. Zoph et al. EMNLP. 2016.
+title: Transfer Learning for Low-Resource Neural Machine Translation
+subtitle: Title of paper - Transfer Learning for Low-Resource Neural Machine Translation
 category: NLP papers - Translation
 tags: [transfer learning, translation]
 permalink: /2020/06/17/Transfer_Learning_for_Low-Resource_Neural_Machine_Translation/
