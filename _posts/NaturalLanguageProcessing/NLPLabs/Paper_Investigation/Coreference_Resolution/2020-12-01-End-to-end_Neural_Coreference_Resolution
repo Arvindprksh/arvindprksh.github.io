@@ -1,0 +1,45 @@
+---
+layout: post
+title: End-to-end Neural Coreference Resolution
+subtitle: Title of paper - End-to-end Neural Coreference Resolution
+category: NLP papers - Coreference Resolution
+tags: [coreference resolution]
+permalink: /2020/12/01/End-to-end_Neural_Coreference_Resolution/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1018/) that I read and studied. 
+{% include MathJax.html %}
+
+
+
+For detailed experiment analysis, you can found in [End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1018/)
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/D17-1018/">The paper: End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [arXiv Version: End-to-end Neural Coreference Resolution (Lee et al., arXiv 2017)](https://arxiv.org/abs/1707.07045)
+  - [EMNLP Version: End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1018/)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+    
+
+
