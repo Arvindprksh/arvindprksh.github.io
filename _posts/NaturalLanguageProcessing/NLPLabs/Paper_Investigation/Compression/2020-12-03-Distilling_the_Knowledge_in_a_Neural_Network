@@ -20,6 +20,9 @@ bigimg:
 This is a brief summary of paper for me to study and organize it, [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/) that I read and studied. 
 {% include MathJax.html %}
 
+They are saying that there is conflicting contraints between training and deployment. 
+
+
 
 
 
