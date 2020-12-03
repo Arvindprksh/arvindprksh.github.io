@@ -1,0 +1,67 @@
+---
+layout: post
+title: Distilling the Knowledge in a Neural Network
+subtitle: Title of paper - Distilling the Knowledge in a Neural Network
+category: NN papers - Compression
+tags: [Compression]
+permalink: /2020/12/03/Distilling_the_Knowledge_in_a_Neural_Network/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/) that I read and studied. 
+{% include MathJax.html %}
+
+
+
+
+
+
+
+For detailed experiment analysis, you can found in [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/)
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+
+</div>
+   
+<div id="tutorial-section">
+
+  <div id="tutorial-title">TTIC Distinguished Lecture Series - Geoffrey Hinton</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="dark_knowledge">ELMo1</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="dark_knowledge" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EK61htlw8hY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+    
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://research.google/pubs/pub44873/">The paper: Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [arXiv Version: Distilling the Knowledge in a Neural Network (Hinton et al., arXiv 2015)](https://arxiv.org/abs/1503.02531v1)
+  - [NIPS Version: Distilling the Knowledge in a Neural Network (Hinton et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+   
+- For information 
+  - [English Version: Dark Knowlege of Neural Netowrks](https://medium.com/analytics-vidhya/knowledge-distillation-dark-knowledge-of-neural-network-9c1dfb418e6a)
+  - [Korean Version: Lunit Tech Blog](https://blog.lunit.io/2018/03/22/distilling-the-knowledge-in-a-neural-network-nips-2014-workshop/)
+
