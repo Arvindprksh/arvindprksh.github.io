@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Addressing the Rare Word Problem in Neural Machine Translation (MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices (Sun et al., ACL 2020)](https://www.aclweb.org/anthology/2020.acl-main.195/) that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices (Sun et al., ACL 2020)](https://www.aclweb.org/anthology/2020.acl-main.195/) that I read and studied. 
 {% include MathJax.html %}
 
 They proposed task-agnostic BERT for Resouce-Limited Devices by using layerwise knowledge distilattion technique  as follows:
