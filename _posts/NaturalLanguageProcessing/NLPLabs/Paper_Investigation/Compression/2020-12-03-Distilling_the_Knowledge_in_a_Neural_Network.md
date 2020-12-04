@@ -54,10 +54,7 @@ other than "**Knowledge distillation**", they propose a new type ensemble compos
 
 For detailed experiment analysis, you can found in [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/)
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. The previous research have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and they develop this approach further using a different compression technique. They also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.
-</div>
-   
+
 <div id="tutorial-section">
 
   <div id="tutorial-title">TTIC Distinguished Lecture Series - Geoffrey Hinton</div>
@@ -77,6 +74,9 @@ A very simple way to improve the performance of almost any machine learning algo
   </div>
 </div>
     
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. The previous research have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and they develop this approach further using a different compression technique. They also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.
+</div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
   <a href="https://research.google/pubs/pub44873/">The paper: Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015</a>
