@@ -88,7 +88,7 @@ For Span representation, They used bidirectional LSTM and attention mechanism in
 
 Finally, they produced the final representation \\(g_i\\) of span \\(i\\)
 
-$$g_i = [x_{START(i)}^{\*},x_{END(i)}^{\*},\hat x_i, \varnothing(i)]$$
+$$g_i = [x_{START(i)}^{*},x_{END(i)}^{*},\hat x_i, \varnothing(i)]$$
 
 This only include the boundary representation \\(x_{START(i)}^{\*}\\) and \\(x_{END(i)}^{\*}\\). they introduce soft head word vector \\(\hat x_i\\) and a feature vector \\(\varnothing(i)\\) encoding the size of span \\(i\\).
 
