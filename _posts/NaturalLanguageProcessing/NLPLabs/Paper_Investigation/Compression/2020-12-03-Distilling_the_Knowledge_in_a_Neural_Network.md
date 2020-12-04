@@ -2,7 +2,7 @@
 layout: post
 title: Distilling the Knowledge in a Neural Network
 subtitle: Title of paper - Distilling the Knowledge in a Neural Network
-category: NN papers - Compression
+category: NLP papers - Compression
 tags: [Compression]
 permalink: /2020/12/03/Distilling_the_Knowledge_in_a_Neural_Network/
 css : /css/ForYouTubeByHyun.css
