@@ -77,6 +77,7 @@ According to the exquation of pairwise score above, the computation architecture
 With span representation \\(g_i\\), they compute pairwise score function via standard feed-forward neural networks(FFNN):
 
 $$s_m(i) = w_m \bullet FFNN_m(g_i)$$
+
 $$s_a(i,j) = w_a \bullet FFNN_a(g_i,g_j,g_i \circ g_j, \varnothing(i,j))$$
 
 where \\(\bullet\\) denotes the dot product, \\(\circ\\) denotes element-wise multiplication, and FFNN denote a feed-forward neural network that computes a non-linear mapping from input to output vectors.
@@ -87,11 +88,11 @@ For Span representation, They used bidirectional LSTM and attention mechanism in
 
 Finally, they produced the final representation \\(g_i\\) of span \\(i\\)
 
-$$g_i = [x_{START(i)}^{*},x_{END(i)}^{*},\hat x_i, \circ(i)]$$
+$$g_i = [x_{START(i)}^{\*},x_{END(i)}^{\*},\hat x_i, \varnothing(i)]$$
 
-This only include  the boundary representation \\(x_{START(i)}^{*}\\) and \\(x_{END(i)}^{*}\\). they introduce soft head word vector \\(\hat x_i\\) and a feature vector \\(\circ(i)\\) encoding the size of span \\(i\\).
+This only include the boundary representation \\(x_{START(i)}^{\*}\\) and \\(x_{END(i)}^{\*}\\). they introduce soft head word vector \\(\hat x_i\\) and a feature vector \\(\varnothing(i)\\) encoding the size of span \\(i\\).
 
-where \\(\hat x_i\\) is a weighted sum of word vectore in span \\(i\\) by using attention mechanism, \\(x_{START(i)}^{*}\\) and \\(x_{END(i)}^{*}\\) is the concatenated output of bidirectional LSTM on start's and end's index respectively in span \\(i\\).
+where \\(\hat x_i\\) is a weighted sum of word vectore in span \\(i\\) by using attention mechanism, \\(x_{START(i)}^{\*}\\) and \\(x_{END(i)}^{\*}\\) is the concatenated output of bidirectional LSTM on start's and end's index respectively in span \\(i\\).
 
 For detailed experiment analysis, you can found in [End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1018/)
 
