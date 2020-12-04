@@ -63,15 +63,15 @@ A very simple way to improve the performance of almost any machine learning algo
   <div id="tutorial-title">TTIC Distinguished Lecture Series - Geoffrey Hinton</div>
 
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="tab" href="dark_knowledge">Dark Knowledge</a></li>
-    <li><a data-toggle="tab" href="dark_knowledge_slide">Dark Knowledge Slides</a></li>
+    <li class="active"><a data-toggle="tab" href="#dark_knowledge">Dark Knowledge</a></li>
+    <li><a data-toggle="tab" href="#dark_knowledge_slide">Dark Knowledge Slides</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="dark_knowledge" class="tab-pane fade in active">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EK61htlw8hY" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div id="dark_knowledge_side" class="tab-pane fade">
+    <div id="dark_knowledge_slide" class="tab-pane fade">
       <iframe width="560" height="315" src="https://www.ttic.edu/dl/dark14.pdf" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
