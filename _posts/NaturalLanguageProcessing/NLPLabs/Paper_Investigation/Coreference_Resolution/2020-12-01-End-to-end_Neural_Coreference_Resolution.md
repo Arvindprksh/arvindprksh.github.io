@@ -96,6 +96,22 @@ where \\(\hat x_i\\) is a weighted sum of word vectore in span \\(i\\) by using 
 
 For detailed experiment analysis, you can found in [End-to-end Neural Coreference Resolution (Lee et al., EMNLP 2017)](https://www.aclweb.org/anthology/D17-1018/)
 
+<div id="tutorial-section">
+
+  <div id="tutorial-title">End-to-end Neural Coreference Resolution</div>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#coreference_resolution">End-to-end Neural Coreference Resolution</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="coreference_resolution" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="https://player.vimeo.com/video/238232979?byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 They introduce the first end-to-end coreference resolution model and show that it significantly outperforms all previous work without using a syntactic parser or handengineered mention detector. The key idea is to directly consider all spans in a document as potential mentions and learn distributions over possible antecedents for each. The model computes span embeddings that combine context-dependent boundary representations with a headfinding attention mechanism. It is trained to maximize the marginal likelihood of gold antecedent spans from coreference clusters and is factored to enable aggressive pruning of potential mentions. 
 </div>
