@@ -64,7 +64,7 @@ For the pairwise coreference score, there are three factors:
 So the total pairwise score :
 
 $$s(i,j) =  \begin{cases}
-0,  & \text{j =} \epsilon} \\
+0,  & \text{j =} \epsilon \\
 s_m(i)+s_m(j)+s_a(i,j), & \text{j !=} \epsilon
 \end{cases}$$
 
