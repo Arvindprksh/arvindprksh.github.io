@@ -76,7 +76,7 @@ rapidly and in parallel.
     <div id="dark_knowledge" class="tab-pane fade in active">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EK61htlw8hY" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div id="dark_knowledge_side" class="tab-pane fade in active">
+    <div id="dark_knowledge_side" class="tab-pane fade">
       <iframe width="560" height="315" src="https://www.ttic.edu/dl/dark14.pdf" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
