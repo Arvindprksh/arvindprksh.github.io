@@ -22,12 +22,21 @@ This is a brief summary of paper for me to study and organize it, [Distilling th
 
 They are saying that there is conflicting contraints between training and deployment. 
 
+For example, in large-scale machine learning, many similar models are usually uesd on training stage and deployment stage in spite of the different requirements. 
 
+In most cases, many models are needed to extract useful structure from dataset to handle the task but in deployment stage, it it important latency and computation resource than extracting useful information. 
 
+So they proposed that once the cumbersome model has been trained, the knowledge of the cumbersome model is transferrend to a small model.
 
+They called it "distilation", in their paper, an obvious way for transferring the generalization ability of the cumbersome model to a small model is to use the class probabilities produced by the cumbersome model as “soft targets” for training the small model.
 
+When transferring the knowlege of cumbersome model with tranfer set, transfer set is whether it is ogriginal traning set or other different set uesed for only transferring the knowledge with softtarget.
 
+They said the softer softmax output is more imformative than harder softmax output(for detailed information, see the vedio below).
 
+$$Softsoftmax(X)=\frac{exp(z_i\/T)}{\sum_{j} exp(z_j/T)}$$
+
+As you can see soft softmax above, if T is 1, it mean harder softmax and then using a higher value for T produces a softer probability distribution over classes.
 
 For detailed experiment analysis, you can found in [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/)
 
