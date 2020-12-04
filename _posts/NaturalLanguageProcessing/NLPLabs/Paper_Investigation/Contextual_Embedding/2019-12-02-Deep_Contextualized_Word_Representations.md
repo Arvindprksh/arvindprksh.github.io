@@ -51,10 +51,10 @@ They introduce a new type of deep contextualized word representation that models
       <iframe src="https://player.vimeo.com/video/277672840" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="ELMo2" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/9JfGxKkmBc0" frameborder="0" allowfullscreen></iframe> 
+      <iframe src="https://www.youtube.com/embed/9JfGxKkmBc0" width="560" height="315" frameborder="0" allowfullscreen></iframe> 
     </div>
     <div id="Language_model" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6N-fev9Zm2s" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/6N-fev9Zm2s" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
