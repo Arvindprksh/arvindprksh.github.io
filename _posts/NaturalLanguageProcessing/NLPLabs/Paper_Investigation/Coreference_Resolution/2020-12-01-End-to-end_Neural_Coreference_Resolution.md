@@ -106,7 +106,7 @@ For detailed experiment analysis, you can found in [End-to-end Neural Coreferenc
 
   <div class="tab-content">
     <div id="coreference_resolution" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://player.vimeo.com/video/238232979?byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/238232979?byline=0&portrait=0" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
