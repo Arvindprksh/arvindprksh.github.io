@@ -30,7 +30,7 @@ So they proposed that once the cumbersome model has been trained, the knowledge 
 
 They called it "distilation", in their paper, an obvious way for transferring the generalization ability of the cumbersome model to a small model is to use the class probabilities produced by the cumbersome model as “soft targets” for training the small model.
 
-When transferring the knowlege of cumbersome model with tranfer set, transfer set is whether it is ogriginal traning set or other different set uesed for only transferring the knowledge with softtarget.
+When transferring the knowlege of cumbersome model with tranfer set, transfer set is whether it is ogriginal traning set or other different set uesed for only transferring the knowledge with soft targets.
 
 They said the softer softmax output is more imformative than harder softmax output(for detailed information, see the vedio below).
 
@@ -40,27 +40,22 @@ As you can see soft softmax above, when T=1, it get the standard softmax functio
 
 When they trained a small model with transfer set, they used the same temperature T.
 
-When the correct labels are known for all or some of the transfer set, this method can be significantly improved by also training the distilled model to produce the correct labels. 
+if the correct labels are known for all or some of the transfer set, they imporoved their method by also training the distilled model to produce the correct labels. 
 
-One way to do this is to use the correct labels to modify the soft targets, but they found that a better way is to simply use a weighted average of two different objective functions.
+There are simply two ways to improve their method. 
+one is to use the correct labels to modify the soft targets and the other is to simply use a weighted average of two different objective functions.
 
-The first objective function is the cross entropy with the soft targets and this cross entropy is computed using the same high temperature in the softmax of the distilled model as was used for generating the soft targets from the cumbersome model. 
+In their experiment they used the latter as follow:
 
-The second objective function is the cross entropy with the correct labels which is computed using exactly the same logits in softmax of the distilled model but at a temperature of 1.
+>>The first objective function is the cross entropy with the soft targets and this cross entropy is computed using the same high temperature in the softmax of the distilled model as was used for generating the soft targets from the cumbersome model.   
+>>The second objective function is the cross entropy with the correct labels which is computed using exactly the same logits in softmax of the distilled model but at a temperature of 1.  
+
+other than "**Knowledge distillation**", they propose a new type ensemble composed of one or more generalist models and many speciallist models. 
 
 For detailed experiment analysis, you can found in [Distilling the Knowledge in a Neural Network (Luong et al., NIPS Deep Learning and Representation Workshop 2015)](https://research.google/pubs/pub44873/)
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble
-of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large
-neural nets. Caruana and his collaborators [1] have shown that it is possible to
-compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression
-technique. We achieve some surprising results on MNIST and we show that we
-can significantly improve the acoustic model of a heavily used commercial system
-by distilling the knowledge in an ensemble of models into a single model. We also
-introduce a new type of ensemble composed of one or more full models and many
-specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained
-rapidly and in parallel.
+A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. The previous research have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and they develop this approach further using a different compression technique. They also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.
 </div>
    
 <div id="tutorial-section">
