@@ -17,8 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Character-based Neural Machine Translation (Ling et al., arXiv 2015.)](https://arxiv.org/abs/1511.04586)
- that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Character-based Neural Machine Translation (Ling et al., arXiv 2015.)](https://arxiv.org/abs/1511.04586) that I read and studied. 
 {% include MathJax.html %}
 
 
