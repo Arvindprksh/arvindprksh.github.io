@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Siamese CBOW: Optimizing Word Embeddings for Sentence Representations
-subtitle: Title of paper - Siamese CBOW: Optimizing Word Embeddings for Sentence Representations
+title: Siamese CBOW- Optimizing Word Embeddings for Sentence Representations
+subtitle: Title of paper - Siamese CBOW- Optimizing Word Embeddings for Sentence Representations
 category: NLP papers - Sentence Representation
 tags: [sentence representation]
 permalink: /2020/12/23/Siamese_CBOW/
