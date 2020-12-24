@@ -30,7 +30,7 @@ The keyword, the siamese in their method denotes sharing a word embedding matrix
 
 In order to optimizing word embeddings directly for the purpos of being averaged, given a pair of sentences \\((s_i, s_j)\\), the probability \\(p(s_i, s_j)\\) that reflects how likely it is for the sentences to be adjacent to one another in the training data is calculated by softmax as follows:
 
-$$ p_{\theta} = \frac{e^{cos(s_i^{\theta}, s_j^{\theta})}}{\sum_{k \in S} e^{cos(s_x^{\theta},s_k^{\theta})}} $$
+$$ p_{\theta} = \frac{e^{cos(s_i^{\theta}, s_j^{\theta})}}{\sum_{l \in S} e^{cos(s_i^{\theta},s_l^{\theta})}} $$
 
 where \\(s_x^{\theta}\\) denotes the embeding for sentence \\(s_x\\) based on the model parameters \\(\theta\\). 
 
@@ -49,10 +49,10 @@ Where \\(p(\cdot)\\) is the taget probability the network should produce, and \\
 The taget distribution simply is :
 
 
-$$ p(s_i, p_j) =  \begin{Bmatrix}
-                   \frac{1}{S^+}, if s_j \in S^+ \\
-                   0, if s_j \in S^- \\
-                   \end{Bmatrix}  $$
+$$ p(s_i, p_j) =  \Bmatrix}
+                   \frac{1}{S^+}, & if & s_j \in S^+ \\
+                   0, & if & s_j \in S^- \\
+                   $$
 
 For example, if there are 2 positive examples (the sentences preceding and following the input sentence) and 2 negative example, the target distribution is \\((0.5, 0.5, 0, 0)\\).
 
@@ -90,6 +90,7 @@ For detailed experiment analysis, you can found in [Siamese CBOW: Optimizing Wor
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
-    
+  - [mathjax tutorial1](https://www.mathelounge.de/509545/mathjax-latex-basic-tutorial-und-referenz-deutsch)
+  - [mathjax tutorial2](https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm)
 
 
