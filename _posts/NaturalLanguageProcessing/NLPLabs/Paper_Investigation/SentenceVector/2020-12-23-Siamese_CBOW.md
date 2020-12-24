@@ -49,7 +49,7 @@ Where \\(p(\cdot)\\) is the taget probability the network should produce, and \\
 The taget distribution simply is :
 
 
-$$ p(s_i, p_j) =  \Bmatrix}
+$$ p(s_i, p_j) =  \Bmatrix
                    \frac{1}{S^+}, & if & s_j \in S^+ \\
                    0, & if & s_j \in S^- \\
                    $$
