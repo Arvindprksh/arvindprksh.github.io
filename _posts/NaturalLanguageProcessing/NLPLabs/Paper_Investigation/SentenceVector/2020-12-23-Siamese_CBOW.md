@@ -75,7 +75,7 @@ For OOV word, which have no word embedding, they omitted it when create sentence
 For detailed experiment analysis, you can found in [Siamese CBOW: Optimizing Word Embeddings for Sentence Representations (Kenter et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1089/)
   
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-
+They present the Siamese Continuous Bag of Words (Siamese CBOW) model, a neural network for efficient estimation of highquality sentence embeddings. Averaging the embeddings of words in a sentence has proven to be a surprisingly successful and efficient way of obtaining sentence embeddings. However, word embeddings trained with the methods currently available are not optimized for the task of sentence representation, and, thus, likely to be suboptimal. Siamese CBOW handles this problem by training word embeddings directly for the purpose of being averaged. The underlying neural network learns word embeddings by predicting, from a sentence representation, its surrounding sentences. They show the robustness of the Siamese CBOW model by evaluating it on 20 datasets stemming from a wide variety of sources.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
