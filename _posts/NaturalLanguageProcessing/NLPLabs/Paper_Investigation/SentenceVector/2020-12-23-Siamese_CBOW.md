@@ -56,9 +56,19 @@ $$ p(s_i, p_j) =  \begin{Bmatrix}
 
 For example, if there are 2 positive examples (the sentences preceding and following the input sentence) and 2 negative example, the target distribution is \\((0.5, 0.5, 0, 0)\\).
 
-They prove the quality for sentence representation by measuring similarity score of sentence pair. 
+Eventually, their siamese CBOW network consists of a projection layer, averagine layer, and softmax layer.
 
-At the time, they used the Pearsons correlation correlation between scores annotated by human and cosine similarity score as the metric.
+ - projection layer: this selects embedding s from a word embedding matrix \\(W\\) (that is shared across inputs) for a given input sentence
+ 
+ - averaging layer: the word embeddings by a word embedding matrix \\(W\\) is averaged
+ 
+ - softmax layer: after the consine similarity between the sentence representation for \\(sentence_i\\) and other sentences are calculated in the penulimate layer, the softmax layer produces the final probability distribution. 
+ 
+The word embedding matrix \\(W\\) is a collection of trainable variables in their siamese CBOW network. 
+
+In their experiment, they proved the quality for sentence representation by measuring similarity score of sentence pair with word ebedding matrix. 
+
+At the test time, they used the Pearsons correlation correlation between scores annotated by human and cosine similarity score as the metric.
 
 For OOV word, which have no word embedding, they omitted it when create sentence embedding by averaging word embeddings in a sentence. 
 
