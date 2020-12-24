@@ -30,18 +30,31 @@ The keyword, the siamese in their method denotes sharing a word embedding matrix
 
 In order to optimizing word embeddings directly for the purpos of being averaged, given a pair of sentences \\((s_i, s_j)\\), the probability \\(p(s_i, s_j)\\) that reflects how likely it is for the sentences to be adjacent to one another in the training data is calculated by softmax as follows:
 
+$$ p_{\theta} = \frac{e^{cos(s_i^{\theta}, s_j^{\theta})}}{\sum_{k \in S} e^{cos(s_x^{\theta},s_k^{\theta})}} $$
 
-$$ p_{\theta} = \frac{e^{cos(s_i^{\theta},s_j^{\theta}}}{\sum_{s' \in S} e^{cos(s_i^{\theta},s_{'}^{\theta} } $$
+where \\(s_x^{\theta}\\) denotes the embeding for sentence \\(s_x\\) based on the model parameters \\(\theta\\). 
+
+Theoretically, the summation in the dnominator of the equation above should cover over all possible sentences \\(S\\), which is not feasible in practice.
+
+Therefore, they replace the set \\(S\\) with union of the set \\(S^+\\) of sentences that occur next to the sentence \\(s_i\\) in the training data, and a set of \\(n\\) randomly chosen sentences\\(S^-\\) that are not observed next to the sentences \\(s_i\\) in training data. 
+
+Finally, the loss function of the netword for the purpose of being averaged is calcaulated cross-entropy:
 
 
-where \\(s_x^{\theta}\\) denotes the embeding for sentence \\(s_x\\). 
-
-As you can see the eqaution above, the summation of the denominator should cover over all possible sentences \\(S\\), which is not feasible in practice. 
-
-Therefore they replace
+$$ L = - \sum_{s_j \in \{s^+ \\cup S^-\}} p(s_i, s_j) \cdot log(p_{\theta}(s_i, s_j)) $$
 
 
+Where \\(p(\cdot)\\) is the taget probability the network should produce, and \\(p_{\theta}(\cdat)\\) is the prediction it estimates based on parameters \\(\theta\\), using softmax function.
 
+The taget distribution simply is :
+
+
+$$ p(s_i, p_j) =  \begin{Bmatrix}
+                   \frac{1}{S^+}, if s_j \in S^+ \\
+                   0, if s_j \in S^- \\
+                   \end{Bmatrix}  $$
+
+For example, if there are 2 positive examples (the sentences preceding and following the input sentence) and 2 negative example, the target distribution is \\((0.5, 0.5, 0, 0)\\).
 
 They prove the quality for sentence representation by measuring similarity score of sentence pair. 
 
