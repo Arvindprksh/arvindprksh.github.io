@@ -31,7 +31,7 @@ The keyword, the siamese in their method denotes sharing a word embedding matrix
 In order to optimizing word embeddings directly for the purpos of being averaged, given a pair of sentences \\((s_i, s_j)\\), the probability \\(p(s_i, s_j)\\) that reflects how likely it is for the sentences to be adjacent to one another in the training data is calculated by softmax as follows:
 
 
-$$p_{\theta} = frac{e^{cos(s_i^{\theta},s_j^{\theta}}}{\sum_{s' \in S} e^{cos(s_i^{\theta},s_{'}^{\theta} }$$
+$$ p_{\theta} = \frac{e^{cos(s_i^{\theta},s_j^{\theta}}}{\sum_{s' \in S} e^{cos(s_i^{\theta},s_{'}^{\theta} } $$
 
 
 where \\(s_x^{\theta}\\) denotes the embeding for sentence \\(s_x\\). 
