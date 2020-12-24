@@ -49,10 +49,10 @@ Where \\(p(\cdot)\\) is the taget probability the network should produce, and \\
 The taget distribution simply is :
 
 
-$$ p(s_i, p_j) =  \Bmatrix
-                   \frac{1}{S^+}, & if & s_j \in S^+ \\
-                   0, & if & s_j \in S^- \\
-                   $$
+$$ p(s_i, p_j) =  \cases{
+                          \frac{1}{S^+}, & \text{if } s_j \in S^+ \cr
+                          0, & \text{if } s_j \in S^-
+                         }$$
 
 For example, if there are 2 positive examples (the sentences preceding and following the input sentence) and 2 negative example, the target distribution is \\((0.5, 0.5, 0, 0)\\).
 
