@@ -41,7 +41,7 @@ Therefore, they replace the set \\(S\\) with union of the set \\(S^+\\) of sente
 Finally, the loss function of the netword for the purpose of being averaged is calcaulated cross-entropy:
 
 
-$$ L = - \sum_{s_j \in \{s^+ \\cup S^-\}} p(s_i, s_j) \cdot log(p_{\theta}(s_i, s_j)) $$
+$$ L = - \sum_{s_j \in \{s^+ \cup S^-\}} p(s_i, s_j) \cdot log(p_{\theta}(s_i, s_j)) $$
 
 
 Where \\(p(\cdot)\\) is the taget probability the network should produce, and \\(p_{\theta}(\cdot)\\) is the prediction it estimates based on parameters \\(\theta\\), using softmax function.
