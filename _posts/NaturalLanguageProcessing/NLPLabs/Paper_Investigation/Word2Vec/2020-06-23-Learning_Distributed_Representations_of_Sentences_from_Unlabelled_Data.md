@@ -38,7 +38,20 @@ They proposed the two approaches to represent a sentence into a fixed-lengtj vec
 >>FastSent is a simple additive (log-bilinear) sentence model designed to exploit the same signal, but at much lower computational expense.   
 >>Given a BOW representation of some sentence in context, the model simply predicts adjacent sentences (also represented as BOW).  
 
+FastSent: 
+
+ - More formally, FastSent learns a source \\(\u_w\) and target \\(v_w\\) embedding for each word in the model vocabulary. For a training example \\(S_{i-1}, S_i, S_{i+1}\\) of consecutive sentences, \\(S_i\\) is represented as the sum of its source embeddings \\(s_i = \sum_{w \in S_i} v_w\\). The cost of the example is then simply:
+
+
+$$\sum_{w \in S_{i-1} \cup S_{i+1}} \phi(s_i, v_w)$$
+
+
 Also, They experiment a variant (+AE) in which the encoded (source) representation must predict its own words as target in addition to those of adjacent sentences.
+
+FastSent+AE:
+
+$$\sum_{w \in S_{i-1} \cup S_i\cup S_{i+1}} \phi(s_i, v_w)$$
+  
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
 Unsupervised methods for learning distributed representations of words are ubiquitous in today’s NLP research, but far less is known about the best ways to learn distributed phrase or sentence representations from unlabelled data. This paper is a systematic comparison of models that learn such representations. They find that the optimal approach depends critically on the intended application. Deeper, more complex models are preferable for representations to be used in supervised systems, but shallow log-bilinear models work best for building representation spaces that can be decoded with simple spatial distance metrics. They also propose two new unsupervised representation-learning objectives designed to optimise the trade-off between training time, domain portability and performance.
