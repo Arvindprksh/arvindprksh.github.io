@@ -40,7 +40,7 @@ They proposed the two approaches to represent a sentence into a fixed-lengtj vec
 
 FastSent: 
 
- - More formally, FastSent learns a source \\(\u_w\) and target \\(v_w\\) embedding for each word in the model vocabulary. For a training example \\(S_{i-1}, S_i, S_{i+1}\\) of consecutive sentences, \\(S_i\\) is represented as the sum of its source embeddings \\(s_i = \sum_{w \in S_i} v_w\\). The cost of the example is then simply:
+ - More formally, FastSent learns a source \\(\u_w\\) and target \\(v_w\\) embedding for each word in the model vocabulary. For a training example \\(S_{i-1}, S_i, S_{i+1}\\) of consecutive sentences, \\(S_i\\) is represented as the sum of its source embeddings \\(s_i = \sum_{w \in S_i} v_w\\). The cost of the example is then simply:
 
 
 $$\sum_{w \in S_{i-1} \cup S_{i+1}} \phi(s_i, v_w)$$
