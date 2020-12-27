@@ -27,52 +27,63 @@ They point out that The quality of the syntactic predictions made by the LM is a
 
 So they evaluation of grammaticality on a number of minimally different pairs of English sentence.
 
-For experiment, to discrimnate which one is grammatical or ungrammartical sentence, they made dataset as follows (i.e. \* mark is syntactically wrong sentence):
+For experiment, to discriminate which one is grammatical or ungrammartical sentence, they made dataset as follows (i.e. \* mark is syntactically wrong sentence):
 
 For Subject-verb agreement, 
 
 (1) Simple agreement:
-    a. The author **laughs**.
+
+    a. The author **laughs**.    
     b. \*The author **laugh**.
 
 (2) Agreement in a sentential complement:
+
     a. The bankers knew the officer **smiles**.
     b. *The bankers knew the officer **smile**.
 
 (3) Agreement across a prepositional phrase:
+
     a. The farmer near the parents **smiles**.
     b. \*The farmer near the parents **smile**.
 
 (3) Agreement across a subject relative clause:
+
     a. The officers that love the skater **smile**.
     b. \*The officers that love the skater **smiles**.
 
 (4) Short VP coordination:
+
     a. The senator smiles and **laughs**.
     b. \*The senator smiles and **laugh**.
     
 (5) Long VP coordination:
+
     The manager writes in a journal every day and likes/*like to watch television shows.
 
 (6) Agreement across an object relative clause(including **no that**):
+
     a. The farmer that the parents love **swims**.
     b. \*The farmer that the parents love **swim**.
 
 (7) Agreement in an object relative clause(including **no that**):
+
     a. The farmer that the parents **love** swims.
     b. \*The farmer that the parents **loves** swims.
 
 For Reflexive anaphora,
 
 (1) Simple reflexive:
+
    a. The senators embarrassed themselves.
    b. \*The senators embarrassed herself.
 
 (2) Reflexive in a sentential complement:
+
    a. The bankers thought the pilot embarrassed himself.
    b. \*The bankers thought the pilot embarrassed themselves
 
 (3) Reflexive across an object relative clause:
+
    a. The manager that the architects like doubted himself.
    b. \*The manager that the architects like doubted themselves.
 
@@ -80,17 +91,19 @@ For Reflexive anaphora,
 For  Negative polarity items,
 
 (1) Simple NPI:
+
    a. **No** students have ever lived here.
    b. \***Most** students have ever lived here.
 
 
 (2) NPI across a relative clause:
+
    a. **No** authors that **the** security guards like have ever been famous.
    b. \***The** authors that **no** security guards like have ever been famous.
 
 To show how our challenge set can be used to evaluate the syntactic performance of LMs with cases above, they trained three language models with increasing levels of syntactic sophistication. All of the language models were trained on a 90 million word subset of Wikipedia.
 
-The type of language models for experiment is  n-gram and LSTM (i.e. single-task and multi-task language model).
+The type of language models for experiment is n-gram and LSTM (i.e. single-task and multi-task language model).
 
 Their n-gram LM and LSTM language model do not require annotated data. The third model is also an LSTM language model (i.e. multi-task language model), but it requires syntactically annotated data (CCG supertags).
 
