@@ -43,6 +43,10 @@ This is a brief summary of paper for me to study and organize it, [Semi-Supervis
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
     
 - For your information
-  - [Korean Version: Graph Convolutional Network, GCN](https://untitledtblog.tistory.com/152)
-  - [English Version: Understanding Graph Convolutional Networks for Node Classification](https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b)
-  - [Enlgish Version: Getting the Intuition of Graph Neural Networks](https://medium.com/analytics-vidhya/getting-the-intuition-of-graph-neural-networks-a30a2c34280d)
+  - Korean Version
+    - [Graph Convolutional Network, GCN](https://untitledtblog.tistory.com/152)
+  
+  - English Version
+    - [Understanding Graph Convolutional Networks for Node Classification](https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b)
+    - [Getting the Intuition of Graph Neural Networks](https://medium.com/analytics-vidhya/getting-the-intuition-of-graph-neural-networks-a30a2c34280d)
+    - [spectral vs spatial convolution on graph neural network](https://ai.stackexchange.com/questions/14003/what-is-the-difference-between-graph-convolution-in-the-spatial-vs-spectral-doma)
