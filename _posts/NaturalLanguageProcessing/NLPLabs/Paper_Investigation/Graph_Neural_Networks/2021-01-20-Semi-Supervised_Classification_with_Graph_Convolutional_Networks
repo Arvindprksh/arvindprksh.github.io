@@ -20,6 +20,7 @@ bigimg:
 This is a brief summary of paper for me to study and organize it, [Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl) that I read and studied. 
 {% include MathJax.html %}
 
+This method is Fast Approximation Spectral-based Graph Convolutional Networks.
 
 ###For training, they used the same neural network structure such as [Sutskever et al., NIPS 2014](https://arxiv.org/abs/1409.3215) which uses a deep LSTM ot encode the input sequence and a separate deep LSTM to output the translation.
 
