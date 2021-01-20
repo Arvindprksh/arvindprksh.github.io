@@ -17,7 +17,7 @@ bigimg:
   
 ---
 
-This is a brief summary of paper for me to study and organize it, [Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl) that I read and studied. 
+This is a brief summary of paper for me to study and organize it, [Semi-Supervised Classification with Graph Convolutional Networks (Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl) that I read and studied. 
 {% include MathJax.html %}
 
 This method is Fast Approximation Spectral-based Graph Convolutional Networks.
@@ -37,8 +37,8 @@ This method is Fast Approximation Spectral-based Graph Convolutional Networks.
 # Reference 
 
 - Paper 
-  - [arXiv Version: Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, arXiv 2017)](https://arxiv.org/abs/1609.02907)
-  - [ICLR Version: Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl)
+  - [arXiv Version: Semi-Supervised Classification with Graph Convolutional Networks (Kipf and Welling, arXiv 2017)](https://arxiv.org/abs/1609.02907)
+  - [ICLR Version: Semi-Supervised Classification with Graph Convolutional Networks (Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl)
   
 - How to use html for alert
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
