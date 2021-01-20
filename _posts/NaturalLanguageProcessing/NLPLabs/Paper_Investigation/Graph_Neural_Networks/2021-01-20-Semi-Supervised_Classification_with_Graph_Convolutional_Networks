@@ -1,0 +1,48 @@
+---
+layout: post
+title: Semi-Supervised Classification with Graph Convolutional Networks
+subtitle: Title of paper - Semi-Supervised Classification with Graph Convolutional Networks
+category: NLP papers - Graph Neural Networks
+tags: [graph neural networks]
+permalink: /2021/01/20/Semi-Supervised_Classification_with_Graph_Convolutional_Networks/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl) that I read and studied. 
+{% include MathJax.html %}
+
+
+###For training, they used the same neural network structure such as [Sutskever et al., NIPS 2014](https://arxiv.org/abs/1409.3215) which uses a deep LSTM ot encode the input sequence and a separate deep LSTM to output the translation.
+
+###For detailed experiment analysis, you can found in [Addressing the Rare Word Problem in Neural Machine Translation (Luong et al., ACL and IJCNLP 2015)](https://www.aclweb.org/anthology/P15-1002/)
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://openreview.net/forum?id=SJU4ayYgl">The paper: Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [arXiv Version: Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, arXiv 2017)](https://arxiv.org/abs/1609.02907)
+  - [ICLR Version: Semi-Supervised Classification with Graph Convolutional Networks (N. Kipf and Welling, ICLR 2017)](https://openreview.net/forum?id=SJU4ayYgl)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+    
+- For your information
+  - [Korean Version: Graph Convolutional Network, GCN](https://untitledtblog.tistory.com/152)
+  - [English Version: Understanding Graph Convolutional Networks for Node Classification](https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b)
+
