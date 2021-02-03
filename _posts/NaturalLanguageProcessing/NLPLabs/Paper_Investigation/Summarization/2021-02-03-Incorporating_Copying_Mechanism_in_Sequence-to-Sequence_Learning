@@ -1,0 +1,66 @@
+---
+layout: post
+title: Incorporating Copying Mechanism in Sequence-to-Sequence Learning
+subtitle: Title of paper - Incorporating Copying Mechanism in Sequence-to-Sequence Learning
+category: NLP papers - Summarization
+tags: [neural network, extractive summarization, abstrative summmarization]
+permalink: /2020/08/28/Pointing_the_Unknown_Words/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1154/) I read and studied. 
+{% include MathJax.html %}
+
+Following the similar phenomenon in human language communication which repeats entity names or even long phrases in conversation, they propose COPYNET with encoder-decoder architecture based on neural network. 
+
+For exmaple, in the following two dialogue turns they observed copy mechanism which makes some subsequences(colored blue) in the response(R) copied from the input utterance (I)
+
+![Gu et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2021-02-03-Incorporating_Copying_Mechanism_in_Sequence-to-Sequence_Learning/copy_mechanism_example.PNG)
+
+
+They resolved 
+
+
+COPYNET contains a mechanism which can subsequences in the input sequence and put them at appropriate location in output sequence. 
+
+![Gu et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2021-02-03-Incorporating_Copying_Mechanism_in_Sequence-to-Sequence_Learning/COPYNET.PNG)
+
+
+
+
+
+For detailed experiment analysis, you can found in [Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1154/)
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://www.aclweb.org/anthology/P16-1154/">The paper: Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [arXiv version: Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., arXiv 2016)](https://arxiv.org/abs/1603.06393)
+  - [ACL Version: Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1154/)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+  
+- For information 
+  - [Towards Automatic Text Summarization: Extractive Methods on medium](https://medium.com/sciforce/towards-automatic-text-summarization-extractive-methods-e8439cd54715)
+  - [Automatic Text Summarization with Machine Learning — An overview on medium](https://medium.com/luisfredgs/automatic-text-summarization-with-machine-learning-an-overview-68ded5717a25)
+  - [Deep Learning Models for Automatic Summarization on toward data science](https://towardsdatascience.com/deep-learning-models-for-automatic-summarization-4c2b89f2a9ea)
+    
+
+
