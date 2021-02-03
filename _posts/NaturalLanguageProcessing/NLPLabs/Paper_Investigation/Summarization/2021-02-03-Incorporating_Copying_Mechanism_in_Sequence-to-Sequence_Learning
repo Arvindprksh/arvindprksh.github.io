@@ -20,23 +20,33 @@ bigimg:
 This is a brief summary of paper for me to study and organize it, [Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1154/) I read and studied. 
 {% include MathJax.html %}
 
-Following the similar phenomenon in human language communication which repeats entity names or even long phrases in conversation, they propose COPYNET with encoder-decoder architecture based on neural network. 
+Following the similar phenomenon in human language communication which repeats entity names or even long phrases in conversation, they propose **COPYNET** with encoder-decoder architecture based on neural network. 
 
-For exmaple, in the following two dialogue turns they observed copy mechanism which makes some subsequences(colored blue) in the response(R) copied from the input utterance (I)
+For exmaple, in the following two dialogue turns they observed copy mechanism which makes some subsequences(colored blue) in the response(R) copied from the input utterance (I).
 
 ![Gu et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2021-02-03-Incorporating_Copying_Mechanism_in_Sequence-to-Sequence_Learning/copy_mechanism_example.PNG)
 
+Since the copy mechanism is closer to memorization in language processing of human being, they applied it to sequence-to-sequece model which can accomodate both understanding and memorization. 
 
-They resolved 
+Although the copy mechanism seem to be "hard" oparation, the implement it in **the end-to-end manner**. 
 
-
-COPYNET contains a mechanism which can subsequences in the input sequence and put them at appropriate location in output sequence. 
+The **COPYNET** contains a mechanism which can subsequences in the input sequence and put them at appropriate location in output sequence. 
 
 ![Gu et al., ACL 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Summarization/2021-02-03-Incorporating_Copying_Mechanism_in_Sequence-to-Sequence_Learning/COPYNET.PNG)
 
+The sequence-to-sequence model based on RNN (recurrent neural network) consists of an encoder and a decoder, the encoder creates the context vector \\(c_t\\) of input sequence and then the context vector \\(c_t\\) is used as input to generate output on each decoding stage. 
 
+For attention mechanism, it was introduced to ease the burden of summarizing the entire source into a fixed-length vector, instead, the attention changes the context dynamically in the decoding process. 
 
+The attention, rather soft attention, is to represent the context vector \\(c_t\\) as the weighted sum of the source hidden states in the encoder. 
 
+As illustrated in Figure 1, the structure of COPYNET is still based on a sequence-to-sequence model, on the other hand called encoder-decoder model.
+
+The source sequence is converted by encoder into representation and then it is read by decoder to generate the target sequence. 
+
+The encoder transformed the source sequence into a series of hidden states with the equal length to input sequence,
+
+ds,jf.lksjlj321
 
 For detailed experiment analysis, you can found in [Incorporating Copying Mechanism in Sequence-to-Sequence Learning (Gu et al., ACL 2016)](https://www.aclweb.org/anthology/P16-1154/)
 
