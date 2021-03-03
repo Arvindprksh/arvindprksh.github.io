@@ -47,5 +47,9 @@ For detailed experiment analysis, you can found in [BART: Denoising Sequence-to-
   - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
     
 - For your information 
+   - [BART Presentation Video in ACL 2020](https://slideslive.com/38929218/bart-denoising-sequencetosequence-pretraining-for-natural-language-generation-translation-and-comprehension)
    - [Understand how the XLNet outperforms BERT in Language Modelling](https://medium.com/saarthi-ai/xlnet-the-permutation-language-model-b30f5b4e3c1e)
-
+   - [The Illustrated Transformer in Jay Alammar blog](https://jalammar.github.io/illustrated-transformer/)
+   - [Layer Normalization in paperswithcode](https://paperswithcode.com/method/layer-normalization)
+   - [What is XLNet and why it outperforms BERT in towards data science by LIANG](https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335)
+   - [What is Two-Stream Self Attention in XLNet in towards data science by LIANG](https://towardsdatascience.com/what-is-two-stream-self-attention-in-xlnet-ebfe013a0cf3)
