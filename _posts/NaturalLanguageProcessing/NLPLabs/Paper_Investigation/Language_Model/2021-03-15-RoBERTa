@@ -35,7 +35,65 @@ They call it RoBERTa with the following:
   - dynamically changing the masking pattern with trainig dataset.
 
 In other words, they propose BERT design choices and trainig strategies in their paper. 
- 
+
+Let't see the BERT before digging into RoBERTa as background. 
+
+**Input:** The BERT taks as input a concatenation of two segments sequences of tokens, \\(x_1, ..., x_n\\) and \\(y_1, ..., y_m\\). The segments usually comprise more than one natural sentences. The two segments are uesed as a single input sequence to BERT with special token, **\[SEP\]** delimiting them like \[CLS\], \\(x_1, ..., x_n\\), \[SEP\] \\(y_1, ..., y_m\\), \[EOS\]. M and N are subject to M+N < T, where T is a parameter that controls the maximum sequence length during training.
+
+**Architecture:** BERT uses the encoder portion of the now prevalent transoformer architecture. Each block uses self-attention heads. 
+
+**Training Objectives:** BERT uses two training objectives. one is MLM(masked language model) which is that a random sample of the otkens in the input sequence is chosen and replaced with the special token \[MASX\] and then predict the masked tokens with cross-entropy loss. The other is NSP(next sentence prediction) which is the binary classification loss for predicting whether two segments follow each other in the original text. 
+
+For NSP(next sentence prediction), the data consists of the followings:
+
+  - Positive examples are created by taking consecutive sentences from the text corpus.
+  - Negative examples are created by pairing segments from different documents.
+  - Positive examples and negative examples aree sampled with equal probability.
+  
+This NSP objective was designed for the natural language inference task which require reasoning about the relationships between pairs of sentences.
+
+Until now, I explained how BERT works. Let's see their version of replication study. 
+
+They pretrained with the following's basic set-up:
+
+  - The input seqeunces consists of at most T=512 tokens. 
+  - Though the original BERT randomly inserts short sequences, they don't train with a reduced seuqence for the first 90% of updates. They train only with full-length sequences.
+  
+They also collected data to 160GB to evaluate the performance with different training set size.
+
+In order to analyze the training procedure, they explore which choices are important for successfully pretraining BERT model. 
+
+They begin the experiement with the same configuration as \\(BERT_{base}\\) (L=12, H=768, A=12, 110M params)
+
+First of all, they focused on BERT's masking aforementioned. 
+
+When the BERT depends on randomly masking adn predicting tokens, the original BERT implementation preformed masking oce during data processing, resulting  in a single static mask. 
+
+Therefore they compare **static masking** with **dynamic masking**.
+
+For static masking, they duplicated training data 10 times so that each sequence is masked in 10 different ways over the 40 epoches of training, i.e. each training sequence was seen with the same makse four times duing training. 
+
+For dynamic masking, they generated the masking pattern every time they feed a sequence to the model.
+
+on comparison between static and dynamic masking, they found the dynamic maksing is slightly better than static masking.
+
+They also investigated on input format and next sentence prediction. 
+
+To better understand where the next sentence prediction is helpful or not on downstream tasks, they compared several alterantive training formats:
+
+  - SEGMENT-PAIR+NSP: following the original BERT, each input has a pari of segments which can each contain multiple natural sentences, but the total combined length mus be less than 512 tokens.
+  
+  - SENTENCE-PAIR+NSP: Each input contains a pair of natural sentences, either sampled from a contiguous portion of one documentt or form separate documents.
+  
+  - FULL-SENTENCE: 
+  
+  
+The abo
+
+
+
+  
+  
 For detailed experiment analysis, you can found in [RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., arXiv 2019)](https://arxiv.org/abs/1907.11692)
   
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
