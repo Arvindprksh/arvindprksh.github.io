@@ -1,0 +1,59 @@
+---
+layout: post
+title: RoBERTa- A Robustly Optimized BERT Pretraining Approach
+subtitle: Title of paper - RoBERTa- A Robustly Optimized BERT Pretraining Approach
+category: NLP papers - Language Model
+tags: [language model, transfer learning]
+permalink: /2020/12/23/SpanBERT/
+css : /css/ForYouTubeByHyun.css
+bigimg: 
+  - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/monterey.jpg" : "Monterey, CA (2016)"
+  - "/img/Image/BigImages/stanford_dish.jpg" : "Stanford Dish, CA (2016)"
+  - "/img/Image/BigImages/marian_beach_in_sanfran.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/carmel2.jpg" : "Carmel-by-the-Sea, CA (2016)"
+  - "/img/Image/BigImages/marina.jpg" : "MRINA of San Francisco, CA (2016)"
+  - "/img/Image/BigImages/sanfrancisco.jpg" : "San Francisco, CA (2016)"
+  
+---
+
+This is a brief summary of paper for me to study and organize it, [RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., arXiv 2019)](https://arxiv.org/abs/1907.11692) that I read and studied. 
+{% include MathJax.html %}
+
+
+They implememted the replication study of [BERT(Devlin et al., 2019)](https://arxiv.org/abs/1810.04805) to evaluate the effect of hyperparameter tuning and training set size.
+
+Although Self-supervised method such as BERT, ELMo, and GPT have been the crucial factor to have performance gain, they thought that it can be challenging to determine which factors of the methods contribute the most.
+
+from their experiments, they found that the BERT was significantly undertrained and how to train BERT to improve the performance. 
+
+They call it RoBERTa with the following:
+  
+  - training the model longer
+  - removing the next sentence prediction objective
+  - training on longer sequences 
+  - dynamically changing the masking pattern with trainig dataset.
+
+In other words, they propose BERT design choices and trainig strategies in their paper. 
+ 
+For detailed experiment analysis, you can found in [RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., arXiv 2019)](https://arxiv.org/abs/1907.11692)
+  
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
+Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results. They present a replication study of [BERT pretraining (Devlin et al., 2019)](https://arxiv.org/abs/1810.04805) that carefully measures the impact of many key hyperparameters and training data size. They find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it. Their best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. 
+</div>
+    
+<div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
+  <a href="https://arxiv.org/abs/1907.11692">The paper: RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., arXiv 2019)</a>
+</div>
+
+# Reference 
+
+- Paper 
+  - [arXiv Version: RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., arXiv 2019)](https://arxiv.org/abs/1907.11692)
+  - [Under review version of ICLR 2020 : RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al.)](https://openreview.net/forum?id=SyxS0T4tvS)
+  
+- How to use html for alert
+  - [how to use icon](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_icons.html)
+    
+
+
