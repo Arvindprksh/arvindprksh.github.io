@@ -25,7 +25,7 @@ They propose sequence classificaiton model conbining long short-term memory(LSTM
 
 ![From Shen and Lee, arXiv 2016](/img/Image/NaturalLanguageProcessing/NLPLabs/Paper_Investigation/Text_Classification/2021-04-01-Neural_Attention_Models_for_Sequence_Classification/NN_ATT_MODEL.PNG)
 
-As you can see Figure 1, first they summarize a input sequence as a fixed-size vector  which is output vector \\(O_T\\) of LSTM and then use the summarized vector \\(O_T\\) and input seqeunce vector \\(V = {V_1, V_2, ..., V_T}\\) for attention mechanism. 
+As you can see Figure 1, first they summarize a input sequence as a fixed-size vector  which is output vector \\(O_T\\) of LSTM and then use the summarized vector \\(O_T\\) and input seqeunce vector \\(V = \(V_1, V_2, ..., V_T\)\\) for attention mechanism. 
 
 For all the parameters in embedding layer, they are shared in input of LSTM and attention mechanism.
 
@@ -33,15 +33,15 @@ In the figure 1, embedding layer denotes a linear transforamtion matrix.
 
 Before digging into attention mechanism, Let's see several annotations.
 
-   - The set \\(x = {x_1, x_2, ..., x_T}\\) denotes input sequence,  where T is the sequence length. Each element in \\(x\\) represent a fixed-length featur vector.
+   - The set \\(x = \(x_1, x_2, ..., x_T\)\\) denotes input sequence,  where T is the sequence length. Each element in \\(x\\) represent a fixed-length featur vector.
    
-   - The word embedding set \\(V = {V_1, V_2, ..., V_T}\\) indicates input seqeunce vectors. 
+   - The word embedding set \\(V = \(V_1, V_2, ..., V_T\)\\) indicates input seqeunce vectors. 
    
    - \\(O_T\\) denote output vector which can be regarded as the summariess of the preceding feature vector.
    
-   - The set \\(e = {e_1, e_2, ..., e_T}\\) denotes a list of score.
+   - The set \\(e = \(e_1, e_2, ..., e_T\)\\) denotes a list of score.
    
-   - The set \\(\alpha = {\alpha_1, \alpha_2, ..., \alpha_n} denotes a list of attention weight.
+   - The set \\( \alpha = \(\alpha_1, \alpha_2, ..., \alpha_n\)\\) denotes a list of attention weight.
 
 When the calculate score between output vector and input sequence vector, they use cosine similarity.
 
@@ -53,7 +53,7 @@ They also normalized the score for attention mechanism in two ways.
 
 For sharpening, it use the softmax to normalizae socres. 
 
-$$\alpha_i = \frac{exp(e_i}{\sum_{i=1}^T exp(e_i)}$$
+$$\alpha_i = \frac{exp(e_i)}{\sum_{i=1}^T exp(e_i)}$$
 
 For smoothint, they changed the exponential function in equation above with logisitic sigmoid function \\(\\\), 
 
