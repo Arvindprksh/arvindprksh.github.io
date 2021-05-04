@@ -28,10 +28,14 @@ The property makes word embedding share semantic or syntactic  properties or cap
 
 Those properties also can be captured by the word-context co-occurence matrix. 
 
+To sump their saying up, The linguistic regularities apparent in neural embedding are not a consequence of the embedding process, but rather are well preserved by neural embedding.
+
+In order to prove it, they suggest new objective function to eevaluate liguistic regularity using logarithm.
+
 For detailed experiment analysis, you can found in [Linguistic Regularities in Sparse and Explicit Word Representations (Levy and Goldberg, CoNLL 2014)](https://www.aclweb.org/anthology/W14-1618/)
   
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note(Abstract): </b>
-Recent work has shown that neuralembedded word representations capture many relational similarities, which can be recovered by means of vector arithmetic in the embedded space. They show that Mikolov et al.’s method of ﬁrst adding and subtracting word vectors, and then searching for a word similar to the result, is equivalent to searching for a word that maximizes a linear combination of three pairwise word similarities. Based on this observation, they suggest an improved method of recovering relational similarities, improving the state-of-the-art results on two recent word-analogy datasets. Moreover, they demonstrate that analogy recovery is not restricted to neural word embeddings, and that a similar amount of relational similarities can be recovered from traditional distributional word representations.
+Recent work has shown that neural embedded word representations capture many relational similarities, which can be recovered by means of vector arithmetic in the embedded space. They show that Mikolov et al.’s method of ﬁrst adding and subtracting word vectors, and then searching for a word similar to the result, is equivalent to searching for a word that maximizes a linear combination of three pairwise word similarities. Based on this observation, they suggest an improved method of recovering relational similarities, improving the state-of-the-art results on two recent word-analogy datasets. Moreover, they demonstrate that analogy recovery is not restricted to neural word embeddings, and that a similar amount of relational similarities can be recovered from traditional distributional word representations.
 </div>
     
 <div class="alert alert-success" role="alert"><i class="fa fa-paperclip fa-lg"></i> <b>Download URL: </b><br>
