@@ -4,7 +4,7 @@ title: Neural Attention Models for Sequence Classification- Analysis and Applica
 subtitle: Title of paper - Neural Attention Models for Sequence Classification- Analysis and Application to Key Term Extraction and Dialogue Act Detection
 category: NLP papers - Language Model
 tags: [neural network, text classification]
-permalink: /2020/12/23/SpanBERT/
+permalink: /2021/04/01/Neural_Attention_Models_for_Sequence_Classification/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
