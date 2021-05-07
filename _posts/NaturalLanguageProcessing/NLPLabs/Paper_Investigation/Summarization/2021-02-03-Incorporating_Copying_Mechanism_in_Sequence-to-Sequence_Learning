@@ -4,7 +4,7 @@ title: Incorporating Copying Mechanism in Sequence-to-Sequence Learning
 subtitle: Title of paper - Incorporating Copying Mechanism in Sequence-to-Sequence Learning
 category: NLP papers - Summarization
 tags: [neural network, extractive summarization, abstrative summmarization]
-permalink: /2020/08/28/Pointing_the_Unknown_Words/
+permalink: /2021/02/03/Incorporating_Copying_Mechanism_in_Sequence-to-Sequence_Learning/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
