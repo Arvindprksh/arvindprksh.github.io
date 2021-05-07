@@ -22,9 +22,9 @@ This is a brief summary of paper for me to study and organize it, [On Using Very
 
 Despite its recent success to neural machine translation, the neural machine translation has its limitation in handling a larger vocabulary.
  
-So, they propose new alorithm to resolve the problem that neural network-based machine translation. 
+So, they propose new algorithm to resolve the problem that neural network-based machine translation. 
 
-There is one of the maine difficulties in training this neural machine traslation model. 
+There is one of the main difficulties in training this neural machine traslation model. 
 
 It is the comptutational complexity involved in the target word probability. 
 
