@@ -4,7 +4,7 @@ title: Targeted Syntactic Evaluation of Language Models
 subtitle: Title of paper - Targeted Syntactic Evaluation of Language Models
 category: NLP papers - Language Model
 tags: [language model, syntactic property]
-permalink: /2020/11/26/What_do_you_learn_from_context_Probing_for_sentence_structure_in_contextualized_word_representations/
+permalink: /2020/11/26/Targeted_Syntactic_Evaluation_of_Language_Models/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
   - "/img/Image/BigImages/carmel.jpg" : "Carmel-by-the-Sea, CA (2016)"
