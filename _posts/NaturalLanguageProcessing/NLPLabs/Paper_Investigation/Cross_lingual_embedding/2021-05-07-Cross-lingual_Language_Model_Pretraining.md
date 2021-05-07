@@ -2,8 +2,8 @@
 layout: post
 title: Cross-lingualLanguageModelPretraining
 subtitle: Title of paper - Cross-lingualLanguageModelPretraining
-category: NLP papers - Language Model
-tags: [language model, translation]
+category: NLP papers - Cross-lingual Sentence Embedding
+tags: [cross_lingual_sentence_embedding]
 permalink: /2021/05/07/Cross-lingual_Language_Model_Pretraining/
 css : /css/ForYouTubeByHyun.css
 bigimg: 
