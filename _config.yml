@@ -35,6 +35,7 @@ navbar-links:
     - Parallel: "my-note-for-parallel-programming-at-Udacity"
     - test: "hyunyoung2_konltk_test"
     - dir_test: "hyunyoung2_dir_konltk_test"
+    - test: "Lecture_Note"
   Projects: "Projects"
   Search: "Search"
   About Me: 
