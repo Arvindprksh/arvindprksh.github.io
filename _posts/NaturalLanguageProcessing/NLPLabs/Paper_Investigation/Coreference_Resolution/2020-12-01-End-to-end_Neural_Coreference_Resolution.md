@@ -51,7 +51,7 @@ These decisions implicitly define a final clustering, which can be recovered by 
 
 For model, they aim to learn a conditional distribution \\(P(y_1,...,y_n\|D)\\) which produces the correct clustering. They use a product of multinomial for each span:
 
-$$p(y_1,...,y_n\|D) =\prod_{i=1}^n =\prod_{i=1}^n frac{exp(s(i,y_i)}{\sum_{y'\in y(i)}exp(s(i,y'))}$$
+$$p(y_1,...,y_n\|D) =\prod_{i=1}^n =\prod_{i=1}^n \frac{exp(s(i,y_i)}{\sum_{y'\in y(i)}exp(s(i,y'))}$$
 
 where \\(s(i,j)\\) is pairwise score for a coreference link between span \\(i\\) and span \\(j\\) in document \\(D\\).
 
