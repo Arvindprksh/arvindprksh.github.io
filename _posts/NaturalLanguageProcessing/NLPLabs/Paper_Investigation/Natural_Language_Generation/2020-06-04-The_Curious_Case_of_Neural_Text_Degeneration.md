@@ -61,16 +61,16 @@ From now on, Let's see several decoding strategies they explained.
 
 Specifically, in order to sample from truncted neural language model distribution for next token, Nucleus sampling truncate the distribution with threshold value \\(p\\) and then use it as prediction zone.  
 
-Given a distribution \\(P(X_i|X_{1:i-1})\\), they defined top-p(portion) vocabulary \\(V^{(p)} \subset V\\) as a small set to be sampled from. 
+Given a distribution \\(P(X_{i}|X_{1:i-1})\\), they defined top-p(portion) vocabulary \\(V^{(p)} \subset V\\) as a small set to be sampled from. 
 
 p(portion) is set with threshold value \\(p\\) as follows:
 
-$$ p` = \sum_{x \in V^{(p)}} P(X_i|X_{1:i-1}) \geq p $$
+$$ p^{'} = \sum_{x \in V^{(p)}} P(X_{i}|X_{1:i-1}) \geq p $$
 
-In order to sample from the prediction zone by threshold value \\(p\\), they turn the prediction zone into a re-scaled distribtuion \\(P\`(X_i\|X_{1:i-1})\\) as follows:
+In order to sample from the prediction zone by threshold value \\(p\\), they turn the prediction zone into a re-scaled distribtuion \\(P^{'}(X_{i}|X_{1:i-1})\\) as follows:
 
-$$ P`(X_i|X_{1:i-1}) =  \begin{cases}
-\frac{P`(X_i|X_{1:i-1})}{p`},  & \text{if x \in V^{(p)}} \\
+$$ P^{'}(X_{i}|X_{1:i-1}) =  \begin{cases}
+\frac{P^{'}(X_{i}|X_{1:i-1})}{p^{'}},  & \text{if x \in V^{(p)}} \\
 0, & \text{otherwise}
 \end{cases}$$
 
@@ -87,7 +87,7 @@ Top-k sampling is similar to Nucleus sampling but when trucating nueral language
 
 With temperature \\(t\\), softmax is re-estimated as :
 
-$$ softmax(x) = \frac{exp^(x/t)}{\sum exp^(x`/t)} $$
+$$ softmax(x) = \frac{exp^(x/t)}{\sum exp^(x^{'}/t)} $$
 
 ------- 
 When they generate target sentence, they use a basic form of beam-search to find a translation that maximizes the conditional probability given by a specific models.
