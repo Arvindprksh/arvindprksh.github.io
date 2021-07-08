@@ -69,7 +69,7 @@ $$ \sum_{x \in V^{(p)}} P(x_{i}|x_{1:i-1}) \geq p $$
 
 In order to sample from the prediction zone by threshold value \\(p\\), they turn the prediction zone into a re-scaled distribtuion \\(P^{'}(x_{i}\|x_{1:i-1})\\) as follows:
 
-First of all, let's \((p^{'} = \sum_{x \in V^{(p)}} P(x_{i}|x_{1:i-1})\\)
+First of all, let's \\(p^{'} = \sum_{x \in V^{(p)}} P(x_{i}|x_{1:i-1})\\)
 
 $$ P^{'}(x_{i}|x_{1:i-1}) =  \begin{cases}
 \frac{P^{'}(x_{i}|x_{1:i-1})}{p^{'}},  & \text{if x } \in V^{(p)} \\
