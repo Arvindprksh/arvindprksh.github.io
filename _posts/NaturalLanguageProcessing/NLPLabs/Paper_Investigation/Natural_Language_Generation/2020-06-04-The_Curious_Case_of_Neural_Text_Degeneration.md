@@ -65,9 +65,11 @@ Given a distribution \\(P(X_{i}||X_{1:i-1})\\), they defined top-p(portion) voca
 
 p(portion) is set with threshold value \\(p\\) as follows:
 
-$$ p^{'} = \sum_{x \in V^{(p)}} P(X_{i}|X_{1:i-1}) \geq p $$
+$$ \sum_{x \in V^{(p)}} P(X_{i}|X_{1:i-1}) \geq p $$
 
 In order to sample from the prediction zone by threshold value \\(p\\), they turn the prediction zone into a re-scaled distribtuion \\(P^{'}(X_{i}||X_{1:i-1})\\) as follows:
+
+First of all, let's \((p^{'} = \sum_{x \in V^{(p)}} P(X_{i}|X_{1:i-1})\\)
 
 $$ P^{'}(X_{i}|X_{1:i-1}) =  \begin{cases}
 \frac{P^{'}(X_{i}|X_{1:i-1})}{p^{'}},  & \text{if x } \in V^{(p)} \\
