@@ -112,7 +112,7 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
 
   <div class="tab-content">
     <div id="presentation" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="//www.slideshare.net/slideshow/embed_code/key/ykokirHhApmpV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" <iframe src="//www.slideshare.net/slideshow/embed_code/key/ykokirHhApmpVp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="refrigerator" class="tab-pane fade">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Er2ucMxjdHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
