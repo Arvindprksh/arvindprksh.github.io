@@ -118,13 +118,13 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Er2ucMxjdHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="refrigerator_concept" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/RLWuzLLSIgw?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RLWuzLLSIgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
      <div id="refrigerator_concept2" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/gb__z7LlN_4?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gb__z7LlN_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
      </div>
     <div id="refrigerator_concept3" class="tab-pane fade">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGUZwk7xIwk?list=PLCSzVeDv57Z1y0uWZXYX2kq5UUpqA0Mk2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGUZwk7xIwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </div>
   </div>
  
