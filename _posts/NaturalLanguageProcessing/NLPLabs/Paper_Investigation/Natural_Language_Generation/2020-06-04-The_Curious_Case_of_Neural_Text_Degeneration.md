@@ -111,8 +111,8 @@ If you want to know what beam-search is, see the following (e.g. Youtube lecture
   </ul>
 
   <div class="tab-content">
-    <div id="refrigerator" class="tab-pane fade in active">
-      <iframe width="560" height="315" src="https://www.slideshare.net/HyunYoungLee3/paper-seminar-thecuriouscaseofneuraltextdegeneration-249665385" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="presentation" class="tab-pane fade in active">
+      <iframe width="560" height="315" src="//www.slideshare.net/slideshow/embed_code/key/ykokirHhApmpV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="refrigerator" class="tab-pane fade">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Er2ucMxjdHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
